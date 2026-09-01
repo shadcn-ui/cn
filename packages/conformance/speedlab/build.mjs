@@ -136,13 +136,16 @@ if (corporaDir && !skipBench) {
     .sort()
   const rows = []
   for (const f of files) {
-    const row = { name: f.replace(".json", "") }
-    for (const impl of ["pair", "cnfast", "cn"]) {
-      const r = runWorker("corpus-worker.mjs", impl, join(corporaDir, f))
-      row[impl] = r.replaysPerSec
-      row.calls = r.calls
-    }
-    rows.push(row)
+    const measure = (library) =>
+      runWorker("corpus-worker.mjs", library, join(corporaDir, f))
+    const pair = measure("pair")
+    rows.push({
+      name: f.replace(".json", ""),
+      calls: pair.calls,
+      pair: pair.replaysPerSec,
+      cnfast: measure("cnfast").replaysPerSec,
+      cn: measure("cn").replaysPerSec,
+    })
     process.stderr.write(".")
   }
   process.stderr.write("\n")

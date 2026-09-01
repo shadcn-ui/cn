@@ -1,34 +1,34 @@
 // One (impl × repository corpus) measurement in an isolated process.
-// Usage: node bench/corpus-worker.mjs <impl> <corpus.json>
-//   → prints JSON {impl, corpus, calls, replaysPerSec, nsPerCall}
+// Usage: node bench/corpus-worker.mjs <library> <corpus.json>
+//   → prints JSON {library, corpus, calls, replaysPerSec, nsPerCall}
 import { readFileSync } from "node:fs"
 import { basename } from "node:path"
 
-const [, , implName, corpusPath] = process.argv
+const [, , library, corpusPath] = process.argv
 const groups = JSON.parse(readFileSync(corpusPath, "utf8"))
 
 const WARMUP_MS = 300
 const BLOCK_MS = 200
 const BLOCKS = 5
 
-const loadImpl = async () => {
-  if (implName === "pair") {
+const loadLibrary = async () => {
+  if (library === "pair") {
     const { clsx } = await import("clsx")
     const { twMerge } = await import("tailwind-merge")
     return (...a) => twMerge(clsx(...a))
   }
-  if (implName === "cnfast") return (await import("cnfast")).cn
-  if (implName === "cn") return (await import("cn")).cn
-  throw new Error("unknown impl " + implName)
+  if (library === "cnfast") return (await import("cnfast")).cn
+  if (library === "cn") return (await import("cn")).cn
+  throw new Error("unknown library " + library)
 }
 
-const fn = await loadImpl()
+const merge = await loadLibrary()
 let sink = 0
 
 const replay = () => {
-  let s = 0
-  for (let i = 0; i < groups.length; i++) s += fn(...groups[i]).length
-  return s
+  let lengthSum = 0
+  for (const group of groups) lengthSum += merge(...group).length
+  return lengthSum
 }
 
 // warmup: at least two full replays, or WARMUP_MS of them
@@ -37,25 +37,25 @@ sink += replay() + replay()
 while (performance.now() - warmStart < WARMUP_MS) sink += replay()
 
 // measure: best of BLOCKS timed blocks, each at least one full replay
-let best = 0
+let bestReplaysPerSec = 0
 for (let block = 0; block < BLOCKS; block++) {
-  const t0 = performance.now()
-  let passes = 0
+  const blockStart = performance.now()
+  let replays = 0
   do {
     sink += replay()
-    passes++
-  } while (performance.now() - t0 < BLOCK_MS)
-  const replaysPerSec = passes / ((performance.now() - t0) / 1000)
-  if (replaysPerSec > best) best = replaysPerSec
+    replays++
+  } while (performance.now() - blockStart < BLOCK_MS)
+  const replaysPerSec = replays / ((performance.now() - blockStart) / 1000)
+  if (replaysPerSec > bestReplaysPerSec) bestReplaysPerSec = replaysPerSec
 }
 
 console.log(
   JSON.stringify({
-    impl: implName,
+    library,
     corpus: basename(corpusPath, ".json"),
     calls: groups.length,
-    replaysPerSec: best,
-    nsPerCall: 1e9 / (best * groups.length),
+    replaysPerSec: bestReplaysPerSec,
+    nsPerCall: 1e9 / (bestReplaysPerSec * groups.length),
     sink: sink % 10,
   })
 )
