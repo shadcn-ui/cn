@@ -1,6 +1,6 @@
 {
   "name": "cn",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Fast, small, compiled class-name merging for Tailwind CSS. Drop-in replacement for clsx + tailwind-merge.",
   "license": "MIT",
   "repository": {
