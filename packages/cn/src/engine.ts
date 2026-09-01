@@ -31,6 +31,9 @@ import type {
   ValidatorImpls,
 } from "./types.js"
 
+// JavaScriptCore (Bun, Safari) puts `line` on Error instances; V8 does not
+const IS_JSC = "line" in new Error()
+
 const EXTERNAL = -1
 const DEAD = -1
 
@@ -989,50 +992,98 @@ export const createEngine = (
     doorEpoch = (doorEpoch + 1) | 0
     doorMarks = 0
   }
+  // miss body outlined so the hit front stays small enough to inline at
+  // every caller (JSC in particular refuses to inline the doorkeeper body)
+  const mergeMiss = (input: string): string => {
+    // doorkeeper: a string seen once in the current or previous
+    // generation admits on this sighting. Slots store the full
+    // 32-bit hash (xor epoch), so a slot collision must match all
+    // hash bits to count as a sighting — unique streams (SSR)
+    // almost never false-admit, which would cost a dictionary
+    // insert plus generation churn per call. Stale slots from two
+    // generations back self-invalidate via the epoch xor.
+    const h = spanHash(input, 0, input.length)
+    // slot bits never overlap the base bit, so the sibling
+    // generation's slot is one xor away
+    const slot = (h & (DOOR_SIZE - 1)) + doorBase
+    const seen =
+      door[slot] === (h ^ doorEpoch) ||
+      door[slot ^ DOOR_SIZE] === (h ^ (doorEpoch - 1))
+    let r
+    if (seen) {
+      r = prevCache[input]
+      if (r !== undefined) {
+        cache[input] = r // promote
+        return r
+      }
+    }
+    r = mergeClassList(input)
+    if (seen) {
+      cache[input] = r
+      if (++cacheCount > cacheSize) {
+        cacheCount = 0
+        prevCache = cache
+        cache = Object.create(null)
+        rotateDoor()
+      }
+    } else {
+      door[slot] = h ^ doorEpoch
+      if (++doorMarks > DOOR_SIZE) rotateDoor()
+    }
+    return r
+  }
+  // JSC only inlines a tiny hit front, so there the miss body lives in
+  // mergeMiss; V8 inlines the whole closure and loses ~15% on long strings
+  // when the body is outlined, so it keeps the single-closure form
   const mergeString =
-    cacheSize > 0
-      ? (input: string): string => {
-          // hit path first: warm, identity-stable strings stay at one
-          // object-property read with a V8-cached hash
-          let r = cache[input]
-          if (r !== undefined) return r
-          // doorkeeper: a string seen once in the current or previous
-          // generation admits on this sighting. Slots store the full
-          // 32-bit hash (xor epoch), so a slot collision must match all
-          // hash bits to count as a sighting — unique streams (SSR)
-          // almost never false-admit, which would cost a dictionary
-          // insert plus generation churn per call. Stale slots from two
-          // generations back self-invalidate via the epoch xor.
-          const h = spanHash(input, 0, input.length)
-          // slot bits never overlap the base bit, so the sibling
-          // generation's slot is one xor away
-          const slot = (h & (DOOR_SIZE - 1)) + doorBase
-          const seen =
-            door[slot] === (h ^ doorEpoch) ||
-            door[slot ^ DOOR_SIZE] === (h ^ (doorEpoch - 1))
-          if (seen) {
-            r = prevCache[input]
-            if (r !== undefined) {
-              cache[input] = r // promote
-              return r
-            }
+    cacheSize === 0
+      ? mergeClassList
+      : IS_JSC
+        ? (input: string): string => {
+            const r = cache[input]
+            return r !== undefined ? r : mergeMiss(input)
           }
-          r = mergeClassList(input)
-          if (seen) {
-            cache[input] = r
-            if (++cacheCount > cacheSize) {
-              cacheCount = 0
-              prevCache = cache
-              cache = Object.create(null)
-              rotateDoor()
+        : (input: string): string => {
+            // hit path first: warm, identity-stable strings stay at one
+            // object-property read with a V8-cached hash
+            let r = cache[input]
+            if (r !== undefined) return r
+            // doorkeeper: a string seen once in the current or previous
+            // generation admits on this sighting. Slots store the full
+            // 32-bit hash (xor epoch), so a slot collision must match all
+            // hash bits to count as a sighting — unique streams (SSR)
+            // almost never false-admit, which would cost a dictionary
+            // insert plus generation churn per call. Stale slots from two
+            // generations back self-invalidate via the epoch xor.
+            const h = spanHash(input, 0, input.length)
+            // slot bits never overlap the base bit, so the sibling
+            // generation's slot is one xor away
+            const slot = (h & (DOOR_SIZE - 1)) + doorBase
+            const seen =
+              door[slot] === (h ^ doorEpoch) ||
+              door[slot ^ DOOR_SIZE] === (h ^ (doorEpoch - 1))
+            if (seen) {
+              r = prevCache[input]
+              if (r !== undefined) {
+                cache[input] = r // promote
+                return r
+              }
             }
-          } else {
-            door[slot] = h ^ doorEpoch
-            if (++doorMarks > DOOR_SIZE) rotateDoor()
+            r = mergeClassList(input)
+            if (seen) {
+              cache[input] = r
+              if (++cacheCount > cacheSize) {
+                cacheCount = 0
+                prevCache = cache
+                cache = Object.create(null)
+                rotateDoor()
+              }
+            } else {
+              door[slot] = h ^ doorEpoch
+              if (++doorMarks > DOOR_SIZE) rotateDoor()
+            }
+            return r
           }
-          return r
-        }
-      : mergeClassList
 
   const merge = function (): string {
     return arguments.length === 1 && typeof arguments[0] === "string"
@@ -1193,6 +1244,7 @@ export const wrapClsx = (
     let first = ""
     let firstIdx = -1
     let truthy = 0
+    let resolved = false
     for (let i = 0; i < nArgs; i++) {
       let v = vals[i]
       if (!v) continue
@@ -1204,6 +1256,7 @@ export const wrapClsx = (
         // every call.
         v = vals[i] = resolveValue(v as ClassValue, true)
         if (!v) continue
+        resolved = true
       }
       if (firstIdx < 0) {
         first = v
@@ -1213,6 +1266,16 @@ export const wrapClsx = (
     }
     if (truthy === 0) return ""
     if (truthy === 1) return mergeString(first) // cheap path; chain untouched
+    if (resolved) {
+      // the resolved strings may be identity-stable (a one-key object
+      // resolves to its key); retry the prediction before the bucket walk
+      if (pred !== null && matchN(pred, vals)) {
+        lastHit = pred
+        return pred.r
+      }
+      if (lastHit !== null && lastHit !== pred && matchN(lastHit, vals))
+        return lastHit.r
+    }
     let bucket = argCache.get(first)
     if (bucket === undefined) {
       bucket = prevArgCache.get(first)
@@ -1268,6 +1331,13 @@ export const wrapClsx = (
     return hit.r
   }
 
+  // cn([a, b]) is cn(a, b) under clsx's flattening, so a one-arg array
+  // takes the arg path and its stable element identities hit the cache
+  const resolve1 = (v0: ClassValue): string =>
+    Array.isArray(v0)
+      ? resolveArgs(v0.slice(), false)
+      : mergeString(resolveValue(v0, true))
+
   // named params make the hot path three register reads instead of three
   // `arguments` element loads; modules are strict, so params never alias
   // `arguments` (still used for arity and the 4+ overflow copy). Arity 2
@@ -1296,9 +1366,7 @@ export const wrapClsx = (
       return resolveArgs([v0, v1, v2], true)
     }
     if (nArgs === 1)
-      return mergeString(
-        typeof v0 === "string" ? v0 : resolveValue(v0 as ClassValue, true)
-      )
+      return typeof v0 === "string" ? mergeString(v0) : resolve1(v0)
     // 4+ arity: probe predictions in place over `arguments` (indexed
     // reads only, so it never materializes) — a predicted render-loop
     // call allocates nothing. Only a genuine miss copies into an array
