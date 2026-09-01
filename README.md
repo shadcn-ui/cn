@@ -107,8 +107,8 @@ bench suite) through each library, one isolated process per library and
 repository. Geometric mean across the 58 repositories: `cn` is **38× faster**
 than `clsx` + `tailwind-merge` and 0.93× cnfast 0.2.0. cnfast leads 52 of the
 58 by 1 to 3 ns per call; `cn` leads 6, including the largest corpus
-(posthog, 18,352 calls) by 3.2×. The per-repository table is in
-[docs/how-it-works.md](https://github.com/shadcn-ui/cn/blob/main/docs/how-it-works.md#real-repository-replays).
+(posthog, 18,352 calls) by 3.2×. `pnpm bench:corpus` prints the
+per-repository table.
 
 `cn` ships the least JavaScript to parse in every setup, 26 KB minified.
 
