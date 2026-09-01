@@ -154,6 +154,113 @@ switch (shape) {
       { "bg-accent": i % 2 === 0 },
     ])
     break
+  case "shared-base-64": {
+    const shared = bases[0] + " z-shared"
+    calls = mk(64, (i) => [shared, variants[i % 8] + " y-" + i])
+    break
+  }
+  case "shared-base-64-shuffled": {
+    const shared = bases[0] + " z-shared"
+    const orig = mk(64, (i) => [shared, variants[i % 8] + " y-" + i])
+    let seed = 7
+    calls = {
+      length: 64,
+      get() {
+        seed = (seed * 1664525 + 1013904223) >>> 0
+        return orig[seed % 64]
+      },
+    }
+    break
+  }
+  case "distinct-base-64-shuffled": {
+    const orig = mk(64, (i) => [
+      bases[i % 8] + " z-" + i,
+      variants[i % 8] + " y-" + i,
+    ])
+    let seed = 7
+    calls = {
+      length: 64,
+      get() {
+        seed = (seed * 1664525 + 1013904223) >>> 0
+        return orig[seed % 64]
+      },
+    }
+    break
+  }
+  case "mixed-dynamic-48": {
+    let t = 0
+    const stable = mk(24, (i) => [
+      bases[i % 8] + " z-" + i,
+      variants[i % 8],
+      i % 3 !== 2 && extras[i % 4],
+    ])
+    const dyn = mk(24, (i) => [bases[i % 8] + " d-" + i, variants[i % 8]])
+    calls = {
+      length: 48,
+      get(i) {
+        if (i % 2 === 0) return stable[i >> 1]
+        const c = dyn[i >> 1]
+        return [c[0], c[1], "translate-x-[" + t++ + "px]"]
+      },
+    }
+    break
+  }
+  case "stable-24-after-dynamic": {
+    let t = 0
+    const stable = mk(24, (i) => [
+      bases[i % 8] + " z-" + i,
+      variants[i % 8],
+      i % 3 !== 2 && extras[i % 4],
+    ])
+    const dynBase = bases[1] + " d"
+    calls = {
+      length: 48,
+      get(i) {
+        if (i < 24) return stable[i]
+        return [dynBase, "w-[" + t++ + "px]"]
+      },
+    }
+    break
+  }
+  case "shared-base-256": {
+    const shared = bases[0] + " z-shared"
+    calls = mk(256, (i) => [shared, variants[i % 8] + " y-" + i])
+    break
+  }
+  case "shared-base-256-shuffled": {
+    const shared = bases[0] + " z-shared"
+    const orig = mk(256, (i) => [shared, variants[i % 8] + " y-" + i])
+    let seed = 7
+    calls = {
+      length: 256,
+      get() {
+        seed = (seed * 1664525 + 1013904223) >>> 0
+        return orig[seed % 256]
+      },
+    }
+    break
+  }
+  case "unique-arb-short-base": {
+    let t = 0
+    calls = {
+      length: 64,
+      get() {
+        return ["flex", "w-[" + t++ + "px]"]
+      },
+    }
+    break
+  }
+  case "unique-arb-long-base": {
+    let t = 0
+    const b = bases[1] + " " + variants[0] + " " + extras[1]
+    calls = {
+      length: 64,
+      get() {
+        return [b, "w-[" + t++ + "px]"]
+      },
+    }
+    break
+  }
   case "array-24":
     calls = mk(24, (i) => [[bases[i % 8] + " z-" + i, variants[i % 8]]])
     break
