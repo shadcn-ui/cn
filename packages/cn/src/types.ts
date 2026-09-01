@@ -92,9 +92,18 @@ export interface Engine {
   merge: (...inputs: ClassNameValue[]) => string
   /** merge one already-joined class string */
   mergeString: (input: string) => string
+  /**
+   * doorkeeper probe for a string that was just built: records this
+   * sighting and reports whether an earlier one exists. A first sighting
+   * is best merged with `mergeUncached` and not cached anywhere.
+   */
+  seenBefore: (input: string) => boolean
   /** merge one string, bypassing the whole-string cache */
   mergeUncached: (input: string) => string
 }
+
+/** what `wrapClsx` needs from an engine to handle freshly joined strings */
+export type FreshMerge = Pick<Engine, "seenBefore" | "mergeUncached">
 
 /** the `cn` function shape: clsx arguments, merged output */
 export type CnFunction = (...inputs: ClassValue[]) => string

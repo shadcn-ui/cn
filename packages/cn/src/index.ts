@@ -7,7 +7,7 @@ const instance = /* @__PURE__ */ createEngine(tables)
  * Merge Tailwind CSS classes with clsx-style arguments (strings, arrays,
  * objects, conditionals). Drop-in replacement for `twMerge(clsx(...))`.
  */
-export const cn = /* @__PURE__ */ wrapClsx(instance.mergeString)
+export const cn = /* @__PURE__ */ wrapClsx(instance.mergeString, instance)
 
 /** tailwind-merge–compatible variadic merge (strings + nested arrays). */
 export const twMerge = instance.merge

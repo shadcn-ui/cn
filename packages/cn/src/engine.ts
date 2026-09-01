@@ -27,6 +27,7 @@ import type {
   CnFunction,
   Engine,
   EngineOptions,
+  FreshMerge,
   Tables,
   ValidatorImpls,
 } from "./types.js"
@@ -67,6 +68,16 @@ const spanHash = (str: string, s: number, e: number): number => {
       0xc2b2ae35
     )
     h ^= (str.charCodeAt(e - 2) << 8) ^ (str.charCodeAt(e - 1) << 16)
+    // arbitrary values keep their digits a few chars from an end
+    // (`w-[123px]`, `bg-[#a1b2c3]`), between the samples above: fold five
+    // more chars from each end, walking inwards, so those strings stop
+    // colliding (one loop, two reads: the fold has to stay small enough
+    // for mergeCached to keep inlining into its callers)
+    for (let p = s + 3, q = e - 4; p < s + 8 && p < q; p++, q--)
+      h = Math.imul(
+        h ^ str.charCodeAt(p) ^ (str.charCodeAt(q) << 8),
+        0x01000193
+      )
   }
   return (h ^ (h >>> 15)) | 0
 }
@@ -992,21 +1003,19 @@ export const createEngine = (
     doorEpoch = (doorEpoch + 1) | 0
     doorMarks = 0
   }
+  // doorkeeper: a string seen once in the current or previous generation
+  // admits on this sighting. Slots store the full 32-bit hash (xor epoch),
+  // so a slot collision must match all hash bits to count as a sighting —
+  // unique streams (SSR) almost never false-admit, which would cost a
+  // dictionary insert plus generation churn per call. Stale slots from two
+  // generations back self-invalidate via the epoch xor. Slot bits never
+  // overlap the base bit, so the sibling generation's slot is one xor away.
   const mergeCached = (input: string): string => {
     // hit path first: warm, identity-stable strings stay at one
     // object-property read with a V8-cached hash
     let merged = cache[input]
     if (merged !== undefined) return merged
-    // doorkeeper: a string seen once in the current or previous
-    // generation admits on this sighting. Slots store the full
-    // 32-bit hash (xor epoch), so a slot collision must match all
-    // hash bits to count as a sighting — unique streams (SSR)
-    // almost never false-admit, which would cost a dictionary
-    // insert plus generation churn per call. Stale slots from two
-    // generations back self-invalidate via the epoch xor.
     const hash = spanHash(input, 0, input.length)
-    // slot bits never overlap the base bit, so the sibling
-    // generation's slot is one xor away
     const slot = (hash & (DOOR_SIZE - 1)) + doorBase
     const wasSeen =
       door[slot] === (hash ^ doorEpoch) ||
@@ -1033,6 +1042,23 @@ export const createEngine = (
     }
     return merged
   }
+  // a string that was just built cannot be cached by identity, and a
+  // never-seen key is the expensive dictionary case (V8 hashes and
+  // internalizes it: ~200 ns at 17 chars, ~1.1 µs at 360). The doorkeeper
+  // answers "never seen" in O(1) instead, so the caller can merge a
+  // one-shot string uncached and skip caching it anywhere
+  const seenBefore = (input: string): boolean => {
+    const hash = spanHash(input, 0, input.length)
+    const slot = (hash & (DOOR_SIZE - 1)) + doorBase
+    if (
+      door[slot] === (hash ^ doorEpoch) ||
+      door[slot ^ DOOR_SIZE] === (hash ^ (doorEpoch - 1))
+    )
+      return true
+    door[slot] = hash ^ doorEpoch
+    if (++doorMarks > DOOR_SIZE) rotateDoor()
+    return false
+  }
   // JSC will not inline mergeCached with the doorkeeper body in it, so it
   // gets a two-line hit front that only falls through to the full function
   // on a miss (the repeated lookup there rides the hash the front just
@@ -1054,7 +1080,12 @@ export const createEngine = (
       : mergeString(twJoin.apply(null, arguments as never))
   } as Engine["merge"]
 
-  return { merge, mergeString, mergeUncached: mergeClassList }
+  return {
+    merge,
+    mergeString,
+    seenBefore: cacheSize === 0 ? () => false : seenBefore,
+    mergeUncached: mergeClassList,
+  }
 }
 
 // shared value resolution. clsxMode adds clsx's extras (numbers, object
@@ -1135,8 +1166,12 @@ interface ArgEntry {
 }
 
 export const wrapClsx = (
-  mergeString: (input: string) => string
+  mergeString: (input: string) => string,
+  fresh?: FreshMerge
 ): CnFunction => {
+  // without an engine's doorkeeper every join counts as seen and is cached
+  const seenBefore = fresh === undefined ? () => true : fresh.seenBefore
+  const mergeUncached = fresh === undefined ? mergeString : fresh.mergeUncached
   // arg-identity cache: repeated calls whose truthy args are the same string
   // *instances* (stable JSX literals — the dominant component shape) skip
   // the re-join and the O(n) hash of the fresh joined string. Only engages
@@ -1266,6 +1301,10 @@ export const wrapClsx = (
         joined += " " + (v as string)
         a.push(v as string)
       }
+      // a first sighting is merged straight through: no dictionary lookup
+      // on a fresh key, no cache entry anywhere, chain left untouched. A
+      // repeat pays the lookup once and caches like before.
+      if (!seenBefore(joined)) return mergeUncached(joined)
       hit = {
         r: mergeString(joined),
         t: a.length,
@@ -1393,5 +1432,7 @@ export const createCn = (
   tables: Tables,
   validatorImpls?: ValidatorImpls,
   options?: EngineOptions
-): CnFunction =>
-  wrapClsx(createEngine(tables, validatorImpls, options).mergeString)
+): CnFunction => {
+  const engine = createEngine(tables, validatorImpls, options)
+  return wrapClsx(engine.mergeString, engine)
+}

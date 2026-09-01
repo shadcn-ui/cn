@@ -58,12 +58,14 @@ for (const r of rows)
 //      two-generation doorkeeper spent ~210 B of gzip to make the 30×
 //      headline reproducible and fix a 6-15× real-repo corpus regression;
 //      gzip sits ~7% over cnfast while parse stays well under
-//   3. absolute transfer budget: 10,650 B (creep tripwire); raised from
-//      10,500 on 2026-09-01 for the int32 epoch guard (~20 B), and to
+//   3. absolute transfer budget: 10,750 B (creep tripwire); raised from
+//      10,500 on 2026-09-01 for the int32 epoch guard (~20 B), to
 //      10,650 the same day for routing object/array args through the arg
 //      cache, the lone-array arg path, and the JSC-only thin cache front
 //      (~85 B on CI's zlib; 0.34x object args, 0.10x lone arrays, 0.62x
-//      recurring strings on bun)
+//      recurring strings on bun), and to 10,750 for doorkeeper-gated
+//      caching of joined strings (~130 B; 0.16x-0.43x on sites with a
+//      dynamic arbitrary value, 0.83x cold arbitrary-value renders)
 const ours = rows[0]
 const cnfast = rows[4]
 let fail = false
@@ -79,11 +81,11 @@ if (ours.gz > cnfast.gz * 1.08) {
   )
   fail = true
 }
-if (ours.gz > 10650) {
-  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 10650`)
+if (ours.gz > 10750) {
+  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 10750`)
   fail = true
 }
 if (fail) process.exit(1)
 console.log(
-  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 10650`
+  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 10750`
 )

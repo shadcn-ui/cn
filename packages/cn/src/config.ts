@@ -97,13 +97,11 @@ const buildEngine = (input?: CreateCnInput): Engine => {
  * ```
  */
 export const createCn = (input?: CreateCnInput): CnFunction => {
-  let inner: CnFunction | null = null
-  return wrapClsx((s: string) => {
-    if (inner === null) {
-      const engine = buildEngine(input)
-      inner = engine.mergeString as CnFunction
-    }
-    return (inner as (s: string) => string)(s)
+  let engine: Engine | null = null
+  const getEngine = (): Engine => engine ?? (engine = buildEngine(input))
+  return wrapClsx((s: string) => getEngine().mergeString(s), {
+    seenBefore: (s: string) => getEngine().seenBefore(s),
+    mergeUncached: (s: string) => getEngine().mergeUncached(s),
   })
 }
 
