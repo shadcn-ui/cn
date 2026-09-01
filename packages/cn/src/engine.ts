@@ -992,9 +992,11 @@ export const createEngine = (
     doorEpoch = (doorEpoch + 1) | 0
     doorMarks = 0
   }
-  // miss body outlined so the hit front stays small enough to inline at
-  // every caller (JSC in particular refuses to inline the doorkeeper body)
-  const mergeMiss = (input: string): string => {
+  const mergeCached = (input: string): string => {
+    // hit path first: warm, identity-stable strings stay at one
+    // object-property read with a V8-cached hash
+    let merged = cache[input]
+    if (merged !== undefined) return merged
     // doorkeeper: a string seen once in the current or previous
     // generation admits on this sighting. Slots store the full
     // 32-bit hash (xor epoch), so a slot collision must match all
@@ -1002,24 +1004,23 @@ export const createEngine = (
     // almost never false-admit, which would cost a dictionary
     // insert plus generation churn per call. Stale slots from two
     // generations back self-invalidate via the epoch xor.
-    const h = spanHash(input, 0, input.length)
+    const hash = spanHash(input, 0, input.length)
     // slot bits never overlap the base bit, so the sibling
     // generation's slot is one xor away
-    const slot = (h & (DOOR_SIZE - 1)) + doorBase
-    const seen =
-      door[slot] === (h ^ doorEpoch) ||
-      door[slot ^ DOOR_SIZE] === (h ^ (doorEpoch - 1))
-    let r
-    if (seen) {
-      r = prevCache[input]
-      if (r !== undefined) {
-        cache[input] = r // promote
-        return r
+    const slot = (hash & (DOOR_SIZE - 1)) + doorBase
+    const wasSeen =
+      door[slot] === (hash ^ doorEpoch) ||
+      door[slot ^ DOOR_SIZE] === (hash ^ (doorEpoch - 1))
+    if (wasSeen) {
+      merged = prevCache[input]
+      if (merged !== undefined) {
+        cache[input] = merged // promote
+        return merged
       }
     }
-    r = mergeClassList(input)
-    if (seen) {
-      cache[input] = r
+    merged = mergeClassList(input)
+    if (wasSeen) {
+      cache[input] = merged
       if (++cacheCount > cacheSize) {
         cacheCount = 0
         prevCache = cache
@@ -1027,63 +1028,25 @@ export const createEngine = (
         rotateDoor()
       }
     } else {
-      door[slot] = h ^ doorEpoch
+      door[slot] = hash ^ doorEpoch
       if (++doorMarks > DOOR_SIZE) rotateDoor()
     }
-    return r
+    return merged
   }
-  // JSC only inlines a tiny hit front, so there the miss body lives in
-  // mergeMiss; V8 inlines the whole closure and loses ~15% on long strings
-  // when the body is outlined, so it keeps the single-closure form
+  // JSC will not inline mergeCached with the doorkeeper body in it, so it
+  // gets a two-line hit front that only falls through to the full function
+  // on a miss (the repeated lookup there rides the hash the front just
+  // cached). V8 inlines the full closure and loses ~15% on long strings
+  // with the body outlined, so it uses mergeCached directly.
   const mergeString =
     cacheSize === 0
       ? mergeClassList
       : IS_JSC
         ? (input: string): string => {
-            const r = cache[input]
-            return r !== undefined ? r : mergeMiss(input)
+            const merged = cache[input]
+            return merged !== undefined ? merged : mergeCached(input)
           }
-        : (input: string): string => {
-            // hit path first: warm, identity-stable strings stay at one
-            // object-property read with a V8-cached hash
-            let r = cache[input]
-            if (r !== undefined) return r
-            // doorkeeper: a string seen once in the current or previous
-            // generation admits on this sighting. Slots store the full
-            // 32-bit hash (xor epoch), so a slot collision must match all
-            // hash bits to count as a sighting — unique streams (SSR)
-            // almost never false-admit, which would cost a dictionary
-            // insert plus generation churn per call. Stale slots from two
-            // generations back self-invalidate via the epoch xor.
-            const h = spanHash(input, 0, input.length)
-            // slot bits never overlap the base bit, so the sibling
-            // generation's slot is one xor away
-            const slot = (h & (DOOR_SIZE - 1)) + doorBase
-            const seen =
-              door[slot] === (h ^ doorEpoch) ||
-              door[slot ^ DOOR_SIZE] === (h ^ (doorEpoch - 1))
-            if (seen) {
-              r = prevCache[input]
-              if (r !== undefined) {
-                cache[input] = r // promote
-                return r
-              }
-            }
-            r = mergeClassList(input)
-            if (seen) {
-              cache[input] = r
-              if (++cacheCount > cacheSize) {
-                cacheCount = 0
-                prevCache = cache
-                cache = Object.create(null)
-                rotateDoor()
-              }
-            } else {
-              door[slot] = h ^ doorEpoch
-              if (++doorMarks > DOOR_SIZE) rotateDoor()
-            }
-            return r
-          }
+        : mergeCached
 
   const merge = function (): string {
     return arguments.length === 1 && typeof arguments[0] === "string"
@@ -1244,19 +1207,17 @@ export const wrapClsx = (
     let first = ""
     let firstIdx = -1
     let truthy = 0
-    let resolved = false
+    let hasResolvedValue = false
     for (let i = 0; i < nArgs; i++) {
       let v = vals[i]
       if (!v) continue
       if (typeof v !== "string") {
-        // objects/arrays resolve in place and then ride the string path.
-        // A one-key object resolves to that key string itself, so its
-        // identity is stable across renders and the arg cache still hits;
-        // going through clsx instead would hash a fresh joined string on
-        // every call.
+        // objects and arrays resolve in place and ride the string path: a
+        // one-key object resolves to that key string itself, whose identity
+        // is stable across renders, so the arg cache still hits
         v = vals[i] = resolveValue(v as ClassValue, true)
         if (!v) continue
-        resolved = true
+        hasResolvedValue = true
       }
       if (firstIdx < 0) {
         first = v
@@ -1266,9 +1227,9 @@ export const wrapClsx = (
     }
     if (truthy === 0) return ""
     if (truthy === 1) return mergeString(first) // cheap path; chain untouched
-    if (resolved) {
-      // the resolved strings may be identity-stable (a one-key object
-      // resolves to its key); retry the prediction before the bucket walk
+    if (hasResolvedValue) {
+      // the probes above saw the raw objects; retry them over the resolved
+      // strings before paying for the bucket walk
       if (pred !== null && matchN(pred, vals)) {
         lastHit = pred
         return pred.r
@@ -1331,12 +1292,12 @@ export const wrapClsx = (
     return hit.r
   }
 
-  // cn([a, b]) is cn(a, b) under clsx's flattening, so a one-arg array
-  // takes the arg path and its stable element identities hit the cache
-  const resolve1 = (v0: ClassValue): string =>
-    Array.isArray(v0)
-      ? resolveArgs(v0.slice(), false)
-      : mergeString(resolveValue(v0, true))
+  // cn([a, b]) is cn(a, b) under clsx's flattening, so a lone array takes
+  // the arg path and its stable element identities hit the cache
+  const mergeSingleValue = (value: ClassValue): string =>
+    Array.isArray(value)
+      ? resolveArgs(value.slice(), false)
+      : mergeString(resolveValue(value, true))
 
   // named params make the hot path three register reads instead of three
   // `arguments` element loads; modules are strict, so params never alias
@@ -1366,7 +1327,7 @@ export const wrapClsx = (
       return resolveArgs([v0, v1, v2], true)
     }
     if (nArgs === 1)
-      return typeof v0 === "string" ? mergeString(v0) : resolve1(v0)
+      return typeof v0 === "string" ? mergeString(v0) : mergeSingleValue(v0)
     // 4+ arity: probe predictions in place over `arguments` (indexed
     // reads only, so it never materializes) — a predicted render-loop
     // call allocates nothing. Only a genuine miss copies into an array
