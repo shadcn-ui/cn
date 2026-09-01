@@ -1194,12 +1194,16 @@ export const wrapClsx = (
     let firstIdx = -1
     let truthy = 0
     for (let i = 0; i < nArgs; i++) {
-      const v = vals[i]
+      let v = vals[i]
       if (!v) continue
       if (typeof v !== "string") {
-        // non-string arg: full clsx resolve. Chain left untouched so a
-        // stray object call doesn't sever a stable sequence.
-        return mergeString(clsx.apply(null, vals as never))
+        // objects/arrays resolve in place and then ride the string path.
+        // A one-key object resolves to that key string itself, so its
+        // identity is stable across renders and the arg cache still hits;
+        // going through clsx instead would hash a fresh joined string on
+        // every call.
+        v = vals[i] = resolveValue(v as ClassValue, true)
+        if (!v) continue
       }
       if (firstIdx < 0) {
         first = v
