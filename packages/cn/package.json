@@ -80,7 +80,7 @@
     "bin"
   ],
   "scripts": {
-    "build": "tsdown",
+    "build": "tsdown && node scripts/check-dts.mjs",
     "compile-tables": "node scripts/compile-tables.mjs",
     "prepack": "node -e \"const fs=require('fs');fs.copyFileSync('../../README.md','README.md');fs.copyFileSync('../../LICENSE','LICENSE')\"",
     "postpack": "node -e \"const fs=require('fs');fs.rmSync('README.md',{force:true});fs.rmSync('LICENSE',{force:true})\""

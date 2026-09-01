@@ -56,6 +56,16 @@ export interface ConfigExtension {
   >
 }
 
+/**
+ * Accepted config input: an `{ extend, override, prefix }` extension, a
+ * `(defaultConfig) => config` transform, or a complete config. Lives here
+ * (not in config.ts) so the `index` entry can re-export it without pulling
+ * config.ts into a shared declaration chunk that collides with the
+ * `cn/config` entry's own d.ts filename.
+ */
+export type CreateCnInput =
+  ConfigExtension | ((config: CnConfig) => CnConfig) | CnConfig
+
 const isMarker = (def: object, key: string): boolean => {
   const keys = Object.keys(def)
   return (

@@ -10,6 +10,7 @@ import {
   type CnConfig,
   type ClassGroupDef,
   type ConfigExtension,
+  type CreateCnInput,
 } from "./compiler.js"
 import { getDefaultCnConfig } from "./default-config.generated.js"
 import { createEngine, wrapClsx } from "./engine.js"
@@ -17,7 +18,7 @@ import type { CnFunction, Engine } from "./types.js"
 
 export { getDefaultCnConfig as defaultConfig }
 export { mergeConfigs }
-export type { CnConfig, ClassGroupDef, ConfigExtension }
+export type { CnConfig, ClassGroupDef, ConfigExtension, CreateCnInput }
 export type {
   DefaultClassGroupIds,
   DefaultThemeGroupIds,
@@ -58,9 +59,6 @@ export const validators = {
   isArbitraryVariableShadow: { $v: "isArbitraryVariableShadow" },
   isArbitraryVariableWeight: { $v: "isArbitraryVariableWeight" },
 } as const
-
-export type CreateCnInput =
-  ConfigExtension | ((config: CnConfig) => CnConfig) | CnConfig
 
 const isFullConfig = (input: object): input is CnConfig =>
   "classGroups" in input &&
