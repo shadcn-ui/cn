@@ -29,6 +29,7 @@ jobs:
           FUZZ_ITERS: "300000"
       - run: node packages/conformance/tests/custom-config.mjs
       - run: node packages/conformance/tests/cli.mjs
+      - run: node packages/conformance/tests/hardening.mjs
       - name: size gate (default entry must stay smaller than cnfast)
         run: node packages/conformance/scripts/size.mjs
 

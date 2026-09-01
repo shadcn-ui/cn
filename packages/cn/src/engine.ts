@@ -887,7 +887,15 @@ export const createEngine = (
       claimKeys = new Int32Array(CLAIM_TABLE)
       claimEpochs = new Int32Array(CLAIM_TABLE)
     }
-    epoch++
+    // epoch is stored in Int32Arrays, so it has to truncate the same way; on
+    // the wrap through 0 the tables must be cleared or unclaimed slots read
+    // as claimed
+    epoch = (epoch + 1) | 0
+    if (epoch === 0) {
+      claim0.fill(0)
+      claimEpochs.fill(0)
+      epoch = 1
+    }
     let didDrop = false
     for (let t = tokenCount - 1; t >= 0; t--) {
       const gid = tokGid[t]
