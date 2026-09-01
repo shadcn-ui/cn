@@ -1,0 +1,26 @@
+[
+  ["    antialiased"],
+  ["action"],
+  ["app"],
+  ["border border-dashed border-red-600 pointer-events-none"],
+  ["counter"],
+  ["host"],
+  [
+    "inline-flex items-center justify-center rounded-md text-sm font-medium",
+    "bg-blue-600 text-white",
+    "border border-gray-300 bg-transparent",
+    "h-9 px-4",
+    "h-8 px-3",
+    "default",
+    "default"
+  ],
+  ["leaf"],
+  ["list-disc list-inside"],
+  ["p-12 flex flex-col gap-4"],
+  [
+    "transition-colors text-black px-2 py-1 rounded-md",
+    "bg-red-600 text-white hover:bg-red-700",
+    "bg-white hover:bg-neutral-200"
+  ],
+  ["wrap"]
+]

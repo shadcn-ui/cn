@@ -1,0 +1,183 @@
+[
+  ["  animate-spin fill-stone-600 text-stone-200", "h-4 w-4"],
+  ["-mx-1 h-px bg-border"],
+  [
+    "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5"
+  ],
+  [
+    "absolute right-2 top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-purple-500 hover:bg-purple-900"
+  ],
+  [
+    "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+  ],
+  ["border-l-4 border-primary"],
+  [
+    "fixed inset-0 z-50 bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
+  ],
+  [
+    "fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg"
+  ],
+  ["flex"],
+  ["flex  p-1 "],
+  ["flex absolute right-5 top-5 z-10 mb-5 gap-2"],
+  [
+    "flex cursor-pointer items-center justify-between px-2 py-1 text-sm hover:bg-accent"
+  ],
+  [
+    "flex cursor-pointer items-center justify-between rounded-sm px-2 py-1 text-sm hover:bg-accent"
+  ],
+  ["flex flex-col"],
+  ["flex flex-col space-y-1.5 text-center sm:text-left"],
+  ["flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2"],
+  ["flex gap-2 items-start my-4"],
+  ["flex gap-2 px-4"],
+  [
+    "flex h-10 w-10 items-center justify-center rounded-md border border-muted bg-background"
+  ],
+  [
+    "flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "flex h-12 w-full items-center px-4 text-sm font-medium text-muted-foreground text-purple-500"
+  ],
+  [
+    "flex h-8 items-center rounded-sm p-1 text-red-600 transition-all hover:bg-red-100 dark:hover:bg-red-800"
+  ],
+  [
+    "flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground"
+  ],
+  ["flex items-center border-b px-4"],
+  ["flex items-center gap-2"],
+  ["flex items-center justify-center gap-0.5"],
+  ["flex items-center space-x-2"],
+  ["flex max-h-[400px]"],
+  ["flex max-w-3xl h-[calc(100vh-24px)]"],
+  ["flex min-h-screen flex-col items-center gap-4 py-4 sm:px-5"],
+  [
+    "flex touch-none select-none transition-colors",
+    "h-full w-2.5 border-l border-l-transparent p-[1px]",
+    "h-2.5 flex-col border-t border-t-transparent p-[1px]"
+  ],
+  [
+    "flex w-fit max-w-[90vw] overflow-hidden rounded-md border border-muted bg-background shadow-xl"
+  ],
+  ["flex w-full items-center justify-between rounded px-2 py-1.5 text-sm"],
+  [
+    "flex w-full items-center space-x-2 rounded-md px-2 py-1 text-left text-sm hover:bg-accent aria-selected:bg-accent"
+  ],
+  ["flex w-full max-w-screen-lg items-center gap-2 px-4 sm:mb-[calc(20vh)]"],
+  ["flex-1 bg-background p-1 text-sm outline-none"],
+  ["font-medium"],
+  ["gap-1 rounded-none text-purple-500"],
+  ["gap-2"],
+  ["gap-2 px-4"],
+  ["gap-2 rounded-none"],
+  ["gap-2 rounded-none border-none"],
+  ["gap-2 rounded-none border-none hover:bg-accent focus:ring-0"],
+  ["h-1.5 w-1.5 animate-bounce rounded-full bg-purple-500"],
+  [
+    "h-1.5 w-1.5 animate-bounce rounded-full bg-purple-500 [animation-delay:-0.15s]"
+  ],
+  [
+    "h-1.5 w-1.5 animate-bounce rounded-full bg-purple-500 [animation-delay:-0.3s]"
+  ],
+  ["h-3 w-3"],
+  ["h-4 w-4"],
+  ["h-4 w-4", "text-blue-500"],
+  ["h-4 w-4 text-muted-foreground"],
+  ["h-4 w-4 text-purple-500"],
+  ["h-5 w-5"],
+  ["h-8"],
+  ["h-full w-full rounded-[inherit]"],
+  [
+    "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+    "bg-primary text-primary-foreground hover:bg-primary/90",
+    "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+    "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+    "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+    "hover:bg-accent hover:text-accent-foreground",
+    "text-primary underline-offset-4 hover:underline",
+    "h-10 px-4 py-2",
+    "h-9 rounded-md px-3",
+    "h-11 rounded-md px-8",
+    "h-10 w-10",
+    "default",
+    "default"
+  ],
+  ["leading-normal -mb-2"],
+  ["list-decimal list-outside leading-3 -mt-2"],
+  ["list-disc list-outside leading-3 -mt-2"],
+  ["max-h-[300px] overflow-y-auto overflow-x-hidden"],
+  ["max-h-screen"],
+  ["ml gap-2"],
+  ["ml-2 mt-1"],
+  ["ml-auto"],
+  ["ml-auto text-xs tracking-widest text-muted-foreground"],
+  ["mr-2 h-4 w-4 shrink-0  "],
+  ["mr-2 h-4 w-4 shrink-0 text-purple-500 "],
+  ["mt-4 mb-6 border-t border-muted-foreground"],
+  [
+    "my-1 flex max-h-80 w-48 flex-col overflow-hidden overflow-y-auto rounded border p-1 shadow-xl "
+  ],
+  ["my-1 px-2 text-sm font-semibold text-muted-foreground"],
+  ["not-prose"],
+  ["not-prose pl-2 "],
+  ["opacity-40 rounded-lg border border-stone-200"],
+  ["overflow-hidden p-0 shadow-lg"],
+  [
+    "overflow-hidden p-1 text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground"
+  ],
+  ["p-2 text-xs font-medium text-muted-foreground"],
+  ["prose p-2 px-4 prose-sm"],
+  ["px-2 text-muted-foreground"],
+  ["py-6 text-center text-sm"],
+  ["relative"],
+  ["relative flex-1 rounded-full bg-border"],
+  [
+    "relative min-h-[500px] w-full max-w-screen-lg border-muted bg-background sm:mb-[calc(20vh)] sm:rounded-lg sm:border sm:shadow-lg"
+  ],
+  ["relative overflow-hidden"],
+  ["relative w-full max-w-screen-lg"],
+  ["rounded-lg bg-accent px-2 py-1 text-sm text-muted-foreground"],
+  ["rounded-lg bg-accent px-2 py-1 text-sm text-muted-foreground", "hidden"],
+  ["rounded-lg border border-muted"],
+  ["rounded-md bg-muted  px-1.5 py-1 font-mono font-medium"],
+  [
+    "rounded-md bg-muted text-muted-foreground border p-5 font-mono font-medium"
+  ],
+  ["rounded-none"],
+  ["rounded-none w-12"],
+  ["rounded-sm border  p-1"],
+  ["rounded-sm border p-1"],
+  ["rounded-sm border px-2 py-px font-medium"],
+  ["rounded-sm px-1"],
+  ["shrink-0 bg-border", "h-[1px] w-full", " w-[1px]"],
+  ["size-4", "math"],
+  ["size-4", "text-blue-500", "math"],
+  ["sr-only"],
+  ["text-base"],
+  ["text-foreground rounded p-1 hover:bg-accent cursor-pointer"],
+  ["text-lg font-semibold leading-none tracking-tight"],
+  [
+    "text-muted-foreground underline underline-offset-[3px] hover:text-primary transition-colors cursor-pointer"
+  ],
+  ["text-sm text-muted-foreground"],
+  ["text-xs text-muted-foreground"],
+  ["underline decoration-stone-400 underline-offset-4", "link"],
+  [
+    "underline decoration-stone-400 underline-offset-4",
+    "text-blue-500",
+    "link"
+  ],
+  ["w-[350px]"],
+  ["w-48 p-1"],
+  ["w-52 p-2"],
+  ["w-60 p-0"],
+  ["whitespace-nowrap text-sm"],
+  [
+    "z-50 h-auto max-h-[330px] overflow-y-auto rounded-md border border-muted bg-background px-1 py-2 shadow-md transition-all"
+  ],
+  [
+    "z-50 w-72 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+  ]
+]

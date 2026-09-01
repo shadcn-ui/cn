@@ -9,6 +9,7 @@
     "test": "pnpm --filter cn run build && pnpm --filter conformance run test",
     "test:src": "pnpm --filter conformance run test:src",
     "bench": "pnpm --filter conformance run bench",
+    "bench:corpus": "pnpm --filter conformance run bench:corpus",
     "size": "pnpm --filter conformance run size",
     "vendor-config": "pnpm --filter conformance run vendor-config",
     "typecheck": "pnpm --filter cn exec tsc",

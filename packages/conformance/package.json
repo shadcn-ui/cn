@@ -7,6 +7,7 @@
     "test": "node tests/correctness.mjs && node tests/fuzz.mjs && node tests/custom-config.mjs && node tests/cli.mjs && node tests/hardening.mjs",
     "test:src": "node tests/correctness.mjs --src && node tests/fuzz.mjs --src",
     "bench": "node bench/bench.mjs",
+    "bench:corpus": "node bench/corpus.mjs",
     "size": "node scripts/size.mjs",
     "vendor-config": "node scripts/vendor-config.mjs",
     "speedlab": "node speedlab/build.mjs"

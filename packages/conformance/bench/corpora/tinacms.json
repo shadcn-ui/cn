@@ -1,0 +1,2613 @@
+[
+  ["    }  ", "text-gray-700", "text-gray-300"],
+  ["  border-l border-gray-200  "],
+  [
+    "  flex justify-center w-full shadow rounded bg-white cursor-pointer relative inline-flex items-center px-2 py-2 border border-gray-200 hover:text-white text-sm font-medium transition-all ease-out duration-150 hover:bg-blue-500 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500",
+    "rounded-l border-r-0",
+    "rounded-r border-l-0"
+  ],
+  ["  h-2 rounded-full transition-all duration-300 ease-out"],
+  ["  h-auto flex-shrink-0  ", "w-5", "w-6"],
+  [
+    "  m-0 overflow-hidden flex flex-col min-h-[160px] [&:last-child]:rounded-[0_0_5px_5px]  ",
+    "p-5",
+    "p-0"
+  ],
+  ["  mx-auto px-6 sm:px-8    "],
+  ["  p-3 rounded-lg flex-shrink-0"],
+  [
+    "  text-blue-500 transition-opacity\tduration-500 absolute right-0 w-full h-full px-3 py-2 bg-white bg-opacity-90 flex items-center justify-center text-center tracking-wide font-medium z-10",
+    "opacity-0",
+    "opacity-100"
+  ],
+  [" w-[800px]"],
+  ["__tina-quick-editing-enabled"],
+  [
+    "-ml-1 z-10 w-2 shrink-0 cursor-col-resize touch-none select-none focus-visible:outline-none"
+  ],
+  [
+    "-ml-px cursor-pointer h-full relative inline-flex items-center px-1 py-0.5 rounded-r border border-gray-200 bg-white text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+  ],
+  ["-ml-px relative block"],
+  ["-mr-1 h-4 w-4 opacity-70 shrink-0"],
+  ["-mx-1 my-1 h-px bg-muted"],
+  ["-mx-6"],
+  ["-translate-x-full"],
+  [
+    "!px-2 !py-1.5 w-[4rem]",
+    "!px-3 !py-1.5 w-[20rem] max-w-0 overflow-hidden",
+    "!px-3 !py-1.5 w-[14rem] max-w-0 overflow-hidden",
+    "!pl-2 !pr-4 !py-1.5 w-[5.5rem] text-sm font-medium text-right whitespace-nowrap",
+    "!px-3 !py-1.5"
+  ],
+  ["!py-8 text-center text-gray-500"],
+  ["!size-3.5 text-muted-foreground"],
+  ["!w-full !h-[150px]"],
+  [
+    "[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]]:px-2 [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-input-wrapper]_svg]:size-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:size-5"
+  ],
+  ["[&_tr:last-child]:border-0"],
+  ["[&_tr]:border-b"],
+  ["[&>svg]:size-3.5"],
+  ["{{ $class }}"],
+  ["{{ $fontClass }} antialiased"],
+  [
+    "{{ $sizeClass }} bg-theme-50 dark:bg-theme-700/20 text-theme-700 dark:text-theme-200 rounded-full inline-block"
+  ],
+  [
+    "{{ index $widthClass $width }} mx-auto px-6 sm:px-8 {{ index $verticalPadding $size }} {{ $class }}"
+  ],
+  ["@container mx-auto max-w-5xl"],
+  [
+    "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6"
+  ],
+  ["@md/toolbar:flex hidden"],
+  [
+    "@min-4xl:max-w-full @min-4xl:grid-cols-3 @min-4xl:divide-x @min-4xl:divide-y-0 mx-auto mt-8 grid max-w-sm divide-y overflow-hidden"
+  ],
+  [
+    "absolute -bottom-1 left-4 w-2 h-2 bg-red-50 border-r border-b border-red-200 transform rotate-45"
+  ],
+  ["absolute -top-16 left-0 right-0 z-[1000000] mb-2"],
+  ["absolute bg-popover inset-0 opacity-0"],
+  [
+    "absolute block rounded-lg w-full h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
+  ],
+  [
+    "absolute bottom-0 left-1/2 w-[180%] h-full -translate-x-1/2 -z-1 opacity-10 dark:opacity-15  "
+  ],
+  [
+    "absolute bottom-2 left-2 rounded bg-black/65 text-white text-[10px] font-semibold tracking-wide px-1.5 py-0.5"
+  ],
+  [
+    "absolute h-1 bg-gradient-to-r from-transparent   to-transparent bottom-0 left-4 right-4 -z-1 opacity-5",
+    "via-white",
+    "via-black dark:via-white"
+  ],
+  [
+    "absolute h-1 bg-gradient-to-r from-transparent   to-transparent top-0 left-4 right-4 opacity-5",
+    "via-white",
+    "via-black dark:via-white"
+  ],
+  [
+    "absolute h-1 bg-gradient-to-r from-transparent to-transparent bottom-0 left-4 right-4 opacity-5 {{ if $isPrimary }}via-white{{ else }}via-black dark:via-white{{ end }}"
+  ],
+  [
+    "absolute h-1 bg-gradient-to-r from-transparent to-transparent bottom-0 left-4 right-4 opacity-5",
+    "via-white",
+    "via-black dark:via-white"
+  ],
+  [
+    "absolute h-1 bg-gradient-to-r from-transparent via-black dark:via-white to-transparent top-0 left-4 right-4 opacity-5"
+  ],
+  ["absolute inset-0 flex items-center justify-center"],
+  [
+    "absolute inset-0 flex items-center justify-center text-sm text-muted-foreground"
+  ],
+  [
+    "absolute inset-0 ring-2 ring-blue-100 ring-inset rounded z-10 pointer-events-none"
+  ],
+  [
+    "absolute inset-0 rounded-sm border cursor-pointer transition-all  ",
+    "border-blue-500 border-2 scale-110",
+    "border-gray-200 hover:scale-105"
+  ],
+  ["absolute inset-x-0 left-2 z-50 h-0.5 bg-brand/50", "-top-px", "-bottom-px"],
+  [
+    "absolute inset-y-0 z-20 hidden w-4 transition-all ease-linear group-data-[side=left]:-right-4 group-data-[side=right]:left-0 after:absolute after:inset-y-0 after:start-1/2 after:w-[2px] hover:after:bg-sidebar-border sm:flex ltr:-translate-x-1/2 rtl:-translate-x-1/2",
+    "in-data-[side=left]:cursor-w-resize in-data-[side=right]:cursor-e-resize",
+    "[[data-side=left][data-state=collapsed]_&]:cursor-e-resize [[data-side=right][data-state=collapsed]_&]:cursor-w-resize",
+    "group-data-[collapsible=offcanvas]:translate-x-0 group-data-[collapsible=offcanvas]:after:left-full hover:group-data-[collapsible=offcanvas]:bg-sidebar",
+    "[[data-side=left][data-collapsible=offcanvas]_&]:-right-2",
+    "[[data-side=right][data-collapsible=offcanvas]_&]:-left-2"
+  ],
+  ["absolute left-0 top-0 size-full bg-transparent outline-none"],
+  [
+    "absolute left-0 top-0 w-12 h-8 opacity-0 m-0  ",
+    "cursor-not-allowed pointer-events-none",
+    "cursor-pointer z-20"
+  ],
+  ["absolute left-0 top-0 z-panel h-full w-full bg-gray-50"],
+  [
+    "absolute left-1/2 -translate-x-1/2 w-px bg-gray-300 top-0  ",
+    "h-1/2",
+    "h-full"
+  ],
+  ["absolute left-2 flex size-3.5 items-center justify-center"],
+  ["absolute left-3 w-5 h-5 text-gray-400 pointer-events-none"],
+  [
+    "absolute left-5 top-1/2 origin-center -translate-y-1/2 transition-all duration-100 ease-out"
+  ],
+  ["absolute right-2 flex h-3.5 w-3.5 items-center justify-center"],
+  [
+    "absolute right-2 flex items-center justify-center text-gray-400 hover:text-gray-600"
+  ],
+  ["absolute right-2 flex size-3.5 items-center justify-center"],
+  [
+    "absolute right-3 top-1/2 -translate-y-1/2 w-5 h-auto text-blue-500 opacity-70 group-hover:opacity-100 transition-all ease-out duration-150"
+  ],
+  [
+    "absolute rounded-3xl left-0.5 top-1/2 w-[22px] h-[22px] shadow border transition-all ease-out duration-150  ",
+    "bg-blue-500 border-blue-600",
+    "bg-gray-250 border-gray-300"
+  ],
+  [
+    "absolute size-5 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity group-hover:opacity-100"
+  ],
+  [
+    "absolute size-5 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity"
+  ],
+  [
+    "absolute size-5 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transition-opacity transition-colors"
+  ],
+  [
+    "absolute top-0 py-1 pr-1 rounded-t-md z-10 flex w-full justify-end gap-0.5 select-none border-b border-[#CBD5E1] bg-[#F1F5F9]"
+  ],
+  [
+    "absolute top-1 right-1 rounded shadow bg-green-100 border border-green-200 text-[10px] tracking-wide\t font-bold text-green-600 px-1.5 py-0.5 z-10"
+  ],
+  [
+    "absolute top-1.5 right-1 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground ring-sidebar-ring outline-hidden transition-transform group-data-[collapsible=icon]:hidden peer-hover/menu-button:text-sidebar-accent-foreground peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 peer-data-[size=sm]/menu-button:top-1 after:absolute after:-inset-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 md:after:hidden [&>svg]:size-4 [&>svg]:shrink-0",
+    "group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 peer-data-active/menu-button:text-sidebar-accent-foreground aria-expanded:opacity-100 md:opacity-0"
+  ],
+  ["absolute top-1/2 -translate-y-1/2 left-1/2 right-0 h-px bg-gray-300"],
+  [
+    "absolute top-1/2 left-0 z-51 h-6 w-4 -translate-y-1/2 p-0 focus-visible:ring-0 focus-visible:ring-offset-0",
+    "cursor-grab active:cursor-grabbing"
+  ],
+  [
+    "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[17px] h-[17px] transition ease-out duration-150  ",
+    "opacity-100 text-white group-hover:opacity-80",
+    "text-blue-500 opacity-0 grou-hover:opacity-30"
+  ],
+  [
+    "absolute top-1/2 left-1/2 h-4/6 w-px bg-gray-200 transform -translate-y-1/2 -translate-x-1/2 opacity-30 transition-opacity duration-150 ease-out group-hover:opacity-100"
+  ],
+  [
+    "absolute top-1/2 right-0 w-6 h-auto -translate-y-1/2 text-gray-300 origin-center group-hover:text-blue-500 transition-all duration-150 ease-out  ",
+    "-rotate-90 opacity-70 group-hover:opacity-100"
+  ],
+  [
+    "absolute top-1/2 right-2 w-6 h-auto -translate-y-1/2 text-gray-300 group-hover:text-blue-500 transition duration-150 ease-out pointer-events-none"
+  ],
+  ["absolute top-2 right-2 h-8 w-8"],
+  [
+    "absolute top-2 right-2 z-10 rounded bg-green-100 border border-green-200 text-[10px] tracking-wide font-bold text-green-600 px-1.5 py-0.5"
+  ],
+  ["absolute top-3 right-3"],
+  [
+    "absolute top-3.5 right-3 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground ring-sidebar-ring outline-hidden transition-transform group-data-[collapsible=icon]:hidden after:absolute after:-inset-2 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 md:after:hidden [&>svg]:size-4 [&>svg]:shrink-0"
+  ],
+  [
+    "absolute top-4 right-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+  ],
+  ["absolute top-5 h-0.5 bg-gray-200 -z-10"],
+  ["absolute top-5 h-0.5 bg-green-500 -z-10 transition-all duration-500"],
+  ["absolute top-5 h-0.5 bg-tina-orange -z-10 transition-all duration-500"],
+  ["absolute w-0 h-0 opacity-0 cursor-pointer"],
+  [
+    "absolute w-full h-full left-0 top-0 rounded -z-1  ",
+    "bg-white opacity-80",
+    "bg-current opacity-15"
+  ],
+  [
+    "absolute w-full h-full left-0 top-0 rounded-full -z-1 bg-current opacity-7"
+  ],
+  ["absolute w-full min-w-[192px] max-w-2xl -bottom-2 left-0 translate-y-full"],
+  [
+    "absolute w-full rounded-lg max-w-xs lg:max-w-none h-auto blur-2xl brightness-150 contrast-[0.9] dark:brightness-150 saturate-200 opacity-50 dark:opacity-30 mix-blend-multiply dark:mix-blend-hard-light"
+  ],
+  [
+    "absolute w-full rounded-lg max-w-xs lg:max-w-none h-full blur-2xl opacity-40 dark:opacity-20 mix-blend-multiply dark:mix-blend-hard-light"
+  ],
+  [
+    "absolute w-full rounded-lg max-w-xs lg:max-w-none h-full blur-2xl opacity-40 dark:opacity-20 mix-blend-multiply dark:mix-blend-hard-light bg-gradient-to-br from-theme-400/60 to-theme-600/40"
+  ],
+  [
+    "absolute w-full top-0 bottom-0 left-0 flex flex-col justify-between overflow-hidden z-10  "
+  ],
+  [
+    "absolute whitespace-nowrap px-3 py-2 z-20 font-medium text-base flex items-center justify-center -top-0.5 -right-0.5 -bottom-0.5 -left-0.5 truncate bg-white border border-gray-200 origin-center rounded shadow text-blue-500 transition-all ease-out duration-150  ",
+    "opacity-100",
+    "opacity-0"
+  ],
+  [
+    "absolute z-[10799] whitespace-nowrap border bg-popover px-1 opacity-100 shadow-md print:hidden rounded-md"
+  ],
+  [
+    "absolute z-40",
+    "w-full cursor-row-resize",
+    "h-full cursor-col-resize",
+    "h-full cursor-col-resize",
+    "w-full cursor-row-resize"
+  ],
+  ["active"],
+  ["animate-pulse rounded-md bg-muted"],
+  ["animate-spin w-4 h-4 inline-block mb-px"],
+  ["animate-spin w-5 h-5"],
+  ["antialiased"],
+  ["antialiased min-h-screen flex flex-col"],
+  ["aria-disabled:pointer-events-none aria-disabled:opacity-50"],
+  ["aspect-w-9 bg-blue-500"],
+  [
+    "before:bottom-0 before:mt-[1px] before:translate-y-full color-picker-on-top-clip-path after:bottom-0 after:mb-0.5 after:translate-y-full",
+    "before:top-0 before:mb-[1px] before:-translate-y-full color-picker-clip-path after:top-0 after:mt-0.5 after:-translate-y-full"
+  ],
+  [
+    "bg-accent text-accent-foreground rounded-md data-[selected=true]:rounded-none"
+  ],
+  [
+    "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 ring-foreground/10 grid max-w-[calc(100%-2rem)] gap-4 rounded-xl p-4 text-sm ring-1 duration-100 sm:max-w-sm fixed top-1/2 left-1/2 z-[100000] w-full -translate-x-1/2 -translate-y-1/2 outline-none"
+  ],
+  [
+    "bg-background group/calendar p-3 [--cell-size:--spacing(8)] [[data-slot=card-content]_&]:bg-transparent [[data-slot=popover-content]_&]:bg-transparent",
+    "rtl:**:[.rdp-button_next>svg]:rotate-180",
+    "rtl:**:[.rdp-button_previous>svg]:rotate-180"
+  ],
+  ["bg-border -mx-1 my-1 h-px"],
+  ["bg-clip-text text-transparent bg-gradient-to-r  "],
+  [
+    "bg-clip-text text-transparent bg-gradient-to-r from-theme-400 to-theme-600 dark:from-theme-300 dark:to-theme-500"
+  ],
+  ["bg-gradient-to-br  "],
+  [
+    "bg-gradient-to-br text-gray-800 from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000"
+  ],
+  [
+    "bg-gradient-to-br text-gray-800 from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000 mt-12"
+  ],
+  [
+    "bg-gradient-to-r bg-clip-text text-transparent from-theme-400 to-theme-600 dark:from-theme-300 dark:to-theme-500 text-3xl lg:text-4xl font-semibold title-font mb-5 transition-all duration-150 ease-out"
+  ],
+  ["bg-gray-100 text-gray-700"],
+  [
+    "bg-gray-100 text-gray-900",
+    "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
+    "flex items-center rounded px-3 py-2 text-sm font-medium w-full text-left"
+  ],
+  ["bg-gray-50"],
+  ["bg-gray-50 p-2 border-b border-gray-100 z-10 shadow-sm"],
+  [
+    "bg-gray-50 text-blue-500",
+    "bg-white text-gray-600",
+    "hover:bg-gray-50 hover:text-blue-500 cursor-pointer pointer-events-auto px-4 py-2 text-sm w-full flex items-center whitespace-nowrap"
+  ],
+  [
+    "bg-gray-50 text-gray-400 hover:!bg-gray-50 cursor-default",
+    "bg-blue-100 hover:bg-blue-100 !cursor-pointer",
+    "!cursor-pointer"
+  ],
+  ["bg-gray-900 text-gray-100 rounded-lg p-4 my-4 overflow-x-auto text-sm"],
+  ["bg-none p-0 outline-none w-12 h-7"],
+  [
+    "bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-hidden rounded-md border p-1 shadow-lg"
+  ],
+  [
+    "bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-base max-h-(--radix-dropdown-menu-content-available-height) min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border p-1 shadow-md"
+  ],
+  [
+    "bg-primary text-primary-foreground hover:bg-primary/80",
+    "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+    "bg-secondary text-secondary-foreground hover:bg-[color-mix(in_oklch,var(--secondary),var(--foreground)_5%)] aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+    "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+    "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
+    "text-primary underline-offset-4 hover:underline",
+    "h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+    "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+    "size-8",
+    "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
+    "size-9",
+    "default",
+    "default"
+  ],
+  ["bg-red-50 border border-red-200 rounded-md p-2 shadow-lg"],
+  ["bg-red-50 sm:rounded-lg"],
+  [
+    "bg-theme-50 dark:bg-theme-700/20 text-theme-700 dark:text-theme-200 rounded-full"
+  ],
+  [
+    "bg-transparent hover:!bg-transparent",
+    "border-l-[3px] border-l-yellow-400 bg-yellow-50",
+    "border-l-[3px] border-l-tina-orange bg-[#f8fafc]"
+  ],
+  ["bg-white"],
+  [
+    "bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex flex-col gap-6 rounded-xl border border-gray-200 dark:border-gray-700 py-6 shadow-sm"
+  ],
+  [
+    "bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex flex-col gap-6 rounded-xl border border-gray-200 dark:border-gray-700 py-6 shadow-sm {{ $class }}"
+  ],
+  ["bg-white dark:bg-gray-850"],
+  [
+    "bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 sticky top-0 z-30"
+  ],
+  ["bg-white rounded-lg overflow-hidden shadow-lg w-full max-w-lg"],
+  ["bg-white rounded-lg shadow-lg overflow-hidden"],
+  ["bg-white rounded-lg shadow-lg p-3"],
+  [
+    "bg-white rounded-xl border border-gray-200 shadow-sm flex items-center gap-4 p-6"
+  ],
+  ["bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden"],
+  [
+    "bg-white text-sm rounded-sm border border-gray-100 shadow-inner py-1.5 px-2.5 w-full block placeholder-gray-200"
+  ],
+  [
+    "bg-white text-xs rounded-sm border border-gray-100 shadow-inner py-1 px-2 w-full block placeholder-gray-200"
+  ],
+  ["bi bi-check-circle-fill"],
+  ["bi bi-circle"],
+  ["block"],
+  ["block bg-gray-100 rounded shadow-[0_2px_3px_rgba(0,0,0,0.12)] m-0"],
+  [
+    "block border border-gray-100 bg-gray-50/50 rounded overflow-hidden object-center object-contain max-w-full max-h-full m-auto shadow"
+  ],
+  [
+    "block font-sans text-xs font-normal text-red-500 pt-3 animate-slide-in whitespace-normal m-0   "
+  ],
+  ["block font-sans text-xs font-semibold opacity-0"],
+  ["block font-sans text-xs font-semibold text-gray-500 whitespace-normal"],
+  [
+    "block font-sans text-xs font-semibold text-gray-700 whitespace-normal h-full items-center ml-1"
+  ],
+  [
+    "block font-sans text-xs font-semibold text-gray-700 whitespace-normal mb-2  "
+  ],
+  [
+    "block font-sans text-xs italic font-light text-gray-400 pt-0.5 whitespace-normal m-0"
+  ],
+  [
+    "block font-sans text-xs italic font-light text-gray-400 pt-0.5 whitespace-normal m-0  "
+  ],
+  ["block h-5 w-5 shrink-0"],
+  [
+    "block max-w-full rounded shadow overflow-hidden max-h-48 lg:max-h-64 h-auto object-contain transition-opacity duration-100 ease-out m-0 bg-gray-200 bg-auto bg-center bg-no-repeat  ",
+    "min-w-[12rem]"
+  ],
+  ["block min-w-0 truncate text-gray-700 font-medium cursor-default"],
+  ["block min-w-0 truncate text-gray-700 hover:text-orange-500"],
+  [
+    "block mx-auto h-0.5 w-1/6  ",
+    "bg-blue-600",
+    "bg-gray-200 dark:bg-gray-700"
+  ],
+  [
+    "block mx-auto h-0.5 w-1/6 {{ if $isPrimary }}bg-white/30{{ else }}bg-gray-200 dark:bg-gray-700{{ end }}"
+  ],
+  ["block mx-auto h-0.5 w-1/6", "bg-white/30", "bg-gray-200 dark:bg-gray-700"],
+  [
+    "block opacity-15 text-8xl absolute inset-y-1/2 transform translate-y-2\t-left-4 leading-4 -z-1"
+  ],
+  [
+    "block opacity-15 text-8xl absolute inset-y-1/2 transform translate-y-2 -left-4 leading-4 -z-1"
+  ],
+  [
+    "block opacity-15 text-8xl absolute inset-y-1/2 transform translate-y-3\t-right-4 leading-4 -z-1"
+  ],
+  [
+    "block opacity-15 text-8xl absolute inset-y-1/2 transform translate-y-3 -right-4 leading-4 -z-1"
+  ],
+  [
+    "block overflow-hidden object-center object-contain max-w-full max-h-full m-auto shadow"
+  ],
+  ["block pb-5"],
+  ["block pt-5"],
+  [
+    "block px-4 py-3 rounded-md text-base font-medium transition-colors {{ if $active }}text-theme-600 dark:text-theme-400 bg-theme-50 dark:bg-theme-700/20{{ else }}text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800{{ end }}"
+  ],
+  [
+    "block px-4 py-3 rounded-md text-base font-medium transition-colors",
+    "text-theme-600 dark:text-theme-400 bg-theme-50 dark:bg-theme-700/20",
+    "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+  ],
+  ["block relative group"],
+  ["block relative group h-fit mb-auto"],
+  ["block relative group mb-1"],
+  ["block relative text-gray-300 italic py-1"],
+  ["block shrink-0 w-full"],
+  ["block text-xs text-gray-500 mb-0.5"],
+  ["block w-full h-full object-center object-cover"],
+  ["block w-full truncate font-medium text-gray-800"],
+  ["block w-full truncate text-sm text-gray-500"],
+  [
+    "block z-0 overflow-visible bg-gray-50 rounded-[5px] my-10 mx-auto w-[800px] max-w-[90%]"
+  ],
+  [
+    "border border-gray-200 focus-within:border-blue-200 bg-gray-100 focus-within:bg-blue-100 rounded shadow-sm focus-within:shadow-outline overflow-hidden flex items-stretch divide-x divide-gray-200 focus-within:divide-blue-100 w-full transition-all ease-out duration-150"
+  ],
+  ["border-b border-gray-150 bg-[#FFEBE5]"],
+  [
+    "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+  ],
+  ["border-border border-b pt-10"],
+  ["border-border border-t p-3"],
+  ["border-l border-gray-200"],
+  ["border-l-4 border-theme-300 pl-4 italic my-6"],
+  [
+    "border-l-4 border-theme-500 pl-4 italic my-4 text-gray-600 dark:text-gray-400"
+  ],
+  ["border-none bg-transparent p-0 outline-none flex items-center"],
+  ["border-r-0 w-full"],
+  [
+    "border-red-500",
+    "border-gray-300 focus:ring-indigo-500 focus:border-indigo-500"
+  ],
+  ["border-separate border-spacing-0"],
+  ["border-t bg-muted/50 font-medium [&>tr]:last:border-b-0"],
+  ["border-t border-gray-150"],
+  ["border-t border-gray-150 pt-4 mt-3 flex flex-col gap-3"],
+  ["box"],
+  ["box-content flex items-center"],
+  ["break-all"],
+  ["break-all font-medium"],
+  ["capitalize"],
+  [
+    "capitalize transition-colors duration-150 border-0 bg-transparent hover:text-blue-500"
+  ],
+  ["col-span-1 size-3 border border-solid bg-secondary", "border-current"],
+  ["cursor-pointer"],
+  ["cursor-pointer bg-[#FFF8F6] hover:bg-[#FFF8F6]", "cursor-pointer"],
+  ["cursor-pointer flex group items-center gap-2"],
+  ["cursor-pointer h-9 px-2 flex items-center gap-1"],
+  [
+    "cursor-pointer h-full relative inline-flex items-center px-1 py-0.5 rounded-r border border-gray-200 bg-white text-gray-500 hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+  ],
+  [
+    "cursor-pointer relative justify-center inline-flex items-center p-3 text-sm font-medium focus:outline-1 focus:outline-blue-200 pointer-events-auto    }",
+    "text-blue-400",
+    "text-gray-300 hover:text-blue-500"
+  ],
+  ["cursor-pointer rounded-md"],
+  [
+    "cursor-pointer text-left w-full block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
+  ],
+  ["dark"],
+  [
+    "data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md [&>span]:text-xs [&>span]:opacity-70"
+  ],
+  [
+    "data-[state=closed]:slide-out-to-left-1/2 data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-48% data-[state=closed]:slide-out-to-top-48% fixed top-1/2 left-1/2 z-50 grid w-full max-w-lg -translate-x-1/2 -translate-y-1/2 gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 sm:rounded-lg"
+  ],
+  [
+    "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 bg-black/10 duration-100 supports-backdrop-filter:backdrop-blur-xs fixed inset-0 isolate z-[100000]"
+  ],
+  ["divide-y divide-gray-200"],
+  ["edit-page--list-parent"],
+  ["fancy"],
+  ["fancy-table"],
+  [
+    "file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-md border bg-transparent px-3 py-1 text-base shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+    "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]",
+    "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+  ],
+  ["fill-current w-7 h-auto"],
+  [
+    "fill-current w-7 h-auto absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-150 ease-out"
+  ],
+  [
+    "fill-current w-7 h-auto group-hover:opacity-0 transition-opacity duration-150 ease-out"
+  ],
+  [
+    "fixed -z-1 inset-0 opacity-80 bg-gradient-to-br from-gray-800 via-gray-900 to-black"
+  ],
+  [
+    "fixed bottom-6 left-1/2 flex flex-col items-center z-[999999] -translate-x-1/2"
+  ],
+  ["fixed inset-0 bg-black/20 dark:bg-black/50 z-30 sm:hidden"],
+  ["fixed inset-0 bg-black/20 dark:bg-black/50 z-30 sm:hidden hidden"],
+  ["fixed inset-0 z-10 overflow-y-auto"],
+  [
+    "fixed inset-0 z-50 bg-black/10 transition-opacity duration-150 data-ending-style:opacity-0 data-starting-style:opacity-0 supports-backdrop-filter:backdrop-blur-xs"
+  ],
+  ["fixed inset-0 z-50 cursor-col-resize"],
+  ["fixed inset-0 z-menu"],
+  ["fixed inset-0 z-modal w-screen h-dvh overflow-y-auto"],
+  ["fixed inset-0 z-overlay cursor-ew-resize bg-transparent"],
+  [
+    "fixed inset-y-0 z-10 hidden h-svh w-(--sidebar-width) transition-[left,right,width] duration-200 ease-linear data-[side=left]:left-0 data-[side=left]:group-data-[collapsible=offcanvas]:left-[calc(var(--sidebar-width)*-1)] data-[side=right]:right-0 data-[side=right]:group-data-[collapsible=offcanvas]:right-[calc(var(--sidebar-width)*-1)] md:flex",
+    "p-2 group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4))+2px)]",
+    "group-data-[collapsible=icon]:w-(--sidebar-width-icon) group-data-[side=left]:border-r group-data-[side=right]:border-l"
+  ],
+  ["fixed left-0 py-2 px-0 text-center"],
+  [
+    "fixed left-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg z-40 sm:hidden transform transition-transform duration-200 ease-out -translate-x-full"
+  ],
+  [
+    "fixed left-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg z-40 sm:hidden transform transition-transform duration-200 ease-out",
+    "translate-x-0",
+    "-translate-x-full"
+  ],
+  ["fixed left-0 top-0 z-overlay h-full"],
+  ["fixed top-0 left-0 h-dvh z-base  ", "pointer-events-none"],
+  [
+    "fixed top-1/2 left-1/2 z-50 flex w-[calc(100%-2rem)] max-w-sm -translate-x-1/2 -translate-y-1/2 flex-col gap-4 rounded-xl border border-border bg-popover bg-clip-padding p-4 text-sm text-popover-foreground shadow-lg transition duration-150 data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0"
+  ],
+  [
+    "fixed z-50 flex flex-col gap-4 bg-popover bg-clip-padding text-sm text-popover-foreground shadow-lg transition duration-200 ease-in-out data-ending-style:opacity-0 data-starting-style:opacity-0 data-[side=bottom]:inset-x-0 data-[side=bottom]:bottom-0 data-[side=bottom]:h-auto data-[side=bottom]:border-t data-[side=bottom]:data-ending-style:translate-y-[2.5rem] data-[side=bottom]:data-starting-style:translate-y-[2.5rem] data-[side=left]:inset-y-0 data-[side=left]:left-0 data-[side=left]:h-full data-[side=left]:w-3/4 data-[side=left]:border-r data-[side=left]:data-ending-style:translate-x-[-2.5rem] data-[side=left]:data-starting-style:translate-x-[-2.5rem] data-[side=right]:inset-y-0 data-[side=right]:right-0 data-[side=right]:h-full data-[side=right]:w-3/4 data-[side=right]:border-l data-[side=right]:data-ending-style:translate-x-[2.5rem] data-[side=right]:data-starting-style:translate-x-[2.5rem] data-[side=top]:inset-x-0 data-[side=top]:top-0 data-[side=top]:h-auto data-[side=top]:border-b data-[side=top]:data-ending-style:translate-y-[-2.5rem] data-[side=top]:data-starting-style:translate-y-[-2.5rem] data-[side=left]:sm:max-w-sm data-[side=right]:sm:max-w-sm"
+  ],
+  ["flex"],
+  [
+    "flex   divide-gray-150 shadow-inner bg-gray-50 border border-gray-200 w-full justify-between rounded",
+    "divide-x",
+    "flex-col divide-y"
+  ],
+  ["flex cursor-default items-center justify-center py-1"],
+  [
+    "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent data-[state=open]:bg-accent",
+    "data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    "pl-8"
+  ],
+  ["flex flex-1"],
+  ["flex flex-1 flex-row gap-2 items-end w-full"],
+  ["flex flex-1 items-center gap-4"],
+  ["flex flex-1 shrink-0 gap-2 whitespace-nowrap"],
+  ["flex flex-1 text-left"],
+  ["flex flex-col"],
+  ["flex flex-col gap-0.5"],
+  ["flex flex-col gap-0.5 p-4"],
+  ["flex flex-col gap-1"],
+  ["flex flex-col gap-1 mt-2"],
+  ["flex flex-col gap-2"],
+  ["flex flex-col gap-2", "border-l border-tina-orange bg-[#f8fafc]"],
+  ["flex flex-col gap-2 items-start w-full md:w-auto"],
+  ["flex flex-col gap-2 p-2"],
+  ["flex flex-col gap-3"],
+  ["flex flex-col gap-4"],
+  ["flex flex-col gap-4 w-full h-full grow-0"],
+  ["flex flex-col h-full"],
+  ["flex flex-col h-screen"],
+  ["flex flex-col items-center justify-center py-24 px-6 text-center"],
+  ["flex flex-col items-center relative"],
+  ["flex flex-col items-center text-center mb-16"],
+  ["flex flex-col items-start"],
+  ["flex flex-col items-start gap-2"],
+  ["flex flex-col justify-center items-center h-screen bg-gray-100"],
+  ["flex flex-col lg:flex-row justify-between lg:items-end pt-2"],
+  ["flex flex-col md:flex-row gap-2 md:gap-4"],
+  [
+    "flex flex-col md:flex-row items-start md:items-end gap-2 md:gap-0 pt-4 lg:pt-0"
+  ],
+  ["flex flex-col p-4 gap-3"],
+  ["flex flex-col px-6 flex-1 overflow-auto"],
+  ["flex flex-col sm:flex-row items-start sm:items-center gap-2"],
+  ["flex flex-col space-y-8 p-6"],
+  ["flex flex-col w-full"],
+  ["flex flex-col w-full gap-4"],
+  [
+    "flex flex-col z-0 overflow-visible bg-white rounded-none absolute top-0 left-0 w-full max-w-[1500px] h-full   md:w-[calc(100%-170px)]"
+  ],
+  ["flex flex-row space-x-4"],
+  ["flex flex-wrap gap-2"],
+  ["flex flex-wrap gap-x-10 gap-y-8 text-left"],
+  [
+    "flex flex-wrap items-center bg-gray-50 border-b border-gray-150 gap-4 py-3 px-5 shadow-sm flex-shrink-0"
+  ],
+  ["flex flex-wrap items-center gap-4"],
+  [
+    "flex flex-wrap items-center gap-4 bg-gray-50 border-b border-gray-150 py-3 px-5 shadow-sm flex-shrink-0"
+  ],
+  ["flex flex-wrap items-center gap-y-4 gap-x-6"],
+  ["flex flex-wrap items-center gap-y-4 gap-x-6  "],
+  ["flex flex-wrap items-center gap-y-4 gap-x-6 {{ $class }}"],
+  ["flex gap-0.5"],
+  ["flex gap-1 items-center whitespace-nowrap tracking-[.002em]"],
+  ["flex gap-2 flex-wrap"],
+  ["flex gap-2 flex-wrap mt-2 mb-0"],
+  ["flex gap-2 items-center"],
+  ["flex gap-4"],
+  ["flex gap-4 flex-col md:flex-row relative"],
+  ["flex gap-6 sm:gap-8 lg:gap-10 tracking-[.002em] -mx-4"],
+  ["flex grow-0 shrink-0 gap-2 w-full items-center justify-between"],
+  [
+    "flex h-[28px] w-full rounded-md border-none bg-transparent px-1.5 py-1 text-base placeholder:text-muted-foreground focus-visible:ring-transparent focus-visible:outline-none md:text-sm"
+  ],
+  ["flex h-10 items-center"],
+  [
+    "flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded border border-gray-200 bg-gray-100 text-gray-400"
+  ],
+  [
+    "flex h-11 w-full rounded bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-hidden placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus:outline-none"
+  ],
+  [
+    "flex h-12 w-12 flex-none justify-center rounded border border-gray-100 bg-white shadow"
+  ],
+  [
+    "flex h-5 w-5 shrink-0 items-center justify-center rounded-full border transition-colors  ",
+    "border-tina-orange bg-white text-tina-orange",
+    "border-tina-orange bg-tina-orange text-white"
+  ],
+  [
+    "flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 text-sidebar-foreground ring-sidebar-ring outline-hidden group-data-[collapsible=icon]:hidden hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[size=md]:text-sm data-[size=sm]:text-xs data-active:bg-sidebar-accent data-active:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 [&>svg]:text-sidebar-accent-foreground"
+  ],
+  ["flex h-8 items-center gap-2 rounded-md px-2"],
+  [
+    "flex h-8 shrink-0 items-center rounded-md px-2 text-xs font-medium text-sidebar-foreground/70 ring-sidebar-ring outline-hidden transition-[margin,opacity] duration-200 ease-linear group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0 focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0"
+  ],
+  [
+    "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background data-[placeholder]:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1"
+  ],
+  ["flex h-full flex-col"],
+  ["flex h-full overflow-hidden bg-white"],
+  [
+    "flex h-full w-(--sidebar-width) flex-col bg-sidebar text-sidebar-foreground"
+  ],
+  [
+    "flex h-full w-full cursor-pointer items-center justify-center text-gray-400 transition-opacity hover:opacity-80"
+  ],
+  ["flex h-full w-full flex-col"],
+  [
+    "flex h-full w-full flex-col overflow-hidden rounded bg-white text-popover-foreground"
+  ],
+  ["flex items-baseline"],
+  ["flex items-center"],
+  ["flex items-center border-b border-gray-200 px-3"],
+  ["flex items-center border-b px-3"],
+  [
+    "flex items-center fill-gray-400 cursor-pointer transition-colors duration-100 ease-out hover:fill-gray-700"
+  ],
+  ["flex items-center gap-1"],
+  [
+    "flex items-center gap-1 border-[0.5px] hover:bg-gray-300/10 transition-all duration-300 border-gray-300 rounded-md p-2"
+  ],
+  ["flex items-center gap-1 font-bold"],
+  ["flex items-center gap-1 min-w-0"],
+  ["flex items-center gap-1 p-4 pb-2"],
+  [
+    "flex items-center gap-1 text-red-700 py-2 px-3 bg-red-50 border border-red-200 rounded max-w-sm"
+  ],
+  [
+    "flex items-center gap-1 text-red-700 py-2 px-3 mb-4 bg-red-50 border border-red-200 rounded"
+  ],
+  ["flex items-center gap-1 text-sm text-gray-500 tabular-nums"],
+  ["flex items-center gap-1 w-full absolute top-0 inset-x-0 justify-between"],
+  ["flex items-center gap-1 whitespace-nowrap tracking-[.002em]"],
+  ["flex items-center gap-1.5"],
+  ["flex items-center gap-1.5 min-w-0"],
+  ["flex items-center gap-2"],
+  ["flex items-center gap-2 min-w-[350px] rounded-md border px-4 py-3  "],
+  ["flex items-center gap-2 shadow-sm font-medium transition-colors"],
+  [
+    "flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
+  ],
+  ["flex items-center gap-2 text-sm text-gray-600 cursor-pointer"],
+  ["flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500"],
+  ["flex items-center gap-3"],
+  ["flex items-center gap-3  "],
+  ["flex items-center gap-3 border-b border-gray-200 bg-gray-50/50 px-6 py-4"],
+  ["flex items-center gap-3 mb-8"],
+  ["flex items-center gap-4"],
+  ["flex items-center gap-4 mb-4"],
+  ["flex items-center gap-6 mb-8"],
+  ["flex items-center justify-between"],
+  [
+    "flex items-center justify-between gap-3 text-xs tracking-wide font-medium text-gray-700 group-hover:text-blue-400 uppercase max-w-form mx-auto"
+  ],
+  ["flex items-center justify-between gap-4"],
+  ["flex items-center justify-between gap-6"],
+  ["flex items-center justify-between w-full"],
+  ["flex items-center justify-center"],
+  ["flex items-center justify-center bg-gray-50 px-4 sm:px-6 lg:px-8"],
+  ["flex items-center justify-center gap-2"],
+  ["flex items-center justify-center gap-3 mb-16"],
+  ["flex items-center justify-center h-(--cell-size) w-full px-(--cell-size)"],
+  ["flex items-center justify-center h-24"],
+  ["flex items-center justify-center mb-16"],
+  ["flex items-center justify-center p-12"],
+  ["flex items-center justify-center py-24 text-gray-400 dark:text-gray-500"],
+  ["flex items-center justify-end gap-2 px-2 py-1"],
+  ["flex items-center mt-4 gap-2"],
+  ["flex items-center pr-1 pl-2 text-muted-foreground"],
+  ["flex items-center px-5 py-2 border-b border-gray-200"],
+  ["flex items-start gap-2"],
+  [
+    "flex items-start gap-3 p-3 mb-4 bg-yellow-50 border border-yellow-200 rounded text-yellow-800 text-sm"
+  ],
+  ["flex items-start justify-between gap-2"],
+  ["flex items-start sm:items-center gap-2"],
+  ["flex items-stretch"],
+  ["flex items-stretch h-dvh overflow-hidden"],
+  ["flex items-stretch space-x-4"],
+  ["flex justify-between items-center gap-6 flex-wrap"],
+  ["flex justify-between items-center w-full gap-3"],
+  ["flex justify-between my-8 relative px-5 sm:gap-x-8"],
+  ["flex justify-center items-center h-full"],
+  ["flex justify-end"],
+  ["flex", "justify-end"],
+  ["flex justify-end gap-2"],
+  ["flex list-none items-start"],
+  [
+    "flex min-h-[12rem] min-w-[16rem] flex-col items-center justify-center gap-3 rounded-md border border-dashed border-gray-300 bg-white px-6 py-8 text-center"
+  ],
+  [
+    "flex min-h-[80px] w-full rounded border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  ["flex min-w-0 shrink"],
+  ["flex min-w-0 shrink-0 flex-col overflow-y-auto border-r border-border p-4"],
+  ["flex overflow-hidden py-1"],
+  ["flex size-(--cell-size) items-center justify-center text-center"],
+  ["flex size-9 items-center justify-center"],
+  [
+    "flex size-full flex-col bg-sidebar group-data-[variant=floating]:rounded-lg group-data-[variant=floating]:shadow-sm group-data-[variant=floating]:ring-1 group-data-[variant=floating]:ring-sidebar-border"
+  ],
+  [
+    "flex size-full flex-col rounded-md bg-popover text-popover-foreground focus-visible:outline-hidden",
+    "default",
+    "overflow-visible bg-transparent has-data-readonly:w-fit",
+    "overflow-hidden"
+  ],
+  [
+    "flex space-x-1 justify-items-start uppercase font-sans font-bold text-sm mb-3 mt-8 text-gray-700"
+  ],
+  ["flex w-[180px] min-w-0 flex-col"],
+  ["flex w-full  ", "flex-wrap gap-y-1 gap-x-3", "flex-col gap-1"],
+  ["flex w-full flex-col h-full @container"],
+  ["flex w-full gap-3"],
+  ["flex w-full items-center pl-1 pt-3"],
+  ["flex w-full max-w-full flex-1 items-center justify-start gap-3"],
+  ["flex w-full min-w-0 flex-col gap-0"],
+  ["flex w-full mt-2"],
+  [
+    "flex w-full px-4 py-3 justify-between items-center gap-2 border-b border-gray-200"
+  ],
+  [
+    "flex w-full rounded bg-transparent text-sm file:border-0 file:bg-background file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50",
+    "md",
+    "default",
+    "h-10 px-3 py-2",
+    "h-9 px-3 py-2",
+    "border border-input ring-offset-background focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+    "border-none focus-visible:ring-transparent"
+  ],
+  ["flex whitespace-nowrap"],
+  ["flex-0 flex items-center gap-2 whitespace-nowrap"],
+  [
+    "flex-0 font-semibold text-lg transition duration-150 ease-out opacity-80 hover:opacity-100"
+  ],
+  ["flex-1"],
+  ["flex-1  "],
+  [
+    "flex-1 flex flex-col flex-nowrap overflow-hidden h-full w-full relative bg-white"
+  ],
+  [
+    "flex-1 flex flex-col gap-6 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
+  ],
+  ["flex-1 flex flex-col items-start gap-0.5 text-base text-yellow-700"],
+  ["flex-1 flex items-center gap-2 text-left"],
+  ["flex-1 min-h-0"],
+  ["flex-1 min-w-0"],
+  ["flex-1 overflow-x-auto overflow-y-auto min-h-0 pb-16"],
+  ["flex-1 overflow-x-hidden"],
+  ["flex-1 overflow-y-auto"],
+  [
+    "flex-1 overflow-y-auto relative flex flex-col items-stretch justify-between"
+  ],
+  ["flex-1 pb-2"],
+  ["flex-1 pt-4"],
+  ["flex-1 relative"],
+  [
+    "flex-1 relative transition duration-150 ease-out body-font overflow-hidden"
+  ],
+  [
+    "flex-1 relative transition duration-150 ease-out body-font overflow-hidden    "
+  ],
+  [
+    "flex-1 relative transition duration-150 ease-out body-font overflow-hidden {{ $css }} {{ $class }}"
+  ],
+  [
+    "flex-1 relative transition duration-150 ease-out body-font overflow-hidden text-gray-800 dark:text-gray-50 bg-gradient-to-tl from-gray-50 dark:from-gray-900 via-transparent to-transparent"
+  ],
+  [
+    "flex-1 text-gray-800 bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000 flex flex-col"
+  ],
+  ["flex-1 truncate"],
+  ["flex-1 truncate max-w-full w-0"],
+  ["flex-1 w-full flex justify-end items-center gap-2 text-blue-500"],
+  ["flex-1 w-full flex justify-end items-center gap-2 text-red-500"],
+  ["flex-1 w-full justify-end gap-2\tflex items-center max-w-form"],
+  ["flex-1 w-full overflow-y-auto bg-[var(--tina-color-grey-1)]"],
+  [
+    "flex-1 w-full prose dark:prose-dark max-w-3xl p-6 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-gray-1000 shadow-xl rounded-xl inline-flex flex-col max-h-full"
+  ],
+  [
+    "flex-grow-0 flex flex-wrap w-full text-xs items-center justify-between gap-1.5 py-1.5 px-3 text-red-700 bg-gradient-to-br from-white via-red-50 to-red-100 border-b border-red-200"
+  ],
+  ["flex-none"],
+  [
+    "flex-none px-4 py-3 border-b border-gray-100 bg-gradient-to-t from-white to-gray-50 space-y-3"
+  ],
+  ["flex-none rounded border border-gray-100 bg-white p-1.5 shadow"],
+  ["flex-nowrap text-nowrap overflow-hidden"],
+  ["flex-row"],
+  [
+    "flex-shrink min-w-0 focus-within:shadow-outline focus-within:border-blue-500 rounded outline-none overflow-visible cursor-pointer border-none hover:opacity-60 transition ease-out duration-100"
+  ],
+  [
+    "flex-shrink min-w-0 focus-within:shadow-outline focus-within:border-blue-500 rounded outline-none overflow-visible cursor-pointer border-none hover:opacity-60 transition ease-out duration-100  ",
+    "shadow-outline border-blue-500"
+  ],
+  ["flex-shrink-0"],
+  [
+    "flex-shrink-0 flex items-center gap-1 text-blue-600 underline decoration-blue-200 hover:text-blue-500 hover:decoration-blue-500 transition-all ease-out duration-150"
+  ],
+  ["flex-shrink-0 h-6 w-auto opacity-70"],
+  ["flex-shrink-0 h-6 w-auto opacity-70 text-zinc-400"],
+  ["flex-shrink-0 mr-2"],
+  ["flex-shrink-0 mr-4"],
+  ["flex-shrink-0 text-gray-300 text-lg leading-none cursor-not-allowed"],
+  ["flex-shrink-0 text-gray-400 hover:text-gray-600 text-lg leading-none"],
+  ["flow"],
+  [
+    "focus-visible:ring-outline focus-visible:border-blue-500 shadow-none focus:text-accent-foreground w-[48px] text-center font-mono text-base tabular-nums caret-transparent [&::-webkit-inner-spin-button]:appearance-none"
+  ],
+  [
+    "focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:pl-8"
+  ],
+  [
+    "focus:border-blue-500 shadow-none focus:ring-[3px] focus:ring-outline focus:text-accent-foreground w-[65px]"
+  ],
+  ["focus:text-accent-foreground w-fit gap-1 border-none p-0 shadow-none"],
+  ["font-bold"],
+  [
+    "font-bold text-blue-500 hover:text-blue-600 hover:underline transition-all ease-out duration-150"
+  ],
+  ["font-bold text-gray-200 dark:text-gray-500 mx-2"],
+  ["font-bold tracking-tight text-gray-400 dark:text-gray-300"],
+  ["font-extrabold text-xl text-theme-600 dark:text-theme-400"],
+  ["font-medium text-gray-700 dark:text-gray-200"],
+  ["font-medium text-muted-foreground"],
+  ["font-medium text-muted-foreground flex items-center gap-1"],
+  ["font-medium text-muted-foreground ml-auto flex items-center gap-1"],
+  ["font-mono bg-green-100 cursor-not-allowed"],
+  ["font-mono font-semibold"],
+  ["font-mono text-sm bg-green-100 cursor-not-allowed mb-4"],
+  ["font-sans antialiased"],
+  ["font-sans font-light text-xs mb-3 mt-4 text-gray-500"],
+  ["font-sans font-normal text-lg block pb-5"],
+  ["font-sans text-2xl text-tina-orange"],
+  ["font-semibold text-destructive"],
+  ["font-semibold text-gray-500"],
+  [
+    "font-small underline underline-offset-2 text-blue-500 hover:text-blue-600 transition-color ease-out duration-150"
+  ],
+  ["gap-2"],
+  ["graphiql-doc-explorer-content"],
+  ["graphiql-doc-explorer-title"],
+  ["graphiql-markdown-description"],
+  ["grid gap-1 text-center"],
+  ["grid gap-1.5"],
+  ["grid gap-8 md:grid-cols-2"],
+  ["grid grid-cols-1 lg:grid-cols-5 gap-14 items-center justify-center"],
+  ["grid grid-cols-1 md:grid-cols-2 gap-8"],
+  [
+    "grid grid-cols-1 md:grid-cols-3 gap-6",
+    "flex flex-wrap gap-x-10 gap-y-8 text-left"
+  ],
+  ["grid grid-cols-1 md:grid-cols-3 gap-6 mb-8"],
+  ["grid grid-cols-2 gap-4 @md:grid-cols-3 @2xl:grid-cols-4 @4xl:grid-cols-5"],
+  [
+    "grid grid-cols-2 gap-4 @sm:grid-cols-3 @lg:grid-cols-4 @2xl:grid-cols-6 @4xl:grid-cols-8"
+  ],
+  ["grid place-content-center text-current transition-none [&>svg]:size-3.5"],
+  ["grid size-[130px] grid-cols-8 gap-0.5 p-1"],
+  [
+    "group block bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-1000 rounded shadow-sm transition-all duration-150 ease-out hover:shadow-md hover:to-gray-50 dark:hover:to-gray-800 px-6 sm:px-8 md:px-10 py-10 mb-8 last:mb-0"
+  ],
+  [
+    "group block bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-1000 rounded shadow-sm transition-all duration-150 ease-out hover:shadow-md hover:to-gray-50 dark:hover:to-gray-800 px-6 sm:px-8 py-8"
+  ],
+  [
+    "group block px-6 sm:px-8 md:px-10 py-10 mb-8 last:mb-0 bg-gray-50 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-1000 rounded shadow-sm transition-all duration-150 ease-out hover:shadow-md hover:to-gray-50 dark:hover:to-gray-800"
+  ],
+  [
+    "group flex flex-col bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-shadow"
+  ],
+  [
+    "group flex flex-col w-full text-left rounded-xl overflow-hidden border border-gray-150 bg-gradient-to-b from-orange-50/60 to-white shadow-sm hover:shadow-md hover:border-tina-orange/40 transition outline-none focus-visible:ring-2 focus-visible:ring-tina-orange/40"
+  ],
+  ["group grow-0 shrink-0"],
+  [
+    "group inline-flex items-center font-semibold text-lg transition duration-150 ease-out  ",
+    "text-white  hover:text-gray-50"
+  ],
+  [
+    "group mx-2 flex items-center font-bold tracking-tight text-gray-400 dark:text-gray-300 opacity-50 hover:opacity-100 transition duration-150 ease-out whitespace-nowrap"
+  ],
+  ["group peer hidden text-sidebar-foreground md:block"],
+  [
+    "group px-4 py-3 bg-white hover:bg-gray-50 shadow focus:shadow-outline focus:border-blue-500 w-full border border-gray-100 hover:border-gray-200 text-gray-500 hover:text-blue-400 focus:text-blue-500 rounded flex justify-between items-center gap-2"
+  ],
+  ["group relative block cursor-pointer"],
+  [
+    "group relative flex flex-col w-full text-left outline-none rounded-xl overflow-hidden border bg-white shadow-sm transition"
+  ],
+  [
+    "group relative flex flex-col w-full text-left outline-none rounded-xl overflow-hidden border bg-white shadow-sm transition",
+    "border-gray-150 hover:border-tina-orange/40 hover:shadow-md",
+    "border-2 border-tina-orange ring-2 ring-tina-orange/20 shadow-md"
+  ],
+  [
+    "group relative flex shrink-0 items-center transition duration-150 ease-out cursor-pointer border-b border-gray-150  ",
+    "bg-gradient-to-r from-white to-gray-50/50 text-tina-orange hover:bg-gray-50",
+    "bg-white hover:bg-gray-50/50 hover:text-tina-orange"
+  ],
+  ["group text-center"],
+  [
+    "group text-center flex-shrink-0 border-0 bg-transparent pl-1 pr-2 py-1 text-gray-300 hover:text-blue-500 flex items-center justify-center cursor-pointer"
+  ],
+  [
+    "group text-gray-400 hover:text-blue-600 flex-1 min-w-0 relative flex justify-between items-center p-2"
+  ],
+  ["group-hover:text-orange-500 truncate"],
+  ["group-hover:text-orange-500 truncate  ", "italic"],
+  ["group-hover:text-orange-500 truncate  ", "italic text-gray-400"],
+  [
+    "group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3!",
+    "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+    "bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80",
+    "bg-destructive/10 text-destructive focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:focus-visible:ring-destructive/40 [a]:hover:bg-destructive/20",
+    "border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground",
+    "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50",
+    "text-primary underline-offset-4 hover:underline",
+    "default"
+  ],
+  [
+    "group/editor",
+    "relative w-full cursor-text overflow-x-hidden overflow-y-auto break-words whitespace-pre-wrap select-text",
+    "rounded-md ring-offset-background focus-visible:outline-none",
+    "placeholder:text-muted-foreground/80 **:data-slate-placeholder:top-[auto_!important] **:data-slate-placeholder:text-muted-foreground/80 **:data-slate-placeholder:opacity-100!",
+    "[&_strong]:font-bold",
+    "default",
+    "cursor-not-allowed opacity-50",
+    "ring-2 ring-ring ring-offset-2",
+    "w-full px-0 text-base md:text-sm",
+    "max-h-[min(70vh,320px)] w-full max-w-[700px] overflow-y-auto px-3 py-2 text-base md:text-sm",
+    "rounded-none border-none bg-transparent text-sm",
+    "size-full px-2 sm:px-4 pt-2 text-base min-h-[100px]",
+    "size-full px-2 sm:px-4 pt-2 text-base h-[650px]",
+    "size-full px-2 sm:px-4 pt-4 pb-72 text-base",
+    "px-3 py-2 text-base data-readonly:w-fit"
+  ],
+  ["group/menu-item relative"],
+  ["group/menu-sub-item relative"],
+  ["group/row"],
+  [
+    "group/sidebar-wrapper flex min-h-svh w-full has-data-[variant=inset]:bg-sidebar"
+  ],
+  ["group/table relative w-fit"],
+  ["grow h-full w-full shrink flex flex-col gap-3 items-start justify-start"],
+  ["grow my-4 border-b border-gray-200"],
+  [
+    "grow-0 flex items-center gap-1.5 whitespace-nowrap rounded-lg border border-dashed border-gray-200 bg-gray-100 px-3 py-1.5 text-sm text-gray-500"
+  ],
+  [
+    "grow-0 flex items-center gap-2 whitespace-nowrap rounded-lg border bg-white px-3 py-1.5 text-sm transition-colors ease-out duration-150  ",
+    "border-tina-orange text-tina-orange font-medium",
+    "border-gray-200 text-gray-700 hover:border-gray-300"
+  ],
+  ["grow-0 flex rounded-lg border border-gray-200 overflow-hidden"],
+  [
+    "h-[9px] w-[9px] rounded-full bg-blue-500 transition ease-out duration-150  ",
+    "scale-100 opacity-100 group-hover:bg-blue-400",
+    "scale-75 opacity-0"
+  ],
+  [
+    "h-10 w-10 inline-flex items-center justify-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+  ],
+  ["h-10 w-10 object-cover rounded-full shadow-sm"],
+  ["h-10 w-10 text-gray-400"],
+  [
+    "h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+  ],
+  ["h-14 w-14 object-cover rounded-full shadow-sm"],
+  [
+    "h-16 w-10 self-stretch bg-transparent bg-center bg-[length:auto_18px] -mr-4 ml-2 outline-none cursor-pointer transition-opacity duration-100 ease-out flex justify-center items-center hover:bg-gray-50 hover:fill-gray-700  "
+  ],
+  [
+    "h-16 w-full rounded border border-gray-200 mb-2",
+    "w-8 h-8 rounded border border-gray-200 flex-shrink-0"
+  ],
+  ["h-2 rounded-full bg-gray-200 overflow-hidden"],
+  ["h-24"],
+  ["h-3.5 w-3.5 transition-transform  ", "rotate-180"],
+  ["h-3.5 w-auto text-gray-700 flex-shrink-0"],
+  ["h-3/4 text-center flex flex-col justify-center"],
+  ["h-4 max-w-(--skeleton-width) flex-1"],
+  ["h-4 w-4"],
+  ["h-4 w-4  "],
+  ["h-4 w-4 opacity-50"],
+  ["h-4 w-4 transition-transform duration-200 fill-none", "rotate-180"],
+  ["h-4 w-4 transition-transform duration-200", "rotate-180"],
+  ["h-40 w-full"],
+  ["h-48 overflow-y-auto"],
+  ["h-5 p-0.5 w-auto  "],
+  ["h-5 w-1/3"],
+  ["h-5 w-2/3"],
+  ["h-5 w-5"],
+  ["h-5 w-5 text-red-400"],
+  ["h-5 w-auto"],
+  [
+    "h-5 w-auto fill-current text-red-500 transition-colors duration-150 ease-out"
+  ],
+  ["h-5 w-auto opacity-80 mr-2"],
+  [
+    "h-5 w-auto text-gray-200 group-hover:text-inherit transition-colors duration-150 ease-out"
+  ],
+  [
+    "h-6 justify-between gap-1 px-2 text-xs text-muted-foreground select-none",
+    "hover:bg-[#E2E8F0] bg-[#F1F5F9] text-[#64748B] hover:text-[#0F172A]"
+  ],
+  [
+    "h-6 justify-between gap-1 px-2 text-xs text-muted-foreground select-none",
+    "hover:bg-[#E2E8F0] bg-[#F1F5F9] text-[#64748B] hover:text-[#0F172A]",
+    "bg-[#E2E8F0] text-[#0F172A]"
+  ],
+  ["h-6 w-6"],
+  ["h-6 w-auto"],
+  ["h-6 w-auto text-gray-600"],
+  [
+    "h-6 w-auto transition-opacity duration-150 ease-out opacity-80 group-hover:opacity-90"
+  ],
+  ["h-8 w-auto fill-orange-500"],
+  ["h-8 w-auto text-gray-600"],
+  ["h-8 w-full"],
+  ["h-8 w-full bg-background shadow-none"],
+  [
+    "h-8 w-full min-w-0 rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-colors outline-none file:inline-flex file:h-6 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40"
+  ],
+  ["h-9"],
+  [
+    "h-9 w-9 p-0 font-normal aria-selected:opacity-100 rounded-l-md rounded-r-md"
+  ],
+  [
+    "h-9 w-9 text-center  hover:[&:not([aria-selected])]:bg-tina-orange/10 text-sm p-0 relative [&:has([aria-selected].day-range-end)]:rounded-r-md [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected])]:bg-accent first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md focus-within:relative focus-within:z-20 rounded-md"
+  ],
+  ["h-auto w-5 caret-transparent"],
+  ["h-auto w-5 inline-block opacity-70 -mt-0.5 -mx-0.5"],
+  ["h-full bg-tina-orange transition-[width] duration-300 ease-out"],
+  ["h-full flex flex-col"],
+  [
+    "h-full flex items-center justify-center p-6 bg-gradient-to-t from-gray-200 to-transparent"
+  ],
+  [
+    "h-full flex-1 text-gray-700 flex flex-col relative bg-gray-50 outline-none active:outline-none focus:outline-none"
+  ],
+  [
+    "h-full grow overflow-y-auto p-4 transition duration-150 ease-out bg-gradient-to-b from-gray-50/50 to-gray-50  ",
+    "border-2 border-tina-orange rounded-lg"
+  ],
+  ["h-full overflow-y-auto max-h-full bg-gray-50 @container"],
+  ["h-full overflow-y-auto max-h-full bg-gray-50 pt-4 px-6 pb-12"],
+  ["h-full py-1"],
+  ["h-full w-3/5 text-gray-300"],
+  ["h-full w-full bg-white"],
+  [
+    "h-full w-full cursor-pointer object-cover transition-opacity hover:opacity-80"
+  ],
+  ["h-px"],
+  [
+    "h-screen w-full bg-gradient-to-b from-blue-900 to-gray-900 flex items-center justify-center px-4 py-6"
+  ],
+  ["hidden"],
+  ["hidden md:flex gap-6"],
+  ["hidden sm:flex items-center gap-0 sm:gap-1"],
+  ["hidden sm:inline"],
+  ["hover:bg-transparent"],
+  ["hover:text-foreground transition-colors"],
+  ["icon", "ghost"],
+  [
+    "icon-parent inline-flex items-center font-medium focus:outline-none focus:ring-2 focus:shadow-outline text-center rounded justify-center transition-all duration-150 ease-out whitespace-nowrap shadow text-gray-500 bg-white hover:bg-gray-50 border border-gray-100 focus:ring-white focus:ring-blue-500 w-full md:w-auto text-sm h-10 px-6 mr-4",
+    "opacity-50 pointer-events-none cursor-not-allowed"
+  ],
+  ["ignore-click-outside/toolbar"],
+  ["inline-block fill-white rounded-[50%] bg-blue-500 shadow-md"],
+  ["inline-block h-10 w-auto group-hover:text-orange-500"],
+  ["inline-block h-8 -mt-1 ml-1 w-auto opacity-70"],
+  ["inline-block h-auto w-10 opacity-80 hover:opacity-100"],
+  [
+    "inline-block min-w-[3rem] text-right  ",
+    "font-medium text-gray-800",
+    "text-gray-500"
+  ],
+  ["inline-block mr-1"],
+  [
+    "inline-block opacity-0 group-hover:opacity-100 transition-all duration-300 ease-out"
+  ],
+  [
+    "inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
+  ],
+  ["inline-flex"],
+  ["inline-flex gap-2"],
+  [
+    "inline-flex items-center font-medium focus:ring-2 focus:outline-none focus:ring-tina-orange-dark focus:shadow-outline text-center rounded justify-center transition-all duration-150 ease-out whitespace-nowrap shadow text-white bg-tina-orange-dark hover:bg-tina-orange w-full md:w-auto text-sm h-10 px-6"
+  ],
+  ["inline-flex items-center gap-1.5"],
+  [
+    "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+    "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+    "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+    "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+    "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
+    "hover:bg-accent hover:text-accent-foreground",
+    "text-primary underline-offset-4 hover:underline",
+    "h-9 px-4 py-2",
+    "h-8 rounded-md px-3 text-xs",
+    "h-10 rounded-md px-8",
+    "h-9 w-9",
+    "default",
+    "default"
+  ],
+  [
+    "inline-flex items-center justify-center rounded text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+    "[&_svg:not([data-icon])]:size-5",
+    "sm",
+    "default",
+    "h-10 px-3",
+    "h-11 px-5",
+    "h-9 px-2",
+    "bg-transparent hover:bg-muted hover:text-muted-foreground aria-checked:bg-accent aria-checked:text-accent-foreground",
+    "border border-input bg-transparent hover:bg-accent hover:text-accent-foreground"
+  ],
+  [
+    "inline-flex items-center justify-center whitespace-nowrap rounded text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+    "border border-gray-200 bg-white hover:bg-white hover:text-accent-foreground",
+    "h-10 px-4 py-2",
+    "h-9 rounded px-3",
+    "h-11 rounded px-8",
+    "h-10 w-10",
+    "outline",
+    "default"
+  ],
+  [
+    "inline-flex items-center justify-center whitespace-nowrap rounded text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+    "default",
+    "default",
+    "h-auto w-full cursor-pointer justify-start",
+    "h-10 px-4 py-2",
+    "size-10",
+    "h-11 rounded px-8",
+    "h-9 rounded px-3",
+    "size-9 rounded px-0",
+    "h-8 rounded px-3",
+    "bg-primary text-primary-foreground hover:bg-primary/90",
+    "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+    "hover:bg-accent hover:text-accent-foreground",
+    "text-base text-primary underline underline-offset-4",
+    "text-primary underline-offset-4 hover:underline",
+    "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+    "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+    "bg-tina-orange-dark text-white hover:bg-tina-orange-dark/90 disabled:bg-tina-orange-dark/50"
+  ],
+  [
+    "inline-flex items-center rounded px-2 py-1 text-xs font-medium border space-x-1  "
+  ],
+  ["interactive"],
+  ["invisible"],
+  ["invisible overflow-hidden text-nowrap"],
+  ["isolate z-50"],
+  ["justify-center lg:justify-start py-2"],
+  ["justify-center py-2"],
+  ["language- "],
+  ["lead"],
+  ["leading-none font-semibold"],
+  ["left-0 right-0 relative"],
+  ["lg:min-w-[130px]"],
+  ["light"],
+  ["list-decimal mb-4 ml-4 pl-4 space-y-2 text-gray-700 dark:text-gray-300"],
+  ["list-disc mb-4 ml-4 pl-4 space-y-2 text-gray-700 dark:text-gray-300"],
+  ["loud"],
+  [
+    "m-0 block h-auto max-h-48 max-w-full overflow-hidden rounded bg-gray-200 object-contain shadow lg:max-h-64  ",
+    "min-w-[12rem]"
+  ],
+  ["m-0 flex-1 max-w-[680px] text-left break-all"],
+  ["m-0 flex! flex-col p-0"],
+  ["m-0 font-mono text-sm text-red-700 whitespace-pre-wrap break-words"],
+  ["m-0 p-0"],
+  [
+    "m-0 ps-6",
+    "list-decimal",
+    "list-disc [&_ul]:list-[circle] [&_ul_ul]:list-[square]"
+  ],
+  ["m-0 px-0 py-1"],
+  [
+    "m-0 text-xs font-semibold flex-1 text-ellipsis overflow-hidden transition-all ease-out duration-100 text-left"
+  ],
+  [
+    "m-0 text-xs font-semibold flex-1 text-ellipsis overflow-hidden transition-all ease-out duration-100 text-left  ",
+    "text-red-500",
+    "text-gray-600 group-hover:text-inherit"
+  ],
+  ["max-h-[24rem] flex flex-col w-full h-full"],
+  ["max-h-[45vh] overflow-auto"],
+  ["max-h-[initial] relative h-auto rounded shadow bg-gray-100  "],
+  ["max-h-72 overflow-y-auto border-border rounded-none rounded-bl rounded-br"],
+  ["max-w-3xl mx-auto px-6 sm:px-8 py-24"],
+  ["max-w-4xl mx-auto px-6 sm:px-8 flex-1 pt-4"],
+  ["max-w-4xl mx-auto px-6 sm:px-8 py-24"],
+  ["max-w-4xl mx-auto px-6 sm:px-8 py-24 flex-1 pb-2"],
+  ["max-w-5xl mx-auto px-6 sm:px-8 py-24"],
+  ["max-w-7xl mx-auto px-6 sm:px-8 py-0 relative z-10"],
+  ["max-w-7xl mx-auto px-6 sm:px-8 py-24"],
+  [
+    "max-w-7xl mx-auto px-6 sm:px-8 py-24 flex flex-wrap gap-x-10 gap-y-8 text-left"
+  ],
+  ["max-w-7xl mx-auto px-6 sm:px-8 py-8 relative"],
+  ["max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8"],
+  ["max-w-full w-full flex-1 flex justify-start items-center gap-3"],
+  ["max-w-md w-full space-y-6"],
+  ["max-w-sm"],
+  ["max-w-sm break-all shadow-md"],
+  ["max-w-sm text-sm text-gray-500"],
+  ["mb-1"],
+  ["mb-14 block rounded-lg w-full h-auto"],
+  ["mb-2"],
+  ["mb-2 flex items-center gap-1"],
+  [
+    "mb-2 mt-2 group relative text-xs font-bold border border-gray-100 w-full outline-none transition-all ease-out duration-150 hover:text-blue-500 focus:text-blue-500 focus:bg-gray-50 hover:bg-gray-50 rounded bg-white shadow overflow-hidden"
+  ],
+  ["mb-3"],
+  ["mb-3 font-mono text-xs break-words text-gray-500"],
+  ["mb-3 text-base text-gray-700"],
+  ["mb-3 text-xl text-gray-600"],
+  ["mb-4"],
+  ["mb-4 flex items-center justify-between gap-2"],
+  ["mb-4 min-w-0"],
+  ["mb-4 text-gray-500"],
+  ["mb-4 text-gray-700 dark:text-gray-300 leading-relaxed"],
+  ["mb-6"],
+  ["mb-6 flex items-center justify-between gap-4"],
+  ["mb-8"],
+  ["md:hidden hidden border-t border-gray-200 dark:border-gray-800"],
+  ["md:hidden text-gray-700 dark:text-gray-200 p-2"],
+  ["me-2 mt-1"],
+  ["mermaid not-tina-prose"],
+  [
+    "min-h-[100px] max-w-full tina-prose relative shadow-inner focus-within:shadow-outline focus-within:border-blue-500 block w-full bg-white border border-gray-200 text-gray-600 focus-within:text-gray-900 rounded pt-0 py-2"
+  ],
+  ["min-h-[50vh] flex flex-col items-center justify-center gap-4 px-6 py-24"],
+  ["min-h-0 flex-1 overflow-y-auto"],
+  ["min-h-screen flex flex-col"],
+  ["min-h-screen flex flex-col      ", "font-nunito", "font-lato", "font-sans"],
+  [
+    "min-h-screen flex flex-col bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000"
+  ],
+  [
+    "min-h-screen max-h-screen px-4 py-12 text-center flex flex-col items-center justify-center"
+  ],
+  ["min-w-[180px]"],
+  ["min-w-[192px] max-h-[24rem] overflow-y-auto flex flex-col w-full h-full"],
+  [
+    "min-w-[192px] max-h-[24rem] overflow-y-auto flex flex-col w-full h-full rounded-lg shadow-inner bg-white border border-gray-200"
+  ],
+  [
+    "min-w-[192px] rounded-3xl border border-solid border-[#efefef] block absolute bottom-5 right-5   transition-all duration-100 ease-out origin-bottom-right shadow-[0_2px_3px_rgba(0,0,0,0.05)] bg-white overflow-hidden z-10  ",
+    "opacity-100",
+    "opacity-0"
+  ],
+  ["min-w-[220px]"],
+  ["min-w-0"],
+  ["min-w-0 flex flex-grow"],
+  ["min-w-0 flex-1"],
+  ["min-w-0 rounded-none rounded-bl rounded-br border-border"],
+  ["min-w-0 text-gray-700 hover:text-orange-500"],
+  ["min-w-52"],
+  ["min-w-full"],
+  ["mine"],
+  ["ml-0 mr-0 w-6 h-6 opacity-80"],
+  ["ml-0.5 size-4"],
+  ["ml-1 -mr-1 inline-block"],
+  ["ml-1 -mr-1 w-6 h-6 opacity-80"],
+  ["ml-1 text-blue-600 hover:opacity-60"],
+  ["ml-2"],
+  ["ml-2 h-4 w-4"],
+  ["ml-3"],
+  ["ml-3 flex-1"],
+  ["ml-auto"],
+  ["ml-auto flex items-center gap-3"],
+  [
+    "ml-auto flex justify-self-end items-center fill-gray-400 cursor-pointer transition-colors duration-100 ease-out hover:fill-gray-700"
+  ],
+  [
+    "ml-auto p-1 text-gray-500 hover:text-orange-500 hover:bg-gray-100 rounded transition-all ease-out duration-150"
+  ],
+  ["ml-auto size-4"],
+  [
+    "mr-0 table h-px border-collapse border border-gray-200 not-tina-prose my-2",
+    "selection:bg-transparent"
+  ],
+  ["mr-1"],
+  ["mr-1 -ml-0.5 w-6 h-auto opacity-70"],
+  ["mr-1 w-6 h-auto inline-block text-red-600"],
+  ["mr-1.5"],
+  [
+    "mr-1.5 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] border-[0.5px] border-tina-orange/50 font-semibold bg-tina-orange/10 text-tina-orange leading-none"
+  ],
+  ["mr-2"],
+  ["mr-2 h-4 w-4"],
+  ["mr-2 h-4 w-4 shrink-0 opacity-50"],
+  ["mr-2 h-6 opacity-80 w-auto"],
+  ["mr-2 inline-block size-4 rounded border border-gray-300"],
+  ["mr-2 opacity-80"],
+  ["mr-2 size-4"],
+  ["mr-2 size-4 shrink-0 opacity-50"],
+  ["mr-2 size-5"],
+  ["mr-2 w-4 h-4"],
+  ["mr-3 h-6 opacity-80 w-auto"],
+  [
+    "mt-0 -mr-1 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 py-1"
+  ],
+  ["mt-1"],
+  [
+    "mt-1 mb-2 h-0.5 rounded-sm border-none bg-gray-600 bg-clip-content mx-[10%] caret-transparent",
+    "ring-2 ring-ring ring-offset-2",
+    "cursor-pointer"
+  ],
+  ["mt-1 text-muted-foreground"],
+  ["mt-1 text-xs opacity-60"],
+  ["mt-12"],
+  [
+    "mt-2 -mr-1 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+  ],
+  ["mt-2 flex gap-2"],
+  ["mt-2 flex gap-2 items-center"],
+  ["mt-2 flex items-center justify-between text-xs text-gray-500"],
+  [
+    "mt-2 flex items-start rounded-md border border-red-300 bg-red-50 p-3 shadow-sm"
+  ],
+  ["mt-2 grid grid-cols-8 gap-1.5"],
+  ["mt-2 max-w-xl text-sm text-red-800 space-y-4"],
+  ["mt-2 not-italic text-sm text-gray-500"],
+  ["mt-2 text-base text-inherit opacity-80"],
+  ["mt-2 text-sm"],
+  ["mt-2 text-sm text-gray-500"],
+  ["mt-3 rounded shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0"],
+  ["mt-3 space-y-1 text-center"],
+  ["mt-3 text-sm text-gray-500"],
+  ["mt-3 text-sm text-gray-500 dark:text-gray-400"],
+  ["mt-4 flex flex-wrap gap-2"],
+  ["mt-4 flex justify-center"],
+  [
+    "mt-4 rounded-md bg-theme-500 px-5 py-2 text-white font-medium hover:bg-theme-600 transition"
+  ],
+  ["mt-4 text-inherit opacity-90"],
+  ["mt-4 text-inherit opacity-90 max-w-2xl mx-auto"],
+  ["mt-4 text-sm text-muted-foreground"],
+  ["mt-4 w-72 max-w-full mx-auto"],
+  ["mt-8"],
+  ["mt-8 "],
+  ["mt-8 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg"],
+  ["mt-auto flex flex-col gap-2 p-4"],
+  ["mx-1 flex items-center gap-1"],
+  ["mx-2 w-auto bg-sidebar-border"],
+  [
+    "mx-3.5 flex min-w-0 translate-x-px flex-col gap-1 border-l border-sidebar-border px-2.5 py-0.5 group-data-[collapsible=icon]:hidden"
+  ],
+  [
+    "mx-auto block h-auto w-[min(80vw,720px)] max-w-full max-h-[75vh] rounded-md bg-black shadow-sm"
+  ],
+  ["mx-auto block max-w-full max-h-[75vh] object-contain rounded-md shadow-sm"],
+  ["mx-auto", "mr-auto", "ml-auto"],
+  ["mx-auto px-6 sm:px-8"],
+  [
+    "mx-auto w-fit max-w-full rounded-lg border border-gray-200 bg-gray-50 p-2 sm:p-3"
+  ],
+  ["my-1"],
+  ["my-1 border-l-2 border-gray-200 pl-6 not-tina-prose text-gray-500"],
+  ["my-1 justify-between"],
+  ["my-8"],
+  ["my-8 border-t border-gray-300 dark:border-gray-700"],
+  ["my-8 flex-grow-0"],
+  ["my-auto group gap-0.5 flex w-full"],
+  ["my-auto text-gray-600 group-hover:text-blue-600"],
+  [
+    "no-scrollbar flex min-h-0 flex-1 flex-col gap-0 overflow-auto group-data-[collapsible=icon]:overflow-hidden"
+  ],
+  ["object-cover group-hover:scale-105 transition-transform duration-300"],
+  ["object-cover rounded-full shadow-sm"],
+  ["object-cover rounded-full shadow-sm mr-2"],
+  ["opacity-0"],
+  ["opacity-100", "opacity-0"],
+  ["opacity-50 italic"],
+  ["opacity-70 italic"],
+  [
+    "outline-none focus:outline-none bg-transparent border-0 p-0 m-0 absolute right-2.5 top-1/2 -translate-y-1/2 opacity-50 hover:opacity-100 transition-all ease-out duration-150"
+  ],
+  ["outline-none relative hover:opacity-60 w-full"],
+  ["overflow-hidden mr-2"],
+  ["overflow-hidden p-0 shadow-lg"],
+  [
+    "overflow-hidden p-1 text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-sm [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground"
+  ],
+  ["overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"],
+  [
+    "overflow-x-auto p-4 pt-12 font-mono text-sm leading-[normal] [tab-size:2] print:break-inside-avoid my-2 tina-code-block"
+  ],
+  ["overflow-x-auto py-2", "*:data-[slot=block-selection]:left-2"],
+  ["overflow-x-hidden"],
+  ["p-0 relative min-w-[var(--radix-popover-trigger-width)]"],
+  [
+    "p-1",
+    "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]"
+  ],
+  ["p-12 text-xl opacity-50 text-center"],
+  ["p-2"],
+  ["p-2 flex-grow-0 w-full bg-gray-50"],
+  ["p-2 hover:bg-gray-100 transition-colors duration-150 ease-in-out rounded"],
+  ["p-2 shaodw-lg border  ", " opacity-0 hidden "],
+  [
+    "p-2 text-gray-500 hover:text-blue-500 hover:bg-gray-100 transition-colors duration-150 ease-in-out rounded"
+  ],
+  ["p-3"],
+  ["p-3 border border-gray-100 rounded overflow-hidden bg-gray-50 shadow"],
+  ["p-4 align-middle [&:has([role=checkbox])]:pr-0"],
+  ["p-4 bg-yellow-100 text-yellow-900 rounded"],
+  ["p-4 text-sm"],
+  ["p-4 text-sm text-muted-foreground"],
+  ["p-4 text-sm whitespace-normal text-gray-700"],
+  ["p-4 w-full min-h-[96px] flex flex-col justify-center items-center"],
+  ["p-6 flex flex-col flex-1"],
+  ["p-6 text-center text-gray-500"],
+  ["p-6 text-gray-600 dark:text-gray-400"],
+  ["p-6 text-red-600"],
+  ["p-8 text-red-500 bg-red-50 rounded-lg m-8"],
+  ["p-8 w-full max-w-6xl mx-auto font-sans"],
+  ["pb-1.5"],
+  ["pb-1.5 pr-6 w-40"],
+  ["pb-3"],
+  [
+    "peer relative flex size-4 shrink-0 items-center justify-center rounded-[4px] border border-input transition-colors outline-none group-has-disabled/field:opacity-50 after:absolute after:-inset-x-3 after:-inset-y-2 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 aria-invalid:aria-checked:border-primary dark:bg-input/30 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 data-checked:border-primary data-checked:bg-primary data-checked:text-primary-foreground dark:data-checked:bg-primary"
+  ],
+  [
+    "peer/menu-button group/menu-button flex w-full items-center gap-2 overflow-hidden rounded-md p-2 text-left text-sm ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground [&_svg]:size-4 [&_svg]:shrink-0 [&>span:last-child]:truncate",
+    "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground",
+    "bg-background shadow-[0_0_0_1px_var(--sidebar-border)] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:shadow-[0_0_0_1px_var(--sidebar-accent)]",
+    "h-8 text-sm",
+    "h-7 text-xs",
+    "h-12 text-sm group-data-[collapsible=icon]:p-0!",
+    "default",
+    "default"
+  ],
+  [
+    "pl-1 pr-6 py-2 flex-1 bg-transparent border-none text-sm text-gray-700 group hover:bg-gray-50 transition-all ease-out duration-150 flex items-center gap-1"
+  ],
+  ["pl-1.5 font-bold text-gray-500"],
+  ["pl-1.5 text-gray-300"],
+  ["pl-2 text-sm text-gray-300"],
+  ["pl-3 pr-2 py-2 text-base text-tina-orange-dark bg-tina-orange-light"],
+  ["pl-3 pr-3 max-w-xs  ", "py-2.5", "py-1.5"],
+  [
+    "pointer-events-auto p-2 hover:bg-gray-100 transition-colors duration-150 ease-in-out rounded"
+  ],
+  [
+    "pointer-events-auto p-2 hover:bg-gray-100 transition-colors duration-150 ease-in-out rounded  "
+  ],
+  [
+    "pointer-events-auto p-4 hover:bg-gray-100 transition-colors duration-150 ease-in-out rounded z-10",
+    "hidden"
+  ],
+  [
+    "pointer-events-auto px-3 py-3 flex shrink gap-1 items-center justify-between max-w-sm"
+  ],
+  ["pointer-events-none"],
+  ["pointer-events-none -mx-1 my-1 h-px bg-border"],
+  [
+    "pointer-events-none absolute inset-0 z-1 bg-brand/[.13] transition-opacity",
+    "opacity-0",
+    "opacity-100"
+  ],
+  [
+    "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center"
+  ],
+  [
+    "pointer-events-none absolute right-1 flex h-5 min-w-5 items-center justify-center rounded-md px-1 text-xs font-medium text-sidebar-foreground tabular-nums select-none group-data-[collapsible=icon]:hidden peer-hover/menu-button:text-sidebar-accent-foreground peer-data-[size=default]/menu-button:top-1.5 peer-data-[size=lg]/menu-button:top-2.5 peer-data-[size=sm]/menu-button:top-1 peer-data-active/menu-button:text-sidebar-accent-foreground"
+  ],
+  [
+    "pointer-events-none absolute right-2 flex size-4 items-center justify-center"
+  ],
+  ["pointer-events-none size-4 text-muted-foreground"],
+  ["pr-1"],
+  [
+    "pr-6 py-2 w-full bg-transparent border-none text-sm text-gray-700 group hover:bg-gray-50 transition-all ease-out duration-150 flex items-center gap-1"
+  ],
+  ["preview"],
+  ["primary"],
+  ["prose dark:prose-dark prose-lg mx-auto max-w-none {{ if eq $color "],
+  ["prose dark:prose-dark w-full max-w-none"],
+  ["prose dark:prose-dark w-full max-w-none mb-5 opacity-70"],
+  ["prose prose-lg  ", "prose-primary", "dark:prose-dark"],
+  ["prose prose-lg dark:prose-invert"],
+  ["prose prose-lg mb-8 italic opacity-80 dark:prose-invert"],
+  [
+    "prose prose-lg mx-auto lg:mx-0 mb-10  ",
+    "prose-primary",
+    "dark:prose-dark"
+  ],
+  [
+    "prose prose-lg mx-auto lg:mx-0 mb-10 {{ if $isPrimary }}prose-primary{{ else }}dark:prose-dark{{ end }}"
+  ],
+  ["prose prose-lg mx-auto lg:mx-0 mb-10", "prose-primary", "dark:prose-dark"],
+  ["prose prose-lg", "prose-primary", "dark:prose-dark"],
+  ["pt-1 mb-5"],
+  ["pt-3"],
+  ["pt-4 pb-2 px-6"],
+  [
+    "px-1 w-8 hover:text-blue-600 hover:text-inherit text-gray-200 flex items-center justify-center hover:bg-gray-50"
+  ],
+  ["px-1.5 py-1 text-xs text-muted-foreground"],
+  ["px-2 pb-0.5 text-xs bg-gray-100 text-blue-700 rounded-full"],
+  ["px-2 py-0.5 text-xs bg-blue-100 text-blue-700 rounded-full flex-none"],
+  ["px-2 py-1.5 text-sm font-medium data-[inset]:pl-8"],
+  ["px-2 py-1.5 text-sm font-semibold"],
+  ["px-2 py-1.5 text-sm text-destructive"],
+  ["px-2 py-1.5 text-sm text-muted-foreground"],
+  ["px-3 py-1.5 flex"],
+  ["px-3 py-1.5 min-w-0"],
+  ["px-4"],
+  ["px-4 border-l"],
+  [
+    "px-4 pt-2 pb-4 flex flex-row flex-nowrap justify-between items-center gap-2 bg-gradient-to-t from-white to-gray-50 border-b border-gray-100"
+  ],
+  ["px-4 py-5 sm:p-6"],
+  ["px-4 py-6 space-y-2"],
+  ["px-4 w-full"],
+  ["px-5 pt-4"],
+  ["px-5 py-4 border-b border-gray-150"],
+  ["px-5 py-4 flex gap-4 w-full justify-between"],
+  ["px-6 py-2 space-y-2"],
+  [
+    "px-6 py-3 bg-theme-500 text-white rounded-lg hover:bg-theme-600 transition-colors"
+  ],
+  [
+    "px-6 py-4 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between"
+  ],
+  ["px-6 py-8 w-full h-full flex flex-col items-center justify-center"],
+  ["px-6 sm:px-8 md:px-10 py-10 mb-8 last:mb-0"],
+  ["px-6 sm:px-8 py-8"],
+  ["py-0 relative z-10"],
+  ["py-0 relative z-10 max-w-8xl"],
+  ["py-1"],
+  ["py-1 not-tina-prose"],
+  ["py-1.5 flex items-center gap-2"],
+  ["py-1.5 pr-6 text-gray-500"],
+  ["py-1.5 text-gray-700"],
+  ["py-12 px-6 text-center text-gray-500 dark:text-gray-400"],
+  ["py-12 text-center text-gray-400"],
+  ["py-12 text-center text-gray-500"],
+  ["py-2 w-full"],
+  ["py-2 w-full  "],
+  ["py-3 pl-4 pr-0 w-0"],
+  ["py-4 flex items-center justify-between"],
+  ["py-4 px-6"],
+  [
+    "py-4 px-6 border-b border-gray-200 bg-white w-full grow-0 shrink basis-0 flex justify-center"
+  ],
+  ["py-5 px-4"],
+  ["py-6 text-center text-sm"],
+  ["relative"],
+  [
+    "relative block group text-left w-full text-base font-bold tracking-wide py-2 truncate    ",
+    "pointer-events-none",
+    "border-b border-gray-100"
+  ],
+  ["relative flex flex-1 items-center min-w-[200px] max-w-md"],
+  [
+    "relative flex flex-col items-center justify-center text-center p-5 pb-16 w-full h-full overflow-y-auto"
+  ],
+  [
+    "relative flex flex-wrap w-full h-full whitespace-nowrap overflow-x-visible"
+  ],
+  ["relative flex gap-2 w-full justify-between items-center mb-2"],
+  [
+    "relative flex h-[19px] w-[19px] items-center justify-center rounded-full border transition ease-out duration-150  ",
+    "border-blue-500 bg-white shadow-sm group-hover:border-blue-400",
+    "border-gray-300 bg-white group-hover:border-blue-300"
+  ],
+  [
+    "relative flex h-9 cursor-pointer select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors",
+    "focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    "pl-8"
+  ],
+  [
+    "relative flex h-9 select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none",
+    "cursor-pointer transition-colors hover:bg-blue-500 hover:text-black data-[active-item=true]:bg-orange-400 data-[active-item=true]:text-black"
+  ],
+  [
+    "relative flex items-center justify-center rounded-lg text-center text-xs py-2 px-3 flex-1 outline-none transition-all ease-out duration-150 hover:text-blue-500 focus:text-blue-500 focus:bg-gray-50 hover:bg-gray-50"
+  ],
+  [
+    "relative flex justify-between items-center gap-4 w-full px-4 text-left  ",
+    "py-2 border-t border-gray-100 ",
+    "py-3"
+  ],
+  [
+    "relative flex select-none items-center rounded-sm pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    "h-9 cursor-pointer px-2 data-[state=checked]:bg-accent data-[state=checked]:text-accent-foreground"
+  ],
+  [
+    "relative flex select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    "cursor-pointer"
+  ],
+  [
+    "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-2 pr-8 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
+  ],
+  [
+    "relative flex w-full flex-1 flex-col bg-background md:peer-data-[variant=inset]:m-2 md:peer-data-[variant=inset]:ml-0 md:peer-data-[variant=inset]:rounded-xl md:peer-data-[variant=inset]:shadow-sm md:peer-data-[variant=inset]:peer-data-[state=collapsed]:ml-2"
+  ],
+  ["relative flex w-full min-w-0 flex-col p-2"],
+  ["relative flex-none"],
+  ["relative flex-none w-full border-t border-gray-100"],
+  [
+    "relative flex-none w-full h-16 px-6 bg-white border-t border-gray-100 flex items-center justify-end"
+  ],
+  ["relative group"],
+  [
+    "relative group cursor-pointer flex justify-between items-stretch bg-white border border-gray-100 -mb-px overflow-visible p-0 text-sm font-normal    ",
+    "rounded shadow text-blue-600",
+    "text-gray-600 first:rounded-t last:rounded-b"
+  ],
+  ["relative group w-full h-fit md:w-auto"],
+  [
+    "relative h-[18px] w-[18px] rounded border text-indigo-600 focus:ring-indigo-500 transition ease-out duration-150  ",
+    "border-blue-500 bg-blue-500 shadow-sm group-hover:bg-blue-400 group-hover:border-blue-400",
+    "border-gray-200 bg-white shadow-inner group-hover:bg-gray-100"
+  ],
+  [
+    "relative h-dvh transform flex    ",
+    "-translate-x-full",
+    "transition-none",
+    "transition-all duration-300 ease-in",
+    "transition-all duration-150 ease-out",
+    "transition-all duration-300 ease-out"
+  ],
+  [
+    "relative h-full overflow-visible border border-gray-200 bg-background p-0",
+    "bg-[--cellBackground]",
+    "bg-background",
+    "text-left [&_>_*]:m-0",
+    "before:size-full",
+    "before:z-10 before:bg-muted"
+  ],
+  [
+    "relative has-focus:border-ring border border-input shadow-xs has-focus:ring-ring/50 has-focus:ring-[3px] rounded-md"
+  ],
+  [
+    "relative inline-block px-3 py-1 mb-8 text-md font-bold tracking-wide title-font z-20"
+  ],
+  ["relative inline-flex shadow-sm rounded leading-none"],
+  [
+    "relative isolate z-50 max-h-(--available-height) w-(--anchor-width) min-w-36 origin-(--transform-origin) overflow-x-hidden overflow-y-auto rounded-lg bg-popover text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 data-[align-trigger=true]:animate-none data-[side=bottom]:slide-in-from-top-2 data-[side=inline-end]:slide-in-from-left-2 data-[side=inline-start]:slide-in-from-right-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95"
+  ],
+  [
+    "relative left-0 w-full h-full bg-gradient-to-b from-gray-50/50 to-gray-50 overflow-y-auto transition-opacity duration-300 ease-out flex flex-col opacity-100"
+  ],
+  [
+    "relative left-0 w-full h-full flex flex-col items-stretch bg-gray-50 border-r border-gray-200 overflow-hidden"
+  ],
+  ["relative max-w-2xl mx-auto"],
+  ["relative max-w-4xl lg:max-w-5xl mx-auto"],
+  ["relative min-h-[1lh]"],
+  ["relative opacity-95"],
+  ["relative overflow-hidden bg-gradient-to-b  "],
+  [
+    "relative overflow-hidden bg-gradient-to-b {{ if $isPrimary }}text-white from-theme-500 to-theme-700{{ else }}text-gray-800 dark:text-gray-50 from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000{{ end }}"
+  ],
+  [
+    "relative overflow-hidden bg-gradient-to-b",
+    "text-white from-theme-500 to-theme-700",
+    "text-gray-800 dark:text-gray-50 from-white to-gray-50 dark:from-gray-900 dark:to-gray-1000"
+  ],
+  [
+    "relative overflow-hidden rounded-lg shadow-lg bg-white border border-gray-150 z-50"
+  ],
+  [
+    "relative rounded-lg text-center text-xs py-2 px-3 flex-1 outline-none transition-all ease-out duration-150 hover:text-blue-500 focus:text-blue-500 focus:bg-gray-50 hover:bg-gray-50"
+  ],
+  ["relative rounded-md bg-[#F1F5F9] shadow-sm"],
+  ["relative row-start-1 lg:col-span-2 flex justify-center"],
+  [
+    "relative select-none\ttext-base inline-block tracking-wide transition duration-150 ease-out hover:opacity-100 py-8 px-4  ",
+    "opacity-70"
+  ],
+  [
+    "relative select-none text-base inline-flex items-center tracking-wide transition duration-150 ease-out opacity-70 hover:opacity-100 px-2 sm:px-4 py-5 {{ if $active }}opacity-100 border-b-3 {{ if $isPrimary }}border-white{{ else }}border-theme-200 text-theme-600 dark:text-theme-300{{ end }}{{ end }}"
+  ],
+  [
+    "relative select-none text-base inline-flex items-center tracking-wide transition duration-150 ease-out opacity-70 hover:opacity-100 px-2 sm:px-4 py-5",
+    "opacity-100",
+    "border-b-3 border-white",
+    "border-b-3 border-theme-200",
+    "text-theme-600 dark:text-theme-300"
+  ],
+  [
+    "relative text-base py-1.5 px-3 flex items-center gap-1.5 border-l-0 border-t-0 border-r-0 border-b border-gray-50 w-full outline-none transition-all ease-out duration-150  ",
+    "bg-gray-50 text-gray-400 pointer-events-none",
+    "cursor-pointer bg-blue-50 text-blue-800 pointer-events-none hover:text-blue-500 focus:text-blue-500 focus:bg-gray-50 hover:bg-gray-50",
+    "cursor-pointer hover:text-blue-500 focus:text-blue-500 focus:bg-gray-50 hover:bg-gray-50"
+  ],
+  ["relative text-blue-500 shrink-0 w-5 h-auto mr-1.5 -ml-0.5 z-20"],
+  [
+    "relative text-center text-[13px] px-3 h-10 font-normal w-full bg-none cursor-pointer outline-none border-0 transition-all duration-[150ms] ease-out hover:text-blue-500 hover:bg-gray50 [&:not(:last-child)]: border-b-[1px] border-solid border-b-[#edecf3]  "
+  ],
+  ["relative text-center text-xs px-2 py-3 text-gray-300 bg-gray-50 italic"],
+  [
+    "relative text-center text-xs py-2 px-4 border-l-0 border-t-0 border-r-0 border-b border-gray-50 w-full outline-none transition-all ease-out duration-150 hover:text-blue-500 focus:text-blue-500 focus:bg-gray-50 hover:bg-gray-50"
+  ],
+  [
+    "relative text-gray-500 block text-left w-full text-base font-bold tracking-wide py-2 truncate pointer-events-none opacity-50"
+  ],
+  [
+    "relative transition ease-out duration-150  ",
+    "text-gray-800 opacity-100",
+    "text-gray-700 opacity-100 group-hover:text-gray-800"
+  ],
+  [
+    "relative transition ease-out duration-150  ",
+    "text-gray-800 opacity-100",
+    "text-gray-700 opacity-70 group-hover:opacity-100"
+  ],
+  [
+    "relative w-(--sidebar-width) bg-transparent transition-[width] duration-200 ease-linear",
+    "group-data-[collapsible=offcanvas]:w-0",
+    "group-data-[side=right]:rotate-180",
+    "group-data-[collapsible=icon]:w-[calc(var(--sidebar-width-icon)+(--spacing(4)))]",
+    "group-data-[collapsible=icon]:w-(--sidebar-width-icon)"
+  ],
+  [
+    "relative w-[48px] h-7 rounded-3xl bg-white shadow-inner border border-gray-200 pointer-events-none -ml-0.5"
+  ],
+  ["relative w-12 h-7"],
+  [
+    "relative w-8 px-1 py-2.5 flex items-center justify-center hover:bg-gray-50 group cursor-[grab]  ",
+    "text-blue-500",
+    "text-gray-200 hover:text-gray-600"
+  ],
+  ["relative w-9 h-10"],
+  [
+    "relative w-full cursor-text caret-primary select-text selection:bg-brand/25 focus-visible:outline-none [&_.slate-selection-area]:z-50 [&_.slate-selection-area]:border [&_.slate-selection-area]:border-brand/25 [&_.slate-selection-area]:bg-brand/15",
+    "default",
+    "flex flex-wrap justify-between gap-1 px-1 py-0.5 text-sm",
+    "rounded-md border-[1.5px] border-transparent bg-transparent",
+    "has-[[data-slate-editor]:focus]:border-brand/50 has-[[data-slate-editor]:focus]:ring-2 has-[[data-slate-editor]:focus]:ring-brand/30",
+    "has-aria-disabled:border-input has-aria-disabled:bg-muted",
+    "h-full",
+    "h-[650px]",
+    "group rounded-md border border-input ring-offset-background focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2",
+    "has-data-readonly:w-fit has-data-readonly:cursor-default has-data-readonly:border-transparent has-data-readonly:focus-within:[box-shadow:none]"
+  ],
+  ["relative w-full flex-1 overflow-hidden"],
+  ["relative w-full h-48 overflow-hidden"],
+  ["relative w-full h-full flex flex-col items-stretch justify-between"],
+  [
+    "relative w-full h-full p-0 text-center [&:last-child[data-selected=true]_button]:rounded-r-md group/day aspect-square select-none",
+    "[&:nth-child(2)[data-selected=true]_button]:rounded-l-md",
+    "[&:first-child[data-selected=true]_button]:rounded-l-md"
+  ],
+  ["relative w-full inline-flex shadow-sm rounded"],
+  [
+    "relative w-full max-w-full flex justify-start  ",
+    "items-start gap-3",
+    "items-center gap-2"
+  ],
+  ["relative w-full overflow-auto"],
+  ["relative w-full overflow-hidden bg-gray-50"],
+  ["relative w-full pb-[100%]"],
+  ["relative w-full px-2    ", "mb-5 last:mb-0", "@sm:w-1/2"],
+  ["relative w-full px-2 mb-5 last:mb-0"],
+  [
+    "relative whitespace-nowrap flex items-center justify-center flex-1 block font-medium text-base px-3 py-2 text-gray-400 transition-all ease-out duration-150"
+  ],
+  ["relative z-[1000]"],
+  [
+    "relative z-10 inline-flex items-center justify-center flex-shrink-0   rounded-full    "
+  ],
+  [
+    "relative z-10 inline-flex items-center justify-center flex-shrink-0 rounded-full {{ if $isWhite }}bg-white dark:bg-gray-100 text-gray-800{{ else }}bg-theme-400 dark:bg-theme-500 text-theme-50{{ end }} {{ $sizeClass }}"
+  ],
+  [
+    "relative z-10 inline-flex items-center justify-center flex-shrink-0 rounded-full",
+    "bg-white dark:bg-gray-100 text-gray-800",
+    "bg-theme-400 dark:bg-theme-500 text-theme-50"
+  ],
+  [
+    "relative z-10 max-w-3xl mx-auto text-4xl lg:text-5xl font-bold tracking-normal text-center title-font  ",
+    "text-white",
+    "text-gray-700 dark:text-gray-50"
+  ],
+  [
+    "relative z-10 max-w-3xl mx-auto text-4xl lg:text-5xl font-bold tracking-normal text-center title-font {{ if $isPrimary }}text-white{{ else }}text-gray-700 dark:text-gray-50{{ end }}"
+  ],
+  [
+    "relative z-10 max-w-3xl mx-auto text-4xl lg:text-5xl font-bold tracking-normal text-center title-font",
+    "text-white",
+    "text-gray-700 dark:text-gray-50"
+  ],
+  ["relative z-10 mb-14 block rounded-lg w-full h-auto opacity-100"],
+  ["relative z-10 w-full max-w-xs rounded-lg lg:max-w-none h-auto"],
+  ["relative z-20 box-border h-full px-3 py-2"],
+  [
+    "relative z-30 flex flex-col bg-white border-r border-gray-200 w-96 h-full  "
+  ],
+  [
+    "relative z-30 flex flex-col bg-white border-r border-gray-200 w-96 h-full  ",
+    "hidden"
+  ],
+  [
+    "relative z-40 group text-left w-full bg-white hover:bg-gray-50 py-2 border-t border-b shadow-sm\n       border-gray-100 px-6 -mt-px"
+  ],
+  [
+    "relative z-50 max-h-[--radix-select-content-available-height] min-w-[8rem] overflow-y-auto overflow-x-hidden rounded-md border bg-popover text-popover-foreground shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 origin-[--radix-select-content-transform-origin]",
+    "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1"
+  ],
+  ["rotate-45 pointer-events-none"],
+  ["rounded bg-red-50 p-4 overflow-scroll"],
+  [
+    "rounded border bg-white p-4 text-popover-foreground shadow-md outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+    "max-h-[30vh] max-w-[30vw] overflow-y-auto"
+  ],
+  [
+    "rounded border border-gray-200 bg-white px-2 py-1 font-medium shadow hover:bg-blue-500 hover:text-white"
+  ],
+  [
+    "rounded shadow bg-white border border-gray-150 flex items-center tracking-[0.01em] leading-none text-gray-700"
+  ],
+  ["rounded-full"],
+  ["rounded-full mb-6 object-cover shadow-sm"],
+  ["rounded-full object-cover"],
+  ["rounded-full object-cover flex-shrink-0"],
+  ["rounded-full object-cover flex-shrink-0 shadow-sm"],
+  [
+    "rounded-l border-r-0 shadow rounded bg-white cursor-pointer relative inline-flex items-center px-2 py-2 border border-gray-200 hover:text-white text-sm font-medium transition-all ease-out duration-150 hover:bg-gray-500 focus:z-10 focus:outline-none focus:ring-1 focus:ring-gray-500 focus:border-gray-500"
+  ],
+  ["rounded-l-md bg-accent"],
+  ["rounded-lg border border-blue-200 bg-blue-50 p-3 text-sm w-full"],
+  [
+    "rounded-lg border border-gray-200 bg-gray-50 p-3 text-sm text-gray-500 italic"
+  ],
+  ["rounded-lg border shadow-sm      "],
+  [
+    "rounded-lg border shadow-sm px-4 lg:px-6 py-3 lg:py-4 bg-gradient-to-r from-yellow-50 to-yellow-100 border-yellow-200 mx-auto mb-12"
+  ],
+  ["rounded-md"],
+  [
+    "rounded-md bg-muted px-[0.3em] py-[0.2em] font-mono text-sm whitespace-pre-wrap"
+  ],
+  [
+    "rounded-md shadow-lg font-medium pointer-events-all text-sm transition-all duration-100 ease-out mb-4 max-w-full text-gray-700  "
+  ],
+  ["rounded-none"],
+  ["rounded-r-md bg-accent"],
+  ["rounded-sm"],
+  ["row-start-2 lg:row-start-1 lg:col-span-3 text-center lg:text-left"],
+  ["scroll-my-1 p-1"],
+  [
+    "scrollbar-hide flex w-auto max-w-[80vw] flex-row overflow-x-auto rounded-md border bg-popover p-1 shadow-md print:hidden"
+  ],
+  ["select-none"],
+  [
+    "select-none font-medium",
+    "text-sm",
+    "rounded-md pl-2 pr-1 flex items-center gap-1 text-sm h-8 [&>svg]:text-muted-foreground [&>svg]:size-3.5"
+  ],
+  ["select-none px-2 py-1.5 text-sm font-semibold", "pl-8"],
+  [
+    "select-none text-lg font-bold tracking-tight my-4 transition duration-150 ease-out transform"
+  ],
+  ["select-none w-(--cell-size)"],
+  ["self-center h-10 min-w-10 w-auto text-orange-500"],
+  ["self-center h-10 min-w-10 w-auto text-orange-500 mr-2"],
+  [
+    "shadow-inner focus:outline-none block text-base placeholder:text-gray-300 px-3 py-2 text-gray-600 flex-1 bg-white focus:text-gray-900"
+  ],
+  [
+    "shadow-inner focus:shadow-outline focus:border-blue-400 focus:outline-none block text-sm pl-2.5 pr-8 py-1.5 text-gray-600 w-full bg-white border border-gray-200 focus:text-gray-900 rounded placeholder-gray-400 hover:placeholder-gray-600 transition-all ease-out duration-150"
+  ],
+  [
+    "shadow-inner focus:shadow-outline focus:border-blue-500 focus:outline-none block text-base pr-3 truncate py-2 w-full border transition-all ease-out duration-150 focus:text-gray-900 rounded  ",
+    "bg-gray-50 text-gray-300  border-gray-150 pointer-events-none pl-8 group-hover:bg-white group-hover:text-gray-600  group-hover:border-gray-200",
+    "bg-white text-gray-600  border-gray-200 pl-3"
+  ],
+  [
+    "shadow-inner px-2 py-1 text-sm border border-gray-200 rounded focus:shadow-outline focus:border-blue-500 focus:outline-none  ",
+    "w-full",
+    "flex-1 min-w-0"
+  ],
+  [
+    "shadow-inner text-base leading-5 whitespace-normal break-all px-3 py-2 text-gray-600 w-full bg-gray-50 border border-gray-200 transition-all ease-out duration-150 rounded relative overflow-hidden appearance-none flex items-center w-full cursor-pointer hover:bg-white hover:text-blue-500   ",
+    "pointer-events-none"
+  ],
+  [
+    "shadow-inner text-base px-3 py-2 text-gray-600 resize-y focus:shadow-outline focus:border-blue-500 block w-full border border-gray-200 focus:text-gray-900 rounded"
+  ],
+  [
+    "shadow-inner w-full px-2 py-1 text-sm border border-gray-200 rounded focus:shadow-outline focus:border-blue-500 focus:outline-none"
+  ],
+  ["shadow-md"],
+  ["shadow-md max-w-xs break-all"],
+  [
+    "shrink grow-0 overflow-scroll w-full rounded shadow ring-1 ring-black ring-opacity-5"
+  ],
+  ["shrink min-w-0"],
+  [
+    "shrink-0 bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:w-px data-vertical:self-stretch"
+  ],
+  ["shrink-0 bg-border", "horizontal", "h-px w-full", "h-full w-px"],
+  [
+    "shrink-0 h-full flex flex-col items-start gap-3 overflow-y-auto bg-white border-l border-gray-100 bg-white shadow-md transition ease-out duration-150  ",
+    "p-4 opacity-100 w-[35%] max-w-[560px] min-w-[240px]",
+    "translate-x-8 opacity-0 w-[0px]"
+  ],
+  ["shrink-0 w-full flex flex-col justify-end items-start"],
+  ["size-1.5 rounded-full bg-primary"],
+  ["size-2 fill-current"],
+  ["size-4"],
+  ["size-4 rounded-md"],
+  ["size-4 text-gray-700"],
+  ["size-4 text-red-500 mr-2 flex-shrink-0"],
+  ["size-5"],
+  ["size-5", "mr-2 size-5", "mr-2 size-4", "mr-2 size-6"],
+  ["size-6 text-xs"],
+  ["size-full border-none"],
+  ["sm", "ghost"],
+  ["sm", "tinaPrimary"],
+  ["sm:flex"],
+  [
+    "sm:hidden relative h-12 w-12 flex-shrink-0 inline-flex items-center justify-center rounded-md hover:bg-black/10 dark:hover:bg-white/10 transition-colors"
+  ],
+  ["space-y-1"],
+  ["space-y-4"],
+  ["sr-only"],
+  ["sticky top-0 bg-gray-100 shadow-[inset_0_-2px_0_0_#e5e7eb] z-10"],
+  ["sticky top-0 bg-gray-50 p-2 border-b border-gray-100 z-10"],
+  [
+    "sticky top-0 z-20 border-b border-gray-200 bg-white  ",
+    "w-[4rem] pl-9",
+    "w-[20rem]",
+    "w-[14rem]",
+    "w-[5.5rem]"
+  ],
+  ["sticky top-1 w-full flex justify-between mb-2 z-50 max-w-full bg-white"],
+  [
+    "swatch-inner flex items-center justify-center text-[13px] font-bold w-full h-10 rounded hover:opacity-[.6]"
+  ],
+  ["text-[0.8rem] select-none text-muted-foreground"],
+  ["text-[24px] leading-none inline-block  "],
+  ["text-[40px] leading-none inline-block  "],
+  ["text-2xl  ", "text-orange-600", "text-gray-400"],
+  ["text-2xl font-bold mb-3 mt-6 text-gray-800 dark:text-gray-100"],
+  ["text-2xl font-bold text-gray-800"],
+  ["text-2xl font-sans text-gray-700"],
+  ["text-2xl font-sans tracking-wide text-gray-700 flex items-center gap-0.5"],
+  ["text-2xl font-semibold"],
+  [
+    "text-2xl font-semibold text-gray-700 dark:text-white group-hover:text-theme-600 dark:group-hover:text-theme-300 transition-all duration-150"
+  ],
+  ["text-2xl font-semibold text-inherit"],
+  ["text-2xl font-semibold title-font"],
+  ["text-2xl mb-4 last:mb-0 mt-6 first:mt-0 font-inter"],
+  ["text-2xl text-gray-700"],
+  ["text-2xl text-tina-orange-dark"],
+  ["text-3xl font-bold  "],
+  ["text-3xl font-bold mb-4 mt-8 text-gray-900 dark:text-gray-50"],
+  [
+    "text-3xl lg:text-4xl font-semibold text-theme-600 dark:text-theme-400 mb-5"
+  ],
+  ["text-3xl mb-4 last:mb-0 mt-6 first:mt-0 font-inter"],
+  ["text-3xl text-tina-orange"],
+  ["text-4xl font-bold mb-6 mt-8 text-gray-900 dark:text-gray-50"],
+  ["text-4xl font-extrabold tracking-tight"],
+  ["text-4xl font-extrabold tracking-tight mb-12 text-center title-font"],
+  [
+    "text-4xl font-extrabold tracking-tight mb-12 text-center title-font text-gray-800 dark:text-gray-50"
+  ],
+  ["text-4xl lg:text-5xl font-extrabold tracking-tight mb-6"],
+  [
+    "text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 text-gray-900 dark:text-gray-50"
+  ],
+  ["text-4xl mb-4 last:mb-0 mt-6 first:mt-0 font-inter"],
+  ["text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-100"],
+  ["text-6xl font-extrabold text-gray-800 dark:text-gray-50 mb-4"],
+  ["text-balance text-3xl font-semibold text-inherit"],
+  ["text-balance text-4xl font-semibold lg:text-5xl text-inherit"],
+  [
+    "text-base border-l-0 transition-colors border-t-0 border-r-0 outline-none transition-all ease-out duration-150  ",
+    "bg-gray-50 text-gray-400",
+    "border-b-2 border-gray-50",
+    "bg-blue-100 text-blue-900 border-b-2 border-blue-50 cursor-pointer",
+    "border-b-2 border-gray-50 hover:bg-gray-50/50 cursor-pointer"
+  ],
+  ["text-base flex-grow w-full break-words truncate px-3 py-2"],
+  ["text-base font-medium text-foreground"],
+  ["text-base font-medium text-gray-600 dark:text-gray-200"],
+  [
+    "text-base font-medium text-gray-600 group-hover:text-gray-800 dark:text-gray-200 dark:group-hover:text-white"
+  ],
+  [
+    "text-base font-medium text-gray-600 hover:text-theme-600 dark:text-gray-200 dark:hover:text-theme-300 transition-colors underline-offset-2 hover:underline"
+  ],
+  ["text-base font-sans leading-normal"],
+  ["text-base leading-none font-medium"],
+  ["text-base mb-3 overflow-y-auto"],
+  ["text-base mb-4 last:mb-0 mt-6 first:mt-0"],
+  ["text-base mb-4 text-center"],
+  ["text-base mb-6 text-center"],
+  ["text-base opacity-80 leading-relaxed"],
+  ["text-base text-gray-400 dark:text-gray-300"],
+  [
+    "text-base text-gray-400 group-hover:text-gray-500 dark:text-gray-300 dark:group-hover:text-gray-150"
+  ],
+  ["text-base text-gray-500 shrink-0"],
+  ["text-base text-gray-700 mb-2"],
+  ["text-base text-gray-700 mb-4"],
+  ["text-base text-left flex-1 text-gray-500 w-full break-words truncate"],
+  [
+    "text-base tracking-wide   hover:text-blue-600 flex items-center opacity-90 hover:opacity-100",
+    "text-blue-600",
+    "text-gray-500"
+  ],
+  ["text-base tracking-wide text-gray-500 flex items-center opacity-90"],
+  [
+    "text-base tracking-wide text-gray-500 hover:text-blue-600 flex items-center opacity-90 hover:opacity-100"
+  ],
+  [
+    "text-black font-sans font-medium text-base m-0 block truncate flex items-center"
+  ],
+  [
+    "text-blue-500 absolute top-1/2 left-2 -translate-y-1/2 pointer-events-none h-5 w-auto transition-opacity duration-150 ease-out  ",
+    "opacity-0 group-hover:opacity-80 group-active:opacity-80",
+    "opacity-0"
+  ],
+  ["text-blue-500 underline"],
+  ["text-blue-600 underline hover:text-blue-800"],
+  ["text-center"],
+  [
+    "text-center bg-gray-100 text-gray-300 leading-[1.35] py-3 text-[15px] font-normal"
+  ],
+  [
+    "text-center bg-gray-50 dark:bg-gray-800 rounded-lg p-6",
+    "flex-1 flex flex-col gap-4 max-w-xl"
+  ],
+  ["text-center flex-1"],
+  ["text-center max-w-24"],
+  ["text-center mb-12"],
+  [
+    "text-center rounded-[5px] bg-gray-100 text-gray-300 leading-[1.35] py-3 text-[15px] font-normal transition-all ease-out duration-100 hover:opacity-60"
+  ],
+  ["text-center text-gray-500"],
+  ["text-center text-gray-500 dark:text-gray-400 py-12"],
+  ["text-center text-gray-500 py-12"],
+  ["text-center text-red-500"],
+  ["text-center text-sm text-gray-500"],
+  ["text-center text-sm text-gray-500 dark:text-gray-400 mt-2"],
+  ["text-center text-sm text-red-500"],
+  ["text-center text-xs text-current"],
+  ["text-foreground font-normal"],
+  ["text-gray-200 dark:text-gray-700"],
+  ["text-gray-300"],
+  ["text-gray-300 dark:text-gray-600"],
+  ["text-gray-300 text-sm italic"],
+  [
+    "text-gray-400 absolute top-1/2 left-2 -translate-y-1/2 pointer-events-none h-5 w-auto transition-opacity duration-150 ease-out  ",
+    "opacity-20 group-hover:opacity-0 group-active:opacity-0",
+    "opacity-0"
+  ],
+  ["text-gray-500"],
+  [
+    "text-gray-500 font-sans font-medium text-base leading-none m-0 block truncate"
+  ],
+  [
+    "text-gray-500 group-hover:text-gray-800 transition-all ease-out duration-150  ",
+    "opacity-50"
+  ],
+  ["text-gray-500 mb-8"],
+  ["text-gray-600"],
+  ["text-gray-600 dark:text-gray-400"],
+  ["text-gray-600 dark:text-gray-400 line-clamp-2 opacity-70"],
+  ["text-gray-600 dark:text-gray-400 text-sm flex-1"],
+  ["text-gray-600 dark:text-gray-400 text-sm line-clamp-3 flex-1"],
+  ["text-gray-700"],
+  ["text-gray-700 !cursor-pointer font-bold flex items-center gap-1"],
+  ["text-gray-700 dark:text-gray-300"],
+  ["text-gray-700 dark:text-gray-300 hover:text-theme-500"],
+  [
+    "text-gray-700 dark:text-white text-3xl lg:text-4xl font-semibold title-font mb-5 transition-all duration-150 ease-out  "
+  ],
+  ["text-gray-700 font-bold"],
+  [
+    "text-gray-700 hover:text-blue-500 flex items-center uppercase text-sm mt-2 mb-2 leading-none"
+  ],
+  [
+    "text-gray-700 hover:text-blue-500 inline-flex items-center uppercase text-sm mt-2 mb-2 leading-none"
+  ],
+  ["text-gray-700 text-xl mb-8"],
+  ["text-gray-700 whitespace-normal break-words"],
+  ["text-green-500 w-5 h-auto"],
+  [
+    "text-left inline-flex items-center text-xl tracking-wide text-gray-800/80 flex-1 gap-1"
+  ],
+  ["text-left text-[10px] font-bold uppercase tracking-tight text-gray-400"],
+  [
+    "text-left text-base font-medium overflow-hidden text-ellipsis whitespace-nowrap flex-1"
+  ],
+  ["text-lg font-bold mb-2 flex items-center gap-2"],
+  ["text-lg font-bold text-gray-900 dark:text-white"],
+  ["text-lg font-semibold text-gray-700 animate-pulse"],
+  ["text-lg font-semibold text-gray-800"],
+  ["text-lg font-semibold text-gray-900 dark:text-gray-50 mb-4"],
+  ["text-lg leading-6 font-medium text-red-800"],
+  ["text-lg mb-4 last:mb-0 mt-6 first:mt-0"],
+  [
+    "text-lg py-2 first:pt-3 last:pb-3 whitespace-nowrap flex items-center opacity-80 text-gray-600 hover:text-blue-400"
+  ],
+  ["text-lg text-gray-600 dark:text-gray-400 max-w-2xl"],
+  [
+    "text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-6 text-center"
+  ],
+  ["text-lg text-gray-600 dark:text-gray-400 mb-6"],
+  ["text-lg text-gray-600 w-full max-w-full break-words block truncate flex-1"],
+  ["text-lg text-gray-700 font-bold mb-2"],
+  ["text-muted-foreground"],
+  [
+    "text-muted-foreground *:[a]:hover:text-foreground text-sm *:[a]:underline *:[a]:underline-offset-3"
+  ],
+  ["text-muted-foreground aria-selected:text-muted-foreground"],
+  [
+    "text-muted-foreground flex flex-wrap items-center gap-1.5 text-sm break-words"
+  ],
+  ["text-muted-foreground ml-auto text-xs tracking-widest"],
+  ["text-muted-foreground opacity-50"],
+  [
+    "text-muted-foreground rounded-md flex-1 font-normal text-[0.8rem] select-none"
+  ],
+  ["text-red-500 text-4xl mb-6 flex items-center"],
+  ["text-red-500 w-5 h-auto"],
+  ["text-sm"],
+  ["text-sm  ", "text-blue-500 font-bold", "text-gray-300"],
+  ["text-sm flex-1 pl-3 pr-1 py-1 truncate"],
+  [
+    "text-sm font-medium  ",
+    "text-theme-600 dark:text-theme-300",
+    "text-gray-700 dark:text-gray-300 hover:text-theme-500"
+  ],
+  ["text-sm font-medium text-gray-600 dark:text-gray-300"],
+  ["text-sm font-medium text-gray-700"],
+  ["text-sm font-medium text-gray-700 dark:text-gray-200"],
+  ["text-sm font-medium text-red-800 whitespace-pre-wrap"],
+  ["text-sm font-semibold leading-tight"],
+  ["text-sm font-semibold tracking-wide align-baseline mr-1"],
+  ["text-sm h-10 px-6"],
+  ["text-sm h-11 px-4  ", "h-11", "h-10"],
+  ["text-sm leading-tight text-blue-500"],
+  ["text-sm leading-tight truncate block min-w-0 cursor-default"],
+  ["text-sm leading-tight whitespace-nowrap"],
+  [
+    "text-sm px-2 py-1 bg-theme-50 dark:bg-theme-700/20 text-theme-700 dark:text-theme-200 rounded-full"
+  ],
+  ["text-sm px-2 py-1 bg-theme-50 text-theme-700 rounded-full"],
+  ["text-sm px-3 py-1 bg-theme-50 text-theme-700 rounded-full"],
+  ["text-sm text-blue-500"],
+  ["text-sm text-destructive"],
+  ["text-sm text-gray-400 text-center"],
+  ["text-sm text-gray-500 font-medium"],
+  ["text-sm text-gray-500 mb-4 italic"],
+  ["text-sm text-gray-500 mt-2"],
+  ["text-sm text-gray-700 mb-4"],
+  ["text-sm text-muted-foreground"],
+  ["text-sm text-red-500 mt-2"],
+  ["text-sm text-red-700 text-wrap"],
+  ["text-sm truncate max-w-[120px]"],
+  ["text-sm whitespace-nowrap"],
+  ["text-theme-500 dark:text-theme-400 hover:text-theme-300"],
+  ["text-theme-500 hover:text-theme-300 text-sm font-medium"],
+  [
+    "text-theme-600 hover:text-theme-700 dark:text-theme-400 dark:hover:text-theme-300 underline"
+  ],
+  ["text-tina-orange font-semibold"],
+  ["text-white opacity-80", "text-theme-400"],
+  ["text-x"],
+  ["text-xl"],
+  [
+    "text-xl font-bold text-gray-900 dark:text-gray-50 group-hover:text-theme-600 dark:group-hover:text-theme-400 transition-colors mb-2"
+  ],
+  [
+    "text-xl font-bold text-gray-900 dark:text-gray-50 group-hover:text-theme-600 mb-2"
+  ],
+  ["text-xl leading-none text-amber-500"],
+  ["text-xl mb-4 last:mb-0 mt-6 first:mt-0 font-inter"],
+  ["text-xl text-gray-600 dark:text-gray-400"],
+  ["text-xl text-gray-600 dark:text-gray-400 mb-8"],
+  ["text-xs font-bold text-blue-600"],
+  ["text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3"],
+  ["text-xs font-semibold tracking-wide uppercase"],
+  ["text-xs font-semibold tracking-wider text-gray-400 mb-3"],
+  ["text-xs mb-1 flex flex-col font-bold"],
+  [
+    "text-xs pointer overflow-hidden hover:text-gray-600 cursor-pointer rounded border border-gray-100 flex font-semibold shadow transition-colors bg-white text-gray-500"
+  ],
+  [
+    "text-xs text-blue-600 underline decoration-blue-200 hover:text-blue-500 hover:decoration-blue-500 transition-all ease-out duration-150 flex items-center gap-1 self-end"
+  ],
+  ["text-xs text-gray-400"],
+  ["text-xs text-gray-400 dark:text-gray-500"],
+  ["text-xs text-gray-400 flex-none"],
+  ["text-xs text-gray-400 mt-1 leading-tight"],
+  ["text-xs text-gray-400 mt-4"],
+  ["text-xs text-gray-500"],
+  ["text-xs text-gray-500 whitespace-nowrap"],
+  ["text-yellow-700"],
+  ["tina-prose"],
+  ["tina-prose whitespace-pre-wrap"],
+  ["tina-tailwind"],
+  [
+    "top-0 flex w-6 select-none flex-col justify-center",
+    "-left-3 -ml-3 pl-3",
+    "-right-3 -mr-3 items-end pr-3"
+  ],
+  [
+    "tracking-wide title-font font-bold text-lg  ",
+    "text-blue-200",
+    "text-blue-500 dark:text-blue-300"
+  ],
+  [
+    "tracking-wide title-font font-bold text-lg {{ if $isPrimary }}text-white/80{{ else }}text-theme-500 dark:text-theme-300{{ end }}"
+  ],
+  [
+    "tracking-wide title-font font-bold text-lg",
+    "text-white/80",
+    "text-theme-500 dark:text-theme-300"
+  ],
+  ["transition duration-500 ease-in-out"],
+  [
+    "transition-all duration-150 ease-out text-blue-500 hover:text-blue-400 hover:underline underline decoration-blue-200 hover:decoration-blue-400 font-medium flex items-center justify-start gap-1"
+  ],
+  [
+    "transition-all duration-150 ease-out text-blue-600 hover:text-blue-400 hover:underline no-underline"
+  ],
+  ["translate-x-0"],
+  ["truncate"],
+  [
+    "truncate cursor-pointer relative inline-flex items-center justify-start px-2 py-0.5 rounded-l border border-gray-200 bg-white  hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+  ],
+  [
+    "truncate cursor-pointer w-full relative inline-flex items-center justify-start px-4 py-2 rounded-l border border-gray-200 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+  ],
+  ["truncate max-w-full -mr-1"],
+  ["truncate min-w-0"],
+  ["truncate text-sm font-semibold"],
+  ["underline hover:text-blue-700 transition-all duration-150"],
+  ["underline hover:text-tina-orange-dark transition-colors"],
+  ["underline hover:text-tina-orange-dark transition-colors break-all"],
+  ["underline text-blue-500"],
+  ["underline text-tina-orange-dark font-medium text-xs"],
+  ["uppercase font-sans font-bold text-sm mb-3 mt-8 text-gray-700"],
+  [
+    "variant",
+    "outline",
+    "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-[0.25rem] top-[0.25rem]",
+    "pointer-events-none"
+  ],
+  [
+    "variant",
+    "outline",
+    "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-[0.25rem] top-[0.25rem]",
+    "pointer-events-none"
+  ],
+  ["variant", "size-(--cell-size) aria-disabled:opacity-50 p-0 select-none"],
+  [
+    "w-(--sidebar-width) bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
+  ],
+  ["w-[130px] bg-white border-gray-200 text-gray-700 h-9"],
+  ["w-[200px] p-0 z-[10000]"],
+  ["w-[calc(100%-3rem)]"],
+  ["w-1/2 h-full  ", "text-tina-orange", "text-gray-300"],
+  [
+    "w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center"
+  ],
+  [
+    "w-10 h-10 rounded-full flex items-center justify-center font-medium mb-3 border-2 transition-all duration-300 select-none  ",
+    "bg-green-500 border-green-500 text-white",
+    "bg-tina-orange border-tina-orange text-white",
+    "bg-white border-gray-200 text-gray-400"
+  ],
+  ["w-10 h-auto"],
+  ["w-10 h-auto -ml-1 mr-1 fill-tina-orange"],
+  ["w-11 h-11 text-tina-orange"],
+  [
+    "w-12 h-12 bg-white shadow border border-gray-100 rounded flex justify-center flex-none"
+  ],
+  ["w-12 h-auto text-red-400 opacity-70 mr-1"],
+  ["w-14 h-auto text-gray-300"],
+  ["w-16 h-16 overflow-hidden flex justify-center flex-shrink-0"],
+  ["w-2/3 h-2/3"],
+  ["w-2/5 h-auto text-gray-300"],
+  ["w-3 h-3 fill-current"],
+  ["w-3 h-auto"],
+  ["w-3 h-auto animate-spin"],
+  ["w-3 h-auto animate-spin text-blue-500"],
+  ["w-3 h-auto inline-block mr-1"],
+  ["w-3.5 h-3.5 opacity-80"],
+  ["w-3/5 h-full text-gray-300"],
+  ["w-4 h-4"],
+  ["w-4 h-4  ", "opacity-90", "text-gray-400"],
+  [
+    "w-4 h-4 flex-none text-gray-500 transition-transform duration-150 -ml-1  ",
+    "rotate-90"
+  ],
+  ["w-4 h-4 inline-block mb-px"],
+  ["w-4 h-4 inline-block mb-px text-green-500"],
+  ["w-4 h-4 ml-0.5 fill-gray-700"],
+  ["w-4 h-4 mr-1"],
+  ["w-4 h-4 mt-0.5 flex-shrink-0 text-yellow-600"],
+  ["w-4 h-4 opacity-80"],
+  ["w-4 h-4 shrink-0 opacity-80"],
+  ["w-4 h-4 text-gray-400 flex-shrink-0"],
+  ["w-4 h-4 text-orange-500 border-gray-300 rounded focus:ring-orange-500"],
+  ["w-4 h-4 text-orange-500 flex-none"],
+  ["w-4 h-auto"],
+  ["w-4 h-auto opacity-70 text-blue-500 flex-shrink-0"],
+  ["w-4 h-auto opacity-70 text-gray-600 flex-shrink-0"],
+  [
+    "w-4 h-auto transition ease-out duration-100 group-hover:scale-110 origin-center"
+  ],
+  ["w-5 auto flex-grow-0 flex-shrink-0 text-gray-700"],
+  ["w-5 h-5"],
+  ["w-5 h-5 text-orange-500"],
+  ["w-5 h-auto fill-current opacity-70 ml-1"],
+  ["w-5 h-auto flex-shrink-0"],
+  ["w-5 h-auto flex-shrink-0 flex-grow-0 inline-block opacity-70 text-red-600"],
+  [
+    "w-5 h-auto group-hover:text-blue-500 opacity-30 transition-all ease-out duration-150 group-hover:opacity-80"
+  ],
+  ["w-5 h-auto inline-block mr-1 opacity-70 text-[#1D4ED8]"],
+  ["w-5 h-auto inline-block mr-1 opacity-70 text-amber-600"],
+  ["w-5 h-auto inline-block mr-1 opacity-70 text-blue-600"],
+  ["w-5 h-auto inline-block mr-1 opacity-70 text-green-600"],
+  ["w-5 h-auto inline-block mr-1 opacity-70 text-red-600"],
+  ["w-5 h-auto inline-block mr-1 opacity-70 text-red-700"],
+  ["w-5 h-auto ml-1.5 opacity-80"],
+  ["w-5 h-auto opacity-70"],
+  ["w-5 h-auto opacity-70 animate-spin"],
+  ["w-5 h-auto text-blue-500"],
+  ["w-5 h-auto text-blue-500/70"],
+  ["w-5 h-auto text-gray-600"],
+  ["w-5 h-auto text-green-500"],
+  ["w-5 h-auto text-red-400 flex-shrink-0"],
+  ["w-5 h-auto text-yellow-500"],
+  ["w-5 h-full ml-1 opacity-70"],
+  ["w-5 h-full opacity-70"],
+  ["w-5/6 h-auto"],
+  ["w-6 h-6"],
+  ["w-6 h-auto"],
+  ["w-6 h-auto mr-2"],
+  ["w-6 h-auto mr-2 text-red-400"],
+  ["w-6 h-auto opacity-70"],
+  ["w-6 h-auto text-gray-200"],
+  ["w-6 h-full ml-1 opacity-70"],
+  ["w-6 h-full ml-2 opacity-70"],
+  ["w-6 h-full ml-2 opacity-70 text-blue-500"],
+  ["w-6 h-full ml-2 opacity-70 text-tina-orange"],
+  ["w-6 h-full mr-2 opacity-70"],
+  ["w-7 h-auto"],
+  ["w-7 h-auto caret-transparent"],
+  [
+    "w-7 h-auto fill-gray-300 hover:fill-gray-900 transition duration-150 ease-out"
+  ],
+  ["w-7 h-auto flex-shrink-0 text-yellow-400 -mt-px"],
+  ["w-7 h-auto inline-block mr-0.5 opacity-70 text-yellow-600"],
+  ["w-7 h-auto opacity-70 mr-1"],
+  [
+    "w-7 h-auto text-gray-500 opacity-50 group-hover:opacity-100 transition duration-150 ease-out"
+  ],
+  ["w-7 mr-1 h-auto fill-current text-blue-500"],
+  ["w-8 h-8"],
+  ["w-8 h-auto"],
+  [
+    "w-8 px-1 py-2.5 flex items-center justify-center text-gray-200 hover:opacity-100 opacity-30 hover:bg-gray-50  ",
+    "pointer-events-none opacity-30 cursor-not-allowed"
+  ],
+  [
+    "w-9 h-9 rounded-full shadow border    ",
+    "ring-[3px] ring-offset-2 ring-blue-400"
+  ],
+  [
+    "w-9 h-9 rounded-full shadow border",
+    "ring-[3px] ring-offset-2 ring-blue-400"
+  ],
+  ["w-auto"],
+  [
+    "w-auto max-w-[95vw] border border-gray-200 bg-white px-4 pt-12 pb-4 shadow-xl sm:max-w-fit"
+  ],
+  ["w-auto p-0"],
+  [
+    "w-auto p-0 overflow-hidden rounded-lg shadow-lg bg-white border border-gray-100"
+  ],
+  [
+    "w-auto p-0 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none border-0"
+  ],
+  ["w-fit"],
+  ["w-fit flex-shrink-0"],
+  ["w-fit ml-auto"],
+  ["w-fit mt-1"],
+  ["w-full"],
+  ["w-full  "],
+  ["w-full bg-gray-200 rounded-full h-2"],
+  ["w-full bg-gray-50 flex items-center justify-between px-5 pt-3 m-0"],
+  ["w-full block text-gray-300 text-xs mt-0.5"],
+  ["w-full caption-bottom text-sm"],
+  ["w-full divide-y divide-gray-100"],
+  ["w-full flex flex-col -mb-px"],
+  ["w-full flex flex-shrink-0 justify-end gap-2 items-center"],
+  [
+    "w-full flex flex-wrap-reverse justify-  gap-4 items-center px-5 pb-5 rounded-b-md"
+  ],
+  ["w-full flex gap-1.5 justify-between items-center"],
+  [
+    "w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+  ],
+  [
+    "w-full flex items-center justify-center py-3 px-5 border border-transparent text-base font-medium rounded text-white bg-theme-600 hover:bg-theme-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-theme-500 dark:focus:ring-offset-gray-900"
+  ],
+  ["w-full flex items-center text-[16px] text-gray-300"],
+  [
+    "w-full flex items-center text-sm font-medium justify-center h-(--cell-size) gap-1.5"
+  ],
+  ["w-full flex justify-between gap-4 items-center"],
+  ["w-full flex justify-between items-center"],
+  ["w-full flex justify-between items-end"],
+  ["w-full flex justify-center"],
+  ["w-full flex justify-center p-5"],
+  ["w-full flex-1 truncate break-words text-left text-base text-gray-500"],
+  ["w-full grid grid-cols-6 auto-rows-auto p-2 overflow-y-auto"],
+  ["w-full h-48 object-cover"],
+  ["w-full h-auto transition-all ease-out duration-150 group-hover:opacity-50"],
+  ["w-full h-full bg-gradient-to-br from-gray-700 to-gray-900"],
+  ["w-full h-full bg-gradient-to-br from-gray-800 via-gray-900 to-black"],
+  ["w-full h-full flex flex-col items-center justify-center"],
+  ["w-full h-full flex items-center justify-center"],
+  [
+    "w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+  ],
+  ["w-full justify-between"],
+  ["w-full max-h-[75%]"],
+  ["w-full max-w-form"],
+  ["w-full max-w-full"],
+  ["w-full mb-1 -mt-2  "],
+  ["w-full mb-1 block flex-1  text-sm font-bold leading-5 text-gray-700"],
+  [
+    "w-full md:w-auto icon-parent inline-flex items-center font-medium focus:outline-none focus:ring-2 focus:shadow-outline text-center rounded justify-center transition-all duration-150 ease-out  shadow text-white bg-tina-orange-dark hover:bg-tina-orange focus:ring-tina-orange-dark text-sm h-10 px-6"
+  ],
+  ["w-full mx-auto  "],
+  ["w-full mx-auto max-w-screen-xl"],
+  ["w-full my-2"],
+  ["w-full overflow-hidden @container/toolbar"],
+  ["w-full p-2 border border-gray-300 rounded"],
+  ["w-full px-2.5 py-2 text-sm text-gray-700 truncate"],
+  [
+    "w-full px-3 py-2 border-t border-gray-100 bg-white/60 text-sm font-medium text-gray-700 truncate"
+  ],
+  [
+    "w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-teal-500 focus:border-teal-500 sm:max-w-xs rounded"
+  ],
+  [
+    "w-full px-5 py-3 border border-gray-300 shadow-sm placeholder-gray-400 focus:ring-1 focus:ring-theme-500 focus:border-theme-500 sm:max-w-xs rounded dark:bg-gray-800 dark:border-gray-700 dark:text-gray-100"
+  ],
+  [
+    "w-full px-6 py-3 flex items-center gap-2 text-left text-sm text-gray-700 hover:text-orange-500 hover:bg-gray-100 transition-all ease-out duration-150"
+  ],
+  ["w-full relative"],
+  [
+    "w-full relative\tmb-10 text-5xl font-extrabold tracking-normal leading-tight title-font"
+  ],
+  [
+    "w-full relative\tmb-8 text-6xl font-extrabold tracking-normal text-center title-font"
+  ],
+  [
+    "w-full relative mb-10 text-5xl font-extrabold tracking-normal leading-tight title-font"
+  ],
+  [
+    "w-full relative mb-8 font-extrabold tracking-normal text-center title-font"
+  ],
+  [
+    "w-full rounded-lg border border-gray-200 bg-white py-2 pl-10 pr-9 text-base text-gray-700 shadow-sm placeholder:text-gray-400 focus:border-tina-orange focus:outline-none focus:ring-1 focus:ring-tina-orange"
+  ],
+  ["w-full rounded-lg shadow-md mb-8"],
+  ["w-full rounded-lg shadow-md my-8 block"],
+  ["w-full sm:w-auto"],
+  ["w-full text-gray-300 text-xs mt-0.5"],
+  [
+    "w-full text-md px-4 py-2 tracking-wide flex items-center transition ease-out duration-100 cursor-pointer opacity-80 text-gray-600 data-[highlighted]:text-blue-600 data-[highlighted]:opacity-100 data-[highlighted]:bg-gray-50"
+  ],
+  ["w-full text-sm"],
+  ["w-full text-xs border-collapse"],
+  ["whitespace-normal text-[15px] mt-2"],
+  ["whitespace-nowrap"],
+  ["whitespace-nowrap p-3 text-base text-gray-500"],
+  ["whitespace-nowrap py-3 pl-3 pr-4 text-sm text-gray-500"],
+  ["whitespace-nowrap text-ellipsis overflow-hidden"],
+  ["whitespace-nowrap text-lg font-semibold text-gray-800"],
+  ["xl:hidden pl-6 py-5 border-b border-gray-200 bg-white"],
+  [
+    "z-[10000] overflow-hidden rounded bg-[#FFF] px-3 py-1.5 text-xs text-[#504E5E] shadow-sm animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 origin-[--radix-tooltip-content-transform-origin]"
+  ],
+  ["z-[100000]"],
+  [
+    "z-[99999] min-w-32 overflow-hidden rounded border bg-white p-1 text-black shadow-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+  ],
+  ["z-[999999] flex w-[330px] flex-col relative"],
+  [
+    "z-[999999] w-auto rounded-md border bg-popover p-1 text-popover-foreground shadow-md outline-hidden"
+  ],
+  [
+    "z-[9999999] max-h-[288px] w-[300px] overflow-y-auto rounded bg-white shadow-md"
+  ],
+  [
+    "z-10 relative flex items-center px-5 py-2 mx-3 my-2 font-semibold shadow-sm text-sm transition duration-150 ease-out rounded transform focus:shadow-outline focus:outline-none whitespace-nowrap opacity-80 hover:opacity-100 shadow-md  "
+  ],
+  [
+    "z-10 relative flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out  rounded-lg transform focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 whitespace-nowrap  "
+  ],
+  [
+    "z-10 relative inline-flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out {{ if $isButton }}rounded-lg transform focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 whitespace-nowrap{{ end }} {{ $colorClass }}"
+  ],
+  [
+    "z-10 relative inline-flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out",
+    "rounded-lg transform focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 whitespace-nowrap"
+  ],
+  [
+    "z-10 relative inline-flex items-center px-7 py-3 font-semibold text-lg transition duration-150 ease-out",
+    "rounded-lg whitespace-nowrap"
+  ],
+  [
+    "z-100 absolute top-1/2 right-px w-2 h-32 bg-white rounded-r border border-gray-150 shadow-sm hover:shadow-md origin-left transition-all duration-150 ease-out transform translate-x-full -translate-y-1/2 group hover:bg-gray-50    ",
+    "opacity-100",
+    "opacity-0",
+    "scale-110",
+    "scale-90 hover:scale-100"
+  ],
+  ["z-30 fixed origin-top-right right-0"],
+  [
+    "z-50 inline-flex w-fit max-w-xs origin-(--transform-origin) items-center gap-1.5 rounded-md bg-foreground px-3 py-1.5 text-xs text-background has-data-[slot=kbd]:pr-1.5 data-[side=bottom]:slide-in-from-top-2 data-[side=inline-end]:slide-in-from-left-2 data-[side=inline-start]:slide-in-from-right-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 **:data-[slot=kbd]:relative **:data-[slot=kbd]:isolate **:data-[slot=kbd]:z-50 **:data-[slot=kbd]:rounded-sm data-[state=delayed-open]:animate-in data-[state=delayed-open]:fade-in-0 data-[state=delayed-open]:zoom-in-95 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95"
+  ],
+  [
+    "z-50 size-2.5 translate-y-[calc(-50%-2px)] rotate-45 rounded-[2px] bg-foreground fill-foreground data-[side=bottom]:top-1 data-[side=inline-end]:top-1/2! data-[side=inline-end]:-left-1 data-[side=inline-end]:-translate-y-1/2 data-[side=inline-start]:top-1/2! data-[side=inline-start]:-right-1 data-[side=inline-start]:-translate-y-1/2 data-[side=left]:top-1/2! data-[side=left]:-right-1 data-[side=left]:-translate-y-1/2 data-[side=right]:top-1/2! data-[side=right]:-left-1 data-[side=right]:-translate-y-1/2 data-[side=top]:-bottom-2.5"
+  ],
+  [
+    "z-50 w-[300px] outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
+  ],
+  [
+    "z-50 w-72 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-hidden print:hidden",
+    "data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95"
+  ],
+  [
+    "z-50 w-72 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 origin-[--radix-popover-content-transform-origin]"
+  ],
+  [
+    "z-chrome absolute top-6 right-0 translate-x-full text-sm h-10 px-3 transition-all duration-300  ",
+    "opacity-0 ease-in pointer-events-none",
+    "ease-out pointer-events-auto"
+  ],
+  [
+    "z-menu w-56 py-1 rounded shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+  ]
+]

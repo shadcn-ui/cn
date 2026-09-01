@@ -1,7 +1,8 @@
 // speedlab — regenerates the shareable benchmark page from live measurements.
 //
 //   pnpm speedlab                 measure everything, emit speedlab/dist/speedlab.html
-//   pnpm speedlab -- --corpora <dir>   also run the 53-repo corpus sweep
+//   pnpm speedlab -- --skip-corpora   skip the per-repository corpus sweep
+//   pnpm speedlab -- --corpora <dir>   sweep a different corpora directory
 //   pnpm speedlab -- --skip-bench      reuse nothing, but skip the slow matrix (layout work)
 //
 // Everything on the page is produced by this script at run time: the
@@ -9,13 +10,7 @@
 // per-repository corpus sweep, the bundle sizes, and the inlined library
 // bundle that powers the page's run-in-your-browser mode.
 import { execFileSync, execSync } from "node:child_process"
-import {
-  existsSync,
-  mkdirSync,
-  readdirSync,
-  readFileSync,
-  writeFileSync,
-} from "node:fs"
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs"
 import { join, resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 import { gzipSync } from "node:zlib"
@@ -30,11 +25,9 @@ const flag = (name) => {
   const i = args.indexOf(name)
   return i >= 0 ? (args[i + 1] ?? true) : undefined
 }
-const corporaDir =
-  flag("--corpora") ??
-  (existsSync(join(repoRoot, ".research/cnfast/packages/cnfast/bench/corpora"))
-    ? join(repoRoot, ".research/cnfast/packages/cnfast/bench/corpora")
-    : undefined)
+const corporaDir = args.includes("--skip-corpora")
+  ? undefined
+  : (flag("--corpora") ?? join(conformance, "bench/corpora"))
 const skipBench = args.includes("--skip-bench")
 
 const fmtNs = (ns) =>
@@ -139,12 +132,17 @@ if (!skipBench) {
 let repoSection = ""
 if (corporaDir && !skipBench) {
   const files = readdirSync(corporaDir)
-    .filter((f) => f.endsWith(".json"))
+    .filter((f) => f.endsWith(".json") && f !== "repos.json")
     .sort()
   const rows = []
   for (const f of files) {
-    const r = runWorker("corpus-worker.mjs", join(corporaDir, f))
-    rows.push({ name: f.replace(".json", ""), ...r })
+    const row = { name: f.replace(".json", "") }
+    for (const impl of ["pair", "cnfast", "cn"]) {
+      const r = runWorker("corpus-worker.mjs", impl, join(corporaDir, f))
+      row[impl] = r.replaysPerSec
+      row.calls = r.calls
+    }
+    rows.push(row)
     process.stderr.write(".")
   }
   process.stderr.write("\n")
@@ -163,7 +161,7 @@ if (corporaDir && !skipBench) {
         `<td class="mult win">${fmtX(r.cn / r.cnfast)}</td></tr>`
     )
     .join("\n")
-  repoSection = `  <h2>Real repositories <span class="n">node · one process per repo · best of 3</span></h2>
+  repoSection = `  <h2>Real repositories <span class="n">node · one process per library and repo · best of 5</span></h2>
   <p class="sub">Every <code>cn()</code> call harvested from ${rows.length} open source
   codebases (corpus collection by cnfast's bench suite), replayed through each
   library. One op is a full replay of a repository's calls; replays repeat the
@@ -179,7 +177,7 @@ ${body}
     </table>
   </div>`
 } else if (!skipBench) {
-  repoSection = `  <!-- corpus sweep skipped: no corpora directory (pass --corpora <dir>) -->`
+  repoSection = `  <!-- corpus sweep skipped (--skip-corpora) -->`
 }
 
 // ---- 3. bundle sizes -----------------------------------------------------------

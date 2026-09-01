@@ -1,0 +1,560 @@
+[
+  ["    h-full antialiased"],
+  ["  -translate-x-1/2"],
+  ["  left-0"],
+  ["-mx-1 my-1 h-px bg-border"],
+  ["!uppercase !font-semibold"],
+  ["[font-synthesis:none] flex flex-col bg-white antialiased"],
+  [
+    "[font-synthesis:none] flex w-full flex-col rounded-[14px] [box-shadow:#0000000F_0px_0px_0px_1px,#0000000F_0px_1px_2px_-1px,#0000000A_0px_2px_4px] antialiased cursor-text"
+  ],
+  [
+    "[font-synthesis:none] flex w-full h-22.25 flex-col rounded-[14px] pt-2.5 pr-3.5 pb-3.5 pl-3.75 gap-5 [box-shadow:#0000000F_0px_0px_0px_1px,#0000000F_0px_1px_2px_-1px,#0000000A_0px_2px_4px] antialiased cursor-text"
+  ],
+  [
+    "[font-synthesis:none] flex w-full min-w-0 flex-col items-stretch gap-2.5 antialiased p-0"
+  ],
+  [
+    "[font-synthesis:none] flex w-full min-w-0 h-fit flex-col gap-4.25 antialiased mt-14"
+  ],
+  [
+    "[font-synthesis:none] group/replay-step relative w-full py-[3px] text-left antialiased disabled:cursor-default disabled:opacity-50"
+  ],
+  [
+    "[font-synthesis:none] overflow-x-clip antialiased min-h-screen bg-[color(display-p3_0.966_0.966_0.966)] flex flex-col items-center"
+  ],
+  [
+    "[font-synthesis:none] rounded-full flex items-center px-1.5 py-[0.5px] antialiased tracking-[-0.01em] text-[color(display-p3_0.033_0.033_0.033)] dark:text-[color(display-p3_0.832_0.832_0.832)] text-[13px]/4.75 sm:text-[11px]/4.5 hover:opacity-70 transition-opacity duration-75 cursor-pointer"
+  ],
+  [
+    "[white-space-collapse:preserve] w-max text-[#696969] font-mono-override font-medium shrink-0 text-[15.5px]/5.75"
+  ],
+  [
+    "absolute bottom-[calc(100%+8px)] left-1/2 -translate-x-1/2 px-2.5 py-1.5 bg-[#1a1a1a] text-white text-[11px] font-normal rounded-lg whitespace-nowrap pointer-events-none shadow-[0_4px_12px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.08)] animate-[expect-tooltip-in_0.1s_ease-out_forwards]"
+  ],
+  ["absolute bottom-0 left-0 h-[2.5px] bg-[#007AFF]"],
+  ["absolute bottom-0 left-0 right-0 z-20"],
+  ["absolute bottom-0 left-1/2 -translate-x-1/2 h-px w-full max-w-[584px]"],
+  ["absolute inset-0 bg-black pointer-events-none rounded-2xl"],
+  ["absolute inset-0 cursor-pointer p-2 md:p-6"],
+  ["absolute inset-0 overflow-hidden rounded-full"],
+  ["absolute inset-0 pointer-events-none"],
+  ["absolute inset-0 px-2 text-lg bg-white border-0 outline-none z-20"],
+  [
+    "absolute inset-0 z-10 h-full w-full cursor-pointer appearance-none rounded-full bg-transparent outline-none disabled:cursor-default [&::-moz-range-thumb]:size-0 [&::-moz-range-thumb]:appearance-none [&::-moz-range-thumb]:border-0 [&::-moz-range-track]:h-full [&::-moz-range-track]:rounded-full [&::-moz-range-track]:border-0 [&::-moz-range-track]:bg-transparent [&::-webkit-slider-thumb]:size-0 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-runnable-track]:h-full [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-transparent"
+  ],
+  ["absolute inset-0 z-20 flex flex-col items-center justify-center gap-4"],
+  [
+    "absolute inset-y-1.5 left-1.5 z-[30] flex w-12.75 items-center justify-center gap-0 rounded-full bg-white px-2.75 py-0.75 text-[#2F2F2F]   active:scale-[0.97]"
+  ],
+  [
+    "absolute left-1/2 px-3 py-2 bg-[#1a1a1a] text-white text-[13px] font-normal rounded-xl whitespace-nowrap overflow-hidden text-ellipsis leading-[1.4] pointer-events-none shadow-[0_4px_20px_rgba(0,0,0,0.3),0_0_0_1px_rgba(255,255,255,0.08)] min-w-[120px] max-w-[280px] text-center animate-[expect-tooltip-in_0.1s_ease-out_forwards]"
+  ],
+  ["absolute pointer-events-none"],
+  [
+    "absolute right-0 bottom-0 z-10 inline-flex items-center justify-center rounded-full bg-primary text-primary-foreground bg-blend-color ring-2 ring-background select-none",
+    "group-data-[size=sm]/avatar:size-2 group-data-[size=sm]/avatar:[&>svg]:hidden",
+    "group-data-[size=default]/avatar:size-2.5 group-data-[size=default]/avatar:[&>svg]:size-2",
+    "group-data-[size=lg]/avatar:size-3 group-data-[size=lg]/avatar:[&>svg]:size-2"
+  ],
+  ["absolute top-0 left-0"],
+  ["absolute z-30 pointer-events-none"],
+  ["aspect-square size-full rounded-full object-cover"],
+  [
+    "bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800"
+  ],
+  [
+    "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+    "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+    "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+    "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+    "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
+    "text-primary underline-offset-4 hover:underline",
+    "h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+    "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+    "size-8",
+    "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
+    "size-9",
+    "default",
+    "default"
+  ],
+  [
+    "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+    "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+    "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+    "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+    "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
+    "text-primary underline-offset-4 hover:underline",
+    "h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+    "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-3 has-data-[icon=inline-start]:pl-3",
+    "size-8",
+    "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
+    "size-9",
+    "default",
+    "default"
+  ],
+  [
+    "bg-transparent",
+    "border border-input bg-transparent hover:bg-muted",
+    "h-8 min-w-8 px-2",
+    "h-7 min-w-7 rounded-[min(var(--radius-md),12px)] px-1.5 text-[0.8rem]",
+    "h-9 min-w-9 px-2.5",
+    "default",
+    "default"
+  ],
+  ["bg-white border-2 border-zinc-300 rounded-none p-8"],
+  ["bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-4"],
+  ["bg-zinc-100 border border-zinc-200 rounded-none p-4 mb-4"],
+  [
+    "bg-zinc-100 border-b border-r border-zinc-300 flex items-center justify-center text-base font-medium text-zinc-500 shrink-0"
+  ],
+  ["bg-zinc-100 border-b border-r border-zinc-300 shrink-0"],
+  [
+    "bg-zinc-50 border-b border-r border-zinc-300 flex items-center justify-center text-base text-zinc-300 shrink-0"
+  ],
+  [
+    "bg-zinc-900 text-zinc-300 p-4 rounded-none text-sm overflow-x-auto whitespace-pre-wrap font-mono leading-relaxed"
+  ],
+  ["border border-gray-300 rounded-lg px-3 py-2 text-sm flex-1"],
+  [
+    "border text-white px-3 py-1.5 rounded-md text-xs cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed text-left  ",
+    "bg-blue-600 border-blue-500 hover:bg-blue-500",
+    "bg-gray-700 border-gray-600 hover:bg-gray-600"
+  ],
+  ["border-b border-gray-100"],
+  ["border-b border-gray-200"],
+  [
+    "border-b border-r shrink-0 relative cursor-cell    ",
+    "border-blue-600 z-10 ring-2 ring-blue-600 ring-inset",
+    "bg-blue-50 border-blue-300",
+    "border-zinc-200"
+  ],
+  ["border-b border-zinc-200 bg-emerald-700 sticky top-0 z-20"],
+  ["col-start-2 row-span-2 row-start-1 self-start justify-self-end"],
+  [
+    "controls-sidebar w-72 bg-gray-900 text-white p-5 flex flex-col gap-4 fixed top-0 left-0 h-screen overflow-y-auto z-[999999]"
+  ],
+  ["cursor-pointer"],
+  [
+    "cursor-pointer appearance-none rounded-full bg-transparent px-1.5 py-1 text-[13px] font-medium text-[color(display-p3_0.361_0.361_0.361)] outline-none disabled:cursor-default disabled:opacity-40 md:px-2 md:text-[15px]"
+  ],
+  ["cursor-pointer flex items-center gap-1.5 outline-none"],
+  [
+    "cursor-pointer font-medium text-[15px]/5.75  ",
+    "text-[#1a1a1a] bg-accent",
+    "text-[#696969]"
+  ],
+  ["cursor-pointer shrink-0 content-center group"],
+  ["cursor-pointer text-left"],
+  ["fill-[#C0C0C0] transition-colors group-hover:fill-[#FFC200]"],
+  [
+    "fixed pointer-events-none z-[2147483646] rounded-md border-2 animate-[expect-comment-in_0.2s_cubic-bezier(0.22,1,0.36,1)_both]"
+  ],
+  ["fixed pointer-events-none z-[2147483647]"],
+  [
+    "fixed top-0 left-0 w-screen h-screen pointer-events-none will-change-[box-shadow] contain-strict transform-gpu animate-[expect-glow-pulse_2s_ease-in-out_infinite]"
+  ],
+  ["fixed z-[2147483646]"],
+  ["flex"],
+  [
+    "flex field-sizing-content min-h-16 w-full rounded-lg border border-input bg-transparent px-2.5 py-2 text-base transition-colors outline-none placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 md:text-sm dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40"
+  ],
+  ["flex flex-col"],
+  ["flex flex-col gap-[5px] mt-10"],
+  ["flex flex-col gap-0.5 cursor-pointer text-left"],
+  ["flex flex-col gap-1.5"],
+  [
+    "flex flex-col gap-2 rounded-[28px] px-3 pt-2 pb-3 md:gap-3 md:pr-6 md:pt-3 md:pb-5  ",
+    "md:pl-[295px]",
+    "md:pl-6"
+  ],
+  ["flex flex-col gap-2.75"],
+  ["flex flex-col h-full"],
+  [
+    "flex flex-col items-center justify-center gap-4 text-xs/4 mt-10 sm:mt-11.5 p-3 pb-4 sm:pb-14"
+  ],
+  ["flex flex-col items-start gap-0 px-2 py-0.75 rounded-full"],
+  ["flex flex-col items-start w-49 text-xs/4 gap-1"],
+  [
+    "flex flex-col items-start w-56 h-46 relative z-10 rounded-2xl pt-4.5 pr-3.75 pb-6.5 pl-3.75 overflow-clip bg-white  ",
+    "[box-shadow:#69696920_0px_0px_0px_0.5px,#C4C4C430_0px_2px_6px]",
+    "[box-shadow:#69696920_0px_0px_0px_0.5px]"
+  ],
+  ["flex flex-col mt-1.5"],
+  ["flex flex-col p-[1px]"],
+  ["flex flex-col relative pt-0.5 pr-2.25 pb-2.5 pl-3.75 gap-3.25 h-15.5"],
+  ["flex flex-col w-full max-w-107.25 mt-14"],
+  ["flex flex-col w-full rounded-[3px] pt-1.25 pb-1.5 bg-[#D7F2D3] px-2"],
+  ["flex gap-1"],
+  ["flex gap-2"],
+  ["flex gap-4"],
+  [
+    "flex h-0 grow flex-col overflow-hidden rounded-xl border-4 border-solid border-[color(display-p3_1_1_1)] bg-[color(display-p3_0.977_0.977_0.977)] md:flex-row md:rounded-[26px] md:border-[7px]"
+  ],
+  [
+    "flex h-screen flex-col gap-2 bg-[color(display-p3_0.986_0.986_0.986)] p-2 sm:p-4 md:gap-3 md:p-6"
+  ],
+  ["flex items-center -ml-1"],
+  ["flex items-center border-b border-zinc-300 bg-white h-11 shrink-0"],
+  ["flex items-center gap-[6px]"],
+  ["flex items-center gap-1"],
+  ["flex items-center gap-1.5"],
+  ["flex items-center gap-1.75"],
+  ["flex items-center gap-2 mr-8"],
+  ["flex items-center gap-2 px-4 py-3"],
+  [
+    "flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
+  ],
+  ["flex items-center gap-2.75 min-w-0"],
+  ["flex items-center gap-3 mb-4"],
+  ["flex items-center justify-between"],
+  [
+    "flex items-center justify-between bg-white rounded-t-[14px] pt-2.5 pr-3.5 pb-2.5 pl-3.75"
+  ],
+  ["flex items-center justify-between pt-2 pb-2"],
+  ["flex items-center justify-between relative"],
+  [
+    "flex items-center justify-between relative pt-2.75 pr-3 pb-3.5 pl-3.75 h-10.75"
+  ],
+  [
+    "flex items-center rounded-b-xl border-t bg-muted/50 p-4 group-data-[size=sm]/card:p-3"
+  ],
+  ["flex items-center shrink-0 gap-1.25"],
+  [
+    "flex items-center w-49 h-7 shrink-0 rounded-xs px-2.5 bg-white [box-shadow:#69696920_0px_0px_0px_0.5px]"
+  ],
+  [
+    "flex items-center w-full rounded-[3px] py-0.75 px-2 gap-1.75 bg-[color(display-p3_1_0.879_0.854)]"
+  ],
+  [
+    "flex items-start gap-2.75 min-w-0 pr-3.5 pb-3 pl-3.75 pt-0 rounded-b-[14px] bg-white"
+  ],
+  ["flex items-start gap-3.5"],
+  ["flex items-start shrink-0 gap-2.5"],
+  ["flex items-start shrink-0 gap-2.5  ", "mb-2.5"],
+  [
+    "flex justify-between items-start transition-colors group-hover/faq:text-[#1E1E1E] pt-2.75 cursor-pointer"
+  ],
+  ["flex justify-center sm:block"],
+  ["flex left-0 top-0 items-center gap-1 relative p-0"],
+  ["flex min-h-screen"],
+  ["flex min-w-0 flex-1 flex-wrap items-center gap-x-1.5 gap-y-1.5"],
+  ["flex min-w-0 items-center gap-1.5"],
+  ["flex pl-0.5 items-start gap-1.25 mt-4"],
+  ["flex shrink-0 items-center gap-1.5 md:gap-3"],
+  [
+    "flex size-9 items-center justify-center rounded-full text-[#919191] transition-transform duration-150 ease-out active:scale-[0.97]"
+  ],
+  [
+    "flex size-full items-center justify-center rounded-full bg-muted text-sm text-muted-foreground group-data-[size=sm]/avatar:text-xs"
+  ],
+  ["flex sticky top-0 z-10"],
+  [
+    "flex w-52.75 h-7 shrink-0 items-center overflow-hidden rounded-full bg-[color(display-p3_1_1_1)] px-3 filter-[grayscale(100%)] [box-shadow:#FFFFFF_0px_0px_9px_inset,color(display-p3_0.413_0.413_0.413/32%)_0px_0px_0px_0.5px,color(display-p3_0.768_0.768_0.768/22%)_0px_1px_3px]"
+  ],
+  ["flex w-full flex-col"],
+  ["flex w-full min-w-0 items-start gap-1.5"],
+  ["flex-1 flex flex-col"],
+  ["flex-1 min-h-0 overflow-x-hidden overflow-y-auto"],
+  ["flex-1 overflow-auto outline-none select-none"],
+  ["flex-1 px-3 flex items-center h-full"],
+  ["font-bold text-white text-lg tracking-tight"],
+  [
+    "font-heading text-base leading-snug font-medium group-data-[size=sm]/card:text-sm"
+  ],
+  ["glow-pulse pointer-events-none absolute inset-0"],
+  [
+    "grid transition-[grid-template-rows,opacity] duration-200  ",
+    "grid-rows-[1fr] opacity-100",
+    "grid-rows-[0fr] opacity-0"
+  ],
+  [
+    "group [font-synthesis:none] items-center flex justify-between mt-[20px] w-fit rounded-full overflow-clip gap-0.5 pl-[14px] pr-1.75 py-2 bg-white [box-shadow:#0000000F_0px_0px_0px_1px,#0000000F_0px_1px_2px_-1px,#0000000A_0px_2px_4px] antialiased transition-shadow hover:[box-shadow:#00000014_0px_0px_0px_1px,#00000014_0px_1px_2px_-1px,#0000000F_0px_2px_4px]"
+  ],
+  [
+    "group-hover/faq:text-[#1E1E1E] transition-all duration-200  ",
+    "text-[#1E1E1E] rotate-45",
+    "text-[#5A5A5A]"
+  ],
+  [
+    "group/accordion-trigger [font-synthesis:none] flex flex-1 justify-between items-center gap-0 rounded-[12px] pt-2.5 pb-2.5 pl-4 pr-3.5 sm:pt-1.75 sm:pb-1.75 sm:pl-3.5 sm:pr-3 antialiased outline-none transition-opacity duration-100",
+    "[box-shadow:color(display-p3_1_1_1)_0px_0px_9px_inset,color(display-p3_0_0_0/16%)_0px_0px_0px_0.5px] dark:[box-shadow:color(display-p3_1_1_1/17%)_0px_0px_0px_0.5px] aria-expanded:[box-shadow:none] dark:aria-expanded:[box-shadow:none]",
+    "bg-[linear-gradient(in_oklab_180deg,oklab(100%_0_0_/_65%)_0%,oklab(98.2%_0_0)_82.16%,oklab(100%_0_0_/_0%)_100%)] dark:bg-none"
+  ],
+  [
+    "group/avatar relative flex size-8 shrink-0 rounded-full select-none after:absolute after:inset-0 after:rounded-full after:border after:border-border after:mix-blend-darken data-[size=lg]:size-10 data-[size=sm]:size-6 dark:after:mix-blend-lighten"
+  ],
+  [
+    "group/avatar-group flex -space-x-2 *:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background"
+  ],
+  [
+    "group/badge inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-4xl border border-transparent px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-all focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none [&>svg]:size-3!",
+    "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+    "bg-secondary text-secondary-foreground [a]:hover:bg-secondary/80",
+    "bg-destructive/10 text-destructive focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:focus-visible:ring-destructive/40 [a]:hover:bg-destructive/20",
+    "border-border text-foreground [a]:hover:bg-muted [a]:hover:text-muted-foreground",
+    "hover:bg-muted hover:text-muted-foreground dark:hover:bg-muted/50",
+    "text-primary underline-offset-4 hover:underline",
+    "default"
+  ],
+  [
+    "group/card flex flex-col gap-4 overflow-hidden rounded-xl bg-card py-4 text-sm text-card-foreground ring-1 ring-foreground/10 has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl"
+  ],
+  [
+    "group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-4 group-data-[size=sm]/card:px-3 has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-4 group-data-[size=sm]/card:[.border-b]:pb-3"
+  ],
+  ["group/faq pb-2.75"],
+  [
+    "group/toggle-group flex w-fit flex-row items-center gap-[--spacing(var(--gap))] rounded-lg data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-vertical:flex-col data-vertical:items-stretch"
+  ],
+  ["h-[0.5px] self-stretch shrink-0 bg-[#DDDDDD] mb-2.75"],
+  ["h-[12px] w-auto"],
+  ["h-[21px] w-auto"],
+  ["h-[calc(100vh-56px)]"],
+  ["h-0.5 shrink-0"],
+  ["h-2.25 shrink-0"],
+  ["h-2.5 shrink-0"],
+  ["h-7 shrink-0"],
+  [
+    "h-8 w-full min-w-0 rounded-lg border border-input bg-transparent px-2.5 py-1 text-base transition-colors outline-none file:inline-flex file:h-6 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50 disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:bg-input/30 dark:disabled:bg-input/80 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40"
+  ],
+  ["h-auto w-5 shrink-0"],
+  ["h-px bg-[#EEEEEE]"],
+  ["home-page-below-hero w-full flex flex-col items-center"],
+  ["inline-block min-w-full"],
+  [
+    "inline-flex cursor-pointer items-center gap-1.5 rounded-full bg-red-500/10 px-2.5 py-1 transition-opacity hover:bg-red-500/20 active:scale-[0.97]"
+  ],
+  [
+    "inline-flex items-center gap-1.5 text-[13px] leading-4.5 font-medium tracking-[0em] tabular-nums text-[color(display-p3_0.361_0.361_0.361)] md:gap-2.5 md:text-[15px]"
+  ],
+  ["inline-flex items-center rounded-[9px] bg-[#ffecb8] px-2.25 py-0"],
+  ["isolate z-50 outline-none"],
+  ["items-center flex gap-1.25"],
+  ["left-0 top-4.5 w-68.5 h-4.5 absolute"],
+  [
+    "left-4.75 top-3.75 w-52.75 h-7 rounded-lg absolute bg-white filter-[grayscale(100%)]"
+  ],
+  [
+    "left-4.75 top-4 w-19.5 h-6.25 rounded-lg absolute bg-[#FBFBFB] filter-[grayscale(100%)]"
+  ],
+  [
+    "max-w-48 truncate rounded-xl bg-[#1c1c1c] px-3 py-2 text-sm font-medium text-white shadow-xl md:max-w-80 md:px-4 md:py-3 md:text-base"
+  ],
+  [
+    "mb-1 text-2xl font-semibold tracking-tight text-neutral-950 dark:text-white"
+  ],
+  ["mb-10 text-neutral-500 dark:text-neutral-400"],
+  ["min-h-0 flex-1"],
+  ["min-h-0 w-full overflow-y-auto select-none"],
+  ["min-h-full flex flex-col"],
+  ["min-h-screen bg-white flex flex-col"],
+  ["min-h-screen flex items-center justify-center bg-zinc-50 p-8"],
+  [
+    "min-w-0 font-mono-override font-medium text-[15.5px]/5.75 whitespace-pre overflow-x-auto scrollbar-none"
+  ],
+  ["ml-72 flex-1 p-10"],
+  ["ml-auto"],
+  [
+    "ml-auto text-xs tracking-widest text-muted-foreground group-focus/dropdown-menu-item:text-accent-foreground"
+  ],
+  [
+    "mt-1 flex items-center justify-between gap-2 p-0 antialiased [font-synthesis:none] md:mt-1.5 md:gap-4"
+  ],
+  [
+    "mt-10 flex items-center justify-between text-neutral-500 dark:text-neutral-500 text-sm"
+  ],
+  [
+    "mt-10 space-y-6 [&_h2]:mt-10 [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-neutral-950 [&_h2]:dark:text-white [&_p]:text-neutral-600 [&_p]:dark:text-neutral-400"
+  ],
+  ["mt-2 flex flex-col gap-3 shrink-0"],
+  ["mt-4"],
+  [
+    "mt-6 w-full h-12 bg-zinc-900 text-white font-bold text-base rounded-none hover:bg-zinc-800 transition-colors"
+  ],
+  [
+    "order-2 flex max-h-28 w-full px-2.5 pt-0 pb-2 md:order-none md:max-h-none md:w-72 md:shrink-0 md:pt-2.5 md:pr-6 md:pb-6"
+  ],
+  ["overflow-hidden"],
+  ["overflow-visible text-sm"],
+  [
+    "pointer-events-auto absolute top-1/2 z-[15] size-4 -translate-x-1/2 -translate-y-1/2 appearance-none rounded-[4.5px] border-[3px] border-solid border-[color(display-p3_1_1_1)] bg-origin-border p-0 outline-none transition-transform duration-150 ease-out will-change-transform hover:scale-[1.08]"
+  ],
+  [
+    "pointer-events-none absolute inset-0 rounded-[11px] bg-[color(display-p3_1_1_1)] will-change-transform"
+  ],
+  [
+    "pointer-events-none absolute inset-0 z-10 flex flex-col items-end justify-end gap-2 p-2 md:p-5"
+  ],
+  ["pointer-events-none absolute inset-y-0 left-0  "],
+  ["pointer-events-none absolute right-2 flex items-center justify-center"],
+  [
+    "pointer-events-none absolute top-1/2 z-[1] h-2.75 w-px -translate-x-1/2 -translate-y-1/2 rounded-full bg-[color(display-p3_0.882_0.882_0.882)]"
+  ],
+  [
+    "primary bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-600"
+  ],
+  ["px-1.5 py-1 text-xs font-medium text-muted-foreground data-inset:pl-7"],
+  [
+    "px-2 h-full flex items-center text-lg truncate  ",
+    "font-bold text-zinc-900 bg-zinc-50",
+    "text-emerald-700 font-medium",
+    "text-blue-700 font-medium",
+    "text-amber-700 font-medium",
+    "text-zinc-800",
+    "text-red-600",
+    "text-emerald-600",
+    "text-zinc-800"
+  ],
+  ["px-4 flex items-center h-14"],
+  ["px-4 group-data-[size=sm]/card:px-3"],
+  [
+    "px-4 py-1.5 text-sm font-medium rounded transition-colors no-underline",
+    "bg-white/20 text-white",
+    "text-emerald-200 hover:text-white hover:bg-white/10"
+  ],
+  ["py-2"],
+  ["py-2 text-gray-400"],
+  ["py-2 text-green-600"],
+  [
+    "relative flex flex-col w-68.5 h-46 rounded-2xl pt-2.5 pr-2.25 pb-6.75 pl-4.75 bg-white overflow-hidden  ",
+    "[box-shadow:#69696920_0px_0px_0px_0.5px,#C4C4C430_0px_2px_6px]",
+    "[box-shadow:#69696920_0px_0px_0px_0.5px]"
+  ],
+  ["relative flex h-full flex-col overflow-hidden rounded-xl bg-white"],
+  ["relative flex items-center justify-center"],
+  [
+    "relative flex items-center justify-center size-8 rounded-full border-none p-0 cursor-pointer outline-none transition-[background-color,color,transform] duration-150 ease-out active:scale-[0.92] bg-transparent text-white/85 hover:bg-white/[0.12] hover:text-white"
+  ],
+  [
+    "relative flex size-8 shrink-0 items-center justify-center rounded-full bg-muted text-sm text-muted-foreground ring-2 ring-background group-has-data-[size=lg]/avatar-group:size-10 group-has-data-[size=sm]/avatar-group:size-6 [&>svg]:size-4 group-has-data-[size=lg]/avatar-group:[&>svg]:size-5 group-has-data-[size=sm]/avatar-group:[&>svg]:size-3"
+  ],
+  [
+    "relative flex w-full items-center gap-1.75 rounded-[11px] px-3 py-1.5 transition-colors duration-150 ease-out group-hover/replay-step:bg-white/65 group-focus-visible/replay-step:bg-white/65"
+  ],
+  ["relative h-full w-full overflow-hidden"],
+  ["relative order-1 min-h-0 min-w-0 flex-1 md:order-none"],
+  [
+    "relative w-36.25 h-6.5 rounded-full shrink-0 bg-white [box-shadow:#69696920_0px_0px_0px_0.5px] overflow-hidden flex items-center justify-center"
+  ],
+  ["relative w-68.5 h-46 shrink-0 overflow-visible"],
+  ["relative w-full max-w-112.75 min-w-0 px-4 sm:px-0"],
+  ["relative w-full max-w-112.75 min-w-0 px-4 sm:px-0 pb-16"],
+  ["relative z-10 flex min-w-0 items-start gap-1.5"],
+  ["relative z-10 size-2 shrink-0 rounded-full  "],
+  ["rounded-full bg-[#E7E7E7] shrink-0 size-2"],
+  ["rounded-full bg-[#EAEAEA] shrink-0 size-2.5"],
+  ["rounded-full bg-[#F1F1F1] shrink-0 size-2"],
+  ["rounded-full bg-[#FEBC2E] shrink-0 size-2.5"],
+  ["rounded-full bg-[#FF726A] shrink-0 size-2.5"],
+  [
+    "rounded-full py-2 px-3.5 text-white font-semibold text-[16.5px] leading-none antialiased animate-[expect-comment-in_0.25s_cubic-bezier(0.22,1,0.36,1)_both]"
+  ],
+  ["rounded-full shrink-0 size-2"],
+  [
+    "scale-[0.9] sm:scale-[1.15] origin-top sm:origin-top-left translate-x-[27px] sm:translate-x-0"
+  ],
+  ["shrink-0"],
+  [
+    "shrink-0 [letter-spacing:-0.14px] w-max text-[#323232] font-medium text-sm/4.5 font-mono-override"
+  ],
+  [
+    "shrink-0 bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:w-px data-vertical:self-stretch"
+  ],
+  [
+    "shrink-0 group-data-[spacing=0]/toggle-group:rounded-none group-data-[spacing=0]/toggle-group:px-2 focus:z-10 focus-visible:z-10 group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t"
+  ],
+  [
+    "shrink-0 group-data-[spacing=0]/toggle-group:rounded-none group-data-[spacing=0]/toggle-group:px-2 focus:z-10 focus-visible:z-10 group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t",
+    "variant",
+    "size"
+  ],
+  ["shrink-0 text-black dark:text-white size-[17px] sm:size-[15px]"],
+  ["size-1.5 rounded-full bg-red-500  ", "animate-pulse"],
+  ["size-3 shrink-0 rounded-full"],
+  ["size-3.75"],
+  ["size-4"],
+  ["size-7 text-white"],
+  [
+    "space-y-6 [&_h2]:mt-10 [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-neutral-950 [&_h2]:dark:text-white [&_h3]:mt-4 [&_h3]:mb-1 [&_h3]:font-semibold [&_h3]:text-neutral-950 [&_h3]:dark:text-white [&_p]:text-neutral-600 [&_p]:dark:text-neutral-400"
+  ],
+  [
+    "space-y-6 [&_h2]:mt-10 [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-neutral-950 [&_h2]:dark:text-white [&_h3]:mt-4 [&_h3]:mb-1 [&_h3]:font-semibold [&_h3]:text-neutral-950 [&_h3]:dark:text-white [&_p]:text-neutral-600 [&_p]:dark:text-neutral-400 [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:text-neutral-600 [&_ul]:dark:text-neutral-400 [&_li]:mb-2"
+  ],
+  ["tabular-nums"],
+  ["text-[#000000]"],
+  ["text-[#0033B3]"],
+  ["text-[#067D17]"],
+  ["text-[#1E1E1E]", "text-[#5A5A5A]"],
+  ["text-[#414141]", "text-[#A0A0A0]"],
+  ["text-[#871094]"],
+  ["text-[#E07800]"],
+  ["text-[11px] font-semibold uppercase tracking-wider text-red-500"],
+  [
+    "text-[color(display-p3_0.188_0.188_0.188)]",
+    "text-[color(display-p3_0.332_0.332_0.332)] group-hover/replay-step:text-[color(display-p3_0.188_0.188_0.188)] group-focus-visible/replay-step:text-[color(display-p3_0.188_0.188_0.188)]"
+  ],
+  ["text-[color(display-p3_0.727_0.727_0.727)]"],
+  ["text-2xl font-extrabold text-zinc-900"],
+  ["text-3xl font-bold mb-2"],
+  ["text-blue-500 hover:underline"],
+  ["text-gray-500 mb-8"],
+  ["text-gray-600 mb-3"],
+  ["text-left py-2"],
+  ["text-lg font-bold text-gray-300"],
+  ["text-lg font-bold text-zinc-800 font-mono"],
+  ["text-lg font-semibold mb-3"],
+  ["text-shimmer text-sm font-medium"],
+  ["text-sm  ", "text-green-400", "text-red-400"],
+  ["text-sm font-medium text-white/90 drop-shadow-sm"],
+  ["text-sm text-muted-foreground"],
+  ["text-xs font-medium text-gray-500 mb-2 uppercase tracking-wide"],
+  ["text-xs text-gray-400 mt-1"],
+  ["text-xs text-yellow-400 animate-pulse"],
+  [
+    "transition-opacity duration-150 group-aria-expanded/accordion-trigger:opacity-0"
+  ],
+  [
+    "underline underline-offset-2 hover:text-neutral-950 dark:hover:text-white transition-colors"
+  ],
+  [
+    "w-10.5 h-6.5 rounded-full shrink-0 bg-white [box-shadow:#69696920_0px_0px_0px_0.5px]"
+  ],
+  ["w-14 h-3.25 rounded-xs bg-[#B1E4AC] shrink-0"],
+  ["w-15.25 h-2 rounded-full bg-[#E7E7E7] shrink-0"],
+  ["w-18 h-3.25 rounded-xs bg-[#B1E4AC] shrink-0"],
+  [
+    "w-18 h-6 shrink-0 rounded-full border border-solid border-[color(display-p3_0.358_0.627_1)] bg-[color(display-p3_0.263_0.575_0.997)] [outline:1px_solid_color(display-p3_0.263_0.575_0.997)]"
+  ],
+  ["w-2 shrink-0"],
+  ["w-20 h-3.25 rounded-xs bg-[#B1E4AC] shrink-0"],
+  ["w-26 h-3.25 rounded-xs bg-[#F9BFB5] shrink-0"],
+  ["w-27.5 h-2 rounded-full shrink-0"],
+  ["w-28 h-3.25 rounded-xs bg-[#B1E4AC] shrink-0"],
+  [
+    "w-28 px-2 py-1 border-r border-zinc-300 text-lg font-medium text-zinc-700 bg-zinc-50 h-full flex items-center"
+  ],
+  ["w-3.5 shrink-0"],
+  ["w-32 h-3.25 rounded-xs bg-[#B1E4AC] shrink-0"],
+  ["w-4 h-2 rounded-full bg-[#E7E7E7] shrink-0"],
+  ["w-4 h-2 rounded-full bg-[#F1F1F1] shrink-0"],
+  ["w-7.25 h-2 rounded-full shrink-0"],
+  ["w-7.75 h-2 rounded-full bg-[#F1F1F1] shrink-0"],
+  [
+    "w-8 h-8 bg-zinc-900 rounded-full flex items-center justify-center text-white font-bold text-lg"
+  ],
+  [
+    "w-auto min-w-[96px] rounded-lg bg-popover p-1 text-popover-foreground shadow-lg ring-1 ring-foreground/10 duration-100 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95"
+  ],
+  ["w-full max-w-112.75 relative px-4 sm:px-0"],
+  ["w-full max-w-lg"],
+  ["w-full pt-3 sm:pt-6 pb-2 sm:pb-4 flex flex-col items-center relative"],
+  ["w-full text-lg text-zinc-800 bg-transparent border-0 outline-none"],
+  ["w-full text-sm"],
+  [
+    "z-50 flex flex-col max-h-(--available-height) w-(--anchor-width) min-w-32 origin-(--transform-origin) overflow-hidden rounded-lg bg-popover p-1 text-popover-foreground shadow-md ring-1 ring-foreground/10 duration-100 outline-none data-[side=bottom]:slide-in-from-top-2 data-[side=inline-end]:slide-in-from-left-2 data-[side=inline-start]:slide-in-from-right-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95"
+  ],
+  [
+    "z-50 max-w-[min(24rem,calc(100vw-2rem))] overflow-hidden text-ellipsis whitespace-nowrap rounded-md bg-neutral-900 px-2 py-1.5 text-[11px]/4.5 font-medium tracking-[0em] text-white antialiased shadow-lg [transform-origin:var(--transform-origin)] transition-[transform,opacity] duration-150 ease-out data-[starting-style]:scale-[0.97] data-[ending-style]:scale-[0.97] data-[starting-style]:opacity-0 data-[ending-style]:opacity-0 data-[instant]:duration-0"
+  ]
+]

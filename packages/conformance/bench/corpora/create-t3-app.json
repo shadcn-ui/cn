@@ -1,0 +1,514 @@
+[
+  [
+    "        inline-flex items-center px-3 lg:px-4 lg:py-3 md:px-5 py-2 text-sm md:text-base font-semibold cursor-pointer hover:no-underline transition-colors"
+  ],
+  [
+    "  group flex w-full items-center bg-t3-purple-200/10 px-4 py-2 text-sm font-medium hover:bg-t3-purple-200/20",
+    "bg-t3-purple-200/20"
+  ],
+  [
+    "  inline-flex cursor-pointer items-center rounded-lg px-4 py-2 text-sm font-semibold transition-colors duration-500 hover:no-underline md:px-5 md:text-base lg:px-4 lg:py-3",
+    "bg-primary text-white",
+    "bg-transparent"
+  ],
+  ["  p-4 w-full flex justify-center", "bg-white", "bg-black"],
+  ["[&>p]:mb-0"],
+  ["0 -mx-0.5 p-1.5"],
+  [
+    "absolute -top-96 z-50 opacity-0 focus:top-0 focus:opacity-100 ltr:-left-96 ltr:focus:left-0 rtl:-right-96 rtl:focus:right-0"
+  ],
+  ["active"],
+  ["aspect-square h-10 fill-white py-1"],
+  ["aspect-square h-10 py-1"],
+  [
+    "aspect-square h-2 rounded-full bg-white/20 transition-colors ease-in-out [&.active]:bg-primary [&:not(.active)]:hover:bg-white/40",
+    "active"
+  ],
+  ["bg-accent p-4"],
+  ["bg-error p-4"],
+  ["bg-info p-4"],
+  ["bg-neutral p-4"],
+  ["bg-primary p-4"],
+  ["bg-secondary p-4"],
+  ["bg-success p-4"],
+  ["bg-warning p-4"],
+  ["block dark:hidden"],
+  ["block md:hidden"],
+  ["border-t-2 border-t3-purple-300/20"],
+  [
+    "border-t3-purple-300/100",
+    "dark:bg-t3-purple-300/20",
+    "bg-t3-purple-300/30"
+  ],
+  ["break-all"],
+  ["code-wrapper"],
+  ["col-span-1 flex min-h-full w-full flex-col pt-5"],
+  ["container flex flex-col items-center justify-center gap-12 px-4 py-16"],
+  ["container mx-auto divide-gray-400 divide-opacity-50 px-6 pt-6"],
+  ["cursor-pointer text-slate-900 dark:text-t3-purple-500"],
+  ["cursor-pointer text-t3-purple-500 dark:text-slate-50"],
+  ["dark"],
+  ["dark", "light"],
+  [
+    "dark:bg-t3-purple-300/20",
+    "bg-t3-purple-300/30",
+    "border-t3-purple-300/100"
+  ],
+  ["embed"],
+  ["fill-[#1DA1F2]"],
+  ["fill-[#5865F2]"],
+  ["fill-white"],
+  ["fixed left-0 top-0 z-30 h-screen w-screen bg-default"],
+  ["fixed top-24 h-[calc(100%-96px)] w-full pb-16"],
+  ["flex"],
+  ["flex flex-1 flex-wrap justify-start"],
+  ["flex flex-1 items-center"],
+  ["flex flex-col gap-2"],
+  ["flex flex-col items-center"],
+  ["flex flex-col items-center gap-2"],
+  ["flex flex-col items-center gap-2 text-sm md:items-start"],
+  ["flex flex-col items-center gap-8 lg:gap-12"],
+  ["flex flex-col items-center justify-center gap-2 py-3"],
+  ["flex flex-col items-center justify-center gap-4"],
+  ["flex flex-col items-start justify-between"],
+  [
+    "flex flex-col items-start justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0"
+  ],
+  ["flex flex-col text-xl text-white"],
+  ["flex flex-grow items-center justify-end gap-4"],
+  [
+    "flex flex-wrap items-start rounded-lg border border-t3-purple-200/20 bg-white/10 bg-cover px-4 pb-1 pt-4 transition-colors hover:border-t3-purple-300/50 hover:bg-white/20 hover:no-underline"
+  ],
+  ["flex gap-2"],
+  ["flex gap-4"],
+  ["flex h-8 w-8 items-center justify-center rounded-full hover:text-blue-500"],
+  [
+    "flex h-8 w-8 items-center justify-center rounded-full hover:text-green-500"
+  ],
+  ["flex h-8 w-8 items-center justify-center rounded-full hover:text-red-500"],
+  [
+    "flex h-full flex-col items-center justify-center space-y-3 p-4 sm:p-2 md:p-4"
+  ],
+  ["flex items-center gap-2"],
+  ["flex items-center gap-2 px-4 text-sm"],
+  ["flex items-center justify-center gap-1 lg:gap-3"],
+  ["flex items-center justify-start py-2"],
+  [
+    "flex items-center space-x-4 bg-white/10 p-2 pl-5 transition-colors hover:bg-white/20"
+  ],
+  [
+    "flex items-center underline-offset-2 hover:text-t3-purple-400 hover:underline dark:hover:text-t3-purple-100"
+  ],
+  ["flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 hover:bg-white/20"],
+  [
+    "flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+  ],
+  [
+    "flex min-h-screen flex-col items-center bg-default transition-colors duration-300"
+  ],
+  [
+    "flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c]"
+  ],
+  [
+    "flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white"
+  ],
+  ["flex w-80 flex-col overflow-hidden rounded"],
+  [
+    "flex w-full cursor-text items-center justify-between rounded-lg px-4 py-2 text-sm font-medium text-slate-800 !transition-colors !duration-300 dark:text-slate-100"
+  ],
+  [
+    "flex w-full cursor-text items-center justify-between rounded-lg px-4 py-2 text-sm font-medium text-slate-800 !transition-colors !duration-300 dark:text-slate-100",
+    "hover:bg-t3-purple/20 border border-t3-purple-200/20 bg-t3-purple-200/10 duration-300 hover:border-t3-purple-200/50",
+    "dark:hover:bg-t3-purple/20 border bg-t3-purple-200/50 duration-300 hover:bg-t3-purple-200/75 dark:border-t3-purple-200/20 dark:bg-t3-purple-200/10 dark:text-slate-100 dark:hover:border-t3-purple-200/50"
+  ],
+  ["flex w-full flex-1 flex-col gap-4 bg-neutral p-4"],
+  ["flex w-full flex-col items-center"],
+  ["flex w-full flex-col items-center gap-4"],
+  ["flex w-full flex-col items-center justify-between"],
+  ["flex w-full flex-col pt-8 text-center md:text-start lg:py-0"],
+  ["flex w-full flex-wrap justify-center gap-8"],
+  ["flex w-full items-center justify-between md:w-auto"],
+  ["flex w-full justify-center gap-10 py-5"],
+  ["flex w-full max-w-7xl items-center justify-between px-4"],
+  ["flex w-full max-w-screen-lg flex-col"],
+  ["flex w-full space-x-5"],
+  ["flex whitespace-nowrap"],
+  ["flex-1"],
+  ["flex-shrink-0"],
+  [
+    "focus-none relative cursor-pointer bg-t3-purple-200/50 px-4 py-2 text-slate-900 outline-none hover:bg-t3-purple-300/75 dark:bg-t3-purple-200/10 dark:text-t3-purple-100 dark:hover:bg-t3-purple-200/20    ",
+    "bg-t3-purple-400/75 dark:bg-t3-purple-400/20",
+    "bg-t3-purple-300/75 dark:bg-t3-purple-200/20"
+  ],
+  [
+    "focus-none shadow-l t3-scrollbar absolute right-0 mt-1 max-h-60 w-fit min-w-[6em] overflow-auto rounded-lg border bg-default text-base focus:outline-none focus-visible:outline-none sm:text-sm dark:border-t3-purple-200/20"
+  ],
+  [
+    "focus-none shadow-l t3-scrollbar absolute right-0 mt-1 max-h-60 w-fit overflow-auto rounded-lg border bg-default text-base focus:outline-none focus-visible:outline-none sm:text-sm dark:border-t3-purple-200/20",
+    "text-right"
+  ],
+  ["font-extrabold"],
+  [
+    "font-medium",
+    "bg-t3-purple-300/20",
+    "text-t3-purple-700",
+    "dark:text-t3-purple-100"
+  ],
+  ["font-medium", "text-t3-purple-700", "dark:text-t3-purple-100"],
+  ["grid grid-cols-1 gap-2 sm:gap-4"],
+  ["grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8"],
+  ["grid w-full grid-cols-1 gap-4 p-0 md:grid-cols-2"],
+  [
+    "grid w-full max-w-7xl flex-1 grid-cols-1 gap-4 md:grid-cols-[250px_auto] lg:grid-cols-[250px_auto_250px]"
+  ],
+  ["group"],
+  ["group flex items-center gap-1 rounded-lg no-underline"],
+  ["h-[1em] w-[1em]  ", "hidden"],
+  ["h-[1em] w-[1em] animate-draw  ", "hidden"],
+  ["h-[calc(100vh-200px)] py-12 sm:py-8 md:py-12 lg:py-14 xl:py-12 2xl:py-28"],
+  ["h-10 fill-white py-1"],
+  [
+    "h-10 w-10 fill-slate-900 py-1 transition-colors duration-300 dark:fill-t3-purple-100"
+  ],
+  ["h-10 w-10 fill-transparent stroke-current"],
+  ["h-10 w-full"],
+  ["h-14 w-14"],
+  ["h-3 w-3 rounded-full bg-red-500"],
+  ["h-3 w-3 sm:h-4 sm:w-4", "-scale-x-100"],
+  ["h-4 w-4"],
+  [
+    "h-4 w-4 fill-slate-900 transition-colors duration-300 [margin-inline-end:4px] dark:fill-t3-purple-100"
+  ],
+  ["h-5 w-5 fill-current"],
+  ["h-6 w-6"],
+  [
+    "h-6 w-6 fill-current stroke-current stroke-2 transition-colors duration-300"
+  ],
+  ["h-6 w-6 fill-current stroke-current transition-colors duration-300"],
+  ["h-6 w-6 text-slate-900 dark:text-t3-purple-100"],
+  ["h-8 w-8 rounded-full sm:h-10 sm:w-10"],
+  ["h-8 w-min gap-2"],
+  ["h-screen bg-default p-4"],
+  ["heading-link heading-link--hidden---effects"],
+  ["hidden"],
+  ["hidden dark:block"],
+  ["hidden gap-2 -space-x-1 md:flex", "md:ml-10", "md:mr-10"],
+  [
+    "hidden text-t3-purple-800 hover:text-t3-purple-400 dark:text-t3-purple-200 dark:hover:text-t3-purple-100",
+    "md:block"
+  ],
+  [
+    "hidden text-t3-purple-800 hover:text-t3-purple-400 md:block dark:text-t3-purple-200 dark:hover:text-t3-purple-100"
+  ],
+  ["hidden w-full max-w-xs rounded-lg md:block"],
+  ["initial"],
+  ["initial  ", "not-found"],
+  ["inline pl-1 text-blue-400"],
+  ["inline pl-2 text-blue-400"],
+  [
+    "inline-flex absolute right-[.45em] top-[.5em] bg-zinc-100/20 rounded px-1 py-1 text-sm text-zinc-50 hover:bg-zinc-100/25 focus:outline-none focus:shadow-outline text-brand-primary"
+  ],
+  [
+    "inverse-toggle h-[300px] overflow-hidden rounded-lg border border-t3-purple-200/20 bg-white/10 px-1 pb-6 pt-4 font-mono text-[10px] leading-normal text-t3-purple-50 subpixel-antialiased shadow-lg transition-all sm:h-[400px] sm:px-2 sm:text-xs md:px-5"
+  ],
+  ["italic"],
+  ["items-top flex gap-2"],
+  [
+    "leading-1 translate-y-[-0.2rem] bg-gradient-to-r from-blue-400 via-green-300 to-pink-600 bg-clip-text font-mono text-[7px] text-transparent sm:text-sm md:translate-y-[-0.4rem]"
+  ],
+  ["leading-none"],
+  ["lg:px-8"],
+  ["light"],
+  ["light", "dark"],
+  ["line-through"],
+  [
+    "m-0 w-full cursor-pointer rounded-lg border border-t3-purple-500/20 p-4 duration-300 hover:border-t3-purple-500/50 hover:shadow-lg dark:border-t3-purple-200/20 dark:hover:border-t3-purple-200/50"
+  ],
+  ["m-6 h-full text-sm text-t3-purple-100 subpixel-antialiased md:text-base"],
+  ["markdown w-full"],
+  ["max-w-3/4 mx-auto px-8"],
+  [
+    "max-w-md px-4 sm:max-w-2xl sm:px-6 md:max-w-3xl lg:max-w-4xl lg:px-0 xl:max-w-5xl 2xl:max-w-6xl"
+  ],
+  ["mb-10 md:text-center"],
+  [
+    "mb-10 mt-4 w-full max-w-3xl text-left text-base text-t3-purple-200 md:text-center md:text-xl lg:text-xl"
+  ],
+  ["mb-10 mt-6 flex justify-center"],
+  ["mb-2"],
+  ["mb-2 w-full text-3xl font-bold text-t3-purple-50 md:text-5xl lg:text-5xl"],
+  ["mb-4 h-8"],
+  [
+    "mb-4 hidden text-lg font-semibold text-slate-900 md:block dark:text-t3-purple-50"
+  ],
+  ["mb-4 px-4 text-3xl font-extrabold dark:text-t3-purple-100"],
+  ["mb-4 text-lg font-semibold text-slate-900 dark:text-t3-purple-50"],
+  ["mb-4 w-full list-none marker:text-t3-purple-300"],
+  ["mb-4 w-full rounded border border-t3-purple-300 p-4 text-lg"],
+  [
+    "mb-8 mt-16 flex flex-row items-center justify-between px-4 pt-4 font-medium text-t3-purple-800 lg:px-8 dark:text-t3-purple-200"
+  ],
+  ["md:[margin-inline-end:16px]"],
+  ["min-h-screen bg-gradient-to-b from-gray-900 via-[#300171] to-slate-900"],
+  ["ml-1"],
+  ["ml-1 inline flex-shrink-0 transform"],
+  ["ml-2 h-3 fill-white"],
+  ["ml-2 h-3 w-3 rounded-full bg-green-500"],
+  ["ml-2 h-3 w-3 rounded-full bg-orange-300"],
+  ["mobile-sidebar-toggle"],
+  ["mr-1 inline flex-shrink-0 rotate-180 transform"],
+  [
+    "mr-1 whitespace-nowrap text-sm text-t3-purple-100 hover:text-[#1da1f2] lg:text-sm"
+  ],
+  ["mr-12"],
+  ["mr-2"],
+  ["mr-2 font-bold hover:underline"],
+  ["mr-3 h-12 w-12 rounded-full"],
+  ["mr-6 flex items-center text-t3-purple-100 hover:text-red-500"],
+  ["mr-8 flex items-center text-t3-purple-100 hover:text-blue-500"],
+  ["mr-8 flex items-center text-t3-purple-100 hover:text-green-500"],
+  [
+    "mt-2 text-3xl font-bold tracking-tight text-t3-purple-50 md:text-5xl lg:text-5xl"
+  ],
+  [
+    "mt-2 w-full text-left text-3xl font-bold tracking-tight text-t3-purple-50 md:text-center md:text-5xl lg:text-5xl"
+  ],
+  ["mt-4 flex w-full items-center justify-center gap-4 xl:mt-8"],
+  ["mt-4 max-w-3xl text-base text-t3-purple-200 md:text-lg lg:text-lg"],
+  ["mt-4 text-base text-t3-purple-200 md:text-lg"],
+  ["mt-6 flex rounded-lg"],
+  ["mt-8 grid grid-cols-2 gap-4 font-semibold"],
+  ["mt-auto flex flex-col bg-transparent py-12 transition-colors"],
+  ["mx-3 flex lg:hidden"],
+  [
+    "mx-4 mb-6 rounded-lg bg-t3-purple-200/50 p-4 font-medium lg:mx-0 lg:ml-4 dark:bg-t3-purple-200/10"
+  ],
+  ["mx-auto flex max-w-[800px] flex-col gap-2 md:gap-4 xl:max-w-full"],
+  [
+    "mx-auto flex max-w-7xl flex-col items-center justify-center px-4 text-t3-purple-100 sm:px-6 lg:px-8"
+  ],
+  [
+    "mx-auto flex w-fit gap-3 rounded-lg border bg-t3-purple-200/50 p-2 hover:bg-t3-purple-200/75 dark:border-t3-purple-200/20 dark:bg-t3-purple-200/10 dark:hover:border-t3-purple-200/50"
+  ],
+  [
+    "mx-auto grid max-w-7xl grid-cols-1 gap-4 px-4 pb-12 sm:px-6 md:grid-cols-2 md:gap-10 lg:px-8"
+  ],
+  [
+    "mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 pb-12 sm:px-6 lg:grid lg:gap-x-8 lg:px-8 xl:grid-cols-2 xl:gap-x-12"
+  ],
+  ["mx-auto max-w-[800px] xl:max-w-7xl"],
+  ["mx-auto max-w-7xl px-4 pb-12 text-t3-purple-100 sm:px-6 lg:px-8"],
+  ["mx-auto mb-6 ml--40 w-full px-6 md:ml-0 md:hidden md:px-8"],
+  [
+    "mx-auto mt-4 max-w-3xl text-base text-t3-purple-200 md:text-xl lg:text-xl xl:text-xl"
+  ],
+  ["mx-auto w-full overflow-hidden rounded-lg sm:w-[600px]"],
+  ["my-1 whitespace-pre-line text-sm xl:text-base"],
+  ["my-4 flex w-full gap-3 rounded-md border p-3 text-justify"],
+  [
+    "my-4 flex w-full gap-3 rounded-md border p-3 text-justify",
+    "border-orange-400 bg-orange-400/50 dark:border-orange-600 dark:bg-orange-600/50",
+    "border-blue-400 bg-blue-400/50 dark:border-blue-600 dark:bg-blue-600/50",
+    "border-yellow-400 bg-yellow-400/50 dark:border-yellow-600 dark:bg-yellow-600/50"
+  ],
+  [
+    "navbar relative flex flex-col items-center justify-between py-4",
+    "z-40 text-slate-50",
+    "transition-colors duration-300"
+  ],
+  ["no-underline"],
+  ["not-found"],
+  ["opacity-0 transition group-hover:opacity-100"],
+  ["order-first mb-10 flex flex-col items-start text-left md:order-last"],
+  ["overline"],
+  ["pb-2"],
+  [
+    "pb-2 text-xl font-semibold transition-colors duration-300 sm:text-lg",
+    "text-slate-50"
+  ],
+  ["pl-1 text-blue-400"],
+  ["pl-2 text-blue-400"],
+  ["px-4 pb-28 text-slate-900 md:pb-0 dark:text-t3-purple-50"],
+  ["py-12 sm:py-8 md:py-12 lg:py-14 xl:py-12"],
+  ["py-12 sm:py-8 md:py-12 lg:py-14 xl:py-12 2xl:py-28"],
+  ["py-2"],
+  ["py-4 text-4xl font-bold"],
+  ["relative"],
+  [
+    "relative flex cursor-pointer items-center justify-center rounded-lg border bg-t3-purple-200/50 p-2 text-left focus:outline-none hover:bg-t3-purple-200/75 sm:text-sm dark:border-t3-purple-200/20 dark:bg-t3-purple-200/10 dark:hover:border-t3-purple-200/50"
+  ],
+  [
+    "relative flex flex-col justify-between overflow-hidden rounded-md border border-t3-purple-200/20 bg-white/5 transition-colors hover:border-t3-purple-300/50"
+  ],
+  [
+    "relative flex items-center rounded-lg border border-t3-purple-200/20 bg-t3-purple-100/10 px-2 py-2 text-sm md:px-3 md:py-3 md:text-lg lg:px-5 lg:py-4 lg:text-xl"
+  ],
+  ["relative flex w-full h-full"],
+  [
+    "relative hidden items-center rounded-lg border border-t3-purple-200/50 bg-t3-purple-200/50 bg-clip-padding px-2 py-1 text-slate-800 no-underline !transition-colors !duration-300 group-hover:border-t3-purple-200/75 group-hover:bg-t3-purple-200/75 md:flex ltr:mr-[.33em] rtl:ml-[.33em] dark:border-t3-purple-200/20 dark:bg-t3-purple-200/10 dark:text-slate-100 dark:group-hover:border-t3-purple-200/50 dark:group-hover:bg-t3-purple-200/10",
+    "after:absolute after:h-0 after:w-0 after:border-8 after:border-transparent after:transition-colors after:duration-300",
+    "after:left-[calc(-0.5em-1px)] after:border-l-0 after:border-r-t3-purple-200/50 after:group-hover:border-r-t3-purple-200/75 dark:after:border-r-t3-purple-200/20 dark:after:group-hover:border-r-t3-purple-200/50",
+    "after:right-[calc(-0.5em-1px)] after:border-r-0 after:border-l-t3-purple-200/50 after:group-hover:border-l-t3-purple-200/75 dark:after:border-l-t3-purple-200/20 dark:after:group-hover:border-l-t3-purple-200/50"
+  ],
+  [
+    "relative inline-flex items-center rounded-md border border-transparent px-3 py-2 transition-colors hover:no-underline",
+    "border bg-t3-purple-200/50 text-t3-purple-800 dark:border-t3-purple-200/20 dark:bg-t3-purple-200/10 dark:hover:border-t3-purple-200/50",
+    "rounded-lg text-t3-purple-100 hover:bg-t3-purple-200/10 hover:text-t3-purple-300",
+    "rounded-lg text-t3-purple-800 hover:bg-t3-purple-200/50 hover:text-t3-purple-800 dark:text-t3-purple-100 dark:hover:bg-t3-purple-200/10 dark:hover:text-t3-purple-300"
+  ],
+  ["relative mt-4 flex h-full xl:mt-8"],
+  ["relative w-full"],
+  ["rotate-180"],
+  ["rounded-full"],
+  [
+    "rounded-full bg-white/10 px-10 py-3 font-semibold no-underline transition hover:bg-white/20"
+  ],
+  [
+    "rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
+  ],
+  [
+    "rounded-full bg-white/10 px-10 py-3 font-semibold transition hover:bg-white/20"
+  ],
+  [
+    "rounded-lg border bg-t3-purple-200/50 p-1 hover:bg-t3-purple-200/75 hover:no-underline dark:border-t3-purple-200/20 dark:bg-t3-purple-200/10 dark:hover:border-t3-purple-200/50"
+  ],
+  ["rounded-md border border-current px-1"],
+  [
+    "space-y-10 sm:grid sm:grid-flow-col sm:grid-cols-2 sm:grid-rows-3 sm:gap-x-6 sm:gap-y-14 sm:space-y-0 md:grid-cols-3 md:grid-rows-2 lg:gap-x-8"
+  ],
+  ["sr-only"],
+  [
+    "sticky inset-x-0 top-[72px] z-[11] block w-full bg-default px-4 pb-4 pt-2 lg:hidden"
+  ],
+  [
+    "sticky top-0 z-40 max-h-full w-full bg-default transition-colors duration-300"
+  ],
+  ["stroke -mr-1 ml-2 mt-0.5 h-3 stroke-current stroke-2"],
+  ["svg-inline--fa fa-comment-alt fa-w-16 inline"],
+  ["svg-inline--fa fa-pen fa-w-16 inline"],
+  [
+    "t3-scrollbar absolute top-full z-10 mt-3 max-h-[45vh] w-full overflow-y-auto rounded-md border-2 border-primary bg-default py-1.5 shadow-md dark:border-t3-purple-200/20 dark:bg-default"
+  ],
+  [
+    "t3-scrollbar h-full w-full overflow-auto bg-default transition-colors duration-300 lg:mb-12"
+  ],
+  [
+    "t3-scrollbar sticky top-[100px] col-span-1 hidden h-auto max-h-[calc(100vh-100px)] w-full [padding-inline-end:16px] lg:mb-12 lg:flex lg:flex-col lg:justify-start"
+  ],
+  [
+    "t3-scrollbar sticky top-20 col-span-1 hidden h-auto max-h-[calc(100vh-80px)] w-full flex-col justify-start overflow-y-auto bg-default pt-4 transition-colors duration-300 md:top-24 md:flex md:max-h-[calc(100vh-96px)] md:pt-0 md:[margin-inline-start:16px]"
+  ],
+  ["tab  "],
+  ["tab active  "],
+  ["tab-list"],
+  ["tab-panel  -panel"],
+  ["tab-panel hidden  -panel"],
+  ["tab-panels"],
+  ["text-[hsl(200,100%,60%)]"],
+  ["text-[hsl(280,100%,60%)]"],
+  ["text-[hsl(280,100%,70%)]"],
+  ["text-2xl"],
+  ["text-2xl font-bold"],
+  ["text-2xl text-white"],
+  ["text-3xl"],
+  ["text-4xl"],
+  ["text-5xl"],
+  ["text-5xl font-extrabold tracking-tight sm:text-[5rem]"],
+  ["text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]"],
+  ["text-6xl"],
+  ["text-7xl"],
+  ["text-8xl"],
+  ["text-9xl"],
+  ["text-base"],
+  ["text-blue-400"],
+  ["text-center"],
+  ["text-center", "hidden"],
+  ["text-center text-2xl text-white"],
+  [
+    "text-center text-4xl font-bold tracking-tight text-white sm:text-6xl sm:tracking-tight lg:text-[4rem] xl:text-[6rem] xl:tracking-tight 2xl:text-[6.5rem]"
+  ],
+  [
+    "text-center text-5xl font-bold tracking-tight text-white sm:text-6xl sm:tracking-tight lg:text-[4rem] xl:text-[5rem] xl:tracking-tight"
+  ],
+  ["text-lg"],
+  ["text-lg font-medium leading-6 text-t3-purple-200 md:text-xl"],
+  [
+    "text-md block py-2 text-t3-purple-800 transition-colors [padding-inline-start:16px] hover:border-t3-purple-300/50 hover:bg-t3-purple-300/20 hover:text-t3-purple-400 dark:text-t3-purple-200 dark:hover:bg-t3-purple-300/10 dark:hover:text-t3-purple-100",
+    "border-t3-purple-300 bg-t3-purple-300/30 font-medium dark:bg-t3-purple-300/20",
+    "border-t3-purple-300/20",
+    "border-r-2",
+    "border-l-2"
+  ],
+  [
+    "text-md inline-flex cursor-pointer items-center gap-1.5 whitespace-nowrap rounded-md border-2 bg-t3-purple-200/50 px-3 py-2 font-medium hover:bg-t3-purple-200/75 dark:border-t3-purple-200/20 dark:bg-t3-purple-200/10 dark:hover:border-t3-purple-200/50"
+  ],
+  [
+    "text-md line-clamp-1 block w-full py-2 text-t3-purple-800 transition-colors hover:bg-t3-purple-300/20 hover:text-t3-purple-400 dark:text-t3-purple-200 dark:hover:bg-t3-purple-300/10 dark:hover:text-t3-purple-50",
+    "pl-3",
+    "pl-8",
+    "pr-3",
+    "pr-8"
+  ],
+  [
+    "text-md line-clamp-1 block w-full py-2 text-t3-purple-800 transition-colors hover:bg-t3-purple-300/20 hover:text-t3-purple-400 dark:text-t3-purple-200 dark:hover:bg-t3-purple-300/10 dark:hover:text-t3-purple-50",
+    "pl-3",
+    "pl-8",
+    "pr-3",
+    "pr-8",
+    "bg-t3-purple-300/20 text-t3-purple-400 underline dark:bg-t3-purple-300/10 dark:text-t3-purple-100",
+    "bg-t3-purple-300/30 font-medium text-t3-purple-700 underline dark:bg-t3-purple-300/20 dark:text-t3-purple-100"
+  ],
+  ["text-slate-900 dark:text-white"],
+  ["text-sm"],
+  ["text-sm hover:text-[#1da1f2] sm:text-base"],
+  ["text-sm text-gray-600 dark:text-gray-400"],
+  ["text-sm text-t3-purple-200"],
+  ["text-t3-purple-100"],
+  [
+    "text-t3-purple-800 hover:text-t3-purple-400 dark:text-t3-purple-200 dark:hover:text-t3-purple-100"
+  ],
+  ["text-white"],
+  ["text-xl"],
+  ["text-xl font-black"],
+  ["text-xl font-semibold text-t3-purple-200 md:text-2xl lg:text-2xl"],
+  ["text-xs"],
+  [
+    "text-xs text-t3-purple-400 [margin-inline-start:4px] dark:text-t3-purple-300"
+  ],
+  ["top mb-2 flex"],
+  ["transition group-hover:translate-x-[3px]"],
+  ["translate-y-[-1.8rem] md:translate-y-[-2.0rem]"],
+  ["translate-y-[-1.8rem] text-green-400 md:translate-y-[-2.0rem]"],
+  ["translate-y-[-4.6rem] sm:translate-y-[-5.0rem]"],
+  ["translate-y-[-5.6rem] sm:translate-y-[-6.0rem]"],
+  ["translate-y-[-9.4rem] sm:translate-y-[-10rem]"],
+  ["translate-y-[-9.4rem] text-green-400 sm:translate-y-[-10rem]"],
+  ["truncate"],
+  ["truncate", "font-medium", "font-normal"],
+  ["underline"],
+  ["w-4"],
+  ["w-full"],
+  ["w-full cursor-grab overflow-hidden rounded-lg"],
+  [
+    "w-full cursor-pointer rounded-lg border border-t3-purple-200/20 bg-t3-purple-200/10 transition-colors hover:border-t3-purple-300/50 hover:bg-t3-purple-200/20 hover:no-underline sm:h-64"
+  ],
+  [
+    "w-full list-none border-t3-purple-300/20 p-1 text-sm transition-colors duration-300 hover:border-t3-purple-300/50",
+    "border-r-2",
+    "pr-2",
+    "pr-4",
+    "border-l-2",
+    "pl-2",
+    "pl-4"
+  ],
+  ["w-full max-w-xs"],
+  ["w-full rounded-full bg-white/10 px-4 py-2 text-white"],
+  ["w-full shrink-0 first:ml-0 last:mr-0"],
+  ["whitespace"],
+  ["whitespace-nowrap text-[hsl(240,100%,70%)]"],
+  [
+    "whitespace-nowrap text-sm text-t3-purple-100 hover:text-[#1da1f2] lg:text-sm"
+  ],
+  ["z-20 block md:hidden", "text-white", "text-black dark:text-white"],
+  ["z-50"]
+]

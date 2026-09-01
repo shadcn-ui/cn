@@ -1,0 +1,773 @@
+[
+  ["    antialiased"],
+  [" min-w-fit flex justify-end items-center ml-auto"],
+  [
+    " text-[14px] font-semibold px-2 py-2 bg-[#18181B] text-white flex justify-center"
+  ],
+  [" text-[8px]  text-[#d36cff] pl-1 py-1 "],
+  [" text-neutral-500"],
+  [" text-zinc-400"],
+  [" text-zinc-400 mb-4 text-xs"],
+  ["-rotate-90"],
+  ["!border-red-500"],
+  [
+    "absolute",
+    "-top-2.5 -right-2.5",
+    "-top-1 -right-1",
+    "rounded-full",
+    "flex items-center justify-center",
+    "text-[8px] font-medium text-white",
+    "aspect-square",
+    "bg-red-500/90",
+    "bg-purple-500/90"
+  ],
+  ["absolute inset-0"],
+  ["absolute inset-0 bg-black/[0.02] rounded-xl backdrop-blur-sm"],
+  ["absolute inset-0 flex"],
+  [
+    "absolute inset-0 flex items-center gap-x-2",
+    "translate-y-0",
+    "transition-transform duration-300",
+    "-translate-y-[200%]"
+  ],
+  ["absolute inset-0 flex items-center justify-center"],
+  ["absolute inset-0 flex items-center px-2"],
+  ["absolute inset-0 flex items-center px-2", "min-w-0"],
+  ["absolute inset-0 w-full h-full flex items-center justify-center"],
+  [
+    "absolute inset-x-0 -top-12 transition-all duration-500  ",
+    "opacity-100 translate-y-0",
+    "opacity-0 translate-y-2"
+  ],
+  ["absolute inset-y-0 inset-x-1"],
+  [
+    "absolute left-0 w-full overflow-hidden",
+    "text-neutral-400 hover:text-neutral-300",
+    "bg-transparent hover:bg-[#5f3f9a]/20",
+    "text-neutral-300 bg-[#5f3f9a]/40 hover:bg-[#5f3f9a]/40"
+  ],
+  ["absolute left-3 top-0 bottom-0 w-px bg-[#27272A]"],
+  [
+    "absolute right-0 top-[calc(100%+0.5rem)] w-48 bg-[#1a1a1a] border border-white/10 rounded-lg shadow-xl overflow-hidden md:hidden z-[100]"
+  ],
+  [
+    "absolute right-0 top-1/2 transition-none -translate-y-1/2 bg-white text-black px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity mr-16",
+    "pointer-events-none"
+  ],
+  ["absolute right-2 top-2 rounded-sm p-1 hover:bg-[#18181B]"],
+  [
+    "absolute right-4 top-4 z-10 text-white/50 opacity-0 transition-opacity hover:text-white group-hover:opacity-100"
+  ],
+  [
+    "absolute top-0.5 right-0.5 opacity-0 transition-opacity group-hover:opacity-100 self-end"
+  ],
+  [
+    "absolute z-100 bg-white text-black rounded-lg px-3 py-2 shadow-lg",
+    "transition-[opacity] duration-120 ease-out",
+    "after:left-1/2 after:-translate-x-1/2",
+    "after:w-[10px] after:h-[6px]",
+    "after:border-l-[5px] after:border-l-transparent",
+    "after:border-r-[5px] after:border-r-transparent",
+    "after:border-t-[6px] after:border-t-white",
+    "pointer-events-none",
+    "opacity-0",
+    "opacity-100"
+  ],
+  [
+    "absolute z-50",
+    "flex items-center justify-center",
+    "group",
+    "transition-colors select-none",
+    "peer"
+  ],
+  [
+    "absolute z-50",
+    "flex items-center justify-center",
+    "group",
+    "transition-colors select-none",
+    "peer",
+    "resize-left peer/left",
+    "resize-right peer/right z-10",
+    "resize-top peer/top",
+    "resize-bottom peer/bottom"
+  ],
+  ["animate-bounce inline-block"],
+  ["animate-spin h-5 w-5 text-white"],
+  ["app"],
+  ["bg-[#18181B] flex items-center gap-x-1 p-1 rounded-sm"],
+  ["bg-[#18181B] p-1 rounded-t-sm"],
+  ["bg-black"],
+  [
+    "bg-black rounded-lg border border-white/10 shadow-2xl flex flex-col overflow-hidden"
+  ],
+  [
+    "bg-white border border-[#4B4DB3]/20 shadow-lg text-[#4B4DB3] px-4 py-2 rounded-full font-medium flex items-center gap-2"
+  ],
+  [
+    "bg-white border border-red-500/20 shadow-lg text-red-500 px-4 py-2 rounded-full font-medium flex items-center gap-2"
+  ],
+  [
+    "bg-zinc-800 flex hover:bg-zinc-700 text-zinc-200 px-2 py-1 rounded gap-x-3"
+  ],
+  ["bg-zinc-900/30 border-t border-zinc-800 px-2.5 py-3"],
+  [
+    "block px-4 py-3 text-white/60 hover:bg-white/5 hover:text-white transition-colors"
+  ],
+  ["border border-[#27272A] rounded-sm h-4/5 text-xs overflow-hidden"],
+  ["button flex items-center justify-center h-full pl-2.5 pr-2.5"],
+  ["button flex items-center justify-center h-full w-full pl-3 pr-2.5"],
+  [
+    "button rounded w-4 h-4 flex items-center justify-center text-neutral-400 hover:text-neutral-300"
+  ],
+  ["container"],
+  ["count-badge"],
+  ["count-flash"],
+  ["count-flash-white"],
+  ["cursor-e-resize"],
+  ["cursor-ew-resize"],
+  ["cursor-ew-resize", "cursor-w-resize", "cursor-e-resize"],
+  ["cursor-w-resize"],
+  ["divide-y divide-white/10"],
+  ["divide-y divide-zinc-800"],
+  ["dot"],
+  ["fade-in"],
+  ["fade-out"],
+  ["fixed bottom-4 right-4 z-[124124124124]"],
+  [
+    "fixed inset-0",
+    "horizontal",
+    "right",
+    "rounded-tl-lg rounded-bl-lg shadow-lg",
+    "rounded-tr-lg rounded-br-lg shadow-lg",
+    "bottom",
+    "rounded-tl-lg rounded-tr-lg shadow-lg",
+    "rounded-bl-lg rounded-br-lg shadow-lg",
+    "rounded-lg shadow-lg",
+    "flex flex-col",
+    "font-mono text-[13px]",
+    "user-select-none",
+    "opacity-0",
+    "cursor-pointer",
+    "cursor-move",
+    "z-[124124124124]",
+    "animate-fade-in animation-duration-300 animation-delay-300",
+    "will-change-transform",
+    "[touch-action:none]"
+  ],
+  [
+    "fixed inset-0 z-50 flex items-center justify-center overflow-y-auto pt-8 pb-16"
+  ],
+  ["fixed top-0 left-0 w-screen h-screen", "z-[214748365]"],
+  [
+    "flex ",
+    "h-[calc(100%-48px)]",
+    "h-full",
+    "h-[calc(100%-200px)]",
+    "h-[calc(100%-150px)]"
+  ],
+  ["flex flex-1"],
+  [
+    "flex flex-1 flex-col",
+    "overflow-hidden z-10",
+    "rounded-lg",
+    "bg-black",
+    "opacity-100",
+    "transition-[border-radius]",
+    "peer-hover/left:rounded-l-none",
+    "peer-hover/right:rounded-r-none",
+    "peer-hover/top:rounded-t-none",
+    "peer-hover/bottom:rounded-b-none"
+  ],
+  ["flex flex-col"],
+  ["flex flex-col border border-[#27272A] border-l-0 overflow-hidden w-1/3"],
+  [
+    "flex flex-col border border-[#27272A] border-l-0 rounded-r-sm overflow-hidden w-1/3"
+  ],
+  ["flex flex-col border border-[#27272A] rounded-l-sm overflow-hidden w-1/3"],
+  ["flex flex-col gap-0.5"],
+  ["flex flex-col gap-1 relative"],
+  ["flex flex-col gap-1.5 text-white/70 pl-5 list-disc marker:text-white/30"],
+  ["flex flex-col gap-2"],
+  ["flex flex-col gap-2 px-3 pt-2"],
+  ["flex flex-col gap-4 text-base sm:text-lg"],
+  ["flex flex-col gap-y-0.5"],
+  ["flex flex-col gap-y-1"],
+  ["flex flex-col gap-y-1", "mb-4"],
+  ["flex flex-col gap-y-2 pl-3 relative overflow-y-auto h-full"],
+  ["flex flex-col gap-y-4 h-full"],
+  ["flex flex-col h-full"],
+  ["flex flex-col h-full w-full gap-y-1"],
+  ["flex flex-col items-center justify-center h-full text-zinc-400"],
+  ["flex flex-col items-start gap-y-4"],
+  [
+    "flex flex-col items-start pt-5 bg-[#0A0A0A] p-5 rounded-sm max-w-md",
+    " shadow-lg"
+  ],
+  [
+    "flex flex-col justify-between items-center border-t  border-[#27272A] px-1 py-1 bg-[#0A0A0A] text-[10px] overflow-x-auto"
+  ],
+  [
+    "flex flex-col justify-between items-center border-t overflow-x-auto border-[#27272A] px-1 py-1 text-wrap bg-[#0A0A0A] text-[10px]"
+  ],
+  ["flex flex-col px-1 gap-y-1"],
+  ["flex flex-col sm:flex-row gap-2 sm:gap-0"],
+  ["flex flex-col w-screen h-screen"],
+  ["flex flex-none border-b border-gray-950"],
+  ["flex flex-none flex-col border-r border-gray-950"],
+  ["flex gap-1 items-start flex-col"],
+  ["flex gap-1 items-start w-full"],
+  ["flex gap-3 pt-2"],
+  ["flex gap-x-2"],
+  ["flex gap-x-2 justify-center items-center text-[#6E6E77]"],
+  ["flex items-center"],
+  ["flex items-center gap-0.5"],
+  ["flex items-center gap-1"],
+  ["flex items-center gap-1.5 flex-1"],
+  ["flex items-center gap-2 mb-2 text-red-400 text-sm font-medium"],
+  ["flex items-center gap-2 mb-3 text-red-400 font-medium"],
+  [
+    "flex items-center gap-2 w-full bg-transparent border-none p-0 cursor-pointer text-white text-xs"
+  ],
+  ["flex items-center gap-3 text-inherit no-underline"],
+  [
+    "flex items-center gap-4 overflow-x-auto border-b border-white/10 px-4 pt-2"
+  ],
+  ["flex items-center gap-6"],
+  ["flex items-center gap-x-0.5 ml-1.5", "text-[10px] text-neutral-400"],
+  ["flex items-center gap-x-0.5 text-xs text-neutral-500"],
+  ["flex items-center gap-x-1"],
+  [
+    "flex items-center gap-x-1",
+    "pl-1 pr-2",
+    "w-full h-7",
+    "text-left",
+    "rounded",
+    "cursor-pointer select-none"
+  ],
+  [
+    "flex items-center gap-x-1 px-2 w-full",
+    "h-6",
+    "rounded-md",
+    "font-mono leading-none",
+    "bg-[#141414]",
+    "ring-1 ring-white/[0.08]"
+  ],
+  [
+    "flex items-center gap-x-1",
+    "text-[10px] text-neutral-400 tracking-wide",
+    "overflow-hidden"
+  ],
+  ["flex items-center gap-x-1 text-[10px] text-purple-400"],
+  ["flex items-center gap-x-2"],
+  ["flex items-center gap-x-2 "],
+  ["flex items-center gap-x-2  justify-end ml-auto"],
+  ["flex items-center gap-x-2 min-w-0 w-full"],
+  ["flex items-center gap-x-2 mr-auto text-xs text-[#888]"],
+  ["flex items-center gap-x-2 truncate"],
+  ["flex items-center gap-x-2 w-2/4 justify-end ml-auto"],
+  ["flex items-center gap-x-3"],
+  ["flex items-center justify-between"],
+  ["flex items-center justify-between mb-2"],
+  ["flex items-center justify-center"],
+  [
+    "flex items-center justify-center h-full bg-[#0A0A0A] text-[#A1A1AA] border-t border-[#27272A]"
+  ],
+  [
+    "flex items-center justify-center h-full bg-[#0A0A0A] text-[#A1A1AA] border-t border-[#27272A] py-2"
+  ],
+  ["flex items-center justify-center text-zinc-500 text-sm py-4"],
+  ["flex items-center justify-center w-full h-full text-white"],
+  [
+    "flex items-center justify-center whitespace-nowrap py-1.5 px-3 rounded-sm",
+    "text-white bg-[#7521c8]",
+    "text-[#6E6E77] hover:text-white"
+  ],
+  ["flex items-center justify-end gap-x-1"],
+  [
+    "flex items-center justify-end gap-x-2 px-1 ml-1 w-[72px]",
+    "whitespace-nowrap text-sm text-white"
+  ],
+  [
+    "flex items-center min-w-fit shrink-0 rounded-r-md h-[28px]",
+    "hover:bg-[#0f0f0f]",
+    "cursor-pointer",
+    "cursor-default"
+  ],
+  ["flex items-center", "p-0 mt-0.5 mr-1", "opacity-50"],
+  ["flex items-center p-0 opacity-50"],
+  [
+    "flex items-center rounded-sm text-white text-xs h-[28px] shrink-0",
+    "bg-[#412162] group-hover:bg-[#5b2d89]",
+    "bg-[#44444a] group-hover:bg-[#6a6a6a]",
+    "bg-[#efd81a6b] group-hover:bg-[#efda1a2f]",
+    "bg-[#214379d4] group-hover:bg-[#21437982]"
+  ],
+  ["flex items-center rounded-sm text-white text-xs h-[28px] w-full"],
+  ["flex items-center whitespace-nowrap"],
+  ["flex items-start gap-1 relative"],
+  ["flex items-start gap-x-4 "],
+  ["flex max-h-9 min-h-9 flex-1 items-stretch overflow-hidden"],
+  ["flex w-full"],
+  ["flex w-full justify-between items-center px-3 py-2 text-xs"],
+  ["flex-1"],
+  ["flex-1 flex items-center justify-center"],
+  ["flex-1 h-full"],
+  ["flex-1 max-h-40"],
+  [
+    "flex-1",
+    "opacity-0",
+    "overflow-y-auto overflow-x-hidden",
+    "transition-opacity delay-0",
+    "pointer-events-none",
+    "opacity-100 delay-150 pointer-events-auto"
+  ],
+  ["flex-1 overflow-hidden"],
+  ["flex-1 overflow-hidden whitespace-pre-wrap font-mono"],
+  [
+    "flex-1 px-4 py-2.5 bg-white border sm:border-r-0 border-gray-200 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-[#4B4DB3] focus:ring-2 focus:ring-[#4B4DB3]/20"
+  ],
+  ["flex-1 react-scan-expandable"],
+  ["flex-1 whitespace-nowrap font-mono"],
+  ["flex-1 whitespace-pre-wrap font-mono"],
+  ["font-bold"],
+  ["font-medium flex items-center text-left"],
+  [
+    "font-mono text-[#E4E4E7] flex items-center bg-[#27272A] pl-2 py-1 rounded-sm overflow-x-auto"
+  ],
+  ["freeze"],
+  [
+    "gap-x-0.5 w-fit flex items-end justify-center h-full text-white px-1 py-1 rounded-sm font-semibold text-[10px]",
+    "bg-green-500/50",
+    "bg-[#b77116] text-[10px]",
+    "bg-[#b94040]"
+  ],
+  [
+    "group flex gap-0.5 items-start text-[#4ade80] bg-[#1a2a1a] py-[3px] px-1.5 rounded mt-0.5"
+  ],
+  [
+    "group flex gap-0.5 items-start text-[#f87171] bg-[#2a1515] py-[3px] px-1.5 rounded"
+  ],
+  [
+    "group",
+    "flex items-start",
+    "py-[3px] px-1.5",
+    "text-left text-[#4ade80] bg-[#1a2a1a]",
+    "rounded",
+    "overflow-hidden break-all",
+    "cursor-pointer"
+  ],
+  [
+    "group",
+    "flex items-start",
+    "py-[3px] px-1.5",
+    "text-left text-[#f87171] bg-[#2a1515]",
+    "rounded",
+    "overflow-hidden break-all",
+    "cursor-pointer"
+  ],
+  [
+    "group flex w-full items-center justify-between gap-4 px-4 py-6 transition-colors hover:bg-white/5"
+  ],
+  ["group relative"],
+  ["h-[18px] w-[18px]"],
+  ["h-1 bg-zinc-800 rounded-full overflow-hidden"],
+  [
+    "h-16 w-16 rounded-full bg-white/90 backdrop-blur-sm shadow-lg flex items-center justify-center transform group-hover:scale-105 transition-all duration-300 group-hover:bg-white"
+  ],
+  ["h-4 w-4 text-zinc-400 transition-transform  ", "rotate-90"],
+  [
+    "h-7 w-7 rounded-md hover:bg-[#4B4DB3]/5 flex items-center justify-center transition-colors"
+  ],
+  ["h-full   transition-all"],
+  ["h-full flex items-center justify-center"],
+  ["h-full flex items-center min-w-fit"],
+  ["h-full min-w-[200px]"],
+  [
+    "h-full w-[90%] flex items-center hover:bg-[#0f0f0f] rounded-l-md min-w-0 relative"
+  ],
+  ["h-full w-full flex flex-col"],
+  [
+    "h-full w-full flex flex-col items-center justify-center relative py-2 px-4"
+  ],
+  ["h-full w-full flex items-center relative"],
+  ["hidden md:flex gap-4 text-sm sm:text-base"],
+  ["hidden", "pointer-events-none", "opacity-0"],
+  [
+    "hidden sm:flex justify-end px-3 py-2 bg-white border-b border-[#4B4DB3]/10"
+  ],
+  ["hidden sm:inline text-white"],
+  ["hover:bg-[#18181B] rounded-full p-2"],
+  ["icon"],
+  [
+    "inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white transition-all hover:bg-white/10 active:scale-[0.98] sm:text-base"
+  ],
+  [
+    "inline-flex items-center gap-2 rounded-md border border-white/20 bg-white px-3 py-1.5 text-sm text-black transition-all hover:bg-white/90 active:scale-[0.98] sm:text-base"
+  ],
+  ["italic text-[#4ade80]"],
+  ["italic text-[#f87171]"],
+  ["lucide lucide-arrow-left"],
+  ["lucide lucide-bell  "],
+  ["lucide lucide-chevron-right"],
+  ["m-8 font-bold text-3xl"],
+  ["mb-3 text-sm text-white/50 sm:text-base"],
+  ["md:hidden p-2 hover:bg-white/10 rounded-md text-white/60"],
+  ["min-w-fit"],
+  ["min-w-fit text-xs"],
+  [
+    "min-w-fit w-full justify-start flex items-center border-r border-[#27272A] pl-5 pr-2 text-sm gap-x-4"
+  ],
+  [
+    "ml-3 text-xs italic text-white/40 hover:text-white/60 hover:underline transition-colors sm:text-sm"
+  ],
+  ["ml-auto"],
+  ["ml-auto", "change-scope", "transition-opacity duration-300 delay-150"],
+  ["ml-auto min-w-fit flex justify-end items-center"],
+  ["mr-1.5"],
+  ["mt-1 text-sm text-white/70 sm:text-base"],
+  ["mt-4 block text-sm text-white/50 sm:text-base"],
+  [
+    "mt-4 overflow-hidden rounded-lg border border-white/10 bg-white/5 text-white shadow-[0_8px_30px_rgb(0,0,0,0.3)]"
+  ],
+  [
+    "mt-4 px-4 py-2 bg-[#18181B] text-[#6E6E77] rounded-sm",
+    "hover:text-white transition-colors duration-200",
+    "flex items-center justify-center gap-x-2 text-xs"
+  ],
+  ["mt-8 space-y-6"],
+  ["mx-auto max-w-xl"],
+  ["mx-auto w-full max-w-3xl px-4 py-24 sm:px-8"],
+  ["opacity-0 transition-opacity group-hover:opacity-100"],
+  ["opacity-25"],
+  ["opacity-50 transition-opacity hover:opacity-80"],
+  ["opacity-75"],
+  ["overflow-hidden"],
+  ["overflow-hidden h-full flex flex-col gap-y-2"],
+  ["overflow-hidden transition-[height] duration-200 ease-out"],
+  ["overflow-x-auto font-mono text-base leading-relaxed text-white/80"],
+  ["overflow-x-auto p-4 font-mono text-[13px] leading-relaxed text-white/80"],
+  ["overflow-y-auto h-full"],
+  ["p-2 bg-black rounded font-mono text-xs text-red-300 mb-3 break-words"],
+  ["p-2 border-b border-[#1e1e1e]"],
+  ["p-2 border-b border-zinc-800 bg-zinc-900/50"],
+  ["p-2 flex justify-center items-center border-[#27272A]"],
+  [
+    "p-2 flex justify-center items-center border-[#27272A] absolute top-0 right-0"
+  ],
+  ["p-2 h-full", "whitespace-pre-wrap break-words", "text-gray-300 font-mono "],
+  ["p-3 bg-black rounded-lg shadow-lg w-80"],
+  ["p-3 bg-black/40 rounded font-mono text-xs text-red-300 mb-4 break-words"],
+  ["p-4 bg-red-950/50 h-screen backdrop-blur-sm"],
+  ["pl-2 border-l border-[#333] mt-0.5 ml-1 flex flex-col gap-0.5"],
+  [
+    "pl-2 py-1.5  text-sm flex items-center rounded-sm hover:bg-[#18181B] relative overflow-hidden",
+    "after:absolute after:inset-0 after:bg-purple-500/30 after:animate-[fadeOut_1s_ease-out_forwards]"
+  ],
+  [
+    "pl-2 py-1.5  text-sm flex w-full items-center rounded-sm hover:bg-[#18181B] relative overflow-hidden",
+    "bg-[#18181B]",
+    "after:absolute after:inset-0 after:bg-purple-500/30 after:animate-[fadeOut_1s_ease-out_forwards]"
+  ],
+  [
+    "pl-2 py-1.5  w-full text-sm flex items-center rounded-sm hover:bg-[#18181B] relative overflow-hidden",
+    "bg-[#18181B]",
+    "after:absolute after:inset-0 after:bg-purple-500/30 after:animate-[fadeOut_1s_ease-out_forwards]"
+  ],
+  ["pl-3 flex flex-col gap-y-1 mt-1"],
+  ["pl-3 text-xs font-mono border-l-1 border-[#333]"],
+  ["pl-5 border-l border-[#333] mt-0.5 ml-1 flex flex-col gap-0.5"],
+  ["place-self-center"],
+  ["pointer-events-none"],
+  ["pt-2"],
+  ["pt-4 sm:pt-8"],
+  [
+    "px-1 py-0.5 bg-[#6a369e] flex items-center rounded-sm font-semibold text-[8px] shrink-0"
+  ],
+  ["px-3 pb-2 text-gray-400 text-[10px]"],
+  ["px-3 pb-2 text-gray-400 text-xs"],
+  [
+    "px-3 py-1.5 bg-red-500 hover:bg-red-600 text-white rounded text-xs font-medium transition-colors flex items-center justify-center gap-1.5"
+  ],
+  ["px-3 py-2 text-gray-100 text-sm font-semibold"],
+  ["px-3 py-2 text-gray-100 text-xs font-semibold"],
+  [
+    "px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md text-sm font-medium transition-colors flex items-center justify-center gap-2"
+  ],
+  [
+    "px-4 py-2 border-b border-[#27272A] bg-[#18181B]/50 h-[calc(100%-40px)]",
+    "h-[calc(100%-25px)]"
+  ],
+  ["px-8 py-4 border-b border-gray-950"],
+  ["react-scan-close-button"],
+  ["react-scan-components-tree flex"],
+  ["react-scan-expandable"],
+  ["react-scan-expandable", "react-scan-expanded"],
+  ["react-scan-flash-overlay"],
+  ["react-scan-header"],
+  ["react-scan-header-item is-visible", "!duration-0"],
+  [
+    "react-scan-inspector",
+    "flex-1",
+    "opacity-0",
+    "overflow-y-auto overflow-x-hidden",
+    "transition-opacity delay-0",
+    "pointer-events-none",
+    "opacity-100 delay-300 pointer-events-auto"
+  ],
+  [
+    "react-scan-inspector-overlay",
+    "fixed top-0 left-0 w-screen h-screen",
+    "pointer-events-none",
+    "z-[214748367]"
+  ],
+  ["react-scan-toggle"],
+  [
+    "react-section-header",
+    "overflow-hidden",
+    "max-h-0",
+    "transition-[max-height]"
+  ],
+  ["regex"],
+  ["regex", "start", "middle", "end", "!ml-0"],
+  ["relative"],
+  ["relative bg-black/60"],
+  [
+    "relative",
+    "flex items-center gap-x-1 px-2",
+    "rounded",
+    "border border-transparent",
+    "focus-within:border-[#454545]",
+    "bg-[#1e1e1e] text-neutral-300",
+    "transition-colors",
+    "whitespace-nowrap",
+    "overflow-hidden"
+  ],
+  ["relative flex items-center justify-between text-base sm:text-lg"],
+  [
+    "relative",
+    "flex-1",
+    "flex flex-col",
+    "rounded-t-lg",
+    "overflow-hidden",
+    "opacity-100",
+    "transition-[opacity]",
+    "opacity-0 duration-0 delay-0"
+  ],
+  [
+    "relative",
+    "flex-1 flex",
+    "text-white",
+    "bg-[#0A0A0A]",
+    "transition-opacity delay-150",
+    "overflow-hidden",
+    "border-b border-[#222]"
+  ],
+  ["relative flex-1 h-7 overflow-hidden"],
+  ["relative flex-1 h-full"],
+  ["relative overflow-hidden group cursor-pointer h-full"],
+  ["relative pb-[56.25%]"],
+  ["relative pl-6 flex flex-col gap-y-1"],
+  [
+    "relative px-6 py-2.5 bg-[#4B4DB3] text-white font-medium hover:bg-[#3F41A0] transition-colors whitespace-nowrap border border-[#4B4DB3] disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden"
+  ],
+  ["relative resize-v-line"],
+  ["relative w-full"],
+  ["relative w-full aspect-video"],
+  ["resize-line"],
+  ["resize-line-wrapper"],
+  ["rotate-90"],
+  ["rounded bg-white/10 px-1.5 py-0.5 font-mono text-xs text-white/70"],
+  [
+    "rounded py-[1px] px-1",
+    "bg-neutral-700 text-neutral-300",
+    "truncate",
+    "bg-[#8e61e3] text-white",
+    "bg-yellow-300 text-black"
+  ],
+  [
+    "rounded py-[1px] px-1",
+    "truncate",
+    "bg-purple-800 text-neutral-400",
+    "bg-neutral-700 text-neutral-300",
+    "bg-[#5f3f9a] text-white"
+  ],
+  ["rounded-full  text-[#d36cff] pl-1 py-1 text-[8px]"],
+  ["rounded-full text-[#d36cff] pl-1 py-1 text-[8px] text-wrap"],
+  [
+    "rounded-lg border border-white/20 bg-white/10 px-4 py-4 text-white shadow-lg"
+  ],
+  ["rounded-sm border border-zinc-800 text-xs"],
+  ["shrink-0 text-white/50 transition-colors group-hover:text-white"],
+  [
+    "shrink-0 whitespace-nowrap border-b pb-2 font-sans text-sm transition-colors sm:text-base  ",
+    "border-white text-white",
+    "border-transparent text-white/60 hover:text-white"
+  ],
+  ["single"],
+  [
+    "sm:hidden absolute right-3 top-3 z-10 h-8 w-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center"
+  ],
+  ["text-[#4ade80] bg-[#1a2a1a] pr-1.5 py-[3px] rounded italic mt-0.5"],
+  ["text-[#5a5a5a] mr-0.5"],
+  ["text-[#666] text-[10px]"],
+  ["text-[#666] text-[10px] italic mt-1 flex items-center gap-x-1"],
+  [
+    "text-[#666] transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]"
+  ],
+  [
+    "text-[#666] transition-transform duration-200 ease-[cubic-bezier(0.25,0.1,0.25,1)]",
+    "rotate-90"
+  ],
+  ["text-[#6E6E77]"],
+  ["text-[#6F6F78]"],
+  ["text-[#6F6F78] mx-0.5"],
+  ["text-[#6F6F78] text-xs font-medium"],
+  ["text-[#999]", "text-[#8E61E3]"],
+  ["text-[#A1A1AA] transition-transform", "rotate-90"],
+  ["text-[#A855F7]"],
+  ["text-[#A855F7] mb-px"],
+  ["text-[#A855F7] truncate"],
+  ["text-[#E4E4E7] bg-[#27272A] px-1.5 py-1 rounded-sm text-xs"],
+  ["text-[#E4E4E7] text-[10px] leading-6 flex flex-col gap-y-2"],
+  ["text-[#f87171] bg-[#2a1515] pr-1.5 py-[3px] rounded italic"],
+  ["text-[10px]"],
+  ["text-[10px] text-[#666] italic"],
+  ["text-[10px] text-[#7346a0] pr-1"],
+  ["text-[10px] text-neutral-400"],
+  ["text-[10px] text-white flex items-end"],
+  ["text-[10px] whitespace-nowrap"],
+  [
+    "text-[14px] font-semibold px-2 py-2 bg-[#18181B] text-white flex justify-center"
+  ],
+  ["text-gray-500"],
+  ["text-gray-500 font-italic"],
+  ["text-green-500"],
+  ["text-neutral-400", "rotate-90"],
+  ["text-pretty text-white"],
+  ["text-pretty text-white/70"],
+  ["text-purple-400"],
+  ["text-red-500"],
+  ["text-sm font-bold text-white overflow-x-hidden"],
+  ["text-sm font-medium text-[#888]"],
+  [
+    "text-sm font-semibold tracking-wide transition-colors ease-in-out w-full flex justify-center items-center"
+  ],
+  ["text-sm text-[#65656D] pl-3 pr-1 w-full flex items-center justify-between"],
+  ["text-sm text-[#737373] bg-[#1E1E1E] rounded-md p-4 flex flex-col gap-4"],
+  ["text-sm text-gray-500"],
+  ["text-sm w-full text-left text-white mb-1.5"],
+  ["text-white"],
+  ["text-white "],
+  [
+    "text-white hover:bg-[#34343b] flex gap-x-1 justify-center items-center mb-4 w-fit px-2.5 py-1.5 text-xs rounded-sm bg-[#18181B]"
+  ],
+  ["text-white underline transition-colors hover:text-white/80"],
+  ["text-white/30 text-[11px] font-medium tracking-wide ml-auto min-w-fit"],
+  ["text-white/50 underline hover:text-white transition-colors"],
+  ["text-x w-full text-lefts"],
+  ["text-xs"],
+  ["text-xs font-medium"],
+  ["text-xs pr-1 truncate"],
+  ["text-xs text-[#888] mb-1.5"],
+  ["text-xs text-gray-400"],
+  ["text-xs text-gray-400 mb-4"],
+  ["text-xs text-neutral-500"],
+  ["text-xs text-zinc-400"],
+  ["text-yellow-300"],
+  ["text-yellow-300 ml-1"],
+  ["text-yellow-500 mb-px"],
+  ["text-zinc-400 font-medium text-[17px]"],
+  ["text-zinc-600 text-xs"],
+  ["todo-item  ", "complete", "pending"],
+  ["todo-item-actions"],
+  ["todo-item-content"],
+  ["todo-item-delete"],
+  ["todo-item-toggle  ", "complete", "pending"],
+  ["todo-list"],
+  ["todo-list-form"],
+  [
+    "transition-[color,transform]",
+    "text-[#f87171]",
+    "text-[#4ade80]",
+    "rotate-90"
+  ],
+  ["transition-opacity duration-200  ", "opacity-0", "opacity-100"],
+  ["transition-transform"],
+  ["transition-transform duration-200", "scale-110"],
+  ["transition-transform", "rotate-90"],
+  ["tree h-full overflow-auto will-change-transform"],
+  ["tree-node-search-highlight"],
+  ["truncate"],
+  ["truncate whitespace-nowrap text-white/70 w-full"],
+  ["w-[20px] flex items-center justify-center"],
+  ["w-[95vw] md:w-[80vw] max-h-[90vh] relative"],
+  ["w-[calc(100%-200px)] h-full overflow-y-auto"],
+  ["w-1 bg-[#d36cff]"],
+  [
+    "w-1/2 flex items-center justify-center whitespace-nowrap py-[5px] px-1 gap-x-1",
+    "text-white bg-[#7521c8] rounded-sm",
+    "text-[#6E6E77] bg-[#18181B] rounded-sm"
+  ],
+  ["w-3 flex items-center justify-center opacity-50"],
+  ["w-4 h-4 text-[#4B4DB3]"],
+  ["w-4/5 flex items-center justify-start h-full gap-x-1.5"],
+  ["w-4/5 flex items-center justify-start h-full text-xs truncate"],
+  ["w-4/5 flex items-center justify-start h-full text-xs truncate gap-x-1.5"],
+  ["w-5 h-5"],
+  ["w-5 h-5 text-white"],
+  ["w-6 h-6"],
+  ["w-6 h-6 flex items-center justify-center", "text-left"],
+  ["w-7 h-7 text-gray-900 relative left-0.5"],
+  [
+    "w-fit flex items-center justify-center h-fit text-white px-1 rounded-sm font-semibold text-[10px] whitespace-nowrap",
+    "bg-green-500/50",
+    "bg-[#b77116]",
+    "bg-[#b94040]"
+  ],
+  [
+    "w-fit flex items-center justify-center h-full text-white px-1 py-1 rounded-sm text-[10px] font-bold",
+    "bg-green-500/60",
+    "bg-[#b77116] text-[10px]",
+    "bg-[#b94040]"
+  ],
+  [
+    "w-fit flex items-center text-[10px] justify-center h-full text-white px-1 py-1 rounded-sm font-semibold",
+    "bg-green-500/60",
+    "bg-[#b77116] text-[10px]",
+    "bg-[#b94040]"
+  ],
+  ["w-full"],
+  ["w-full flex border-b border-[#27272A] min-h-[48px]"],
+  ["w-full flex items-center relative text-xs"],
+  ["w-full flex items-center relative text-xs min-w-0"],
+  ["w-full flex justify-center"],
+  ["w-full h-[48px] flex flex-col", "h-[235px]", "h-[150px]"],
+  ["w-full h-full"],
+  [
+    "w-full h-full gap-y-2 flex flex-col border-r border-[#27272A] overflow-y-auto"
+  ],
+  ["w-full h-full object-cover"],
+  [
+    "w-full mb-4 bg-[#0A0A0A] border border-[#27272A] rounded-sm overflow-hidden flex"
+  ],
+  [
+    "w-full mb-4 bg-[#0A0A0A] border border-[#27272A] rounded-sm overflow-hidden flex relative"
+  ],
+  ["w-full min-h-fit h-full flex flex-col py-4 pt-0 rounded-sm"],
+  [
+    "w-full px-3 py-2 flex items-center gap-4 hover:bg-zinc-800/50 transition-colors"
+  ],
+  [
+    "whitespace-pre-wrap break-words text-left font-medium flex items-center gap-x-1.5"
+  ],
+  ["with-data-text !overflow-visible"],
+  ["with-data-text cursor-pointer !overflow-visible"],
+  [
+    "z-10",
+    "flex items-center justify-center",
+    "hover:text-dev-pink-400",
+    "transition-colors duration-200 ease-in-out",
+    "cursor-pointer",
+    "size-[ px]"
+  ]
+]

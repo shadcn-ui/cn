@@ -1,0 +1,3464 @@
+[
+  ["     h-10 w-10 border-2 border-white border-solid dark:border-border"],
+  ["  min-h-16 resize-y font-mono"],
+  [
+    "-m-1 shrink-0 rounded-sm p-1 text-muted-foreground hover:bg-background hover:text-foreground"
+  ],
+  ["-mr-2"],
+  [
+    "-mt-[15vh] -ml-[50vw] h-full scale-100 object-cover md:scale-100 lg:scale-[100%] dark:contrast-[70%] dark:invert dark:sepia"
+  ],
+  ["-mt-0.5 mr-2 inline h-7 w-7 align-middle"],
+  ["-mt-0.5 space-y-2"],
+  ["-mt-0.5 text-muted-foreground text-sm"],
+  ["-mt-1"],
+  ["-mt-2 mb-2 space-y-4 rounded-md bg-accent/50 p-4"],
+  ["-mt-2 mb-2 space-y-4 rounded-md bg-accent/50 p-4", "hidden"],
+  ["-mx-1 h-px bg-border"],
+  ["-mx-1 my-1 h-px bg-border"],
+  ["-mx-1 my-1 h-px bg-muted"],
+  ["-mx-1 px-1 pt-2 text-muted-foreground text-sm leading-relaxed"],
+  ["-mx-1 px-1 pt-4 text-muted-foreground text-sm leading-relaxed"],
+  [
+    "-mx-1 px-1 pt-4 text-muted-foreground text-sm leading-relaxed [&>div]:pb-0"
+  ],
+  ["-mx-2 flex flex-1 flex-col gap-4 overflow-y-auto px-2"],
+  ["-mx-2 flex flex-1 flex-col px-2"],
+  ["-mx-2 flex-1 overflow-y-auto px-2"],
+  ["-mx-2 hidden px-2 group-data-[expanded]/document-widget:block md:block"],
+  ["-mx-3 max-h-96 overflow-y-auto px-3"],
+  [
+    "-mx-4 flex flex-col items-center overflow-hidden px-4 pt-16 md:-mx-8 md:px-8 lg:pt-20 xl:pt-28"
+  ],
+  [
+    "-mx-4 flex flex-col items-center overflow-hidden px-4 pt-16 md:-mx-8 md:px-8 lg:pt-20 xl:pt-28",
+    "pt-0 lg:pt-0 xl:pt-0"
+  ],
+  [
+    "-mx-4 flex flex-col items-center px-4 pt-16 md:-mx-8 md:px-8 lg:pt-20 xl:pt-28"
+  ],
+  [
+    "-mx-4 flex max-w-[100vw] flex-col items-center overflow-x-hidden px-4 pt-16 md:-mx-8 md:px-8 lg:pt-16 xl:pt-24"
+  ],
+  ["-mx-4 mt-2 mb-4"],
+  ["-mx-6 -mb-6 max-h-[80vh] divide-y overflow-auto px-6 pb-6 xl:max-h-[70vh]"],
+  ["-mx-6 my-4"],
+  ["!max-w-5xl flex w-full flex-row gap-0 p-0"],
+  ["!p-0 max-w-md space-y-2 text-foreground"],
+  ["!pl-3 !pr-3.5 flex flex-row items-start py-2"],
+  [
+    "[&_[cmdk-group-heading]]:px-0 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-4 [&_[cmdk-item]_svg]:w-4"
+  ],
+  ["[&_tr:last-child]:border-0"],
+  ["[&_tr]:border-b"],
+  ["[&>svg]:mr-1.5"],
+  [
+    "a z-10 flex aspect-[3/4] w-24 origin-top-right -rotate-[22deg] flex-col gap-y-1 rounded-lg border border-muted-foreground/20 bg-background/80 px-2 py-4 backdrop-blur-sm group-hover:border-destructive/10 group-hover:bg-destructive/2"
+  ],
+  [
+    "a z-10 flex aspect-[3/4] w-24 origin-top-right -rotate-[22deg] flex-col gap-y-1 rounded-lg border border-muted-foreground/20 bg-background/80 px-2 py-4 backdrop-blur-sm group-hover:border-documenso/80"
+  ],
+  ["absolute"],
+  [
+    "absolute -bottom-10 flex items-center justify-evenly rounded-md border bg-gray-900 opacity-0 group-hover:opacity-100"
+  ],
+  [
+    "absolute -inset-[min(600px,max(400px,60vw))] -z-[1] flex items-center justify-center opacity-70"
+  ],
+  ["absolute -inset-24 -z-10"],
+  ["absolute -inset-8 -z-[1] bg-background/50 backdrop-blur-[2px]"],
+  ["absolute -inset-8 -z-[2] backdrop-blur"],
+  [
+    "absolute -inset-y-px -end-px flex size-7 items-center justify-center rounded-e-md border border-transparent p-0 text-muted-foreground/80 outline-none transition-[color,box-shadow] hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
+  ],
+  [
+    "absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-primary font-semibold text-[10px] text-primary-foreground"
+  ],
+  [
+    "absolute -top-16 right-0 left-0 rounded-md p-2 text-center text-gray-700 text-xs"
+  ],
+  [
+    "absolute -top-16 right-0 left-0 rounded-md p-2 text-center text-gray-700 text-xs",
+    "border border-border bg-foreground/5",
+    "border border-primary bg-documenso-200"
+  ],
+  [
+    "absolute -top-16 right-0 left-0 rounded-md p-2 text-center text-gray-700 text-xs",
+    "border border-primary bg-foreground/5",
+    "border border-primary bg-documenso-200"
+  ],
+  [
+    "absolute -top-3 -left-3 z-50 h-6 w-6 border-2 border-gray-200/50 border-solid transition-colors hover:border-gray-200"
+  ],
+  ["absolute -top-3 -right-3"],
+  ["absolute bottom-0 left-0 h-0.5 w-full rounded-full bg-foreground/40"],
+  ["absolute bottom-4 left-4 flex gap-2"],
+  ["absolute bottom-4 left-4 flex gap-2 transition-opacity duration-100"],
+  [
+    "absolute bottom-4 left-4 flex gap-2 transition-opacity duration-100",
+    "pointer-events-none opacity-0"
+  ],
+  [
+    "absolute bottom-full left-1/2 z-50 mb-1 -translate-x-1/2 rounded-md border border-border bg-background/95 px-2 py-1 shadow-sm backdrop-blur-sm"
+  ],
+  [
+    "absolute end-0 top-0 flex size-9 items-center justify-center rounded-md border border-transparent text-muted-foreground/80 outline-none transition-[color,box-shadow] hover:text-foreground focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50",
+    "hidden"
+  ],
+  ["absolute h-full bg-primary"],
+  [
+    "absolute inset-0 flex cursor-pointer items-center justify-center bg-background/70 text-destructive text-xs opacity-0 transition-opacity hover:opacity-100"
+  ],
+  [
+    "absolute inset-0 flex cursor-pointer items-center justify-center opacity-0 transition-opacity duration-150 group-hover:opacity-100"
+  ],
+  [
+    "absolute inset-0 flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-background p-6 text-center shadow-sm"
+  ],
+  ["absolute inset-0 flex h-full w-full items-center justify-center"],
+  [
+    "absolute inset-0 flex items-center gap-2 rounded-full border bg-background px-3 font-mono text-xs",
+    "border-documenso-300 text-documenso-800",
+    "text-muted-foreground"
+  ],
+  ["absolute inset-0 flex items-center justify-center bg-background/50"],
+  ["absolute inset-0 flex items-center justify-center bg-transparent"],
+  ["absolute inset-0 flex items-center justify-center bg-white/50"],
+  [
+    "absolute inset-0 flex items-center justify-center font-semibold text-[10px] text-foreground"
+  ],
+  [
+    "absolute inset-0 flex items-center justify-center font-signature text-lg text-muted-foreground"
+  ],
+  [
+    "absolute inset-0 flex items-center justify-center rounded-full bg-documenso-200"
+  ],
+  [
+    "absolute inset-0 flex items-center justify-center rounded-lg bg-background/50"
+  ],
+  [
+    "absolute inset-0 flex items-center justify-center rounded-md bg-background"
+  ],
+  ["absolute inset-0 rounded-full bg-background mix-blend-color-burn"],
+  ["absolute inset-0 rounded-full bg-background mix-blend-exclusion"],
+  ["absolute inset-0 rounded-full border-2"],
+  ["absolute inset-0 w-full"],
+  [
+    "absolute inset-0 z-[999] flex items-center justify-center bg-muted dark:bg-muted"
+  ],
+  ["absolute inset-0 z-10"],
+  [
+    "absolute inset-0 z-10 flex flex-col items-center justify-center bg-background"
+  ],
+  ["absolute inset-0 z-10 flex items-center justify-center"],
+  [
+    "absolute inset-0 z-10 flex items-center justify-center text-muted-foreground opacity-20"
+  ],
+  ["absolute inset-0 z-10 h-full w-full rounded-[2px]"],
+  [
+    "absolute inset-0 z-20 flex items-center justify-center rounded-md bg-background"
+  ],
+  ["absolute inset-0 z-30 bg-background/60"],
+  ["absolute inset-0 z-50 bg-muted/30 backdrop-blur-[2px]"],
+  ["absolute inset-3 space-y-2"],
+  ["absolute inset-y-0 left-0 bg-primary"],
+  ["absolute inset-y-0 right-4 flex items-center justify-center"],
+  ["absolute left-2 flex h-3.5 w-3.5 items-center justify-center"],
+  ["absolute right-[26px] -bottom-2.5 fill-foreground stroke-background"],
+  ["absolute right-3 bottom-3 flex gap-2"],
+  ["absolute right-3 bottom-3 flex gap-2 transition-opacity duration-100"],
+  [
+    "absolute right-3 bottom-3 flex gap-2 transition-opacity duration-100",
+    "pointer-events-none opacity-0"
+  ],
+  ["absolute top-0 -bottom-6 left-0 flex w-6 justify-center"],
+  [
+    "absolute top-0 -right-5 z-20 hidden h-full w-5 items-center justify-center group-hover:flex"
+  ],
+  ["absolute top-0 bottom-0 left-[20%] w-3/5"],
+  [
+    "absolute top-0 left-0 h-full w-[calc(50%)] origin-right overflow-hidden rounded-l-md border border-border bg-card shadow-md"
+  ],
+  ["absolute top-0 right-0 bottom-0 flex items-center justify-center"],
+  [
+    "absolute top-0 right-0 bottom-0 flex items-center rounded-r-md border bg-muted px-3 py-2 text-muted-foreground text-sm"
+  ],
+  ["absolute top-0 right-0 flex h-full items-center justify-center pr-3"],
+  [
+    "absolute top-0 right-0 h-full w-[calc(50%)] origin-left overflow-hidden rounded-r-md border border-border bg-card shadow-md"
+  ],
+  ["absolute top-0 right-0 my-1 p-2 focus:outline-none focus-visible:ring-0"],
+  ["absolute top-0 right-2 bottom-0 flex items-center justify-center"],
+  ["absolute top-0 right-2 inline-flex h-full items-center justify-center"],
+  ["absolute top-0 right-8 bottom-0 flex items-center justify-center"],
+  ["absolute top-1/2 left-2 h-4 w-4 -translate-y-1/2 text-muted-foreground"],
+  ["absolute top-1/2 right-2 -translate-y-1/2"],
+  ["absolute top-1/2 right-2 -translate-y-1/2", "right-8"],
+  [
+    "absolute top-1/2 right-3 inline-flex -translate-y-1/2 items-center rounded border border-border bg-muted/50 px-1.5 py-0.5 font-mono text-[11px] text-muted-foreground"
+  ],
+  ["absolute top-2 right-2 flex items-center gap-2"],
+  [
+    "absolute top-2 right-2 opacity-0 transition-opacity group-hover:opacity-100"
+  ],
+  [
+    "absolute top-2 right-2 rounded-md p-1 text-foreground/50 opacity-100 transition-opacity hover:text-foreground focus:opacity-100 focus:outline-none focus:ring-2 group-[.destructive]:text-red-300 group-[.destructive]:focus:ring-red-400 group-[.destructive]:focus:ring-offset-red-600 group-[.destructive]:hover:text-red-50 md:opacity-0 group-hover:md:opacity-100"
+  ],
+  ["absolute top-2 right-2 text-foreground filter"],
+  [
+    "absolute top-2 z-10 w-full overflow-hidden rounded-md border border-input",
+    "data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:animate-out data-[state=open]:animate-in",
+    "hidden"
+  ],
+  ["absolute top-3 left-2 h-4 w-4 text-muted-foreground"],
+  ["absolute top-3 right-3"],
+  ["absolute top-3 right-3 z-10"],
+  [
+    "absolute top-4 right-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground"
+  ],
+  [
+    "absolute top-4 right-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary"
+  ],
+  ["absolute top-9 left-2 h-4 w-4 text-muted-foreground"],
+  ["absolute top-full left-0 flex justify-center"],
+  ["absolute z-[60] mt-1 flex w-full items-center justify-center"],
+  ["absolute z-40"],
+  ["after:absolute after:inset-0"],
+  ["alert-title font-medium text-base"],
+  ["animate-pulse"],
+  ["animate-pulse rounded-md bg-muted"],
+  [
+    "aspect-square h-4 w-4 rounded-full border border-primary text-primary shadow focus:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  ["aspect-square h-full w-full"],
+  ["bg-background"],
+  ["bg-background text-muted-foreground"],
+  ["bg-black/5 hover:bg-black/10 dark:bg-muted dark:hover:bg-muted/80"],
+  ["bg-neutral-50 p-4 font-medium text-muted-foreground dark:bg-foreground/20"],
+  ["bg-neutral-50 text-gray-400 text-xs"],
+  ["bg-popover text-popover-foreground shadow-lg outline-none"],
+  ["bg-primary font-medium text-primary-foreground"],
+  ["bg-transparent"],
+  ["bg-transparent text-muted-foreground"],
+  ["bg-warning hover:bg-warning/80"],
+  ["bg-yellow-200 dark:bg-yellow-400"],
+  [
+    "bg-yellow-200 text-yellow-900 dark:bg-yellow-400",
+    "bg-destructive text-destructive-foreground"
+  ],
+  ["block"],
+  ["block break-all rounded bg-muted px-1 py-0.5"],
+  ["block font-mono uppercase"],
+  [
+    "block h-5 w-5 rounded-full border-2 border-primary bg-background ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+  ],
+  [
+    "block max-w-[10rem] cursor-pointer truncate font-medium hover:underline md:max-w-[20rem]"
+  ],
+  ["block max-w-[10rem] truncate font-medium hover:underline md:max-w-[15rem]"],
+  ["block max-w-[10rem] truncate font-medium hover:underline md:max-w-[20rem]"],
+  ["block max-w-[10rem] truncate font-medium md:max-w-[20rem]"],
+  ["block max-w-[150px] truncate"],
+  ["block max-w-[200px] truncate hover:underline"],
+  [
+    "block max-w-[20rem] truncate font-semibold text-2xl md:max-w-[30rem] md:text-3xl"
+  ],
+  [
+    "block max-w-[20rem] truncate font-semibold text-2xl sm:mt-4 md:max-w-[30rem] md:text-3xl"
+  ],
+  ["block max-w-[5rem] truncate font-medium hover:underline md:max-w-[10rem]"],
+  ["block max-w-full truncate"],
+  ["block max-w-full truncate hover:underline"],
+  ["block pb-28 lg:hidden"],
+  ["block truncate font-medium text-foreground text-sm"],
+  [
+    "block truncate text-muted-foreground text-sm underline hover:text-foreground"
+  ],
+  [
+    "block w-full rounded-md px-2 py-1.5 text-left text-sm transition-colors  ",
+    "bg-neutral-900 text-white",
+    "text-neutral-700 hover:bg-neutral-100"
+  ],
+  ["border"],
+  ["border bg-background text-muted-foreground"],
+  ["border shadow-sm  ", "print:mt-8"],
+  ["border-0 bg-orange-300 fill-orange-300 text-orange-900"],
+  ["border-b"],
+  ["border-b p-2"],
+  ["border-b pb-4"],
+  [
+    "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted"
+  ],
+  ["border-b-0"],
+  ["border-dashed text-muted-foreground"],
+  ["border-dashed text-muted-foreground", "border-solid text-foreground"],
+  ["border-neutral-200 border-b px-4 py-3"],
+  ["border-none"],
+  ["border-none p-0"],
+  ["border-t p-1"],
+  ["border-t px-4 pt-4"],
+  [
+    "border-yellow-900/30 text-yellow-900 hover:bg-yellow-100 dark:hover:bg-yellow-500",
+    "border-destructive-foreground/30 text-destructive-foreground hover:bg-destructive/80"
+  ],
+  ["break-all"],
+  ["break-all font-medium text-blue-400"],
+  ["break-all font-medium text-blue-400", "animate-pulse"],
+  [
+    "break-all font-semibold text-muted-foreground/60 duration-300 group-hover:text-primary/80"
+  ],
+  ["break-all px-4 py-2 font-mono text-foreground text-xs"],
+  ["break-all text-muted-foreground text-sm"],
+  ["break-all text-neutral-400 text-xs"],
+  ["break-all text-sm"],
+  ["col-span-1 mt-auto"],
+  [
+    "col-span-1 mt-auto inline-flex h-10 w-10 items-center justify-center text-muted-foreground hover:opacity-80"
+  ],
+  [
+    "col-span-1 mt-auto inline-flex h-10 w-10 items-center text-muted-foreground hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "col-span-1 w-full flex-shrink-0 rounded-sm px-2 py-1 text-xs hover:bg-gray-100 hover:text-gray-600"
+  ],
+  [
+    "col-span-12 flex gap-x-2.5 gap-y-2 overflow-hidden overflow-x-auto md:col-span-3 md:flex md:flex-col"
+  ],
+  ["col-span-12 lg:col-span-6 xl:col-span-5"],
+  ["col-span-12 lg:col-span-6 xl:col-span-5", "mt-20"],
+  [
+    "col-span-12 mb-8 flex flex-wrap items-center justify-start gap-x-2 gap-y-4 px-4 md:col-span-3 md:w-full md:flex-col md:items-start md:gap-y-2"
+  ],
+  ["col-span-12 mt-12 md:col-span-9 md:mt-0"],
+  [
+    "col-span-12 rounded-xl border-2 border-border bg-background before:rounded-xl lg:col-span-6 xl:col-span-5"
+  ],
+  [
+    "col-span-12 rounded-xl border-2 border-border bg-white/50 p-2 before:rounded-xl lg:col-span-6 xl:col-span-7 dark:bg-background"
+  ],
+  ["col-span-2"],
+  ["col-span-2 flex gap-x-2"],
+  ["col-span-2 mt-auto flex items-center gap-x-1 space-y-0"],
+  ["col-span-2 mt-auto flex items-center gap-x-1 space-y-0", "mb-6"],
+  ["col-span-4", "col-span-5"],
+  ["col-span-8"],
+  ["col-span-8", "col-span-10"],
+  ["col-span-8", "mb-6", "col-span-10"],
+  ["col-start-2"],
+  ["col-start-2", "col-span-2"],
+  ["color", "secondary", "size", "sm", "className", "gap-2"],
+  [
+    "color",
+    "secondary",
+    "size",
+    "sm",
+    "className",
+    "gap-2 [&_svg]:size-3.5 [&_svg]:text-fd-muted-foreground"
+  ],
+  ["container"],
+  ["cursor-default underline decoration-dotted underline-offset-4"],
+  ["cursor-grab active:cursor-grabbing"],
+  ["cursor-not-allowed opacity-50 data-[disabled]:pointer-events-auto"],
+  ["cursor-pointer"],
+  ["cursor-pointer", "pointer-events-none cursor-not-allowed opacity-50"],
+  [
+    "cursor-pointer rounded-lg text-left transition-colors  ",
+    "border border-green-200 bg-green-50 dark:border-green-500/20 dark:bg-green-500/10",
+    "border border-gray-200 hover:bg-gray-50 dark:border-gray-400/20 dark:hover:bg-gray-400/10"
+  ],
+  [
+    "cursor-pointer rounded-lg text-left transition-colors  ",
+    "border border-green-200 bg-green-50 dark:border-green-500/20 dark:bg-green-500/10",
+    "border border-gray-200 hover:bg-gray-50 dark:border-gray-400/20 dark:hover:bg-gray-400/10",
+    "p-3"
+  ],
+  [
+    "cursor-pointer underline decoration-muted-foreground/50 decoration-dotted underline-offset-4"
+  ],
+  ["custom-scrollbar -m-1 max-h-[60vh] space-y-4 overflow-y-auto p-1"],
+  [
+    "custom-scrollbar -mx-2 flex flex-1 flex-col overflow-y-auto overflow-x-hidden px-2"
+  ],
+  ["custom-scrollbar -mx-2 flex flex-1 flex-col px-2"],
+  ["dark-mode-disabled"],
+  ["dark-mode-disabled group"],
+  [
+    "dark-mode-disabled group",
+    "pointer-events-none",
+    "pointer-events-none cursor-not-allowed opacity-75",
+    "z-50",
+    "z-20",
+    "z-10"
+  ],
+  ["dark:bg-documenso dark:hover:opacity-90"],
+  ["dark:brightness-95 dark:contrast-[70%] dark:invert dark:sepia"],
+  ["dark:invert"],
+  [
+    "data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1 z-50 min-w-[8rem] animate-in overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md"
+  ],
+  [
+    "data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] animate-in overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md"
+  ],
+  [
+    "data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 w-72 animate-in rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none"
+  ],
+  [
+    "data-[state=closed]:fade-out data-[state=open]:fade-in fixed inset-0 z-[61] bg-background/80 backdrop-blur-sm transition-all duration-100 data-[state=closed]:animate-out"
+  ],
+  [
+    "data-[state=closed]:fade-out data-[state=open]:fade-in fixed inset-0 z-50 bg-background/80 backdrop-blur-sm transition-all duration-100 data-[state=closed]:animate-out"
+  ],
+  [
+    "data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full origin-top-center overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-lg data-[state=closed]:animate-out data-[state=open]:animate-in md:w-[var(--radix-navigation-menu-viewport-width)]"
+  ],
+  [
+    "data-[state=hidden]:fade-out data-[state=visible]:fade-in top-full z-[1] flex h-1.5 items-end justify-center overflow-hidden data-[state=hidden]:animate-out data-[state=visible]:animate-in"
+  ],
+  [
+    "data-[state=open]:fade-in-90 data-[state=open]:slide-in-from-bottom-10 sm:zoom-in-90 data-[state=open]:sm:slide-in-from-bottom-0 fixed z-50 grid w-full animate-in gap-4 border bg-background p-6 shadow-lg focus:outline-none sm:max-w-lg sm:rounded-lg"
+  ],
+  [
+    "data-[state=open]:fade-in-90 data-[state=open]:slide-in-from-bottom-10 sm:zoom-in-90 data-[state=open]:sm:slide-in-from-bottom-0 fixed z-50 grid w-full animate-in gap-4 border bg-background p-6 shadow-lg focus:outline-none sm:max-w-lg sm:rounded-lg",
+    "rounded-b-xl",
+    "rounded-t-xl"
+  ],
+  [
+    "data-[swipe=move]:transition-none group relative pointer-events-auto flex w-full items-center justify-between space-x-4 overflow-hidden rounded-md border p-6 pr-8 shadow-lg transition-all data-[swipe=move]:translate-x-[var(--radix-toast-swipe-move-x)] data-[swipe=cancel]:translate-x-0 data-[swipe=end]:translate-x-[var(--radix-toast-swipe-end-x)] data-[state=open]:animate-in data-[state=closed]:animate-out data-[swipe=end]:animate-out data-[state=closed]:fade-out-80 data-[state=open]:slide-in-from-top-full data-[state=open]:sm:slide-in-from-bottom-full data-[state=closed]:slide-out-to-right-full",
+    "bg-background border",
+    "group destructive border-destructive bg-destructive text-destructive-foreground",
+    "default"
+  ],
+  ["disabled:cursor-not-allowed"],
+  ["divide-y border-t"],
+  ["divide-y border-t text-muted-foreground"],
+  ["divide-y divide-border bg-muted/30"],
+  ["divide-y divide-border rounded-lg border border-border"],
+  ["divide-y rounded-lg border text-muted-foreground"],
+  [
+    "divide-y-2 divide-neutral-200 overflow-hidden rounded-lg border-2 border-neutral-200 dark:divide-foreground/30 dark:border-foreground/30"
+  ],
+  ["documenso-branded"],
+  [
+    "embed--Actions mb-4 flex w-full flex-row-reverse items-baseline justify-between"
+  ],
+  [
+    "embed--Actions mt-8 mb-4 flex w-full flex-row-reverse items-baseline justify-between"
+  ],
+  ["embed--Actions space-y-3 px-4"],
+  [
+    "embed--DocumentCompleted relative mx-auto flex min-h-[100dvh] max-w-screen-lg flex-col items-center justify-center p-6"
+  ],
+  ["embed--DocumentContainer min-w-0 flex-1 overflow-y-auto"],
+  [
+    "embed--DocumentContainer relative flex w-full flex-col gap-x-6 gap-y-12 md:flex-row"
+  ],
+  [
+    "embed--DocumentContainer relative mx-auto mt-8 flex w-full max-w-screen-xl flex-col gap-x-6 gap-y-12 md:flex-row"
+  ],
+  [
+    "embed--DocumentRejected relative mx-auto flex min-h-[100dvh] max-w-screen-lg flex-col items-center justify-center p-6"
+  ],
+  [
+    "embed--DocumentViewer flex flex-col items-center justify-center p-2 sm:mt-4 sm:p-4"
+  ],
+  ["embed--DocumentViewer flex-1"],
+  ["embed--DocumentViewer flex-1", "md:mx-auto md:max-w-2xl"],
+  [
+    "embed--DocumentWidget flex w-full flex-col rounded-xl border border-border bg-widget px-4 py-4 md:py-6"
+  ],
+  [
+    "embed--DocumentWidgetContainer group/document-widget fixed bottom-8 left-0 z-50 h-fit max-h-[calc(100dvh-2rem)] w-full flex-shrink-0 px-6 md:sticky md:top-0 md:bottom-[unset] md:z-auto md:w-[350px] md:px-0"
+  ],
+  [
+    "embed--DocumentWidgetContainer group/document-widget fixed bottom-8 left-0 z-50 h-fit max-h-[calc(100dvh-2rem)] w-full flex-shrink-0 px-6 md:sticky md:top-4 md:bottom-[unset] md:z-auto md:w-[350px] md:px-0"
+  ],
+  [
+    "embed--DocumentWidgetContainer hidden flex-shrink-0 flex-col border-border border-r bg-background transition-[width] duration-300 lg:flex",
+    "w-12",
+    "w-80"
+  ],
+  [
+    "embed--DocumentWidgetContent hidden group-data-[expanded]/document-widget:block md:block"
+  ],
+  ["embed--DocumentWidgetContent mt-6 space-y-3"],
+  [
+    "embed--DocumentWidgetFooter mt-4 hidden w-full grid-cols-2 items-center group-data-[expanded]/document-widget:grid md:grid"
+  ],
+  ["embed--DocumentWidgetFooter mt-auto"],
+  [
+    "embed--DocumentWidgetForm -mx-2 hidden px-2 group-data-[expanded]/document-widget:block md:block"
+  ],
+  [
+    "embed--DocumentWidgetForm rounded-2xl border-border sm:border sm:p-3 dark:bg-background"
+  ],
+  ["embed--DocumentWidgetHeader"],
+  [
+    "embed--DocumentWidgetHeader flex max-w-screen flex-row justify-between border-border border-b bg-background px-4 py-3 md:px-6"
+  ],
+  [
+    "embed--RecipientExpired relative mx-auto flex min-h-[100dvh] max-w-screen-lg flex-col items-center justify-center p-6"
+  ],
+  ["embed--Root relative"],
+  [
+    "embed--Root relative mx-auto flex min-h-[100dvh] max-w-screen-lg flex-col items-center justify-center p-6"
+  ],
+  [
+    "embed--WaitingForTurn relative mx-auto flex min-h-[100dvh] max-w-screen-lg flex-col items-center justify-center p-6"
+  ],
+  [
+    "fade-in fixed inset-0 z-50 animate-in bg-background/80 backdrop-blur-sm transition-opacity"
+  ],
+  [
+    "fade-in-50 data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1 z-9999 animate-in overflow-hidden rounded-md border bg-popover px-3 py-1.5 text-popover-foreground text-sm shadow-md"
+  ],
+  [
+    "fade-in-80 relative z-[1001] min-w-[8rem] animate-in overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md",
+    "translate-y-1"
+  ],
+  [
+    "fade-in-80 z-50 min-w-[8rem] animate-in overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md"
+  ],
+  [
+    "fade-in-90 slide-in-from-bottom-10 sm:zoom-in-90 sm:slide-in-from-bottom-0 fixed z-50 grid w-full max-w-lg scale-100 animate-in gap-4 border bg-background p-6 opacity-100 shadow-lg focus:outline-none sm:rounded-lg md:w-full"
+  ],
+  ["fill-background"],
+  [
+    "fixed bottom-0 left-0 z-40 rounded-tr bg-primary px-2 py-1 font-medium text-primary-foreground text-xs opacity-60 hover:opacity-100"
+  ],
+  [
+    "fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 items-center gap-x-1 rounded-xl bg-popover p-1.5 text-popover-foreground shadow-lg ring-1 ring-black/10 dark:ring-white/10"
+  ],
+  ["fixed inset-0 z-[1000] flex justify-center sm:items-center"],
+  [
+    "fixed inset-0 z-[1000] flex justify-center sm:items-center",
+    "items-start",
+    "items-end",
+    "items-center"
+  ],
+  [
+    "fixed inset-0 z-[61] flex",
+    "items-start",
+    "items-end",
+    "justify-start",
+    "justify-end",
+    "right"
+  ],
+  ["fixed inset-0 z-0 flex h-screen w-screen items-center justify-center"],
+  ["fixed inset-0 z-50 flex items-end justify-center sm:items-center"],
+  [
+    "fixed right-0 bottom-0 z-40 hidden cursor-pointer rounded-tl bg-primary px-2 py-1 font-medium text-primary-foreground text-xs opacity-60 hover:opacity-100 lg:block"
+  ],
+  [
+    "fixed right-6 bottom-6 left-6 z-50 flex items-center justify-between gap-2 rounded-lg border border-border bg-widget p-4"
+  ],
+  [
+    "fixed top-0 left-0 z-[9999] flex h-full w-full items-center justify-center bg-background"
+  ],
+  ["fixed top-0 left-0 z-[9999] h-full w-full bg-muted/60 backdrop-blur-[4px]"],
+  [
+    "fixed top-0 z-[1001] flex max-h-screen w-full flex-col-reverse p-4 sm:top-auto sm:right-0 sm:bottom-0 sm:flex-col md:max-w-[420px]"
+  ],
+  [
+    "fixed z-[61] scale-100 gap-4 border bg-background p-6 opacity-100 shadow-lg focus:outline-none",
+    "animate-in slide-in-from-top w-full duration-300",
+    "animate-in slide-in-from-bottom w-full duration-300",
+    "animate-in slide-in-from-left h-full duration-300",
+    "animate-in slide-in-from-right h-full duration-300",
+    "top",
+    "bottom",
+    "content",
+    "max-h-screen",
+    "top",
+    "bottom",
+    "default",
+    "h-1/3",
+    "top",
+    "bottom",
+    "sm",
+    "h-1/4",
+    "top",
+    "bottom",
+    "lg",
+    "h-1/2",
+    "top",
+    "bottom",
+    "xl",
+    "h-5/6",
+    "top",
+    "bottom",
+    "full",
+    "h-screen",
+    "right",
+    "left",
+    "content",
+    "max-w-screen",
+    "right",
+    "left",
+    "default",
+    "w-1/3",
+    "right",
+    "left",
+    "sm",
+    "w-1/4",
+    "right",
+    "left",
+    "lg",
+    "w-1/2",
+    "right",
+    "left",
+    "xl",
+    "w-5/6",
+    "right",
+    "left",
+    "full",
+    "w-screen",
+    "right",
+    "default"
+  ],
+  ["flex"],
+  ["flex border-border border-b"],
+  [
+    "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent data-[state=open]:bg-accent",
+    "pl-8"
+  ],
+  [
+    "flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
+    "pl-8"
+  ],
+  [
+    "flex cursor-default select-none items-center rounded-sm px-3 py-1.5 font-medium text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground"
+  ],
+  ["flex cursor-pointer items-center"],
+  [
+    "flex cursor-pointer items-center space-x-2 rounded-md border p-4 transition-all hover:border-primary hover:shadow-sm"
+  ],
+  [
+    "flex cursor-pointer items-center space-x-2 rounded-md border p-4 transition-all hover:border-primary hover:shadow-sm",
+    "border-primary ring-2 ring-primary/10 ring-offset-1"
+  ],
+  ["flex cursor-pointer items-center whitespace-nowrap"],
+  ["flex cursor-pointer outline-none"],
+  ["flex flex-1 flex-col"],
+  ["flex flex-1 flex-col gap-4"],
+  ["flex flex-1 flex-col gap-y-4"],
+  [
+    "flex flex-1 flex-col justify-center rounded-2xl border border-border p-6 pl-2"
+  ],
+  ["flex flex-1 flex-col overflow-hidden py-4", "invisible w-0"],
+  ["flex flex-1 items-center font-medium text-muted-foreground text-sm"],
+  [
+    "flex flex-1 items-center font-medium text-muted-foreground text-sm hover:text-muted-foreground/80"
+  ],
+  ["flex flex-1 items-center gap-2"],
+  ["flex flex-1 items-center gap-2.5"],
+  [
+    "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180"
+  ],
+  [
+    "flex flex-1 items-start justify-center overflow-auto p-6  ",
+    "bg-neutral-800",
+    "bg-neutral-200"
+  ],
+  ["flex flex-col"],
+  ["flex flex-col gap-0.5"],
+  ["flex flex-col gap-0.5 text-[9px]"],
+  ["flex flex-col gap-0.5 text-muted-foreground text-sm"],
+  ["flex flex-col gap-1"],
+  ["flex flex-col gap-2"],
+  ["flex flex-col gap-2 px-4"],
+  ["flex flex-col gap-2 sm:flex-row"],
+  ["flex flex-col gap-3 pb-4"],
+  ["flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"],
+  ["flex flex-col gap-4"],
+  ["flex flex-col gap-4 md:flex-row"],
+  ["flex flex-col gap-4 sm:flex-row"],
+  ["flex flex-col gap-y-2"],
+  ["flex flex-col gap-y-2 py-0.5"],
+  ["flex flex-col gap-y-4"],
+  ["flex flex-col gap-y-4 rounded-lg border p-4"],
+  ["flex flex-col gap-y-4 sm:flex-row sm:justify-end sm:gap-x-4"],
+  ["flex flex-col items-center"],
+  ["flex flex-col items-center gap-4"],
+  ["flex flex-col items-center justify-between gap-4 p-6 md:flex-row"],
+  ["flex flex-col items-center justify-center gap-y-2 px-4 py-4 text-center"],
+  ["flex flex-col items-center justify-center gap-y-4 py-12"],
+  ["flex flex-col items-center justify-center p-6 text-muted-foreground/40"],
+  ["flex flex-col items-center justify-center px-4 py-16"],
+  ["flex flex-col items-center justify-center px-6 py-4"],
+  ["flex flex-col items-center justify-center py-32"],
+  ["flex flex-col items-center justify-center py-4 sm:py-32"],
+  ["flex flex-col items-center justify-center py-6 text-sm"],
+  [
+    "flex flex-col items-center justify-center rounded-lg border border-dashed py-12 text-center text-muted-foreground"
+  ],
+  [
+    "flex flex-col items-center justify-center rounded-lg border border-muted-foreground/25 border-dashed bg-muted/30 px-6 py-12 text-center"
+  ],
+  [
+    "flex flex-col items-center justify-center text-foreground duration-200 group-hover:text-primary"
+  ],
+  ["flex flex-col items-center justify-center text-muted-foreground"],
+  ["flex flex-col items-center", "mb-8 p-4 md:mb-0 md:p-12"],
+  ["flex flex-col items-center pt-24 lg:pt-36 xl:pt-44"],
+  ["flex flex-col items-center py-8"],
+  [
+    "flex flex-col items-center rounded-xl bg-neutral-100 p-4 dark:bg-background"
+  ],
+  ["flex flex-col justify-between p-6 sm:flex-row sm:items-center"],
+  ["flex flex-col justify-between sm:flex-row"],
+  ["flex flex-col md:min-h-0 md:flex-1 md:flex-row"],
+  ["flex flex-col rounded-lg border bg-background p-5"],
+  [
+    "flex flex-col rounded-xl border border-border bg-widget dark:bg-background"
+  ],
+  ["flex flex-col rounded-xl border border-border bg-widget pt-6 pb-4"],
+  [
+    "flex flex-col rounded-xl border border-border bg-widget text-foreground dark:bg-background"
+  ],
+  ["flex flex-col space-y-1"],
+  ["flex flex-col space-y-1", "text-primary", "text-muted-foreground"],
+  ["flex flex-col space-y-1.5 p-6"],
+  ["flex flex-col space-y-1.5 text-center sm:text-left"],
+  ["flex flex-col space-y-2 text-center sm:text-left"],
+  ["flex flex-col space-y-4"],
+  ["flex flex-col space-y-6"],
+  ["flex flex-col space-y-6 disabled:cursor-not-allowed disabled:opacity-60"],
+  ["flex flex-col space-y-8"],
+  ["flex flex-col text-muted-foreground text-sm"],
+  ["flex flex-col truncate text-left font-normal text-sm"],
+  ["flex flex-col-reverse gap-4 md:flex-row"],
+  ["flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2"],
+  [
+    "flex flex-col-reverse space-y-2 space-y-reverse sm:flex-row sm:justify-end sm:space-x-2 sm:space-y-0"
+  ],
+  [
+    "flex flex-none gap-1.5 overflow-x-auto border-b px-3.5 py-2.5 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+  ],
+  ["flex flex-row gap-2"],
+  ["flex flex-row gap-x-4"],
+  ["flex flex-row items-center"],
+  ["flex flex-row items-center gap-1 text-muted-foreground"],
+  ["flex flex-row items-center gap-2"],
+  ["flex flex-row items-center gap-2 border-b pb-6"],
+  ["flex flex-row items-center gap-2 font-bold text-3xl"],
+  ["flex flex-row items-center gap-x-2"],
+  ["flex flex-row items-center gap-x-4"],
+  ["flex flex-row items-center justify-between"],
+  ["flex flex-row items-center justify-between border-b px-4 py-3"],
+  ["flex flex-row items-center justify-between gap-2"],
+  ["flex flex-row items-center justify-between gap-x-3 px-3"],
+  ["flex flex-row items-center justify-between p-6"],
+  ["flex flex-row items-center justify-between pt-4"],
+  ["flex flex-row items-center justify-between px-4"],
+  ["flex flex-row items-center justify-between px-4 py-3"],
+  ["flex flex-row items-center justify-center"],
+  [
+    "flex flex-row items-center justify-center space-x-2 text-muted-foreground/50 text-xs"
+  ],
+  [
+    "flex flex-row items-center justify-center space-x-2 text-muted-foreground/50 text-xs",
+    "[&>*:first-child]:text-muted-foreground",
+    "[&>*:last-child]:text-muted-foreground"
+  ],
+  ["flex flex-row items-center justify-start gap-x-4"],
+  ["flex flex-row items-center pr-2"],
+  [
+    "flex flex-row items-center py-0.5 text-[clamp(0.07rem,25cqw,0.825rem)] text-field-card-foreground text-sm"
+  ],
+  [
+    "flex flex-row items-center rounded border border-neutral-300 bg-neutral-200 px-1.5 py-0.5 text-xs dark:border-neutral-500 dark:bg-neutral-600"
+  ],
+  ["flex flex-row items-center space-x-2"],
+  ["flex flex-row items-center space-x-2 space-y-0"],
+  ["flex flex-row items-center space-x-3 space-y-0"],
+  ["flex flex-row items-center space-x-4 md:hidden"],
+  [
+    "flex flex-row items-center text-muted-foreground text-xs hover:text-muted-foreground/80"
+  ],
+  ["flex flex-row items-end justify-between"],
+  ["flex flex-row items-start gap-3"],
+  ["flex flex-row items-start space-x-3 space-y-0"],
+  ["flex flex-row justify-between"],
+  ["flex flex-row justify-between gap-4"],
+  ["flex flex-row justify-end gap-2"],
+  ["flex flex-row justify-end gap-4 p-6"],
+  ["flex flex-row justify-end space-x-2"],
+  ["flex flex-row justify-end space-x-4"],
+  ["flex flex-row space-x-2"],
+  ["flex flex-shrink-0 items-center gap-2"],
+  ["flex flex-wrap border-border border-b"],
+  ["flex flex-wrap gap-1"],
+  [
+    "flex flex-wrap items-center gap-4 border-neutral-200 border-b bg-white px-4 py-2"
+  ],
+  ["flex flex-wrap items-center gap-x-6 gap-y-4 lg:gap-x-8"],
+  ["flex flex-wrap items-center justify-between gap-x-4 gap-y-4 px-2"],
+  ["flex flex-wrap justify-center gap-3"],
+  ["flex gap-1 py-0.5", "flex-row flex-wrap", "flex-col gap-y-1"],
+  ["flex gap-2"],
+  ["flex gap-4 sm:flex-row sm:justify-end"],
+  ["flex gap-x-2"],
+  ["flex grow-0 items-center text-documenso-700 hover:opacity-80"],
+  ["flex h-[34px] w-[34px] items-center justify-center rounded-full bg-muted"],
+  ["flex h-[400px] w-full divide-x"],
+  [
+    "flex h-[45rem] max-h-[calc(100vh-14rem)] w-full flex-col space-y-6 overflow-y-auto px-6 py-6"
+  ],
+  ["flex h-[80vh] max-h-[60rem] flex-col items-center justify-center"],
+  [
+    "flex h-[80vh] max-h-[60rem] flex-col items-center justify-center bg-white/50 dark:bg-background"
+  ],
+  [
+    "flex h-[80vh] max-h-[60rem] w-full flex-col items-center justify-center overflow-hidden opacity-50"
+  ],
+  [
+    "flex h-[80vh] max-h-[60rem] w-full flex-col items-center justify-center overflow-hidden rounded"
+  ],
+  ["flex h-[calc(100vh-4rem)] w-screen"],
+  [
+    "flex h-10 flex-none items-center justify-between gap-3 border-t bg-muted/50 px-3.5"
+  ],
+  ["flex h-10 items-center"],
+  ["flex h-10 items-center justify-center"],
+  ["flex h-10 items-center rounded-md border px-3"],
+  ["flex h-10 items-center space-x-1 rounded-md border bg-background p-1"],
+  ["flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10"],
+  [
+    "flex h-10 w-10 items-center justify-center rounded-md bg-documenso-200 font-semibold text-documenso-900"
+  ],
+  [
+    "flex h-10 w-10 items-center justify-center text-slate-500 hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-muted-foreground/30 border-dashed bg-muted/50"
+  ],
+  [
+    "flex h-10 w-full items-center justify-between rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:font-medium file:text-sm placeholder:text-muted-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+    "!ring-destructive ring-2 transition-all",
+    "aria-invalid"
+  ],
+  [
+    "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:font-medium file:text-sm placeholder:text-muted-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+    "aria-invalid"
+  ],
+  [
+    "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:font-medium file:text-sm placeholder:text-muted-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+    "!ring-destructive ring-2 transition-all",
+    "aria-invalid"
+  ],
+  [
+    "flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:font-medium file:text-sm placeholder:text-muted-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+    "aria-invalid"
+  ],
+  ["flex h-11 items-center"],
+  [
+    "flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  ["flex h-12 items-center border-b p-2"],
+  [
+    "flex h-12 w-12 items-center justify-center rounded-md bg-primary/10 text-primary"
+  ],
+  [
+    "flex h-20 w-20 items-center justify-center rounded-full border-2 bg-background"
+  ],
+  [
+    "flex h-20 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+    "!ring-destructive ring-2 transition-all",
+    "aria-invalid"
+  ],
+  [
+    "flex h-20 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+    "aria-invalid"
+  ],
+  ["flex h-24 w-24 justify-center"],
+  ["flex h-28 items-center justify-center"],
+  [
+    "flex h-32 flex-col items-center justify-center text-muted-foreground text-sm"
+  ],
+  ["flex h-36 justify-center"],
+  [
+    "flex h-4 w-4 items-center justify-center rounded-full bg-muted-foreground/20"
+  ],
+  [
+    "flex h-5 min-w-5 items-center justify-center rounded-md bg-primary px-1 font-semibold text-primary-foreground text-xs tabular-nums"
+  ],
+  [
+    "flex h-5 w-5 flex-col items-center justify-center rounded-r-md font-bold text-[0.5rem] text-white opacity-0 transition duration-200 group-hover/field-item:opacity-100"
+  ],
+  [
+    "flex h-5 w-5 flex-col items-center justify-center rounded-r-md font-bold text-[0.5rem] text-white opacity-0 transition duration-200 group-hover/field-item:opacity-100",
+    "!opacity-50"
+  ],
+  [
+    "flex h-6 min-w-[1.5rem] items-center justify-center rounded-full bg-primary px-1.5 font-semibold text-primary-foreground text-xs"
+  ],
+  ["flex h-6 w-10 items-center justify-center"],
+  [
+    "flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full font-medium text-xs  ",
+    "bg-green-100 text-green-600",
+    "bg-gray-200 text-gray-600"
+  ],
+  [
+    "flex h-6 w-6 items-center justify-center rounded transition-all hover:bg-muted-foreground/10 hover:active:bg-muted-foreground/20"
+  ],
+  [
+    "flex h-6 w-6 items-center justify-center rounded transition-all hover:bg-muted-foreground/10 hover:active:bg-muted-foreground/20",
+    "ml-1"
+  ],
+  [
+    "flex h-60 flex-col items-center justify-center gap-y-4 text-muted-foreground/60"
+  ],
+  ["flex h-8 items-center justify-between px-1"],
+  ["flex h-8 w-8 items-center justify-center"],
+  [
+    "flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-semibold text-sm"
+  ],
+  [
+    "flex h-8 w-8 shrink-0 items-center justify-center rounded-lg font-semibold text-sm"
+  ],
+  [
+    "flex h-96 flex-col items-center justify-center gap-y-4 text-muted-foreground/60"
+  ],
+  [
+    "flex h-auto w-full items-center justify-start gap-2 rounded-lg border bg-background px-1.5 py-1 hover:bg-muted"
+  ],
+  ["flex h-auto w-full justify-start gap-3 p-4"],
+  ["flex h-fit space-x-2 overflow-x-auto p-2 pt-4 sm:p-4"],
+  [
+    "flex h-fit w-full flex-col rounded-xl border border-border bg-widget px-4 py-4 md:min-h-[min(calc(100dvh-2rem),48rem)] md:py-6"
+  ],
+  [
+    "flex h-full cursor-pointer flex-col items-center justify-center rounded-lg p-0 text-muted-foreground/80 transition-colors hover:text-muted-foreground/90"
+  ],
+  ["flex h-full flex-1 flex-col overflow-hidden"],
+  ["flex h-full flex-col"],
+  ["flex h-full flex-col gap-y-4"],
+  ["flex h-full flex-col gap-y-6"],
+  ["flex h-full flex-col items-center justify-center py-16"],
+  ["flex h-full flex-col p-6"],
+  ["flex h-full flex-col space-y-4"],
+  ["flex h-full flex-col space-y-6"],
+  ["flex h-full flex-row items-center p-2"],
+  ["flex h-full items-center justify-center py-16"],
+  ["flex h-full max-h-full flex-col px-4 pt-4 pb-6 sm:px-4 sm:pt-4 sm:pb-8"],
+  ["flex h-full max-w-xl flex-col gap-y-4"],
+  [
+    "flex h-full w-60 flex-shrink-0 flex-col overflow-y-auto border-neutral-200 border-r bg-white"
+  ],
+  [
+    "flex h-full w-72 flex-shrink-0 flex-col overflow-y-auto border-neutral-200 border-r bg-white px-4 py-3"
+  ],
+  [
+    "flex h-full w-full cursor-pointer items-center justify-center group-disabled:opacity-50"
+  ],
+  [
+    "flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground"
+  ],
+  ["flex h-full w-full flex-col overflow-y-auto px-2"],
+  ["flex h-full w-full items-center"],
+  ["flex h-full w-full items-center justify-center"],
+  ["flex h-full w-full items-center justify-center p-2"],
+  ["flex h-full w-full items-center justify-center rounded-full bg-muted"],
+  ["flex h-full w-full items-center overflow-hidden"],
+  [
+    "flex h-screen w-screen flex-col items-center justify-center gap-2 text-foreground"
+  ],
+  [
+    "flex h-screen w-screen overflow-hidden bg-neutral-100 font-sans text-neutral-900"
+  ],
+  ["flex items-baseline gap-1.5"],
+  ["flex items-baseline gap-3"],
+  ["flex items-baseline gap-x-6"],
+  ["flex items-baseline justify-between gap-2"],
+  ["flex items-center"],
+  ["flex items-center border-b px-3"],
+  ["flex items-center font-medium text-sm md:justify-center"],
+  ["flex items-center gap-1 text-muted-foreground text-xs"],
+  ["flex items-center gap-1 text-neutral-600 text-xs"],
+  ["flex items-center gap-1.5"],
+  ["flex items-center gap-1.5 text-neutral-600 text-xs"],
+  ["flex items-center gap-2"],
+  ["flex items-center gap-2 border-b p-4"],
+  ["flex items-center gap-2 font-bold text-lg"],
+  ["flex items-center gap-2 font-medium"],
+  ["flex items-center gap-2 font-medium text-foreground text-sm"],
+  ["flex items-center gap-2 font-medium text-muted-foreground"],
+  ["flex items-center gap-2 font-semibold"],
+  [
+    "flex items-center gap-2 font-semibold text-2xl text-foreground hover:text-foreground/80"
+  ],
+  ["flex items-center gap-2 font-semibold text-muted-foreground"],
+  ["flex items-center gap-2 has-[:disabled]:opacity-50"],
+  ["flex items-center gap-2 p-3"],
+  ["flex items-center gap-2 rounded-lg border border-border bg-card p-4"],
+  ["flex items-center gap-2 text-muted-foreground text-xs"],
+  ["flex items-center gap-2.5 border-b px-4 py-3"],
+  ["flex items-center gap-3"],
+  ["flex items-center gap-3 border-border/50 border-t bg-muted/50 px-3 py-2.5"],
+  ["flex items-center gap-3 px-3 py-2.5"],
+  ["flex items-center gap-4"],
+  [
+    "flex items-center gap-4 rounded-lg border border-border bg-card p-4 transition-colors hover:bg-accent/10"
+  ],
+  [
+    "flex items-center gap-4 rounded-lg border border-border bg-card p-4 transition-colors hover:bg-accent/50"
+  ],
+  ["flex items-center gap-4 rounded-lg border border-border px-4 py-2"],
+  ["flex items-center gap-8"],
+  ["flex items-center gap-x-1"],
+  ["flex items-center gap-x-1 rounded-full bg-muted p-1"],
+  ["flex items-center gap-x-2"],
+  ["flex items-center gap-x-2 px-2"],
+  ["flex items-center gap-x-4"],
+  ["flex items-center hover:text-muted-foreground/80"],
+  ["flex items-center justify-between"],
+  ["flex items-center justify-between gap-2"],
+  ["flex items-center justify-between gap-3"],
+  ["flex items-center justify-between gap-3 rounded-lg bg-muted/50 p-3"],
+  ["flex items-center justify-between gap-3 rounded-lg border p-3"],
+  ["flex items-center justify-between gap-4"],
+  ["flex items-center justify-between gap-4 p-4"],
+  ["flex items-center justify-between gap-x-2"],
+  ["flex items-center justify-between gap-x-4"],
+  ["flex items-center justify-between gap-x-4 px-4 py-3 font-medium text-sm"],
+  ["flex items-center justify-between gap-x-6 bg-background p-4"],
+  ["flex items-center justify-between px-4 py-2.5 text-sm"],
+  ["flex items-center justify-between px-4 py-2.5 text-sm last:border-b"],
+  ["flex items-center justify-between px-4 py-3"],
+  ["flex items-center justify-between px-4 py-3 text-sm"],
+  [
+    "flex items-center justify-between rounded-lg bg-accent/50 p-3 transition-shadow  ",
+    "shadow-md"
+  ],
+  ["flex items-center justify-between rounded-lg border px-4 py-3"],
+  [
+    "flex items-center justify-between rounded-md border border-border bg-muted/50 px-3 py-2"
+  ],
+  ["flex items-center justify-between rounded-md border border-border p-2"],
+  ["flex items-center justify-between text-sm"],
+  ["flex items-center justify-center"],
+  [
+    "flex items-center justify-center gap-1 text-primary text-sm hover:text-primary/80 hover:underline"
+  ],
+  [
+    "flex items-center justify-center gap-x-1.5 font-normal font-noto text-muted-foreground text-sm group-data-[selected]:text-foreground"
+  ],
+  [
+    "flex items-center justify-center gap-x-1.5 font-normal font-signature text-lg text-muted-foreground group-data-[selected]:text-foreground"
+  ],
+  [
+    "flex items-center justify-center gap-x-1.5 font-normal text-muted-foreground text-sm group-data-[selected]:text-foreground"
+  ],
+  ["flex items-center justify-center gap-x-2"],
+  ["flex items-center justify-center px-5 pt-12 pb-11"],
+  ["flex items-center justify-center py-4"],
+  ["flex items-center justify-center rounded-lg"],
+  ["flex items-center justify-center rounded-lg py-32"],
+  ["flex items-center justify-center text-primary-foreground"],
+  ["flex items-center p-6 pt-0"],
+  ["flex items-center px-2 font-medium text-muted-foreground text-sm"],
+  [
+    "flex items-center rounded-md bg-muted px-1.5 py-0.5 text-muted-foreground text-xs tracking-wider"
+  ],
+  ["flex items-center space-x-2"],
+  ["flex items-center space-x-2 pr-8"],
+  ["flex items-center space-x-2 rounded-md border bg-muted/30 p-4"],
+  ["flex items-center space-x-2 text-muted-foreground text-sm"],
+  ["flex items-center space-x-3"],
+  ["flex items-center text-[0.688rem] text-muted-foreground"],
+  ["flex items-center text-center text-red-600"],
+  ["flex items-center text-documenso-700 hover:opacity-80"],
+  ["flex items-center text-foreground/70 text-xs hover:text-muted-foreground"],
+  ["flex items-center text-muted-foreground"],
+  [
+    "flex items-center text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+  ],
+  ["flex items-end gap-2 pb-2"],
+  ["flex items-end gap-2 pb-2", "border-destructive/50"],
+  ["flex items-end justify-between"],
+  ["flex items-end justify-between font-semibold text-foreground text-sm"],
+  ["flex items-end justify-end gap-x-4"],
+  ["flex items-start"],
+  ["flex items-start gap-2"],
+  ["flex items-start gap-2.5 text-sm"],
+  [
+    "flex items-start gap-3 rounded-lg px-3 py-2.5 transition-colors",
+    "bg-fd-primary/10 text-fd-primary",
+    "text-fd-muted-foreground hover:bg-fd-accent hover:text-fd-accent-foreground"
+  ],
+  [
+    "flex items-start gap-4 rounded-xl border bg-fd-card/50 p-5 transition-all hover:border-fd-primary/50"
+  ],
+  ["flex items-start gap-x-2 rounded-lg border bg-card px-4 py-3"],
+  ["flex items-start justify-between"],
+  ["flex items-start space-x-3 space-y-0"],
+  ["flex justify-center gap-x-12"],
+  ["flex justify-center pt-4"],
+  ["flex justify-center px-4"],
+  ["flex justify-end"],
+  ["flex justify-end gap-2"],
+  ["flex justify-end space-x-2"],
+  ["flex max-w-xl flex-col items-center justify-center p-4 md:p-12"],
+  ["flex max-w-xs items-center gap-2"],
+  ["flex min-h-[100dvh] flex-col items-center justify-center p-6 text-center"],
+  ["flex min-h-[100dvh] w-full items-center justify-center"],
+  ["flex min-h-[400px] w-full items-center justify-center"],
+  [
+    "flex min-h-10 items-center break-all rounded-md bg-muted px-3 py-2 text-muted-foreground text-xs",
+    "font-mono",
+    "select-all"
+  ],
+  ["flex min-h-9 items-center justify-between gap-3"],
+  ["flex min-h-9 min-w-0 items-center gap-x-2 text-sm"],
+  ["flex min-h-screen flex-col"],
+  ["flex min-h-screen flex-col items-start"],
+  ["flex min-h-screen items-center justify-center"],
+  ["flex min-h-screen items-center justify-center p-4"],
+  ["flex min-w-0 flex-1 items-center space-x-2 md:w-auto md:flex-none"],
+  ["flex min-w-0 flex-1 items-center space-x-4"],
+  ["flex min-w-0 flex-col items-start p-6 md:p-8"],
+  [
+    "flex min-w-0 flex-col justify-center gap-3 border-t bg-muted p-6 md:border-t-0 md:border-l md:p-8"
+  ],
+  ["flex min-w-0 items-center gap-1.5"],
+  ["flex min-w-0 items-center gap-2 font-medium"],
+  ["flex min-w-0 items-center gap-3"],
+  ["flex min-w-0 items-center space-x-2"],
+  ["flex min-w-0 items-center space-x-3"],
+  ["flex overflow-hidden rounded-md border border-neutral-300"],
+  ["flex shrink-0 flex-row space-x-4"],
+  ["flex shrink-0 items-center gap-1.5 text-xs"],
+  ["flex shrink-0 items-center gap-2"],
+  ["flex shrink-0 items-center space-x-2"],
+  [
+    "flex size-10 shrink-0 items-center justify-center rounded-lg bg-amber-500/10 text-amber-600 dark:text-amber-400"
+  ],
+  [
+    "flex size-10 shrink-0 items-center justify-center rounded-lg bg-slate-500/10 text-slate-600 dark:text-slate-400"
+  ],
+  ["flex space-x-2"],
+  [
+    "flex touch-none select-none transition-colors",
+    "h-full w-2.5 border-l border-l-transparent p-[1px]",
+    "h-2.5 border-t border-t-transparent p-[1px]"
+  ],
+  ["flex w-[150px] items-center"],
+  ["flex w-16 flex-none items-center gap-x-1"],
+  ["flex w-16 flex-none items-center gap-x-1", "mb-6"],
+  ["flex w-2/3 flex-col"],
+  ["flex w-80 flex-col border-r bg-accent/20"],
+  [
+    "flex w-80 flex-shrink-0 flex-col overflow-y-auto border-border border-r bg-background py-4"
+  ],
+  [
+    "flex w-80 flex-shrink-0 flex-col overflow-y-auto border-border border-r bg-background py-4",
+    "w-14"
+  ],
+  [
+    "flex w-full cursor-pointer items-center justify-center group-disabled:opacity-50"
+  ],
+  [
+    "flex w-full cursor-pointer items-center justify-center group-disabled:opacity-50",
+    "border-primary"
+  ],
+  ["flex w-full flex-1 flex-col gap-y-4"],
+  ["flex w-full flex-1 flex-nowrap gap-2"],
+  ["flex w-full flex-1 flex-nowrap gap-4"],
+  ["flex w-full flex-col"],
+  ["flex w-full flex-col gap-2"],
+  ["flex w-full flex-col gap-4 overflow-hidden"],
+  ["flex w-full flex-col gap-y-2"],
+  ["flex w-full flex-col gap-y-4"],
+  ["flex w-full flex-col justify-between gap-4 md:flex-row md:items-end"],
+  ["flex w-full flex-col md:w-1/3"],
+  [
+    "flex w-full flex-col rounded-xl border border-border bg-widget px-4 py-4 md:py-6"
+  ],
+  ["flex w-full flex-col space-y-8"],
+  ["flex w-full flex-row gap-x-4"],
+  ["flex w-full flex-row items-center"],
+  ["flex w-full flex-row justify-between"],
+  ["flex w-full flex-row space-x-4"],
+  ["flex w-full items-center justify-between"],
+  ["flex w-full items-center justify-center"],
+  [
+    "flex w-full items-center rounded-md px-2 py-2 text-left hover:bg-muted",
+    "bg-muted"
+  ],
+  ["flex w-full items-start"],
+  ["flex w-full justify-between"],
+  ["flex w-full justify-center"],
+  ["flex w-full max-w-[350px] flex-col"],
+  [
+    "flex w-full max-w-96 items-center justify-between rounded-lg text-muted-foreground"
+  ],
+  ["flex w-full max-w-md flex-col"],
+  ["flex w-full max-w-xs items-center gap-2"],
+  ["flex w-full min-w-0 items-center gap-3"],
+  ["flex w-full min-w-0 items-center justify-between"],
+  [
+    "flex w-screen flex-col items-center justify-center gap-2 py-64 text-foreground"
+  ],
+  ["flex-1"],
+  ["flex-1 bg-background"],
+  ["flex-1 bg-black/5 hover:bg-black/10 dark:bg-muted dark:hover:bg-muted/80"],
+  ["flex-1 bg-primary"],
+  [
+    "flex-1 bg-transparent outline-none placeholder:text-muted-foreground/70 disabled:cursor-not-allowed"
+  ],
+  [
+    "flex-1 bg-transparent outline-none placeholder:text-muted-foreground/70 disabled:cursor-not-allowed",
+    "w-full",
+    "px-3 py-2",
+    "ml-1"
+  ],
+  [
+    "flex-1 border-b-2 py-2 text-center font-bold text-xs uppercase tracking-wide",
+    "border-transparent text-muted-foreground"
+  ],
+  [
+    "flex-1 border-none bg-black/5 hover:bg-black/10 focus-visible:ring-black/10 dark:bg-muted dark:focus-visible:ring-muted/80 dark:hover:bg-muted/80"
+  ],
+  ["flex-1 font-normal"],
+  ["flex-1", "mb-6"],
+  ["flex-1 md:flex-initial"],
+  ["flex-1 overflow-y-auto"],
+  ["flex-1 overflow-y-auto p-1.5"],
+  ["flex-1 px-2 py-2"],
+  ["flex-1 space-y-1 overflow-y-auto p-1.5"],
+  ["flex-1 text-muted-foreground text-sm"],
+  ["flex-1 truncate font-medium text-foreground text-sm"],
+  ["flex-1 truncate text-left"],
+  ["flex-1 truncate text-sm"],
+  [
+    "flex-auto truncate py-0.5 text-muted-foreground text-xs leading-5 dark:text-muted-foreground/70"
+  ],
+  ["flex-none"],
+  ["flex-none", "mb-6"],
+  [
+    "flex-none py-0.5 text-muted-foreground text-xs leading-5 dark:text-muted-foreground/70"
+  ],
+  ["flex-row items-center justify-center"],
+  ["flex-shrink-0"],
+  ["flex-shrink-0 font-medium text-sm print:text-xs"],
+  ["flex-shrink-0 lg:hidden"],
+  ["flex-shrink-0 overflow-hidden rounded-lg bg-white shadow-lg"],
+  ["flex-shrink-0 overflow-x-auto"],
+  ["font-bold"],
+  ["font-bold text-2xl"],
+  ["font-bold text-2xl md:text-4xl"],
+  ["font-bold text-2xl text-foreground tracking-wider"],
+  ["font-bold text-3xl"],
+  ["font-bold text-3xl tracking-tight"],
+  ["font-bold text-4xl tracking-tight"],
+  ["font-bold text-xl"],
+  ["font-medium"],
+  ["font-medium hover:underline"],
+  ["font-medium mb-1"],
+  ["font-medium text-[#0f172a] text-sm"],
+  ["font-medium text-base"],
+  ["font-medium text-base text-muted-foreground"],
+  ["font-medium text-blue-400"],
+  ["font-medium text-destructive text-sm"],
+  ["font-medium text-fd-primary text-sm"],
+  ["font-medium text-foreground"],
+  ["font-medium text-foreground text-sm"],
+  ["font-medium text-foreground text-sm max-[420px]:hidden"],
+  ["font-medium text-foreground text-sm print:text-[8pt]"],
+  ["font-medium text-lg"],
+  ["font-medium text-muted-foreground"],
+  ["font-medium text-muted-foreground text-sm"],
+  ["font-medium text-muted-foreground text-sm hover:text-foreground"],
+  ["font-medium text-muted-foreground text-sm tabular-nums"],
+  [
+    "font-medium text-muted-foreground text-sm uppercase tracking-wide print:text-[8pt]"
+  ],
+  ["font-medium text-muted-foreground text-xs"],
+  ["font-medium text-muted-foreground/70 uppercase tracking-wide"],
+  ["font-medium text-neutral-600 text-xs"],
+  ["font-medium text-sm"],
+  [
+    "font-medium text-sm  ",
+    "text-green-900 dark:text-green-400",
+    "text-foreground dark:text-muted-foreground"
+  ],
+  ["font-medium text-sm leading-none"],
+  ["font-medium text-xl"],
+  ["font-medium text-xs md:text-sm"],
+  ["font-mono"],
+  ["font-mono text-[#64748b] text-xs"],
+  ["font-mono text-[10px] text-muted-foreground uppercase tracking-widest"],
+  ["font-mono text-foreground"],
+  ["font-mono text-muted-foreground text-xs"],
+  ["font-mono text-xs"],
+  ["font-normal opacity-60"],
+  ["font-normal text-foreground/50 text-xs"],
+  ["font-normal text-muted-foreground"],
+  ["font-normal text-muted-foreground text-sm leading-snug"],
+  ["font-normal text-primary"],
+  ["font-semibold"],
+  [
+    "font-semibold",
+    "border-2 fill-white",
+    "border-0 bg-orange-300 fill-orange-300 text-orange-900",
+    "default"
+  ],
+  ["font-semibold mb-1"],
+  ["font-semibold mb-2"],
+  ["font-semibold mb-4 flex items-center gap-2"],
+  ["font-semibold text-2xl"],
+  ["font-semibold text-2xl text-foreground"],
+  ["font-semibold text-2xl text-foreground hover:text-foreground/80"],
+  ["font-semibold text-2xl tracking-tight"],
+  ["font-semibold text-3xl"],
+  ["font-semibold text-3xl text-foreground tabular-nums tracking-tight"],
+  ["font-semibold text-4xl"],
+  ["font-semibold text-base"],
+  ["font-semibold text-base text-foreground"],
+  ["font-semibold text-destructive text-sm"],
+  ["font-semibold text-foreground"],
+  ["font-semibold text-foreground text-lg"],
+  ["font-semibold text-foreground text-sm"],
+  ["font-semibold text-foreground text-xl md:text-2xl"],
+  ["font-semibold text-foreground/80"],
+  ["font-semibold text-foreground/80 text-sm"],
+  ["font-semibold text-lg"],
+  ["font-semibold text-lg leading-none tracking-tight"],
+  ["font-semibold text-muted-foreground"],
+  ["font-semibold text-sm"],
+  ["font-semibold text-xl"],
+  ["font-semibold text-xl md:text-2xl"],
+  [
+    "font-signature text-[clamp(0.575rem,25cqw,1.2rem)] text-muted-foreground text-xl duration-200 group-hover:text-primary group-hover:text-recipient-green"
+  ],
+  ["gap-0 space-y-2 shadow-none sm:space-y-3"],
+  ["gap-0 space-y-3 shadow-none"],
+  ["gap-2"],
+  ["gap-y-1"],
+  ["grid gap-1"],
+  ["grid gap-2"],
+  ["grid gap-3"],
+  ["grid gap-4 md:grid-cols-2 mb-12"],
+  ["grid gap-4 md:grid-cols-3 mb-12"],
+  ["grid gap-8 md:grid-cols-2 mb-12"],
+  ["grid grid-cols-[auto_1fr] gap-x-3 gap-y-1"],
+  [
+    "grid grid-cols-1 divide-y divide-border md:grid-cols-3 md:divide-x md:divide-y-0"
+  ],
+  ["grid grid-cols-1 gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3"],
+  ["grid grid-cols-1 gap-4 md:grid-cols-2"],
+  ["grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"],
+  ["grid grid-cols-1 gap-4 p-4 sm:grid-cols-2"],
+  ["grid grid-cols-1 gap-4 sm:grid-cols-2"],
+  ["grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"],
+  ["grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3"],
+  ["grid grid-cols-10 items-end gap-2 pb-2"],
+  [
+    "grid grid-cols-10 items-end gap-2 pb-2",
+    "border-b pt-2",
+    "grid-cols-12 pr-3"
+  ],
+  ["grid grid-cols-2 gap-2"],
+  ["grid grid-cols-2 gap-3"],
+  ["grid grid-cols-2 gap-4"],
+  ["grid grid-cols-2 gap-4 p-6 text-sm print:text-xs"],
+  ["grid grid-cols-2 gap-x-2 gap-y-2.5"],
+  ["grid grid-cols-2 gap-x-8 gap-y-2 text-xs print:text-[6pt]"],
+  ["grid grow gap-1"],
+  ["grid w-full grid-cols-12 gap-4"],
+  ["grid w-full grid-cols-12 gap-8"],
+  [
+    "grid w-max grid-cols-5 gap-x-1 gap-y-0.5 rounded-md border border-gray-300 bg-white p-1 text-gray-500 shadow-sm"
+  ],
+  ["group"],
+  ["group block"],
+  ["group block pl-6"],
+  [
+    "group flex flex-1 cursor-pointer flex-col items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+  ],
+  ["group flex flex-1 list-none items-center justify-center space-x-1"],
+  [
+    "group flex h-12 cursor-pointer items-center justify-center rounded-lg border border-border px-4 transition-colors"
+  ],
+  [
+    "group flex h-fit max-w-72 flex-shrink-0 cursor-pointer items-center space-x-3 rounded-lg border px-4 py-3 transition-colors  ",
+    "border-green-200 bg-green-50 text-green-900 dark:border-green-400/30 dark:bg-green-400/10 dark:text-green-400",
+    "border-border bg-muted/50 hover:bg-muted/70"
+  ],
+  [
+    "group flex items-center justify-between rounded-md border border-border px-3 py-2.5 transition duration-200 hover:bg-muted/50"
+  ],
+  [
+    "group flex items-center justify-evenly gap-x-1 rounded-md border bg-gray-900 p-0.5"
+  ],
+  [
+    "group flex w-fit items-center justify-evenly gap-x-1 rounded-md border bg-gray-900 p-0.5"
+  ],
+  ["group h-full w-full"],
+  ["group items-center gap-3 rounded-lg px-2.5 py-2"],
+  ["group relative"],
+  [
+    "group relative flex flex-col rounded-xl border bg-fd-card p-6 transition-all hover:border-fd-primary/50 hover:shadow-md"
+  ],
+  ["group relative rounded-lg border-2 bg-background text-foreground"],
+  [
+    "group relative rounded-lg border-2 bg-background text-foreground",
+    "backdrop-blur-[2px]",
+    "gradient-border-mask before:pointer-events-none before:absolute before:-inset-[2px] before:rounded-lg before:p-[2px] before:[background:linear-gradient(var(--card-gradient-degrees),theme(colors.primary.DEFAULT/50%)_5%,theme(colors.border/80%)_30%)]",
+    "dark:gradient-border-mask before:pointer-events-none before:absolute before:-inset-[2px] before:rounded-lg before:p-[2px] before:[background:linear-gradient(var(--card-gradient-degrees),theme(colors.primary.DEFAULT/70%)_5%,theme(colors.border/80%)_30%)]",
+    "shadow-[0_0_0_4px_theme(colors.gray.100/70%),0_0_0_1px_theme(colors.gray.100/70%),0_0_0_0.5px_var(colors.primary.DEFAULT/70%)]",
+    "dark:shadow-[0]"
+  ],
+  ["group w-full"],
+  ["group z-10 mx-auto flex aspect-[21/9] w-full items-center justify-center"],
+  [
+    "group/document-widget fixed bottom-6 left-0 z-50 h-fit max-h-[calc(100dvh-2rem)] w-full flex-shrink-0 px-4 md:sticky md:top-4 md:bottom-[unset] md:z-auto md:w-[350px] md:px-0"
+  ],
+  [
+    "group/document-widget fixed bottom-8 left-0 z-50 h-fit max-h-[calc(100dvh-2rem)] w-full flex-shrink-0 px-6 md:sticky md:top-4 md:bottom-[unset] md:z-auto md:w-[350px] md:px-0"
+  ],
+  [
+    "group/field-item relative flex h-full w-full items-center justify-center rounded-[2px] bg-white/90 px-2 ring-2 transition-colors",
+    "[container-type:size]"
+  ],
+  [
+    "group/field-item relative flex h-full w-full items-center justify-center rounded-[2px] bg-white/90 px-2 ring-2 transition-colors",
+    "rounded-[2px] border bg-red-400/20 shadow-[0_0_0_5px_theme(colors.red.500/10%),0_0_0_2px_theme(colors.red.500/40%),0_0_0_0.5px_theme(colors.red.500)] ring-red-400",
+    "[container-type:size]"
+  ],
+  ["h-[13px] w-[13px] rounded-full"],
+  ["h-[18px] w-[18px] text-muted-foreground"],
+  ["h-[calc(100vh-8rem)] w-full border-0"],
+  ["h-1.5 w-[34px] rounded-full"],
+  ["h-1.5 w-[54px] rounded-full"],
+  ["h-1.5 w-1.5 rounded-full bg-amber-400"],
+  ["h-1.5 w-1.5 rounded-full bg-green-500"],
+  [
+    "h-1.5 w-1.5 rounded-full bg-widget ring-1 ring-gray-300 dark:ring-neutral-600"
+  ],
+  [
+    "h-1.5 w-1.5 rounded-full transition-all duration-300  ",
+    "w-4 bg-primary",
+    "bg-muted-foreground/30"
+  ],
+  ["h-1.5 w-16 rounded-full bg-neutral-200 md:w-24 dark:bg-foreground/20"],
+  ["h-1.5 w-2/3 rounded-sm bg-muted"],
+  ["h-1.5 w-24 rounded-full bg-neutral-300 md:w-36 dark:bg-foreground/30"],
+  ["h-1.5 w-3/4 rounded-sm bg-muted"],
+  ["h-1.5 w-3/5 rounded-sm bg-muted"],
+  ["h-1.5 w-4/5 rounded-sm bg-muted"],
+  ["h-1.5 w-5/6 rounded-sm bg-muted"],
+  ["h-1.5 w-full rounded-sm bg-muted"],
+  ["h-10 w-10"],
+  ["h-10 w-10 animate-spin text-muted-foreground"],
+  ["h-10 w-10 border-2 border-solid"],
+  ["h-10 w-10 border-2 border-white border-solid dark:border-border"],
+  ["h-10 w-10 flex-shrink-0 rounded-full"],
+  ["h-10 w-10 flex-shrink-0 rounded-lg"],
+  ["h-10 w-10 text-destructive"],
+  ["h-10 w-10 text-muted-foreground"],
+  ["h-10 w-10 text-orange-500"],
+  ["h-10 w-10 text-primary"],
+  ["h-10 w-10", "text-primary", "text-muted-foreground"],
+  ["h-10 w-10 text-yellow-500"],
+  ["h-10 w-16 rounded"],
+  ["h-10 w-20 flex-shrink-0 rounded-lg"],
+  ["h-10 w-20 rounded"],
+  ["h-10 w-24 rounded"],
+  ["h-10 w-auto sm:hidden dark:invert"],
+  ["h-11 w-full max-w-lg flex-1"],
+  [
+    "h-12 px-4 text-left align-middle font-medium text-muted-foreground [&:has([role=checkbox])]:pr-0"
+  ],
+  ["h-12 w-12"],
+  ["h-12 w-12 animate-spin text-documenso"],
+  ["h-12 w-12 animate-spin text-primary"],
+  ["h-12 w-12 border-2 border-white border-solid dark:border-border"],
+  ["h-12 w-12 flex-shrink-0 rounded-full"],
+  [
+    "h-12 w-12 rounded-md border bg-background p-1 disabled:pointer-events-none disabled:opacity-50"
+  ],
+  ["h-12 w-12 text-[hsl(228,10%,90%)]"],
+  ["h-12 w-12 text-destructive"],
+  ["h-12 w-12 text-muted-foreground/20 group-hover:text-destructive"],
+  ["h-12 w-12 text-muted-foreground/20 group-hover:text-documenso"],
+  ["h-12 w-12 text-muted-foreground/50"],
+  ["h-12 w-full dark:invert"],
+  ["h-14 pr-14 text-[15px]"],
+  ["h-16 resize-none bg-background"],
+  ["h-16 w-16 border-2 border-solid"],
+  ["h-16 w-16 text-destructive md:h-24 md:w-24"],
+  ["h-2"],
+  ["h-2 w-2 fill-current"],
+  ["h-2 w-2 flex-shrink-0 rounded-full"],
+  ["h-2 w-2 flex-shrink-0 rounded-full", "bg-green-500"],
+  ["h-2 w-2 rounded-full"],
+  [
+    "h-2 w-2 rounded-full transition-opacity duration-150 group-hover:opacity-0"
+  ],
+  [
+    "h-2 w-2 rounded-full transition-opacity duration-150 group-hover:opacity-0",
+    "bg-green-500"
+  ],
+  ["h-2 w-2 shrink-0 rounded-full bg-green-600 dark:bg-green-400"],
+  [
+    "h-2 w-5/6 rounded-[2px] bg-muted-foreground/10 group-hover:bg-destructive/10"
+  ],
+  ["h-2 w-5/6 rounded-[2px] bg-muted-foreground/20 group-hover:bg-documenso"],
+  ["h-2 w-6 rounded"],
+  [
+    "h-2 w-full rounded-[2px] bg-muted-foreground/10 group-hover:bg-destructive/10"
+  ],
+  ["h-2 w-full rounded-[2px] bg-muted-foreground/20 group-hover:bg-documenso"],
+  ["h-2.5 w-2.5 fill-primary"],
+  ["h-20"],
+  ["h-20 w-20 rounded-full"],
+  ["h-24 w-24 border-2 border-solid dark:border-border"],
+  ["h-28 space-y-4"],
+  ["h-3 w-12"],
+  ["h-3 w-16"],
+  ["h-3 w-3"],
+  ["h-3 w-3 flex-shrink-0 text-documenso"],
+  ["h-3 w-3 shrink-0"],
+  ["h-3 w-3 stroke-[3px]"],
+  ["h-3 w-3 text-documenso-800"],
+  ["h-3 w-3 text-muted-foreground"],
+  ["h-3.5 w-3.5"],
+  ["h-3.5 w-3.5 opacity-50"],
+  ["h-3.5 w-3.5 shrink-0 text-documenso-700"],
+  ["h-3.5 w-3.5 shrink-0 text-muted-foreground"],
+  ["h-3.5 w-3.5 text-documenso-700"],
+  ["h-3.5 w-3.5 text-muted-foreground"],
+  ["h-32"],
+  [
+    "h-32 max-h-32 max-w-full overflow-hidden rounded-lg border border-border bg-background shadow shadow-transparent duration-200 hover:shadow-border/80"
+  ],
+  ["h-32 resize-none"],
+  ["h-32 text-center"],
+  ["h-4 w-1/2 max-w-[8rem]"],
+  ["h-4 w-1/3 max-w-[8rem]"],
+  ["h-4 w-10 rounded-full"],
+  ["h-4 w-12 rounded-full"],
+  ["h-4 w-16 rounded-full"],
+  ["h-4 w-20"],
+  ["h-4 w-20 rounded-full"],
+  ["h-4 w-20 rounded-lg"],
+  ["h-4 w-24"],
+  ["h-4 w-24 rounded-full"],
+  ["h-4 w-28 rounded-lg"],
+  ["h-4 w-32 rounded-full"],
+  ["h-4 w-4"],
+  ["h-4 w-4  ", "text-green-600", "text-gray-600"],
+  ["h-4 w-4 animate-spin"],
+  ["h-4 w-4 animate-spin text-muted-foreground"],
+  ["h-4 w-4 flex-none text-primary"],
+  ["h-4 w-4 flex-shrink-0"],
+  ["h-4 w-4 flex-shrink-0", "opacity-0", "opacity-100"],
+  ["h-4 w-4 flex-shrink-0 text-muted-foreground"],
+  ["h-4 w-4 items-start text-muted-foreground"],
+  ["h-4 w-4 opacity-0 transition duration-200 group-hover:opacity-100"],
+  ["h-4 w-4 opacity-50"],
+  ["h-4 w-4 rounded"],
+  ["h-4 w-4 shrink-0 opacity-50"],
+  ["h-4 w-4 shrink-0 text-muted-foreground"],
+  ["h-4 w-4 text-destructive"],
+  ["h-4 w-4 text-muted-foreground"],
+  ["h-4 w-4 transition-transform duration-200"],
+  ["h-4 w-40 rounded-full"],
+  ["h-4 w-48"],
+  ["h-4 w-6 rounded-full"],
+  ["h-4 w-8 rounded-full"],
+  ["h-4 w-px animate-caret-blink bg-foreground duration-1000"],
+  ["h-5 text-muted-foreground"],
+  ["h-5 w-5"],
+  ["h-5 w-5 animate-spin text-muted-foreground"],
+  ["h-5 w-5 animate-spin text-primary md:h-8 md:w-8"],
+  ["h-5 w-5 border-foreground/30 data-[state=checked]:bg-primary"],
+  ["h-5 w-5 flex-shrink-0 opacity-40"],
+  ["h-5 w-5 flex-shrink-0 text-destructive"],
+  ["h-5 w-5 flex-shrink-0 text-muted-foreground"],
+  [
+    "h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors hover:text-foreground"
+  ],
+  ["h-5 w-5 rounded-full"],
+  [
+    "h-5 w-5 rounded-full border-foreground/30 data-[state=checked]:bg-documenso data-[state=checked]:ring-1 data-[state=checked]:ring-primary data-[state=checked]:ring-offset-2 data-[state=checked]:ring-offset-white dark:data-[state=checked]:ring-offset-background"
+  ],
+  ["h-5 w-5 text-muted-foreground"],
+  ["h-5 w-5 text-muted-foreground dark:text-background"],
+  ["h-5 w-5 text-muted-foreground/50"],
+  ["h-5 w-5 text-primary"],
+  ["h-6", "-bottom-6", "absolute top-0 left-0 flex w-6 justify-center"],
+  ["h-6 shrink-0"],
+  ["h-6 w-20 rounded"],
+  ["h-6 w-6"],
+  ["h-6 w-6 animate-spin text-muted-foreground"],
+  [
+    "h-6 w-6 border-2 border-gray-200/50 border-solid transition-colors hover:border-gray-200"
+  ],
+  ["h-6 w-6 cursor-pointer rounded border border-neutral-300 bg-white p-0"],
+  ["h-6 w-6 flex-shrink-0 text-documenso"],
+  ["h-6 w-6 p-0"],
+  ["h-6 w-6 p-0 text-muted-foreground"],
+  ["h-6 w-6 text-muted-foreground"],
+  ["h-6 w-6 text-muted-foreground/60"],
+  ["h-6 w-auto"],
+  ["h-6 w-auto flex-shrink-0"],
+  ["h-6 w-auto md:hidden"],
+  [
+    "h-7 rounded bg-neutral-50 pr-0.5 pl-2 font-normal dark:border dark:border-neutral-500 dark:bg-neutral-600"
+  ],
+  ["h-7 w-7 flex-shrink-0 rounded"],
+  ["h-7 w-7 p-0"],
+  ["h-72"],
+  ["h-8"],
+  ["h-8 gap-x-1.5 py-1.5 pr-2.5 pl-2"],
+  [
+    "h-8 gap-x-1.5 py-1.5 pr-2.5 pl-2 text-destructive hover:bg-destructive/10 hover:text-destructive"
+  ],
+  ["h-8 pl-7"],
+  ["h-8 text-muted-foreground text-sm"],
+  ["h-8 w-[70px]"],
+  ["h-8 w-16 rounded"],
+  ["h-8 w-2 rounded"],
+  ["h-8 w-8"],
+  ["h-8 w-8 animate-spin text-documenso"],
+  ["h-8 w-8 animate-spin text-gray-500"],
+  ["h-8 w-8 animate-spin text-muted-foreground"],
+  ["h-8 w-8 animate-spin text-primary"],
+  ["h-8 w-8 bg-background p-0 md:hidden dark:bg-foreground"],
+  ["h-8 w-8 border border-solid"],
+  ["h-8 w-8 flex-shrink-0 text-muted-foreground/40"],
+  ["h-8 w-8 p-0"],
+  ["h-8 w-8 p-0 md:hidden"],
+  [
+    "h-8 w-8 p-0 text-muted-foreground/80 hover:text-destructive focus-visible:border-destructive focus-visible:ring-destructive"
+  ],
+  ["h-8 w-8 rounded"],
+  ["h-8 w-8 shrink-0 p-0"],
+  ["h-8 w-8 text-destructive"],
+  ["h-8 w-8 text-foreground"],
+  ["h-8 w-8 text-muted-foreground"],
+  ["h-8 w-8 text-muted-foreground/40"],
+  ["h-8 w-8 text-muted-foreground/80"],
+  ["h-8 w-8 text-primary"],
+  ["h-8 w-full justify-start font-normal text-muted-foreground", "font-medium"],
+  [
+    "h-8 w-full justify-start font-normal text-muted-foreground",
+    "font-medium text-foreground"
+  ],
+  ["h-9 w-9 p-0"],
+  ["h-9 w-9 shrink-0 p-0 text-muted-foreground hover:text-foreground"],
+  ["h-9 w-full sm:w-44"],
+  ["h-auto"],
+  ["h-auto justify-start p-4"],
+  ["h-auto overflow-visible bg-transparent"],
+  [
+    "h-auto p-2",
+    "file:text-primary hover:file:bg-primary/90",
+    "file:mr-4 file:cursor-pointer file:rounded-md file:border-0",
+    "file:p-2 file:py-2 file:font-medium",
+    "file:bg-primary file:text-primary-foreground",
+    "cursor-not-allowed"
+  ],
+  [
+    "h-auto px-2.5 py-1.5 text-yellow-900 hover:bg-yellow-100 hover:text-yellow-900 dark:hover:bg-yellow-500"
+  ],
+  ["h-auto w-auto border-none p-0.5"],
+  ["h-fit max-h-[80vh] overflow-y-auto rounded-t-xl bg-widget p-4"],
+  ["h-fit max-h-fit"],
+  ["h-full border border-border transition-all hover:bg-muted/50"],
+  ["h-full max-w-[100%] dark:invert"],
+  ["h-full overflow-auto"],
+  ["h-full rounded-full bg-documenso"],
+  ["h-full rounded-lg border border-border bg-card px-4 py-5"],
+  ["h-full w-full"],
+  ["h-full w-full border-0"],
+  ["h-full w-full dark:hue-rotate-180 dark:invert"],
+  ["h-full w-full", "dark:hue-rotate-180 dark:invert"],
+  [
+    "h-full w-full dark:hue-rotate-180 dark:invert",
+    "cursor-grab",
+    "cursor-grabbing"
+  ],
+  ["h-full w-full flex-1 bg-primary transition-all"],
+  ["h-full w-full max-w-[800px]"],
+  ["h-full w-full object-contain"],
+  ["h-full w-full object-contain p-4"],
+  ["h-full w-full object-cover"],
+  [
+    "h-full w-full object-cover dark:brightness-95 dark:contrast-[70%] dark:invert"
+  ],
+  ["h-full w-full rounded-[inherit]"],
+  ["h-full w-full rounded-sm"],
+  ["h-px flex-1 bg-border"],
+  ["h-screen w-screen bg-envelope-editor-background"],
+  ["hidden"],
+  ["hidden flex-1 group-data-[expanded]/document-widget:block md:block"],
+  ["hidden flex-row items-center sm:flex"],
+  ["hidden group-data-[expanded]/document-widget:block md:block"],
+  [
+    "hidden h-[22px] w-[22px] flex-none items-center justify-center rounded border border-border bg-background text-muted-foreground group-aria-selected:inline-flex"
+  ],
+  ["hidden h-6 md:block"],
+  ["hidden h-6 w-auto md:block"],
+  ["hidden h-6 w-auto sm:block"],
+  ["hidden h-8 w-8 p-0 lg:flex"],
+  ["hidden items-center gap-3.5 text-muted-foreground text-xs sm:flex"],
+  ["hidden items-center space-x-2 lg:flex"],
+  ["hidden items-center space-x-2 md:flex"],
+  ["hidden md:block"],
+  [
+    "hidden rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:inline"
+  ],
+  ["hidden text-sm sm:block"],
+  ["hidden w-1/3 flex-col md:flex"],
+  [
+    "hover-scrollbar w-full shrink-0 border-b bg-background md:w-80 md:overflow-y-auto md:border-r md:border-b-0"
+  ],
+  ["hover:!text-muted-foreground px-4 py-2 text-muted-foreground"],
+  ["hover:underline"],
+  ["hyphens-auto break-words font-medium"],
+  ["inline-block"],
+  ["inline-block leading-none"],
+  [
+    "inline-block max-w-full truncate rounded-md border border-border bg-background px-2.5 py-1.5 text-muted-foreground text-sm"
+  ],
+  [
+    "inline-block max-w-full truncate rounded-md border border-border bg-background px-2.5 py-1.5 text-muted-foreground text-sm lowercase"
+  ],
+  ["inline-block px-4 text-muted-foreground"],
+  ["inline-block rounded-lg p-1"],
+  ["inline-flex flex-wrap"],
+  [
+    "inline-flex h-[18px] min-w-[18px] items-center justify-center rounded border border-border bg-background px-1 font-mono text-[11px]"
+  ],
+  [
+    "inline-flex h-[34px] w-[34px] flex-none items-center justify-center rounded-lg border border-border bg-background text-muted-foreground",
+    "border-transparent bg-primary/10 font-semibold text-primary text-xs"
+  ],
+  [
+    "inline-flex h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground"
+  ],
+  [
+    "inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border text-muted-foreground"
+  ],
+  [
+    "inline-flex h-10 w-10 items-center justify-start text-slate-500 hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50",
+    "mt-8",
+    "mt-0"
+  ],
+  [
+    "inline-flex h-7 flex-none items-center gap-1.5 whitespace-nowrap rounded-md border px-2.5 font-medium text-[13px] transition-colors",
+    "border-input bg-muted text-foreground",
+    "border-border bg-background text-muted-foreground hover:bg-muted/50"
+  ],
+  [
+    "inline-flex h-8 shrink-0 items-center justify-center rounded-md border bg-transparent px-3 font-medium text-sm ring-offset-background transition-colors hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 group-[.destructive]:border-destructive/30 group-[.destructive]:focus:ring-destructive group-[.destructive]:hover:border-destructive/30 group-[.destructive]:hover:bg-destructive group-[.destructive]:hover:text-destructive-foreground"
+  ],
+  ["inline-flex items-center"],
+  ["inline-flex items-center gap-0.5 rounded-md bg-muted p-0.5"],
+  ["inline-flex items-center gap-1.5"],
+  [
+    "inline-flex items-center gap-2 rounded-lg bg-documenso px-4 py-2 font-medium text-fd-primary-foreground text-sm transition-colors hover:bg-documenso/90"
+  ],
+  [
+    "inline-flex items-center gap-2 rounded-lg bg-documenso px-5 py-2.5 font-medium text-fd-primary-foreground text-sm transition-colors hover:bg-documenso-dark/90"
+  ],
+  [
+    "inline-flex items-center gap-2 rounded-lg bg-fd-background border px-4 py-2 text-sm font-medium hover:bg-fd-accent transition-colors"
+  ],
+  [
+    "inline-flex items-center gap-2 rounded-lg bg-fd-primary text-fd-primary-foreground px-4 py-2 text-sm font-medium hover:bg-fd-primary/90 transition-colors"
+  ],
+  [
+    "inline-flex items-center gap-2 rounded-lg border bg-fd-background px-4 py-2 font-medium text-sm transition-colors hover:bg-fd-accent"
+  ],
+  [
+    "inline-flex items-center gap-2 rounded-lg border bg-fd-background px-5 py-2.5 font-medium text-sm transition-colors hover:bg-fd-accent"
+  ],
+  [
+    "inline-flex items-center gap-2 rounded-lg p-2 text-sm hover:bg-fd-accent hover:text-fd-accent-foreground [&_svg]:size-4"
+  ],
+  [
+    "inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-center font-medium text-base text-primary-foreground no-underline"
+  ],
+  [
+    "inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-center font-medium text-primary-foreground text-sm no-underline"
+  ],
+  [
+    "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors data-[state=on]:bg-accent data-[state=on]:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ring-offset-background hover:bg-muted hover:text-muted-foreground",
+    "bg-transparent",
+    "bg-transparent border border-input hover:bg-accent hover:text-accent-foreground",
+    "h-10 px-3",
+    "h-9 px-2.5",
+    "h-11 px-5",
+    "default",
+    "default"
+  ],
+  [
+    "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background",
+    "bg-primary text-primary-foreground hover:bg-primary/90",
+    "bg-destructive text-destructive-foreground hover:bg-destructive/90 focus-visible:ring-destructive",
+    "border border-input hover:bg-accent hover:text-accent-foreground",
+    "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+    "hover:bg-accent hover:text-accent-foreground",
+    "underline-offset-4 hover:underline text-primary",
+    "h-10 py-2 px-4",
+    "h-9 px-3 rounded-md",
+    "h-11 px-8 rounded-md",
+    "default",
+    "default"
+  ],
+  [
+    "inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:bg-accent focus:text-accent-foreground disabled:opacity-50 disabled:pointer-events-none bg-background hover:bg-accent hover:text-accent-foreground data-[state=open]:bg-accent/50 data-[active]:bg-accent/50 h-10 py-2 px-4 group w-max"
+  ],
+  [
+    "inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 font-medium text-sm ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
+  ],
+  [
+    "inline-flex items-center rounded-full px-2 py-1 font-medium text-xs  ",
+    "bg-green-100 text-green-800",
+    "bg-gray-100 text-gray-800"
+  ],
+  [
+    "inline-flex items-center rounded-lg bg-documenso px-5 py-2.5 font-medium text-fd-primary-foreground text-sm transition-colors hover:bg-documenso/90"
+  ],
+  [
+    "inline-flex items-center rounded-lg border bg-fd-background px-5 py-2.5 font-medium text-sm transition-colors hover:bg-fd-accent"
+  ],
+  [
+    "inline-flex items-center rounded-md text-xs font-medium ring-1 ring-inset w-fit",
+    "bg-gray-50 text-gray-600 ring-gray-500/10 dark:bg-gray-400/10 dark:text-gray-400 dark:ring-gray-400/20",
+    "bg-red-50 text-red-700 ring-red-600/10 dark:bg-red-400/10 dark:text-red-400 dark:ring-red-400/20",
+    "bg-yellow-50 text-yellow-800 ring-yellow-600/20 dark:bg-yellow-400/10 dark:text-yellow-500 dark:ring-yellow-400/20",
+    "bg-green-50 text-green-700 ring-green-600/20 dark:bg-green-500/10 dark:text-green-400 dark:ring-green-500/20",
+    "bg-blue-50 text-blue-700 ring-blue-700/10 dark:bg-blue-400/10 dark:text-blue-400 dark:ring-blue-400/30",
+    "bg-orange-50 text-orange-700 ring-orange-700/10 dark:bg-orange-400/10 dark:text-orange-400 dark:ring-orange-400/30",
+    "px-1.5 py-0.5 text-xs",
+    "px-2 py-1.5 text-xs",
+    "px-3 py-2 text-sm",
+    "default",
+    "default"
+  ],
+  ["inline-flex items-start"],
+  ["inset-0 h-full w-full"],
+  [
+    "inset-0 mx-auto flex h-full flex-grow items-center justify-center px-6 py-32"
+  ],
+  ["items-center justify-center"],
+  [
+    "justify-between bg-background font-normal text-muted-foreground hover:text-foreground"
+  ],
+  ["justify-center text-center text-muted-foreground"],
+  ["justify-end"],
+  ["justify-start md:w-full", "/admin/claims", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/documents", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/email-domains", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/email-transports", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/organisation-insights", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/organisation-stats", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/organisations", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/site-settings", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/stats", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/unsealed-documents", "bg-secondary"],
+  ["justify-start md:w-full", "/admin/users", "bg-secondary"],
+  ["konva-container absolute inset-0 z-10 w-full"],
+  ["lg:h-[calc(100vh-6rem)]"],
+  ["list-disc"],
+  ["list-disc pl-5"],
+  ["list-disc space-y-1 text-muted-foreground text-xs"],
+  ["list-inside list-decimal space-y-1 text-fd-muted-foreground text-sm"],
+  ["list-inside list-disc text-muted-foreground"],
+  ["list-inside list-disc text-sm"],
+  ["max-h-[250px] overflow-y-auto"],
+  ["max-h-[300px] overflow-y-auto overflow-x-hidden"],
+  ["max-h-[400px] overflow-y-auto"],
+  [
+    "max-h-[60vh] overflow-auto whitespace-pre-wrap break-all rounded-lg border border-border bg-muted/50 p-4 font-mono text-foreground text-xs leading-relaxed"
+  ],
+  ["max-h-[90vh] overflow-y-auto sm:max-w-xl"],
+  ["max-h-12 max-w-full"],
+  ["max-h-6 print:max-h-4"],
+  [
+    "max-h-60 overflow-y-auto p-1",
+    "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]"
+  ],
+  ["max-h-72 space-y-1 overflow-auto p-1"],
+  ["max-h-96 space-y-2 overflow-y-auto"],
+  ["max-h-none flex-1 overscroll-contain px-2 pt-0.5 pb-2"],
+  ["max-w-[12rem] truncate font-semibold text-2xl"],
+  ["max-w-[200px] text-muted-foreground"],
+  [
+    "max-w-[35ch] text-center font-semibold text-2xl leading-normal md:text-3xl"
+  ],
+  [
+    "max-w-[35ch] text-center font-semibold text-2xl leading-normal md:text-3xl lg:text-4xl"
+  ],
+  ["max-w-[40ch]"],
+  ["max-w-[40ch] space-y-2 py-2 text-muted-foreground"],
+  ["max-w-[50ch]"],
+  ["max-w-[50ch] text-muted-foreground"],
+  [
+    "max-w-[60ch] whitespace-pre-wrap break-words text-center text-muted-foreground text-sm leading-relaxed"
+  ],
+  ["max-w-[60ch] whitespace-pre-wrap break-words text-center text-sm"],
+  ["max-w-2xl"],
+  ["max-w-2xl overflow-y-auto"],
+  ["max-w-80 p-4"],
+  [
+    "max-w-full rounded-sm border-0 bg-transparent p-1 font-medium text-foreground text-sm outline-none hover:outline hover:outline-1 hover:outline-muted-foreground focus:outline focus:outline-1 focus:outline-muted-foreground"
+  ],
+  [
+    "max-w-full rounded-sm border-0 bg-transparent p-1 font-medium text-foreground text-sm outline-none hover:outline hover:outline-1 hover:outline-muted-foreground focus:outline focus:outline-1 focus:outline-muted-foreground",
+    "outline-red-500"
+  ],
+  ["max-w-lg"],
+  ["max-w-md"],
+  ["max-w-md p-4 text-foreground"],
+  ["max-w-md space-y-2 p-4 text-foreground"],
+  ["max-w-none"],
+  ["max-w-sm truncate font-semibold text-foreground text-xs"],
+  ["max-w-xl space-y-8"],
+  ["max-w-xs text-muted-foreground"],
+  ["mb-0"],
+  ["mb-0 text-center font-semibold text-foreground text-lg"],
+  ["mb-1 font-bold text-[10px] text-muted-foreground uppercase tracking-wide"],
+  ["mb-1 font-medium"],
+  ["mb-1 font-medium text-foreground text-lg"],
+  ["mb-1 font-medium text-lg"],
+  ["mb-1 font-semibold"],
+  ["mb-1 font-semibold text-foreground text-lg"],
+  ["mb-1 font-semibold text-foreground text-xl"],
+  ["mb-12 text-center pt-6"],
+  ["mb-16 grid gap-4 md:grid-cols-2"],
+  ["mb-16 grid gap-4 md:grid-cols-3"],
+  ["mb-16 grid gap-8 md:grid-cols-2"],
+  ["mb-16 pt-6 text-center"],
+  ["mb-2"],
+  ["mb-2 flex flex-row items-center font-semibold"],
+  ["mb-2 flex items-end font-medium text-foreground text-sm leading-tight"],
+  ["mb-2 flex items-end font-medium text-sm leading-tight"],
+  [
+    "mb-2 flex w-fit flex-row items-center rounded border border-neutral-300 bg-neutral-200 px-1.5 py-0.5 text-xs dark:border-neutral-500 dark:bg-neutral-600"
+  ],
+  ["mb-2 font-medium"],
+  ["mb-2 font-medium text-muted-foreground text-sm"],
+  ["mb-2 font-medium text-sm"],
+  ["mb-2 font-semibold text-foreground text-sm"],
+  ["mb-2 font-semibold text-gray-900 text-sm"],
+  ["mb-2 font-semibold text-lg"],
+  ["mb-2 font-semibold text-sm"],
+  ["mb-2 font-semibold text-xl"],
+  ["mb-2 h-4 w-24"],
+  [
+    "mb-2 rounded border px-3 py-2 text-left text-foreground hover:bg-neutral-200/30 hover:no-underline"
+  ],
+  ["mb-3"],
+  ["mb-3 flex items-start justify-between"],
+  ["mb-3 font-medium text-neutral-500 text-xs uppercase tracking-wide"],
+  ["mb-3 font-semibold text-foreground text-sm"],
+  ["mb-3 font-semibold text-muted-foreground text-xs uppercase tracking-wider"],
+  ["mb-4"],
+  ["mb-4 flex flex-col gap-4"],
+  ["mb-4 flex flex-col gap-4 md:flex-row md:items-end md:justify-between"],
+  ["mb-4 flex flex-row gap-x-4"],
+  ["mb-4 flex flex-row items-center justify-between"],
+  ["mb-4 flex flex-row items-center justify-between gap-x-4"],
+  ["mb-4 flex flex-row items-start gap-3"],
+  ["mb-4 flex flex-row space-x-4"],
+  ["mb-4 flex flex-wrap items-center gap-2 text-muted-foreground text-sm"],
+  ["mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-muted"],
+  ["mb-4 flex items-center gap-2 font-semibold"],
+  ["mb-4 flex items-center gap-4 border-border border-b"],
+  ["mb-4 flex items-center gap-x-2"],
+  [
+    "mb-4 flex max-w-[800px] flex-row items-center justify-between space-y-0 rounded-sm border border-border bg-background"
+  ],
+  [
+    "mb-4 flex size-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-600 dark:text-blue-400"
+  ],
+  [
+    "mb-4 flex size-12 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+  ],
+  [
+    "mb-4 flex size-12 items-center justify-center rounded-lg bg-purple-500/10 text-purple-600 dark:text-purple-400"
+  ],
+  ["mb-4 flex-1 text-fd-muted-foreground text-sm"],
+  ["mb-4 font-bold text-2xl"],
+  ["mb-4 font-bold text-4xl tracking-tight"],
+  ["mb-4 font-semibold text-lg"],
+  ["mb-4 grid grid-cols-4 gap-4 text-sm"],
+  ["mb-4 h-12 w-12 md:mb-2"],
+  ["mb-4 h-6"],
+  ["mb-4 h-6 p-2"],
+  ["mb-4 max-w-[800px]"],
+  ["mb-4 p-0"],
+  ["mb-4 sm:mb-0"],
+  ["mb-4 text-base"],
+  ["mb-4 text-base text-muted-foreground"],
+  ["mb-4 text-center font-semibold text-2xl text-foreground"],
+  ["mb-6 border-b pb-4"],
+  ["mb-6", "col-span-4", "col-span-5"],
+  ["mb-6 flex flex-row items-center space-x-2 space-y-0"],
+  ["mb-6 flex flex-row justify-between"],
+  ["mb-6 flex h-12 px-4"],
+  ["mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-muted"],
+  ["mb-6 flex items-center justify-between"],
+  ["mb-6 flex px-4"],
+  ["mb-6 grid grid-cols-2 gap-4 md:grid-cols-3"],
+  ["mb-6 inline-flex"],
+  ["mb-6 max-w-sm text-muted-foreground text-sm"],
+  ["mb-6 rounded-xl border bg-transparent"],
+  ["mb-6 text-base"],
+  ["mb-6 text-fd-muted-foreground text-sm"],
+  ["mb-6 text-muted-foreground text-sm"],
+  ["mb-8"],
+  ["mb-8 max-w-md text-center text-muted-foreground text-sm"],
+  ["mb-8 max-w-xl"],
+  ["mb-8 rounded-lg bg-yellow-200 text-yellow-900 dark:bg-yellow-400"],
+  [
+    "mb-8 rounded-lg bg-yellow-200 text-yellow-900 dark:bg-yellow-400",
+    "bg-destructive text-destructive-foreground"
+  ],
+  ["md:flex md:h-dvh md:flex-col md:overflow-hidden"],
+  ["md:flex md:min-h-0 md:flex-1 md:flex-col"],
+  ["md:hidden"],
+  ["md:ml-4"],
+  ["min-h-[100px] resize-y"],
+  ["min-h-[200px] font-mono text-xs"],
+  ["min-h-[80px]"],
+  ["min-h-60 rounded-lg border"],
+  ["min-h-72"],
+  ["min-h-72", "min-h-[23rem]"],
+  ["min-h-screen"],
+  ["min-h-screen bg-background"],
+  ["min-h-screen w-screen bg-gray-50 dark:bg-background"],
+  ["min-w-[150px]"],
+  ["min-w-[60px]"],
+  ["min-w-[60px] hover:text-foreground"],
+  ["min-w-[6rem]"],
+  ["min-w-0"],
+  ["min-w-0 break-all text-muted-foreground text-xs"],
+  ["min-w-0 flex-1"],
+  ["min-w-0 flex-1 truncate"],
+  ["min-w-0 flex-1 truncate font-medium"],
+  ["min-w-0 flex-1 truncate", "font-semibold"],
+  ["min-w-0 text-left"],
+  ["min-w-0 truncate"],
+  ["min-w-0 truncate font-semibold text-base text-foreground md:hidden"],
+  ["min-w-12 text-muted-foreground"],
+  ["ml-1"],
+  ["ml-1 cursor-help text-muted-foreground"],
+  [
+    "ml-1 flex h-6 w-6 items-center justify-center rounded transition-all hover:bg-neutral-200 hover:active:bg-neutral-300 dark:hover:bg-neutral-500 dark:hover:active:bg-neutral-400"
+  ],
+  ["ml-1 h-4 w-4"],
+  ["ml-1 inline-block font-medium text-destructive"],
+  ["ml-1 text-xs"],
+  ["ml-1.5"],
+  ["ml-1.5 font-normal text-foreground text-xs"],
+  ["ml-1.5 font-normal text-foreground text-xs opacity-50"],
+  ["ml-2"],
+  ["ml-2 flex flex-grow flex-col"],
+  ["ml-2 flex flex-row items-center"],
+  ["ml-2 flex flex-row items-center", "ml-6"],
+  ["ml-2 flex flex-row items-center text-muted-foreground text-sm"],
+  ["ml-2 flex items-center gap-1"],
+  ["ml-2 flex items-center justify-center"],
+  ["ml-2 flex items-center text-muted-foreground text-sm"],
+  ["ml-2 h-3 w-3"],
+  ["ml-2 h-4 w-1/3 max-w-[10rem]"],
+  ["ml-2 h-4 w-4"],
+  ["ml-2 h-4 w-4 shrink-0 opacity-50"],
+  ["ml-2 h-7 rounded-md border-border bg-muted px-0.5 font-normal"],
+  ["ml-2 h-8 w-8 p-0"],
+  ["ml-2 inline-block h-[14px]"],
+  ["ml-2 rounded border bg-muted/50 px-2 py-0.5 text-muted-foreground text-xs"],
+  ["ml-2 text-muted-foreground"],
+  ["ml-2 text-muted-foreground text-sm"],
+  ["ml-2 text-muted-foreground text-xs"],
+  [
+    "ml-2 text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+  ],
+  ["ml-2 w-full text-muted-foreground text-sm"],
+  ["ml-3.5 list-outside list-disc space-y-0.5 py-2"],
+  ["ml-4"],
+  [
+    "ml-4 inline-flex items-center justify-center rounded-lg bg-muted px-6 py-3 text-center font-medium text-muted-foreground text-sm no-underline"
+  ],
+  ["ml-8 hidden flex-1 items-center gap-x-12 md:flex md:justify-between"],
+  ["ml-auto flex flex-shrink-0 items-center gap-x-2"],
+  ["ml-auto flex items-center justify-center"],
+  ["ml-auto font-medium text-blue-700 text-sm hover:text-blue-600"],
+  ["ml-auto gap-1.5"],
+  ["ml-auto h-4 w-4"],
+  ["ml-auto h-4 w-4 shrink-0 text-muted-foreground"],
+  ["ml-auto h-4 w-4 text-muted-foreground"],
+  ["ml-auto h-4 w-4 transition-transform duration-200", "rotate-90"],
+  ["ml-auto pl-4 text-muted-foreground text-xs"],
+  ["ml-auto space-x-2"],
+  ["ml-auto text-muted-foreground text-xs"],
+  ["ml-auto text-muted-foreground text-xs tracking-widest"],
+  ["ml-auto text-neutral-400 text-xs"],
+  ["ml-auto text-xs tracking-widest opacity-60"],
+  ["mr-1 -ml-1 h-5 w-5"],
+  ["mr-1 h-3 w-3"],
+  ["mr-1 h-4 w-4"],
+  ["mr-1 h-4 w-4 rounded-full border-2 border-border bg-[blue] shadow-sm"],
+  ["mr-1 h-4 w-4 rounded-full border-2 border-border bg-[green] shadow-sm"],
+  ["mr-1 h-4 w-4 rounded-full border-2 border-border bg-[red] shadow-sm"],
+  ["mr-1 h-4 w-4 rounded-full border-2 border-border bg-black shadow-sm"],
+  ["mr-1 h-5 w-5"],
+  ["mr-1.5 h-3.5 w-3.5"],
+  ["mr-1.5 h-4 w-4"],
+  ["mr-1.5 text-blue-600 dark:text-blue-300"],
+  ["mr-1.5 text-green-500 dark:text-green-300"],
+  ["mr-1.5 text-yellow-500 dark:text-yellow-200"],
+  ["mr-2"],
+  ["mr-2 -ml-1 h-4 w-4"],
+  ["mr-2 -ml-1 h-5 w-5"],
+  ["mr-2 -ml-1 inline h-4 w-4"],
+  ["mr-2 animate-spin"],
+  ["mr-2 animate-spin", "h-5 w-5", "h-4 w-4", "h-5 w-5", "default"],
+  ["mr-2 flex-shrink-0 text-muted-foreground text-sm"],
+  ["mr-2 h-3.5 w-3.5"],
+  ["mr-2 h-4 w-4"],
+  ["mr-2 h-4 w-4 animate-spin"],
+  ["mr-2 h-4 w-4", "opacity-100", "opacity-0"],
+  ["mr-2 h-4 w-4 shrink-0", "opacity-100", "opacity-0"],
+  ["mr-2 h-4 w-4 shrink-0 opacity-50"],
+  ["mr-2 h-4 w-4 text-blue-600 dark:text-blue-300"],
+  ["mr-2 h-4 w-4 text-green-500 dark:text-green-300"],
+  ["mr-2 h-4 w-4 text-yellow-500 dark:text-yellow-200"],
+  ["mr-2 h-5 w-5"],
+  ["mr-2 h-5 w-5 animate-spin"],
+  ["mr-2 h-5 w-5 animate-spin text-documenso"],
+  ["mr-2 h-5 w-5 text-blue-600 dark:text-blue-300"],
+  ["mr-2 h-5 w-5 text-green-500 dark:text-green-300"],
+  ["mr-2 h-5 w-5 text-orange-500 dark:text-orange-300"],
+  ["mr-2 inline-block h-4 w-4"],
+  ["mr-2 inline-block h-5 w-5"],
+  ["mr-2 mb-0.5 inline h-5 w-5 align-middle"],
+  [
+    "mr-2 rounded-sm border p-1 text-muted-foreground opacity-0 transition-opacity duration-200 group-hover:opacity-100"
+  ],
+  [
+    "mr-2 rounded-sm border p-1 text-muted-foreground transition-opacity duration-200 group-hover:opacity-100 md:opacity-0"
+  ],
+  ["mr-2 size-4"],
+  ["mr-2.5 h-5 w-5"],
+  ["mr-3 h-12 w-12 border-2 border-white border-solid dark:border-border"],
+  ["mr-4"],
+  ["mr-4 flex flex-row items-center text-muted-foreground text-sm xl:mr-8"],
+  ["mr-4 h-5 w-5 text-blue-800"],
+  ["mr-4 mb-4 sm:mb-0"],
+  [
+    "mr-4 rounded-lg border border-border border-solid px-4 py-2 text-center font-medium text-foreground text-sm no-underline"
+  ],
+  ["mr-4 text-muted-foreground"],
+  ["ms-auto size-3.5 text-fd-muted-foreground"],
+  [
+    "mt-[11vh] flex max-h-[min(560px,76vh)] w-[620px] max-w-[calc(100vw-2rem)] flex-col gap-0 self-start overflow-hidden rounded-[10px] p-0 shadow-2xl sm:max-w-[620px]"
+  ],
+  ["mt-0"],
+  ["mt-0 flex-1"],
+  ["mt-0.5"],
+  [
+    "mt-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-muted font-bold"
+  ],
+  [
+    "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-documenso-200"
+  ],
+  ["mt-0.5 flex items-center gap-1"],
+  ["mt-0.5 h-4 w-4 flex-shrink-0"],
+  ["mt-0.5 h-5 w-5 flex-shrink-0"],
+  ["mt-0.5 list-inside list-disc"],
+  ["mt-0.5 list-inside list-disc text-muted-foreground text-sm"],
+  ["mt-0.5 size-4 shrink-0", "text-fd-primary"],
+  ["mt-0.5 text-muted-foreground text-sm"],
+  ["mt-0.5 text-muted-foreground text-xs"],
+  ["mt-1"],
+  ["mt-1 block"],
+  ["mt-1 block break-words"],
+  ["mt-1 divide-y text-sm"],
+  ["mt-1 flex flex-col gap-1 data-[state=closed]:hidden"],
+  ["mt-1 flex flex-col justify-between sm:flex-row"],
+  ["mt-1 flex items-center justify-center gap-2"],
+  ["mt-1 flex items-center justify-center text-muted-foreground text-xs"],
+  ["mt-1 flex space-x-2 truncate text-muted-foreground text-xs"],
+  ["mt-1 flex space-x-2 truncate text-muted-foreground/60 text-xs"],
+  ["mt-1 font-mono text-foreground"],
+  ["mt-1 font-mono text-muted-foreground text-xs"],
+  ["mt-1 font-normal text-muted-foreground text-sm"],
+  ["mt-1 h-4 w-1/2 max-w-[12rem]"],
+  ["mt-1 h-4 w-2/3 max-w-[12rem]"],
+  ["mt-1 list-inside list-disc"],
+  ["mt-1 max-w-[40ch] text-center text-muted-foreground text-sm"],
+  ["mt-1 mb-4"],
+  ["mt-1 mb-4 text-muted-foreground text-sm"],
+  ["mt-1 mr-4 hidden md:block"],
+  ["mt-1 px-2.5 py-1.5 text-sm"],
+  ["mt-1 space-y-1 pr-3 pb-2 text-xs"],
+  ["mt-1 text-center text-muted-foreground text-xs"],
+  ["mt-1 text-center text-muted-foreground/70 text-xs"],
+  ["mt-1 text-center text-muted-foreground/80 text-sm"],
+  ["mt-1 text-destructive text-sm"],
+  ["mt-1 text-foreground"],
+  ["mt-1 text-foreground text-sm"],
+  ["mt-1 text-muted-foreground"],
+  ["mt-1 text-muted-foreground text-sm"],
+  ["mt-1 text-muted-foreground text-sm print:text-xs"],
+  ["mt-1 text-muted-foreground text-xs"],
+  ["mt-1 text-sm"],
+  ["mt-1 text-xs hover:text-muted-foreground/80"],
+  ["mt-1 text-yellow-600 dark:text-yellow-400"],
+  ["mt-1.5"],
+  ["mt-1.5 block"],
+  [
+    "mt-1.5 flex cursor-pointer items-center justify-center rounded-md border border-border border-dashed px-4 py-4 transition-colors",
+    "border-primary/50 bg-primary/5",
+    "hover:border-muted-foreground/50 hover:bg-muted/50"
+  ],
+  [
+    "mt-1.5 flex flex-wrap items-center justify-between gap-y-2 sm:mt-2.5 sm:gap-y-0"
+  ],
+  ["mt-1.5 space-y-2"],
+  ["mt-1.5 text-muted-foreground text-sm"],
+  ["mt-12 font-bold text-xl md:text-2xl"],
+  ["mt-12 max-w-md rounded-lg border px-8 py-6"],
+  ["mt-12 w-full"],
+  ["mt-16"],
+  ["mt-16 flex items-center justify-center gap-4"],
+  ["mt-16 gap-8"],
+  ["mt-16 space-y-10"],
+  ["mt-2"],
+  ["mt-2  ", "pointer-events-none"],
+  ["mt-2 bg-background"],
+  ["mt-2 bg-background", "border-destructive ring-2 ring-destructive/20"],
+  ["mt-2 bg-muted"],
+  ["mt-2 block"],
+  ["mt-2 border border-foreground/10 bg-foreground/10 hover:bg-foreground/5"],
+  ["mt-2 border-border/50"],
+  ["mt-2 flex flex-col gap-4"],
+  ["mt-2 flex flex-col gap-y-4 rounded-lg"],
+  ["mt-2 flex flex-col justify-between p-6 sm:flex-row sm:items-center"],
+  ["mt-2 flex flex-row gap-2"],
+  ["mt-2 flex flex-row items-center space-x-4"],
+  ["mt-2 flex flex-row items-center space-x-4", "mt-4"],
+  ["mt-2 flex gap-x-4"],
+  ["mt-2 flex items-center gap-2 sm:mt-0 sm:self-end"],
+  ["mt-2 flex items-center gap-2 space-y-0"],
+  ["mt-2 flex items-center gap-4"],
+  ["mt-2 flex items-center justify-center"],
+  ["mt-2 flex list-inside list-disc flex-col gap-y-2 text-sm"],
+  ["mt-2 flex w-full items-center justify-end"],
+  ["mt-2 font-medium text-destructive text-xs"],
+  ["mt-2 font-medium text-lg text-muted-foreground"],
+  ["mt-2 h-16 resize-none bg-background"],
+  ["mt-2 h-32 resize-none bg-background"],
+  [
+    "mt-2 inline-block rounded bg-primary px-2 py-1 font-medium text-primary-foreground text-xs opacity-60 hover:opacity-100 lg:hidden"
+  ],
+  ["mt-2 list-disc pl-5"],
+  ["mt-2 list-inside list-disc text-muted-foreground text-sm"],
+  ["mt-2 max-w-[40ch] text-center text-muted-foreground/60 text-xs"],
+  ["mt-2 max-w-[40ch] text-muted-foreground text-sm"],
+  ["mt-2 max-w-[60ch]"],
+  ["mt-2 max-w-[60ch] text-center text-muted-foreground text-sm"],
+  ["mt-2 mb-0"],
+  ["mt-2 mb-1 ml-2 font-medium text-muted-foreground text-xs"],
+  ["mt-2 mb-12"],
+  [
+    "mt-2 mb-12 justify-between bg-background font-normal text-muted-foreground hover:text-foreground"
+  ],
+  ["mt-2 mb-4 text-destructive text-sm"],
+  ["mt-2 mb-4 text-muted-foreground text-sm"],
+  ["mt-2 min-h-9"],
+  ["mt-2 px-4 text-muted-foreground text-sm"],
+  [
+    "mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+  ],
+  ["mt-2 rounded-2xl border border-border bg-white p-3 dark:bg-background"],
+  ["mt-2 rounded-lg border p-4"],
+  ["mt-2 space-y-1 text-sm"],
+  ["mt-2 space-y-2 rounded-md border p-4"],
+  ["mt-2 text-base text-muted-foreground"],
+  ["mt-2 text-center text-foreground"],
+  ["mt-2 text-destructive text-sm"],
+  ["mt-2 text-foreground/70 text-sm hover:text-muted-foreground"],
+  ["mt-2 text-muted-foreground"],
+  ["mt-2 text-muted-foreground text-sm"],
+  ["mt-2 text-muted-foreground text-sm print:text-xs"],
+  ["mt-2 text-muted-foreground text-xs"],
+  ["mt-2 text-muted-foreground text-xs md:text-sm"],
+  ["mt-2 text-muted-foreground/60 text-xs"],
+  ["mt-2 text-red-500 text-sm"],
+  ["mt-2 text-right"],
+  ["mt-2 text-sm"],
+  ["mt-2 w-full"],
+  ["mt-2 w-full bg-background text-muted-foreground"],
+  ["mt-2 w-full", "mb-6", "pl-6"],
+  ["mt-2 w-full rounded-md"],
+  [
+    "mt-2 w-full rounded-md",
+    "border-2 border-red-300 ring-2 ring-red-200 ring-offset-2 ring-offset-red-200 focus-visible:border-red-400 focus-visible:ring-4 focus-visible:ring-red-200 focus-visible:ring-offset-2 focus-visible:ring-offset-red-200"
+  ],
+  [
+    "mt-2 w-full rounded-md",
+    "border-2 border-red-300 text-left ring-2 ring-red-200 ring-offset-2 ring-offset-red-200 focus-visible:border-red-400 focus-visible:ring-4 focus-visible:ring-red-200 focus-visible:ring-offset-2 focus-visible:ring-offset-red-200",
+    "text-center",
+    "text-right"
+  ],
+  ["mt-2.5 flex items-center"],
+  ["mt-2.5 flex items-center gap-x-6"],
+  [
+    "mt-2.5 max-w-[60ch] text-center font-medium text-muted-foreground/60 text-sm md:text-base"
+  ],
+  ["mt-2.5 mb-8 flex items-center gap-x-2 text-muted-foreground"],
+  [
+    "mt-20 mb-4 flex w-full max-w-[800px] flex-row items-center justify-between space-y-0 rounded-sm"
+  ],
+  ["mt-3"],
+  ["mt-3 flex w-1/3 flex-col"],
+  ["mt-3 font-bold text-2xl md:text-3xl"],
+  ["mt-3 h-2"],
+  ["mt-3 h-6 w-2/3 rounded border border-primary border-dashed"],
+  ["mt-3 h-6 w-3/4 rounded border border-primary border-dashed"],
+  ["mt-3 inline-block rounded-md px-3 py-1.5 font-medium text-xs"],
+  ["mt-3 space-y-2 rounded-md border p-4"],
+  ["mt-3.5 font-semibold text-sm"],
+  ["mt-3.5 max-w-[22ch] text-sm"],
+  ["mt-36 text-documenso-700 hover:text-documenso-600"],
+  ["mt-36 text-muted-foreground/60 text-sm"],
+  ["mt-4"],
+  ["mt-4 aspect-[1200/630] overflow-hidden rounded-lg border bg-muted/40"],
+  [
+    "mt-4 aspect-[1200/630] overflow-hidden rounded-lg border bg-muted/40",
+    "animate-pulse"
+  ],
+  ["mt-4 block font-semibold text-2xl md:text-3xl"],
+  [
+    "mt-4 block max-w-[20rem] truncate font-semibold text-2xl md:max-w-[30rem] md:text-3xl"
+  ],
+  ["mt-4 border-t px-4 pt-4"],
+  ["mt-4 divide-y rounded-lg border"],
+  ["mt-4 flex flex-1 flex-col"],
+  ["mt-4 flex flex-col gap-3 rounded-lg border border-border p-4"],
+  ["mt-4 flex flex-col gap-4"],
+  ["mt-4 flex flex-col gap-4 md:flex-row"],
+  ["mt-4 flex flex-col gap-4 sm:flex-row"],
+  ["mt-4 flex flex-col gap-y-4"],
+  ["mt-4 flex flex-col rounded-md"],
+  ["mt-4 flex flex-row items-center"],
+  ["mt-4 flex flex-row items-center justify-center"],
+  ["mt-4 flex gap-1"],
+  ["mt-4 flex gap-x-4"],
+  ["mt-4 flex h-full flex-col items-center justify-center"],
+  ["mt-4 flex items-center gap-x-2"],
+  ["mt-4 flex items-center gap-x-4"],
+  ["mt-4 flex items-center text-center text-blue-600"],
+  ["mt-4 flex items-center text-center text-destructive text-sm"],
+  ["mt-4 flex items-center text-center text-documenso-700"],
+  ["mt-4 flex items-center text-center text-orange-600"],
+  ["mt-4 flex justify-end"],
+  ["mt-4 flex justify-end border-t pt-4"],
+  ["mt-4 flex list-inside list-disc flex-col gap-y-0.5"],
+  ["mt-4 flex w-full flex-1 flex-nowrap gap-4"],
+  ["mt-4 flex w-full flex-row sm:mt-0 sm:w-auto sm:self-end"],
+  ["mt-4 flex w-full items-end justify-between"],
+  ["mt-4 flex-shrink-0"],
+  ["mt-4 font-semibold text-3xl"],
+  ["mt-4 font-semibold text-xl"],
+  ["mt-4 grid gap-4 text-sm"],
+  ["mt-4 grid grid-cols-1 gap-3 text-sm sm:grid-cols-2 lg:grid-cols-3"],
+  ["mt-4 grid grid-cols-12 gap-x-8 md:mt-8"],
+  ["mt-4 grid grid-cols-2 gap-4"],
+  ["mt-4 grid h-[80vh] max-h-[60rem] w-full grid-cols-12 gap-x-8"],
+  ["mt-4 grow-0 truncate font-semibold text-2xl md:text-3xl"],
+  ["mt-4 h-1 w-[140px] overflow-hidden rounded-full bg-border"],
+  [
+    "mt-4 h-10 rounded-md border bg-transparent px-3 py-2 text-sm disabled:pointer-events-none disabled:opacity-50"
+  ],
+  [
+    "mt-4 hidden w-full grid-cols-2 items-center group-data-[expanded]/document-widget:grid md:grid"
+  ],
+  ["mt-4 justify-end self-end"],
+  ["mt-4 max-w-[40ch] text-center text-muted-foreground text-sm"],
+  ["mt-4 max-w-[55ch] text-center text-muted-foreground/60 leading-normal"],
+  ["mt-4 max-w-[60ch] text-center text-muted-foreground leading-normal"],
+  ["mt-4 mb-8"],
+  ["mt-4 mb-8 border-border"],
+  ["mt-4 mb-8 grid flex-1 grid-cols-1 gap-4 md:grid-cols-2"],
+  [
+    "mt-4 ml-9 border border-foreground/10 bg-foreground/10 hover:bg-foreground/5"
+  ],
+  ["mt-4 ml-auto"],
+  ["mt-4 space-y-1 text-muted-foreground"],
+  ["mt-4 space-y-4"],
+  ["mt-4 space-y-6"],
+  ["mt-4 text-amber-500 text-sm hover:underline dark:text-amber-400"],
+  ["mt-4 text-base text-muted-foreground"],
+  ["mt-4 text-center text-muted-foreground text-sm"],
+  ["mt-4", "text-destructive"],
+  ["mt-4 text-fd-muted-foreground text-lg"],
+  ["mt-4 text-muted-foreground"],
+  ["mt-4 text-muted-foreground text-sm"],
+  ["mt-4 text-muted-foreground/80 text-sm"],
+  ["mt-4 text-sm"],
+  ["mt-4 truncate font-semibold text-2xl md:text-3xl"],
+  ["mt-4 w-32 bg-warning hover:bg-warning/80"],
+  ["mt-4 w-full"],
+  ["mt-4 w-full max-w-xl border-t pt-4"],
+  ["mt-5 grid grid-cols-2 gap-8"],
+  ["mt-5 w-full bg-background text-muted-foreground"],
+  ["mt-6"],
+  [
+    "mt-6 divide-y divide-neutral-200 overflow-hidden rounded-lg border border-neutral-200 dark:divide-foreground/30 dark:border-foreground/30"
+  ],
+  ["mt-6 flex flex-col gap-4"],
+  ["mt-6 flex flex-col gap-4 md:flex-row"],
+  ["mt-6 flex flex-col justify-between p-6 sm:flex-row sm:items-center"],
+  ["mt-6 flex gap-2"],
+  ["mt-6 flex gap-x-2.5 gap-y-4 md:items-center"],
+  ["mt-6 flex items-center gap-4"],
+  ["mt-6 flex justify-center"],
+  ["mt-6 flex w-full flex-col gap-y-4"],
+  ["mt-6 font-bold text-2xl"],
+  ["mt-6 font-medium text-foreground"],
+  ["mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"],
+  ["mt-6 grid w-full grid-cols-12 gap-8"],
+  [
+    "mt-6 max-w-[35ch] text-center font-semibold text-2xl leading-normal md:text-3xl lg:text-4xl"
+  ],
+  ["mt-6 max-w-[60ch] text-center text-muted-foreground text-sm"],
+  ["mt-6 mb-0 text-center font-semibold text-foreground text-lg"],
+  ["mt-6 mb-0 text-left font-semibold text-foreground text-lg"],
+  ["mt-6 mb-6 text-center"],
+  ["mt-6 rounded-lg bg-muted p-6 text-center"],
+  ["mt-6 rounded-lg border p-4"],
+  ["mt-6 space-y-3"],
+  ["mt-6 space-y-6"],
+  ["mt-6 text-center"],
+  ["mt-6 text-center text-muted-foreground"],
+  ["mt-6 text-center text-muted-foreground text-sm"],
+  ["mt-6 text-muted-foreground"],
+  ["mt-6 text-muted-foreground text-xs"],
+  ["mt-6 w-full"],
+  ["mt-8"],
+  ["mt-8 [&>*>h3]:text-base"],
+  ["mt-8 flex flex-col justify-between p-6 sm:flex-row sm:items-center"],
+  ["mt-8 flex flex-row items-center"],
+  ["mt-8 flex flex-wrap items-center gap-x-2 gap-y-4"],
+  ["mt-8 flex flex-wrap justify-center gap-3"],
+  ["mt-8 flex items-center text-center text-red-600"],
+  ["mt-8 flex w-full flex-col items-start gap-y-4"],
+  [
+    "mt-8 flex w-full max-w-xs flex-col items-stretch gap-4 md:w-auto md:max-w-none md:flex-row md:items-center"
+  ],
+  ["mt-8 font-medium text-foreground"],
+  ["mt-8 grid flex-1 grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4"],
+  ["mt-8 grid gap-8 lg:grid-cols-2 2xl:grid-cols-3"],
+  ["mt-8 max-w-[50ch] text-center"],
+  ["mt-8 max-w-[50ch] text-center text-muted-foreground text-sm"],
+  ["mt-8 mb-6 text-center"],
+  ["mt-8 mb-8 px-4 md:mt-12 md:mb-12 md:px-8"],
+  [
+    "mt-8 overflow-hidden rounded-xl border-2 ring-4 ring-muted/70 md:grid md:grid-cols-[1.08fr_0.92fr] xl:-mx-8"
+  ],
+  ["mt-8 pb-8 md:mt-12 md:pb-12", "md:flex md:min-h-0 md:flex-1 md:flex-col"],
+  ["mt-8 rounded-lg border p-4"],
+  ["mt-8 space-y-12"],
+  ["mt-8 space-y-8"],
+  ["mt-8 text-center font-semibold text-xl md:mt-0"],
+  ["mt-8 text-center text-muted-foreground text-sm italic"],
+  ["mt-8 text-muted-foreground"],
+  ["mt-8 text-muted-foreground text-xs"],
+  ["mt-8 w-full"],
+  ["mt-8 w-full max-w-md"],
+  ["mt-auto"],
+  ["mt-auto flex items-center gap-2.5 border-t bg-muted px-4 py-2.5"],
+  ["mt-auto flex items-center gap-x-1 space-y-0"],
+  ["mt-auto flex items-center gap-x-1 space-y-0", "mb-6"],
+  ["mt-auto flex w-full flex-col space-y-4 self-end"],
+  ["mt-auto font-semibold text-4xl text-foreground leading-8"],
+  ["mt-auto h-10 w-[4.25rem] flex-shrink-0"],
+  [
+    "mt-auto inline-flex h-10 w-10 items-center justify-center hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "mt-auto inline-flex h-10 w-10 items-center justify-center hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50",
+    "mb-6"
+  ],
+  ["mt-auto", "mb-6"],
+  ["mt-auto px-2"],
+  ["mt-auto px-2", "mb-6"],
+  ["mt-auto px-4"],
+  ["mt-auto px-4", "px-2"],
+  ["mt-auto w-fit"],
+  ["mt-auto w-fit", "mb-6"],
+  ["mt-px block truncate text-muted-foreground text-xs"],
+  ["mx-1 h-4 w-4"],
+  ["mx-1 h-5 w-px bg-border"],
+  ["mx-2 h-4"],
+  ["mx-2 h-4 w-4"],
+  ["mx-3 h-4 w-1 rotate-12"],
+  ["mx-4 mb-4"],
+  ["mx-auto"],
+  ["mx-auto -mt-4 flex w-full max-w-screen-xl flex-col px-4 md:px-8"],
+  ["mx-auto -mt-4 max-w-screen-xl px-4 md:px-8"],
+  ["mx-auto -mt-4 w-full max-w-screen-xl px-4 md:px-8"],
+  [
+    "mx-auto flex h-[70vh] w-full max-w-md flex-col items-center justify-center"
+  ],
+  [
+    "mx-auto flex h-auto max-w-screen-xl items-center justify-center px-4 py-3 font-medium text-sm"
+  ],
+  [
+    "mx-auto flex max-w-screen-xl items-center justify-center gap-x-4 px-4 py-2 font-medium text-sm"
+  ],
+  [
+    "mx-auto flex max-w-screen-xl items-center justify-center gap-x-4 px-4 py-2 font-medium text-sm text-yellow-900"
+  ],
+  [
+    "mx-auto flex max-w-xl flex-col items-center justify-center px-4 py-32 text-center"
+  ],
+  [
+    "mx-auto flex w-full items-center justify-between gap-x-4 px-4 md:justify-normal",
+    "md:px-6",
+    "max-w-screen-xl md:px-8"
+  ],
+  ["mx-auto flex w-full max-w-screen-xl items-baseline justify-between"],
+  [
+    "mx-auto flex w-full max-w-screen-xl items-center justify-between gap-x-4 px-4 md:px-8"
+  ],
+  ["mx-auto h-12 w-12"],
+  ["mx-auto h-16 w-16 text-primary"],
+  ["mx-auto h-42"],
+  ["mx-auto max-w-[800px]"],
+  ["mx-auto max-w-4xl px-4 py-12"],
+  ["mx-auto max-w-4xl space-y-6 p-8"],
+  ["mx-auto max-w-screen-xl px-4 md:px-8"],
+  ["mx-auto max-w-xl"],
+  [
+    "mx-auto mb-0 max-w-[80%] text-center font-semibold text-foreground text-lg"
+  ],
+  ["mx-auto mb-1 py-0.5"],
+  ["mx-auto mb-8 max-w-2xl text-fd-muted-foreground text-lg"],
+  ["mx-auto mt-1 mb-6 max-w-[80%] text-center text-base text-muted-foreground"],
+  ["mx-auto mt-1 mb-6 text-left text-base text-muted-foreground"],
+  ["mx-auto mt-1 mb-6 text-left text-base text-muted-foreground italic"],
+  ["mx-auto mt-1 text-left text-base text-muted-foreground"],
+  ["mx-auto mt-12 max-w-xl"],
+  [
+    "mx-auto mt-16 flex w-full max-w-lg flex-col md:mt-16 md:rounded-2xl md:border md:px-8 md:py-16 md:shadow-lg"
+  ],
+  ["mx-auto mt-2 h-2 w-36 rounded-full bg-neutral-200 dark:bg-foreground/20"],
+  [
+    "mx-auto mt-2 mb-6 w-fit rounded-lg bg-muted px-4 py-2 font-medium text-base text-muted-foreground"
+  ],
+  ["mx-auto mt-4 h-2 w-52 rounded-full bg-neutral-300 dark:bg-foreground/30"],
+  [
+    "mx-auto mt-6 w-fit rounded-lg bg-muted px-4 py-2 font-medium text-base text-muted-foreground"
+  ],
+  [
+    "mx-auto mt-8 mb-2 max-w-xl rounded-lg border border-border border-solid p-2 backdrop-blur-sm"
+  ],
+  [
+    "mx-auto mt-8 mb-2 max-w-xl rounded-lg border border-border border-solid p-4 backdrop-blur-sm"
+  ],
+  [
+    "mx-auto mt-8 mb-2 max-w-xl rounded-lg border border-border border-solid px-2 pt-2 backdrop-blur-sm"
+  ],
+  [
+    "mx-auto my-2 w-fit rounded-lg bg-muted px-4 py-2 font-medium text-base text-muted-foreground"
+  ],
+  [
+    "mx-auto my-2 w-fit rounded-lg bg-muted px-4 py-2 text-muted-foreground text-sm"
+  ],
+  ["mx-auto my-auto bg-background font-sans"],
+  ["mx-auto my-auto font-sans"],
+  ["mx-auto w-full"],
+  ["mx-auto w-full max-w-[800px] flex-row items-start gap-3 rounded-sm"],
+  ["mx-auto w-full max-w-3xl py-6 md:py-8"],
+  [
+    "mx-auto w-full max-w-lg bg-background md:my-12 md:rounded-2xl md:border md:p-8 md:shadow-lg"
+  ],
+  ["mx-auto w-full max-w-md"],
+  ["mx-auto w-full max-w-md text-center"],
+  ["mx-auto w-full max-w-screen-md"],
+  ["mx-auto w-full max-w-screen-xl px-4 md:px-8"],
+  [
+    "mx-auto w-full max-w-screen-xl px-4 md:px-8",
+    "md:flex md:min-h-0 md:flex-1 md:flex-col"
+  ],
+  ["mx-auto w-full max-w-screen-xl sm:px-6"],
+  ["mx-auto w-full max-w-xs"],
+  ["my-0 text-sm"],
+  ["my-0.5 flex gap-1", "flex-row flex-wrap", "flex-col gap-y-1"],
+  ["my-0.5 gap-y-1"],
+  ["my-1 flex items-center gap-2"],
+  ["my-1 flex items-center gap-2", "cursor-pointer hover:underline"],
+  ["my-1 text-center text-base"],
+  ["my-1 text-center text-base text-muted-foreground"],
+  [
+    "my-12 flex items-center justify-center px-2 text-center text-muted-foreground text-sm"
+  ],
+  ["my-2"],
+  ["my-2 flex items-center gap-2 font-normal"],
+  ["my-2 flex items-center gap-2 font-normal", "opacity-50"],
+  ["my-2 grid grid-cols-3 gap-4"],
+  ["my-2 ml-4 list-inside list-disc"],
+  ["my-2 text-center text-[11px] text-muted-foreground/80"],
+  ["my-2 w-full justify-between"],
+  ["my-4"],
+  ["my-4 flex flex-row items-center justify-between space-x-4"],
+  ["my-4 font-semibold text-base"],
+  ["my-4 space-y-2"],
+  ["my-4 text-base text-muted-foreground"],
+  ["my-4 text-center"],
+  ["my-6"],
+  ["my-6 flex flex-col justify-between p-6 sm:flex-row sm:items-center"],
+  [
+    "my-6 flex flex-col justify-between p-6 sm:flex-row sm:items-center",
+    "border border-green-600/20 bg-green-50 dark:border-green-500/20 dark:bg-green-500/10",
+    "opacity-60"
+  ],
+  ["my-6 flex flex-row gap-4"],
+  ["my-6 h-4 w-24 rounded-2xl"],
+  ["my-6", "mx-auto mb-4 w-4/5"],
+  ["my-6 text-center"],
+  ["my-8 flex-row-reverse"],
+  ["my-8 flex-row-reverse space-y-4"],
+  ["my-8 font-bold text-2xl"],
+  ["my-8 px-4 md:my-12 md:px-8"],
+  ["my-8 text-muted-foreground text-sm"],
+  ["not-prose max-w-4xl mx-auto px-4"],
+  [
+    "opacity-0 transition-opacity group-hover:opacity-100 data-state-selected:block"
+  ],
+  ["opacity-50"],
+  ["opacity-60 hover:opacity-80"],
+  ["opacity-75 active:pointer-events-none"],
+  ["order-1 col-span-12 md:order-2", "md:col-span-8"],
+  ["order-2 col-span-12 md:order-1 md:col-span-4"],
+  ["outline", "mt-2 sm:mt-0"],
+  ["overflow-hidden"],
+  [
+    "overflow-hidden border-b p-1 text-foreground last:border-0 [&_[cmdk-group-heading]]:mt-2 [&_[cmdk-group-heading]]:px-0 [&_[cmdk-group-heading]]:py-2 [&_[cmdk-group-heading]]:font-normal [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:opacity-50"
+  ],
+  ["overflow-hidden rounded-lg border"],
+  ["overflow-hidden rounded-lg border border-border"],
+  ["overflow-hidden rounded-xl border border-border bg-card shadow-2xl"],
+  [
+    "overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+  ],
+  [
+    "overflow-x-auto rounded-lg border border-border bg-muted/50 p-4 font-mono text-foreground text-xs leading-relaxed"
+  ],
+  ["p-0"],
+  ["p-0 px-4"],
+  ["p-0 text-destructive text-xs hover:text-destructive"],
+  ["p-2"],
+  ["p-2 text-muted-foreground"],
+  ["p-3"],
+  ["p-4"],
+  ["p-4 align-middle [&:has([role=checkbox])]:pr-0", "truncate"],
+  ["p-4 text-muted-foreground"],
+  ["p-6"],
+  ["p-6 pb-4"],
+  ["p-6 pt-0"],
+  ["p-6 pt-4"],
+  ["p-6 text-center font-signature"],
+  ["pb-0.5"],
+  ["pb-2"],
+  ["pb-2", "border-b pb-4", "pt-2", "pr-3"],
+  ["pb-3"],
+  [
+    "peer h-4 w-4 shrink-0 rounded-sm border border-input bg-background ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:border-primary data-[state=checked]:bg-primary"
+  ],
+  [
+    "peer inline-flex h-[24px] w-[44px] shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input"
+  ],
+  ["pl-2 text-sm"],
+  ["pl-8"],
+  ["pointer-events-auto w-full max-w-[760px]"],
+  ["pointer-events-none"],
+  ["pointer-events-none absolute"],
+  [
+    "pointer-events-none absolute -inset-32 -z-50 flex items-center justify-center md:-inset-44 xl:-inset-60 2xl:-inset-80"
+  ],
+  ["pointer-events-none absolute inset-0 flex items-center justify-center"],
+  ["pointer-events-none absolute inset-y-0 left-0 w-[55%]"],
+  [
+    "pointer-events-none absolute top-0 left-0 whitespace-nowrap font-medium text-gray-600 text-sm opacity-0"
+  ],
+  [
+    "pointer-events-none absolute z-50 transition-all duration-1000 ease-in-out"
+  ],
+  [
+    "pointer-events-none block h-5 w-5 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0"
+  ],
+  [
+    "pointer-events-none fixed right-0 bottom-0 left-0 z-50 flex justify-center px-2 pb-2 sm:px-4 sm:pb-6"
+  ],
+  [
+    "pointer-events-none fixed z-50 flex cursor-pointer flex-col items-center justify-center bg-white text-muted-foreground transition duration-200 [container-type:size] dark:text-muted",
+    "-rotate-6 scale-90 opacity-50 dark:bg-black/20",
+    "dark:text-black/60",
+    "font-signature"
+  ],
+  [
+    "pointer-events-none fixed z-50 flex cursor-pointer flex-col items-center justify-center bg-white text-muted-foreground transition duration-200 [container-type:size] dark:text-muted",
+    "font-signature"
+  ],
+  [
+    "pointer-events-none fixed z-50 flex cursor-pointer flex-col items-center justify-center rounded-[2px] bg-white font-noto text-muted-foreground ring-2 transition duration-200 [container-type:size] dark:text-muted",
+    "font-signature"
+  ],
+  [
+    "pointer-events-none fixed z-50 flex cursor-pointer flex-col items-center justify-center rounded-[2px] bg-white font-noto text-muted-foreground ring-2 transition duration-200 [container-type:size] dark:text-muted",
+    "font-signature",
+    "-rotate-6 scale-90 opacity-50 dark:bg-black/20",
+    "dark:text-black/60"
+  ],
+  [
+    "pointer-events-none fixed z-50 flex cursor-pointer flex-col items-center justify-center rounded-[2px] bg-white text-muted-foreground ring-2 transition duration-200 [container-type:size] dark:text-muted"
+  ],
+  [
+    "pointer-events-none fixed z-50 flex cursor-pointer flex-col items-center justify-center rounded-[2px] bg-white text-muted-foreground ring-2 transition duration-200 [container-type:size] dark:text-muted",
+    "-rotate-6 scale-90 opacity-50 dark:bg-black/20",
+    "dark:text-black/60"
+  ],
+  [
+    "pointer-events-none flex h-1/2 w-full flex-col items-center justify-center"
+  ],
+  [
+    "pointer-events-none flex h-full w-full flex-col items-center justify-center"
+  ],
+  ["pointer-events-none h-3 w-3"],
+  ["pointer-events-none h-px w-full"],
+  ["pointer-events-none w-32"],
+  ["pr-10"],
+  ["pr-12"],
+  ["pr-12 font-mono text-sm"],
+  ["print-provider pointer-events-none mx-auto max-w-screen-md"],
+  ["print:break-inside-avoid"],
+  ["print:text-xs"],
+  ["prose dark:prose-invert"],
+  ["pt-0 pb-4"],
+  ["pt-2"],
+  ["pt-6 pb-4"],
+  ["px-0"],
+  ["px-2"],
+  ["px-2", "justify-center", "ring-orange-300"],
+  ["px-2 last:mb-1 [&:not(:first-child)]:mt-1"],
+  ["px-2 last:mb-1 [&:not(:first-child)]:mt-1", "text-muted-foreground"],
+  [
+    "px-2 last:mb-1 [&:not(:first-child)]:mt-1",
+    "text-muted-foreground",
+    "cursor-not-allowed"
+  ],
+  ["px-2 py-1 font-medium text-neutral-400 text-xs uppercase tracking-wide"],
+  ["px-2 py-1.5 font-semibold text-foreground text-sm", "pl-8"],
+  ["px-2 py-1.5 font-semibold text-sm", "pl-8"],
+  ["px-2 py-1.5 text-sm"],
+  ["px-2 py-2 text-center text-muted-foreground text-sm"],
+  ["px-2 py-4 text-center text-sm"],
+  ["px-2 text-muted-foreground lg:px-3"],
+  [
+    "px-2.5 py-1 text-xs transition-colors  ",
+    "bg-neutral-900 text-white",
+    "bg-white text-neutral-700 hover:bg-neutral-100"
+  ],
+  ["px-3"],
+  ["px-4"],
+  ["px-4 [&_label]:text-foreground/70 [&_label]:text-xs"],
+  ["px-4 pb-3"],
+  ["px-4 pt-2.5 pb-4 text-center text-muted-foreground/80 text-xs"],
+  [
+    "px-4 py-2 text-center font-bold text-muted-foreground text-xs uppercase tracking-wide"
+  ],
+  ["px-4 py-2 text-muted-foreground"],
+  ["px-4 py-3 font-medium"],
+  ["px-4 py-3.5"],
+  ["px-5 pt-12 pb-11 text-center"],
+  ["px-5 pt-2 pb-3 text-center text-muted-foreground text-xs"],
+  ["py-0"],
+  ["py-1"],
+  ["py-1", "pointer-events-none rounded-md bg-widget-foreground pt-2"],
+  ["py-1.5 pr-2 pl-8 font-semibold text-sm"],
+  ["py-16"],
+  ["py-16 text-center text-muted-foreground text-sm"],
+  ["py-2"],
+  ["py-24 text-center text-muted-foreground text-sm"],
+  ["py-32"],
+  ["py-32 text-center text-muted-foreground text-sm"],
+  ["py-4"],
+  ["py-4 pr-4"],
+  ["py-4 text-center text-muted-foreground text-sm"],
+  ["py-6"],
+  ["py-6 text-center text-sm"],
+  ["relative"],
+  ["relative aspect-signature-pad rounded-md border border-border bg-muted/25"],
+  [
+    "relative aspect-signature-pad rounded-md border border-border bg-muted/25",
+    "bg-background"
+  ],
+  [
+    "relative block aspect-signature-pad w-full select-none rounded-lg border bg-background"
+  ],
+  [
+    "relative block aspect-signature-pad w-full select-none rounded-lg border bg-background",
+    "pointer-events-none opacity-50"
+  ],
+  ["relative block h-10 w-10"],
+  ["relative col-span-12 lg:col-span-6 xl:col-span-7"],
+  [
+    "relative col-span-12 rounded-xl before:rounded-xl lg:col-span-6 xl:col-span-7"
+  ],
+  ["relative", "col-span-4", "col-span-5"],
+  [
+    "relative flex aspect-signature-pad items-center justify-center rounded-md border border-border bg-muted/25 text-center"
+  ],
+  [
+    "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    "pl-8"
+  ],
+  [
+    "relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none hover:bg-accent hover:text-accent-foreground aria-selected:bg-accent aria-selected:text-accent-foreground data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50"
+  ],
+  [
+    "relative flex cursor-default select-none items-center rounded-sm py-1.5 pr-2 pl-8 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
+  ],
+  [
+    "relative flex cursor-default select-none items-center rounded-sm py-1.5 pr-2 pl-8 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
+  ],
+  [
+    "relative flex cursor-pointer select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50",
+    "pl-8"
+  ],
+  [
+    "relative flex cursor-pointer select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none transition-colors hover:bg-accent hover:text-accent-foreground"
+  ],
+  [
+    "relative flex flex-col gap-4 rounded-lg border border-border bg-widget p-4"
+  ],
+  [
+    "relative flex flex-col items-center justify-center px-4 py-12 sm:px-6 lg:px-8"
+  ],
+  ["relative flex gap-x-4"],
+  [
+    "relative flex h-[38px] w-full items-center justify-center overflow-hidden rounded-md bg-foreground font-semibold text-background text-sm"
+  ],
+  ["relative flex h-[46px] w-[46px] items-center justify-center"],
+  ["relative flex h-10 w-10 items-center justify-center"],
+  [
+    "relative flex h-10 w-10 items-center justify-center border-input border-y border-r font-mono shadow-sm transition-all first:rounded-l-md first:border-l last:rounded-r-md",
+    "z-10 ring-1 ring-ring"
+  ],
+  ["relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full"],
+  [
+    "relative flex h-12 flex-row items-center px-0 py-2 ring-0 focus:outline-none focus-visible:border-0 focus-visible:ring-0 focus-visible:ring-transparent md:px-2"
+  ],
+  ["relative flex h-5 w-5 flex-shrink-0 items-center justify-center"],
+  ["relative flex h-6 w-6 flex-none items-center justify-center bg-widget"],
+  [
+    "relative flex h-6 w-6 flex-none items-center justify-center bg-widget text-foreground/40"
+  ],
+  ["relative flex h-full"],
+  ["relative flex h-full w-full flex-col items-center justify-evenly"],
+  [
+    "relative flex h-full w-full items-center justify-center bg-muted/20 text-muted-foreground text-sm dark:bg-muted"
+  ],
+  ["relative flex items-center gap-2"],
+  ["relative flex items-center justify-center gap-x-2 px-6 py-4"],
+  ["relative flex items-center justify-center gap-x-4 py-2 text-xs uppercase"],
+  [
+    "relative flex items-center px-4 py-3 font-medium text-sm transition-all",
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+    "text-foreground",
+    "text-muted-foreground hover:text-foreground"
+  ],
+  [
+    "relative flex min-h-[160px] cursor-pointer flex-col items-center justify-center rounded-lg border border-border border-dashed bg-background transition"
+  ],
+  [
+    "relative flex min-h-[160px] cursor-pointer flex-col items-center justify-center rounded-lg border border-border border-dashed bg-background transition",
+    "border-primary/50 bg-primary/5",
+    "hover:bg-muted/30",
+    "cursor-not-allowed opacity-60"
+  ],
+  [
+    "relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 py-12 md:p-12 lg:p-24"
+  ],
+  [
+    "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pr-2 pl-8 text-sm outline-none focus:bg-accent focus:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
+  ],
+  ["relative flex w-full flex-col gap-x-6 gap-y-12 md:flex-row"],
+  ["relative flex w-full flex-col gap-y-4"],
+  ["relative flex w-full flex-col gap-y-6"],
+  ["relative flex w-full touch-none select-none items-center"],
+  ["relative flex-1 px-4 md:overflow-y-auto md:px-12 lg:px-16"],
+  ["relative flex-1 rounded-full bg-border"],
+  ["relative flex-none"],
+  ["relative flex-shrink-0"],
+  ["relative h-[236px]"],
+  ["relative h-[4px] rounded-md bg-muted"],
+  ["relative h-10 w-10"],
+  ["relative h-2 w-full grow overflow-hidden rounded-full bg-secondary"],
+  ["relative h-4 w-full overflow-hidden rounded-full bg-secondary"],
+  [
+    "relative h-48 w-full overflow-hidden rounded-lg border border-border bg-background"
+  ],
+  ["relative h-8"],
+  ["relative h-full w-full"],
+  ["relative h-full w-full animate-pulse"],
+  ["relative h-full w-full p-8"],
+  [
+    "relative hidden flex-1 overflow-hidden rounded-xl border border-border xl:flex"
+  ],
+  ["relative hidden h-10 w-10 rounded-lg md:flex"],
+  [
+    "relative inline-flex h-7 animate-fadeIn cursor-default items-center rounded-md border bg-background ps-2 pe-7 pl-2 font-medium text-secondary-foreground text-xs transition-all hover:bg-background disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 data-fixed:pe-2"
+  ],
+  [
+    "relative max-w-full overflow-hidden rounded-lg border border-border bg-background px-4 pt-4 pb-6 shadow shadow-transparent duration-200 hover:shadow-border/80"
+  ],
+  ["relative", "mb-6", "col-span-4", "col-span-5"],
+  [
+    "relative min-h-[38px] rounded-md border border-input text-sm outline-none transition-[color,box-shadow] focus-within:border-ring focus-within:ring-[3px] focus-within:ring-ring/50 has-disabled:pointer-events-none has-disabled:cursor-not-allowed has-aria-invalid:border-destructive has-disabled:opacity-50 has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40",
+    "p-1",
+    "cursor-text",
+    "pe-9"
+  ],
+  [
+    "relative min-h-[38px] rounded-md border border-input text-sm outline-none transition-[color,box-shadow] focus-within:border-ring focus-within:ring-[3px] focus-within:ring-ring/50 has-disabled:pointer-events-none has-disabled:cursor-not-allowed has-aria-invalid:border-destructive has-disabled:opacity-50 has-aria-invalid:ring-destructive/20 dark:has-aria-invalid:ring-destructive/40",
+    "pe-9"
+  ],
+  ["relative min-h-screen"],
+  ["relative min-h-screen min-w-screen"],
+  ["relative min-w-0 max-w-full shrink"],
+  [
+    "relative mt-2 flex items-center justify-center gap-x-4 py-2 text-xs uppercase"
+  ],
+  ["relative mt-2 flex w-full flex-col items-center"],
+  [
+    "relative mt-3 flex flex-col overflow-hidden rounded-lg border bg-background shadow-sm"
+  ],
+  ["relative mt-4"],
+  [
+    "relative mt-4 flex w-full flex-col gap-x-6 gap-y-8 sm:mt-8 md:flex-row lg:gap-x-8 lg:gap-y-0"
+  ],
+  ["relative mt-4 h-[2px] rounded-md bg-muted"],
+  ["relative mt-4 overflow-hidden rounded-lg border bg-background shadow-sm"],
+  ["relative mt-4 w-full"],
+  ["relative mt-6 flex w-full flex-col items-center justify-center"],
+  [
+    "relative mt-6 flex w-full flex-col items-center justify-center",
+    "mt-0 flex-col divide-y overflow-hidden pt-6 md:pt-16 lg:flex-row lg:divide-x lg:divide-y-0 lg:pt-20 xl:pt-24"
+  ],
+  ["relative mt-8"],
+  ["relative mx-auto flex min-h-[100dvh] max-w-screen-lg p-6"],
+  ["relative mx-auto h-36 w-56"],
+  ["relative my-4 h-[4px] rounded-md bg-muted"],
+  ["relative overflow-hidden"],
+  [
+    "relative pb-2 font-medium text-sm transition-colors",
+    "text-foreground after:absolute after:right-0 after:bottom-0 after:left-0 after:h-0.5 after:bg-primary",
+    "text-muted-foreground hover:text-foreground"
+  ],
+  [
+    "relative rounded-lg bg-muted p-4 font-mono text-muted-foreground md:text-center"
+  ],
+  [
+    "relative top-[1px] ml-1 h-3 w-3 transition duration-200 group-data-[state=open]:rotate-180"
+  ],
+  ["relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm bg-border shadow-md"],
+  ["relative w-full"],
+  ["relative w-full max-w-md py-6"],
+  ["relative w-full max-w-sm md:max-w-md"],
+  ["relative w-full", "mb-6"],
+  ["relative w-full rounded border border-border"],
+  [
+    "relative w-full rounded-lg p-4 [&>svg]:absolute [&>svg]:text-foreground [&>svg]:left-4 [&>svg]:top-4 [&>svg+div]:translate-y-[-3px] [&>svg~*]:pl-8",
+    "bg-green-50 text-green-700 [&_.alert-title]:text-green-800 [&>svg]:text-green-400",
+    "bg-gray-50 dark:bg-neutral-900/20 text-muted-foreground [&_.alert-title]:text-foreground",
+    "bg-blue-50 text-blue-700 [&_.alert-title]:text-blue-800 [&>svg]:text-blue-400",
+    "bg-red-50 text-red-700 [&_.alert-title]:text-red-800 [&>svg]:text-red-400",
+    "bg-yellow-50 text-yellow-700 [&_.alert-title]:text-yellow-800 [&>svg]:text-yellow-400",
+    "p-2",
+    "px-4 py-2",
+    "p-4",
+    "default",
+    "default"
+  ],
+  ["relative z-10 flex flex-1 items-center justify-center"],
+  [
+    "relative z-10 flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground"
+  ],
+  [
+    "relative z-10 flex min-h-[min(850px,80vh)] w-full max-w-lg flex-col rounded-xl border border-border bg-neutral-100 p-6 dark:bg-background"
+  ],
+  ["resize-none"],
+  ["ring-0 focus:ring-0"],
+  ["rounded bg-muted p-2"],
+  ["rounded bg-muted px-1 py-0.5"],
+  ["rounded bg-muted-foreground/20 p-1 text-muted-foreground text-sm"],
+  ["rounded border bg-muted/50 px-2 py-0.5 text-muted-foreground text-xs"],
+  [
+    "rounded border p-2  ",
+    "border-green-200 bg-green-50 dark:border-green-500/20 dark:bg-green-500/10",
+    "border-gray-100 bg-gray-100 dark:border-gray-400/20 dark:bg-gray-400/10"
+  ],
+  [
+    "rounded border px-3 py-2 text-left text-foreground hover:bg-muted/40 hover:no-underline"
+  ],
+  [
+    "rounded border px-3 py-2 text-left text-foreground hover:bg-neutral-200/30 hover:no-underline"
+  ],
+  [
+    "rounded px-1.5 py-0.5 font-bold text-[9px] uppercase tracking-wide",
+    "bg-muted text-muted-foreground",
+    "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300"
+  ],
+  ["rounded-[3px] bg-primary/40 text-inherit"],
+  ["rounded-2xl border bg-background px-4 py-1 font-medium text-sm"],
+  ["rounded-2xl border border-border bg-background shadow-md"],
+  ["rounded-2xl border border-border bg-white p-3 dark:bg-background"],
+  ["rounded-full bg-primary/10 p-1.5"],
+  ["rounded-full border border-gray-300 bg-widget p-1 dark:border-neutral-600"],
+  [
+    "rounded-full p-0 text-[0.688rem] text-muted-foreground/60 ring-offset-background hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+  ],
+  [
+    "rounded-full p-0 text-muted-foreground/60 ring-offset-background hover:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-40"
+  ],
+  [
+    "rounded-lg bg-muted/60 p-2 text-center font-mono text-muted-foreground tracking-widest"
+  ],
+  ["rounded-lg border"],
+  [
+    "rounded-lg border bg-fd-background p-3 text-sm hover:border-fd-primary/50 transition-colors"
+  ],
+  [
+    "rounded-lg border bg-fd-background p-3 text-sm transition-colors hover:border-fd-primary/50"
+  ],
+  ["rounded-lg border bg-muted/40 px-3 py-2.5 text-sm"],
+  ["rounded-lg border bg-muted/70 p-4"],
+  ["rounded-lg border border-border bg-muted/50 p-4 text-center"],
+  [
+    "rounded-lg border border-border border-solid px-4 py-2 text-center font-medium text-foreground text-sm no-underline"
+  ],
+  ["rounded-lg border p-4"],
+  ["rounded-md border"],
+  ["rounded-md border bg-muted/30 px-3 py-2"],
+  ["rounded-md border border-dashed px-3 py-2 text-muted-foreground text-xs"],
+  [
+    "rounded-md border border-neutral-300 bg-white px-2 py-1 text-neutral-900 text-xs"
+  ],
+  ["rounded-md border p-4"],
+  [
+    "rounded-md font-medium text-muted-foreground leading-5 ring-offset-background hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:text-muted-foreground/60"
+  ],
+  [
+    "rounded-md font-medium text-muted-foreground leading-5 ring-offset-background hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring dark:text-muted-foreground/60",
+    "text-foreground dark:text-muted-foreground"
+  ],
+  [
+    "rounded-md p-1 text-gray-400 transition-colors hover:bg-white/10 hover:text-gray-100"
+  ],
+  [
+    "rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 md:inline"
+  ],
+  [
+    "rounded-sm p-1.5 text-gray-400 transition-colors hover:bg-white/10 hover:text-gray-100"
+  ],
+  [
+    "rounded-sm px-2 py-0.5 font-medium text-muted-foreground text-xs transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-background data-[state=checked]:text-foreground data-[state=checked]:shadow-sm"
+  ],
+  ["rounded-xl before:rounded-xl"],
+  ["rounded-xl border bg-fd-card/50 p-6"],
+  [
+    "rounded-xl border bg-gradient-to-r from-fd-primary/5 to-fd-primary/10 p-6 text-center"
+  ],
+  [
+    "rounded-xl border bg-gradient-to-r from-fd-primary/5 to-fd-primary/10 p-8 text-center"
+  ],
+  ["scrollbar-hidden flex h-fit flex-shrink-0 space-x-2 overflow-x-auto p-4"],
+  ["scrollbar-hidden max-h-[90vh] overflow-y-auto sm:max-w-md"],
+  ["secondary", "sm", "gap-2"],
+  [
+    "secondary",
+    "sm",
+    "gap-2 [&_svg]:size-3.5 [&_svg]:text-fd-muted-foreground"
+  ],
+  ["select-none"],
+  ["selection:bg-red-100"],
+  ["self-end"],
+  ["shrink-0"],
+  ["shrink-0 bg-border", "h-[1px] w-full", "h-full w-[1px]"],
+  ["shrink-0 px-3"],
+  ["shrink-0 py-1"],
+  ["size-10 -rotate-90"],
+  ["size-3.5 text-fd-muted-foreground"],
+  ["size-4"],
+  ["size-4 shrink-0"],
+  ["size-5"],
+  ["size-5 text-fd-muted-foreground"],
+  ["size-6"],
+  ["slide-in-from-bottom-2 animate-in border-border border-t p-4 duration-200"],
+  [
+    "slide-in-from-left-1 z-50 min-w-[8rem] animate-in overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md"
+  ],
+  [
+    "slide-in-from-top-1 z-50 min-w-[12rem] animate-in overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-md"
+  ],
+  ["sm:hidden"],
+  ["sm:max-w-lg"],
+  ["space-y-0.5"],
+  ["space-y-0.5 divide-y text-muted-foreground [&>li]:p-4"],
+  ["space-y-1"],
+  ["space-y-1.5"],
+  ["space-y-1.5 leading-none"],
+  ["space-y-1.5 text-xs"],
+  ["space-y-2"],
+  [
+    "space-y-2 rounded-md border border-border bg-muted/50 p-3 text-foreground text-sm"
+  ],
+  ["space-y-2 rounded-md border p-4"],
+  ["space-y-2 text-muted-foreground text-sm"],
+  ["space-y-2 text-sm"],
+  ["space-y-3"],
+  ["space-y-3 px-4 [&_.lucide]:text-muted-foreground"],
+  ["space-y-3 px-4 [&_.lucide]:text-muted-foreground", "px-2"],
+  ["space-y-3", "px-4", "mt-4 flex flex-col items-center"],
+  ["space-y-3 rounded-lg border p-4"],
+  ["space-y-4"],
+  ["space-y-4 p-4"],
+  ["space-y-4 rounded-md border p-4"],
+  ["space-y-6"],
+  ["space-y-6 p-4"],
+  ["space-y-8"],
+  ["sr-only"],
+  [
+    "sticky top-0 h-full w-80 flex-shrink-0 overflow-y-auto border-border border-l bg-background py-4"
+  ],
+  [
+    "sticky top-0 h-full w-80 flex-shrink-0 overflow-y-auto border-gray-200 border-l bg-white py-4"
+  ],
+  [
+    "sticky top-0 z-[60] flex h-16 w-full items-center border-b border-b-transparent bg-background/95 backdrop-blur duration-200 supports-backdrop-blur:bg-background/60",
+    "border-b-border"
+  ],
+  [
+    "sticky top-20 flex h-full max-h-[64rem] flex-col overflow-auto rounded-xl border border-border bg-widget px-4 py-6 dark:bg-background"
+  ],
+  [
+    "sticky top-4 max-h-[calc(100vh-2rem)] rounded-lg border border-border bg-widget p-4 pb-6"
+  ],
+  ["table-fixed"],
+  ["text-[clamp(0.425rem,25cqw,0.825rem)]"],
+  ["text-[clamp(0.425rem,25cqw,0.825rem)] text-foreground duration-200"],
+  [
+    "text-[clamp(0.425rem,25cqw,0.825rem)] text-foreground duration-200 group-hover:text-primary group-hover:text-recipient-green"
+  ],
+  ["text-amber-600 dark:text-amber-400"],
+  ["text-base"],
+  ["text-base text-foreground"],
+  ["text-base text-muted-foreground tabular-nums"],
+  ["text-black"],
+  ["text-center"],
+  ["text-center font-bold text-2xl text-foreground"],
+  ["text-center font-medium text-foreground text-lg"],
+  ["text-center font-semibold"],
+  ["text-center font-semibold text-foreground text-lg"],
+  ["text-center font-semibold text-lg"],
+  ["text-center font-signature text-sm"],
+  ["text-center text-base"],
+  ["text-center text-muted-foreground"],
+  ["text-center text-muted-foreground text-sm"],
+  ["text-center text-muted-foreground text-xs"],
+  ["text-center text-sm"],
+  ["text-destructive"],
+  ["text-destructive text-sm"],
+  ["text-destructive text-xs"],
+  ["text-documenso"],
+  ["text-documenso-700 duration-200 hover:opacity-70"],
+  ["text-documenso-700 hover:text-documenso-600"],
+  ["text-documenso-700 hover:text-documenso-600 hover:underline"],
+  ["text-documenso-700 underline"],
+  ["text-documenso-900"],
+  ["text-fd-muted-foreground text-sm"],
+  ["text-fd-muted-foreground text-xs"],
+  ["text-fd-primary hover:underline"],
+  ["text-foreground"],
+  ["text-foreground text-sm"],
+  ["text-foreground underline hover:opacity-80"],
+  ["text-foreground/70 text-xs hover:text-muted-foreground"],
+  ["text-foreground/80 text-sm"],
+  ["text-gray-400 text-sm"],
+  ["text-gray-400 text-xs"],
+  ["text-gray-500 text-xs"],
+  ["text-green-600 dark:text-green-400"],
+  ["text-left"],
+  ["text-lg font-semibold mb-2"],
+  ["text-lg text-fd-muted-foreground max-w-2xl mx-auto"],
+  ["text-muted"],
+  ["text-muted-foreground"],
+  [
+    "text-muted-foreground animate-spin",
+    "h-6 w-6",
+    "h-4 w-4",
+    "h-8 w-8",
+    "default"
+  ],
+  ["text-muted-foreground hover:text-foreground"],
+  ["text-muted-foreground text-sm"],
+  ["text-muted-foreground text-sm duration-200 hover:opacity-70"],
+  [
+    "text-muted-foreground text-sm group-data-[selected]:text-foreground",
+    "invisible"
+  ],
+  ["text-muted-foreground text-sm md:mt-2"],
+  ["text-muted-foreground text-sm print:text-[8pt]"],
+  ["text-muted-foreground text-sm print:text-xs"],
+  ["text-muted-foreground text-xs"],
+  ["text-muted-foreground text-xs leading-[inherit]"],
+  ["text-muted-foreground text-xs tracking-widest"],
+  ["text-muted-foreground/60"],
+  ["text-muted-foreground/70"],
+  ["text-muted-foreground/70 italic"],
+  ["text-muted-foreground/70 text-sm"],
+  ["text-muted-foreground/70 text-xs"],
+  ["text-muted-foreground/80"],
+  ["text-neutral-400 text-xs"],
+  ["text-neutral-500 text-xs"],
+  ["text-primary"],
+  ["text-primary underline"],
+  ["text-red-500"],
+  ["text-right"],
+  ["text-sm"],
+  [
+    "text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+  ],
+  ["text-sm font-medium mb-2"],
+  ["text-sm font-medium text-fd-primary"],
+  ["text-sm hover:underline"],
+  [
+    "text-sm leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+  ],
+  ["text-sm opacity-90"],
+  ["text-sm sm:hidden"],
+  ["text-sm text-fd-muted-foreground"],
+  ["text-sm text-fd-muted-foreground mb-4"],
+  ["text-sm text-fd-muted-foreground mb-4 flex-1"],
+  ["text-sm text-fd-muted-foreground space-y-1 list-decimal list-inside"],
+  ["text-xs"],
+  ["text-xs text-fd-muted-foreground"],
+  ["text-xs", "text-fd-muted-foreground", "text-fd-muted-foreground/70"],
+  [
+    "text-yellow-900 hover:bg-yellow-100 dark:hover:bg-yellow-500",
+    "text-destructive-foreground hover:bg-destructive hover:text-white"
+  ],
+  ["time-zone-field bg-background"],
+  ["transition-opacity"],
+  ["transition-opacity duration-100"],
+  ["transition-opacity duration-100", "pointer-events-none opacity-0"],
+  ["truncate"],
+  ["truncate font-medium text-foreground text-sm"],
+  ["truncate font-medium text-sm"],
+  ["truncate font-medium text-xs"],
+  ["truncate font-semibold text-2xl md:text-3xl"],
+  ["truncate font-semibold text-lg tracking-tight"],
+  ["truncate text-foreground"],
+  ["truncate text-foreground/70"],
+  ["truncate text-foreground/70", "text-foreground/80"],
+  ["truncate text-foreground/70", "text-foreground/80", "opacity-50"],
+  ["truncate text-muted-foreground"],
+  ["truncate text-muted-foreground text-xs"],
+  ["truncate text-muted-foreground text-xs underline hover:text-foreground"],
+  ["underline underline-offset-4"],
+  ["uppercase"],
+  ["variant", "ghost", "h-9 w-9 p-0 font-normal aria-selected:opacity-100"],
+  [
+    "variant",
+    "outline",
+    "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100"
+  ],
+  ["variant", "outline", "mt-2 sm:mt-0"],
+  ["w-[100px]"],
+  ["w-[180px]"],
+  ["w-[200px] justify-between"],
+  ["w-[200px] p-0"],
+  ["w-[200px] px-3"],
+  ["w-[50px] bg-background p-2"],
+  ["w-[min-content] align-top"],
+  ["w-[min-content] max-w-[220px] align-top"],
+  ["w-[var(--radix-popover-trigger-width)] p-0"],
+  ["w-1/2"],
+  ["w-1/2 py-4 pr-4"],
+  [
+    "w-1/3 border-border border-r px-4 py-2 font-mono text-muted-foreground text-xs"
+  ],
+  ["w-1/3 py-4 pr-4"],
+  ["w-10"],
+  [
+    "w-10 text-center",
+    "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+  ],
+  ["w-11/12 items-center overflow-hidden rounded-lg p-0 shadow-2xl lg:mt-0"],
+  ["w-20"],
+  ["w-20 bg-background"],
+  ["w-20", "mt-8"],
+  ["w-20 shrink-0"],
+  ["w-24"],
+  ["w-32"],
+  ["w-48"],
+  ["w-52"],
+  ["w-52 p-0"],
+  ["w-56"],
+  ["w-9 shrink-0"],
+  ["w-9/12 max-w-sm overflow-y-auto"],
+  ["w-96"],
+  ["w-auto"],
+  ["w-auto font-mono text-muted-foreground text-xs"],
+  ["w-auto p-3"],
+  ["w-fit"],
+  ["w-full"],
+  ["w-full aria-disabled:pointer-events-none aria-disabled:opacity-50"],
+  ["w-full bg-background"],
+  ["w-full bg-background text-muted-foreground"],
+  ["w-full bg-black/5 hover:bg-black/10 dark:bg-muted dark:hover:bg-muted/80"],
+  [
+    "w-full bg-transparent px-4 text-center font-signature text-7xl text-foreground placeholder:text-4xl focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
+  ],
+  ["w-full border-border border-b bg-background px-4 py-3 md:px-6"],
+  ["w-full border-dashed"],
+  ["w-full caption-bottom text-sm"],
+  ["w-full dark:brightness-150 dark:contrast-[70%] dark:invert dark:sepia"],
+  ["w-full hover:text-foreground"],
+  ["w-full justify-start"],
+  ["w-full justify-start", "bg-secondary"],
+  ["w-full justify-start", "flex items-center justify-center"],
+  ["w-full justify-start hover:text-destructive"],
+  ["w-full max-w-2xl border"],
+  ["w-full max-w-full whitespace-pre-line break-words"],
+  ["w-full max-w-md"],
+  ["w-full max-w-md text-center"],
+  ["w-full max-w-none md:flex-1"],
+  ["w-full max-w-none py-4"],
+  ["w-full max-w-xl md:max-w-xl lg:max-w-xl"],
+  ["w-full", "mb-6"],
+  [
+    "w-full overflow-hidden break-all text-center font-signature text-muted-foreground leading-tight duration-200"
+  ],
+  ["w-full", "overflow-hidden", "overflow-auto"],
+  ["w-full p-0"],
+  ["w-full px-4 py-2 text-muted-foreground", "bg-accent"],
+  ["w-full px-4 py-2 text-muted-foreground", "bg-accent", "bg-accent"],
+  ["w-full ring-0 focus:ring-0"],
+  [
+    "w-full rounded-lg bg-background [--sheen-color:180_180_180] dark:[--sheen-color:200_200_200]"
+  ],
+  ["w-full rounded-md"],
+  [
+    "w-full rounded-md",
+    "border-2 border-red-300 text-left ring-2 ring-red-200 ring-offset-2 ring-offset-red-200 focus-visible:border-red-400 focus-visible:ring-4 focus-visible:ring-red-200 focus-visible:ring-offset-2 focus-visible:ring-offset-red-200"
+  ],
+  ["w-full sm:w-48"],
+  ["w-full sm:w-auto"],
+  ["w-full space-y-2"],
+  [
+    "w-full text-center",
+    "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+  ],
+  [
+    "w-full text-center [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+  ],
+  ["w-full text-left"],
+  ["w-full text-left text-sm"],
+  ["w-full text-muted-foreground"],
+  [
+    "w-full whitespace-nowrap text-left text-[clamp(0.425rem,25cqw,0.825rem)] text-foreground duration-200"
+  ],
+  [
+    "w-full whitespace-nowrap text-left text-[clamp(0.425rem,25cqw,0.825rem)] text-foreground duration-200",
+    "!text-center",
+    "!text-right"
+  ],
+  [
+    "w-full whitespace-pre-wrap text-left text-[clamp(0.07rem,25cqw,0.825rem)] text-foreground duration-200"
+  ],
+  [
+    "w-full whitespace-pre-wrap text-left text-[clamp(0.07rem,25cqw,0.825rem)] text-foreground duration-200",
+    "!text-center",
+    "!text-right",
+    "font-signature text-[clamp(0.07rem,25cqw,1.125rem)]"
+  ],
+  [
+    "w-full whitespace-pre-wrap text-left text-[clamp(0.425rem,25cqw,0.825rem)] text-foreground duration-200"
+  ],
+  [
+    "w-full whitespace-pre-wrap text-left text-[clamp(0.425rem,25cqw,0.825rem)] text-foreground duration-200",
+    "!text-center",
+    "!text-right"
+  ],
+  ["w-px bg-border"],
+  ["w-screen max-w-lg px-4"],
+  ["w-screen max-w-screen-2xl px-4 md:px-16 lg:-my-16"],
+  ["whitespace-nowrap"],
+  ["whitespace-nowrap font-medium text-foreground text-sm"],
+  ["whitespace-nowrap font-medium text-sm"],
+  ["whitespace-nowrap font-mono text-muted-foreground text-xs"],
+  ["whitespace-nowrap text-primary hover:text-primary"],
+  ["whitespace-nowrap text-right font-medium text-sm"],
+  ["whitespace-pre-line break-words font-sans text-base text-muted-foreground"],
+  [
+    "whitespace-pre-wrap text-[clamp(0.425rem,25cqw,0.825rem)] text-foreground duration-200 group-hover:text-recipient-green"
+  ],
+  ["z-[1001] p-0"],
+  ["z-[50000000] w-full p-0"],
+  [
+    "z-[60] ml-6 flex w-full divide-x divide-border p-0 md:ml-0 md:min-w-[40rem]"
+  ],
+  ["z-[9999]"],
+  ["z-[99999] max-w-md space-y-2 p-4 text-muted-foreground"],
+  ["z-[99999] max-w-xs text-muted-foreground"],
+  [
+    "z-10 flex aspect-[3/4] w-24 origin-top-left rotate-[22deg] flex-col gap-y-1 rounded-lg border border-muted-foreground/20 bg-background/80 px-2 py-4 backdrop-blur-sm group-hover:border-destructive/10 group-hover:bg-destructive/2"
+  ],
+  [
+    "z-10 flex aspect-[3/4] w-24 origin-top-left rotate-[22deg] flex-col gap-y-1 rounded-lg border border-muted-foreground/20 bg-background/80 px-2 py-4 backdrop-blur-sm group-hover:border-documenso/80"
+  ],
+  [
+    "z-10 h-full w-full border-none text-foreground ring-0 focus:border-none focus:ring-0"
+  ],
+  ["z-10 my-0.5 gap-y-1"],
+  [
+    "z-10 rounded-xl border border-border bg-neutral-100 p-6 dark:bg-background"
+  ],
+  ["z-100 w-60 space-y-1 rounded-md border border-solid bg-white p-2 px-3"],
+  [
+    "z-20 flex aspect-[3/4] w-24 flex-col items-center justify-center gap-y-1 rounded-lg border border-muted-foreground/20 bg-background/80 px-2 py-4 backdrop-blur-sm group-hover:border-destructive/50 group-hover:bg-destructive/5"
+  ],
+  [
+    "z-20 flex aspect-[3/4] w-24 flex-col items-center justify-center gap-y-1 rounded-lg border border-muted-foreground/20 bg-background/80 px-2 py-4 backdrop-blur-sm group-hover:border-documenso/80"
+  ],
+  ["z-40"],
+  [
+    "z-40 flex min-h-9 min-w-0 items-center gap-x-2 rounded-lg py-4 transition-[margin,padding,background-color,border-color,box-shadow] duration-200 md:gap-x-4",
+    "sticky bottom-6",
+    "border border-border bg-background px-4 shadow-2xl sm:-mx-2",
+    "border border-transparent bg-transparent px-4 shadow-none sm:px-0"
+  ],
+  ["z-50 ml-2 h-4 w-4"],
+  ["z-50 my-0.5 flex gap-1", "flex-row flex-wrap", "flex-col gap-y-1"],
+  ["z-9999 max-w-md p-4 text-foreground"],
+  [
+    "zoom-in-90 z-50 w-64 animate-in rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none"
+  ]
+]

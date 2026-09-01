@@ -1,0 +1,4529 @@
+[
+  [" space-y-4"],
+  [
+    "-m-1 flex flex-col gap-4 overflow-y-auto p-1 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["-mb-1"],
+  ["-mb-2"],
+  [
+    "-mb-4 -mr-4 -mt-1.25 max-h-[60vh] space-y-6 overflow-y-auto pb-3 pr-4 pt-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["-mb-px"],
+  ["-ml-0.5"],
+  ["-ml-1"],
+  ["-ml-1 flex items-center"],
+  ["-ml-1 h-6"],
+  ["-ml-1 mr-1 size-3.5 text-white"],
+  ["-ml-1 mt-0.5 flex flex-col"],
+  ["-ml-1 size-8"],
+  ["-ml-1 size-8 shrink-0"],
+  [
+    "-ml-1.5 flex items-center gap-1 rounded py-1.5 pl-2 pr-1.5 font-mono text-xs text-text-dimmed transition focus-custom hover:bg-background-hover hover:text-text-bright"
+  ],
+  [
+    "-ml-1.5 h-3 w-3 rounded-full border-2 border-background-bright bg-text-dimmed"
+  ],
+  ["-ml-1.5 size-6 text-blue-500"],
+  ["-ml-1.75 h-6 px-1.5 font-mono text-xs hover:text-text-bright"],
+  ["-ml-2"],
+  ["-ml-8"],
+  ["-ml-8 mb-2"],
+  ["-mr-1 flex items-center gap-1"],
+  ["-mr-1 flex items-center gap-1.5"],
+  ["-mr-1 flex items-center gap-3 text-xs text-text-dimmed"],
+  [
+    "-mr-1 ms-auto rounded p-2 text-text-dimmed transition hover:text-text-bright",
+    "-mt-1"
+  ],
+  ["-mr-2 flex gap-x-1.5"],
+  ["-mt-0.5 block pl-1.5 pr-2 text-sm font-semibold text-text-dimmed"],
+  ["-mt-0.5 mr-1 inline-block h-4 w-4 text-error"],
+  ["-mt-0.5 mr-1 inline-block h-4 w-4 text-success"],
+  ["-mt-0.5 text-sm", "text-text-bright", "text-text-dimmed"],
+  ["-mt-1 text-xs tabular-nums"],
+  ["-mt-1 text-xs tabular-nums text-blue-400"],
+  ["-mt-1 text-xxs tabular-nums text-text-dimmed"],
+  [
+    "-mt-1.5 max-h-[70vh] overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control [&_tbody_tr:last-child]:after:hidden"
+  ],
+  ["-mt-3 flex flex-col items-center gap-2"],
+  ["-mt-px"],
+  [
+    "-mt-px flex flex-wrap justify-end gap-2 border-t border-grid-dimmed px-3 pb-[7px] pt-[6px]",
+    "justify-between"
+  ],
+  ["-mx-0.5 flex items-center justify-center"],
+  ["-mx-1 size-3.5 text-text-bright"],
+  ["-mx-3 mt-3 w-auto flex-1 border-b border-t border-grid-dimmed"],
+  ["-mx-3 w-auto flex-1 border-b border-t border-grid-dimmed"],
+  ["-mx-4 border-grid-bright"],
+  ["-mx-4 px-4"],
+  ["-my-1 shrink-0"],
+  ["-translate-x-1/2 whitespace-nowrap"],
+  ["[--padding-block:0.5rem] sm:[--padding-block:0.25rem]"],
+  ["[&::-webkit-inner-spin-button]:appearance-none"],
+  ["[&>div]:h-fit"],
+  ["[&>span]:gap-6"],
+  [
+    "[&>svg]:text-muted-foreground flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3"
+  ],
+  [
+    "[&>svg]:text-muted-foreground flex w-full flex-wrap items-stretch gap-2 [&>svg]:h-2.5 [&>svg]:w-2.5",
+    "items-center"
+  ],
+  ["@[48rem]:hidden"],
+  ["@container flex flex-col gap-3 border-b border-grid-bright pb-4"],
+  ["@container space-y-2.5"],
+  ["@container/timeline"],
+  ["@max-[19rem]:hidden"],
+  [
+    "absolute -right-0.5 -top-0.5 size-2 rounded-full bg-indigo-500 ring-2 ring-background-bright"
+  ],
+  [
+    "absolute -right-2 top-1/2 z-10 flex size-6 -translate-y-1/2 items-center justify-center rounded border border-border-bright bg-background-hover transition-opacity focus-visible:pointer-events-auto focus-visible:opacity-100",
+    "opacity-100",
+    "pointer-events-none opacity-0",
+    "text-green-500",
+    "text-text-dimmed hover:border-border-bright hover:bg-background-raised hover:text-text-bright"
+  ],
+  [
+    "absolute -right-5 top-1 z-10 -translate-y-1/2 shadow-md md:right-[-4.6rem] md:top-1/2"
+  ],
+  [
+    "absolute -right-6 top-0 z-10 flex size-6 items-center justify-center rounded-r-sm border-y border-r border-border-bright bg-background-hover transition-opacity focus-visible:pointer-events-auto focus-visible:opacity-100",
+    "opacity-100",
+    "pointer-events-none opacity-0",
+    "text-green-500",
+    "text-text-dimmed hover:border-border-bright hover:bg-background-raised hover:text-text-bright"
+  ],
+  [
+    "absolute -right-6 top-0 z-10 flex size-6 items-center justify-center rounded-r-sm border-y border-r border-border-bright bg-background-hover transition-opacity focus-visible:pointer-events-auto focus-visible:opacity-100",
+    "opacity-100",
+    "pointer-events-none opacity-0",
+    "text-text-dimmed hover:border-border-bright hover:bg-background-raised hover:text-rose-400"
+  ],
+  ["absolute bottom-0 left-0 w-[260px] bg-contain bg-bottom-left bg-no-repeat"],
+  [
+    "absolute bottom-1 right-1 top-1 flex aspect-square items-center justify-center rounded",
+    "group-hover/menuitem:bg-tertiary",
+    "group-hover/menuitem:bg-background-hover"
+  ],
+  ["absolute h-3 rounded-l-sm"],
+  ["absolute h-3 rounded-l-sm bg-green-600"],
+  ["absolute h-3 rounded-l-sm", "bg-green-700", "bg-green-600"],
+  ["absolute h-3 rounded-l-sm bg-green-900/20"],
+  ["absolute h-full rounded-full"],
+  ["absolute h-full rounded-full bg-secondary"],
+  [
+    "absolute h-full w-full animate-ping rounded-full border border-blue-500 opacity-100 duration-1000"
+  ],
+  [
+    "absolute h-full w-full animate-ping rounded-full border border-pending opacity-100 duration-1000"
+  ],
+  ["absolute inset-0"],
+  [
+    "absolute inset-0 flex flex-col overflow-hidden rounded-lg border border-grid-dimmed"
+  ],
+  ["absolute inset-0 flex items-center justify-center"],
+  [
+    "absolute inset-0 flex items-center justify-center text-lg text-text-dimmed"
+  ],
+  [
+    "absolute inset-0 grid grid-cols-[100%] grid-rows-[2.5rem_auto_1fr_auto] overflow-hidden"
+  ],
+  ["absolute inset-0 h-full w-full"],
+  ["absolute inset-0 h-full w-full animate-tile-scroll opacity-30"],
+  ["absolute inset-0 h-full w-full animate-tile-scroll opacity-50"],
+  ["absolute inset-0 h-full w-full animate-tile-scroll-offset opacity-30"],
+  ["absolute inset-0 left-0 top-0 h-6"],
+  [
+    "absolute inset-0 overflow-auto rounded-lg border border-grid-dimmed bg-charcoal-900 p-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "absolute inset-0 overflow-y-auto bg-charcoal-900 p-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-charcoal-600"
+  ],
+  ["absolute inset-0 rounded opacity-10"],
+  [
+    "absolute inset-0 rounded-[2px] border border-border-brightest/50 bg-surface-control"
+  ],
+  [
+    "absolute inset-0 rounded-[2px] border border-grid-bright bg-white dark:border-border-brightest/50 dark:bg-surface-control"
+  ],
+  ["absolute inset-0 z-10"],
+  ["absolute inset-x-0 top-0 h-0.5 bg-indigo-500"],
+  [
+    "absolute left-0 top-0 flex h-full w-full items-center justify-center gap-2 bg-background-deep/90"
+  ],
+  [
+    "absolute left-0 top-0 flex h-full w-full items-center justify-center gap-2 bg-background-dimmed"
+  ],
+  [
+    "absolute left-0 top-0 flex h-full w-full items-center justify-center gap-2 bg-background-dimmed/90"
+  ],
+  [
+    "absolute left-0 top-0 flex h-full w-full items-center justify-center gap-2 bg-charcoal-900/90"
+  ],
+  ["absolute left-0 top-0 h-full bg-success"],
+  ["absolute left-0 top-0 h-full rounded-full"],
+  [
+    "absolute left-0 top-0 h-full w-full animate-tile-scroll rounded-sm opacity-30"
+  ],
+  ["absolute left-0 top-0 h-full w-full bg-success"],
+  ["absolute left-0 top-0 w-[260px] bg-contain bg-top-left bg-no-repeat"],
+  ["absolute left-0 top-11 w-full"],
+  [
+    "absolute left-1/2 top-full size-2 -translate-x-1/2 -translate-y-1/2 rotate-45 border-b border-r border-grid-bright bg-background-bright"
+  ],
+  [
+    "absolute left-1/2 w-fit -translate-x-1/2 rounded-sm border border-border-bright bg-background-hover px-0.5 py-0.5 text-xxs tabular-nums text-text-bright"
+  ],
+  ["absolute left-2 right-2 top-1 h-px bg-surface-control"],
+  ["absolute left-3.5 top-2.5"],
+  [
+    "absolute left-full z-10 flex border-border-brightest",
+    "-translate-x-full border-r",
+    "border-l"
+  ],
+  [
+    "absolute right-0 top-0 h-full w-0.5 cursor-col-resize touch-none select-none",
+    "opacity-0 group-hover/header:opacity-100",
+    "bg-surface-control hover:bg-indigo-500",
+    "bg-indigo-500 opacity-100"
+  ],
+  [
+    "absolute right-0 top-0 z-10 flex items-center justify-end bg-background-deep/80 light:bg-white/80 p-1.5"
+  ],
+  [
+    "absolute right-0 top-1/2 mr-1 flex -translate-y-1/2 items-center justify-end gap-0.5 rounded-[0.25rem] p-0.5 group-hover/table-row:ring-1"
+  ],
+  ["absolute right-1 top-1/2 -translate-y-1/2"],
+  [
+    "absolute right-1 top-1/2 z-10 flex size-6 -translate-y-1/2 items-center justify-center rounded border border-border-bright bg-background-hover transition-opacity focus-visible:pointer-events-auto focus-visible:opacity-100",
+    "opacity-100",
+    "pointer-events-none opacity-0",
+    "text-green-500",
+    "text-text-dimmed hover:border-border-bright hover:bg-background-raised hover:text-text-bright"
+  ],
+  ["absolute right-2 top-2.25"],
+  ["absolute right-3 top-2.5 z-50 flex gap-3", "right-1.5 top-1.5", "top-2.5"],
+  ["absolute right-4 top-16 z-50"],
+  [
+    "absolute top-[-5px] left-1/2 h-2 w-2 -translate-x-1/2 rotate-45",
+    "border-l border-t border-amber-800 bg-amber-950 light:border-amber-300 light:bg-amber-50",
+    "border-l border-t border-blue-800 bg-[#1B2334] light:border-blue-300 light:bg-blue-50"
+  ],
+  [
+    "absolute top-[-5px] left-1/2 h-2 w-2 -translate-x-1/2 rotate-45 border-l border-t border-border-bright bg-background-raised"
+  ],
+  ["absolute top-0 bg-top-left bg-no-repeat"],
+  ["absolute top-0 h-full bg-error"],
+  ["absolute top-0 h-full w-full bg-surface-control-hover"],
+  [
+    "absolute top-0 z-10 flex size-6 font-sans transition-opacity has-focus-visible:pointer-events-auto has-focus-visible:opacity-100",
+    "right-0",
+    "-right-6",
+    "opacity-100",
+    "pointer-events-none opacity-0"
+  ],
+  [
+    "absolute top-1/2 box-content h-4 w-0.5 -translate-x-1/2 -translate-y-1/2 rounded-full border-x-[3px]"
+  ],
+  [
+    "absolute w-fit whitespace-nowrap rounded-sm border border-border-bright bg-background-hover px-1 py-0.5 text-xxs tabular-nums text-text-bright"
+  ],
+  ["absolute w-full"],
+  ["absolute w-full text-sm"],
+  [
+    "absolute whitespace-nowrap rounded border border-border-bright bg-background-raised px-2 py-1 text-xxs tabular-nums text-text-bright"
+  ],
+  [
+    "absolute whitespace-nowrap rounded border px-2 py-1 text-xxs tabular-nums",
+    "border-amber-800 bg-amber-950 text-amber-400 light:border-amber-300 light:bg-amber-50 light:text-amber-700",
+    "border-blue-800 bg-[#1B2334] text-blue-400 light:border-blue-300 light:bg-blue-50 light:text-blue-700"
+  ],
+  ["absolute z-10 flex items-center gap-2"],
+  ["absolute z-10 mb-16 flex flex-col items-center gap-2"],
+  ["absolute z-10 mb-16 flex items-center gap-2"],
+  ["after:bg-transparent"],
+  ["align-middle font-medium text-text-bright"],
+  ["animate-caret-blink h-4 w-px bg-text-bright duration-1000"],
+  ["animate-spin motion-reduce:hidden"],
+  [
+    "animated-gradient-glow flex max-h-[90vh] min-h-fit w-full flex-col justify-between gap-0 px-0 pb-0 pt-0 sm:max-w-prose"
+  ],
+  ["animated-gradient-glow-small pointer-events-none absolute inset-0 h-6"],
+  ["aspect-[2/1]"],
+  ["aspect-[2/1] sm:col-span-2 sm:aspect-[4/1]"],
+  ["aspect-square h-6 p-1"],
+  [
+    "aspect-square h-7 min-w-0 bg-surface-control p-1 hover:bg-surface-control-hover"
+  ],
+  ["aspect-square h-7 min-w-0 p-1"],
+  ["aspect-square h-7 p-1"],
+  ["aspect-square px-1!"],
+  ["aspect-square rounded-full p-[7%]"],
+  ["aspect-square text-text-dimmed"],
+  ["bg-[#121317] light:bg-editor-background"],
+  ["bg-[#15171A] my-auto mx-auto font-sans"],
+  [
+    "bg-[#A8FF53] rounded text-[#121317] text-[16px] no-underline text-center px-4 py-3"
+  ],
+  ["bg-background-bright"],
+  ["bg-background-deep"],
+  [
+    "bg-background-dimmed lg:border-r lg:border-grid-bright lg:bg-background-bright"
+  ],
+  ["bg-background-hover px-2.5 py-1.5"],
+  ["bg-background-hover text-text-bright border-border-bright"],
+  [
+    "bg-background-hover text-text-bright rounded px-2 py-1 text-sm border border-grid-dimmed"
+  ],
+  [
+    "bg-background-hover text-text-dimmed rounded px-2 py-0.5 text-xs border border-grid-dimmed"
+  ],
+  ["bg-blue-500/10 text-blue-600 dark:text-blue-400 system:text-blue-500"],
+  ["bg-green-500/10 text-green-700 dark:text-green-400 system:text-green-600"],
+  ["bg-grid-dimmed"],
+  ["bg-indigo-500/10"],
+  [
+    "bg-purple-500/10 text-purple-600 dark:text-purple-400 system:text-purple-500"
+  ],
+  ["bg-sky-500"],
+  ["bg-teal-500"],
+  ["bg-transparent"],
+  ["block"],
+  ["block break-all font-mono text-[10px]"],
+  ["block h-1.5 w-1.5 rounded-full bg-text-dimmed"],
+  [
+    "block h-2 w-2 rounded-full border-4 border-secondary bg-background-dimmed shadow-[0_1px_3px_4px_rgb(0_0_0/0.2),0_1px_2px_-1px_rgb(0_0_0/0.1)] transition hover:border-secondary hover:bg-background-bright focus:shadow-[0_1px_3px_4px_rgb(0_0_0/0.2),0_1px_2px_-1px_rgb(0_0_0/0.1)] focus:outline-hidden"
+  ],
+  ["block h-4 w-4 rounded-full border border-text-bright/30"],
+  ["block h-full w-2.25"],
+  ["block max-w-[32ch] truncate text-xs text-error"],
+  ["block", "min-w-[360px]"],
+  [
+    "block rounded bg-background-bright px-1.5 py-1 font-mono text-xxs text-indigo-300"
+  ],
+  ["block text-center italic text-text-faint"],
+  ["block truncate"],
+  ["block truncate font-mono text-xs"],
+  ["block truncate text-xs text-text-bright"],
+  ["block truncate text-xs text-text-dimmed transition hover:text-text-bright"],
+  ["block truncate text-xxs text-text-dimmed"],
+  ["block w-full"],
+  ["block w-full text-left"],
+  [
+    "border border-border-bright bg-background-bright transition focus-within:border-border-brighter",
+    "rounded-lg p-2",
+    "rounded-md p-1"
+  ],
+  [
+    "border border-border-bright/50 shadow-xs bg-secondary hover:bg-background-raised"
+  ],
+  [
+    "border border-error/20 bg-error/10 py-1 pl-1 pr-2 group-hover/button:border-error/30 group-hover/button:bg-error/20"
+  ],
+  ["border-0"],
+  [
+    "border-amber-300/50 bg-amber-400/10 text-amber-300 group-hover/button:border-amber-400/60 group-hover/button:bg-amber-500/25 group-hover/button:text-amber-200 system:border-transparent system:bg-warning system:text-white system:transition system:group-hover/button:bg-warning system:group-hover/button:brightness-90 system:group-hover/button:text-white"
+  ],
+  [
+    "border-amber-300/50 bg-amber-400/10 text-amber-300 group-hover/button:border-amber-400/60 group-hover/button:bg-amber-500/25 group-hover/button:text-amber-200 system:border-warning/60 system:bg-transparent system:transition system:group-hover/button:bg-warning/10"
+  ],
+  [
+    "border-amber-500/30 bg-amber-500/15 hover:border-amber-500/50! hover:bg-amber-500/25!"
+  ],
+  ["border-amber-500/30 text-amber-400"],
+  [
+    "border-amber-500/30 text-amber-400 system:border-transparent system:bg-warning system:text-white"
+  ],
+  ["border-b border-b-border-bright pb-2"],
+  ["border-b border-dotted border-amber-500/60 text-amber-500"],
+  ["border-b border-dotted border-text-dimmed/50"],
+  ["border-b border-error/20 bg-error/10 p-3"],
+  ["border-b border-grid-bright"],
+  ["border-b border-grid-bright bg-background-bright @container"],
+  ["border-b border-grid-bright pb-1"],
+  ["border-b border-grid-bright pb-2.5 pt-1"],
+  ["border-b border-grid-bright pb-3"],
+  ["border-b border-grid-bright px-3 pr-2"],
+  ["border-b border-grid-bright px-4 py-6"],
+  ["border-b border-grid-bright text-text-dimmed"],
+  ["border-b border-grid-dimmed"],
+  ["border-b border-grid-dimmed bg-background-bright p-3 font-medium"],
+  ["border-b border-grid-dimmed p-3"],
+  ["border-b border-grid-dimmed pb-1"],
+  ["border-b border-grid-dimmed pb-3"],
+  ["border-b border-grid-dimmed text-left text-text-dimmed"],
+  ["border-b-0!"],
+  ["border-grid-dimmed"],
+  ["border-grid-dimmed hover:border-border-bright"],
+  ["border-indigo-500", "border-grid-dimmed hover:border-border-bright"],
+  ["border-indigo-500 group-hover/button:border-indigo-500"],
+  ["border-l-2 border-amber-500/40 pl-2"],
+  ["border-none"],
+  [
+    "border-success/60 text-success [&_span]:text-success hover:border-success",
+    "border-warning/60 text-warning [&_span]:text-warning hover:border-warning"
+  ],
+  ["border-t border-green-500/20 pt-2 text-xs"],
+  ["border-t border-grid-bright"],
+  [
+    "border-t border-grid-bright bg-background-bright after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:bg-grid-bright"
+  ],
+  ["border-t border-grid-bright bg-background-deep lg:border-l lg:border-t-0"],
+  ["border-t border-grid-bright p-1"],
+  ["border-t border-grid-bright pt-4"],
+  ["border-t border-grid-bright px-2 pb-2 pt-2"],
+  ["border-t border-grid-dimmed"],
+  ["border-t border-grid-dimmed pt-3"],
+  ["border-t border-grid-dimmed pt-4"],
+  ["border-t border-grid-dimmed py-2.5 first:border-t-0"],
+  ["border-t border-yellow-500/50 pt-2"],
+  ["border-t-0"],
+  ["border-t-0", "overflow-visible"],
+  [
+    "border-text-dimmed/40 text-text-dimmed group-hover:text-text-bright/80 group-hover:border-text-dimmed/60"
+  ],
+  [
+    "border-yellow-500/30 bg-yellow-500/15 hover:border-yellow-500/50! hover:bg-yellow-500/25!"
+  ],
+  ["break-all"],
+  ["break-all font-mono text-[10px] text-text-dimmed"],
+  ["break-all font-mono text-[10px] text-text-faint"],
+  [
+    "break-all font-mono text-xxs leading-relaxed",
+    "text-text-dimmed",
+    "text-blue-400/80",
+    "text-amber-400/80"
+  ],
+  ["break-all text-left font-mono text-[10px]"],
+  [
+    "break-all text-text-dimmed transition-colors group-hover:text-text-bright/80"
+  ],
+  ["button"],
+  ["CANCELED"],
+  ["capitalize"],
+  ["capitalize text-text-bright"],
+  [
+    "col-span-3 grid grid-cols-subgrid items-center gap-x-2 border-b border-grid-bright py-2 last:border-b-0"
+  ],
+  [
+    "col-span-4 flex h-[1.8rem] w-full items-center gap-2 rounded border bg-background-hover py-0.5 pl-0 pr-2 transition-colors",
+    "border-indigo-500 ",
+    "border-border-bright hover:border-border-bright",
+    "border-error"
+  ],
+  ["col-start-1 row-start-1 flex items-center gap-x-1.5"],
+  ["contents"],
+  [
+    "contrast-chip inline-flex items-center rounded px-2 py-0.5 text-xs font-medium"
+  ],
+  [
+    "contrast-chip inline-flex items-center rounded px-2 py-0.5 text-xs font-medium  "
+  ],
+  [
+    "contrast-chip inline-flex w-fit items-center rounded px-2 py-0.5 text-xs font-medium"
+  ],
+  ["cursor-crosshair select-none"],
+  ["cursor-default", "cursor-pointer"],
+  [
+    "cursor-default",
+    "cursor-pointer",
+    "rounded-sm border border-border-bright bg-transparent transition checked:bg-indigo-500! group-hover:bg-background-deep checked:group-hover:bg-indigo-500 group-focus:ring-1 focus:ring-indigo-500 focus:ring-offset-0 focus:ring-offset-transparent focus-visible:outline-hidden focus-visible:ring-indigo-500",
+    "bg-background-raised! checked:bg-background-raised! checked:group-hover:bg-background-raised! group-hover:bg-background-raised!"
+  ],
+  [
+    "cursor-default underline decoration-text-faint decoration-dashed underline-offset-4 transition hover:decoration-text-dimmed"
+  ],
+  ["cursor-grab group-hover/button:bg-transparent active:cursor-grabbing"],
+  [
+    "cursor-help rounded bg-background-hover px-1.5 py-0.5 font-mono text-xxs text-indigo-400 transition-colors hover:bg-background-raised hover:text-indigo-300"
+  ],
+  ["cursor-not-allowed"],
+  [
+    "cursor-not-allowed",
+    "cursor-default",
+    "cursor-pointer",
+    "rounded-sm border border-border-bright bg-transparent transition checked:bg-indigo-500! group-hover:bg-background-deep checked:group-hover:bg-indigo-500 group-focus:ring-1 focus:ring-indigo-500 focus:ring-offset-0 focus:ring-offset-transparent focus-visible:outline-hidden focus-visible:ring-indigo-500",
+    "opacity-50",
+    "bg-background-raised! checked:bg-background-raised! checked:group-hover:bg-background-raised! group-hover:bg-background-raised!"
+  ],
+  ["cursor-not-allowed opacity-50"],
+  ["cursor-pointer"],
+  ["cursor-pointer [&_button]:cursor-pointer"],
+  ["cursor-pointer [&_td]:cursor-pointer"],
+  [
+    "cursor-pointer bg-transparent px-1 py-0 text-left text-text-dimmed transition-colors hover:bg-transparent"
+  ],
+  [
+    "cursor-pointer",
+    "cursor-default align-middle",
+    "[&:has([data-hidden-buttons])]:w-auto sticky right-0 bg-background-dimmed",
+    "group-hover/table-row:before:absolute group-hover/table-row:before:left-0 group-hover/table-row:before:-top-px group-hover/table-row:before:h-px group-hover/table-row:before:w-3 group-hover/table-row:before:bg-background-hover group-hover/table-row:after:absolute group-hover/table-row:after:bottom-0 group-hover/table-row:after:left-0 group-hover/table-row:after:h-px group-hover/table-row:after:w-3 group-hover/table-row:after:bg-background-hover group-focus-visible/table-row:bg-background-bright"
+  ],
+  ["cursor-pointer focus:outline-hidden"],
+  ["cursor-pointer text-xs"],
+  ["cursor-pointer text-xs text-text-dimmed hover:text-text-bright"],
+  [
+    "cursor-pointer transition-colors",
+    "bg-background-hover",
+    "hover:bg-background-dimmed"
+  ],
+  ["cursor-pointer whitespace-nowrap group-disabled:cursor-not-allowed"],
+  ["disabled:cursor-not-allowed"],
+  ["disabled:text-text-dimmed/50", "placeholder:text-text-dimmed/70"],
+  ["divide-ui-border mb-6 flex w-full flex-col divide-y border-y"],
+  [
+    "divide-y divide-background-bright overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "divide-y divide-grid-bright bg-background-bright after:absolute after:bottom-0 after:left-0 after:right-0 after:z-1 after:h-px after:bg-grid-bright"
+  ],
+  ["divide-y divide-grid-dimmed border-b border-grid-dimmed"],
+  [
+    "divide-y divide-grid-dimmed rounded-md border border-grid-dimmed bg-background-deep"
+  ],
+  [
+    "drag-handle mb-3 flex items-start justify-between gap-2 pl-4 pr-3",
+    "cursor-grab active:cursor-grabbing"
+  ],
+  ["duration-0 group-hover/table-row:text-text-bright"],
+  ["fill-background-bright stroke-grid-bright"],
+  ["fill-none"],
+  ["fill-none  ", "stroke-error", "stroke-success"],
+  ["fill-none stroke-grid-bright"],
+  ["fill-popover z-50"],
+  ["fill-text-dimmed"],
+  [
+    "fixed inset-0 z-50 bg-background-dimmed/80 backdrop-blur-sm transition-opacity animate-in fade-in"
+  ],
+  [
+    "fixed inset-0 z-50 bg-background-dimmed/90 backdrop-blur-xs transition-all duration-100 data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=open]:fade-in"
+  ],
+  [
+    "fixed inset-0 z-50 bg-black/50 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0"
+  ],
+  [
+    "fixed inset-0 z-50 flex flex-col items-center justify-center overflow-y-auto bg-[#16181C]"
+  ],
+  ["fixed inset-0 z-50 flex items-end justify-center sm:items-center"],
+  ["fixed inset-0 z-50 flex items-start justify-center sm:items-center"],
+  [
+    "fixed z-50 gap-4 overflow-y-auto bg-background-dimmed shadow-lg transition ease-in-out border-grid-dimmed data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-300",
+    "inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
+    "inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom",
+    "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm",
+    "inset-y-0 right-0 h-full w-3/4 border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm",
+    "right"
+  ],
+  [
+    "fixed z-50 grid gap-4 border bg-background-dimmed shadow-lg animate-in data-[state=open]:fade-in-90",
+    "inset-6 rounded-lg pt-2.5 px-4 pb-4",
+    "w-full rounded-b-lg px-4 pb-4 pt-2.5 data-[state=open]:slide-in-from-bottom-10 sm:max-w-lg sm:rounded-lg sm:zoom-in-90 sm:data-[state=open]:slide-in-from-bottom-0"
+  ],
+  [
+    "fixed z-50 grid w-full max-w-lg scale-100 gap-4 border bg-background-dimmed p-6 opacity-100 shadow-lg animate-in fade-in-90 slide-in-from-bottom-10 sm:rounded-lg sm:zoom-in-90 sm:slide-in-from-bottom-0 md:w-full"
+  ],
+  ["flex"],
+  ["flex", "cursor-default"],
+  ["flex", "cursor-not-allowed"],
+  [
+    "flex cursor-pointer items-center gap-2 py-1 hover:bg-blue-500/10",
+    "bg-blue-500/20 hover:bg-blue-500/30"
+  ],
+  ["flex duration-150 animate-in fade-in-0"],
+  ["flex flex-1 flex-col"],
+  ["flex flex-1 flex-col items-center justify-center gap-3"],
+  ["flex flex-1 flex-col overflow-hidden"],
+  ["flex flex-1 flex-col overflow-hidden px-3"],
+  ["flex flex-1 flex-col rounded-md border border-grid-dimmed"],
+  ["flex flex-1 items-center"],
+  ["flex flex-1 items-center gap-1.5"],
+  ["flex flex-1 items-center justify-between"],
+  [
+    "flex flex-1 items-center justify-between py-2 pl-2 pr-3 text-sm text-text-bright transition group-hover:border-grid-bright hover:bg-grid-dimmed [&[data-state=open]>svg]:rotate-180"
+  ],
+  ["flex flex-1 items-center justify-center"],
+  [
+    "flex flex-1 items-center justify-end gap-2 overflow-hidden border-b border-grid-dimmed pl-3"
+  ],
+  ["flex flex-1 items-end gap-1"],
+  [
+    "flex flex-1 justify-between gap-3 leading-none",
+    "items-end",
+    "items-center"
+  ],
+  ["flex flex-col"],
+  ["flex flex-col bg-background-bright"],
+  ["flex flex-col border-t border-grid-bright p-1"],
+  ["flex flex-col divide-y divide-grid-bright px-3"],
+  ["flex flex-col divide-y divide-grid-dimmed"],
+  ["flex flex-col gap-0 bg-background-bright px-0 pb-0"],
+  [
+    "flex flex-col gap-0 p-0 pt-[2.9rem] sm:h-[80vh] sm:max-h-[80vh] sm:max-w-[80vw]"
+  ],
+  ["flex flex-col gap-0 text-sm"],
+  ["flex flex-col gap-0.5"],
+  ["flex flex-col gap-0.5 pb-1"],
+  ["flex flex-col gap-0.5 px-1 py-3"],
+  ["flex flex-col gap-0.5 text-sm text-text-dimmed"],
+  ["flex flex-col gap-0.5 text-xs"],
+  ["flex flex-col gap-1"],
+  ["flex flex-col gap-1 border-b border-grid-bright p-1"],
+  [
+    "flex flex-col gap-1 border-b border-grid-dimmed px-3 py-2 hover:bg-charcoal-800"
+  ],
+  ["flex flex-col gap-1 border-t border-grid-bright p-1"],
+  ["flex flex-col gap-1 border-t border-grid-bright p-1", "items-center"],
+  ["flex flex-col gap-1 overflow-y-hidden"],
+  ["flex flex-col gap-1 p-1"],
+  ["flex flex-col gap-1 pt-2"],
+  ["flex flex-col gap-1 pt-6"],
+  ["flex flex-col gap-1 py-1"],
+  ["flex flex-col gap-1 py-2.5"],
+  ["flex flex-col gap-1 text-xs"],
+  ["flex flex-col gap-1 text-xs text-text-dimmed"],
+  ["flex flex-col gap-1.5"],
+  ["flex flex-col gap-1.5", "flex items-end gap-1"],
+  ["flex flex-col gap-1.5 py-2.5"],
+  [
+    "flex flex-col gap-1.5 rounded border border-text-dimmed/20 bg-text-dimmed/5 px-3 py-2.5 text-sm"
+  ],
+  ["flex flex-col gap-1.5 rounded-sm border border-grid-dimmed p-3"],
+  ["flex flex-col gap-10 p-8 pb-24"],
+  ["flex flex-col gap-10 py-6"],
+  ["flex flex-col gap-12 p-8"],
+  ["flex flex-col gap-2"],
+  ["flex flex-col gap-2 border-t border-grid-dimmed px-2.5 py-2"],
+  ["flex flex-col gap-2 divide-y divide-grid-bright"],
+  ["flex flex-col gap-2 divide-y divide-grid-dimmed"],
+  ["flex flex-col gap-2 p-3"],
+  ["flex flex-col gap-2 pb-0 pt-3"],
+  ["flex flex-col gap-2 pb-2"],
+  ["flex flex-col gap-2 pb-4"],
+  ["flex flex-col gap-2 pt-3"],
+  ["flex flex-col gap-2 pt-8"],
+  ["flex flex-col gap-2 px-2 pt-2"],
+  ["flex flex-col gap-2 rounded border bg-background-bright p-3"],
+  [
+    "flex flex-col gap-2 rounded border border-amber-500/30 bg-amber-500/10 p-2 pt-1.5"
+  ],
+  [
+    "flex flex-col gap-2 rounded border border-yellow-500/30 bg-yellow-500/10 p-2 pt-1.5"
+  ],
+  ["flex flex-col gap-2 rounded-sm border border-grid-dimmed p-3"],
+  ["flex flex-col gap-2 rounded-sm border border-rose-500/50 px-3 pb-3 pt-2"],
+  ["flex flex-col gap-2.5"],
+  ["flex flex-col gap-2.5 border-t border-grid-dimmed pt-3"],
+  ["flex flex-col gap-2.5 pb-1"],
+  ["flex flex-col gap-2.5", "px-2.5"],
+  ["flex flex-col gap-3"],
+  ["flex flex-col gap-3 divide-y divide-grid-dimmed pt-2"],
+  ["flex flex-col gap-3 lg:flex-row"],
+  [
+    "flex flex-col gap-3 overflow-hidden border-b border-grid-bright bg-background-bright py-2 pl-2 pr-4"
+  ],
+  ["flex flex-col gap-3 overflow-y-auto p-3"],
+  ["flex flex-col gap-3 p-2"],
+  ["flex flex-col gap-3 p-3 pt-2"],
+  ["flex flex-col gap-3 p-4"],
+  ["flex flex-col gap-3 pt-2"],
+  ["flex flex-col gap-3 pt-3"],
+  ["flex flex-col gap-3 py-3"],
+  [
+    "flex flex-col gap-3 rounded-md border border-grid-bright bg-background-bright p-4"
+  ],
+  ["flex flex-col gap-4"],
+  ["flex flex-col gap-4 bg-background-bright p-4"],
+  [
+    "flex flex-col gap-4 overflow-y-auto px-3 pt-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["flex flex-col gap-4 p-3"],
+  ["flex flex-col gap-4 p-4"],
+  ["flex flex-col gap-4 p-6"],
+  ["flex flex-col gap-4 pt-2"],
+  ["flex flex-col gap-4 pt-3"],
+  ["flex flex-col gap-4 py-3"],
+  ["flex flex-col gap-4 py-4"],
+  ["flex flex-col gap-4 py-8"],
+  ["flex flex-col gap-6"],
+  ["flex flex-col gap-6 py-4"],
+  ["flex flex-col gap-6 py-6"],
+  ["flex flex-col gap-8"],
+  ["flex flex-col gap-y-0.5"],
+  ["flex flex-col gap-y-0.5 overflow-hidden"],
+  ["flex flex-col gap-y-0.5 overflow-hidden rounded-md"],
+  ["flex flex-col gap-y-1"],
+  ["flex flex-col gap-y-3"],
+  [
+    "flex flex-col gap-y-3 divide-grid-bright rounded-sm border border-grid-bright bg-background-bright py-2 pr-1 text-text-bright lg:w-fit lg:flex-row lg:items-center lg:divide-x"
+  ],
+  ["flex flex-col gap-y-4"],
+  ["flex flex-col gap-y-5"],
+  ["flex flex-col gap-y-8 p-8"],
+  ["flex flex-col items-center gap-1 text-text-dimmed"],
+  ["flex flex-col items-center gap-1.5 text-center"],
+  ["flex flex-col items-center gap-2"],
+  ["flex flex-col items-center gap-2 p-8 text-center"],
+  ["flex flex-col items-center gap-3"],
+  [
+    "flex flex-col items-center gap-3 rounded-md border border-grid-bright bg-background-bright p-4 text-text-bright"
+  ],
+  ["flex flex-col items-center gap-4 px-8"],
+  ["flex flex-col items-center gap-y-3"],
+  ["flex flex-col items-center gap-y-4 pt-4"],
+  ["flex flex-col items-center justify-center"],
+  ["flex flex-col items-center justify-center gap-3 py-12"],
+  ["flex flex-col items-center justify-center gap-6"],
+  ["flex flex-col items-center justify-center gap-6 px-6 py-10"],
+  ["flex flex-col items-center justify-center gap-y-4 py-8"],
+  [
+    "flex flex-col items-center justify-center gap-y-4 rounded border border-grid-dimmed bg-background-bright py-4"
+  ],
+  ["flex flex-col items-center justify-center py-6"],
+  ["flex flex-col items-center justify-center py-8"],
+  ["flex flex-col items-end gap-0.5"],
+  ["flex flex-col items-end gap-0.5 text-xs"],
+  ["flex flex-col items-end gap-1"],
+  ["flex flex-col items-end gap-2"],
+  ["flex flex-col items-start"],
+  ["flex flex-col items-start  "],
+  ["flex flex-col items-start gap-1.5"],
+  ["flex flex-col items-start gap-2"],
+  ["flex flex-col items-start gap-3 py-4"],
+  ["flex flex-col items-start gap-3 py-6"],
+  [
+    "flex flex-col items-start gap-4 rounded-md border border-grid-bright bg-background-bright px-6 py-6"
+  ],
+  ["flex flex-col items-start gap-y-4 p-12"],
+  ["flex flex-col items-start gap-y-4 p-4"],
+  ["flex flex-col items-start gap-y-8"],
+  ["flex flex-col items-start gap-y-8 p-4"],
+  ["flex flex-col items-start gap-y-8 p-8"],
+  ["flex flex-col items-start justify-between", "pb-4", "pt-4"],
+  ["flex flex-col items-start justify-start gap-4"],
+  ["flex flex-col items-start whitespace-nowrap"],
+  [
+    "flex flex-col justify-between gap-4 rounded-lg border border-grid-bright bg-background-bright p-4"
+  ],
+  [
+    "flex flex-col",
+    "min-h-0 flex-1 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["flex flex-col p-1"],
+  ["flex flex-col pb-3"],
+  ["flex flex-col px-2 pb-2 pt-4 text-sm", "max-h-[50%] min-h-0"],
+  ["flex flex-col px-3"],
+  ["flex flex-col rounded border border-grid-dimmed bg-background-bright"],
+  [
+    "flex flex-col rounded-lg border border-grid-bright bg-background-bright pb-1.5 pt-3"
+  ],
+  ["flex flex-col rounded-md pb-3"],
+  [
+    "flex flex-col rounded-sm border border-grid-dimmed bg-background-bright p-3"
+  ],
+  ["flex flex-col space-y-2 text-center sm:text-left"],
+  ["flex flex-col text-left font-medium text-text-bright"],
+  ["flex flex-col text-xs @container"],
+  ["flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2"],
+  ["flex flex-none flex-col items-center"],
+  ["flex flex-none items-center"],
+  ["flex flex-none items-center gap-0.5 pr-1"],
+  ["flex flex-none items-center gap-1"],
+  [
+    "flex flex-none items-center gap-1 border-b border-grid-dimmed bg-background-dimmed px-2.5 py-1.5"
+  ],
+  ["flex flex-none items-center gap-1 text-xs text-text-dimmed"],
+  [
+    "flex flex-none items-center gap-1.5 text-sm",
+    "text-success",
+    "text-text-dimmed"
+  ],
+  ["flex flex-none items-center gap-3"],
+  ["flex flex-nowrap items-center gap-2 whitespace-nowrap text-sm"],
+  ["flex flex-row flex-wrap items-center gap-1.5"],
+  ["flex flex-row items-center gap-1"],
+  ["flex flex-row items-center gap-2.5 px-5 pb-3"],
+  ["flex flex-wrap gap-1"],
+  ["flex flex-wrap gap-1 pt-1 text-xs"],
+  ["flex flex-wrap gap-1.5"],
+  ["flex flex-wrap gap-2"],
+  ["flex flex-wrap gap-2 pt-2"],
+  ["flex flex-wrap gap-4"],
+  ["flex flex-wrap items-baseline gap-1"],
+  ["flex flex-wrap items-baseline gap-2"],
+  ["flex flex-wrap items-baseline gap-x-3"],
+  ["flex flex-wrap items-baseline gap-x-3 gap-y-1"],
+  ["flex flex-wrap items-center gap-1"],
+  ["flex flex-wrap items-center gap-1.5"],
+  ["flex flex-wrap items-center gap-2"],
+  ["flex flex-wrap items-center gap-2 px-2 pb-2 pt-1"],
+  ["flex flex-wrap items-center gap-2 px-3 py-2"],
+  [
+    "flex flex-wrap items-center gap-2 rounded-sm border border-grid-dimmed p-3"
+  ],
+  ["flex flex-wrap items-center gap-2 text-xs"],
+  ["flex flex-wrap items-center gap-3"],
+  [
+    "flex flex-wrap items-center gap-3 rounded-sm border border-grid-dimmed p-3"
+  ],
+  ["flex flex-wrap items-center gap-4"],
+  [
+    "flex flex-wrap items-center gap-4 rounded-sm border border-grid-dimmed p-3"
+  ],
+  ["flex flex-wrap items-center gap-x-1.5 gap-y-1"],
+  ["flex flex-wrap items-center gap-x-4 gap-y-1"],
+  ["flex flex-wrap items-center justify-between gap-2"],
+  [
+    "flex flex-wrap items-center justify-between gap-2 border-t border-grid-dimmed px-2 py-2"
+  ],
+  [
+    "flex flex-wrap items-center justify-between gap-2 overflow-hidden border-b border-amber-500/10 bg-amber-500/10 pl-4 pr-2"
+  ],
+  [
+    "flex flex-wrap items-center justify-between gap-2 px-3 py-2.5 @[300px]:flex-nowrap"
+  ],
+  ["flex flex-wrap items-center justify-center gap-1.5"],
+  [
+    "flex flex-wrap items-end gap-10 rounded-md border border-grid-bright bg-background-bright px-6 py-6"
+  ],
+  ["flex flex-wrap items-end gap-8"],
+  [
+    "flex flex-wrap items-end gap-8 rounded-md border border-grid-bright bg-background-bright px-6 py-5"
+  ],
+  ["flex flex-wrap items-start gap-8"],
+  ["flex gap-0 border-t  ", "border-indigo-500/20", "border-grid-bright"],
+  ["flex gap-1"],
+  ["flex gap-12"],
+  ["flex gap-16"],
+  ["flex gap-2 px-3 lg:items-center"],
+  ["flex gap-3"],
+  ["flex gap-4 mt-1 font-mono text-text-bright"],
+  ["flex gap-5"],
+  ["flex gap-x-2.5 border-l-2 border-transparent px-2.5 py-1"],
+  ["flex gap-x-6 border-b border-grid-bright"],
+  ["flex gap-x-8 p-8"],
+  ["flex grow items-baseline justify-between self-end border-none"],
+  ["flex grow items-center"],
+  ["flex grow items-center justify-end gap-x-2"],
+  [
+    "flex h-[1.8rem] items-center justify-center px-1 text-text-dimmed transition hover:text-text-bright"
+  ],
+  [
+    "flex h-[1.8rem] w-full items-center justify-between gap-2 whitespace-nowrap rounded border border-border-bright bg-background-hover px-2 text-xs tabular-nums transition hover:border-border-bright",
+    "text-text-bright",
+    "text-text-dimmed"
+  ],
+  ["flex h-[30rem] flex-col", "w-[60rem]"],
+  [
+    "flex h-[85vh] max-h-[85vh] flex-col gap-0! overflow-hidden pl-0 pr-3 pt-0 md:max-w-4xl lg:max-w-6xl"
+  ],
+  [
+    "flex h-[85vh] max-h-[85vh] flex-col overflow-hidden px-0 md:max-w-3xl lg:max-w-5xl"
+  ],
+  ["flex h-10 items-center"],
+  [
+    "flex h-10 items-center border-b border-grid-dimmed bg-background-bright px-2"
+  ],
+  [
+    "flex h-10 items-center justify-between gap-2 border-b border-grid-dimmed bg-background-bright pl-3 pr-2"
+  ],
+  [
+    "flex h-10 items-center justify-between gap-2 border-b border-grid-dimmed pl-3 pr-2"
+  ],
+  [
+    "flex h-10 items-center justify-between overflow-hidden py-0 pl-3 pr-2",
+    "border-y border-amber-400/20 bg-warning/20",
+    "border border-error bg-repeat"
+  ],
+  [
+    "flex h-10 items-end border-b border-grid-dimmed bg-background-bright pl-3 pr-2"
+  ],
+  ["flex h-10 shrink-0 items-center border-b border-grid-dimmed px-3"],
+  ["flex h-10 shrink-0 items-center gap-2 border-t border-grid-dimmed px-3"],
+  [
+    "flex h-10 shrink-0 items-center justify-between gap-2 border-b border-grid-bright pl-1 pr-1.5"
+  ],
+  [
+    "flex h-10 shrink-0 items-center justify-between gap-2 border-b border-grid-dimmed px-2"
+  ],
+  [
+    "flex h-10 w-full cursor-pointer items-center justify-center rounded border border-border-bright/50 bg-secondary px-8 text-base font-medium shadow-xs transition hover:bg-background-raised dark:border-border-bright dark:hover:border-border-brighter"
+  ],
+  [
+    "flex h-11 items-start justify-center rounded-t-md bg-background-bright pl-3"
+  ],
+  ["flex h-12 items-center"],
+  [
+    "flex h-13 shrink-0 items-center justify-end border-t border-grid-dimmed px-2"
+  ],
+  [
+    "flex h-5 w-fit max-w-full items-center gap-1 rounded border border-grid-bright bg-background-bright px-1.5 text-xs text-text-dimmed"
+  ],
+  [
+    "flex h-5.5 flex-none cursor-default items-center gap-2 border-b border-grid-bright bg-background-hover px-2.5 text-xxs uppercase text-text-bright"
+  ],
+  [
+    "flex h-5.5 items-center border-b border-grid-bright bg-background-hover px-2.5 text-xxs uppercase text-text-bright"
+  ],
+  ["flex h-6 items-center gap-1"],
+  [
+    "flex h-6 items-center gap-1 rounded border border-border-bright bg-secondary pl-1 pr-2 text-xs text-text-bright transition group-hover:border-border-brighter group-hover:bg-surface-control"
+  ],
+  [
+    "flex h-6 items-center gap-1 rounded border border-border-bright/50 shadow-xs bg-secondary pl-1 pr-2 text-xs text-text-bright transition group-hover:bg-background-raised"
+  ],
+  [
+    "flex h-6 items-center gap-1 rounded border border-charcoal-600 bg-secondary pl-1 pr-2 text-xs text-text-bright transition group-hover:border-charcoal-550 group-hover:bg-charcoal-600"
+  ],
+  [
+    "flex h-6 items-center gap-1.5 rounded border border-border-bright bg-secondary pl-1 pr-2 text-xs text-text-bright transition group-hover:border-border-brighter group-hover:bg-surface-control"
+  ],
+  [
+    "flex h-6 items-center gap-1.5 rounded border border-border-bright/50 shadow-xs bg-secondary pl-1 pr-2 text-xs text-text-bright transition group-hover:bg-background-raised"
+  ],
+  [
+    "flex h-6 items-center gap-1.5 rounded border border-charcoal-600 bg-secondary pl-1 pr-2 text-xs text-text-bright transition group-hover:border-charcoal-550 group-hover:bg-charcoal-600"
+  ],
+  ["flex h-6 items-stretch"],
+  ["flex h-6 shrink-0 items-stretch"],
+  ["flex h-6 w-28 items-end gap-px rounded-sm"],
+  ["flex h-6 w-6 items-center justify-center"],
+  [
+    "flex h-6 w-6 items-center justify-center rounded bg-success py-1 text-xs font-semibold text-charcoal-900"
+  ],
+  [
+    "flex h-6 w-6 items-center justify-center rounded border border-grid-bright bg-background-bright py-1 text-xs font-semibold text-text-dimmed"
+  ],
+  ["flex h-72 items-center justify-center"],
+  ["flex h-8 items-center"],
+  [
+    "flex h-8 items-center gap-1.5 rounded-sm border border-grid-dimmed bg-background-bright px-3 text-sm text-text-dimmed"
+  ],
+  [
+    "flex h-8 items-end justify-between gap-2 border-b border-grid-bright pl-3 pr-1.5"
+  ],
+  ["flex h-8 w-4 items-center focus-custom", "hover:bg-surface-control"],
+  [
+    "flex h-8 w-full cursor-pointer items-center gap-2 rounded-sm px-2 text-2sm text-text-dimmed hover:bg-tertiary"
+  ],
+  [
+    "flex h-8 w-full items-center gap-2 overflow-hidden rounded pl-1.75 pr-2 text-text-dimmed hover:bg-background-hover hover:text-text-bright focus-custom data-[state=open]:bg-background-hover data-[state=open]:text-text-bright"
+  ],
+  [
+    "flex h-8 w-full items-center gap-2 rounded bg-background-hover pl-1.75 pr-2"
+  ],
+  [
+    "flex h-8 w-full items-center gap-2 rounded-sm px-2 group-data-[active-item=true]:bg-tertiary hover:bg-tertiary"
+  ],
+  [
+    "flex h-8 w-full items-center rounded-sm bg-tertiary pl-0 pr-2 ring-1 ring-border-bright"
+  ],
+  [
+    "flex h-8! w-full items-center justify-center rounded border border-amber-500/30 bg-amber-500/15 transition-colors hover:border-amber-500/50 hover:bg-amber-500/25"
+  ],
+  [
+    "flex h-8! w-full items-center justify-center rounded border border-yellow-500/30 bg-yellow-500/15 transition-colors hover:border-yellow-500/50 hover:bg-yellow-500/25"
+  ],
+  [
+    "flex h-9 items-center border-b border-grid-dimmed bg-background-bright px-3"
+  ],
+  [
+    "flex h-9 items-center justify-between gap-3 border-b border-grid-bright px-3"
+  ],
+  ["flex h-9 items-end border-b"],
+  [
+    "flex h-9 w-full flex-none items-center border-b border-grid-dimmed bg-transparent pl-0 pr-3 text-xs text-text-dimmed outline-hidden"
+  ],
+  [
+    "flex h-9 w-full flex-none items-center gap-2 border-b border-grid-dimmed bg-transparent px-3 text-xs text-text-dimmed outline-hidden"
+  ],
+  ["flex h-fit flex-col gap-2"],
+  [
+    "flex h-fit items-center justify-between gap-2 border-b border-grid-bright pl-3 pr-1.5 pt-1.5"
+  ],
+  ["flex h-fit items-center justify-end gap-2 p-2"],
+  ["flex h-fit items-end justify-between p-2 pl-3"],
+  [
+    "flex h-fit w-full items-center gap-3 border-t border-grid-bright bg-background-bright p-[0.86rem] pl-4"
+  ],
+  [
+    "flex h-fit w-full items-center gap-4 border-t border-grid-bright bg-background-bright p-[0.86rem] pl-4"
+  ],
+  ["flex h-full flex-1 items-center justify-center p-3"],
+  ["flex h-full flex-col"],
+  [
+    "flex h-full flex-col bg-background-bright animate-in slide-in-from-right-2 duration-150"
+  ],
+  ["flex h-full flex-col border-l border-grid-dimmed bg-background-bright"],
+  ["flex h-full flex-col gap-12 p-12"],
+  ["flex h-full flex-col gap-2 bg-white pb-2 dark:bg-background-deep"],
+  ["flex h-full flex-col gap-2 overflow-y-auto p-2"],
+  ["flex h-full flex-col gap-4 overflow-auto p-3"],
+  [
+    "flex h-full flex-col gap-4 overflow-y-auto bg-background-bright p-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-charcoal-600"
+  ],
+  [
+    "flex h-full flex-col gap-y-8 overflow-hidden border-r border-grid-bright bg-background-bright px-2 transition"
+  ],
+  ["flex h-full flex-col items-center justify-center gap-3"],
+  [
+    "flex h-full flex-col items-center justify-center gap-3 bg-background-bright p-6"
+  ],
+  [
+    "flex h-full flex-col items-center justify-center gap-3 bg-background-bright p-6 text-center"
+  ],
+  ["flex h-full flex-col items-center justify-center p-6 lg:justify-between"],
+  ["flex h-full flex-col items-center justify-center px-16"],
+  ["flex h-full flex-col justify-end"],
+  ["flex h-full flex-col overflow-hidden"],
+  ["flex h-full flex-col overflow-hidden bg-background p-2"],
+  ["flex h-full flex-col overflow-hidden bg-background-deep"],
+  ["flex h-full flex-col overflow-hidden bg-charcoal-900"],
+  ["flex h-full gap-12 bg-black p-12"],
+  ["flex h-full items-center"],
+  ["flex h-full items-center justify-center"],
+  ["flex h-full items-center justify-center bg-background-bright"],
+  ["flex h-full items-center justify-center gap-2 text-xs text-text-dimmed"],
+  [
+    "flex h-full items-center justify-center p-4 text-center text-sm text-text-dimmed"
+  ],
+  ["flex h-full items-center justify-center p-6"],
+  [
+    "flex h-full items-center justify-center px-3 text-center text-xs text-error"
+  ],
+  ["flex h-full items-center justify-center py-6"],
+  [
+    "flex h-full items-center justify-center text-center text-text-faint group-focus:text-text-bright"
+  ],
+  ["flex h-full items-center justify-center text-xs text-text-dimmed"],
+  ["flex h-full max-h-full flex-col"],
+  ["flex h-full max-h-full flex-col overflow-hidden bg-background-bright"],
+  [
+    "flex h-full max-w-full flex-wrap items-start justify-start gap-2 px-8 py-16"
+  ],
+  ["flex h-full min-h-0 flex-col"],
+  ["flex h-full min-h-0 flex-col overflow-hidden bg-background p-2"],
+  ["flex h-full min-h-0 flex-col overflow-hidden pt-1"],
+  ["flex h-full min-h-0 items-end gap-px rounded-sm"],
+  ["flex h-full min-w-0 flex-1 flex-col overflow-y-auto px-4 pb-4"],
+  [
+    "flex h-full min-w-0 flex-1 flex-col overflow-y-auto px-4 pb-4 lg:order-last"
+  ],
+  [
+    "flex h-full min-w-0 flex-1 items-center gap-x-2 rounded-sm pl-2",
+    "has-[:focus-visible]:outline has-[:focus-visible]:outline-1 has-[:focus-visible]:-outline-offset-1 has-[:focus-visible]:outline-text-link",
+    "cursor-default",
+    "cursor-pointer"
+  ],
+  ["flex h-full w-full flex-col"],
+  ["flex h-full w-full items-center justify-between"],
+  ["flex h-full w-full items-center justify-center"],
+  [
+    "flex h-full w-full items-center justify-center border border-indigo-500 bg-indigo-600"
+  ],
+  [
+    "flex h-full w-full items-center justify-center justify-items-center rounded p-0 transition-none hover:bg-surface-control",
+    "opacity-0 group-hover/menuitem:opacity-100 data-[state=open]:opacity-100"
+  ],
+  [
+    "flex h-full w-full items-center justify-center rounded text-text-dimmed focus-custom hover:bg-surface-control hover:text-text-bright"
+  ],
+  ["flex h-full w-full items-center justify-center rounded-full bg-indigo-600"],
+  ["flex h-full w-full max-w-xs items-center justify-center"],
+  ["flex h-full w-full overflow-hidden"],
+  ["flex h-screen flex-col items-center justify-center gap-4 p-12"],
+  [
+    "flex items-baseline gap-[0.15em] whitespace-nowrap text-[clamp(24px,12cqw,96px)] font-normal tabular-nums leading-none text-text-bright"
+  ],
+  ["flex items-baseline gap-2"],
+  ["flex items-baseline gap-2.5"],
+  ["flex items-baseline justify-between gap-4"],
+  ["flex items-center"],
+  ["flex items-center bg-background-bright px-1.5 pb-2"],
+  ["flex items-center border-b border-b-grid-dimmed px-3"],
+  ["flex items-center border-b border-grid-bright px-3"],
+  [
+    "flex items-center border-y border-r border-grid-bright bg-background-bright pr-1.5 text-text-dimmed group-hover:group-has-[[href]]:border-border-bright group-hover:group-has-[[href]]:text-text-bright"
+  ],
+  ["flex items-center first-letter:pb-1"],
+  ["flex items-center gap-0.5"],
+  ["flex items-center gap-1"],
+  ["flex items-center gap-1 border-b border-amber-500/30 pb-1"],
+  ["flex items-center gap-1 border-b border-yellow-500/30 pb-1"],
+  ["flex items-center gap-1", "flex-1"],
+  ["flex items-center gap-1", "justify-center", "justify-end"],
+  ["flex items-center gap-1 overflow-x-hidden"],
+  [
+    "flex items-center gap-1 rounded-sm border py-0.5 pl-1.5 pr-1 text-xs font-medium text-text-bright"
+  ],
+  [
+    "flex items-center gap-1 self-start rounded px-1 py-0.5 text-xs text-text-dimmed hover:bg-background-raised hover:text-text-bright"
+  ],
+  ["flex items-center gap-1 text-[10px] text-indigo-400"],
+  ["flex items-center gap-1 text-sm"],
+  ["flex items-center gap-1 text-sm text-text-dimmed"],
+  ["flex items-center gap-1 text-text-bright"],
+  ["flex items-center gap-1 text-text-dimmed"],
+  [
+    "flex items-center gap-1 text-text-dimmed group-hover/sectionheader:text-text-bright"
+  ],
+  ["flex items-center gap-1 text-xs"],
+  ["flex items-center gap-1 text-xs font-normal text-text-dimmed"],
+  ["flex items-center gap-1 text-xs text-amber-500"],
+  ["flex items-center gap-1 text-xs text-success"],
+  ["flex items-center gap-1 text-xs text-text-dimmed"],
+  ["flex items-center gap-1 text-xxs text-text-dimmed"],
+  ["flex items-center gap-1.5"],
+  [
+    "flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3 [&>svg]:text-text-dimmed"
+  ],
+  ["flex items-center gap-1.5 overflow-x-hidden"],
+  ["flex items-center gap-1.5 py-1.5 pl-2.5 pr-2 text-xs text-text-bright"],
+  ["flex items-center gap-1.5 text-sm"],
+  ["flex items-center gap-1.5 text-sm font-medium text-text-bright"],
+  ["flex items-center gap-1.5 text-sm text-text-bright"],
+  ["flex items-center gap-1.5 text-sm text-text-dimmed"],
+  ["flex items-center gap-1.5 text-text-bright"],
+  ["flex items-center gap-1.5 text-xs"],
+  ["flex items-center gap-1.5 text-xs font-medium text-text-dimmed"],
+  ["flex items-center gap-1.5 text-xs text-text-dimmed"],
+  ["flex items-center gap-1.5 truncate text-xs text-text-dimmed"],
+  ["flex items-center gap-2"],
+  ["flex items-center gap-2 border-b border-grid-dimmed px-3 py-2"],
+  ["flex items-center gap-2 border-b border-grid-dimmed py-2 pl-3 pr-2"],
+  ["flex items-center gap-2 border-t border-grid-dimmed pt-4"],
+  ["flex items-center gap-2", "invisible"],
+  ["flex items-center gap-2 overflow-hidden truncate"],
+  ["flex items-center gap-2 overflow-x-hidden"],
+  ["flex items-center gap-2 p-2"],
+  ["flex items-center gap-2 p-4 text-sm text-text-dimmed"],
+  ["flex items-center gap-2 pt-1"],
+  ["flex items-center gap-2 px-2.5 py-1.5"],
+  ["flex items-center gap-2 py-0.5"],
+  ["flex items-center gap-2 py-1.5"],
+  ["flex items-center gap-2 rounded-lg bg-background-hover px-4 py-2.5"],
+  ["flex items-center gap-2 rounded-md bg-error px-3 py-2 text-white"],
+  ["flex items-center gap-2 rounded-md bg-primary px-3 py-2 text-white"],
+  [
+    "flex items-center gap-2 rounded-md bg-secondary px-3 py-2 text-text-bright"
+  ],
+  [
+    "flex items-center gap-2 rounded-md bg-tertiary px-3 py-2 text-sm text-text-bright"
+  ],
+  ["flex items-center gap-2 rounded-r-md border-l-2 px-3 py-2"],
+  ["flex items-center gap-2 text-[10px]"],
+  ["flex items-center gap-2 text-sm text-text-bright"],
+  ["flex items-center gap-2 text-sm text-text-dimmed"],
+  ["flex items-center gap-2 text-text-bright"],
+  ["flex items-center gap-2 text-text-dimmed"],
+  ["flex items-center gap-2 text-xs"],
+  ["flex items-center gap-2 text-xs text-text-dimmed"],
+  ["flex items-center gap-2", "w-full justify-between"],
+  ["flex items-center gap-3"],
+  [
+    "flex items-center gap-3 rounded-md bg-background-hover px-3 py-2 text-text-bright"
+  ],
+  ["flex items-center gap-3 self-center"],
+  ["flex items-center gap-3 text-text-dimmed"],
+  ["flex items-center gap-3 text-xs"],
+  ["flex items-center gap-4"],
+  ["flex items-center gap-4 pt-3"],
+  ["flex items-center gap-4 py-4"],
+  ["flex items-center gap-4 rounded-sm border border-grid-dimmed p-3"],
+  ["flex items-center gap-x-0"],
+  ["flex items-center gap-x-0.5"],
+  ["flex items-center gap-x-0.5 divide-x divide-grid-bright"],
+  ["flex items-center gap-x-1"],
+  ["flex items-center gap-x-1 whitespace-nowrap text-text-bright"],
+  ["flex items-center gap-x-1.5"],
+  ["flex items-center gap-x-2"],
+  ["flex items-center gap-x-2 overflow-x-hidden"],
+  ["flex items-center gap-x-3"],
+  ["flex items-center gap-x-4"],
+  ["flex items-center justify-between"],
+  ["flex items-center justify-between  ", "opacity-50"],
+  ["flex items-center justify-between border-b border-background-bright py-4"],
+  [
+    "flex items-center justify-between border-b border-border-bright px-2.5 py-1.5"
+  ],
+  ["flex items-center justify-between border-b border-grid-bright px-3 py-2"],
+  [
+    "flex items-center justify-between border-b border-grid-dimmed bg-background-bright pl-3 pr-1.5"
+  ],
+  ["flex items-center justify-between border-b border-grid-dimmed pb-1.5"],
+  ["flex items-center justify-between border-b border-grid-dimmed px-3 py-2"],
+  [
+    "flex items-center justify-between border-b border-grid-dimmed py-2 pl-3 pr-2"
+  ],
+  ["flex items-center justify-between border-t px-3 py-2"],
+  ["flex items-center justify-between gap-1"],
+  ["flex items-center justify-between gap-1.5 border-b border-grid-bright p-2"],
+  ["flex items-center justify-between gap-2"],
+  [
+    "flex items-center justify-between gap-2 border-b border-grid-dimmed px-1.5"
+  ],
+  [
+    "flex items-center justify-between gap-2 border-b border-grid-dimmed px-3 py-2"
+  ],
+  [
+    "flex items-center justify-between gap-2 border-b border-grid-dimmed px-3 text-sm"
+  ],
+  [
+    "flex items-center justify-between gap-2 border-t border-grid-dimmed px-1.5 py-1.5"
+  ],
+  [
+    "flex items-center justify-between gap-2 border-t border-grid-dimmed px-1.5 py-1.5",
+    "mx-2.5"
+  ],
+  ["flex items-center justify-between gap-2 border-t border-grid-dimmed px-2"],
+  [
+    "flex items-center justify-between gap-2 border-t border-grid-dimmed px-2 py-2"
+  ],
+  ["flex items-center justify-between gap-2 border-t border-grid-dimmed px-4"],
+  [
+    "flex items-center justify-between gap-2 overflow-x-hidden border-b border-grid-bright px-3 pr-2"
+  ],
+  ["flex items-center justify-between gap-2 overflow-x-hidden px-3"],
+  ["flex items-center justify-between gap-2 overflow-x-hidden px-3 pr-2"],
+  ["flex items-center justify-between gap-2 pl-4 pr-1 pt-3"],
+  ["flex items-center justify-between gap-2 px-2"],
+  ["flex items-center justify-between gap-2 px-2 py-2"],
+  ["flex items-center justify-between gap-3"],
+  ["flex items-center justify-between gap-3 border-b border-grid-dimmed"],
+  [
+    "flex items-center justify-between gap-4 border-b border-grid-bright bg-background-bright p-2 pl-3"
+  ],
+  [
+    "flex items-center justify-between gap-4 border-b border-grid-bright bg-background-bright pl-4 pr-2"
+  ],
+  ["flex items-center justify-between gap-x-1.5 p-2"],
+  ["flex items-center justify-between gap-x-2"],
+  [
+    "flex items-center justify-between gap-x-2 border-b border-b-grid-bright py-2 pl-2 pr-3"
+  ],
+  [
+    "flex items-center justify-between overflow-hidden border-b border-grid-dimmed py-2 pl-3 pr-2"
+  ],
+  ["flex items-center justify-between p-1 transition"],
+  ["flex items-center justify-between p-4"],
+  ["flex items-center justify-between pl-1 pr-2"],
+  ["flex items-center justify-between pl-3 pr-2 pt-1"],
+  ["flex items-center justify-between px-3"],
+  ["flex items-center justify-between px-3 py-2"],
+  [
+    "flex items-center justify-between rounded-md border border-transparent bg-background-hover px-3 py-2.5"
+  ],
+  [
+    "flex items-center justify-between rounded-md border px-3 py-2.5",
+    "border-indigo-500/20 bg-indigo-500/5",
+    "border-transparent bg-background-hover"
+  ],
+  [
+    "flex items-center justify-between rounded-sm border border-grid-dimmed bg-background-bright px-3 py-2 text-sm text-text-dimmed"
+  ],
+  ["flex items-center justify-center"],
+  ["flex items-center justify-center gap-1.5"],
+  [
+    "flex items-center justify-center gap-1.5 border-b border-grid-dimmed bg-charcoal-800 py-1.5 text-xs text-text-bright hover:bg-charcoal-700"
+  ],
+  ["flex items-center justify-center gap-4", "pb-3", "pt-3"],
+  ["flex items-center justify-center p-4"],
+  ["flex items-center justify-center px-3"],
+  ["flex items-center justify-center px-3 py-12"],
+  ["flex items-center justify-center py-12"],
+  ["flex items-center justify-center py-12 text-sm text-text-dimmed"],
+  ["flex items-center justify-center py-3"],
+  ["flex items-center justify-center py-8"],
+  ["flex items-center justify-center rounded bg-background-raised/50 py-8"],
+  [
+    "flex items-center justify-center rounded border border-error/30 bg-error/20 transition",
+    "system:border-transparent system:bg-error system:transition system:hover:bg-error system:hover:brightness-90",
+    "hover:border-error/50 hover:bg-error/30",
+    "disabled:cursor-not-allowed disabled:opacity-40",
+    "focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-text-link"
+  ],
+  [
+    "flex items-center justify-center rounded border border-success/30 bg-success/10 transition",
+    "system:border-transparent system:bg-success system:transition system:hover:bg-success system:hover:brightness-90",
+    "hover:border-success/40 hover:bg-success/20",
+    "disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent",
+    "focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-text-link"
+  ],
+  ["flex items-center justify-end"],
+  ["flex items-center justify-end border-t border-grid-bright px-1.5 py-1.5"],
+  [
+    "flex items-center justify-end gap-1 opacity-0 transition-opacity group-hover/row:opacity-100"
+  ],
+  ["flex items-center justify-end gap-1.5"],
+  ["flex items-center justify-end gap-2"],
+  ["flex items-center justify-end gap-2 border-t border-grid-dimmed px-2"],
+  [
+    "flex items-center justify-end gap-3 border-t border-grid-bright bg-background-dimmed p-2"
+  ],
+  ["flex items-center justify-end gap-x-1"],
+  ["flex items-center justify-end gap-x-1.5"],
+  ["flex items-center justify-end gap-x-2"],
+  ["flex items-center justify-end gap-x-2 p-2"],
+  [
+    "flex items-center justify-end tabular-nums  ",
+    "font-medium text-success/70 group-hover/table-row:text-success",
+    "text-text-dimmed group-hover/table-row:text-text-bright"
+  ],
+  ["flex items-center justify-stretch"],
+  ["flex items-center overflow-hidden"],
+  ["flex items-center pl-1"],
+  ["flex items-center pl-1 pr-2"],
+  ["flex items-center py-1.5 pl-2.5 pr-2 text-xs text-text-bright"],
+  [
+    "flex items-center rounded border border-border-bright bg-tertiary transition hover:border-border-brighter/80 hover:bg-surface-control/80",
+    "has-focus-visible:outline-solid has-focus-visible:outline-1 has-focus-visible:outline-offset-0 has-focus-visible:outline-text-link",
+    "cursor-not-allowed opacity-50"
+  ],
+  [
+    "flex items-center rounded-l-none border-l-0 pl-2.25 pr-2",
+    "cursor-not-allowed opacity-50"
+  ],
+  [
+    "flex items-center rounded-md border border-grid-bright bg-background-bright p-3"
+  ],
+  [
+    "flex items-center rounded-r-none border-r-0 pl-2 pr-2.25",
+    "cursor-not-allowed opacity-50"
+  ],
+  [
+    "flex items-center rounded-r-sm border-y border-r border-grid-bright bg-background-bright pr-1.5 text-text-dimmed group-hover:rounded-r-none group-hover:group-has-[[href]]:border-border-bright group-hover:group-has-[[href]]:text-text-bright"
+  ],
+  ["flex items-center space-x-1"],
+  ["flex items-center text-text-dimmed hover:text-text-bright"],
+  ["flex items-center text-xs text-rose-400"],
+  ["flex items-center text-xs text-text-dimmed"],
+  ["flex items-center transition", "pr-2"],
+  ["flex items-center truncate"],
+  ["flex items-center", "w-full", "max-w-max"],
+  [
+    "flex items-center whitespace-nowrap rounded-r-sm border-y border-r border-grid-bright bg-background-hover px-1.5 text-text-dimmed group-hover:rounded-r-none group-hover:group-has-[[href]]:border-border-bright group-hover:group-has-[[href]]:bg-background-raised group-hover:group-has-[[href]]:text-text-bright"
+  ],
+  ["flex items-end gap-2"],
+  ["flex items-start"],
+  ["flex items-start gap-0.5"],
+  ["flex items-start gap-1"],
+  ["flex items-start gap-1 px-2.5 pt-2"],
+  ["flex items-start gap-1.5"],
+  ["flex items-start gap-1.5 ", " w-full"],
+  ["flex items-start gap-2"],
+  ["flex items-start gap-2 text-sm"],
+  ["flex items-start gap-3 pb-6 pr-2 pt-8"],
+  ["flex items-start justify-between gap-3"],
+  ["flex items-start justify-between gap-x-2 border-b border-grid-bright p-2"],
+  ["flex items-start justify-between gap-x-2 p-2"],
+  ["flex items-start justify-center gap-20 px-16 pt-20"],
+  ["flex items-start leading-4", "gap-1.5", "gap-0.5"],
+  ["flex items-start text-sm text-text-dimmed"],
+  ["flex items-stretch gap-x-4"],
+  ["flex items-stretch gap-x-6"],
+  ["flex items-stretch justify-center"],
+  ["flex justify-between"],
+  ["flex justify-between border-t border-grid-bright pt-4"],
+  ["flex justify-between gap-1"],
+  ["flex justify-between gap-1 border-t border-grid-bright px-0 pt-3"],
+  ["flex justify-between gap-1 border-t border-grid-dimmed pt-3"],
+  ["flex justify-center"],
+  ["flex justify-center pt-2"],
+  ["flex justify-end"],
+  ["flex justify-end gap-2"],
+  ["flex justify-end gap-2 px-2 pb-2"],
+  ["flex justify-end gap-2 py-4"],
+  ["flex justify-end px-2 py-1.5"],
+  ["flex justify-end rounded-b-md border border-grid-bright p-1"],
+  ["flex justify-start"],
+  [
+    "flex max-w-32 items-center gap-1 truncate rounded bg-grid-dimmed px-1 font-mono"
+  ],
+  ["flex max-w-3xl flex-col gap-1"],
+  ["flex max-w-64 flex-col gap-3 p-1 pb-2"],
+  ["flex max-w-md flex-col gap-3"],
+  ["flex max-w-sm flex-col gap-1 p-2"],
+  ["flex max-w-xl flex-col items-start gap-y-4"],
+  ["flex max-w-xs flex-col gap-3 p-1 pb-2"],
+  ["flex max-w-xs flex-col gap-3 py-1"],
+  ["flex max-w-xs flex-col gap-4 p-1"],
+  ["flex max-w-xs flex-col gap-4 p-1 pb-2"],
+  ["flex max-w-xs flex-col items-center justify-center"],
+  [
+    "flex min-h-[5.5rem] flex-col justify-between gap-3 rounded-sm border border-grid-dimmed bg-background-bright p-3"
+  ],
+  ["flex min-h-0 flex-1 flex-col"],
+  ["flex min-h-0 flex-1 flex-col bg-background-deep"],
+  [
+    "flex min-h-0 flex-1 flex-col gap-2.5 overflow-y-auto overflow-x-clip py-2.5 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "flex min-h-0 flex-1 flex-col overflow-hidden"
+  ],
+  [
+    "flex min-h-0 flex-1 flex-col overflow-y-auto px-4 py-6 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["flex min-h-0 flex-1 items-end gap-px rounded-sm"],
+  ["flex min-h-0 flex-col"],
+  ["flex min-h-0 flex-col border-r border-grid-dimmed"],
+  ["flex min-h-0 flex-col gap-1.5"],
+  ["flex min-h-0 flex-col gap-5 pt-3"],
+  ["flex min-h-0 flex-col overflow-hidden pt-1"],
+  ["flex min-h-0 min-w-0 flex-1 flex-col", "mx-auto w-full max-w-3xl"],
+  ["flex min-h-0 w-full flex-1 items-center justify-center pt-4"],
+  [
+    "flex min-h-10 items-center gap-2 border-b border-grid-dimmed bg-background-bright px-2 py-2"
+  ],
+  ["flex min-h-16 w-full items-center border-b border-grid-dimmed"],
+  ["flex min-h-40 items-center justify-center"],
+  ["flex min-h-8 flex-1 items-center"],
+  [
+    "flex min-h-8 items-center break-all border-b border-grid-dimmed/60 px-2.5 py-1.5 text-sm last:border-b-0"
+  ],
+  ["flex min-h-full flex-col py-3"],
+  ["flex min-h-full", "justify-end border-t border-grid-dimmed px-2 py-3"],
+  ["flex min-h-screen w-full items-center justify-center p-4"],
+  ["flex min-w-0 flex-1 flex-col gap-0.5", "pb-4"],
+  [
+    "flex min-w-0 flex-1 flex-col items-start gap-0.5 outline-hidden focus-custom"
+  ],
+  ["flex min-w-0 flex-1 items-center gap-1 truncate"],
+  ["flex min-w-0 flex-1 items-center gap-1 truncate", "justify-end"],
+  ["flex min-w-0 flex-1 items-center gap-1.5"],
+  ["flex min-w-0 flex-1 items-center gap-1.5 overflow-hidden"],
+  [
+    "flex min-w-0 flex-1 items-center gap-2 rounded-md border px-3 py-2 text-left text-sm outline-hidden transition focus-custom",
+    "text-text-bright"
+  ],
+  ["flex min-w-0 flex-1 items-center gap-2 transition-opacity", "opacity-50"],
+  ["flex min-w-0 flex-col p-1"],
+  ["flex min-w-0 grow items-center gap-0.5 overflow-hidden"],
+  ["flex min-w-0 items-baseline justify-between gap-3"],
+  ["flex min-w-0 items-center gap-1"],
+  ["flex min-w-0 items-center gap-1.5"],
+  ["flex min-w-0 items-center gap-1.5 overflow-hidden"],
+  [
+    "flex min-w-0 items-center gap-2 border-b border-grid-dimmed py-2 pl-3 pr-2"
+  ],
+  ["flex min-w-0 items-center gap-2 overflow-hidden py-2 pl-3 pr-1.5"],
+  ["flex min-w-0 items-center gap-3"],
+  ["flex min-w-0 items-center gap-x-1"],
+  ["flex min-w-0 items-center justify-between gap-2"],
+  ["flex min-w-0 items-center overflow-hidden"],
+  [
+    "flex min-w-0 items-center overflow-hidden border-b border-transparent px-1 py-1"
+  ],
+  ["flex min-w-0 items-center text-text-bright"],
+  ["flex min-w-0 justify-end"],
+  ["flex min-w-0 max-w-full flex-col"],
+  ["flex min-w-40 flex-col gap-1 p-1"],
+  ["flex rounded text-text-bright", "w-full", "w-fit"],
+  [
+    "flex rounded-sm border bg-background-raised p-0.5 transition focus-within:border-border-bright hover:border-border-bright"
+  ],
+  ["flex shrink-0"],
+  [
+    "flex shrink-0 flex-col gap-1.5",
+    "w-full",
+    "bg-background-bright px-3 pb-3 pt-1"
+  ],
+  ["flex shrink-0 flex-wrap items-center gap-1"],
+  ["flex shrink-0 flex-wrap items-center gap-1.5"],
+  ["flex shrink-0 items-center"],
+  ["flex shrink-0 items-center gap-0.5"],
+  ["flex shrink-0 items-center gap-1"],
+  [
+    "flex shrink-0 items-center gap-1 bg-background-bright px-3 pb-2 text-xs text-text-dimmed"
+  ],
+  ["flex shrink-0 items-center gap-1 text-sm capitalize"],
+  ["flex shrink-0 items-center gap-1.5"],
+  ["flex shrink-0 items-center gap-3"],
+  ["flex shrink-0 items-center justify-between gap-1.5 p-2"],
+  [
+    "flex shrink-0 items-center justify-center rounded border border-border-bright bg-background-hover",
+    "text-green-500",
+    "text-text-dimmed hover:border-border-bright hover:bg-background-raised hover:text-text-bright"
+  ],
+  [
+    "flex shrink-0 items-center justify-center rounded-full border-2 p-0.5 transition",
+    "border-indigo-500",
+    "border-grid-bright hover:border-border-bright"
+  ],
+  [
+    "flex size-10 items-center justify-center rounded-full border border-grid-dimmed bg-background-bright p-2"
+  ],
+  [
+    "flex size-4 flex-none items-center justify-center rounded border",
+    "border-indigo-500 bg-indigo-600",
+    "border-border-bright bg-background-raised"
+  ],
+  ["flex size-4 items-center justify-center"],
+  ["flex size-4 min-w-4 items-center", "mt-1"],
+  [
+    "flex size-4.5 items-center justify-center justify-items-center rounded p-0 text-text-dimmed hover:bg-surface-control hover:text-text-bright"
+  ],
+  [
+    "flex size-4.5 items-center justify-center rounded-[2px] border border-text-dimmed/40 text-text-dimmed transition hover:bg-surface-control hover:text-text-bright"
+  ],
+  [
+    "flex size-5 items-center justify-center rounded hover:bg-charcoal-750 disabled:opacity-30"
+  ],
+  [
+    "flex size-6 items-center justify-center rounded text-text-dimmed transition-colors hover:bg-surface-control hover:text-text-bright focus-custom disabled:pointer-events-none disabled:opacity-30"
+  ],
+  ["flex size-6 max-w-6 items-center", "cursor-not-allowed opacity-50"],
+  ["flex transition", "overflow-hidden"],
+  ["flex w-4 shrink-0 items-center justify-center"],
+  ["flex w-64 flex-col gap-1"],
+  [
+    "flex w-64 flex-col gap-2 rounded-sm border border-grid-dimmed p-3 font-mono text-sm text-text-bright"
+  ],
+  ["flex w-64 flex-col gap-4"],
+  ["flex w-64 items-center justify-between gap-2"],
+  ["flex w-72 flex-col items-start gap-y-4 p-4"],
+  ["flex w-fit items-center"],
+  ["flex w-fit items-center gap-4"],
+  ["flex w-fit min-w-40 flex-col gap-1"],
+  ["flex w-fit min-w-full flex-col"],
+  ["flex", "w-fit text-xxs"],
+  ["flex w-full"],
+  ["flex w-full cursor-pointer gap-3 text-left focus-custom"],
+  [
+    "flex w-full cursor-pointer items-center gap-3 px-3 py-3 text-left text-sm transition focus-custom",
+    "bg-indigo-500/10 hover:bg-indigo-500/[0.07]",
+    "hover:bg-background-hover"
+  ],
+  ["flex w-full flex-col"],
+  [
+    "flex w-full flex-col gap-1 rounded-sm px-2 py-2 outline-hidden transition-colors focus-custom hover:bg-background-hover"
+  ],
+  ["flex w-full flex-col gap-1.5"],
+  ["flex w-full flex-col gap-3"],
+  ["flex w-full flex-col gap-4"],
+  ["flex w-full flex-col gap-y-3 lg:gap-y-1"],
+  ["flex w-full flex-col items-center"],
+  ["flex w-full flex-col items-center gap-y-2"],
+  ["flex w-full flex-col items-start"],
+  ["flex w-full", "flex-col-reverse gap-1", "items-center justify-between"],
+  ["flex w-full flex-wrap items-center justify-between gap-1"],
+  [
+    "flex w-full flex-wrap items-center justify-between gap-3 @[300px]:w-auto @[300px]:flex-nowrap"
+  ],
+  [
+    "flex w-full flex-wrap items-center justify-center gap-x-6 gap-y-3 text-text-faint xl:justify-between xl:gap-0"
+  ],
+  ["flex w-full flex-wrap items-start justify-between gap-2 lg:flex-nowrap"],
+  ["flex w-full gap-2 rounded-lg p-3", "items-start", "items-center"],
+  [
+    "flex w-full gap-x-2.5 border-l-2 px-2.5 py-1",
+    "border-error/60 bg-error/15 hover:bg-error/25",
+    "border-warning/60 bg-warning/20 hover:bg-warning/30",
+    "border-transparent hover:bg-background-hover"
+  ],
+  [
+    "flex w-full items-baseline whitespace-pre rounded px-0.5 text-left hover:bg-blue-500/15",
+    "bg-blue-500/25"
+  ],
+  ["flex w-full items-center gap-1"],
+  [
+    "flex w-full items-center gap-1 overflow-hidden bg-background-bright py-2 pl-2 pr-3",
+    "font-mono text-xs font-medium text-text-bright",
+    "justify-end",
+    "cursor-pointer select-none"
+  ],
+  ["flex w-full items-center gap-2"],
+  ["flex w-full items-center gap-2 pl-3 pr-2"],
+  [
+    "flex w-full items-center gap-2 px-3 py-2 text-left text-sm transition-colors",
+    "bg-indigo-500/15 text-indigo-400",
+    "text-text-bright hover:bg-charcoal-800"
+  ],
+  [
+    "flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs transition",
+    "text-green-500",
+    "text-text-dimmed hover:bg-background-raised hover:text-text-bright"
+  ],
+  [
+    "flex w-full items-center gap-2 rounded-sm px-2 py-2 outline-hidden transition-colors focus-custom hover:bg-background-deep\t"
+  ],
+  ["flex w-full items-center gap-3 py-1"],
+  ["flex w-full items-center justify-between"],
+  ["flex w-full items-center justify-between border-t border-grid-bright p-1"],
+  ["flex w-full items-center justify-between border-t border-grid-bright pt-4"],
+  ["flex w-full items-center justify-between gap-2"],
+  ["flex w-full items-center justify-between gap-2 pl-1"],
+  [
+    "flex w-full items-center justify-between gap-2 px-3 py-2 text-left transition-colors hover:bg-charcoal-800 disabled:opacity-60"
+  ],
+  ["flex w-full items-center justify-between gap-4"],
+  ["flex w-full items-center justify-between gap-6"],
+  ["flex w-full items-center justify-between px-1"],
+  ["flex w-full items-center justify-between text-text-bright"],
+  [
+    "flex w-full items-center rounded-sm px-2 group-data-[active-item=true]:bg-tertiary hover:bg-tertiary",
+    "min-h-8",
+    "h-8",
+    "gap-2",
+    "gap-1"
+  ],
+  [
+    "flex w-full items-end justify-between gap-8 border-b border-grid-dimmed",
+    "py-4",
+    "pb-3"
+  ],
+  [
+    "flex w-full items-start gap-2 rounded-md border pl-2 pr-2 shadow-md backdrop-blur-xs",
+    "py-2",
+    "py-2.5"
+  ],
+  ["flex w-full items-start gap-2.5"],
+  ["flex w-full items-start gap-x-2"],
+  ["flex w-full items-start justify-between"],
+  [
+    "flex w-full items-start justify-between gap-2.5 rounded-md border py-2 pl-2 pr-3 shadow-md backdrop-blur-xs"
+  ],
+  [
+    "flex w-full justify-between gap-8",
+    "items-center",
+    "items-end",
+    "items-start",
+    "border-b border-grid-dimmed"
+  ],
+  ["flex w-full justify-start transition-opacity duration-500", "flex-wrap"],
+  ["flex w-full max-w-2xl flex-col gap-4"],
+  ["flex w-full max-w-md items-center gap-3"],
+  [
+    "flex w-full max-w-md justify-between text-[10px] uppercase tracking-wide text-text-dimmed"
+  ],
+  ["flex w-full min-w-0 items-center justify-between"],
+  [
+    "flex w-full min-w-64 flex-col p-6",
+    "border border-indigo-500",
+    "border border-grid-dimmed"
+  ],
+  [
+    "flex w-full overflow-hidden data-[panel-group-direction=vertical]:flex-col"
+  ],
+  [
+    "flex w-full shrink-0 items-center justify-between gap-2 rounded px-2 py-1 transition",
+    "text-text-bright",
+    "text-text-dimmed"
+  ],
+  [
+    "flex w-full whitespace-nowrap items-center text-text-dimmed",
+    "justify-start text-left",
+    "justify-center text-center",
+    "justify-end text-right"
+  ],
+  ["flex-1"],
+  ["flex-1 bg-transparent text-xs text-text-dimmed outline-hidden"],
+  [
+    "flex-1 border-0 bg-transparent text-xs text-text-dimmed outline-hidden focus:border-0 focus:ring-0"
+  ],
+  ["flex-1 border-l border-dashed border-border-bright"],
+  [
+    "flex-1 border-none bg-transparent pl-2 text-2sm text-text-bright shadow-none outline-hidden ring-0 placeholder:text-text-dimmed focus:border-none focus:outline-hidden focus:ring-0"
+  ],
+  ["flex-1 border-t border-dashed border-border-bright"],
+  ["flex-1 gap-1"],
+  [
+    "flex-1 overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["flex-1 overflow-hidden"],
+  [
+    "flex-1 overflow-x-auto overflow-y-auto bg-background-deep scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "flex-1 overflow-y-auto p-4 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "flex-1 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-charcoal-600"
+  ],
+  [
+    "flex-1 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["flex-1 pl-3 text-text-faint"],
+  ["flex-1 rounded-sm bg-background-hover/50"],
+  ["flex-1 rounded-t-[1px] bg-primary/60"],
+  ["flex-1 space-y-0.5"],
+  ["flex-1 space-y-1"],
+  ["flex-1 text-[13px] font-medium leading-normal text-text-bright"],
+  ["flex-1 text-left"],
+  ["flex-1 text-left outline-hidden focus-custom"],
+  ["flex-1 text-left text-text-dimmed"],
+  ["flex-1 text-xs text-error"],
+  ["flex-1 truncate"],
+  ["flex-col", "flex h-fit items-start"],
+  ["flex-none"],
+  ["flex-none px-3"],
+  ["flex-none select-none pl-1 text-text-faint"],
+  ["flex-none select-none pl-2 text-right text-text-faint"],
+  ["flex-none select-none pl-3 text-text-faint"],
+  ["flex-none transition group-hover:border-grid-dimmed"],
+  [
+    "focus-custom cursor-pointer rounded-md p-2 transition hover:bg-background-hover"
+  ],
+  [
+    "focus-custom m-0 min-h-10 w-full resize-none border-0 bg-background-bright px-3 py-2.5 text-sm text-text-bright scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control placeholder:text-text-dimmed focus:border-0 focus:ring-0 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  ["font-bold leading-none"],
+  ["font-bold text-text-bright"],
+  ["font-medium"],
+  ["font-medium tabular-nums"],
+  ["font-medium tabular-nums", "remaining"],
+  ["font-medium tabular-nums text-text-bright"],
+  ["font-medium text-indigo-500 underline"],
+  ["font-medium text-text-bright"],
+  ["font-medium", "text-text-bright"],
+  ["font-mono"],
+  ["font-mono font-medium"],
+  ["font-mono opacity-60"],
+  ["font-mono text-sm"],
+  ["font-mono text-sm text-indigo-500 underline"],
+  ["font-mono text-sm text-text-bright"],
+  ["font-mono text-sm text-text-dimmed"],
+  ["font-mono text-sm tracking-wide"],
+  ["font-mono text-text-bright"],
+  ["font-mono text-text-dimmed"],
+  ["font-mono text-xs"],
+  ["font-mono text-xs  ", "text-indigo-300", "text-text-bright"],
+  ["font-mono text-xs leading-tight"],
+  ["font-mono text-xs text-text-bright"],
+  ["font-mono text-xs text-text-dimmed"],
+  ["font-mono text-xxs"],
+  ["font-normal text-text-dimmed"],
+  ["font-sans"],
+  ["font-sans text-base font-medium text-text-bright"],
+  ["font-sans text-lg font-normal text-text-bright"],
+  ["font-sans text-sm font-normal", "text-text-bright", "text-text-dimmed"],
+  ["font-sans text-sm font-normal text-text-dimmed streamdown-container"],
+  ["font-semibold"],
+  ["font-semibold text-text-bright"],
+  ["gap-0.5"],
+  ["gap-1"],
+  ["gap-1.5"],
+  ["gap-1.5 px-2 py-1 text-sm"],
+  ["gap-1.75 px-0! pb-0! pt-0! sm:w-fit! sm:max-w-[90vw]!"],
+  ["gap-2"],
+  [
+    "gap-x-2 border-b border-grid-bright pb-1 text-xxs uppercase text-text-dimmed"
+  ],
+  ["gap-x-2 text-text-bright"],
+  ["gap-x-3 gap-y-1 pt-2"],
+  ["gap-y-0"],
+  ["grid"],
+  ["grid aspect-square place-items-center"],
+  [
+    "grid border-b border-grid-dimmed bg-background-dimmed [&>span]:px-3 [&>span]:py-1"
+  ],
+  ["grid divide-x divide-grid-dimmed"],
+  ["grid gap-1.5"],
+  ["grid gap-2"],
+  ["grid gap-2.5 px-2.5", "h-[280px] shrink-0"],
+  ["grid gap-2.5 sm:grid-cols-2"],
+  ["grid gap-3"],
+  ["grid gap-4 md:grid-cols-2"],
+  ["grid gap-4 sm:grid-cols-2 lg:grid-cols-3"],
+  [
+    "grid gap-x-3 border-b border-grid-dimmed bg-background-hover px-2.5 py-1.5"
+  ],
+  ["grid grid-cols-[1.125rem_1fr] gap-1"],
+  ["grid grid-cols-[100px_1fr]"],
+  ["grid grid-cols-[14rem_1fr] overflow-hidden"],
+  ["grid grid-cols-[1rem_4.5rem_minmax(0,1fr)] items-start gap-x-2"],
+  ["grid grid-cols-[2.75rem_minmax(0,1fr)] gap-x-1 text-sm"],
+  ["grid grid-cols-[4rem_1fr] gap-x-3 py-2 first:pt-1 last:pb-1"],
+  ["grid grid-cols-[8rem_1fr] gap-x-2 py-2 first:pt-1 last:pb-1"],
+  ["grid grid-cols-[auto_1fr] overflow-hidden"],
+  [
+    "grid grid-cols-[auto_auto] gap-x-2 gap-y-1 rounded-lg border border-grid-bright bg-background-bright px-2.5 py-1.5 text-xs shadow-xl"
+  ],
+  ["grid grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-2"],
+  ["grid grid-cols-1 gap-2 @[22rem]:grid-cols-3"],
+  [
+    "grid grid-cols-1 gap-2 lg:grid-cols-2 lg:items-start lg:gap-x-4 lg:gap-y-2"
+  ],
+  ["grid grid-cols-1 gap-3 lg:grid-cols-2"],
+  ["grid grid-cols-1 gap-3 px-3 lg:grid-cols-3"],
+  ["grid grid-cols-1 gap-3 sm:grid-cols-2"],
+  ["grid grid-cols-1 gap-4 lg:grid-cols-2"],
+  ["grid grid-cols-2"],
+  ["grid grid-cols-2 gap-2"],
+  ["grid grid-cols-2 gap-3"],
+  ["grid grid-cols-2 gap-3 p-3"],
+  ["grid grid-cols-2 gap-3 sm:grid-cols-3"],
+  ["grid grid-cols-2 gap-3 sm:grid-cols-4"],
+  ["grid grid-cols-2 gap-8"],
+  ["grid grid-cols-3 gap-3"],
+  ["grid grid-cols-3 gap-3 p-3"],
+  ["grid grid-cols-3 gap-x-2 gap-y-4 px-3 py-6"],
+  ["grid grid-cols-4 gap-2"],
+  ["grid grid-cols-5 gap-3"],
+  ["grid grid-cols-6 gap-1.5"],
+  ["grid grid-rows-[2.5rem_1fr]"],
+  ["grid", "grid-rows-[2.5rem_1fr]", "grid-rows-[1fr]"],
+  ["grid grid-rows-[3rem_1fr] overflow-hidden"],
+  ["grid grid-rows-1 overflow-hidden"],
+  ["grid h-10 grid-cols-[minmax(0,1fr)_auto] items-center gap-2"],
+  ["grid h-10 w-full grid-rows-[auto_1px] bg-background-bright"],
+  ["grid h-5 grid-cols-[1.125rem_1fr] gap-1 text-sm"],
+  ["grid h-6 grid-cols-[1.125rem_1fr] gap-1 text-xs"],
+  [
+    "grid h-7 grid-cols-[100px_auto_100px] border-b border-background-bright bg-background-deep"
+  ],
+  [
+    "grid h-7 grid-cols-[1fr_auto] items-center gap-4 rounded-sm px-1.5 transition odd:bg-background-hover/40 @[28rem]:grid-cols-[8rem_1fr] hover:bg-text-bright/4"
+  ],
+  [
+    "grid h-9 w-9 place-content-center rounded-sm border border-grid-dimmed bg-background-dimmed"
+  ],
+  ["grid h-fit max-h-full min-h-full grid-rows-[1fr] overflow-x-auto"],
+  ["grid h-full grid-cols-1 lg:grid-cols-2"],
+  ["grid h-full grid-rows-[12rem_1fr] overflow-hidden"],
+  ["grid h-full grid-rows-[1fr_auto]"],
+  ["grid h-full grid-rows-[2.5rem_1fr_3.25rem] overflow-hidden"],
+  [
+    "grid h-full grid-rows-[2.5rem_auto_2.5rem] overflow-hidden border-r border-grid-bright bg-background-bright transition"
+  ],
+  ["grid h-full grid-rows-[2rem_1fr]"],
+  ["grid h-full grid-rows-[2rem_1fr] overflow-hidden"],
+  ["grid h-full grid-rows-[auto_1fr_auto] overflow-hidden"],
+  ["grid h-full grid-rows-[auto_1fr] overflow-hidden"],
+  ["grid h-full grid-rows-[auto_1fr] overflow-hidden bg-background-bright"],
+  [
+    "grid h-full grid-rows-[auto_auto_minmax(0,1fr)] overflow-hidden bg-background-bright"
+  ],
+  ["grid h-full grid-rows-1"],
+  ["grid h-full max-h-full grid-cols-1"],
+  ["grid h-full max-h-full grid-cols-1 overflow-hidden"],
+  ["grid h-full max-h-full grid-rows-[2.25rem_1fr] overflow-hidden"],
+  [
+    "grid h-full max-h-full grid-rows-[2.5rem_1fr_3.25rem] overflow-hidden bg-background-bright"
+  ],
+  [
+    "grid h-full max-h-full grid-rows-[2.5rem_1fr_auto] overflow-hidden bg-background-bright"
+  ],
+  ["grid h-full max-h-full grid-rows-[2.5rem_1fr] overflow-hidden"],
+  [
+    "grid h-full max-h-full grid-rows-[2.5rem_1fr] overflow-hidden bg-background-bright"
+  ],
+  [
+    "grid h-full max-h-full grid-rows-[2.5rem_1fr] overflow-hidden bg-background-bright",
+    "grid-rows-[2.5rem_1fr_auto]"
+  ],
+  [
+    "grid h-full max-h-full grid-rows-[2.5rem_2.5rem_1fr_3.25rem] overflow-hidden bg-background-bright"
+  ],
+  [
+    "grid h-full max-h-full grid-rows-[2.5rem_2rem_1fr_minmax(3.25rem,auto)] overflow-hidden bg-background-bright"
+  ],
+  [
+    "grid h-full max-h-full grid-rows-[2.5rem_2rem_1fr] overflow-hidden bg-background-bright"
+  ],
+  ["grid h-full max-h-full grid-rows-[2.5rem_auto_1fr] overflow-hidden"],
+  ["grid h-full max-h-full grid-rows-[2.5rem_auto] overflow-hidden"],
+  [
+    "grid h-full max-h-full grid-rows-[2rem_1fr] overflow-hidden bg-background-bright"
+  ],
+  ["grid h-full max-h-full grid-rows-[auto_1fr] overflow-hidden"],
+  [
+    "grid h-full max-h-full grid-rows-[auto_1fr] overflow-hidden bg-background-bright"
+  ],
+  ["grid h-full max-h-full min-h-0 grid-rows-[auto_1fr] overflow-hidden"],
+  [
+    "grid h-full max-h-full overflow-hidden bg-background-bright  ",
+    "grid-rows-[auto_1fr]",
+    "grid-rows-[1fr]"
+  ],
+  [
+    "grid h-full max-h-full overflow-hidden bg-background-bright",
+    "grid-rows-[2.5rem_1fr_auto]",
+    "grid-rows-[2.5rem_1fr]"
+  ],
+  [
+    "grid h-full max-h-full overflow-hidden bg-background-bright",
+    "grid-rows-[auto_1fr]",
+    "grid-rows-[2.5rem_1fr]"
+  ],
+  [
+    "grid h-full max-h-full overflow-hidden",
+    "grid-rows-[auto_auto_1fr]",
+    "grid-rows-[auto_1fr]"
+  ],
+  [
+    "grid h-full max-h-full overflow-hidden",
+    "grid-rows-1",
+    "grid-rows-[1fr_auto]"
+  ],
+  ["grid h-full place-items-center"],
+  ["grid h-full place-items-center @container-size"],
+  ["grid h-full w-full grid-rows-1 overflow-hidden"],
+  ["grid h-full w-full max-w-3xl place-items-center px-20"],
+  ["grid h-full w-full place-items-center"],
+  [
+    "grid items-center gap-x-3 border-b border-grid-dimmed px-2.5 py-1.5 text-sm last:border-b-0"
+  ],
+  ["grid justify-items-center"],
+  ["grid max-h-full grid-rows-[auto_1fr] overflow-hidden"],
+  ["grid max-h-full grid-rows-1"],
+  ["grid max-h-full min-h-full grid-rows-[1fr_auto]"],
+  ["grid max-h-full min-h-full grid-rows-[1fr]"],
+  ["grid max-h-full min-h-full grid-rows-[1fr] overflow-x-auto"],
+  ["grid max-h-full min-h-full grid-rows-[auto_1fr_auto]"],
+  ["grid max-h-full min-h-full grid-rows-[auto_1fr] overflow-x-auto"],
+  [
+    "grid max-h-full min-h-full overflow-x-auto",
+    "grid-rows-[auto_1fr_auto]",
+    "grid-rows-[1fr]"
+  ],
+  ["grid min-h-0 flex-1 grid-cols-[minmax(0,0.45fr)_minmax(0,0.55fr)]"],
+  ["grid min-h-0 flex-1 grid-cols-1 gap-2"],
+  ["grid min-h-0 flex-1 grid-cols-2 divide-x divide-grid-dimmed"],
+  ["grid min-h-full grid-cols-[15rem_1fr] gap-4 px-6"],
+  [
+    "grid min-w-32 items-start gap-1.5 rounded-lg border border-grid-bright bg-background-bright px-2.5 py-1.5 text-xs shadow-xl"
+  ],
+  ["grid place-items-center"],
+  ["grid place-items-center p-6"],
+  ["grid place-items-center py-6 text-text-dimmed"],
+  ["grid shrink-0 place-items-center overflow-hidden"],
+  ["grid size-4 place-items-center"],
+  ["grid w-full items-center gap-1.5", "w-full", "max-w-md"],
+  [
+    "grid w-full transition-[grid-template-rows,opacity,visibility] duration-200 ease-in-out"
+  ],
+  ["grid-rows-[auto_auto_1fr]"],
+  ["group"],
+  ["group -ml-1.5 flex items-center gap-0"],
+  [
+    "group box-content rounded-sm px-0.5 text-right text-sm tabular-nums outline-hidden  ",
+    "text-text-faint",
+    "text-text-bright"
+  ],
+  [
+    "group box-content text-center tabular-nums outline-hidden focus:bg-surface-control focus:text-text-bright",
+    "text-text-faint",
+    "text-text-bright"
+  ],
+  ["group cursor-pointer focus-custom"],
+  [
+    "group cursor-pointer px-1 pt-1 text-2sm text-text-dimmed focus-custom last:pb-1"
+  ],
+  ["group flex cursor-pointer items-start gap-x-2 transition focus-custom"],
+  [
+    "group flex flex-col items-center border-r border-grid-bright px-2 pt-1 focus-custom first:pl-0 last:border-none"
+  ],
+  [
+    "group flex flex-col items-center pt-1 focus-custom disabled:pointer-events-none disabled:opacity-50"
+  ],
+  [
+    "group flex flex-col justify-between gap-4 rounded-lg border border-grid-bright bg-background-bright pb-4 pl-4 pr-3 pt-3"
+  ],
+  ["group flex flex-wrap items-center gap-x-1 gap-y-0"],
+  ["group flex flex-wrap items-center gap-x-2 gap-y-0"],
+  ["group flex gap-3 py-1 hover:bg-background-bright"],
+  ["group flex h-11 w-full items-center gap-3 rounded-md p-1 pr-3"],
+  [
+    "group flex h-6 items-center gap-1 rounded pl-2 pr-1 transition focus-custom",
+    "w-full justify-between"
+  ],
+  [
+    "group flex h-8 items-center",
+    "bg-grid-dimmed hover:bg-grid-bright",
+    "bg-transparent hover:bg-grid-dimmed"
+  ],
+  [
+    "group flex h-8 items-center gap-1.5 rounded pl-1.75 pr-2 hover:bg-background-hover focus-custom",
+    "w-full",
+    "w-full justify-between"
+  ],
+  [
+    "group flex h-8 items-center rounded border pl-1.75 transition-[border-color] duration-150 hover:bg-background-hover focus-custom",
+    "justify-between border-grid-bright pr-1",
+    "justify-center border-transparent pr-0.5"
+  ],
+  [
+    "group flex h-8 items-center rounded pl-1.75 hover:bg-background-hover focus-custom",
+    "justify-between pr-1",
+    "justify-center pr-0.5"
+  ],
+  [
+    "group flex h-8 items-center rounded pl-1.75 hover:bg-background-hover focus-custom",
+    "w-full justify-between pr-1",
+    "justify-center pr-0.5"
+  ],
+  [
+    "group flex h-8 w-full items-center rounded bg-background-hover pl-2 pr-2.5 text-sm text-text-dimmed ring-border-bright transition focus-custom hover:bg-secondary hover:ring-1"
+  ],
+  [
+    "group flex h-9 items-center border-b border-b-white/10 hover:bg-grid-dimmed"
+  ],
+  [
+    "group flex h-full items-center gap-2 rounded-lg border border-grid-bright bg-background-bright px-4",
+    "drag-handle cursor-grab active:cursor-grabbing"
+  ],
+  [
+    "group flex h-full min-h-40 flex-col gap-3 rounded-lg border border-grid-bright bg-background-bright p-5 text-left transition-colors",
+    "hover:border-border-bright hover:bg-background-hover"
+  ],
+  ["group flex items-center"],
+  ["group flex items-center gap-1"],
+  [
+    "group flex items-center gap-1 focus-custom disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  ["group flex items-center justify-center transition focus-custom"],
+  [
+    "group flex items-center justify-end gap-1 rounded text-text-dimmed transition focus-custom hover:bg-background-dimmed hover:text-text-bright"
+  ],
+  [
+    "group flex items-start gap-2 rounded-sm px-2 py-1.5 transition-colors hover:bg-background-bright",
+    "bg-background-hover hover:bg-background-hover",
+    "pointer-events-none opacity-50"
+  ],
+  [
+    "group flex items-start gap-x-2 transition ",
+    "cursor-default",
+    "cursor-pointer"
+  ],
+  ["group flex items-start py-1 hover:bg-background-bright"],
+  ["group flex size-6 items-center justify-center focus-custom"],
+  [
+    "group flex size-7 items-center justify-center rounded-sm opacity-70 transition focus-custom hover:bg-background-hover hover:opacity-100 focus-visible:focus-custom disabled:pointer-events-none"
+  ],
+  [
+    "group flex size-8 items-center justify-center rounded hover:bg-background-hover focus-custom"
+  ],
+  [
+    "group flex w-fit items-center gap-2 rounded-full border border-dashed border-border-bright px-4 py-2 transition-colors focus-custom hover:border-solid hover:border-indigo-500 focus-visible:rounded-full! disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "group flex w-fit items-center gap-2 rounded-full border border-dashed border-border-bright px-4 py-2 transition-colors hover:border-solid hover:border-indigo-500 focus-custom focus-visible:rounded-full!"
+  ],
+  ["group flex w-fit items-start gap-x-2", "opacity-70"],
+  ["group flex w-full flex-col py-0"],
+  [
+    "group flex w-full items-center gap-2 rounded-sm px-2 py-2 outline-hidden transition-colors hover:bg-background-deep"
+  ],
+  ["group h-full"],
+  ["group h-full min-h-0 overflow-hidden"],
+  [
+    "group relative flex h-8 items-center rounded-sm transition-colors hover:bg-background-hover",
+    "opacity-40"
+  ],
+  [
+    "group relative flex h-full grow items-center justify-center focus-custom disabled:pointer-events-none disabled:opacity-50",
+    "flex-1 basis-0"
+  ],
+  [
+    "group relative flex items-center justify-center focus-custom",
+    "w-0.75",
+    "data-[handle-orientation=vertical]:h-0.75 data-[handle-orientation=vertical]:w-full",
+    "before:absolute before:left-px before:top-0 before:h-full before:w-px before:bg-grid-bright",
+    "data-[handle-orientation=vertical]:before:left-0 data-[handle-orientation=vertical]:before:top-px data-[handle-orientation=vertical]:before:h-px data-[handle-orientation=vertical]:before:w-full",
+    "after:absolute after:inset-y-0 after:left-1/2 after:w-3 after:-translate-x-1/2",
+    "data-[handle-orientation=vertical]:after:inset-x-0 data-[handle-orientation=vertical]:after:inset-y-auto",
+    "data-[handle-orientation=vertical]:after:left-0 data-[handle-orientation=vertical]:after:top-1/2",
+    "data-[handle-orientation=vertical]:after:h-3 data-[handle-orientation=vertical]:after:w-full",
+    "data-[handle-orientation=vertical]:after:-translate-y-1/2 data-[handle-orientation=vertical]:after:translate-x-0"
+  ],
+  ["group relative inline-flex h-6 items-center", "max-w-full pr-7"],
+  ["group relative inline-flex shrink-0"],
+  ["group rounded border border-grid-bright transition-colors"],
+  ["group shrink-0"],
+  [
+    "group-data-[state=unchecked]:bg-surface-control group-hover:group-data-[state=unchecked]:bg-surface-control-active/50"
+  ],
+  [
+    "group-data-[state=unchecked]:bg-surface-control-hover group-hover:group-data-[state=unchecked]:bg-surface-control-active"
+  ],
+  [
+    "group-hover:bg-background-raised",
+    "bg-background-hover group-hover:bg-surface-control/50"
+  ],
+  ["group-hover:border-border-brighter"],
+  ["group-hover/button:bg-transparent"],
+  ["group-hover/button:text-error"],
+  ["group-hover/side-header:text-text-bright"],
+  ["group-hover/table-row:bg-background-bright/50"],
+  ["group-hover/table-row:bg-indigo-500/5"],
+  ["group-hover/table-row:text-text-bright"],
+  ["group/button block focus-custom", "w-full"],
+  ["group/button block focus-custom", "w-full", "w-fit"],
+  ["group/button focus-custom", "w-full"],
+  ["group/button outline-hidden focus-custom", "w-full"],
+  [
+    "group/button pointer-events-none cursor-default opacity-40 outline-hidden",
+    "w-full"
+  ],
+  [
+    "group/card relative overflow-hidden rounded border border-border-bright bg-background-raised/50 shadow-lg"
+  ],
+  [
+    "group/delete-template shrink-0 opacity-0 transition-opacity group-hover:opacity-100"
+  ],
+  ["group/header relative"],
+  [
+    "group/menuitem flex h-8 w-full items-center gap-2 overflow-hidden rounded pl-1.75 pr-2 text-left text-text-dimmed hover:bg-background-hover hover:text-text-bright focus-custom"
+  ],
+  ["group/menuitem relative h-8 w-full"],
+  [
+    "group/menulink flex h-8 items-center gap-2 overflow-hidden rounded pl-1.75 pr-2 focus-custom",
+    "min-w-0 flex-1",
+    "w-full",
+    "bg-tertiary text-text-bright",
+    "text-text-dimmed group-hover/menuitem:bg-background-hover group-hover/menuitem:text-text-bright hover:bg-background-hover hover:text-text-bright"
+  ],
+  ["group/preview flex flex-none items-center gap-2"],
+  [
+    "group/resize absolute inset-y-0 -right-1 z-30 w-2 cursor-col-resize touch-none"
+  ],
+  ["group/row"],
+  ["group/row hover:bg-background-hover"],
+  [
+    "group/section flex w-full cursor-pointer items-center justify-between overflow-hidden rounded-sm py-1 pl-1.5 pr-1 group-hover/sectionheader:bg-background-hover focus-custom"
+  ],
+  ["group/sectionheader relative w-full"],
+  [
+    "group/side-header flex h-4 items-center justify-between overflow-hidden pl-1.5"
+  ],
+  [
+    "group/sort flex cursor-pointer select-none items-center rounded-sm focus-custom"
+  ],
+  [
+    "group/spannode flex h-8 cursor-pointer items-center overflow-hidden rounded-l-sm pr-2",
+    "bg-grid-dimmed hover:bg-grid-bright",
+    "bg-transparent hover:bg-grid-dimmed"
+  ],
+  [
+    "group/swatch flex h-6 w-6 items-center justify-center rounded-full border border-text-bright/30"
+  ],
+  [
+    "group/tab flex flex-col items-center focus-custom",
+    "h-full",
+    "pt-1",
+    "pointer-events-none opacity-50"
+  ],
+  ["group/tab flex flex-col items-center pt-1 focus-custom"],
+  ["group/tab flex h-full flex-col focus-custom"],
+  [
+    "group/tab relative flex h-full grow items-center justify-center focus-custom"
+  ],
+  [
+    "group/table-row relative w-full outline-hidden after:absolute after:bottom-0 after:left-3 after:right-0 after:h-px after:bg-grid-dimmed",
+    "opacity-50"
+  ],
+  [
+    "group/thumb relative block cursor-pointer rounded-full transition focus:outline-hidden"
+  ],
+  ["grow"],
+  ["grow @container"],
+  ["grow", "min-w-0 break-words py-1.5", "truncate"],
+  [
+    "grow overflow-x-auto overflow-y-scroll font-mono text-xs transition-all duration-200 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "h-16",
+    "h-64"
+  ],
+  ["grow tabular-nums"],
+  ["grow truncate"],
+  ["grow truncate text-left"],
+  ["grow truncate text-text-bright"],
+  ["h-[0.1875rem] w-0.75 rounded-full bg-surface-control"],
+  ["h-[1.8rem]"],
+  [
+    "h-[1.8rem] rounded border border-border-bright bg-background-hover px-2 text-xs tabular-nums transition hover:border-border-bright",
+    "text-text-bright",
+    "text-text-dimmed",
+    "focus:border-border-brightest focus:outline-hidden",
+    "[&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none"
+  ],
+  ["h-[120px]"],
+  ["h-[3.25rem] [&_td]:py-2"],
+  ["h-[300px]"],
+  ["h-[312px]"],
+  ["h-[400px]"],
+  ["h-0.5 w-full bg-indigo-500", "mt-1"],
+  [
+    "h-0.5 w-full bg-surface-control-active opacity-0 transition duration-200 group-hover/tab:opacity-100",
+    "mt-1"
+  ],
+  ["h-0.75 w-[0.1875rem] rounded-full bg-surface-control"],
+  [
+    "h-1 w-full cursor-pointer appearance-none rounded-full bg-grid-bright accent-blue-500"
+  ],
+  ["h-1.5 w-full overflow-hidden rounded-full bg-black/5 dark:bg-charcoal-750"],
+  ["h-11 justify-center px-4"],
+  ["h-12.5"],
+  ["h-2"],
+  ["h-2 w-2"],
+  ["h-2 w-2 rounded-[1px] bg-error"],
+  ["h-2 w-2 rounded-[1px] bg-success"],
+  ["h-2 w-2 rounded-[1px] bg-surface-control-hover"],
+  ["h-2 w-2 rounded-full", "bg-error/80", "bg-surface-control"],
+  ["h-2 w-2 rounded-full", "bg-warning/80", "bg-surface-control"],
+  ["h-2 w-2 shrink-0 rounded-[2px]"],
+  [
+    "h-2.5 w-2.5 data-[state=checked]:translate-x-2 data-[state=unchecked]:translate-x-0",
+    "group-active:w-3.25 group-active:data-[state=checked]:translate-x-1.25"
+  ],
+  ["h-24"],
+  ["h-3 w-1 shrink-0 rounded-[2px]"],
+  ["h-3 w-3"],
+  [
+    "h-3 w-3 data-[state=checked]:translate-x-3.5 data-[state=unchecked]:translate-x-0",
+    "group-active:w-4 group-active:data-[state=checked]:translate-x-2.5"
+  ],
+  ["h-3 w-3 rounded-full bg-background-raised"],
+  ["h-3 w-full overflow-hidden rounded-sm bg-background-raised"],
+  ["h-3.5 w-3.5"],
+  ["h-3.5 w-3.5 text-white drop-shadow-md"],
+  ["h-4 w-4"],
+  ["h-4 w-4 focus-custom"],
+  ["h-4 w-4 group-hover/table-row:text-text-bright"],
+  ["h-4 w-4 shrink-0 justify-start text-rose-500"],
+  ["h-4 w-4 shrink-0 text-success"],
+  ["h-4 w-4 shrink-0 transition-transform duration-200"],
+  ["h-4 w-4 text-blue-500"],
+  ["h-4 w-4 text-blue-500/50"],
+  ["h-4 w-4 text-text-dimmed"],
+  ["h-4 w-auto text-green-500"],
+  ["h-40"],
+  ["h-44"],
+  ["h-44 w-full"],
+  ["h-48"],
+  ["h-5"],
+  ["h-5 rounded-xs border border-grid-bright"],
+  ["h-5 w-2 rounded-sm bg-background-hover/50"],
+  ["h-5 w-5"],
+  [
+    "h-5 w-5 data-[state=checked]:translate-x-4.5 data-[state=unchecked]:translate-x-0",
+    "group-active:w-6.5 group-active:data-[state=checked]:translate-x-3"
+  ],
+  ["h-5 w-5 shrink-0 "],
+  ["h-5 w-5 shrink-0 text-callout-pricing"],
+  ["h-5 w-5 shrink-0 text-error"],
+  ["h-5 w-5 shrink-0 text-success"],
+  ["h-5 w-5 shrink-0 text-text-dimmed"],
+  ["h-5 w-5 shrink-0 text-warning"],
+  ["h-5 w-5", "text-amber-400 light:text-amber-600", "text-error"],
+  ["h-5 w-5 text-green-400"],
+  ["h-5 w-full rounded-sm bg-background-hover/50"],
+  ["h-5.5 pl-1.5 pr-2"],
+  ["h-6"],
+  ["h-6 w-[60%] bg-grid-dimmed"],
+  ["h-6 w-28 rounded-sm"],
+  ["h-6 w-6"],
+  ["h-6 w-6 flex-none transition group-hover:border-grid-dimmed"],
+  [
+    "h-6 w-6 rounded-sm p-1 text-text-bright transition hover:bg-background-raised"
+  ],
+  [
+    "h-6 w-6 rounded-sm p-1 text-text-dimmed transition hover:bg-background-raised hover:text-text-bright"
+  ],
+  ["h-6 w-6 text-emerald-500"],
+  [
+    "h-6 w-full min-w-0 flex-1 rounded-sm bg-transparent text-[0.90625rem] font-medium tracking-[-0.01em] text-text-bright outline-none"
+  ],
+  [
+    "h-6 w-full rounded border border-border-bright bg-background-bright px-1 text-xs text-text-bright focus:border-indigo-500 focus:outline-hidden"
+  ],
+  ["h-64"],
+  ["h-7 w-7 text-amber-400"],
+  ["h-8"],
+  [
+    "h-8 group-disabled/button:opacity-50 group-disabled/button:[&_span]:text-text-dimmed"
+  ],
+  [
+    "h-8 min-w-0 border-0 bg-background-hover pl-2 text-sm text-text-dimmed ring-border-bright transition hover:bg-secondary hover:text-text-dimmed hover:ring-1"
+  ],
+  ["h-8 w-2 border-r border-grid-bright"],
+  ["h-8 w-4"],
+  ["h-8 w-8 text-green-500"],
+  ["h-8 w-8.75 justify-center"],
+  ["h-80"],
+  ["h-96"],
+  ["h-fit"],
+  [
+    "h-fit overflow-x-auto px-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "h-fit overflow-x-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "h-fit overflow-x-auto whitespace-nowrap px-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["h-fit w-full pt-6", "pb-12", "pb-6"],
+  ["h-full"],
+  ["h-full border-r border-grid-dimmed"],
+  ["h-full border-r", "border-success/30", "border-error/30"],
+  ["h-full flex-1 bg-background-dimmed"],
+  ["h-full flex-1 bg-background-hover"],
+  ["h-full flex-1 bg-charcoal-850"],
+  ["h-full", "hidden"],
+  ["h-full", "justify-center"],
+  ["h-full max-h-full"],
+  ["h-full max-h-full bg-background-bright"],
+  [
+    "h-full min-h-[3.5rem] items-start border-grid-bright bg-background-bright p-3 shadow-none [&_p]:mt-0.5 [&_p]:text-xs [&_p]:leading-snug hover:border-border-bright hover:bg-background-hover data-[state=checked]:border-indigo-500/70 data-[state=checked]:bg-indigo-500/10 hover:data-[state=checked]:bg-indigo-500/15"
+  ],
+  ["h-full min-h-0"],
+  ["h-full min-h-0 overflow-hidden"],
+  [
+    "h-full min-h-0 w-full overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["h-full overflow-auto"],
+  ["h-full overflow-hidden"],
+  ["h-full overflow-hidden bg-background-bright"],
+  ["h-full overflow-hidden bg-background-dimmed antialiased"],
+  ["h-full overflow-hidden", "invisible"],
+  [
+    "h-full overflow-hidden overflow-y-auto pb-8 pt-2 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["h-full overflow-hidden px-0 pb-0"],
+  ["h-full overflow-hidden px-0 pb-2", "pt-0", "pt-3"],
+  ["h-full overflow-hidden px-0 pb-2 pt-3"],
+  [
+    "h-full overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "h-full overflow-y-auto p-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "h-full overflow-y-auto px-3 py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "h-full overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-charcoal-600"
+  ],
+  [
+    "h-full overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "h-full overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["h-full rounded-full", "bg-warning", "bg-queues"],
+  ["h-full rounded-none border-none [&_pre]:px-3 [&_pre]:py-2 [&_pre]:text-sm"],
+  ["h-full rounded-sm bg-blue-500"],
+  ["h-full shrink-0 overflow-hidden"],
+  ["h-full w-1.75 border-b"],
+  ["h-full w-1.75 rounded-b-xs"],
+  ["h-full w-full"],
+  ["h-full w-full -rotate-90 overflow-visible"],
+  ["h-full w-full @container-size"],
+  [
+    "h-full w-full",
+    "aspect-auto!",
+    "[&_.recharts-surface]:cursor-crosshair [&_.recharts-wrapper]:cursor-crosshair"
+  ],
+  [
+    "h-full w-full overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "flex flex-col p-4 lg:p-0"
+  ],
+  [
+    "h-full w-full translate-y-px border-none bg-transparent py-0 pl-2 pr-0 text-xs leading-none text-text-bright outline-hidden placeholder:text-text-dimmed focus:outline-hidden focus:ring-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+  ],
+  ["h-px"],
+  ["h-px flex-1 bg-background-raised"],
+  ["h-px flex-1 bg-surface-control"],
+  ["h-px w-full"],
+  ["h-px w-full bg-grid-bright"],
+  ["hidden"],
+  ["hidden grid-rows-[1fr_auto] pb-6 lg:grid"],
+  [
+    "hidden group-hover/table-row:block",
+    "pr-0.5 group-hover/table-row:border-r"
+  ],
+  [
+    "hidden h-2 w-2 rotate-45 border-b border-l border-grid-bright bg-background-bright md:block"
+  ],
+  ["hidden items-center gap-4 @[48rem]:flex"],
+  ["hidden w-full items-center justify-between lg:flex"],
+  ["hover:bg-background-hover"],
+  ["inline"],
+  ["inline-block h-3 w-12 animate-pulse rounded bg-grid-bright"],
+  ["inline-block size-1.5 animate-pulse rounded-full bg-indigo-400"],
+  ["inline-block size-4"],
+  ["inline-flex"],
+  [
+    "inline-flex cursor-pointer items-center gap-1 text-xs transition-colors",
+    "text-success",
+    "text-text-dimmed hover:text-text-bright"
+  ],
+  ["inline-flex cursor-pointer items-center gap-2 focus:outline-hidden"],
+  ["inline-flex flex-col gap-0.5"],
+  ["inline-flex h-8", "w-full"],
+  ["inline-flex items-center"],
+  [
+    "inline-flex items-center gap-0.5 rounded-full border border-grid-bright bg-background-dimmed px-1.5 py-px text-xxs text-text-dimmed"
+  ],
+  [
+    "inline-flex items-center gap-0.5 truncate rounded border border-grid-bright bg-background-bright px-1.5 py-0.5 font-mono text-text-dimmed"
+  ],
+  ["inline-flex items-center gap-1"],
+  ["inline-flex items-center gap-1 font-mono text-xs"],
+  [
+    "inline-flex items-center gap-1 rounded border border-border-bright bg-background-bright px-1.5 py-0.5 font-mono text-[10px] text-text-dimmed transition-colors hover:border-border-brightest hover:text-text-bright"
+  ],
+  ["inline-flex items-center gap-1 text-success"],
+  ["inline-flex items-center gap-1", "text-success", "text-blue-500"],
+  ["inline-flex items-center gap-1 text-text-dimmed"],
+  ["inline-flex items-center gap-1 text-xs text-text-dimmed"],
+  ["inline-flex items-center gap-1.5 align-middle"],
+  [
+    "inline-flex items-center gap-1.5 rounded-full border border-border-bright bg-background-bright py-0.5 pl-2 pr-1.5 text-xs text-text-bright"
+  ],
+  [
+    "inline-flex items-center gap-1.5 rounded-sm bg-background-raised px-2 py-1 text-xs font-mono"
+  ],
+  ["inline-flex items-center justify-center"],
+  [
+    "inline-flex items-center justify-center whitespace-nowrap border-r border-grid-bright px-2 text-sm transition-all first:pl-0 last:border-none focus-custom data-[state=active]:text-indigo-500 system:data-[state=active]:text-text-bright data-[state=inactive]:text-text-dimmed data-[state=inactive]:hover:text-text-bright disabled:pointer-events-none disabled:opacity-50"
+  ],
+  [
+    "inline-flex items-center rounded border border-grid-bright bg-background-bright px-2 py-1 text-xs text-text-dimmed transition-colors hover:text-text-bright"
+  ],
+  [
+    "inline-flex items-center rounded border px-1 py-0.5 text-xxs font-medium uppercase tracking-wider"
+  ],
+  [
+    "inline-flex items-center rounded border px-1.5 py-0.5 text-xs font-medium uppercase",
+    "border-border-bright bg-background-raised text-text-dimmed"
+  ],
+  [
+    "inline-flex items-center rounded px-2 py-0.5 text-xs font-medium",
+    "contrast-chip"
+  ],
+  ["inline-flex items-center whitespace-nowrap"],
+  ["inline-flex min-w-0! flex-col p-1"],
+  ["inline-flex min-w-full items-center"],
+  [
+    "inline-flex rounded bg-success/10 px-2 py-0.5 text-xs font-medium text-success opacity-0 transition-opacity system:bg-success system:text-white group-hover/preview:opacity-100 group-has-[:focus-visible]/preview:opacity-100"
+  ],
+  [
+    "inline-flex rounded-sm bg-indigo-500/20 px-1.5 py-0.5 text-[11px] font-medium text-indigo-400"
+  ],
+  [
+    "inline-flex rounded-sm px-1.5 py-0.5 text-[11px] font-medium  ",
+    "bg-amber-500/20 text-amber-400",
+    "bg-background-raised text-text-dimmed"
+  ],
+  [
+    "inline-flex shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors group-disabled:cursor-not-allowed group-disabled:opacity-50 group-data-[state=checked]:bg-accent-fill group-data-[state=unchecked]:bg-background-raised group-hover:group-data-[state=unchecked]:bg-surface-control-active/50"
+  ],
+  ["inline-flex text-text-bright"],
+  ["inline-flex w-fit items-center rounded px-2 py-0.5 text-xs font-medium"],
+  ["inline-grid"],
+  ["inline-text-link focus-visible:focus-custom"],
+  ["invisible"],
+  ["invisible absolute whitespace-nowrap"],
+  ["invisible col-start-1 row-start-1"],
+  ["invisible flex"],
+  ["invisible", "visible"],
+  ["items-center"],
+  ["items-center gap-x-2 border-b border-grid-dimmed py-1 last:border-b-0"],
+  ["items-center justify-between pl-2.5 pr-1.5"],
+  ["items-stretch"],
+  ["items-stretch justify-between gap-x-0 pl-4 pr-2"],
+  ["justify-between border-y px-2"],
+  ["justify-between gap-2"],
+  ["justify-end border-t-0"],
+  ["justify-self-end"],
+  ["justify-self-start"],
+  ["justify-start gap-x-4 pl-4 pr-2"],
+  ["leading-6"],
+  ["left-0.5", "right-0 -translate-x-full", "left-1/2 -translate-x-1/2"],
+  ["light:text-charcoal-200"],
+  ["light:text-charcoal-400"],
+  ["line-clamp-1 min-w-0 flex-1"],
+  ["line-clamp-1 text-left"],
+  ["line-clamp-3"],
+  [
+    "line-clamp-4 w-full whitespace-pre-wrap text-left font-mono text-xs text-text-dimmed"
+  ],
+  ["list-decimal space-y-2 pl-5"],
+  ["m-0 block size-[30px] p-0"],
+  [
+    "m-0 grid h-full max-h-full min-h-0 overflow-hidden bg-background-bright  ",
+    "grid-rows-[auto_1fr]",
+    "grid-rows-[1fr]"
+  ],
+  ["m-0 min-h-0 overflow-y-hidden"],
+  [
+    "m-0 min-h-10 w-full border-0 bg-background-bright px-3 py-2 text-sm text-text-bright scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control file:border-0 file:bg-transparent file:text-base file:font-medium focus:border-0 focus:outline-hidden focus:ring-0 focus-visible:outline-hidden focus-visible:ring-0 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "m-0 min-h-10 w-full resize-none border-0 bg-background-bright px-3 py-2.5 text-sm text-text-bright scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control file:border-0 file:bg-transparent file:text-base file:font-medium placeholder:text-text-dimmed focus:border-0 focus:outline-hidden focus:ring-0 focus-visible:outline-hidden focus-visible:ring-0 focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  ["m-2 mb-0"],
+  ["m-4 grid h-full grid-rows-[auto_1fr] overflow-hidden"],
+  ["m-8 flex w-64 flex-col gap-4"],
+  ["m-auto flex w-full max-w-2xl flex-col items-center gap-5"],
+  [
+    "max-h-[40vh] flex-1 resize-none border-0 bg-transparent px-1.5 py-0.5 text-sm leading-6 text-text-bright placeholder-text-dimmed outline-hidden ring-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control field-sizing-content focus:outline-hidden focus:ring-0",
+    "w-full"
+  ],
+  ["max-h-[60vh] overflow-y-auto"],
+  [
+    "max-h-[70vh] overflow-y-auto p-4 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "max-h-[80vh] grid-rows-[auto_minmax(0,1fr)] gap-0 overflow-hidden p-0 pt-2.5",
+    "lg:max-w-[62rem]",
+    "lg:max-w-[40rem]"
+  ],
+  ["max-h-[90vh] grid-rows-[auto_minmax(0,1fr)_auto] sm:max-w-[930px]!"],
+  ["max-h-[90vh] max-w-2xl overflow-y-auto"],
+  ["max-h-[90vh] max-w-3xl overflow-y-auto"],
+  ["max-h-[90vh] overflow-y-auto pr-8"],
+  [
+    "max-h-[calc(min(480px,var(--popover-available-height))-2.35rem)] overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "max-h-160 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["max-h-5"],
+  [
+    "max-h-60 overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["max-h-64 overflow-auto p-3 text-xs text-text-dimmed"],
+  ["max-h-64 rounded border border-border-bright"],
+  [
+    "max-h-72 shrink-0 overflow-y-auto border-t border-grid-dimmed bg-background-dimmed p-3"
+  ],
+  [
+    "max-h-80 overflow-auto font-mono text-xs leading-relaxed scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["max-h-80 overflow-auto whitespace-pre-wrap p-3 text-xs text-text-dimmed"],
+  [
+    "max-h-80 overflow-y-auto border-y border-grid-dimmed p-1 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "max-h-80 overflow-y-auto p-1.5 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "max-h-80 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["max-h-full"],
+  ["max-h-full min-h-full overflow-y-auto border-t border-grid-dimmed"],
+  ["max-h-full overflow-y-auto"],
+  ["max-w-(--popover-anchor-width)"],
+  ["max-w-[12rem] truncate"],
+  ["max-w-[230px]"],
+  ["max-w-[230px] text-xs"],
+  ["max-w-[240px]"],
+  ["max-w-[37.5rem] overflow-visible"],
+  ["max-w-[37.5rem] rounded-sm border border-grid-dimmed px-4"],
+  ["max-w-[37.5rem] rounded-sm border border-grid-dimmed px-4 pb-2"],
+  [
+    "max-w-[80%] rounded-lg bg-background-raised px-4 py-2.5 text-sm text-text-bright"
+  ],
+  ["max-w-[80%] rounded-lg bg-indigo-600 px-4 py-2.5 text-sm text-white"],
+  ["max-w-[min(32ch,var(--popover-available-width))]"],
+  ["max-w-[min(36ch,var(--popover-available-width))]"],
+  ["max-w-[min(40ch,var(--popover-available-width))]"],
+  ["max-w-0 truncate"],
+  [
+    "max-w-104 rounded-lg border border-grid-bright bg-background-dimmed p-5 shadow-lg"
+  ],
+  [
+    "max-w-116 rounded-lg border border-grid-bright bg-background-dimmed p-5 shadow-lg"
+  ],
+  ["max-w-150 overflow-visible"],
+  ["max-w-28 truncate"],
+  ["max-w-2xl"],
+  ["max-w-2xl space-y-4"],
+  ["max-w-2xl space-y-4 py-4"],
+  ["max-w-32 text-center text-text-dimmed"],
+  ["max-w-3xl"],
+  ["max-w-3xl space-y-6"],
+  ["max-w-48"],
+  ["max-w-48 text-center text-text-dimmed"],
+  ["max-w-52 truncate"],
+  ["max-w-5xl space-y-6"],
+  ["max-w-60"],
+  ["max-w-64 break-all font-mono text-xs"],
+  ["max-w-88"],
+  ["max-w-fit"],
+  ["max-w-full"],
+  ["max-w-full gap-y-3"],
+  ["max-w-full overflow-x-hidden"],
+  ["max-w-lg"],
+  ["max-w-max space-y-1 p-1 text-left text-xs text-text-dimmed"],
+  ["max-w-md"],
+  ["max-w-md rounded-sm border border-grid-dimmed p-4"],
+  ["max-w-md text-center text-sm text-text-dimmed"],
+  ["max-w-md text-center text-text-dimmed"],
+  ["max-w-prose"],
+  ["max-w-sm"],
+  ["max-w-sm p-3"],
+  ["max-w-sm whitespace-pre-wrap break-all font-mono text-xs"],
+  ["max-w-xl"],
+  ["max-w-xl rounded-sm border border-grid-dimmed p-2"],
+  ["max-w-xl space-y-3 rounded-sm border border-grid-dimmed p-3"],
+  ["max-w-xs"],
+  ["max-w-xs break-all font-mono text-xs"],
+  ["max-w-xs p-1"],
+  ["max-w-xs pl-px"],
+  ["max-w-xs space-y-1"],
+  ["max-w-xs space-y-2 p-1 text-left"],
+  ["max-w-xs text-wrap! normal-case tracking-normal text-text-dimmed"],
+  ["max-w-xs wrap-break-word"],
+  ["mb-[2.2rem]"],
+  ["mb-0 flex min-w-0 items-center gap-1 truncate whitespace-nowrap"],
+  ["mb-0 text-error"],
+  ["mb-0 text-sky-500 system:text-text-bright"],
+  ["mb-0 text-text-dimmed"],
+  ["mb-0 whitespace-nowrap"],
+  ["mb-0.5"],
+  [
+    "mb-0.5 block text-[10px] font-medium uppercase tracking-wider text-text-dimmed"
+  ],
+  ["mb-0.5 flex items-center gap-1.5"],
+  ["mb-0.5 flex items-center gap-1.5 whitespace-nowrap"],
+  ["mb-0.5 flex items-center gap-2"],
+  ["mb-0.5 inline-block size-4 text-blue-400"],
+  ["mb-0.5 inline-block size-4 text-error"],
+  ["mb-0.5 text-text-bright"],
+  ["mb-1"],
+  ["mb-1 flex items-center gap-1"],
+  ["mb-1 flex items-center gap-1 pl-3"],
+  ["mb-1 flex items-center gap-2"],
+  ["mb-1 flex items-center justify-between"],
+  ["mb-1 font-mono text-sm font-semibold text-text-bright"],
+  ["mb-1 mt-0.5"],
+  ["mb-1 mt-2"],
+  ["mb-1 mt-3"],
+  ["mb-1 text-text-bright"],
+  ["mb-1 text-xs text-text-dimmed"],
+  ["mb-1 truncate text-left font-mono text-xs text-text-bright"],
+  ["mb-1 truncate text-left text-sm font-medium text-text-bright"],
+  ["mb-1.5"],
+  ["mb-10 space-y-[2.33rem]"],
+  ["mb-2"],
+  ["mb-2 flex items-center gap-1"],
+  ["mb-2 flex items-center gap-1.5 text-warning"],
+  ["mb-2 flex items-center gap-2"],
+  ["mb-2 flex items-center justify-between border-b"],
+  ["mb-2 flex items-center justify-between gap-1.5"],
+  ["mb-2 flex min-w-0 items-center gap-2"],
+  ["mb-2 font-mono text-xs text-text-dimmed"],
+  ["mb-2 mt-4 flex flex-col gap-2"],
+  ["mb-2 mt-4 flex items-start gap-3"],
+  ["mb-2 rounded border border-grid-dimmed p-2 text-xs"],
+  ["mb-2 size-16 text-secondary"],
+  ["mb-2 text-2xl font-bold text-text-bright"],
+  ["mb-2 text-text-bright"],
+  ["mb-2 text-text-dimmed"],
+  ["mb-2 text-xs font-medium text-text-dimmed"],
+  ["mb-2 transition-colors", "text-indigo-500"],
+  ["mb-3"],
+  ["mb-3 border-b border-grid-dimmed pb-3"],
+  [
+    "mb-3 h-full min-h-40 overflow-y-auto rounded-sm bg-background-deep scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["mb-3 mt-1.5 pl-1"],
+  ["mb-3 mt-4"],
+  ["mb-3 text-text-bright"],
+  ["mb-3 text-text-dimmed"],
+  ["mb-3 text-xs text-text-dimmed"],
+  ["mb-3 transition-colors", "text-indigo-500"],
+  ["mb-4"],
+  ["mb-4 border-b border-grid-dimmed pb-3"],
+  ["mb-4 flex flex-col gap-3 pb-4", "border-b border-grid-bright"],
+  ["mb-4 flex flex-col gap-4"],
+  ["mb-4 flex items-center justify-center"],
+  ["mb-4 flex justify-center"],
+  [
+    "mb-4 flex w-full flex-col items-start justify-between gap-4 lg:flex-row lg:items-center"
+  ],
+  ["mb-4 min-w-fit max-w-full border-b border-grid-dimmed pb-4"],
+  ["mb-4 text-lg font-medium text-text-bright"],
+  ["mb-4 text-lg font-semibold text-white"],
+  ["mb-4 text-text-dimmed"],
+  ["mb-5"],
+  ["mb-5 ml-9 flex items-center gap-2"],
+  ["mb-6"],
+  ["mb-6 border-b py-2"],
+  [
+    "mb-6 flex grow flex-col gap-4 overflow-y-auto pl-2.5 pr-0 pt-2 scrollbar-gutter-stable scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "mb-6 flex grow flex-col overflow-y-auto pl-2.5 pr-0 pt-2 scrollbar-gutter-stable scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["mb-6 flex items-center justify-between border-b"],
+  ["mb-6 flex items-center justify-between border-b pb-0.5"],
+  ["mb-6 flex w-full flex-col gap-4 overflow-hidden"],
+  ["mb-6 ml-9 mt-1"],
+  ["mb-6 mt-3"],
+  ["mb-6 rounded-lg border border-grid-dimmed p-4"],
+  ["mb-6 text-center"],
+  [
+    "mb-6 text-center font-sans text-xl font-semibold leading-7 tracking-tight text-text-dimmed"
+  ],
+  ["mb-6 w-full"],
+  [
+    "mb-8 mt-3 grid w-full grid-cols-[1fr_auto_auto] items-center gap-x-2 border-y border-grid-bright"
+  ],
+  ["mb-8 rounded-lg border border-grid-bright bg-background-bright p-6"],
+  ["md:mt-6"],
+  ["min-h-[100px]"],
+  ["min-h-[200px]"],
+  ["min-h-0 flex-1"],
+  ["min-h-0 flex-1", "h-full w-full", "mt-8 cursor-crosshair"],
+  [
+    "min-h-0 flex-1 overflow-auto rounded border border-grid-dimmed bg-background-deep p-3"
+  ],
+  [
+    "min-h-0 flex-1 overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-h-0 flex-1 overflow-hidden p-0"],
+  [
+    "min-h-0 flex-1 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-h-0 flex-1 px-2"],
+  ["min-h-0 flex-1 px-2", "pt-3"],
+  [
+    "min-h-0 flex-1 px-2 py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "overflow-auto"
+  ],
+  [
+    "min-h-0 flex-1 px-3 py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "overflow-auto",
+    "overflow-auto"
+  ],
+  ["min-h-0 min-w-0 overflow-auto"],
+  [
+    "min-h-0 overflow-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-h-0 overflow-hidden"],
+  ["min-h-0 overflow-hidden", "bg-background-bright"],
+  [
+    "min-h-0 overflow-y-auto pt-2.5",
+    "scrollbar-gutter-stable scrollbar-thumb-on-hover",
+    "scrollbar-none"
+  ],
+  [
+    "min-h-0 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-h-0 w-full flex-1 overflow-hidden pt-4"],
+  ["min-h-0 w-full flex-1 pt-2.5"],
+  ["min-h-full"],
+  [
+    "min-h-full",
+    "flex items-center justify-center px-4 pb-[20vh] pt-8",
+    "mx-auto w-full max-w-3xl space-y-4 px-4 pb-4 pt-12"
+  ],
+  ["min-w-[100px]"],
+  ["min-w-[12rem] p-2"],
+  ["min-w-[140px]"],
+  ["min-w-[140px] flex-1"],
+  ["min-w-[16rem] overflow-y-auto p-0"],
+  ["min-w-[180px] p-1"],
+  ["min-w-[279px] p-0"],
+  ["min-w-[294px] p-0"],
+  ["min-w-0"],
+  ["min-w-0 bg-background-bright"],
+  ["min-w-0 break-all text-right"],
+  ["min-w-0 break-words text-right"],
+  ["min-w-0", "flex justify-end"],
+  ["min-w-0 flex-1"],
+  ["min-w-0", "flex-1"],
+  ["min-w-0 flex-1 overflow-hidden"],
+  [
+    "min-w-0 flex-1 overflow-y-auto overflow-x-hidden px-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-w-0 flex-1 px-3"],
+  [
+    "min-w-0 flex-1 px-3 text-text-bright",
+    "whitespace-pre-wrap wrap-break-word",
+    "whitespace-nowrap"
+  ],
+  [
+    "min-w-0 flex-1 select-none text-left text-[0.90625rem] font-medium tracking-[-0.01em]"
+  ],
+  ["min-w-0 flex-1 space-y-3"],
+  ["min-w-0 flex-1 text-sm", "text-text-dimmed", "text-text-bright"],
+  ["min-w-0 flex-1 truncate text-left"],
+  ["min-w-0 flex-1 truncate text-lg font-medium text-text-bright"],
+  ["min-w-0 grow text-left"],
+  ["min-w-0 max-w-[min(240px,var(--popover-available-width))]"],
+  ["min-w-0 max-w-[min(320px,var(--popover-available-width))]"],
+  ["min-w-0 max-w-[min(360px,var(--popover-available-width))]"],
+  ["min-w-0 max-w-full cursor-default text-left"],
+  [
+    "min-w-0 overflow-hidden whitespace-nowrap text-[0.90625rem] font-medium tracking-[-0.01em] text-text-dimmed group-hover:text-text-bright"
+  ],
+  ["min-w-0 rounded-md border border-border-bright bg-background-dimmed"],
+  ["min-w-0 space-y-1 text-xs"],
+  ["min-w-0 space-y-1.5"],
+  ["min-w-0 truncate"],
+  ["min-w-0! w-52 p-0"],
+  ["min-w-24 cursor-pointer"],
+  ["min-w-24 whitespace-nowrap"],
+  ["min-w-32"],
+  ["min-w-32 whitespace-nowrap"],
+  [
+    "min-w-40 max-w-80 overflow-y-auto p-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-w-40 p-1"],
+  ["min-w-44 p-0"],
+  ["min-w-48 whitespace-nowrap"],
+  [
+    "min-w-56 divide-y divide-grid-bright overflow-y-auto p-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "min-w-56 overflow-y-auto p-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "min-w-64 overflow-y-auto p-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-w-64 p-3"],
+  ["min-w-64 space-y-3 p-3"],
+  ["min-w-64 space-y-4 p-3"],
+  [
+    "min-w-80 overflow-y-auto p-2 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["min-w-fit max-w-80"],
+  [
+    "min-w-max overflow-y-auto p-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["ml-[-0.1562rem] size-1.25 rounded-full border bg-background-bright"],
+  ["ml-[-0.5px] h-2.25 w-px rounded-none"],
+  ["ml-[0.4rem] border-l border-grid-dimmed/50 pl-3"],
+  ["ml-0 mr-0"],
+  ["ml-0 mr-0 px-1"],
+  ["ml-0.5"],
+  ["ml-0.5 flex items-center transition hover:text-text-bright/70"],
+  ["ml-0.5 inline-block size-3.5 align-[-0.15em] text-text-dimmed"],
+  ["ml-0.5 shrink-0 rounded-sm"],
+  ["ml-0.5 text-text-bright"],
+  ["ml-0.5 transition-colors group-hover/button:bg-error"],
+  ["ml-1"],
+  ["ml-1 flex items-center"],
+  ["ml-1 flex shrink-0 items-center gap-1"],
+  [
+    "ml-1 flex size-6 items-center justify-center rounded border border-border-bright bg-background-hover",
+    "p-1",
+    "text-green-500",
+    "text-text-dimmed hover:border-border-bright hover:bg-background-raised hover:text-text-bright"
+  ],
+  ["ml-1 flex-none"],
+  [
+    "ml-1 inline-flex items-center text-text-dimmed transition hover:text-text-bright"
+  ],
+  [
+    "ml-1 inline-flex min-w-4 -translate-y-px items-center justify-center rounded-full border border-border-bright bg-secondary px-1 py-0.5 text-[0.625rem] font-medium leading-none text-text-bright"
+  ],
+  ["ml-1 size-14 shrink-0 text-indigo-500"],
+  ["ml-1 size-4 shrink-0"],
+  ["ml-1 tabular-nums text-text-dimmed"],
+  ["ml-1 text-sm font-normal tracking-wide text-text-dimmed"],
+  ["ml-1 text-text-dimmed"],
+  ["ml-1 text-text-dimmed group-hover/table-row:text-text-bright"],
+  ["ml-1 text-warning"],
+  ["ml-1 text-xs text-emerald-400"],
+  ["ml-1 text-xs text-text-dimmed"],
+  ["ml-1.5"],
+  ["ml-1.5 whitespace-nowrap"],
+  ["ml-2"],
+  ["ml-2 flex items-center gap-2"],
+  ["ml-2 h-3 w-px bg-surface-control"],
+  ["ml-2 mr-1.5 inline size-3.5 align-text-bottom text-text-bright"],
+  ["ml-2 text-text-dimmed"],
+  ["ml-4 font-mono text-purple-400/70"],
+  ["ml-4 list-disc space-y-1.5 text-sm text-text-dimmed"],
+  ["ml-4 mt-1 flex flex-col gap-0.5"],
+  ["ml-4 text-green-400/70"],
+  ["ml-8 flex flex-1 flex-col"],
+  ["ml-8 flex flex-1 flex-col gap-1"],
+  ["ml-auto"],
+  ["ml-auto flex flex-wrap items-center justify-end gap-1.5"],
+  ["ml-auto flex items-center gap-2 self-center"],
+  [
+    "ml-auto inline-flex w-fit items-center rounded px-2 py-0.5 text-xs font-medium"
+  ],
+  ["ml-auto text-[10px] text-text-dimmed"],
+  ["ml-auto text-xs text-text-dimmed"],
+  ["ml-px flex items-center"],
+  ["mr-1"],
+  ["mr-1 size-2 shrink-0 rounded-full bg-warning"],
+  ["mr-1 size-4 text-agents"],
+  ["mr-1 size-4 text-text-dimmed"],
+  ["mr-1 size-4.5 text-text-dimmed"],
+  ["mr-1 text-text-dimmed"],
+  ["mr-1.5 size-4 flex-none text-text-dimmed"],
+  ["mr-1.5 transition-opacity duration-150", "opacity-100", "opacity-0"],
+  ["mr-2"],
+  [
+    "mr-2 flex-none select-none text-right text-text-faint transition-opacity duration-500",
+    "sticky left-0"
+  ],
+  ["mr-2 h-3 w-px bg-surface-control"],
+  ["mr-2 inline-block size-1.5 rounded-full bg-success align-[0.15em]"],
+  ["mr-2 size-5"],
+  ["mr-2 size-5 text-text-bright"],
+  ["mr-3"],
+  [
+    "mr-px h-fit whitespace-nowrap bg-background-bright px-1.5 text-xs text-text-bright"
+  ],
+  ["mt-[-0.5px] flex items-center gap-1.5"],
+  ["mt-[32px]"],
+  ["mt-[32px] mb-[32px]"],
+  ["mt-0.5"],
+  ["mt-0.5 flex flex-wrap gap-1"],
+  ["mt-0.5 h-5 w-5 shrink-0 text-callout-docs"],
+  [
+    "mt-0.5 select-none text-sm text-text-bright",
+    "cursor-default",
+    "cursor-pointer"
+  ],
+  ["mt-0.5 size-4 min-w-4", "text-primary", "text-text-bright"],
+  ["mt-0.5 size-4 min-w-4 text-text-faint"],
+  ["mt-0.5 text-xs text-rose-500 dark:text-rose-400"],
+  ["mt-1"],
+  [
+    "mt-1 block h-8 w-full rounded border border-background-bright bg-background-hover px-2 text-sm text-text-bright transition hover:border-border-bright hover:bg-secondary"
+  ],
+  ["mt-1 flex flex-wrap items-center gap-1 text-xs"],
+  ["mt-1 flex items-baseline gap-0.5"],
+  ["mt-1 flex items-center gap-1"],
+  ["mt-1 flex items-center justify-between gap-2 px-2 pb-1"],
+  ["mt-1 flex px-2"],
+  ["mt-1 font-mono"],
+  ["mt-1 h-0.5 w-full bg-indigo-500"],
+  [
+    "mt-1 h-0.5 w-full bg-surface-control-active opacity-0 transition duration-200 group-hover:opacity-100"
+  ],
+  [
+    "mt-1 h-0.5 w-full bg-surface-control-active opacity-0 transition duration-200 group-hover/tab:opacity-100"
+  ],
+  [
+    "mt-1 max-h-40 overflow-auto rounded bg-background-bright p-2 text-xs text-text-dimmed"
+  ],
+  ["mt-1 outline-hidden", "data-[state=inactive]:hidden"],
+  ["mt-1 px-2"],
+  [
+    "mt-1 rounded border border-grid-dimmed bg-background-deep p-3 font-mono text-xs leading-relaxed"
+  ],
+  ["mt-1 rounded p-px"],
+  ["mt-1 shrink-0"],
+  ["mt-1 space-y-0.5 text-text-dimmed"],
+  ["mt-1 space-y-0.5 text-xs tabular-nums text-text-dimmed"],
+  ["mt-1 space-y-2"],
+  ["mt-1 text-error"],
+  ["mt-1 text-text-dimmed"],
+  ["mt-1 text-xs text-error"],
+  ["mt-1 text-xs text-red-300/70 overflow-auto"],
+  ["mt-1 text-xs text-warning"],
+  ["mt-1 w-fit"],
+  ["mt-1 w-full"],
+  ["mt-1! space-y-4"],
+  [
+    "mt-1.5 flex flex-col gap-2 rounded-md border border-border-bright bg-background-dimmed p-3"
+  ],
+  ["mt-1.5 overflow-hidden rounded-md border border-grid-bright"],
+  ["mt-1.5 rounded"],
+  [
+    "mt-1.5 size-1.5 shrink-0 rounded-[2px]",
+    "bg-blue-500",
+    "bg-amber-500",
+    "bg-text-dimmed"
+  ],
+  ["mt-1.5 space-y-1"],
+  ["mt-1.5 text-[10px] text-text-dimmed"],
+  ["mt-2"],
+  ["mt-2 -mb-3 max-w-3xl"],
+  ["mt-2 flex flex-col"],
+  ["mt-2 flex flex-col gap-1"],
+  ["mt-2 flex flex-col gap-3 px-2"],
+  ["mt-2 flex flex-col gap-4"],
+  ["mt-2 flex flex-col justify-center gap-1"],
+  ["mt-2 gap-0"],
+  ["mt-2 grid grid-cols-[1fr_auto] gap-2 text-xs text-text-bright"],
+  ["mt-2 grid grid-cols-2 gap-2"],
+  ["mt-2 grid grid-cols-3 gap-2"],
+  ["mt-2 sm:mt-0"],
+  ["mt-2 space-y-1 text-sm text-text-dimmed"],
+  ["mt-2 text-[3rem] font-normal leading-none tabular-nums text-text-bright"],
+  ["mt-2 text-center"],
+  ["mt-2 text-center text-text-dimmed"],
+  ["mt-2 text-error"],
+  ["mt-2 text-xs tabular-nums text-text-bright"],
+  ["mt-2 text-xs text-text-bright"],
+  ["mt-2 text-xs text-text-dimmed"],
+  ["mt-2 w-fit"],
+  ["mt-2 w-full"],
+  ["mt-2.5 flex items-baseline justify-between gap-2 pl-3 pr-3"],
+  ["mt-3"],
+  ["mt-3 flex flex-col gap-6"],
+  ["mt-3 flex min-h-0 flex-1 items-end gap-px"],
+  ["mt-3 space-y-1"],
+  ["mt-3 text-text-dimmed"],
+  ["mt-4"],
+  ["mt-4 flex items-baseline justify-between"],
+  ["mt-4 text-text-dimmed/60"],
+  ["mt-6 flex items-center gap-2"],
+  ["mt-6 flex w-full items-center justify-between"],
+  ["mt-8 flex w-64 flex-col gap-4"],
+  ["mt-px"],
+  ["mt-px text-xs uppercase tracking-wide text-text-dimmed"],
+  ["mx-0.5 -mt-0.5 inline size-3"],
+  ["mx-0.5 h-6 w-px bg-grid-dimmed"],
+  ["mx-0.5 inline-block size-2.5 -translate-y-px rounded-[2px] align-middle"],
+  ["mx-0.5 rounded bg-amber-500/10 px-1"],
+  [
+    "mx-1 mb-1 mt-4 border-b border-text-dimmed/30 px-1 pb-1 text-xs uppercase text-text-dimmed/60"
+  ],
+  ["mx-1 text-text-dimmed"],
+  ["mx-2 my-1 shrink-0 border-t border-grid-dimmed"],
+  [
+    "mx-3 flex items-center gap-2 overflow-x-hidden border-b border-grid-dimmed"
+  ],
+  ["mx-3 flex items-center justify-between gap-2 border-b border-grid-dimmed"],
+  [
+    "mx-3 flex items-center justify-between gap-2 overflow-x-hidden border-b border-grid-dimmed"
+  ],
+  ["mx-3 flex items-center justify-end gap-2 border-b border-grid-dimmed"],
+  [
+    "mx-3 flex min-w-0 items-center justify-between gap-2 overflow-hidden border-b border-grid-dimmed"
+  ],
+  ["mx-3 mb-3 flex flex-col gap-2 rounded-sm border border-rose-500/50 p-3"],
+  ["mx-3 shrink-0"],
+  ["mx-4 flex h-screen flex-col items-center justify-center gap-4"],
+  [
+    "mx-4 mb-2 flex items-start gap-2 rounded border border-error/30 bg-error/10 px-3 py-2"
+  ],
+  ["mx-auto flex items-center gap-2"],
+  ["mx-auto flex max-w-3xl flex-col gap-10 px-4 pb-4 pt-10"],
+  ["mx-auto flex max-w-md flex-col items-center gap-3 py-16 text-center"],
+  ["mx-auto flex w-full max-w-5xl flex-col gap-4 p-6"],
+  ["mx-auto flex w-full min-w-0 max-w-[800px] flex-col gap-2"],
+  ["mx-auto grow"],
+  ["mx-auto grow self-center truncate"],
+  ["mx-auto grow self-center truncate text-text-bright"],
+  ["mx-auto grow self-center truncate text-text-bright system:text-white"],
+  ["mx-auto max-w-3xl"],
+  ["mx-auto max-w-3xl px-4 pb-4 pt-20"],
+  [
+    "mx-auto max-w-xs p-1",
+    "m-auto lg:mx-auto lg:mb-0 lg:mt-[22vh]",
+    "mt-6 md:mt-[22vh]"
+  ],
+  ["mx-auto mt-10 max-w-2xl p-4"],
+  [
+    "mx-auto mt-4 flex h-fit min-h-full max-w-320 flex-col items-center justify-center gap-8 lg:mt-0"
+  ],
+  [
+    "mx-auto mt-6 max-w-lg overflow-y-auto p-1 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control md:mt-14"
+  ],
+  ["mx-auto mt-8 flex w-full max-w-5xl flex-col gap-4 p-6"],
+  ["my-[40px] mx-auto p-[20px] max-w-[600px]"],
+  ["my-0"],
+  ["my-0.5 text-xs leading-normal text-text-dimmed"],
+  ["my-1"],
+  ["my-1.5 size-2.5 shrink-0 rounded-full border border-border-brightest"],
+  ["my-2"],
+  ["my-2 flex items-center justify-center"],
+  ["my-2 self-start"],
+  ["my-3"],
+  ["my-4"],
+  ["my-4 flex"],
+  ["my-6"],
+  ["normal-case tracking-normal"],
+  [
+    "opacity-0 focus-within:opacity-100 has-[[data-state=open]]:opacity-100 group-hover/sectionheader:opacity-100"
+  ],
+  [
+    "opacity-0 transition-opacity group-focus-within:opacity-100 group-hover:opacity-100"
+  ],
+  ["opacity-0 transition-opacity group-hover:opacity-100"],
+  ["opacity-50"],
+  ["opacity-60"],
+  ["opacity-80"],
+  [
+    "order-2 h-6 w-px bg-surface-control transition-colors peer-hover/next:bg-surface-control-hover peer-hover/prev:bg-surface-control-hover",
+    "opacity-30"
+  ],
+  [
+    "overflow-auto px-3 py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["overflow-auto rounded border border-grid-bright bg-background-dimmed p-3"],
+  ["overflow-auto rounded border border-grid-dimmed bg-background-deep p-3"],
+  ["overflow-clip"],
+  ["overflow-hidden"],
+  ["overflow-hidden bg-background-bright"],
+  [
+    "overflow-hidden border-t border-grid-bright px-3 text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+  ],
+  ["overflow-hidden opacity-0 group-hover:opacity-100"],
+  ["overflow-hidden", "pointer-events-none"],
+  ["overflow-hidden rounded border border-border-bright"],
+  [
+    "overflow-hidden rounded-b-md border-x border-b border-grid-bright bg-background-bright pb-3"
+  ],
+  ["overflow-hidden rounded-lg border border-grid-dimmed"],
+  ["overflow-hidden rounded-md bg-background-bright"],
+  ["overflow-hidden rounded-md p-px"],
+  ["overflow-hidden rounded-sm bg-background-bright"],
+  ["overflow-hidden rounded-sm border border-grid-dimmed"],
+  ["overflow-hidden whitespace-nowrap"],
+  ["overflow-visible", "text-border-bright"],
+  ["overflow-x-auto"],
+  ["overflow-x-auto border-l border-grid-dimmed bg-background-bright"],
+  [
+    "overflow-x-auto px-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-x-auto rounded-sm border border-grid-bright bg-background-bright px-2 py-1.5 font-mono text-[11px] leading-relaxed text-text-bright scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-x-hidden",
+    "text-agents",
+    "text-schedules",
+    "text-tasks",
+    "light:text-text-bright"
+  ],
+  ["overflow-x-hidden", "text-sm", "text-xs"],
+  ["overflow-y-auto"],
+  [
+    "overflow-y-auto overflow-x-hidden overscroll-contain scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control focus-custom"
+  ],
+  [
+    "overflow-y-auto overscroll-contain scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control focus-custom"
+  ],
+  [
+    "overflow-y-auto p-1 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-y-auto p-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "overflow-hidden"
+  ],
+  [
+    "overflow-y-auto p-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-y-auto pt-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["overflow-y-auto px-3 py-1"],
+  [
+    "overflow-y-auto px-3 py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-charcoal-600"
+  ],
+  [
+    "overflow-y-auto px-3 py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-y-auto px-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-y-auto py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-y-auto scrollbar-thin scrollbar-track-background-bright scrollbar-thumb-background-raised",
+    "select-none"
+  ],
+  [
+    "overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-charcoal-600"
+  ],
+  [
+    "overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "py-0",
+    "px-3 py-3"
+  ],
+  ["overflow-y-auto sm:h-[80vh] sm:max-h-[80vh] sm:max-w-[50vw]"],
+  [
+    "overflow-y-scroll scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["p-0"],
+  ["p-0 pt-2.5 md:max-w-2xl lg:max-w-3xl"],
+  ["p-1"],
+  ["p-1", "p-2 pt-0"],
+  ["p-1.5 text-text-dimmed"],
+  ["p-2"],
+  ["p-2.5 text-[11px] leading-relaxed text-text-bright"],
+  ["p-3"],
+  ["p-3 font-mono text-xs leading-relaxed"],
+  ["p-4"],
+  ["pb-1 pl-1.5 pt-1.5 text-xs"],
+  ["pb-1 pl-3"],
+  ["pb-1 pt-0.5"],
+  ["pb-1.5"],
+  ["pb-4"],
+  ["pb-4 font-semibold sm:text-2xl md:text-3xl lg:text-4xl"],
+  [
+    "pb-4 leading-tight sm:text-2xl md:text-3xl md:leading-tight lg:text-4xl lg:leading-tight"
+  ],
+  ["pb-4 pt-2"],
+  [
+    "pb-4 text-center font-semibold leading-7 sm:text-2xl md:text-3xl md:leading-8 lg:text-4xl lg:leading-9"
+  ],
+  ["pb-4 text-center font-semibold sm:text-2xl md:text-3xl lg:text-4xl"],
+  ["pb-6 text-center text-xl font-normal leading-7 md:text-xl lg:text-2xl"],
+  ["peer/next order-3", "pointer-events-none"],
+  ["peer/prev order-1", "pointer-events-none"],
+  ["pl-[1.375rem]"],
+  ["pl-0"],
+  ["pl-0 text-text-bright"],
+  ["pl-0.5"],
+  ["pl-0.5 pr-3"],
+  ["pl-0.5 text-text-bright"],
+  ["pl-1"],
+  [
+    "pl-1 duration-0 [&_span]:duration-0 group-hover/table-row:[&_span]:text-text-bright"
+  ],
+  ["pl-1 pr-1.5"],
+  ["pl-1 pr-2"],
+  ["pl-1.5"],
+  ["pl-1.5 pr-2"],
+  ["pl-2"],
+  ["pl-3 pr-0"],
+  ["pl-3.5"],
+  ["pl-3.5 text-xs leading-relaxed text-text-dimmed"],
+  ["pl-32"],
+  ["pl-4"],
+  ["pl-4 pr-4"],
+  ["pl-6"],
+  ["pl-px"],
+  [
+    "placeholder:text-muted-foreground h-full grow border-0 bg-transparent text-left text-text-bright outline-hidden ring-0 focus:border-0 focus:outline-hidden focus:ring-0 disabled:cursor-not-allowed",
+    "[&[type=number]]:border-0 [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+  ],
+  [
+    "placeholder:text-muted-foreground w-full rounded border border-background-bright bg-background-hover px-3 text-sm text-text-bright transition focus-custom file:border-0 file:bg-transparent file:text-base file:font-medium hover:border-border-bright hover:bg-secondary disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  ["placeholder:text-text-dimmed/70"],
+  ["pointer-events-auto"],
+  ["pointer-events-auto flex items-center gap-1.5"],
+  ["pointer-events-none"],
+  [
+    "pointer-events-none absolute bottom-0 left-0 right-0 h-8 bg-linear-to-t from-background-bright/90 to-transparent"
+  ],
+  [
+    "pointer-events-none absolute bottom-full left-1/2 mb-2.5 -translate-x-1/2 rounded border border-grid-bright bg-background-bright px-1.5 py-0.5 text-xs tabular-nums text-text-bright shadow-md transition-opacity",
+    "opacity-100",
+    "opacity-0 group-hover/thumb:opacity-100 group-focus-visible/thumb:opacity-100"
+  ],
+  ["pointer-events-none absolute inset-0 flex items-center justify-center"],
+  ["pointer-events-none absolute inset-0 overflow-hidden"],
+  ["pointer-events-none absolute inset-x-0 bottom-0"],
+  [
+    "pointer-events-none absolute inset-x-0 top-0 z-10 flex items-center justify-end px-2 py-2"
+  ],
+  [
+    "pointer-events-none absolute inset-y-0 left-1/2 w-0.75 -translate-x-1/2 bg-indigo-500 opacity-0 transition-opacity duration-300",
+    "opacity-100",
+    "group-hover/resize:opacity-100"
+  ],
+  [
+    "pointer-events-none absolute left-0 top-0 z-10 h-full w-0.75 bg-indigo-500 opacity-0 transition-opacity group-hover:opacity-100 group-data-[handle-orientation=vertical]:hidden"
+  ],
+  [
+    "pointer-events-none absolute left-0 top-0 z-10 hidden h-0.75 w-full bg-indigo-500 opacity-0 transition-opacity group-hover:opacity-100 group-data-[handle-orientation=vertical]:block"
+  ],
+  [
+    "pointer-events-none absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2"
+  ],
+  [
+    "pointer-events-none block rounded-full bg-white transition-[translate,width,background-color] dark:bg-charcoal-200 dark:group-data-[state=checked]:bg-white"
+  ],
+  [
+    "pointer-events-none col-start-1 row-start-1 z-10 flex items-start justify-end p-2"
+  ],
+  ["pointer-events-none flex items-center"],
+  ["pointer-events-none opacity-0"],
+  ["pointer-events-none overflow-hidden"],
+  ["pr-1", "pointer-events-none invisible"],
+  ["pr-1 text-text-dimmed"],
+  ["pr-16"],
+  ["pr-2"],
+  ["pr-4"],
+  ["pr-6"],
+  ["pr-6 text-warning"],
+  ["primary"],
+  ["pt-0"],
+  ["pt-1"],
+  ["pt-1 text-xs text-error"],
+  ["pt-2"],
+  ["pt-2 text-base text-text-dimmed"],
+  ["pt-3"],
+  ["pt-4"],
+  ["pt-6"],
+  ["px-0.5"],
+  ["px-1"],
+  ["px-1!"],
+  ["px-1.5 [&>span]:flex [&>span]:items-center [&>span]:gap-1"],
+  ["px-2"],
+  ["px-2", "group"],
+  ["px-2 pb-2"],
+  ["px-2 py-1 font-sans"],
+  ["px-2 py-1.5 text-xs"],
+  ["px-2 py-3"],
+  ["px-2 text-text-bright"],
+  ["px-2 text-text-dimmed"],
+  ["px-2.5 pb-2"],
+  [
+    "px-2.5 py-1 text-[11px] capitalize transition-colors  ",
+    "bg-background-hover text-text-bright",
+    "text-text-dimmed hover:text-text-bright"
+  ],
+  ["px-2.5 py-2 text-xs text-text-dimmed"],
+  ["px-3"],
+  ["px-3 pb-2"],
+  ["px-3 pb-3"],
+  ["px-3 pt-3"],
+  ["px-3 py-2"],
+  ["px-3 py-2 text-xs text-text-dimmed"],
+  ["px-3 py-2.5"],
+  ["px-3 py-3"],
+  ["px-3 py-6 text-center"],
+  ["px-3 py-6 text-center text-xs text-text-dimmed"],
+  ["px-3 py-8 text-center text-sm text-text-dimmed"],
+  ["px-3 text-xs uppercase text-text-dimmed"],
+  ["px-4"],
+  ["px-4 pb-8"],
+  ["px-4 pt-4"],
+  ["px-4 py-2.5"],
+  ["px-5 pb-6 pt-4"],
+  ["py-0", "pr-0"],
+  ["py-1", "opacity-50"],
+  ["py-1.5"],
+  ["py-1.5 font-normal"],
+  ["py-1.5 pr-4 font-normal"],
+  ["py-1.5 pr-4 text-text-bright"],
+  ["py-1.5 text-xs text-amber-300 light:text-amber-800"],
+  ["py-2.5"],
+  ["py-3"],
+  ["py-4"],
+  ["py-6"],
+  ["py-6 text-center"],
+  ["py-6 text-center text-sm"],
+  ["py-8 text-center text-sm text-text-dimmed"],
+  ["relative"],
+  ["relative -top-px mr-2 h-4 w-4 min-w-4"],
+  [
+    "relative -top-px mx-1.5 inline size-3.5 align-text-bottom text-text-bright"
+  ],
+  ["relative bottom-[2px] text-xxs", "text-success", "text-error"],
+  ["relative bottom-[2px] text-xxs text-text-dimmed"],
+  ["relative bottom-0 text-xxs text-text-dimmed"],
+  ["relative flex flex-col items-center justify-center"],
+  [
+    "relative flex flex-col overflow-hidden rounded-md border border-grid-bright"
+  ],
+  ["relative flex h-10 items-center rounded bg-background-raised/50 p-1"],
+  ["relative flex h-2 w-72 touch-none select-none items-center"],
+  ["relative flex h-5 w-full items-center rounded-sm bg-blue-500"],
+  ["relative flex h-6 items-end"],
+  ["relative flex h-9 items-end"],
+  [
+    "relative flex h-9 select-none items-center bg-background-deep font-sans text-sm font-medium leading-normal text-text-bright after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:bg-grid-bright"
+  ],
+  ["relative flex h-full flex-col"],
+  [
+    "relative flex h-full grow cursor-pointer text-center font-normal focus-custom"
+  ],
+  ["relative flex h-full w-full items-center justify-between"],
+  [
+    "relative flex h-full w-full items-center overflow-hidden px-2",
+    "bg-background-bright group-hover/row:bg-background-hover",
+    "font-mono text-xs text-text-dimmed group-hover/row:text-text-bright",
+    "[&_a:focus-visible]:underline [&_a:focus-visible]:underline-offset-[3px] [&_a:focus-visible]:outline-hidden",
+    "justify-end"
+  ],
+  ["relative flex items-center"],
+  [
+    "relative flex items-center gap-2 overflow-hidden truncate rounded-sm px-2 py-2 text-sm text-text-dimmed",
+    "bg-tertiary text-text-bright"
+  ],
+  ["relative flex min-h-0 flex-1 flex-col"],
+  ["relative flex size-2"],
+  ["relative flex size-2 items-center justify-center"],
+  ["relative flex touch-none select-none items-center"],
+  [
+    "relative flex w-full cursor-default items-center justify-between gap-2 rounded px-2 py-1 transition",
+    "opacity-50"
+  ],
+  [
+    "relative flex w-full cursor-pointer items-center justify-between gap-2 rounded px-2 py-1 transition hover:bg-background-dimmed"
+  ],
+  ["relative flex w-full flex-col", "h-full"],
+  ["relative", "flex w-full items-center"],
+  ["relative flex w-full items-center justify-between gap-2"],
+  ["relative flex w-full items-center justify-between gap-2 rounded px-2 py-1"],
+  [
+    "relative flex w-full items-center justify-between gap-2 rounded px-2 py-1 transition",
+    "opacity-50"
+  ],
+  ["relative flex w-full items-center justify-between gap-3"],
+  ["relative flex w-full items-center justify-between gap-3 overflow-hidden"],
+  ["relative flex-1"],
+  ["relative flex-1 overflow-hidden"],
+  ["relative gap-2"],
+  ["relative grid h-full place-items-center p-2 pt-0"],
+  [
+    "relative grid place-items-center overflow-hidden rounded-[10%] font-semibold",
+    "size-[80%]",
+    "size-full"
+  ],
+  ["relative grow rounded-full"],
+  ["relative h-[3px] grow rounded-full bg-grid-bright"],
+  ["relative h-3 w-full rounded-sm bg-background-bright"],
+  ["relative h-4 w-full overflow-hidden rounded-sm bg-background-deep"],
+  ["relative h-6 min-w-44"],
+  ["relative h-6 min-w-52"],
+  ["relative h-full border-r bg-background-bright", "border-grid-bright"],
+  ["relative h-full min-h-0"],
+  [
+    "relative h-full overflow-auto border-t scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["relative h-full p-1"],
+  ["relative h-full w-1.75 rounded-t-xs"],
+  [
+    "relative h-full w-full overflow-hidden bg-background-dimmed lg:bg-transparent"
+  ],
+  ["relative h-full w-px"],
+  ["relative h-px w-full overflow-hidden bg-grid-bright"],
+  ["relative inline-flex shrink-0"],
+  ["relative mb-16 grid h-full place-items-center p-2 pt-0"],
+  ["relative ml-1 mt-2 shrink-0"],
+  [
+    "relative mr-2 font-mono leading-relaxed",
+    "[&_span]:whitespace-pre-wrap [&_span]:wrap-break-word"
+  ],
+  ["relative mr-2 p-2 font-mono text-base leading-relaxed"],
+  [
+    "relative mr-2 p-2 font-mono text-xs leading-relaxed",
+    "[&_span]:whitespace-pre-wrap [&_span]:wrap-break-word"
+  ],
+  ["relative mt-3 h-1 rounded-full bg-background-dimmed"],
+  ["relative overflow-y-auto"],
+  [
+    "relative rounded border border-grid-bright bg-background-bright px-2 py-1 text-center text-xxs font-medium uppercase text-blue-500"
+  ],
+  ["relative text-transparent! **:border-transparent! **:text-transparent!"],
+  ["relative w-1.75", "rounded-t-xs"],
+  ["relative w-full"],
+  ["relative w-px"],
+  [
+    "relative z-1 flex h-5 w-0.75 flex-col items-center justify-center gap-0.75 bg-background-dimmed transition-opacity group-hover:opacity-0 group-data-[handle-orientation=vertical]:hidden"
+  ],
+  [
+    "relative z-1 hidden h-0.75 w-5 flex-row items-center justify-center gap-0.75 bg-background-dimmed transition-opacity group-hover:opacity-0 group-data-[handle-orientation=vertical]:flex"
+  ],
+  [
+    "relative z-10 flex h-full w-full items-center justify-center px-3 py-[0.13rem]"
+  ],
+  ["relative z-10 flex items-center"],
+  ["relative z-10 h-full w-full"],
+  ["relative z-20"],
+  [
+    "relative z-20 -mr-1 shrink-0 rounded p-0.5 text-text-dimmed opacity-0 transition group-hover/card:opacity-100 hover:bg-background-raised hover:text-text-bright focus-visible:opacity-100"
+  ],
+  ["relative z-20 mt-0.5 text-xs"],
+  ["relative z-50 flex h-full flex-col"],
+  ["relative z-9999"],
+  [
+    "ring-offset-background aspect-square h-4 w-4 shrink-0 overflow-hidden rounded-full border border-border-bright bg-background-raised focus-custom disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "ring-offset-background focus-visible:ring-ring aspect-square h-4 w-4 shrink-0 overflow-hidden rounded-full border border-border-bright focus-custom group-data-[state=checked]:border-indigo-500 disabled:cursor-not-allowed disabled:opacity-50"
+  ],
+  [
+    "rounded bg-background-hover px-1 py-0.5 font-mono text-xxs text-text-dimmed"
+  ],
+  ["rounded bg-background-hover px-1 py-0.5 text-text-bright"],
+  [
+    "rounded bg-background-hover px-1.5 py-0.5 font-mono text-xs text-text-dimmed"
+  ],
+  ["rounded bg-background-raised px-1 py-0.5 text-[11px]"],
+  ["rounded bg-background-raised px-1 py-0.5 text-text-bright"],
+  [
+    "rounded bg-background-raised px-3 py-1.5 text-sm text-text-dimmed transition hover:bg-surface-control hover:text-text-bright"
+  ],
+  ["rounded bg-purple-500/20 px-1 text-[10px] text-purple-300"],
+  [
+    "rounded border border-amber-500/30 bg-amber-500/5 px-2.5 py-2 text-xs text-amber-300"
+  ],
+  [
+    "rounded border border-border-bright bg-background-hover px-2 py-1 text-sm text-text-bright focus:border-border-brightest focus:outline-hidden"
+  ],
+  [
+    "rounded border border-grid-bright bg-background-hover p-2.5",
+    "border-error/40"
+  ],
+  [
+    "rounded border px-2 py-1 text-xs transition",
+    "border-border-bright bg-tertiary text-text-bright",
+    "border-border-bright bg-background-bright text-text-dimmed hover:text-text-bright"
+  ],
+  [
+    "rounded p-1 text-text-dimmed hover:bg-background-raised hover:text-text-bright"
+  ],
+  [
+    "rounded p-1 text-text-dimmed transition-colors hover:bg-background-raised hover:text-text-bright"
+  ],
+  [
+    "rounded px-1.5 py-0.5",
+    "bg-amber-500/10 text-amber-400",
+    "bg-background-raised text-text-dimmed"
+  ],
+  [
+    "rounded px-1.5 py-1 text-xs text-text-dimmed transition focus-custom group-hover:bg-background-raised group-hover:text-text-bright"
+  ],
+  [
+    "rounded-[3px] bg-amber-500/15 px-1.5 py-0.5 text-xxs font-semibold uppercase tracking-wide text-amber-400"
+  ],
+  [
+    "rounded-2xl border border-border-bright bg-background-bright p-2 transition focus-within:border-border-brighter"
+  ],
+  [
+    "rounded-b-lg border-x border-b border-grid-dimmed bg-background-dimmed p-3 pb-1"
+  ],
+  ["rounded-b-none border-b-0 text-xs", "text-xs"],
+  [
+    "rounded-full border px-2 py-0.5 text-xs transition focus-custom",
+    "border-border-brightest bg-background-bright text-text-bright",
+    "border-border-bright text-text-dimmed hover:text-text-bright",
+    "cursor-default opacity-70 hover:text-text-dimmed"
+  ],
+  ["rounded-lg border border-grid-bright bg-background-bright p-6 text-center"],
+  ["rounded-lg border border-grid-dimmed bg-background-bright p-4"],
+  ["rounded-lg border border-grid-dimmed p-4"],
+  ["rounded-lg border border-grid-dimmed p-6 text-center"],
+  ["rounded-md bg-background-hover px-3 py-2"],
+  ["rounded-md bg-primary px-3 py-2"],
+  [
+    "rounded-md bg-red-500/10 border border-red-500/30 p-3 text-sm text-red-400"
+  ],
+  [
+    "rounded-md border border-error/30 bg-error/10 px-3 py-2 text-sm text-error"
+  ],
+  [
+    "rounded-md border border-error/50 bg-error/10 px-3 py-2 text-xs text-error"
+  ],
+  ["rounded-md border border-green-500/30 bg-green-500/5 p-3 space-y-2"],
+  ["rounded-md border border-green-600/40 bg-green-600/10 px-3 py-2"],
+  [
+    "rounded-md border border-grid-bright bg-background-bright px-3 py-2 text-sm text-text-bright"
+  ],
+  ["rounded-md border border-grid-bright bg-background-deep"],
+  ["rounded-md border border-grid-bright bg-background-hover/50 px-3.5 py-2"],
+  ["rounded-md border border-grid-dimmed bg-background-bright p-1.5"],
+  ["rounded-md border border-grid-dimmed bg-background-bright p-3 space-y-2"],
+  ["rounded-md border border-grid-dimmed bg-background-bright p-3 space-y-3"],
+  ["rounded-md border border-grid-dimmed p-4"],
+  [
+    "rounded-md border border-red-500/30 bg-red-500/10 p-3 text-sm text-red-400"
+  ],
+  [
+    "rounded-md border px-3 py-3",
+    "border-border-bright bg-background-bright/40",
+    "border-indigo-500/30 bg-indigo-500/5"
+  ],
+  ["rounded-none border-0"],
+  ["rounded-sm"],
+  ["rounded-sm ", " w-full"],
+  ["rounded-sm bg-background-hover px-1.5 py-0.5 font-mono text-xxs"],
+  [
+    "rounded-sm bg-charcoal-700 px-1 py-0.5 text-xxs font-semibold uppercase tracking-wide text-text-dimmed"
+  ],
+  [
+    "rounded-sm border bg-background-bright/40  ",
+    "border-indigo-500/30",
+    "border-grid-bright"
+  ],
+  ["rounded-sm border border-grid-bright bg-background-dimmed px-3 py-2"],
+  ["rounded-sm border border-grid-bright", "h-16", "h-10"],
+  ["rounded-sm border border-grid-dimmed bg-background-bright p-3"],
+  ["rounded-sm border border-grid-dimmed bg-background-bright p-4"],
+  ["rounded-sm border border-grid-dimmed p-3"],
+  ["rounded-sm px-1 py-0.5 text-xxs text-text-bright text-shadow-custom"],
+  ["rounded-sm px-3 py-0.5 text-xs text-text-faint"],
+  [
+    "safari-only sticky top-0 z-10 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:bg-grid-bright supports-[(-webkit-hyphens:none)]:after:content-none"
+  ],
+  [
+    "scrollbar-gutter-stable flex-1 resize-none border-0 bg-transparent px-2 py-1.5 text-sm text-text-bright placeholder-text-dimmed outline-hidden ring-0 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control field-sizing-content focus:border-0 focus:outline-hidden focus:ring-0"
+  ],
+  [
+    "scrollbar-gutter-stable min-h-0 flex-1 overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "scrollbar-gutter-stable overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["scrollbar-gutter-stable scrollbar-thumb-on-hover"],
+  ["secondary"],
+  [
+    "select-all rounded-md border border-grid-bright bg-background-deep px-2 py-1 font-mono"
+  ],
+  [
+    "select-none whitespace-nowrap py-px",
+    "text-error/80",
+    "text-warning/70",
+    "text-text-dimmed"
+  ],
+  [
+    "self-end rounded-md border border-grid-bright bg-background-dimmed",
+    "border-success",
+    "border-error",
+    "border-[#41FF54]/25 light:border-success/60 dark:bg-secondary"
+  ],
+  ["self-end text-xxs tabular-nums", "text-error", "text-text-dimmed"],
+  ["self-start"],
+  ["self-start text-text-link"],
+  ["shrink grow select-all overflow-x-auto", "w-full min-w-0", "max-w-fit"],
+  ["shrink-0"],
+  ["shrink-0 border-b border-grid-bright px-3 py-2"],
+  ["shrink-0 border-t border-grid-dimmed px-3 py-2 text-xxs text-text-dimmed"],
+  ["shrink-0 font-medium tabular-nums"],
+  ["shrink-0 justify-end"],
+  ["shrink-0 justify-start"],
+  ["shrink-0", "mt-1", "mt-0.5"],
+  ["shrink-0 opacity-0 transition-opacity group-hover:opacity-100"],
+  ["shrink-0 overflow-hidden pl-3 pr-1"],
+  [
+    "shrink-0 overflow-x-auto px-3 py-1 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  ["shrink-0 rounded p-0.5 hover:bg-background-raised"],
+  [
+    "shrink-0 rounded p-1 text-text-dimmed opacity-0 transition-opacity group-hover:opacity-100 hover:text-error"
+  ],
+  [
+    "shrink-0 rounded p-1 text-text-faint opacity-0 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100 focus-visible:opacity-100 focus-custom",
+    "hover:text-error",
+    "hover:text-text-bright"
+  ],
+  [
+    "shrink-0 rounded text-text-dimmed transition-colors focus-custom hover:text-text-bright"
+  ],
+  [
+    "shrink-0 rounded transition-colors focus-custom",
+    "text-text-bright",
+    "text-text-dimmed"
+  ],
+  ["shrink-0 rounded-[2px] border-(--color-border) bg-(--color-bg)"],
+  [
+    "shrink-0 rounded-[2px] border-(--color-border) bg-(--color-bg)",
+    "h-2.5 w-2.5",
+    "w-1",
+    "w-0 border-[1.5px] border-dashed bg-transparent",
+    "my-0.5"
+  ],
+  ["shrink-0 self-start tabular-nums", "text-text-bright", "text-text-dimmed"],
+  [
+    "shrink-0 tabular-nums px-2 text-xxs text-text-dimmed @[350px]/timeline:text-xs"
+  ],
+  ["shrink-0 tabular-nums text-text-bright"],
+  ["shrink-0 tabular-nums text-xxs text-text-dimmed @[350px]/timeline:text-xs"],
+  ["shrink-0 text-2sm"],
+  ["shrink-0 text-sm"],
+  ["shrink-0 text-text-dimmed"],
+  ["shrink-0 text-xs text-text-dimmed"],
+  ["shrink-0 text-xs text-text-faint"],
+  ["shrink-0 text-xxs tabular-nums text-text-dimmed"],
+  [
+    "shrink-0 whitespace-nowrap text-base font-medium tabular-nums leading-none text-text-bright"
+  ],
+  [
+    "sidebar-drag-handle flex h-full w-full cursor-grab items-center justify-center rounded text-text-dimmed opacity-0 group-hover/menuitem:opacity-100 hover:text-text-bright active:cursor-grabbing"
+  ],
+  ["sidebar-reorder-grid"],
+  ["size-[1.125rem] min-w-[1.125rem] text-webhooks"],
+  ["size-[1.125rem] text-blue-500"],
+  ["size-[1.125rem] text-blue-500", "opacity-50"],
+  ["size-[1.125rem] text-purple-500"],
+  ["size-[1.125rem] text-purple-500", "opacity-50"],
+  ["size-[75%] rounded-full border-2 border-text-bright"],
+  ["size-[75%] rounded-full border-2 border-text-dimmed"],
+  ["size-[80%]", "size-full"],
+  ["size-[90%] text-text-dimmed"],
+  ["size-1.25 min-h-1.25 rounded-full border"],
+  ["size-1.25 rounded-full"],
+  ["size-1.25 rounded-full bg-yellow-500"],
+  ["size-1.5 rounded-full  ", "bg-warning", "bg-success"],
+  ["size-1.5 rounded-full", "animate-pulse bg-success", "bg-blue-500"],
+  ["size-1.5 rounded-full", "bg-success", "bg-text-dimmed"],
+  ["size-1.5 shrink-0 rounded-full  ", "bg-success", "bg-surface-control"],
+  ["size-1.5 shrink-0 rounded-full bg-success"],
+  ["size-1.5 shrink-0 rounded-full bg-warning"],
+  [
+    "size-1.5 shrink-0 rounded-full",
+    "override",
+    "bg-amber-400",
+    "bg-green-500",
+    "bg-surface-control-hover"
+  ],
+  ["size-10 min-w-10 text-blue-500"],
+  ["size-10 text-text-dimmed"],
+  ["size-12 min-w-12 text-error"],
+  ["size-12 text-primary"],
+  ["size-12 text-tertiary"],
+  ["size-16 text-secondary"],
+  ["size-2"],
+  ["size-2 fill-white text-white dark:fill-text-bright dark:text-text-bright"],
+  ["size-2 rounded-[2px]"],
+  ["size-2 rounded-full"],
+  ["size-2 rounded-full bg-blue-500"],
+  ["size-2 rounded-full bg-charcoal-600"],
+  ["size-2 rounded-full bg-pending"],
+  ["size-2 rounded-full bg-success"],
+  ["size-2 shrink-0 rounded-full"],
+  [
+    "size-2 shrink-0 rounded-full",
+    "bg-amber-400",
+    "bg-green-500",
+    "bg-surface-control"
+  ],
+  ["size-2 shrink-0 rounded-full bg-indigo-500"],
+  ["size-2 shrink-0 rounded-full bg-success"],
+  ["size-2 shrink-0 rounded-full bg-warning"],
+  ["size-2.5 rounded-[2px]"],
+  ["size-2.5 shrink-0 rounded-xs"],
+  ["size-3"],
+  ["size-3 shrink-0"],
+  ["size-3 stroke-[1.5] text-text-dimmed/70"],
+  ["size-3 text-text-dimmed"],
+  ["size-3 text-white"],
+  ["size-3.5"],
+  ["size-3.5 animate-pulse cursor-default text-success"],
+  ["size-3.5 animate-pulse text-success"],
+  ["size-3.5 cursor-default text-text-dimmed"],
+  ["size-3.5 flex-none"],
+  ["size-3.5 flex-none text-text-dimmed"],
+  ["size-3.5 shrink-0"],
+  ["size-3.5 shrink-0 text-text-dimmed"],
+  ["size-3.5 text-indigo-400"],
+  ["size-3.5 text-runs"],
+  ["size-3.5 text-sessions"],
+  ["size-3.5 text-text-dimmed"],
+  ["size-3.5 text-text-dimmed flex-0"],
+  ["size-4"],
+  ["size-4 bg-grid-dimmed"],
+  ["size-4 border-text-bright"],
+  ["size-4 flex-none"],
+  ["size-4 flex-none text-agents"],
+  ["size-4 flex-none text-text-dimmed"],
+  [
+    "size-4 flex-none text-text-dimmed group-hover:text-text-bright group-focus:text-text-bright"
+  ],
+  ["size-4 flex-none text-text-dimmed transition group-hover:text-text-bright"],
+  [
+    "size-4 flex-none text-text-dimmed transition group-hover:text-text-bright group-focus:text-text-bright"
+  ],
+  ["size-4 flex-none text-webhooks"],
+  ["size-4 flex-none transition duration-0 group-hover:border-border-bright"],
+  ["size-4 min-w-4 text-error", "mt-1"],
+  ["size-4 min-w-4 text-success", "mt-1"],
+  ["size-4 min-w-4 text-text-dimmed group-hover:text-text-bright"],
+  ["size-4 min-w-4 transition"],
+  ["size-4 opacity-50"],
+  ["size-4 opacity-80"],
+  ["size-4 rounded-full"],
+  ["size-4 shrink-0"],
+  ["size-4 shrink-0 stroke-[1.5] text-text-dimmed"],
+  ["size-4 shrink-0 text-blue-500"],
+  ["size-4 shrink-0 text-purple-500"],
+  ["size-4 shrink-0 text-text-bright"],
+  ["size-4 shrink-0 text-text-dimmed"],
+  ["size-4 shrink-0 text-text-dimmed transition group-hover:text-indigo-500"],
+  ["size-4 text-agents"],
+  ["size-4 text-amber-400"],
+  ["size-4 text-blue-400"],
+  ["size-4 text-blue-500"],
+  ["size-4", "text-dev"],
+  ["size-4 text-error"],
+  ["size-4 text-green-500"],
+  ["size-4 text-indigo-500"],
+  ["size-4", "text-preview"],
+  ["size-4 text-purple-500"],
+  ["size-4 text-runs"],
+  ["size-4 text-sessions"],
+  ["size-4 text-success"],
+  ["size-4 text-success/70 group-hover/table-row:text-success"],
+  ["size-4 text-text-bright"],
+  ["size-4 text-text-dimmed"],
+  ["size-4 text-text-dimmed group-hover/table-row:text-text-bright"],
+  ["size-4 text-text-dimmed transition group-hover:text-text-bright"],
+  ["size-4 text-text-dimmed transition hover:text-text-bright"],
+  [
+    "size-4 text-text-dimmed transition-colors group-hover/button:text-text-bright"
+  ],
+  [
+    "size-4 text-text-dimmed transition-colors group-hover/sort:text-text-bright"
+  ],
+  ["size-4 text-text-faint"],
+  ["size-4 text-warning"],
+  ["size-4 text-webhooks"],
+  ["size-4 text-white"],
+  ["size-4 text-yellow-400"],
+  ["size-4 text-yellow-500"],
+  ["size-4 transition-colors hover:text-text-bright"],
+  ["size-4.5"],
+  ["size-4.5 min-w-4.5 text-agents"],
+  ["size-4.5 min-w-4.5 text-schedules"],
+  ["size-4.5 min-w-4.5 text-tasks"],
+  ["size-4.5 min-w-4.5 text-webhooks"],
+  ["size-4.5 shrink-0"],
+  ["size-4.5 shrink-0 text-agents"],
+  ["size-4.5 shrink-0 text-schedules"],
+  ["size-4.5 shrink-0 text-tasks"],
+  ["size-4.5 shrink-0 text-webhooks"],
+  ["size-4.5 text-agents"],
+  ["size-4.5 text-schedules"],
+  ["size-4.5 text-sessions"],
+  ["size-4.5 text-tasks"],
+  ["size-4.5 text-webhooks"],
+  ["size-5"],
+  ["size-5 min-h-5 min-w-5"],
+  ["size-5 min-w-5 lg:-mt-0.5"],
+  ["size-5 min-w-5 shrink-0 text-success"],
+  ["size-5 shrink-0"],
+  [
+    "size-5 shrink-0",
+    "side-menu-active-icon",
+    "text-text-dimmed",
+    "group-hover/menuitem:text-text-bright group-hover/menulink:text-text-bright"
+  ],
+  ["size-5 shrink-0 text-text-bright"],
+  ["size-5 shrink-0 text-text-dimmed"],
+  ["size-5 shrink-0", "text-text-dimmed group-hover/menuitem:text-text-bright"],
+  ["size-5 text-agents"],
+  ["size-5 text-alerts"],
+  ["size-5 text-amber-400"],
+  ["size-5 text-amber-400 system-mono-icon"],
+  ["size-5 text-blue-500"],
+  ["size-5 text-green-500"],
+  ["size-5 text-green-600 system-mono-icon"],
+  ["size-5 text-indigo-500"],
+  ["size-5 text-indigo-500 system-mono-icon"],
+  ["size-5 text-orange-500 system-mono-icon"],
+  ["size-5 text-purple-500"],
+  ["size-5 text-success"],
+  ["size-5 text-tasks-bright"],
+  ["size-5 text-text-bright"],
+  ["size-5 text-text-dimmed/50"],
+  ["size-5 text-warning"],
+  ["size-5 text-yellow-400"],
+  ["size-5 transition-colors", "text-text-bright", "text-text-dimmed"],
+  ["size-6"],
+  ["size-6 rounded-sm p-1 text-error transition hover:bg-background-raised"],
+  [
+    "size-6 rounded-sm p-1 text-text-bright transition hover:bg-background-raised"
+  ],
+  [
+    "size-6 rounded-sm p-1 text-text-dimmed transition hover:bg-background-raised hover:text-text-bright"
+  ],
+  ["size-6 text-agents"],
+  ["size-6 text-blue-500 system-mono-icon"],
+  ["size-6 text-cyan-500"],
+  ["size-6 text-cyan-500 system:text-text-bright"],
+  ["size-6 text-fuchsia-600"],
+  ["size-6 text-indigo-500"],
+  ["size-7 text-aiMetrics"],
+  ["size-7 text-indigo-500"],
+  ["size-7 text-runs"],
+  ["size-7 text-text-bright"],
+  ["size-7 text-text-dimmed"],
+  ["size-8"],
+  ["size-8 flex-none text-text-bright"],
+  ["size-8 flex-none text-white"],
+  [
+    "size-8 p-0 font-normal text-text-bright rounded-md",
+    "hover:bg-background-raised hover:text-text-bright",
+    "focus:bg-background-raised focus:text-text-bright focus:outline-hidden",
+    "aria-selected:opacity-100"
+  ],
+  ["size-8 text-text-dimmed"],
+  ["size-9"],
+  ["size-full"],
+  ["size-full rounded-[10%] object-contain"],
+  ["size-full rounded-full bg-blue-500"],
+  ["sm:max-w-lg"],
+  ["sm:max-w-md"],
+  ["sm:max-w-sm"],
+  ["space-y-[2.9rem]"],
+  ["space-y-0"],
+  ["space-y-0.5"],
+  ["space-y-0.5 border-b border-grid-dimmed pb-2"],
+  ["space-y-0.5 p-2"],
+  ["space-y-0.5 text-text-dimmed"],
+  ["space-y-1"],
+  ["space-y-1 border-b border-grid-dimmed bg-background-dimmed px-3 py-2"],
+  ["space-y-1 text-sm"],
+  ["space-y-1.5"],
+  ["space-y-1.5 border-t border-grid-dimmed pt-3"],
+  ["space-y-2"],
+  ["space-y-2 border-t border-grid-bright pt-3"],
+  ["space-y-2 border-t border-grid-dimmed pt-3"],
+  ["space-y-2 border-t border-grid-dimmed pt-4"],
+  ["space-y-2 border-t border-indigo-500/20 p-2.5"],
+  ["space-y-2 px-2 pt-2"],
+  ["space-y-2.5"],
+  ["space-y-3"],
+  ["space-y-3 border-l-2 border-grid-bright pl-4"],
+  ["space-y-3 border-t border-grid-dimmed pt-6"],
+  ["space-y-3 p-3"],
+  ["space-y-3 rounded-md border border-grid-bright p-4"],
+  ["space-y-4"],
+  ["space-y-4 border-t border-grid-bright pt-4"],
+  ["space-y-4 p-3"],
+  ["space-y-4 pt-2"],
+  ["space-y-4 pt-3"],
+  ["space-y-5"],
+  [
+    "space-y-5 overflow-y-auto px-3 py-3 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-charcoal-600"
+  ],
+  ["space-y-5 pt-1"],
+  ["space-y-6"],
+  ["space-y-6 px-4 pb-4 pt-2"],
+  ["space-y-8"],
+  ["space-y-8 divide-y p-8"],
+  ["spacy-y-3"],
+  ["sr-only"],
+  ["STAGING"],
+  [
+    "sticky bottom-0 border-t border-grid-bright bg-background-bright px-1 py-1"
+  ],
+  ["sticky left-0 z-10 transition group-hover:opacity-100", "opacity-0"],
+  [
+    "sticky left-0 z-10 transition-opacity group-hover:opacity-100",
+    "opacity-0"
+  ],
+  [
+    "sticky top-0 flex items-center justify-between border-b border-grid-bright bg-background-dimmed pb-1.5 pl-3 pr-1.5 pt-2"
+  ],
+  ["sticky top-0 space-y-3 self-start py-6 pr-4"],
+  [
+    "sticky top-0 z-1 border-b border-grid-dimmed bg-background px-3 py-1.5 text-xs uppercase text-text-dimmed"
+  ],
+  ["sticky top-0 z-10"],
+  ["sticky top-0 z-10 bg-background-bright pb-3"],
+  [
+    "sticky top-0 z-10 bg-charcoal-900 px-3 pb-1 pt-3 text-xs font-medium text-text-dimmed"
+  ],
+  [
+    "sticky top-0 z-20 flex items-center justify-center gap-2 border-b border-grid-dimmed bg-background-bright px-3 py-1.5"
+  ],
+  ["streamdown-container font-sans text-sm font-normal text-text-dimmed"],
+  [
+    "streamdown-container max-h-96 overflow-y-auto text-xs text-text-dimmed scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "streamdown-container max-h-96 overflow-y-auto text-xs text-text-dimmed",
+    "scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "**:data-[streamdown=code-block-header]:hidden",
+    "**:data-[streamdown=code-block]:border-0!",
+    "**:data-[streamdown=code-block]:bg-transparent!",
+    "**:data-[streamdown=code-block]:p-0!",
+    "**:data-[streamdown=code-block]:my-0!",
+    "**:data-[streamdown=code-block]:gap-0!",
+    "**:data-[streamdown=code-block-body]:border-0!",
+    "**:data-[streamdown=code-block-body]:scrollbar-thin",
+    "**:data-[streamdown=code-block-body]:scrollbar-track-transparent",
+    "**:data-[streamdown=code-block-body]:scrollbar-thumb-surface-control"
+  ],
+  [
+    "streamdown-container min-w-0 font-sans text-sm font-normal text-text-dimmed wrap-anywhere"
+  ],
+  ["streamdown-container p-2.5 font-sans text-sm font-normal text-text-dimmed"],
+  [
+    "streamdown-container rounded-lg border border-grid-bright bg-background-deep p-6 text-sm text-text-bright/90"
+  ],
+  ["stroke-[1.5]"],
+  ["suggest-region-cell"],
+  ["system-mono-label"],
+  ["system-mono-label text-error"],
+  ["system-mono-label text-pending"],
+  ["system-mono-label text-success"],
+  ["system-mono-label", "text-success", "text-error"],
+  [
+    "system:border-transparent system:bg-blue-500 system:text-white",
+    "inline-grid"
+  ],
+  [
+    "system:border-transparent system:bg-success system:transition system:group-hover/button:bg-success system:group-hover/button:brightness-90",
+    "system:border-transparent system:bg-warning system:transition system:group-hover/button:bg-warning system:group-hover/button:brightness-90",
+    "border-success/60 text-success [&_span]:text-success hover:border-success",
+    "border-warning/60 text-warning [&_span]:text-warning hover:border-warning"
+  ],
+  [
+    "system:border-transparent system:bg-warning system:transition system:group-hover/button:bg-warning system:group-hover/button:brightness-90"
+  ],
+  ["system:text-text-dimmed flex items-center gap-1"],
+  ["table-fixed"],
+  ["tabular-nums"],
+  ["tabular-nums  ", "font-medium text-success", "text-text-bright"],
+  ["tabular-nums text-emerald-400/80"],
+  ["tabular-nums", "text-success", "text-error", "text-text-bright"],
+  ["tabular-nums text-text-bright"],
+  ["tabular-nums", "text-text-bright"],
+  ["tabular-nums", "text-text-bright", "text-text-dimmed"],
+  ["tabular-nums text-text-dimmed"],
+  ["tabular-nums", "text-text-dimmed", "usage"],
+  ["tabular-nums", "text-warning"],
+  ["text-[#878C99] text-[14px] leading-[20px]"],
+  ["text-[#c678dd]"],
+  ["text-[#D7D9DD] light:text-charcoal-500"],
+  ["text-[#D7D9DD] text-[16px] leading-[24px]"],
+  [
+    "text-[#D7D9DD] text-[30px] font-normal leading-[35px] p-0 mt-[8px] mb-[30px] mx-0"
+  ],
+  ["text-[0.4em] text-text-dimmed"],
+  ["text-[0.65rem] text-text-dimmed"],
+  ["text-[0.6875rem] text-text-bright"],
+  ["text-[0.90625rem] font-medium tracking-[-0.01em]"],
+  ["text-[0.90625rem] font-medium tracking-[-0.01em] text-text-bright"],
+  ["text-[10px]"],
+  ["text-[10px] font-medium text-text-dimmed"],
+  ["text-[10px] font-medium uppercase tracking-wide text-text-dimmed"],
+  ["text-[10px] text-text-dimmed"],
+  ["text-[10px] text-text-faint"],
+  ["text-[10px] uppercase tracking-wide text-text-dimmed"],
+  ["text-[10px] uppercase tracking-wide text-text-faint"],
+  ["text-[11px] text-text-dimmed"],
+  ["text-[11px] uppercase tracking-widest m-0"],
+  [
+    "text-[3.75rem] font-normal leading-none tabular-nums",
+    "text-warning",
+    "text-text-bright"
+  ],
+  ["text-[3.75rem] font-normal tabular-nums leading-none text-text-bright"],
+  ["text-2xl font-normal leading-none tabular-nums text-text-bright"],
+  ["text-2xl tabular-nums text-text-bright"],
+  ["text-4xl font-medium"],
+  ["text-4xl font-medium tabular-nums text-text-bright"],
+  ["text-5xl"],
+  ["text-agents"],
+  ["text-amber-300"],
+  ["text-amber-400"],
+  ["text-amber-500"],
+  ["text-amber-700 dark:text-amber-200", "text-error"],
+  ["text-background-dimmed", "text-green-500"],
+  ["text-background-dimmed", "text-text-dimmed"],
+  ["text-balance"],
+  ["text-base"],
+  ["text-base font-medium"],
+  ["text-base font-normal text-text-bright"],
+  ["text-blue-400"],
+  ["text-border-bright"],
+  ["text-callout-warning-text"],
+  ["text-center"],
+  ["text-center font-mono text-xs text-text-bright"],
+  ["text-center text-sm text-text-dimmed"],
+  ["text-center text-text-bright"],
+  ["text-center text-text-dimmed"],
+  ["text-dev"],
+  ["text-dimmed flex items-center gap-1 text-xs"],
+  ["text-dimmed flex items-center gap-3 py-1.5 pl-2.5 pr-3 text-xs"],
+  ["text-error"],
+  ["text-error hover:bg-error/10!"],
+  ["text-error system:text-white"],
+  ["text-foreground font-mono font-medium tabular-nums"],
+  ["text-green-300"],
+  ["text-green-400"],
+  ["text-green-500"],
+  ["text-indigo-500 underline"],
+  ["text-left"],
+  ["text-left", "justify-center", "flex w-full items-center", "invisible"],
+  ["text-left system-mono-label"],
+  [
+    "text-left text-sm font-medium text-text-bright transition-colors hover:text-indigo-400"
+  ],
+  ["text-left transition group-hover:text-text-bright"],
+  ["text-lg font-medium text-text-bright"],
+  ["text-lg font-medium text-text-bright font-mono"],
+  ["text-lg font-semibold"],
+  ["text-lg font-semibold tabular-nums text-text-bright"],
+  ["text-lg font-semibold text-text-bright"],
+  ["text-md font-medium"],
+  ["text-muted-foreground"],
+  ["text-muted-foreground text-sm"],
+  ["text-orange-400"],
+  ["text-orange-500"],
+  ["text-pending"],
+  ["text-preview"],
+  ["text-purple-400"],
+  ["text-purple-400", "text-blue-400"],
+  ["text-query"],
+  ["text-queues"],
+  ["text-red-400"],
+  ["text-red-500"],
+  ["text-right"],
+  [
+    "text-right @[28rem]:text-left  ",
+    "font-medium text-text-bright",
+    "text-text-bright"
+  ],
+  [
+    "text-right font-mono text-xs tabular-nums",
+    "font-bold text-error",
+    "text-text-bright"
+  ],
+  ["text-right tabular-nums"],
+  ["text-right text-text-bright @[28rem]:text-left"],
+  ["text-right text-text-dimmed"],
+  ["text-right text-xxs", "font-bold text-error", "text-text-dimmed"],
+  ["text-rose-400"],
+  ["text-rose-500"],
+  ["text-schedules"],
+  ["text-sessions"],
+  ["text-sky-300"],
+  ["text-sky-500"],
+  ["text-sky-500", "text-teal-500"],
+  ["text-sm"],
+  ["text-sm  "],
+  ["text-sm font-medium tabular-nums"],
+  ["text-sm font-medium text-text-bright"],
+  ["text-sm leading-6 text-text-dimmed"],
+  ["text-sm tabular-nums text-text-dimmed"],
+  ["text-sm text-indigo-400 light:text-indigo-600"],
+  ["text-sm text-text-bright"],
+  ["text-sm text-text-dimmed"],
+  [
+    "text-sm text-text-dimmed transition-colors duration-200 group-focus-within:text-text-bright/80"
+  ],
+  ["text-sm text-warning"],
+  ["text-sm text-yellow-300"],
+  [
+    "text-sm transition duration-200",
+    "text-text-bright",
+    "text-text-dimmed group-hover:text-text-bright"
+  ],
+  [
+    "text-sm transition duration-200",
+    "text-text-bright",
+    "text-text-dimmed hover:text-text-bright"
+  ],
+  [
+    "text-sm transition duration-200",
+    "text-text-bright",
+    "text-text-dimmed transition group-hover:text-text-bright"
+  ],
+  [
+    "text-sm transition duration-200",
+    "text-text-bright",
+    "text-text-dimmed transition group-hover/tab:text-text-bright"
+  ],
+  [
+    "text-sm transition duration-200",
+    "text-text-link",
+    "text-text-dimmed transition hover:text-text-bright"
+  ],
+  ["text-success"],
+  [
+    "text-success system:border-transparent system:bg-success system:text-white",
+    "inline-grid"
+  ],
+  ["text-success system:text-white"],
+  ["text-success", "text-error"],
+  ["text-success", "text-warning", "system:text-white"],
+  ["text-tasks"],
+  ["text-text-bright"],
+  ["text-text-bright", "text-text-dimmed"],
+  ["text-text-bright", "text-text-dimmed group-hover/tab:text-text-bright"],
+  ["text-text-dimmed"],
+  ["text-text-dimmed group-hover/spannode:text-text-bright"],
+  ["text-text-dimmed group-hover/table-row:text-text-bright"],
+  ["text-text-dimmed line-through"],
+  ["text-text-dimmed mt-1 block"],
+  ["text-text-dimmed tabular-nums"],
+  ["text-text-dimmed text-xs"],
+  ["text-text-dimmed transition hover:text-rose-400"],
+  [
+    "text-text-dimmed transition-colors duration-100 focus-custom hover:cursor-pointer hover:text-text-bright"
+  ],
+  [
+    "text-text-dimmed transition-colors focus-custom",
+    "cursor-not-allowed opacity-50",
+    "hover:cursor-pointer hover:text-text-bright"
+  ],
+  [
+    "text-text-dimmed transition-colors focus-custom hover:cursor-pointer hover:text-text-bright"
+  ],
+  ["text-text-dimmed underline"],
+  ["text-text-dimmed/50"],
+  ["text-text-dimmed/60"],
+  ["text-text-dimmed/70"],
+  ["text-text-faint"],
+  [
+    "text-text-faint transition-colors hover:text-error focus-visible:text-error focus-custom"
+  ],
+  ["text-text-link"],
+  [
+    "text-text-link underline decoration-text-link/40 underline-offset-2 transition hover:decoration-text-link"
+  ],
+  ["text-warning"],
+  ["text-warning tabular-nums", "tabular-nums"],
+  ["text-wrap font-sans text-sm font-normal text-rose-500 dark:text-rose-200"],
+  [
+    "text-wrap font-sans text-sm font-normal text-rose-500 dark:text-rose-200 [word-break:break-word]"
+  ],
+  ["text-wrap! pl-3.5 text-text-dimmed"],
+  ["text-wrap! text-text-bright"],
+  ["text-wrap! text-text-dimmed"],
+  ["text-xl font-medium", "text-indigo-500", "text-text-dimmed"],
+  ["text-xl font-medium text-text-dimmed"],
+  ["text-xl tabular-nums text-text-dimmed"],
+  ["text-xs"],
+  ["text-xs font-medium  ", "text-green-400", "text-red-400"],
+  ["text-xs font-medium text-green-400"],
+  ["text-xs font-medium text-text-bright"],
+  ["text-xs font-medium text-text-dimmed"],
+  [
+    "text-xs font-medium text-text-dimmed group-hover/table-row:text-text-bright"
+  ],
+  ["text-xs font-medium uppercase tracking-wide text-text-dimmed"],
+  ["text-xs font-mono text-text-bright"],
+  ["text-xs font-normal tabular-nums text-text-dimmed"],
+  ["text-xs leading-relaxed text-text-dimmed"],
+  ["text-xs opacity-50"],
+  ["text-xs space-y-1"],
+  ["text-xs tabular-nums"],
+  [
+    "text-xs tabular-nums",
+    "system-mono-label text-warning",
+    "text-text-dimmed"
+  ],
+  ["text-xs tabular-nums text-text-bright"],
+  ["text-xs tabular-nums text-text-dimmed"],
+  ["text-xs", "text-amber-400", "text-text-dimmed"],
+  ["text-xs text-error"],
+  ["text-xs text-error", "text-xs text-text-dimmed"],
+  ["text-xs text-indigo-400 hover:text-indigo-300"],
+  ["text-xs text-red-400"],
+  ["text-xs text-red-400 hover:text-red-300"],
+  ["text-xs text-rose-400"],
+  ["text-xs text-text-bright"],
+  ["text-xs text-text-dimmed"],
+  ["text-xs text-text-dimmed transition hover:text-text-bright"],
+  ["text-xs text-warning"],
+  [
+    "text-xs transition-colors",
+    "text-indigo-500",
+    "text-text-dimmed hover:text-text-bright"
+  ],
+  ["text-xs uppercase"],
+  ["text-xs uppercase text-text-dimmed"],
+  ["text-xs uppercase tracking-wide text-text-dimmed"],
+  ["text-xs whitespace-nowrap"],
+  ["text-xxs font-medium uppercase tracking-wider text-text-dimmed"],
+  ["text-xxs font-semibold uppercase tracking-wider text-indigo-400"],
+  ["text-xxs text-text-dimmed"],
+  ["text-xxs uppercase tracking-wide text-text-faint"],
+  ["text-yellow-300"],
+  ["text-yellow-500"],
+  [
+    "timeline-point -ml-0.5 size-3 rounded-full border-2 border-background-bright"
+  ],
+  [
+    "timeline-span relative flex h-4 w-full min-w-0.5 items-center",
+    "rounded-r-sm bg-linear-to-r from-black/50 to-transparent",
+    "rounded-sm"
+  ],
+  ["transition"],
+  ["transition duration-200"],
+  [
+    "transition duration-200",
+    "font-sans text-sm font-normal leading-5",
+    "text-text-bright",
+    "text-text-dimmed group-hover/tab:text-text-bright",
+    "text-sm text-text-bright"
+  ],
+  [
+    "transition group-hover:text-text-bright group-hover:group-disabled:text-text-dimmed"
+  ],
+  ["transition hover:text-text-bright"],
+  ["transition text-text-bright group-hover:group-disabled:text-text-dimmed"],
+  [
+    "transition-colors duration-100 focus-custom",
+    "cursor-not-allowed opacity-50",
+    "text-success hover:cursor-pointer",
+    "text-text-dimmed hover:cursor-pointer hover:text-text-bright"
+  ],
+  [
+    "transition-colors duration-100 focus-custom hover:cursor-pointer",
+    "text-success",
+    "text-text-dimmed hover:text-text-bright"
+  ],
+  [
+    "transition-colors duration-100 focus-custom hover:cursor-pointer",
+    "text-text-dimmed hover:text-text-bright"
+  ],
+  [
+    "transition-colors focus-custom hover:cursor-pointer hover:text-text-bright"
+  ],
+  [
+    "transition-colors group-hover/button:bg-error/10 group-hover/button:text-error [&_span]:transition-colors group-hover/button:[&_span]:text-error",
+    "group-hover:bg-background-raised",
+    "bg-background-hover group-hover:bg-surface-control/50"
+  ],
+  ["transition-colors group-hover/button:text-error"],
+  ["transition-colors group-hover/button:text-text-bright"],
+  ["transition-colors", "text-indigo-500", "text-text-dimmed"],
+  [
+    "transition-opacity duration-300",
+    "opacity-100",
+    "pointer-events-none opacity-0"
+  ],
+  ["transition-opacity", "opacity-100", "opacity-0 group-hover:opacity-100"],
+  ["translate-y-px self-end pl-2"],
+  ["truncate"],
+  ["truncate font-medium text-text-bright"],
+  ["truncate font-mono"],
+  ["truncate font-mono text-emerald-400"],
+  ["truncate font-mono text-sm text-text-bright"],
+  ["truncate font-mono text-sm text-text-dimmed"],
+  ["truncate font-mono text-text-dimmed"],
+  ["truncate font-mono text-xs text-text-dimmed"],
+  [
+    "truncate",
+    "overflow-hidden whitespace-nowrap",
+    "text-left system-mono-label"
+  ],
+  ["truncate text-2sm text-text-bright"],
+  ["truncate text-2sm", "text-text-bright", "text-text-dimmed"],
+  ["truncate text-left"],
+  ["truncate text-sm font-medium text-text-bright"],
+  ["truncate text-sm", "text-text-bright", "text-text-dimmed"],
+  ["truncate text-sm text-text-dimmed"],
+  ["truncate text-text-bright"],
+  ["truncate", "text-text-bright", "text-text-dimmed"],
+  ["truncate", "text-text-dimmed"],
+  ["truncate text-text-dimmed"],
+  ["truncate text-xs font-medium text-text-bright"],
+  ["truncate text-xxs uppercase text-text-dimmed"],
+  ["truncate whitespace-nowrap"],
+  ["underline font-medium"],
+  ["uppercase text-text-dimmed"],
+  [
+    "w-(--radix-popover-trigger-width) min-w-(--radix-popover-trigger-width) max-w-(--radix-popover-trigger-width) border border-error/20 bg-[#2F1D24] light:bg-error/10 px-3 py-2 text-xs text-text-dimmed"
+  ],
+  ["w-[1.3rem] h-[1.3rem]", "text-blue-400", "text-error"],
+  ["w-[1%]"],
+  ["w-[1%]", "group-hover/table-row:bg-indigo-500/5"],
+  ["w-[1%]", "opacity-50"],
+  ["w-[1%]", "opacity-50", "font-medium text-text-bright"],
+  ["w-[1%]", "opacity-50", "text-error"],
+  ["w-[1%]", "opacity-50", "text-text-bright"],
+  [
+    "w-[1%] pl-16",
+    "opacity-50",
+    "text-warning",
+    "font-medium text-text-bright"
+  ],
+  ["w-[1%] pl-16 tabular-nums", "opacity-50", "font-medium text-text-bright"],
+  ["w-[1%] pl-16 tabular-nums", "opacity-50", "text-error"],
+  [
+    "w-[1%] pl-16 tabular-nums",
+    "opacity-50",
+    "text-text-bright",
+    "text-warning"
+  ],
+  ["w-[1%] pl-32"],
+  ["w-[10%]"],
+  ["w-[12%]"],
+  ["w-[13%]", "w-[15%]"],
+  ["w-[20%]"],
+  ["w-[22%]", "w-[25%]"],
+  ["w-[24%]"],
+  ["w-[24%]", "w-[22%]"],
+  ["w-[24ch]"],
+  ["w-[27ch] font-mono"],
+  ["w-[28ch]"],
+  ["w-[32%]", "w-[37%]"],
+  ["w-[33ch] font-mono"],
+  ["w-[37ch] font-mono"],
+  ["w-[420px] min-w-[320px] max-w-[560px] p-0 sm:max-w-[560px]"],
+  [
+    "w-[480px] max-w-none border-l border-grid-dimmed bg-background-bright p-0 sm:max-w-none"
+  ],
+  ["w-[8%]"],
+  ["w-[9%]"],
+  [
+    "w-[90vw] max-w-none rounded-l-lg border-l border-grid-dimmed p-0 sm:max-w-none"
+  ],
+  ["w-[ch-10]"],
+  ["w-0"],
+  ["w-1 shrink-0 self-stretch rounded-[2px]"],
+  ["w-1 shrink-0 self-stretch rounded-[2px] border border-border-bright"],
+  [
+    "w-10 text-center font-mono tabular-nums caret-transparent [&::-webkit-inner-spin-button]:appearance-none",
+    "text-text-dimmed"
+  ],
+  ["w-10 text-xs tabular-nums text-text-dimmed"],
+  ["w-11"],
+  ["w-12"],
+  [
+    "w-12 bg-background-hover text-text-bright rounded px-1 py-0.5 text-xs border border-grid-dimmed"
+  ],
+  ["w-14 shrink-0"],
+  ["w-16 shrink-0"],
+  ["w-20"],
+  ["w-24"],
+  ["w-24 shrink-0"],
+  ["w-28"],
+  ["w-3 shrink-0"],
+  ["w-32"],
+  [
+    "w-32 bg-background-hover text-text-bright rounded px-2 py-0.5 text-xs font-mono border border-grid-dimmed"
+  ],
+  ["w-36"],
+  ["w-4 flex-none"],
+  ["w-40", "opacity-50"],
+  ["w-44"],
+  ["w-48 text-xs font-mono text-text-dimmed"],
+  ["w-5 shrink-0 text-right text-sm font-medium tabular-nums text-text-dimmed"],
+  ["w-52 min-w-0! p-0"],
+  ["w-56 min-w-0! p-0"],
+  ["w-56 shrink-0"],
+  ["w-6 min-w-0 px-0"],
+  ["w-6 shrink-0 text-right text-xxs text-text-faint"],
+  ["w-64"],
+  ["w-64 min-w-64"],
+  ["w-64 p-0"],
+  ["w-72 max-w-(--radix-popover-content-available-width) p-0"],
+  ["w-72 space-y-3"],
+  ["w-8"],
+  ["w-auto"],
+  ["w-auto grow-0 rounded-sm bg-grid-bright"],
+  ["w-auto max-w-md p-0"],
+  ["w-auto p-0"],
+  ["w-auto p-2"],
+  ["w-fit"],
+  ["w-fit font-mono text-sm"],
+  ["w-fit justify-self-start"],
+  ["w-fit min-w-36 p-1"],
+  ["w-fit min-w-40 p-1"],
+  ["w-fit min-w-48 p-1"],
+  ["w-fit min-w-max p-0"],
+  ["w-fit pr-3"],
+  ["w-fit scroll-mt-4 space-y-1.5"],
+  ["w-full"],
+  ["w-full  "],
+  ["w-full [&:not(:first-child)]:mt-13"],
+  ["w-full aspect-video"],
+  ["w-full", "border-b border-grid-dimmed"],
+  ["w-full border-b border-grid-dimmed pb-3"],
+  ["w-full border-b border-grid-dimmed py-2"],
+  ["w-full border-b border-grid-dimmed py-4"],
+  ["w-full border-l-2 border-border-bright pl-2.5"],
+  ["w-full justify-between overflow-hidden focus-custom"],
+  ["w-full justify-center"],
+  ["w-full lg:w-auto lg:max-w-64"],
+  ["w-full max-w-2xl"],
+  ["w-full", "max-w-fit"],
+  ["w-full max-w-md"],
+  ["w-full min-w-0"],
+  ["w-full overflow-auto"],
+  ["w-full overflow-hidden"],
+  [
+    "w-full overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control"
+  ],
+  [
+    "w-full overflow-y-auto scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control focus-within:outline-hidden"
+  ],
+  ["w-full px-1.5 py-[0.9rem]"],
+  ["w-full px-3 py-6"],
+  [
+    "w-full rounded border border-grid-bright bg-background-bright px-2 py-1",
+    "text-xs text-text-bright placeholder:text-text-dimmed",
+    "focus:border-indigo-500/50 focus:outline-hidden focus:ring-1 focus:ring-indigo-500/50"
+  ],
+  [
+    "w-full rounded border border-grid-dimmed bg-background-hover px-2 py-1.5 text-sm text-text-bright"
+  ],
+  [
+    "w-full rounded-lg border border-grid-bright bg-background-dimmed p-5 shadow-lg"
+  ],
+  [
+    "w-full rounded-md border border-grid-bright bg-background-bright px-3 py-2 text-sm text-text-bright"
+  ],
+  ["w-full rounded-sm border border-grid-dimmed p-4"],
+  ["w-full rounded-sm border border-rose-500/40"],
+  ["w-full rounded-sm border border-rose-500/40 p-4"],
+  ["w-full space-y-0"],
+  ["w-full space-y-1"],
+  ["w-full space-y-4 py-4"],
+  ["w-full text-sm"],
+  ["w-full truncate text-center text-xs text-text-dimmed"],
+  ["w-px flex-1 bg-surface-control"],
+  ["w-px grow border-r border-border-bright"],
+  ["w-px grow border-r border-grid-bright"],
+  ["w-px rounded-xs bg-text-dimmed"],
+  ["whitespace-nowrap"],
+  ["whitespace-nowrap", "ml-1", "-ml-1 -translate-x-full", "-translate-x-1/2"],
+  ["whitespace-nowrap px-3"],
+  [
+    "whitespace-nowrap rounded-sm px-1 py-0.5 text-xxs text-text-bright text-shadow-custom"
+  ],
+  [
+    "whitespace-nowrap scrollbar-thin scrollbar-track-transparent scrollbar-thumb-surface-control",
+    "overflow-visible",
+    "overflow-x-auto",
+    "border-t",
+    "w-full"
+  ],
+  ["whitespace-nowrap tabular-nums"],
+  ["whitespace-nowrap text-3xl font-medium text-text-bright"],
+  ["whitespace-nowrap text-blue-500"],
+  ["whitespace-nowrap", "text-error", "text-warning", "text-text-bright"],
+  ["whitespace-nowrap text-sm tabular-nums text-text-dimmed"],
+  ["whitespace-nowrap text-text-bright"],
+  ["whitespace-nowrap text-text-dimmed"],
+  ["whitespace-nowrap text-xs"],
+  ["whitespace-nowrap text-xs tabular-nums"],
+  ["whitespace-nowrap text-xs tabular-nums text-text-dimmed"],
+  ["whitespace-nowrap text-xs text-text-dimmed"],
+  ["whitespace-pre font-mono text-xs text-text-bright"],
+  ["whitespace-pre px-0.5"],
+  ["whitespace-pre px-0.5 text-text-dimmed"],
+  ["whitespace-pre-wrap"],
+  ["whitespace-pre-wrap break-all text-text-bright"],
+  ["whitespace-pre-wrap font-mono text-sm leading-relaxed text-text-bright"],
+  ["whitespace-pre-wrap text-sm text-red-400"],
+  ["whitespace-pre-wrap text-text-dimmed"],
+  ["whitespace-pre-wrap text-xs italic text-amber-700 dark:text-amber-200/70"],
+  ["whitespace-pre-wrap wrap-anywhere"],
+  ["whitespace-pre-wrap wrap-break-word"],
+  [
+    "width-0 absolute left-0 top-0 h-full bg-linear-to-r from-transparent from-5% via-blue-500 to-transparent to-95%"
+  ],
+  ["z-10"],
+  ["z-10 flex h-full w-full items-center justify-center"],
+  ["z-10 mt-[30vh] flex shrink-0 flex-col items-center gap-8"],
+  [
+    "z-40 cursor-default rounded border border-charcoal-700 bg-background-bright px-2 py-1.5 text-xs"
+  ],
+  [
+    "z-40 cursor-default rounded border border-grid-bright bg-background-bright px-2 py-1.5 text-xs"
+  ],
+  [
+    "z-40 cursor-default rounded border border-grid-bright bg-background-bright py-1.5 pl-2.5 pr-2 text-xs text-text-dimmed"
+  ],
+  [
+    "z-40 cursor-default rounded border border-grid-bright bg-background-bright py-1.5 pl-2.5 pr-3 text-xs text-text-dimmed"
+  ],
+  [
+    "z-50 flex flex-col overflow-clip rounded border border-grid-bright bg-background-bright shadow-md outline-hidden animate-in fade-in-40",
+    "min-w-[max(180px,var(--popover-anchor-width))]",
+    "max-w-[min(480px,var(--popover-available-width))]",
+    "max-h-[min(400px,var(--popover-available-height))]"
+  ],
+  [
+    "z-50 flex flex-col overflow-clip rounded border border-grid-bright bg-background-bright shadow-md outline-hidden animate-in fade-in-40",
+    "min-w-[max(180px,var(--popover-anchor-width))]",
+    "max-w-[min(480px,var(--popover-available-width))]",
+    "max-h-[min(600px,var(--popover-available-height))]",
+    "origin-(--popover-transform-origin)"
+  ],
+  ["z-50 h-fit"],
+  [
+    "z-50 min-w-max rounded border border-grid-bright bg-background-bright p-4 shadow-md outline-hidden animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+  ],
+  [
+    "z-50 overflow-hidden animate-in data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1 focus-visible:outline-hidden"
+  ],
+  [
+    "z-50 w-[400px] min-w-0 overflow-hidden rounded border border-grid-bright bg-background-bright p-0 shadow-md outline-hidden animate-in data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2"
+  ]
+]

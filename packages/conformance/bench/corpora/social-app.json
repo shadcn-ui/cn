@@ -1,0 +1,164 @@
+[
+  ["  w-full max-w-[600px]"],
+  ["absolute inset-0 flex items-center justify-center bg-black/50"],
+  ["absolute inset-0 w-full h-full object-cover"],
+  [
+    "appearance-none bg-white border w-full rounded-lg text-sm px-3 py-2 dark:bg-dimmedBg dark:border-slate-500"
+  ],
+  ["aspect-[1200/630] object-cover"],
+  ["bg-neutral-100 dark:bg-slate-700 animate-pulse w-32 h-3 mt-1 rounded"],
+  ["bg-neutral-100 dark:bg-slate-700 animate-pulse w-64 h-4 rounded"],
+  [
+    "block font-semibold text-[15px] min-[400px]:text-[17px] leading-5 line-clamp-1 hover:underline underline-offset-2 text-ellipsis decoration-2"
+  ],
+  ["bluesky-embed"],
+  ["border rounded-lg py-3 px-4 dark:bg-dimmedBg dark:border-slate-500"],
+  ["border rounded-lg py-3 w-full px-4 dark:bg-dimmedBg dark:border-slate-500"],
+  ["container"],
+  ["cursor-pointer  "],
+  ["dropdown-menu-transform-origin dropdown-menu-constrain-size"],
+  ["EmojiReactionPicker__PickerButton"],
+  ["EmojiReactionPicker__Pressable", "__selected", "__disabled"],
+  ["flex flex-1 flex-col min-w-0"],
+  ["flex flex-1 items-center"],
+  ["flex flex-1 items-center shrink min-w-0 min-h-0"],
+  ["flex flex-col gap-1 flex-1"],
+  ["flex flex-col gap-1.5"],
+  ["flex flex-col gap-2"],
+  ["flex flex-col min-[400px]:gap-0.5"],
+  ["flex flex-col w-full max-w-[600px] gap-6"],
+  [
+    "flex flex-row items-center gap-1 border-t dark:border-slate-600 mt-1 pt-1.5"
+  ],
+  ["flex gap-1 rounded-xl overflow-hidden w-full aspect-[2/1]"],
+  ["flex gap-1.5 items-center"],
+  ["flex gap-2 w-full"],
+  ["flex gap-2.5 items-center"],
+  ["flex gap-2.5 items-center cursor-pointer w-full max-w-full "],
+  ["flex items-center gap-0.5 min-[400px]:gap-1 cursor-pointer group"],
+  ["flex items-center gap-1 text-[13px] min-[400px]:text-[15px] min-w-0"],
+  ["flex items-center gap-3 text-sm cursor-pointer ml-[-2px]"],
+  ["flex items-end justify-between w-full"],
+  ["flex space-x-2 items-center"],
+  ["flex-1"],
+  ["flex-1 aspect-square"],
+  ["flex-1 flex-col flex gap-2 p-5 pb-8"],
+  [
+    "flex-1 flex-col flex gap-4 bg-white dark:bg-black hover:bg-brandHover dark:hover:bg-brandHoverDark rounded-[30px] p-5"
+  ],
+  ["flex-1 max-w-full"],
+  ["flex-1 object-cover rounded-sm min-h-0"],
+  ["font-semibold leading-[21px]"],
+  ["font-semibold leading-tight line-clamp-3"],
+  ["font-semibold text-sm"],
+  ["force-no-clicks"],
+  ["grid"],
+  ["grid grid-cols-2 gap-1 rounded-xl overflow-hidden"],
+  ["h-10"],
+  ["h-5 min-[400px]:h-7"],
+  ["h-6"],
+  ["item"],
+  ["items"],
+  ["light", "dark"],
+  [
+    "max-w-80 rounded-lg bg-brand text-white text-center py-1 px-4 w-full mx-auto"
+  ],
+  ["max-w-80 text-center w-full text-textLight dark:text-textDimmed"],
+  ["ml-[3px] mt-px shrink-0 self-center"],
+  ["my-16 text-center w-full text-textLight dark:text-textDimmed"],
+  ["object-cover size-3/5"],
+  ["object-cover size-full"],
+  ["p12"],
+  ["pl-[3px] mt-px shrink-0"],
+  ["pl-[3px] mt-px shrink-0 text-slate-500 dark:text-slate-400"],
+  ["py-3 px-4"],
+  ["radix-dropdown-item"],
+  ["radix-popover-content"],
+  ["radix-select-content"],
+  ["ReactCrop--no-animate"],
+  ["relative aspect-[3/2] rounded-sm overflow-hidden"],
+  ["rotate-500ms"],
+  ["rounded-full"],
+  ["rounded-full shrink-0"],
+  ["rounded-lg bg-brand text-white py-3 px-4 whitespace-nowrap min-w-28"],
+  [
+    "size-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/50 flex items-center justify-center"
+  ],
+  [
+    "text-[11px] min-[400px]:text-[15px] font-semibold text-textLight dark:text-textDimmed mb-px group-hover:text-neutral-800 dark:group-hover:text-white transition-colors"
+  ],
+  ["text-[11px] min-[400px]:text-[15px] text-textNeutral hover:underline"],
+  ["text-4xl font-bold text-center"],
+  ["text-brand hover:underline"],
+  ["text-brand hover:underline shrink-0"],
+  [
+    "text-md min-[400px]:text-lg leading-snug min-[400px]:leading-snug break-word break-words whitespace-pre-wrap"
+  ],
+  ["text-red-500 text-center"],
+  ["text-sm"],
+  ["text-sm font-medium"],
+  ["text-sm font-semibold text-textLight dark:text-textDimmed mt-1"],
+  ["text-sm leading-none text-textLight dark:text-textDimmed line-clamp-1"],
+  [
+    "text-sm leading-snug text-textLight dark:text-textDimmed line-clamp-2 mt-0.5"
+  ],
+  ["text-sm mt-1"],
+  ["text-sm shrink-0 font-semibold max-w-[70%] truncate"],
+  ["text-sm text-textLight dark:text-textDimmed"],
+  ["text-sm text-textLight dark:text-textDimmed line-clamp-2 leading-[18px]"],
+  ["text-sm text-textLight dark:text-textDimmed min-w-0 truncate ml-1"],
+  ["text-textLight dark:text-textDimmed"],
+  ["text-textLight dark:text-textDimmed text-sm"],
+  ["text-textNeutral hover:underline line-clamp-1"],
+  ["text-textNeutral shrink-0"],
+  ["text-white text-2xl font-semibold"],
+  ["theme-- "],
+  [
+    "transition-colors hover:bg-blue-50 dark:hover:bg-slate-900 border dark:border-slate-600 rounded-xl p-2 gap-1.5 w-full flex flex-col"
+  ],
+  ["transition-transform hover:scale-110"],
+  ["transition-transform hover:scale-110 absolute top-4 right-4"],
+  ["transition-transform hover:scale-110 shrink-0"],
+  ["video"],
+  ["w-1/2 h-full object-cover rounded-sm"],
+  ["w-10 h-10"],
+  [
+    "w-10 h-10 overflow-hidden rounded-full bg-neutral-100 dark:bg-slate-700 shrink-0 animate-pulse"
+  ],
+  [
+    "w-10 h-10 overflow-hidden rounded-full bg-neutral-300 dark:bg-slate-700 shrink-0"
+  ],
+  ["w-3/4 h-4 bg-neutral-100 dark:bg-slate-700 rounded animate-pulse"],
+  ["w-4 h-4 rounded-full bg-neutral-300 dark:bg-slate-900 shrink-0"],
+  ["w-4 h-4 shrink-0 mt-0.5"],
+  [
+    "w-5 h-5 min-[400px]:w-[22px] min-[400px]:h-[22px] text-textLight dark:text-textDimmed group-hover:text-neutral-800 dark:group-hover:text-white transition-colors"
+  ],
+  ["w-5/6 h-4 bg-neutral-100 dark:bg-slate-700 rounded animate-pulse"],
+  ["w-6 dark:invert"],
+  ["w-8 h-8 rounded-md bg-brand shrink-0"],
+  ["w-8 h-8 rounded-md bg-neutral-300 dark:bg-slate-700 shrink-0"],
+  ["w-full border border-red-500 bg-red-500/10 px-4 py-3 rounded-lg"],
+  [
+    "w-full border-2 border-brand text-black relative transition-colors max-w-[600px] min-w-[300px] flex items-center dark:text-slate-200 rounded-[32px] overflow-hidden cursor-pointer"
+  ],
+  ["w-full h-4 mt-2 bg-neutral-100 dark:bg-slate-700 rounded animate-pulse"],
+  ["w-full h-full object-cover rounded-sm"],
+  ["w-full max-w-[600px] gap-8 flex flex-col"],
+  [
+    "w-full min-h-dvh flex flex-col items-center gap-8 py-14 px-4 md:pt-32 dark:text-slate-200"
+  ],
+  ["w-full overflow-hidden rounded-xl aspect-square relative"],
+  ["w-full py-12 gap-4 flex flex-col items-center"],
+  ["w-full rounded-xl bg-black"],
+  [
+    "w-full rounded-xl border dark:border-slate-600 py-2 px-3 flex flex-col gap-2"
+  ],
+  [
+    "w-full rounded-xl border py-2 px-2.5 flex-row flex gap-2 hover:bg-blue-50 dark:border-slate-600 dark:hover:bg-slate-900"
+  ],
+  [
+    "w-full rounded-xl overflow-hidden border dark:border-slate-600 flex flex-col items-stretch"
+  ],
+  ["w-full rounded-xl overflow-hidden object-cover h-auto max-h-[1000px]"]
+]
