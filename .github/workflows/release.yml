@@ -28,8 +28,10 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
+          # no `cache: pnpm` here on purpose: the Actions cache is writable
+          # from lower-privileged workflow runs, and this job publishes with
+          # provenance — install from the registry, verified by the lockfile
           node-version: 24
-          cache: pnpm
           registry-url: https://registry.npmjs.org
       # trusted publishing needs npm >= 11.5.1 — pinned to the 11 line: npm 12
       # changed `npm info --json` to emit an array, which crashes the pnpm
