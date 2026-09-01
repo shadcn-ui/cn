@@ -1276,7 +1276,11 @@ export const wrapClsx = (
         n: null,
       }
       if (bucket === undefined) argCache.set(first, (bucket = []))
-      if (bucket.length >= 8) bucket.shift()
+      // a component's base string is the first arg at every usage site, so
+      // one key can carry dozens of tuples (54 in the largest corpus repo,
+      // more once per-site className props count); a tight cap evicts them
+      // faster than the sequence chain can learn them, at ~40x per call
+      if (bucket.length >= 256) bucket.shift()
       bucket.push(hit)
       // two-generation rotation: a full generation ages out wholesale
       // instead of clearing everything; hot buckets get promoted on use,
