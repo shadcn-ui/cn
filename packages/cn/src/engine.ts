@@ -242,6 +242,10 @@ export const createEngine = (
     (c >= 48 && c <= 57) ||
     c === 95
 
+  // non-ascii members of js \s (u00a0, u1680, u2000-u200a, u2028/9, u202f,
+  // u205f, u3000, ufeff); only reached for code units >= 0xa0
+  const isUniWS = (c: number): boolean => /\s/.test(String.fromCharCode(c))
+
   const analyzeArb = (input: string, s: number, e: number): void => {
     aKind = 0
     aLabelS = -1
@@ -647,7 +651,7 @@ export const createEngine = (
     let i = 0
     while (i < n) {
       let c = input.charCodeAt(i)
-      if (c === 32 || (c >= 9 && c <= 13)) {
+      if (c === 32 || (c >= 9 && c <= 13) || (c >= 0xa0 && isUniWS(c))) {
         if (c !== 32) sawNonSpaceWS = true
         i++
         continue
@@ -665,6 +669,9 @@ export const createEngine = (
             break
           }
           // control chars 0-8/14-31 are token chars (parity)
+        } else if (c >= 0xa0 && isUniWS(c)) {
+          sawNonSpaceWS = true
+          break
         }
         th = Math.imul(th ^ c, 0x01000193)
         i++
@@ -1148,10 +1155,11 @@ const resolveValue = (v: ClassValue, clsxMode: boolean): string => {
   let out = ""
   if (
     typeof (v as { length?: unknown }).length === "number" &&
-    Array.isArray(v)
+    (clsxMode ? Array.isArray(v) : true)
   ) {
-    for (let i = 0; i < v.length; i++) {
-      const item = v[i]
+    const arr = v as ArrayLike<ClassValue>
+    for (let i = 0; i < arr.length; i++) {
+      const item = arr[i]
       if (!item) continue
       const r = typeof item === "string" ? item : resolveValue(item, clsxMode)
       if (r) {
