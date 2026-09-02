@@ -239,7 +239,22 @@ for (let i = 0; i < ITERS; i++) {
   const parts = []
   for (let k = 0; k < len; k++) parts.push(mkToken())
   // occasionally messy whitespace
-  const sep = rnd() < 0.03 ? "  " : rnd() < 0.02 ? "\t" : " "
+  const sep =
+    rnd() < 0.03
+      ? "  "
+      : rnd() < 0.02
+        ? "\t"
+        : rnd() < 0.01
+          ? pick([
+              "\u00a0",
+              "\u3000",
+              "\u2028",
+              "\ufeff",
+              "\u2003",
+              "\u205f",
+              "\u1680",
+            ])
+          : " "
   const s =
     (rnd() < 0.02 ? " " : "") + parts.join(sep) + (rnd() < 0.02 ? "\n" : "")
   const expected = ref(s)

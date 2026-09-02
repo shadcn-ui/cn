@@ -4,7 +4,7 @@
   "description": "Reference oracles and gates for cn: differential parity suites vs tailwind-merge + clsx, benchmark matrix vs the incumbents, bundle-size gate, and the vendored-config source of truth. Never published.",
   "type": "module",
   "scripts": {
-    "test": "node tests/correctness.mjs && node tests/fuzz.mjs && node tests/custom-config.mjs && node tests/cli.mjs && node tests/hardening.mjs && node tests/bounds.mjs",
+    "test": "node tests/correctness.mjs && node tests/fuzz.mjs && node tests/custom-config.mjs && node tests/cli.mjs && node tests/hardening.mjs && node tests/bounds.mjs && node tests/join.mjs",
     "test:src": "node tests/correctness.mjs --src && node tests/fuzz.mjs --src",
     "bench": "node bench/bench.mjs",
     "bench:corpus": "node bench/corpus.mjs",

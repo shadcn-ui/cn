@@ -215,6 +215,15 @@ const batteries = {
     " px-2 px-4",
     "px-2 px-4 ",
   ],
+  unicodeWhitespace: [
+    "p-4 p-2",
+    "p-4\u3000p-2 px-1",
+    "\ufeffp-4 p-2",
+    "hover:p-4 hover:p-2",
+    "p-4  p-2",
+    "p-4   p-2",
+    "text-lg text-sm text-xs",
+  ],
   lookalikes: [
     "text-lg text-10xl",
     "text-sm text-2xs",

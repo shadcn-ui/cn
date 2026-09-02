@@ -74,7 +74,8 @@ for (const r of rows)
 //      2026-09-02 for the claim-table fix (~130 B: Float64 claim keys so
 //      group ids cannot alias, a tables-derived claim factor so wide
 //      custom conflict groups cannot fill the table, and a per-merge id
-//      guard)
+//      guard), and to 11,000 on 2026-09-02 for Unicode whitespace parity
+//      (~77 B: \s-complete separator scan and twJoin array-like values)
 const ours = rows[0]
 const cnfast = rows[4]
 let fail = false
@@ -90,13 +91,13 @@ if (ours.gz > cnfast.gz * 1.08) {
   )
   fail = true
 }
-if (ours.gz > 10950) {
-  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 10950`)
+if (ours.gz > 11000) {
+  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 11000`)
   fail = true
 }
 if (fail) process.exit(1)
 console.log(
-  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 10950`
+  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 11000`
 )
 
 // ---------------------------------------------------------------------------
