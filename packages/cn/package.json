@@ -61,6 +61,16 @@
         "default": "./dist/compiler.cjs"
       }
     },
+    "./clsx": {
+      "import": {
+        "types": "./dist/clsx.d.ts",
+        "default": "./dist/clsx.js"
+      },
+      "require": {
+        "types": "./dist/clsx.d.cts",
+        "default": "./dist/clsx.cjs"
+      }
+    },
     "./lite": {
       "import": {
         "types": "./dist/lite.d.ts",

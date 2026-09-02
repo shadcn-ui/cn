@@ -3,6 +3,7 @@
 import { clsx as refClsx } from "clsx"
 import { clsx as refLite } from "clsx/lite"
 import { clsx, twJoin } from "cn"
+import clsxEntryDefault, { clsx as clsxEntry } from "cn/clsx"
 import { clsx as liteClsx } from "cn/lite"
 import { twJoin as refTwJoin } from "tailwind-merge"
 
@@ -77,6 +78,18 @@ for (let i = 0; i < ITERS; i++) {
     JSON.stringify(args, bigintReplacer),
     refClsx(...args),
     clsx(...args)
+  )
+  diff(
+    "clsx entry named",
+    JSON.stringify(args, bigintReplacer),
+    refClsx(...args),
+    clsxEntry(...args)
+  )
+  diff(
+    "clsx entry default",
+    JSON.stringify(args, bigintReplacer),
+    refClsx(...args),
+    clsxEntryDefault(...args)
   )
 }
 

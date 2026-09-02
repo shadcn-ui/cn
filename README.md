@@ -188,6 +188,7 @@ Every export maps to the same name or a familiar one:
   `mergeConfigs(base, ext)`
 - **`cn/engine`**: `createCn(tables, ...)`, `createEngine(tables, ...)` for
   build-time compiled tables
+- **`cn/clsx`**: full `clsx(...)` join with no Tailwind table, for aliases
 - **`cn/lite`**: `clsx(...)`, strings-only join (`clsx/lite` parity)
 - **CLI**: `npx cn build --help`
 
