@@ -47,6 +47,10 @@ export const cn = createCn(tables)
 lib/cn-tables.ts
 ```
 
+Patterns support `**`, `?`, and `{a,b}`; a pattern that names a dot-directory
+or a normally ignored directory such as `out/` scans it; symbolic links are
+followed.
+
 ## Next.js
 
 npm lifecycle hooks run automatically before `dev` and `build`:
