@@ -327,7 +327,7 @@ if (!opts.full) {
     if (!opts.quiet) {
       if (scanState.skippedUnreadable > 0)
         console.error(
-          `cn: skipped ${scanState.skippedUnreadable} unreadable file(s) or directorie(s)`
+          `cn: skipped ${scanState.skippedUnreadable} unreadable path(s)`
         )
       if (scanState.skippedLong > 0)
         console.error(
