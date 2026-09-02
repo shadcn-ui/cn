@@ -1,5 +1,15 @@
 # cn
 
+## 0.2.4
+
+### Patch Changes
+
+- [#12](https://github.com/shadcn-ui/cn/pull/12) [`b6caaa3`](https://github.com/shadcn-ui/cn/commit/b6caaa346028fdd901ff7232adc37dda11b11fb7) Thanks [@shadcn](https://github.com/shadcn)! - Fix `cn build --content` brace globs, dot-directory and symlink scanning, and CLI error reporting.
+
+- [#12](https://github.com/shadcn-ui/cn/pull/12) [`b6caaa3`](https://github.com/shadcn-ui/cn/commit/b6caaa346028fdd901ff7232adc37dda11b11fb7) Thanks [@shadcn](https://github.com/shadcn)! - Fix a hang and dropped classes in conflict tracking for large custom configs and merges.
+
+- [#12](https://github.com/shadcn-ui/cn/pull/12) [`b6caaa3`](https://github.com/shadcn-ui/cn/commit/b6caaa346028fdd901ff7232adc37dda11b11fb7) Thanks [@shadcn](https://github.com/shadcn)! - Match tailwind-merge on Unicode whitespace and `twJoin` array-like values.
+
 ## 0.2.3
 
 ### Patch Changes
