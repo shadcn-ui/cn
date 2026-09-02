@@ -70,7 +70,11 @@ for (const r of rows)
 //      strings (~130 B; 0.16x-0.43x on sites with a dynamic arbitrary
 //      value, 0.83x cold arbitrary-value renders), and to 10,800 for the
 //      JSC-only Map substrate of the whole-string cache (~50 B;
-//      0.27x-0.31x on 8k-string working sets on bun)
+//      0.27x-0.31x on 8k-string working sets on bun), and to 10,950 on
+//      2026-09-02 for the claim-table fix (~130 B: Float64 claim keys so
+//      group ids cannot alias, a tables-derived claim factor so wide
+//      custom conflict groups cannot fill the table, and a per-merge id
+//      guard)
 const ours = rows[0]
 const cnfast = rows[4]
 let fail = false
@@ -86,13 +90,13 @@ if (ours.gz > cnfast.gz * 1.08) {
   )
   fail = true
 }
-if (ours.gz > 10800) {
-  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 10800`)
+if (ours.gz > 10950) {
+  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 10950`)
   fail = true
 }
 if (fail) process.exit(1)
 console.log(
-  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 10800`
+  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 10950`
 )
 
 // ---------------------------------------------------------------------------
