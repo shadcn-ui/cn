@@ -191,6 +191,10 @@ Every export maps to the same name or a familiar one:
 - **`cn/lite`**: `clsx(...)`, strings-only join (`clsx/lite` parity)
 - **CLI**: `npx cn build --help`
 
+Call `cn.clearCache()` after a temporary class-string workload to release its
+learned strings and oversized work buffers. Compiled Tailwind tables stay
+loaded, and later calls warm the caches again. Do not clear after each render.
+
 ## Credits
 
 - `cn`'s merge engine, compiler, and table format are original work.
