@@ -1,10 +1,20 @@
 // End-to-end test for `cn build`: scan a fixture project, emit tables,
 // verify subset parity for in-corpus classes and passthrough for the rest.
-import { execFileSync } from "node:child_process"
-import { mkdtempSync, rmSync, writeFileSync } from "node:fs"
+import { execFileSync, spawnSync } from "node:child_process"
+import {
+  chmodSync,
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+  symlinkSync,
+  writeFileSync,
+} from "node:fs"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { fileURLToPath, pathToFileURL } from "node:url"
+import { createCn } from "cn/engine"
 import { twMerge as ref } from "tailwind-merge"
 
 const bin = fileURLToPath(new URL("../../cn/bin/cn.mjs", import.meta.url))
@@ -53,7 +63,6 @@ try {
 
   const t1 = (await import(pathToFileURL(join(dir, "tables-subset.mjs")).href))
     .default
-  const { createCn } = await import("cn/engine")
   const cn1 = createCn(t1)
 
   // in-corpus classes must merge byte-identically to full tailwind-merge
@@ -156,6 +165,223 @@ try {
     "text-lg/7 text-xl",
   ]) {
     expect("full-parity", cn4(s) === ref(s), JSON.stringify(s))
+  }
+
+  // ---- nested fixture tree for --content patterns ----------------------------
+  // Each file carries a class from a group nothing else in the fixture uses,
+  // so presence in the emitted tables proves the file was scanned. This is
+  // added only now, after the subset-build assertions above have already run,
+  // because the default glob (no --content) walks the whole fixture dir and
+  // would otherwise pull "list-disc" into the subset-passthrough check.
+  mkdirSync(join(dir, "src", "ui"), { recursive: true })
+  mkdirSync(join(dir, ".storybook"), { recursive: true })
+  mkdirSync(join(dir, "out"), { recursive: true })
+  mkdirSync(join(dir, "linked-src"), { recursive: true })
+  writeFileSync(join(dir, "src", "a.ts"), `const a = "columns-2"`)
+  writeFileSync(join(dir, "src", "ui", "b.tsx"), `const b = "list-disc"`)
+  writeFileSync(join(dir, "src", "ui", "c.css"), `.x { }`)
+  writeFileSync(join(dir, ".storybook", "s.tsx"), `const s = "float-left"`)
+  writeFileSync(join(dir, "out", "o.html"), `<i class="clear-both"></i>`)
+  writeFileSync(join(dir, "linked-src", "l.tsx"), `const l = "isolate"`)
+  symlinkSync(join(dir, "linked-src"), join(dir, "src", "linked"), "junction")
+  writeFileSync(
+    join(dir, "src", "long.tsx"),
+    `const l = "bg-[url(data:image/svg+xml;base64,${"A".repeat(400)})]"`
+  )
+  // Written here (rather than relying on the pre-extracted-tokens block
+  // below) so the out-mkdir case further down can rely on it existing.
+  writeFileSync(join(dir, "tokens.txt"), "p-2 px-4 hover:bg-red-500\n")
+
+  // Uses spawnSync (rather than execFileSync) so stderr is captured on a
+  // successful (status 0) run too — execFileSync only exposes stderr via
+  // the thrown error, which a zero-exit run never throws.
+  const run = (argv) => {
+    const r = spawnSync(process.execPath, [bin, ...argv], { encoding: "utf8" })
+    return { status: r.status, stdout: r.stdout ?? "", stderr: r.stderr ?? "" }
+  }
+  const groupsOf = async (file) => {
+    const t = (await import(pathToFileURL(join(dir, file)).href)).default
+    return createCn(t)
+  }
+
+  // ---- --content brace globs, explicit dot-dir, symlinks, long tokens ------
+  {
+    const r = run([
+      "build",
+      "--cwd",
+      dir,
+      "--content",
+      "src/**/*.{ts,tsx}",
+      "-o",
+      "t-brace.mjs",
+      "-q",
+    ])
+    expect("content-brace-exit", r.status === 0, r.stderr)
+    const c = await groupsOf("t-brace.mjs")
+    expect(
+      "content-brace-ts",
+      c("columns-2 columns-3") === ref("columns-2 columns-3")
+    )
+    expect(
+      "content-brace-tsx",
+      c("list-disc list-none") === ref("list-disc list-none")
+    )
+    // c.css did not match the pattern, and .storybook was not named.
+    expect(
+      "content-brace-excludes-dotdir",
+      c("float-left float-right") === "float-left float-right"
+    )
+    // The symlinked directory under src/ was followed.
+    expect(
+      "content-symlink",
+      c("isolate isolation-auto") === ref("isolate isolation-auto")
+    )
+    // A 400+ char arbitrary value was not dropped by a length cap.
+    expect(
+      "content-long-token",
+      c("bg-[url(x)] bg-red-500") === ref("bg-[url(x)] bg-red-500")
+    )
+  }
+  {
+    const r = run([
+      "build",
+      "--cwd",
+      dir,
+      "--content",
+      ".storybook/**/*.tsx,out/**/*.html",
+      "-o",
+      "t-dot.mjs",
+      "-q",
+    ])
+    expect("content-dotdir-exit", r.status === 0, r.stderr)
+    const c = await groupsOf("t-dot.mjs")
+    expect(
+      "content-dotdir-scanned",
+      c("float-left float-right") === ref("float-left float-right")
+    )
+    expect(
+      "content-ignored-dir-named",
+      c("clear-both clear-left") === ref("clear-both clear-left")
+    )
+  }
+  {
+    // Comma-separated list without braces still works.
+    const r = run([
+      "build",
+      "--cwd",
+      dir,
+      "--content",
+      "src/*.ts,src/ui/*.tsx",
+      "-o",
+      "t-comma.mjs",
+      "-q",
+    ])
+    expect("content-comma-exit", r.status === 0, r.stderr)
+  }
+
+  // ---- error paths use the cn: prefix and exit 1 ----------------------------
+  const errCase = (label, argv, needle) => {
+    const r = run(argv)
+    expect(
+      label,
+      r.status === 1 &&
+        r.stderr.startsWith("cn: ") &&
+        r.stderr.includes(needle),
+      `${r.status} ${r.stderr}`
+    )
+  }
+  errCase("err-unknown-command", ["frobnicate"], "unknown command")
+  errCase("err-unknown-option", ["build", "--nope"], "unknown option")
+  errCase("err-missing-value", ["build", "--content"], "missing value")
+  errCase(
+    "err-unclosed-brace",
+    ["build", "--cwd", dir, "--content", "src/*.{ts"],
+    "unclosed {"
+  )
+  errCase(
+    "err-no-match",
+    ["build", "--cwd", dir, "--content", "nothing/**/*.zzz"],
+    "no files matched"
+  )
+  errCase(
+    "err-bad-safelist",
+    ["build", "--cwd", dir, "--safelist", "missing.txt"],
+    "missing.txt"
+  )
+  errCase(
+    "err-bad-tokens",
+    ["build", "--cwd", dir, "--tokens", "missing.txt"],
+    "missing.txt"
+  )
+  errCase(
+    "err-bad-config",
+    ["build", "--cwd", dir, "--config", "missing.mjs", "--full"],
+    "missing.mjs"
+  )
+  writeFileSync(join(dir, "noexport.mjs"), "export const x = 1\n")
+  errCase(
+    "err-config-no-default",
+    ["build", "--cwd", dir, "--config", "noexport.mjs", "--full"],
+    "no default export"
+  )
+
+  // ---- output directory is created; help and version --------------------------
+  {
+    const r = run([
+      "build",
+      "--cwd",
+      dir,
+      "--tokens",
+      "tokens.txt",
+      "-o",
+      "deep/nested/t.mjs",
+      "-q",
+    ])
+    expect(
+      "out-mkdir",
+      r.status === 0 && existsSync(join(dir, "deep", "nested", "t.mjs")),
+      r.stderr
+    )
+  }
+  {
+    const r = run(["--help"])
+    expect(
+      "help",
+      r.status === 0 && r.stdout.includes("Usage: cn build"),
+      r.stdout
+    )
+  }
+  {
+    const pkg = JSON.parse(
+      readFileSync(new URL("../../cn/package.json", import.meta.url), "utf8")
+    )
+    const r = run(["--version"])
+    expect(
+      "version",
+      r.status === 0 && r.stdout.trim() === pkg.version,
+      r.stdout
+    )
+  }
+
+  // ---- unreadable files are reported, not hidden -----------------------------
+  if (process.platform !== "win32" && process.getuid?.() !== 0) {
+    writeFileSync(join(dir, "src", "secret.tsx"), `const s = "sr-only"`)
+    chmodSync(join(dir, "src", "secret.tsx"), 0o000)
+    const r = run([
+      "build",
+      "--cwd",
+      dir,
+      "--content",
+      "src/**/*.tsx",
+      "-o",
+      "t-unread.mjs",
+    ])
+    expect(
+      "unreadable-warned",
+      r.status === 0 && r.stderr.includes("skipped 1 unreadable"),
+      r.stderr
+    )
+    chmodSync(join(dir, "src", "secret.tsx"), 0o644)
   }
 
   // ---- pre-extracted tokens mode ----------------------------------------------
