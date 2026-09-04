@@ -1,5 +1,16 @@
 # cn
 
+## 0.2.5
+
+### Patch Changes
+
+- [#16](https://github.com/shadcn-ui/cn/pull/16) [`014ad31`](https://github.com/shadcn-ui/cn/commit/014ad31d79afda5609720b4591f664fdb29d76e9) Thanks [@aidenybai](https://github.com/aidenybai)! - Accept a single class or theme definition in an extension instead of throwing.
+
+- [#22](https://github.com/shadcn-ui/cn/pull/22) [`5135277`](https://github.com/shadcn-ui/cn/commit/513527747a3c6de7e38b563553713b0a764b95ca) Thanks [@aidenybai](https://github.com/aidenybai)! - Exclude the generated output file from content scans when its path matches a content glob.
+
+- [#17](https://github.com/shadcn-ui/cn/pull/17) [`6f421fc`](https://github.com/shadcn-ui/cn/commit/6f421fc00396a0eea653dfc2fb6678d6b6e1b415) Thanks [@aidenybai](https://github.com/aidenybai)! - Accept readonly arrays in config extensions. This lets token tuples declared
+  with `as const` work without a defensive copy.
+
 ## 0.2.4
 
 ### Patch Changes
