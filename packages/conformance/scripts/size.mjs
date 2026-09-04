@@ -40,6 +40,13 @@ const rows = [
     `import { clsx } from 'clsx'; import { twMerge } from 'tailwind-merge'; export const cn = (...a) => twMerge(clsx(a))`
   ),
   await measure("cnfast", `export { cn } from 'cnfast'`),
+  await measure("cn (root cva)", `export { cva } from 'cn'`),
+  await measure("cn/cva", `export { cva } from 'cn/cva'`),
+  await measure(
+    "class-variance-authority",
+    `export { cva } from 'class-variance-authority'`
+  ),
+  await measure("cnfast (cva only)", `export { cva } from 'cnfast'`),
 ]
 for (const r of rows)
   console.log(

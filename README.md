@@ -151,6 +151,33 @@ Custom validator functions work as-is. `fromTheme`, `validators`,
 `mergeConfigs`, and `defaultConfig` are exported from `cn/config`. Tailwind
 v4 prefixes are supported: `createCn({ prefix: "tw" })`.
 
+## Coming from class-variance-authority
+
+Import `cva`, `cx`, and `VariantProps` from `cn`:
+
+```ts
+import { cva, type VariantProps } from "cn"
+
+const button = cva("rounded font-medium", {
+  variants: {
+    intent: {
+      primary: "bg-blue-600 text-white",
+      secondary: "bg-gray-100 text-gray-900",
+    },
+    size: { small: "px-2 py-1", large: "px-4 py-2" },
+  },
+  defaultVariants: { intent: "primary", size: "small" },
+})
+
+type ButtonProps = VariantProps<typeof button>
+```
+
+If you only use the variant API, import the same exports from `cn/cva`. This
+keeps the Tailwind merge engine out of that bundle.
+
+The output and public types match `class-variance-authority` 0.7.1 for normal
+plain-object props. Keep the configuration unchanged after the first call.
+
 ## Coming from tailwind-merge
 
 `cn` produces the same output as tailwind-merge for every input. We verify
@@ -182,13 +209,15 @@ Every export maps to the same name or a familiar one:
 
 ## API
 
-- **`cn`**: `cn(...inputs)`, `twMerge(...)`, `twJoin(...)`, `clsx(...)`
+- **`cn`**: `cn(...)`, `cva(...)`, `twMerge(...)`, `twJoin(...)`, `clsx(...)`,
+  `cx(...)`
 - **`cn/config`**: `createCn(ext?)`, `extendTailwindMerge(ext?)`,
   `createTwMerge(ext?)`, `fromTheme`, `validators`, `defaultConfig()`,
   `mergeConfigs(base, ext)`
 - **`cn/engine`**: `createCn(tables, ...)`, `createEngine(tables, ...)` for
   build-time compiled tables
 - **`cn/lite`**: `clsx(...)`, strings-only join (`clsx/lite` parity)
+- **`cn/cva`**: `cva(...)` and its public types, without the merge engine
 - **CLI**: `npx cn build --help`
 
 ## Credits
@@ -202,5 +231,8 @@ Every export maps to the same name or a familiar one:
   [clsx](https://github.com/lukeed/clsx) by Luke Edwards (MIT licensed).
 - The argument-identity cache for repeated variadic calls re-implements an optimization pioneered by
   [cnfast](https://github.com/aidenybai/cnfast) by Aiden Bai (MIT licensed).
+- The `cva` implementation is ported from
+  [cnfast](https://github.com/aidenybai/cnfast) and matches the public API of
+  [class-variance-authority](https://github.com/joe-bell/cva) 0.7.1 (Apache-2.0 licensed).
 
 Thank you to all three authors.

@@ -70,6 +70,16 @@
         "types": "./dist/lite.d.cts",
         "default": "./dist/lite.cjs"
       }
+    },
+    "./cva": {
+      "import": {
+        "types": "./dist/cva.d.ts",
+        "default": "./dist/cva.js"
+      },
+      "require": {
+        "types": "./dist/cva.d.cts",
+        "default": "./dist/cva.cjs"
+      }
     }
   },
   "main": "./dist/index.cjs",

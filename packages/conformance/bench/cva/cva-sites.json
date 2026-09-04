@@ -1,0 +1,860 @@
+[
+  {
+    "base": "-mx-4 w-[140vw] overflow-hidden md:hidden",
+    "config": {
+      "variants": {
+        "size": {
+          "primary": "[&::-webkit-search-cancel-button]:hidden",
+          "ghost": "bg-purple-600 text-purple-50 dark:bg-purple-600 dark:text-purple-50",
+          "sm": "cn-context-menu-trigger select-none"
+        },
+        "variant": {
+          "primary": "absolute top-1.5 right-9 z-10 flex items-center",
+          "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "ghost": "absolute inset-x-0 -bottom-2 flex h-20 items-center justify-center rounded-b-lg bg-gradient-to-b from-code/70 to-code text-sm text-muted-foreground group-data-[state=open]/collapsible:hidden"
+        }
+      },
+      "defaultVariants": { "size": "sm", "variant": "ghost" },
+      "compoundVariants": [
+        {
+          "size": "ghost",
+          "variant": ["primary", "primary"],
+          "class": "[--header-height:calc(--spacing(14))]"
+        },
+        { "variant": "ghost", "class": "[--radius:1rem]" },
+        { "class": "icon" },
+        { "size": "ghost", "class": "-mx-1 no-scrollbar overflow-x-hidden" },
+        {
+          "variant": ["primary", "primary"],
+          "class": "absolute inset-0 top-1/2"
+        },
+        {
+          "size": "ghost",
+          "variant": ["ghost", "primary"],
+          "class": "bg-muted font-semibold"
+        },
+        { "size": "sm", "class": "block text-sm font-medium text-gray-700" },
+        {
+          "size": "primary",
+          "variant": "ghost",
+          "className": "absolute inset-0 opacity-0"
+        },
+        {
+          "class": "cn-attachment group/attachment relative flex max-w-full min-w-0 shrink-0 flex-wrap border bg-card text-card-foreground transition-colors has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed"
+        },
+        { "class": "-mx-1" },
+        { "size": "primary", "className": "cn-badge-variant-default" }
+      ]
+    }
+  },
+  {
+    "base": ["cn-button-size-icon", "cn-alert-variant-default"],
+    "config": {
+      "variants": {
+        "variant": {
+          "secondary": "absolute inset-x-0 top-0 z-1 h-80 bg-linear-to-b from-background via-muted to-transparent dark:via-muted/30",
+          "outline": "animate-none! sm:max-w-md",
+          "ghost": "bg-transparent [--cell-size:2.1rem]",
+          "sm": ["h-9 px-4 py-2 has-[>svg]:px-3", "bottom"]
+        },
+        "orientation": {
+          "secondary": "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+          "primary": "cn-accordion-content overflow-hidden",
+          "outline": "absolute inset-0 hidden w-[1600px] bg-background md:block"
+        }
+      },
+      "defaultVariants": { "variant": "sm", "orientation": "secondary" }
+    }
+  },
+  {
+    "base": "h-9 px-4 py-2 has-[>svg]:px-3",
+    "config": {
+      "variants": {
+        "color": {
+          "primary": "bg-transparent font-mono",
+          "outline": "h-10 min-w-10 px-2.5",
+          "ghost": ["cn-button-variant-outline", "[&_.preview]:items-start"]
+        }
+      }
+    }
+  },
+  {
+    "base": "cn-command-input-icon",
+    "config": {
+      "variants": {
+        "variant": {
+          "secondary": "basis-1/2 pt-1",
+          "outline": "block border-b p-4 text-xl",
+          "sm": "h-9 px-4 py-2 has-[>svg]:px-3"
+        }
+      },
+      "defaultVariants": { "variant": "outline" }
+    }
+  },
+  {
+    "base": "-ml-3 h-8 data-[state=open]:bg-accent",
+    "config": {
+      "variants": {
+        "loading": {
+          "true": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "false": "border-b"
+        }
+      }
+    }
+  },
+  {
+    "base": "[&_.preview]:h-[350px] [&_pre]:h-[350px]!",
+    "config": {
+      "variants": {
+        "align": {
+          "default": "absolute inset-y-0 right-0 left-62 z-40 bg-transparent",
+          "outline": "peer-data-[size=sm]/menu-button:top-1",
+          "ghost": "cn-attachment-size-xs",
+          "sm": "cn-command-shortcut cn-command-shortcut-aria"
+        },
+        "color": {
+          "default": "-mb-(--card-spacing)",
+          "primary": "cn-button-group-orientation-vertical flex-col **:data-slot:rounded-b-none [&_[data-slot]~[data-slot]]:rounded-t-none [&_[data-slot]~[data-slot]]:border-t-0",
+          "ghost": "cn-dialog-footer flex flex-col-reverse gap-2 sm:flex-row sm:justify-end",
+          "sm": "-mx-6"
+        }
+      },
+      "defaultVariants": { "align": "sm", "color": "primary" }
+    }
+  },
+  {
+    "base": "bg-[Canvas] text-[CanvasText]",
+    "config": {
+      "variants": {
+        "tone": {
+          "secondary": [
+            "after:absolute after:-inset-2 md:after:hidden",
+            "aspect-square w-full rounded-sm object-cover"
+          ],
+          "primary": "absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2 fill-primary",
+          "sm": "cn-context-menu-separator"
+        },
+        "loading": {
+          "true": "absolute inset-y-0 right-0 left-54 z-40 bg-transparent",
+          "false": "capitalize data-[state=checked]:opacity-50"
+        }
+      },
+      "defaultVariants": { "tone": "sm" }
+    }
+  },
+  {
+    "base": "cn-button-size-icon-sm",
+    "config": {
+      "variants": {
+        "size": {
+          "secondary": "absolute top-2 right-2 border bg-background px-2 py-1 text-[0.625rem]",
+          "ghost": "cn-button-variant-outline"
+        }
+      },
+      "defaultVariants": { "size": "secondary" }
+    }
+  },
+  {
+    "base": "chart-wrapper hidden theme-container sm:block [&_[data-chart]]:mx-auto [&_[data-chart]]:max-h-[35vh] [&>div]:rounded-none [&>div]:border-0 [&>div]:border-b [&>div]:shadow-none",
+    "config": {
+      "variants": {
+        "align": {
+          "primary": "absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply",
+          "outline": "inset-y-0 -left-12 my-auto",
+          "secondary": [
+            "cn-breadcrumb-link",
+            "cn-attachment-media-variant-image *:[img]:aspect-square *:[img]:w-full *:[img]:object-cover"
+          ]
+        },
+        "side": {
+          "primary": [
+            "cn-context-menu-label",
+            "cn-avatar-badge absolute right-0 bottom-0 z-10 inline-flex items-center justify-center rounded-full bg-blend-color ring-2 select-none"
+          ],
+          "outline": "animate-pulse rounded-md bg-accent"
+        }
+      },
+      "defaultVariants": { "align": "outline", "side": "primary" }
+    }
+  },
+  {
+    "base": [
+      "cn-command flex size-full flex-col overflow-hidden",
+      "cn-alert-variant-default"
+    ],
+    "config": {
+      "variants": {
+        "orientation": {
+          "secondary": "absolute inset-x-0 top-0 z-1 h-80 bg-linear-to-b from-background via-muted to-transparent dark:via-muted/30",
+          "outline": "-ms-6 translate-x-1 rounded-full transition-all duration-100 ease-linear data-checked:ms-0 data-checked:translate-x-0"
+        }
+      },
+      "defaultVariants": { "orientation": "outline" }
+    }
+  },
+  {
+    "base": "cn-context-menu-sub-content-aria cn-menu-target cn-menu-translucent w-auto",
+    "config": {
+      "variants": {
+        "disabled": {
+          "true": "*:data-[slot=input-otp-slot]:text-xl style-vega:*:data-[slot=input-otp-slot]:h-16 style-vega:*:data-[slot=input-otp-slot]:w-12 style-nova:*:data-[slot=input-otp-slot]:h-12 style-nova:*:data-[slot=input-otp-slot]:w-11 style-lyra:*:data-[slot=input-otp-slot]:h-12 style-lyra:*:data-[slot=input-otp-slot]:w-11 style-maia:*:data-[slot=input-otp-slot]:h-16 style-maia:*:data-[slot=input-otp-slot]:w-12 style-mira:*:data-[slot=input-otp-slot]:h-12 style-mira:*:data-[slot=input-otp-slot]:w-11 style-luma:*:data-[slot=input-otp-slot]:h-16 style-luma:*:data-[slot=input-otp-slot]:w-12 style-sera:*:data-[slot=input-otp-slot]:h-14 style-sera:*:data-[slot=input-otp-slot]:w-10",
+          "false": "-mr-1 ml-auto rotate-180"
+        },
+        "align": {
+          "primary": "cn-combobox-item cn-combobox-item-aria relative flex w-full cursor-default items-center outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+          "secondary": [
+            "cn-command-shortcut cn-command-shortcut-aria",
+            "cn-calendar group/calendar w-fit bg-background in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent"
+          ],
+          "ghost": "cn-accordion-trigger group/accordion-trigger relative flex flex-1 items-start justify-between border border-transparent transition-all outline-none disabled:pointer-events-none disabled:opacity-50"
+        },
+        "orientation": {
+          "secondary": "cn-combobox-trigger",
+          "primary": "absolute size-8 rounded-full",
+          "outline": "absolute inset-x-0 bottom-0 z-20 h-80 bg-linear-to-t from-background via-muted to-transparent dark:via-muted/30",
+          "sm": "cn-checkbox cn-checkbox-aria peer relative shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2 data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50",
+          "md": "aria-expanded:bg-sidebar-accent aria-expanded:text-sidebar-accent-foreground"
+        }
+      },
+      "defaultVariants": {
+        "disabled": false,
+        "align": "ghost",
+        "orientation": "md"
+      }
+    }
+  },
+  {
+    "base": "[&::-webkit-search-cancel-button]:hidden",
+    "config": {
+      "variants": {
+        "size": {
+          "default": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "primary": "cn-checkbox-indicator grid place-content-center text-current transition-none",
+          "secondary": "bottom"
+        }
+      },
+      "defaultVariants": { "size": "default" }
+    }
+  },
+  {
+    "base": [
+      "absolute top-2 right-2 border bg-background px-2 py-1 text-[0.625rem]",
+      "cn-combobox-chip-input min-w-16 flex-1 outline-none"
+    ],
+    "config": {
+      "variants": {
+        "selected": {
+          "true": "[&_.preview]:h-[400px] [&_pre]:h-[400px]!",
+          "false": "bg-blue-500 text-white dark:bg-blue-600"
+        }
+      }
+    }
+  },
+  {
+    "base": [
+      "bg-destructive/10 text-destructive dark:bg-destructive/20 dark:text-destructive",
+      "rtl:**:[.rdp-button_next>svg]:rotate-180"
+    ],
+    "config": {
+      "variants": {
+        "variant": {
+          "primary": "cn-context-menu-separator",
+          "secondary": "aspect-video h-12 w-full rounded-lg bg-muted/50",
+          "ghost": "absolute end-0 top-0"
+        }
+      },
+      "defaultVariants": { "variant": "primary" }
+    }
+  },
+  {
+    "base": "**:data-[slot=toggle-group-item]:data-pressed:bg-neutral-700/70",
+    "config": {
+      "variants": {
+        "tone": {
+          "primary": "icon",
+          "secondary": "cn-alert-action",
+          "outline": "*:data-[slot=field-separator-content]:bg-card"
+        }
+      },
+      "defaultVariants": { "tone": "outline" }
+    }
+  },
+  {
+    "base": "border style-vega:rounded-lg style-vega:p-6 style-nova:rounded-lg style-nova:p-4 style-lyra:rounded-none style-lyra:p-4 style-maia:rounded-xl style-maia:p-6 style-mira:rounded-md style-mira:p-4 style-luma:rounded-xl style-luma:p-6 style-sera:rounded-none style-sera:p-6 style-rhea:rounded-xl style-rhea:p-6",
+    "config": null
+  },
+  {
+    "base": "cn-avatar group/avatar relative flex shrink-0 select-none after:absolute after:inset-0 after:border after:border-border after:mix-blend-darken dark:after:mix-blend-lighten",
+    "config": {
+      "variants": {
+        "align": { "primary": "cn-dialog-title cn-font-heading" },
+        "color": {
+          "default": [
+            "[&_.preview]:h-[400px] [&_pre]:h-[400px]!",
+            "cn-combobox-list group/combobox-content max-h-[inherit] overflow-y-auto overscroll-contain"
+          ],
+          "secondary": [
+            "[&_[role=gridcell]]:w-[33px] [&_[role=gridcell].bg-accent]:bg-sidebar-primary [&_[role=gridcell].bg-accent]:text-sidebar-primary-foreground",
+            "animate-spin"
+          ],
+          "ghost": "bg-destructive/10 text-destructive dark:bg-destructive/20 dark:text-destructive"
+        }
+      },
+      "defaultVariants": { "align": "primary", "color": "secondary" }
+    }
+  },
+  {
+    "base": "bg-transparent [--cell-size:2.1rem]",
+    "config": {
+      "variants": {
+        "tone": {
+          "default": "cn-command-item cn-command-item-aria group/command-item data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+          "primary": "-mx-4 no-scrollbar max-h-[50vh] overflow-y-auto px-4",
+          "secondary": "bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300",
+          "outline": [
+            "cn-combobox-trigger group-has-data-[slot=combobox-clear]/input-group:hidden data-pressed:bg-transparent",
+            "cn-attachment-media relative flex aspect-square shrink-0 items-center justify-center overflow-hidden group-data-[state=error]/attachment:bg-destructive/10 group-data-[state=error]/attachment:text-destructive [&_svg]:pointer-events-none"
+          ]
+        },
+        "orientation": {
+          "secondary": "group-data-[size=sm]/avatar:size-2 group-data-[size=sm]/avatar:[&>svg]:hidden",
+          "outline": "@md/field-group:flex-col @2xl/field-group:flex-row"
+        }
+      },
+      "defaultVariants": { "tone": "secondary" }
+    }
+  },
+  {
+    "base": "[--header-height:calc(--spacing(14))]",
+    "config": {
+      "variants": {
+        "color": {
+          "primary": "bg-transparent",
+          "secondary": "absolute top-0 left-[calc(50%-950px-var(--rail-width)-var(--gap))] grid w-(--rail-width) grid-cols-[repeat(2,var(--rail-column))] gap-(--gap) opacity-50 [--rail-column:20rem] [--rail-width:calc(var(--rail-column)*2+var(--gap))]"
+        },
+        "active": {
+          "true": "cn-calendar group/calendar bg-background in-data-[slot=card-content]:bg-transparent in-data-[slot=popover-content]:bg-transparent",
+          "false": "cn-bubble-variant-ghost"
+        }
+      },
+      "defaultVariants": { "active": false }
+    }
+  },
+  {
+    "base": "absolute inset-0 z-10 outline-none",
+    "config": {
+      "variants": {
+        "align": {
+          "default": "-mt-1 h-[200px]",
+          "secondary": ["animate-spin", "absolute top-[50px] left-[5px] z-10"],
+          "ghost": "cn-alert-action"
+        }
+      },
+      "defaultVariants": { "align": "default" }
+    }
+  },
+  {
+    "base": "*:data-[slot=input-otp-slot]:text-xl style-vega:*:data-[slot=input-otp-slot]:h-16 style-vega:*:data-[slot=input-otp-slot]:w-12 style-nova:*:data-[slot=input-otp-slot]:h-12 style-nova:*:data-[slot=input-otp-slot]:w-11 style-lyra:*:data-[slot=input-otp-slot]:h-12 style-lyra:*:data-[slot=input-otp-slot]:w-11 style-maia:*:data-[slot=input-otp-slot]:h-16 style-maia:*:data-[slot=input-otp-slot]:w-12 style-mira:*:data-[slot=input-otp-slot]:h-12 style-mira:*:data-[slot=input-otp-slot]:w-11 style-luma:*:data-[slot=input-otp-slot]:h-16 style-luma:*:data-[slot=input-otp-slot]:w-12",
+    "config": {
+      "variants": {
+        "orientation": {
+          "primary": "absolute -top-12 right-52 hidden h-8! data-[size=sm]:rounded-lg lg:flex"
+        }
+      }
+    }
+  },
+  {
+    "base": "cn-command-item group/command-item data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+    "config": {
+      "variants": {
+        "align": {
+          "primary": "-mt-3 hidden min-w-0 gap-2 md:flex md:flex-col md:**:[button,a]:w-full",
+          "secondary": "-translate-x-[2px]",
+          "ghost": "cn-drawer-content group/drawer-content fixed z-50 data-[vaul-drawer-direction=bottom]:inset-x-0 data-[vaul-drawer-direction=bottom]:bottom-0 data-[vaul-drawer-direction=bottom]:mt-24 data-[vaul-drawer-direction=bottom]:max-h-[80vh] data-[vaul-drawer-direction=left]:inset-y-0 data-[vaul-drawer-direction=left]:left-0 data-[vaul-drawer-direction=left]:w-3/4 data-[vaul-drawer-direction=right]:inset-y-0 data-[vaul-drawer-direction=right]:right-0 data-[vaul-drawer-direction=right]:w-3/4 data-[vaul-drawer-direction=top]:inset-x-0 data-[vaul-drawer-direction=top]:top-0 data-[vaul-drawer-direction=top]:mb-24 data-[vaul-drawer-direction=top]:max-h-[80vh] data-[vaul-drawer-direction=left]:sm:max-w-sm data-[vaul-drawer-direction=right]:sm:max-w-sm",
+          "outline": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+          "md": "flex-col [&>*:not(:first-child)]:rounded-t-none [&>*:not(:first-child)]:border-t-0 [&>*:not(:last-child)]:rounded-b-none"
+        },
+        "side": {
+          "default": "bg-background hover:bg-background/80 data-popup-open:bg-background",
+          "primary": "h-9 min-w-9 px-2",
+          "outline": [
+            "*:data-[slot=input-otp-slot]:text-xl style-vega:*:data-[slot=input-otp-slot]:h-16 style-vega:*:data-[slot=input-otp-slot]:w-12 style-nova:*:data-[slot=input-otp-slot]:h-12 style-nova:*:data-[slot=input-otp-slot]:w-11 style-lyra:*:data-[slot=input-otp-slot]:h-12 style-lyra:*:data-[slot=input-otp-slot]:w-11 style-maia:*:data-[slot=input-otp-slot]:h-16 style-maia:*:data-[slot=input-otp-slot]:w-12 style-mira:*:data-[slot=input-otp-slot]:h-12 style-mira:*:data-[slot=input-otp-slot]:w-11 style-luma:*:data-[slot=input-otp-slot]:h-16 style-luma:*:data-[slot=input-otp-slot]:w-12 style-sera:*:data-[slot=input-otp-slot]:h-14 style-sera:*:data-[slot=input-otp-slot]:w-10",
+            "aria-expanded:rotate-90"
+          ]
+        },
+        "variant": {
+          "primary": "absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale",
+          "outline": "cn-alert-dialog-header",
+          "secondary": "cn-context-menu-content cn-context-menu-content-logical cn-menu-target cn-menu-translucent z-50 max-h-(--available-height) origin-(--transform-origin) overflow-x-hidden overflow-y-auto outline-none",
+          "ghost": "absolute top-0 left-0 z-20 h-full w-[1600px] max-w-none bg-background object-cover object-left-top md:hidden dark:hidden md:dark:hidden",
+          "md": "cn-context-menu-label"
+        }
+      },
+      "defaultVariants": { "side": "outline", "variant": "md" }
+    }
+  },
+  {
+    "base": [
+      "border-grid",
+      "absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
+    ],
+    "config": {
+      "variants": {
+        "variant": {
+          "default": [
+            "cn-calendar-dropdown-root relative rounded-(--cell-radius)",
+            "cn-dialog-content-aria fixed top-1/2 left-1/2 z-50 w-full -translate-x-1/2 -translate-y-1/2 outline-none"
+          ],
+          "outline": "aspect-auto h-[250px] w-full"
+        },
+        "size": {
+          "secondary": "absolute inset-0 right-4 [background-image:radial-gradient(#d4d4d4_1px,transparent_1px)] [background-size:20px_20px] dark:[background-image:radial-gradient(#404040_1px,transparent_1px)]",
+          "outline": "cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+        }
+      }
+    }
+  },
+  {
+    "base": "before:mr-1 before:h-px before:min-w-0 before:flex-1 before:bg-border after:ml-1 after:h-px after:min-w-0 after:flex-1 after:bg-border",
+    "config": {
+      "variants": {
+        "orientation": {
+          "secondary": "border style-vega:rounded-lg style-vega:p-6 style-nova:rounded-lg style-nova:p-4 style-lyra:rounded-none style-lyra:p-4 style-maia:rounded-xl style-maia:p-6 style-mira:rounded-md style-mira:p-4 style-luma:rounded-xl style-luma:p-6 style-sera:rounded-none style-sera:p-6 style-rhea:rounded-xl style-rhea:p-6",
+          "outline": "cn-context-menu-item group/context-menu-item relative flex cursor-default items-center outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+        },
+        "loading": {
+          "true": "absolute top-2 right-2 z-10 size-7 opacity-70 hover:opacity-100 focus-visible:opacity-100",
+          "false": "**:data-[slot=toggle-group-item]:data-pressed:bg-neutral-700/70"
+        }
+      },
+      "defaultVariants": { "orientation": "outline" }
+    }
+  },
+  {
+    "base": "cn-avatar-fallback flex size-full items-center justify-center text-sm group-data-[size=sm]/avatar:text-xs peer-data-[state=error]:flex peer-[*]:hidden",
+    "config": {
+      "variants": {
+        "side": { "primary": "cn-alert-variant-destructive" },
+        "size": {
+          "primary": "absolute top-1/2 right-8 -translate-y-1/2",
+          "secondary": [
+            "cn-button-size-icon-lg",
+            "cn-bubble-content w-fit max-w-full min-w-0 overflow-hidden wrap-break-word [button]:text-left [button,a]:transition-colors"
+          ]
+        },
+        "selected": {
+          "true": "border",
+          "false": "cn-accordion-content overflow-hidden"
+        }
+      },
+      "defaultVariants": {
+        "side": "primary",
+        "size": "primary",
+        "selected": true
+      }
+    }
+  },
+  {
+    "base": "bg-black text-white",
+    "config": {
+      "variants": {
+        "variant": {
+          "primary": [
+            "border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
+            "-mr-1 ml-auto rotate-180"
+          ]
+        }
+      },
+      "defaultVariants": { "variant": "primary" }
+    }
+  },
+  {
+    "base": "absolute inset-x-0 top-0 z-1 h-80 bg-linear-to-b from-background via-muted to-transparent dark:via-muted/30",
+    "config": {
+      "variants": {
+        "side": {
+          "default": [
+            "cn-dialog-content fixed top-1/2 left-1/2 z-50 w-full -translate-x-1/2 -translate-y-1/2 outline-none",
+            "cn-button-size-sm"
+          ],
+          "outline": "cn-attachment-actions flex shrink-0 items-center"
+        },
+        "color": {
+          "default": "cn-alert-dialog-action",
+          "primary": "cn-context-menu-content cn-menu-target cn-menu-translucent z-50 max-h-(--radix-context-menu-content-available-height) origin-(--radix-context-menu-content-transform-origin) overflow-x-hidden overflow-y-auto"
+        },
+        "variant": {
+          "default": "absolute inset-0 flex w-(--sidebar-menu-width) bg-transparent",
+          "primary": "bg-sky-600 text-sky-50 dark:bg-sky-600 dark:text-sky-50",
+          "outline": "bg-muted group-data-[swipe-axis=x]/drawer-popup:size-full group-data-[swipe-axis=y]/drawer-popup:aspect-video group-data-[swipe-axis=y]/drawer-popup:w-full",
+          "sm": "[&_svg]-h-3.5 h-7 w-7 rounded-[6px] [&_svg]:w-3.5"
+        }
+      },
+      "defaultVariants": {
+        "side": "outline",
+        "color": "primary",
+        "variant": "outline"
+      }
+    }
+  },
+  {
+    "base": "aspect-auto h-[250px] w-full",
+    "config": {
+      "variants": {
+        "size": {
+          "primary": "cn-alert-dialog-cancel",
+          "secondary": "border-0 py-4 shadow-none",
+          "outline": "cn-combobox-trigger-icon pointer-events-none"
+        }
+      }
+    }
+  },
+  {
+    "base": "cn-command-item cn-command-item-aria group/command-item data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+    "config": {
+      "variants": {
+        "size": {
+          "primary": "bg-green-600 dark:bg-green-800",
+          "secondary": "h-9 min-w-9 px-2",
+          "ghost": "aspect-square w-full rounded-sm object-cover",
+          "md": ["border-grid", "cn-card group/card flex flex-col"]
+        }
+      },
+      "defaultVariants": { "size": "ghost" }
+    }
+  },
+  {
+    "base": "absolute top-2 left-2 flex size-5 items-center justify-center bg-foreground text-background",
+    "config": {
+      "variants": {
+        "side": {
+          "secondary": "@container/main flex flex-1 flex-col gap-2",
+          "outline": "**:data-[slot=progress-indicator]:bg-chart-3",
+          "ghost": [
+            "cn-attachment-orientation-vertical flex-col",
+            "absolute top-0 right-[calc(50%-950px-var(--rail-width)-var(--gap))] grid w-(--rail-width) grid-cols-[repeat(2,var(--rail-column))] gap-(--gap) opacity-50 [--rail-column:20rem] [--rail-width:calc(var(--rail-column)*2+var(--gap))]"
+          ]
+        },
+        "active": {
+          "true": "cn-attachment-content max-w-full min-w-0 flex-1",
+          "false": "bg-transparent p-0"
+        }
+      },
+      "defaultVariants": { "side": "ghost", "active": false }
+    }
+  },
+  {
+    "base": "border px-4 py-2 text-start",
+    "config": {
+      "variants": {
+        "selected": {
+          "true": "cn-calendar-dropdown-root relative rounded-(--cell-radius)",
+          "false": "cn-command-item group/command-item data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+        }
+      },
+      "defaultVariants": { "selected": true }
+    }
+  },
+  {
+    "base": "absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0",
+    "config": {
+      "variants": {
+        "orientation": {
+          "secondary": "rtl:**:[.rdp-button_next>svg]:rotate-180"
+        },
+        "variant": {
+          "primary": "absolute top-2 left-2 flex size-5 items-center justify-center bg-foreground text-background",
+          "outline": "aria-expanded:text-destructive"
+        }
+      },
+      "defaultVariants": { "variant": "primary" }
+    }
+  },
+  {
+    "base": "border-b px-4 py-3",
+    "config": {
+      "variants": {
+        "size": {
+          "primary": "bg-blue-600 text-blue-50 dark:bg-blue-600 dark:text-blue-50",
+          "ghost": "bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300"
+        }
+      }
+    }
+  },
+  {
+    "base": [
+      "cn-combobox-item-indicator",
+      "cn-context-menu-content cn-menu-target cn-menu-translucent z-50 max-h-(--radix-context-menu-content-available-height) origin-(--radix-context-menu-content-transform-origin) overflow-x-hidden overflow-y-auto"
+    ],
+    "config": {
+      "variants": {
+        "variant": {
+          "primary": "@md/field-group:flex-col @2xl/field-group:flex-row",
+          "outline": "cn-calendar-caption text-sm font-medium select-none",
+          "sm": [
+            "cn-button-size-icon-xs",
+            "absolute top-[10px] left-[85px] z-10 -scale-x-100"
+          ]
+        },
+        "align": {
+          "default": "cn-button-group-orientation-vertical flex-col *:data-slot:rounded-b-none [&>[data-slot]~[data-slot]]:rounded-t-none [&>[data-slot]~[data-slot]]:border-t-0",
+          "secondary": "cn-avatar-group-count relative flex shrink-0 items-center justify-center ring-2 ring-background"
+        },
+        "selected": {
+          "true": "cn-checkbox peer relative shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2 disabled:cursor-not-allowed disabled:opacity-50",
+          "false": "animate-none! rounded-lg shadow-none"
+        }
+      },
+      "defaultVariants": {
+        "variant": "primary",
+        "align": "secondary",
+        "selected": false
+      }
+    }
+  },
+  {
+    "base": "card",
+    "config": {
+      "variants": {
+        "size": {
+          "primary": "-mx-(--card-spacing) max-h-48 space-y-4 overflow-y-scroll border-t bg-muted/50 px-(--card-spacing) py-4 text-sm leading-relaxed",
+          "outline": [
+            "absolute inset-y-0 right-0 left-62 z-40 bg-transparent",
+            "cn-drawer-content group/drawer-content fixed z-50 data-[vaul-drawer-direction=bottom]:inset-x-0 data-[vaul-drawer-direction=bottom]:bottom-0 data-[vaul-drawer-direction=bottom]:mt-24 data-[vaul-drawer-direction=bottom]:max-h-[80vh] data-[vaul-drawer-direction=left]:inset-y-0 data-[vaul-drawer-direction=left]:left-0 data-[vaul-drawer-direction=left]:w-3/4 data-[vaul-drawer-direction=right]:inset-y-0 data-[vaul-drawer-direction=right]:right-0 data-[vaul-drawer-direction=right]:w-3/4 data-[vaul-drawer-direction=top]:inset-x-0 data-[vaul-drawer-direction=top]:top-0 data-[vaul-drawer-direction=top]:mb-24 data-[vaul-drawer-direction=top]:max-h-[80vh] data-[vaul-drawer-direction=left]:sm:max-w-sm data-[vaul-drawer-direction=right]:sm:max-w-sm"
+          ],
+          "ghost": "bg-transparent p-0",
+          "sm": "absolute top-[50px] left-[5px] z-10",
+          "md": "group-data-[collapsible=offcanvas]:translate-x-0 group-data-[collapsible=offcanvas]:after:left-full hover:group-data-[collapsible=offcanvas]:bg-sidebar"
+        },
+        "align": {
+          "primary": "aspect-[4/3] w-full",
+          "outline": "@md/field-group:max-w-[200px]"
+        }
+      },
+      "defaultVariants": { "align": "outline" }
+    }
+  },
+  {
+    "base": "bg-destructive/10 text-destructive dark:bg-destructive/20 dark:text-destructive",
+    "config": { "variants": { "side": { "primary": "bg-transparent p-0" } } }
+  },
+  {
+    "base": "[[data-side=left][data-state=collapsed]_&]:cursor-e-resize [[data-side=right][data-state=collapsed]_&]:cursor-w-resize",
+    "config": {
+      "variants": {
+        "color": {
+          "secondary": "capitalize data-[state=checked]:opacity-50",
+          "primary": "cn-command-input-icon",
+          "sm": "cn-accordion-trigger-icon pointer-events-none hidden shrink-0 group-aria-expanded/accordion-trigger:inline"
+        },
+        "orientation": {
+          "primary": "absolute top-1/2 right-8 -translate-y-1/2",
+          "outline": "cn-attachment-content max-w-full min-w-0 flex-1",
+          "secondary": "h-9 min-w-9 px-2",
+          "sm": "absolute right-1 bottom-1 bg-foreground/90 px-1 text-[0.5rem] font-semibold tracking-wider text-background"
+        }
+      },
+      "defaultVariants": { "color": "secondary" }
+    }
+  },
+  {
+    "base": "left-3",
+    "config": {
+      "variants": {
+        "color": {
+          "secondary": "cn-breadcrumb-ellipsis flex items-center justify-center",
+          "primary": "absolute inset-0 flex w-(--sidebar-width) bg-transparent",
+          "outline": ["absolute inset-0 top-1/2", "cn-attachment-action"],
+          "sm": "bg-sky-50 text-sky-700 dark:bg-sky-950 dark:text-sky-300"
+        }
+      },
+      "defaultVariants": { "color": "primary" }
+    }
+  },
+  {
+    "base": "border-ghost w-full flex-1 rounded-md bg-(--bg) after:rounded-lg after:border-input md:rounded-lg",
+    "config": {
+      "variants": {
+        "color": {
+          "default": "-ml-3 h-8 data-[state=open]:bg-accent",
+          "outline": "cn-card-footer flex items-center",
+          "ghost": [
+            "cn-alert-dialog-footer flex flex-col-reverse gap-2 group-data-[size=sm]/alert-dialog-content:grid group-data-[size=sm]/alert-dialog-content:grid-cols-2 sm:flex-row sm:justify-end",
+            "cn-badge-variant-default"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "base": "cn-context-menu-radio-item relative flex cursor-default items-center outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+    "config": {
+      "variants": {
+        "tone": {
+          "secondary": "cn-alert-description [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
+          "outline": "**:data-[slot=progress-indicator]:bg-chart-3",
+          "ghost": "absolute inset-x-0 bottom-0 rounded-sm bg-chart-3"
+        }
+      }
+    }
+  },
+  {
+    "base": "cn-accordion-item",
+    "config": {
+      "variants": {
+        "side": {
+          "default": "-mx-2 my-2 w-auto!",
+          "outline": "cn-command-group",
+          "sm": "cn-attachment-title block max-w-full min-w-0 truncate group-data-[state=processing]/attachment:shimmer group-data-[state=uploading]/attachment:shimmer"
+        },
+        "loading": {
+          "true": "cn-chart-tooltip grid min-w-32 items-start",
+          "false": "absolute inset-0 top-1/2"
+        },
+        "orientation": {
+          "default": "cn-accordion-trigger group/accordion-trigger relative flex flex-1 items-start justify-between border border-transparent transition-all outline-none aria-disabled:pointer-events-none aria-disabled:opacity-50",
+          "secondary": "cn-combobox-chips",
+          "outline": "absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply",
+          "ghost": "-mx-6"
+        }
+      },
+      "defaultVariants": { "orientation": "ghost" },
+      "compoundVariants": [
+        { "loading": false, "className": "right-3" },
+        {
+          "side": "sm",
+          "orientation": "ghost",
+          "class": "cn-breadcrumb-separator"
+        },
+        {
+          "side": "outline",
+          "orientation": "secondary",
+          "class": "aria-expanded:bg-sidebar-accent aria-expanded:text-sidebar-accent-foreground"
+        },
+        {
+          "side": "sm",
+          "orientation": "secondary",
+          "className": "peer-data-[size=sm]/menu-button:top-1"
+        },
+        {
+          "loading": false,
+          "orientation": ["ghost", "default"],
+          "className": "-mx-1 h-px bg-border"
+        },
+        {
+          "class": "[--cell-size:--spacing(10)] md:[--cell-size:--spacing(12)]"
+        }
+      ]
+    }
+  },
+  {
+    "base": "aria-expanded:rotate-90",
+    "config": {
+      "variants": {
+        "orientation": {
+          "default": "cn-carousel-previous absolute touch-manipulation",
+          "secondary": "horizontal",
+          "outline": [
+            "inset-y-0 -right-12 my-auto",
+            "cn-context-menu-content-aria cn-menu-target cn-menu-translucent cn-menu-translucent-aria z-50 w-(--trigger-width) origin-(--trigger-anchor-point) overflow-x-hidden overflow-y-auto outline-none data-exiting:overflow-hidden"
+          ],
+          "ghost": "cn-command-group"
+        }
+      }
+    }
+  },
+  {
+    "base": "icon",
+    "config": {
+      "variants": {
+        "align": {
+          "secondary": "cn-alert-description [&_a]:underline [&_a]:underline-offset-3 [&_a]:hover:text-foreground",
+          "primary": "cn-dialog-overlay fixed inset-0 isolate z-50"
+        }
+      },
+      "defaultVariants": { "align": "secondary" }
+    }
+  },
+  {
+    "base": "cn-combobox-item-indicator-icon pointer-events-none",
+    "config": {
+      "variants": {
+        "disabled": {
+          "true": "bg-sky-600 text-sky-50 dark:bg-sky-600 dark:text-sky-50",
+          "false": "aspect-square w-full rounded-sm object-cover"
+        },
+        "align": {
+          "secondary": "border-ghost w-full flex-1 rounded-md bg-(--bg) after:rounded-lg after:border-input md:rounded-lg",
+          "ghost": "absolute inset-0 flex items-center justify-center pb-4"
+        }
+      },
+      "defaultVariants": { "align": "ghost" }
+    }
+  },
+  {
+    "base": "cn-accordion-item",
+    "config": {
+      "variants": {
+        "loading": {
+          "true": "-mx-4 w-[140vw] overflow-hidden md:hidden",
+          "false": "absolute inset-y-0 right-0 left-62 z-40 bg-transparent"
+        },
+        "size": {
+          "default": "absolute inset-x-0 bottom-0 z-20 h-80 bg-linear-to-t from-background via-muted to-transparent dark:via-muted/30",
+          "outline": "cn-attachment group/attachment relative flex max-w-full min-w-0 shrink-0 flex-wrap border bg-card text-card-foreground transition-colors has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed"
+        },
+        "orientation": { "secondary": "**:[.preview]:h-[560px]" }
+      },
+      "defaultVariants": { "size": "default" }
+    }
+  },
+  {
+    "base": "cn-button-variant-ghost",
+    "config": {
+      "variants": {
+        "side": {
+          "secondary": "block size-4 shrink-0 rounded-full border border-primary bg-white shadow-sm ring-ring/50 transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50",
+          "ghost": "cn-bubble-variant-ghost",
+          "md": [
+            "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6",
+            "cn-breadcrumb-separator"
+          ]
+        }
+      }
+    }
+  },
+  {
+    "base": ["cn-alert-dialog-media", "cn-breadcrumb-separator"],
+    "config": {
+      "variants": {
+        "color": {
+          "primary": "peer-data-[size=sm]/menu-button:top-1",
+          "outline": "cn-button-group-orientation-vertical flex-col **:data-slot:rounded-b-none [&_[data-slot]~[data-slot]]:rounded-t-none [&_[data-slot]~[data-slot]]:border-t-0",
+          "secondary": "bg-[Canvas] text-[CanvasText]"
+        },
+        "align": {
+          "primary": [
+            "[&>*:not(:first-child)]:rounded-l-none [&>*:not(:first-child)]:border-l-0 [&>*:not(:last-child)]:rounded-r-none",
+            "cn-attachment-description block min-w-0 truncate text-muted-foreground group-data-[state=error]/attachment:text-destructive/80"
+          ],
+          "outline": [
+            "group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground data-[state=open]:opacity-100 md:opacity-0",
+            "cn-combobox-item-indicator-icon pointer-events-none"
+          ],
+          "ghost": "aria-expanded:text-destructive"
+        }
+      }
+    }
+  },
+  {
+    "base": "absolute top-[0px] left-[122px] z-10 text-sm font-medium",
+    "config": {
+      "variants": {
+        "tone": {
+          "secondary": "bottom",
+          "ghost": "peer-data-[size=lg]/menu-button:top-2.5"
+        }
+      }
+    }
+  }
+]

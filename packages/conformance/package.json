@@ -4,9 +4,10 @@
   "description": "Reference oracles and gates for cn: differential parity suites vs tailwind-merge + clsx, benchmark matrix vs the incumbents, bundle-size gate, and the vendored-config source of truth. Never published.",
   "type": "module",
   "scripts": {
-    "test": "node tests/correctness.mjs && node tests/fuzz.mjs && node tests/custom-config.mjs && node tests/cli.mjs && node tests/hardening.mjs && node tests/bounds.mjs && node tests/join.mjs",
+    "test": "node tests/correctness.mjs && node tests/fuzz.mjs && node tests/custom-config.mjs && node tests/cva.mjs && node tests/cli.mjs && node tests/hardening.mjs && node tests/bounds.mjs && node tests/join.mjs",
     "test:src": "node tests/correctness.mjs --src && node tests/fuzz.mjs --src",
     "bench": "node bench/bench.mjs",
+    "bench:cva": "node bench/cva.mjs",
     "bench:corpus": "node bench/corpus.mjs",
     "size": "node scripts/size.mjs",
     "vendor-config": "node scripts/vendor-config.mjs",
@@ -16,6 +17,7 @@
     "cn": "workspace:*"
   },
   "devDependencies": {
+    "class-variance-authority": "0.7.1",
     "clsx": "^2.1.1",
     "cnfast": "0.2.0",
     "esbuild": "^0.25.0",

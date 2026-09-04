@@ -22,9 +22,12 @@ const pkgRoot = fileURLToPath(new URL("..", import.meta.url))
 // README documents. Adding an export? Add it here so the gate covers it.
 const fixture = `
 import {
-  cn, twMerge, clsx, createEngine, twJoin,
+  cn, twMerge, clsx, cx, cva, createEngine, twJoin,
   type ClassArray, type ClassDictionary, type ClassNameArray,
   type ClassNameValue, type ClassValue, type CnConfig, type CnFunction,
+  type ClassProp, type ClassPropKey, type CvaConfig, type CvaProps,
+  type CxOptions, type CxReturn, type OmitUndefined, type StringToBoolean,
+  type VariantProps, type VariantSchema,
   type ConfigExtension, type CreateCnInput, type Engine, type EngineOptions,
   type Tables, type ValidatorImpls,
 } from "cn"
@@ -43,6 +46,10 @@ import {
   type CompileStats, type CompiledTables, type EmitOptions, type SubsetResult,
 } from "cn/compiler"
 import liteDefault, { clsx as liteClsx } from "cn/lite"
+import {
+  cva as subpathCva,
+  type VariantProps as SubpathVariantProps,
+} from "cn/cva"
 
 // clsx-style variadic signatures (0.2.1 published lite's clsx as \`(): string\`)
 const sigs: ((...inputs: ClassValue[]) => string)[] = [
@@ -51,6 +58,7 @@ const sigs: ((...inputs: ClassValue[]) => string)[] = [
 void sigs
 cn("p-2", ["p-4", { "text-sm": true }], undefined, 0, false && "x")
 liteClsx("a", false && "b", ["c"], null)
+cx("a", { b: true })
 twMerge("p-2 p-4", ["px-1", ["px-2"]])
 twJoin("a", ["b"], undefined)
 void engineTwJoin("a")
@@ -90,6 +98,33 @@ const marker: { readonly $v: "isNumber" } = validators.isNumber
 const groupId: DefaultClassGroupIds = "aspect"
 const themeId: DefaultThemeGroupIds = "spacing"
 void [themeRef, marker, groupId, themeId]
+
+// cva: class-variance-authority-compatible values and types
+const button = cva("button", {
+  variants: {
+    size: { small: "text-sm", large: "text-lg" },
+    disabled: { true: "opacity-50", false: null },
+  },
+  defaultVariants: { size: "small", disabled: false },
+})
+const subpathButton = subpathCva("button", {
+  variants: { size: { small: "text-sm", large: "text-lg" } },
+})
+const subpathButtonProps: SubpathVariantProps<typeof subpathButton> = {
+  size: "small",
+}
+subpathButton(subpathButtonProps)
+type ButtonProps = VariantProps<typeof button>
+const buttonProps: ButtonProps = { size: "large", disabled: true }
+button(buttonProps)
+// @ts-expect-error class and className are mutually exclusive
+button({ class: "px-2", className: "py-2" })
+type PublicCvaTypes = [
+  ClassProp, ClassPropKey, CvaConfig<VariantSchema>, CvaProps<VariantSchema>,
+  CxOptions, CxReturn, OmitUndefined<string | undefined>,
+  StringToBoolean<"true">, VariantSchema,
+]
+void (0 as unknown as PublicCvaTypes)
 
 // compiler
 const compiled: CompiledTables = compileToTables(merged)

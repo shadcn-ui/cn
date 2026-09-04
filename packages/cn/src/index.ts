@@ -12,7 +12,20 @@ export const cn = /* @__PURE__ */ wrapClsx(instance.mergeString, instance)
 /** tailwind-merge–compatible variadic merge (strings + nested arrays). */
 export const twMerge = instance.merge
 
-export { clsx, createEngine, twJoin }
+export { clsx, clsx as cx, createEngine, twJoin }
+export {
+  cva,
+  type ClassProp,
+  type ClassPropKey,
+  type CvaConfig,
+  type CvaProps,
+  type CxOptions,
+  type CxReturn,
+  type OmitUndefined,
+  type StringToBoolean,
+  type VariantProps,
+  type VariantSchema,
+} from "./cva.js"
 
 // Custom configs live at "cn/config" (createCn, createTwMerge, fromTheme,
 // validators) — a separate entry so the compiler and default-config data

@@ -1,0 +1,1848 @@
+[
+  [0, { "size": "ghost", "variant": "primary" }],
+  [1, { "variant": "secondary", "orientation": "secondary" }],
+  [2, { "color": "outline" }],
+  [3, { "variant": "sm" }],
+  [4, {}],
+  [5, { "align": "sm", "color": "sm" }],
+  [6, { "tone": "sm" }],
+  [7, {}],
+  [8, { "align": "primary" }],
+  [9, { "orientation": "outline" }],
+  [10, { "disabled": true }],
+  [11, { "size": "primary" }],
+  [12],
+  [
+    13,
+    {
+      "variant": "ghost",
+      "className": "cn-checkbox peer relative shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  ],
+  [14, { "tone": "secondary" }],
+  [15, {}],
+  [16, { "align": "primary", "className": "cn-alert-dialog-header" }],
+  [17, {}],
+  [
+    18,
+    {
+      "active": true,
+      "className": "cn-alert-dialog-content group/alert-dialog-content fixed top-1/2 left-1/2 z-50 grid w-full -translate-x-1/2 -translate-y-1/2 outline-none"
+    }
+  ],
+  [19, { "align": "secondary" }],
+  [20, { "orientation": "primary" }],
+  [
+    21,
+    {
+      "align": "outline",
+      "className": "-mx-1.5 my-1.5 h-px bg-neutral-600 dark:bg-neutral-700"
+    }
+  ],
+  [22, { "variant": "outline" }],
+  [23, { "orientation": "secondary" }],
+  [24, { "side": "primary" }],
+  [25, { "variant": "primary" }],
+  [26, { "side": "default" }],
+  [
+    27,
+    {
+      "size": "primary",
+      "className": "cn-context-menu-sub-trigger flex cursor-default items-center outline-hidden select-none [&_svg]:pointer-events-none [&_svg]:shrink-0"
+    }
+  ],
+  [
+    28,
+    {
+      "size": "md",
+      "className": "[&_[role=gridcell]]:w-[33px] [&_[role=gridcell].bg-accent]:bg-sidebar-primary [&_[role=gridcell].bg-accent]:text-sidebar-primary-foreground"
+    }
+  ],
+  [29, { "side": "secondary", "active": true }],
+  [30, { "selected": true }],
+  [31, { "className": "bg-chart-1 text-chart-5" }],
+  [
+    32,
+    {
+      "className": "absolute inset-0 flex w-(--sidebar-menu-width) bg-transparent"
+    }
+  ],
+  [33, { "align": "default" }],
+  [34],
+  [35, {}],
+  [36, { "orientation": "secondary" }],
+  [37, { "color": "outline" }],
+  [38, { "color": "default", "className": "cn-badge-variant-link" }],
+  [39, { "className": "basis-1/2 pt-1" }],
+  [40, { "side": "default" }],
+  [41, { "orientation": "default" }],
+  [42],
+  [43, { "disabled": false }],
+  [44, { "loading": false }],
+  [45, {}],
+  [46, { "color": "outline" }],
+  [47, {}],
+  [0],
+  [1],
+  [2, { "color": "outline" }],
+  [3, { "variant": "sm" }],
+  [4, {}],
+  [5, { "align": "sm" }],
+  [6, {}],
+  [7, { "className": "cn-button-variant-secondary" }],
+  [8],
+  [9, { "orientation": "outline" }],
+  [10, { "disabled": true }],
+  [11, {}],
+  [12, { "selected": false }],
+  [13, {}],
+  [
+    14,
+    {
+      "className": "absolute bg-primary data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full"
+    }
+  ],
+  [15, {}],
+  [16, { "align": "primary" }],
+  [17, { "tone": "outline" }],
+  [18, { "color": "primary" }],
+  [19, { "align": "default", "className": "bottom-0 translate-y-3/4" }],
+  [20, {}],
+  [
+    21,
+    {
+      "align": "primary",
+      "className": "cn-command flex size-full flex-col overflow-hidden"
+    }
+  ],
+  [22, { "size": "secondary" }],
+  [23, { "orientation": "outline" }],
+  [24, { "side": "primary" }],
+  [25, {}],
+  [
+    26,
+    {
+      "color": "default",
+      "className": "cn-checkbox cn-checkbox-aria peer relative shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2 data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
+    }
+  ],
+  [27, {}],
+  [28, { "size": "ghost" }],
+  [
+    29,
+    {
+      "active": false,
+      "className": "absolute right-1 bottom-1 bg-foreground/90 px-1 text-[0.5rem] font-semibold tracking-wider text-background"
+    }
+  ],
+  [30, {}],
+  [31, { "orientation": "secondary" }],
+  [32, {}],
+  [33, { "variant": "sm" }],
+  [34, {}],
+  [35, {}],
+  [36, { "color": "secondary" }],
+  [37, { "color": "outline" }],
+  [38, { "color": "ghost" }],
+  [39, { "className": "absolute top-[38px] left-[30px] z-10 rotate-[-40deg]" }],
+  [40, { "orientation": "secondary" }],
+  [41],
+  [42, { "align": "secondary" }],
+  [43, { "disabled": true, "align": "ghost" }],
+  [
+    44,
+    {
+      "className": "cn-command-input outline-hidden disabled:cursor-not-allowed disabled:opacity-50 [&::-webkit-search-cancel-button]:hidden"
+    }
+  ],
+  [45, {}],
+  [46, { "color": "primary", "align": "outline" }],
+  [47, {}],
+  [0, {}],
+  [1, {}],
+  [2, { "color": "outline" }],
+  [3, { "variant": "sm" }],
+  [4, {}],
+  [5, {}],
+  [6, { "tone": "primary" }],
+  [7, { "size": "ghost", "className": "inset-y-0 -left-12 my-auto" }],
+  [8, { "side": "primary" }],
+  [9, { "orientation": "secondary" }],
+  [10, { "disabled": false }],
+  [11, { "size": "default" }],
+  [12, { "selected": false }],
+  [13, {}],
+  [14, { "tone": "secondary" }],
+  [15, {}],
+  [16, { "color": "default" }],
+  [17, { "tone": "outline" }],
+  [18, { "color": "primary" }],
+  [19, { "align": "ghost" }],
+  [20, {}],
+  [21, { "align": "ghost", "side": "primary" }],
+  [22, {}],
+  [23, { "loading": true }],
+  [24, { "side": "primary" }],
+  [25, { "className": "aspect-auto h-[250px] w-full" }],
+  [26, { "side": "outline" }],
+  [27, { "size": "outline" }],
+  [
+    28,
+    {
+      "size": "primary",
+      "className": "border style-vega:rounded-lg style-vega:p-6 style-nova:rounded-lg style-nova:p-4 style-lyra:rounded-none style-lyra:p-4 style-maia:rounded-xl style-maia:p-6 style-mira:rounded-md style-mira:p-4 style-luma:rounded-xl style-luma:p-6 style-rhea:rounded-xl style-rhea:p-6"
+    }
+  ],
+  [29, { "active": true }],
+  [30, { "selected": false }],
+  [31],
+  [32, {}],
+  [33, { "variant": "sm" }],
+  [
+    34,
+    {
+      "size": "primary",
+      "className": "-top-12 left-1/2 -translate-x-1/2 rotate-90"
+    }
+  ],
+  [35, { "side": "primary" }],
+  [36, {}],
+  [37],
+  [38, { "color": "outline" }],
+  [39, {}],
+  [40, {}],
+  [41, {}],
+  [42],
+  [
+    43,
+    {
+      "disabled": true,
+      "className": "bg-green-600 text-green-50 dark:bg-green-600 dark:text-green-50"
+    }
+  ],
+  [44, {}],
+  [45, { "side": "md" }],
+  [46, { "align": "primary" }],
+  [47, { "tone": "secondary", "className": "block border-b p-4 text-xl" }],
+  [0, { "size": "primary", "variant": "primary" }],
+  [1, { "className": "cn-card group/card flex flex-col" }],
+  [2, {}],
+  [3, { "variant": "sm" }],
+  [4, { "loading": true }],
+  [5, { "align": "default", "color": "sm" }],
+  [6, {}],
+  [7, { "size": "ghost" }],
+  [8, { "align": "primary", "side": "outline" }],
+  [9, { "orientation": "secondary" }],
+  [10],
+  [11, {}],
+  [12, {}],
+  [13, {}],
+  [14, { "tone": "outline" }],
+  [15, {}],
+  [16, {}],
+  [17],
+  [18, { "color": "primary" }],
+  [
+    19,
+    {
+      "align": "secondary",
+      "className": "absolute top-1.5 right-9 z-10 flex items-center"
+    }
+  ],
+  [20, { "className": "cn-attachment-content max-w-full min-w-0 flex-1" }],
+  [21, {}],
+  [
+    22,
+    { "variant": "outline", "className": "top-1/2 -left-12 -translate-y-1/2" }
+  ],
+  [
+    23,
+    {
+      "orientation": "secondary",
+      "loading": false,
+      "className": "-ms-6 translate-x-1 rounded-full transition-all duration-100 ease-linear data-checked:ms-0 data-checked:translate-x-0"
+    }
+  ],
+  [24, { "side": "primary" }],
+  [25],
+  [26],
+  [27, {}],
+  [28, { "size": "md" }],
+  [29, { "side": "outline", "active": true }],
+  [30, { "selected": true }],
+  [
+    31,
+    {
+      "className": "cn-accordion-trigger-icon pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden"
+    }
+  ],
+  [32, { "size": "primary" }],
+  [33, { "variant": "primary", "align": "default" }],
+  [34],
+  [35, { "side": "primary" }],
+  [36, { "color": "primary" }],
+  [
+    37,
+    {
+      "color": "sm",
+      "className": "absolute inset-y-0 right-0 left-54 z-40 bg-transparent"
+    }
+  ],
+  [38, {}],
+  [39, { "className": "[&_.preview]:h-[350px] [&_pre]:h-[350px]!" }],
+  [40, { "side": "sm", "loading": true }],
+  [41, { "orientation": "default", "className": "block truncate font-medium" }],
+  [42, {}],
+  [43, { "disabled": true }],
+  [44],
+  [45, {}],
+  [46, { "color": "outline" }],
+  [47, { "tone": "ghost" }],
+  [0, {}],
+  [1, { "variant": "ghost" }],
+  [2, {}],
+  [3, { "variant": "sm" }],
+  [4, {}],
+  [5, { "color": "default", "className": "animate-none! sm:max-w-md" }],
+  [6, {}],
+  [7, { "size": "ghost" }],
+  [8, { "align": "secondary" }],
+  [9],
+  [10, { "disabled": true }],
+  [11, {}],
+  [12, { "selected": true }],
+  [13, {}],
+  [
+    14,
+    {
+      "tone": "secondary",
+      "className": "cn-context-menu-subcontent cn-menu-target cn-menu-translucent"
+    }
+  ],
+  [
+    15,
+    {
+      "className": "cn-alert-dialog-content group/alert-dialog-content fixed top-1/2 left-1/2 z-50 grid w-full -translate-x-1/2 -translate-y-1/2 outline-none"
+    }
+  ],
+  [16, { "align": "primary" }],
+  [17, { "tone": "default" }],
+  [
+    18,
+    {
+      "color": "primary",
+      "className": "[[data-side=right][data-collapsible=offcanvas]_&]:-left-2"
+    }
+  ],
+  [19, { "align": "ghost" }],
+  [20, { "orientation": "primary" }],
+  [21, { "side": "default" }],
+  [22],
+  [23, { "loading": false }],
+  [24, {}],
+  [25, { "variant": "primary" }],
+  [26, { "color": "primary" }],
+  [27, { "size": "primary" }],
+  [28, { "size": "md", "className": "top-0 -translate-y-3/4" }],
+  [29, { "side": "ghost" }],
+  [30, { "selected": true }],
+  [31],
+  [32, {}],
+  [33, { "className": "icon" }],
+  [34, { "size": "primary" }],
+  [
+    35,
+    {
+      "side": "primary",
+      "className": "-translate-y-2 flex-wrap gap-2 *:basis-1/4 *:justify-center"
+    }
+  ],
+  [36, { "className": "cn-dialog-overlay-aria fixed inset-0 isolate z-50" }],
+  [37, { "color": "primary" }],
+  [38, {}],
+  [
+    39,
+    {
+      "tone": "secondary",
+      "className": "block max-w-full min-w-0 truncate font-medium group-data-[state=processing]/attachment:shimmer group-data-[state=uploading]/attachment:shimmer"
+    }
+  ],
+  [40, { "side": "default" }],
+  [41, {}],
+  [42],
+  [43, { "disabled": true }],
+  [44, { "size": "default", "orientation": "secondary" }],
+  [45, {}],
+  [46, { "color": "primary" }],
+  [47, {}],
+  [
+    0,
+    {
+      "size": "ghost",
+      "variant": "primary",
+      "className": "cn-combobox-chip-input min-w-16 flex-1 outline-none"
+    }
+  ],
+  [1, { "variant": "outline", "orientation": "primary" }],
+  [2, {}],
+  [
+    3,
+    {
+      "className": "cn-command-dialog top-1/3 translate-y-0 overflow-hidden p-0"
+    }
+  ],
+  [4, { "loading": true }],
+  [5],
+  [6],
+  [7, { "size": "ghost" }],
+  [8],
+  [9, { "orientation": "secondary" }],
+  [10, { "disabled": true }],
+  [11, {}],
+  [12, {}],
+  [
+    13,
+    {
+      "variant": "ghost",
+      "className": "cn-attachment group/attachment relative flex max-w-full min-w-0 shrink-0 flex-wrap border bg-card text-card-foreground transition-colors has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed"
+    }
+  ],
+  [14],
+  [15, {}],
+  [16, { "align": "primary", "color": "secondary" }],
+  [
+    17,
+    {
+      "tone": "secondary",
+      "orientation": "secondary",
+      "className": "absolute top-[0px] left-[122px] z-10 text-sm font-medium"
+    }
+  ],
+  [18, { "color": "secondary", "active": true }],
+  [19, { "align": "default" }],
+  [20, { "orientation": "primary" }],
+  [21, { "align": "md", "variant": "secondary" }],
+  [22, { "size": "secondary" }],
+  [23, { "orientation": "secondary" }],
+  [24, { "side": "primary" }],
+  [25, { "variant": "primary" }],
+  [26, { "side": "outline" }],
+  [27, { "size": "secondary" }],
+  [28, { "size": "md" }],
+  [29, { "side": "ghost" }],
+  [30, { "className": "absolute inset-0 bg-muted dark:bg-muted/30" }],
+  [31, { "orientation": "secondary" }],
+  [32, {}],
+  [
+    33,
+    {
+      "align": "default",
+      "className": "appearance-none [&::-webkit-calendar-picker-indicator]:hidden [&::-webkit-calendar-picker-indicator]:appearance-none"
+    }
+  ],
+  [34, { "size": "md" }],
+  [35, {}],
+  [36, { "color": "sm" }],
+  [37, { "color": "primary" }],
+  [38, {}],
+  [39, {}],
+  [40, { "orientation": "outline" }],
+  [41, { "orientation": "ghost" }],
+  [42, { "align": "primary" }],
+  [43, { "disabled": true, "className": "top-1" }],
+  [44, { "loading": false, "orientation": "secondary" }],
+  [45, { "side": "secondary" }],
+  [46, { "color": "outline" }],
+  [47, {}],
+  [0, { "size": "sm", "variant": "primary" }],
+  [1],
+  [2, { "color": "primary", "className": "top-0 -translate-y-3/4" }],
+  [3, { "variant": "secondary" }],
+  [4, { "loading": false }],
+  [5],
+  [6, {}],
+  [7, { "size": "ghost", "className": "animate-pulse text-red-500" }],
+  [8, { "align": "primary" }],
+  [9],
+  [10, { "disabled": true, "align": "primary", "orientation": "outline" }],
+  [11, { "size": "secondary" }],
+  [12, { "selected": true }],
+  [13, {}],
+  [14, { "tone": "secondary" }],
+  [15, {}],
+  [
+    16,
+    {
+      "align": "primary",
+      "color": "ghost",
+      "className": "aspect-video h-12 w-full rounded-lg bg-muted/50"
+    }
+  ],
+  [17, { "tone": "outline" }],
+  [18, { "color": "primary" }],
+  [19, {}],
+  [20, {}],
+  [
+    21,
+    { "align": "secondary", "side": "primary", "className": "cn-command-empty" }
+  ],
+  [22, { "variant": "outline" }],
+  [23, { "orientation": "outline" }],
+  [24, { "side": "primary" }],
+  [25, { "variant": "primary" }],
+  [26, {}],
+  [27, {}],
+  [28, {}],
+  [29, {}],
+  [30, {}],
+  [31, { "orientation": "secondary", "variant": "primary" }],
+  [32, { "size": "primary" }],
+  [33, { "variant": "outline", "align": "default" }],
+  [34, { "size": "md", "align": "primary" }],
+  [35, {}],
+  [
+    36,
+    {
+      "className": "cn-button-group-orientation-vertical flex-col [&>*:not(:first-child)]:rounded-t-none [&>*:not(:first-child)]:border-t-0 [&>*:not(:last-child)]:rounded-b-none"
+    }
+  ],
+  [37, {}],
+  [38, { "className": "block md:hidden" }],
+  [39, {}],
+  [40, { "side": "default" }],
+  [41, { "orientation": "outline" }],
+  [
+    42,
+    {
+      "align": "secondary",
+      "className": "cn-context-menu-content cn-context-menu-content-logical cn-menu-target cn-menu-translucent z-50 max-h-(--available-height) origin-(--transform-origin) overflow-x-hidden overflow-y-auto outline-none"
+    }
+  ],
+  [
+    43,
+    {
+      "disabled": true,
+      "align": "ghost",
+      "className": "cn-breadcrumb-list flex flex-wrap items-center wrap-break-word"
+    }
+  ],
+  [44, { "size": "default" }],
+  [45, {}],
+  [46, { "color": "secondary" }],
+  [47, { "tone": "secondary" }],
+  [0, {}],
+  [1, { "variant": "outline", "orientation": "secondary" }],
+  [2, { "color": "primary" }],
+  [3, { "variant": "outline" }],
+  [4, {}],
+  [5, { "align": "ghost", "color": "primary" }],
+  [6, { "tone": "secondary" }],
+  [7, { "size": "secondary" }],
+  [8, { "align": "outline" }],
+  [
+    9,
+    {
+      "className": "bg-green-50 text-green-700 dark:bg-green-950 dark:text-green-300"
+    }
+  ],
+  [10, {}],
+  [11, { "size": "primary" }],
+  [
+    12,
+    {
+      "selected": true,
+      "className": "absolute inset-y-0 right-0 left-54 z-40 bg-transparent"
+    }
+  ],
+  [13, { "variant": "primary" }],
+  [14, { "tone": "secondary" }],
+  [15, {}],
+  [16],
+  [17, { "orientation": "outline" }],
+  [18, { "color": "secondary", "active": true }],
+  [19, {}],
+  [20, { "orientation": "primary" }],
+  [21, { "className": "cn-button-variant-secondary" }],
+  [22, {}],
+  [23, {}],
+  [24, { "className": "[&>pre]:max-h-96" }],
+  [25, {}],
+  [26, { "side": "outline", "className": "-mt-1 h-[200px]" }],
+  [
+    27,
+    {
+      "size": "outline",
+      "className": "after:absolute after:-inset-2 md:after:hidden"
+    }
+  ],
+  [28, { "size": "ghost" }],
+  [29, { "side": "outline" }],
+  [30, {}],
+  [
+    31,
+    {
+      "orientation": "secondary",
+      "variant": "outline",
+      "className": "cn-attachment-media relative flex aspect-square shrink-0 items-center justify-center overflow-hidden group-data-[state=error]/attachment:bg-destructive/10 group-data-[state=error]/attachment:text-destructive [&_svg]:pointer-events-none"
+    }
+  ],
+  [32, { "size": "primary", "className": "h-8 min-w-8 px-1.5" }],
+  [33, {}],
+  [34, { "size": "outline", "align": "primary" }],
+  [35, { "side": "primary" }],
+  [
+    36,
+    {
+      "color": "primary",
+      "orientation": "sm",
+      "className": "cn-accordion-content h-(--disclosure-panel-height) overflow-clip transition-[height]"
+    }
+  ],
+  [37, { "color": "outline" }],
+  [38, { "color": "default" }],
+  [
+    39,
+    { "tone": "secondary", "className": "bg-transparent [--cell-size:2.1rem]" }
+  ],
+  [40, { "side": "default" }],
+  [41, { "orientation": "ghost" }],
+  [42, {}],
+  [43, { "align": "secondary" }],
+  [
+    44,
+    { "size": "outline", "className": "-mx-1 no-scrollbar overflow-x-hidden" }
+  ],
+  [45, { "side": "ghost", "className": "cn-card-description" }],
+  [
+    46,
+    {
+      "color": "secondary",
+      "align": "primary",
+      "className": "aria-pressed:*:[svg]:stroke-foregfill-foreground aria-pressed:bg-transparent aria-pressed:*:[svg]:fill-foreground"
+    }
+  ],
+  [47, { "tone": "secondary" }],
+  [
+    0,
+    { "size": "sm", "className": "cn-combobox-clear-icon pointer-events-none" }
+  ],
+  [1, { "variant": "secondary" }],
+  [2],
+  [3, {}],
+  [4],
+  [5, { "align": "outline" }],
+  [6, { "tone": "primary" }],
+  [7, { "size": "ghost" }],
+  [8, {}],
+  [9, { "orientation": "secondary" }],
+  [10, { "align": "primary", "orientation": "secondary" }],
+  [11, { "size": "default" }],
+  [12, { "selected": false }],
+  [13, { "variant": "secondary" }],
+  [14, {}],
+  [15, { "className": "border-b px-4 py-3" }],
+  [16, {}],
+  [17, { "tone": "outline" }],
+  [18, {}],
+  [19, { "align": "default" }],
+  [20, {}],
+  [
+    21,
+    {
+      "align": "ghost",
+      "className": "cn-breadcrumb-list flex flex-wrap items-center wrap-break-word"
+    }
+  ],
+  [22, { "size": "outline" }],
+  [23, { "orientation": "secondary" }],
+  [24, {}],
+  [25, {}],
+  [26, { "side": "outline" }],
+  [27],
+  [28, { "className": "cn-breadcrumb" }],
+  [29, { "side": "ghost" }],
+  [30],
+  [31, { "variant": "primary" }],
+  [
+    32,
+    {
+      "size": "ghost",
+      "className": "cn-combobox-clear-icon pointer-events-none"
+    }
+  ],
+  [33, { "variant": "outline" }],
+  [34],
+  [35],
+  [36],
+  [37, {}],
+  [38, { "color": "outline" }],
+  [39, {}],
+  [40, {}],
+  [
+    41,
+    {
+      "orientation": "default",
+      "className": "border-b transition-colors hover:bg-muted/50 has-aria-expanded:bg-muted/50 data-[state=selected]:bg-muted"
+    }
+  ],
+  [42, { "align": "secondary" }],
+  [
+    43,
+    {
+      "disabled": false,
+      "align": "ghost",
+      "className": "cn-checkbox peer relative shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  ],
+  [44, { "size": "default" }],
+  [45, {}],
+  [46, {}],
+  [47, { "tone": "ghost" }],
+  [
+    0,
+    {
+      "className": "absolute top-0 left-[calc(50%-950px-var(--rail-width)-var(--gap))] grid w-(--rail-width) grid-cols-[repeat(2,var(--rail-column))] gap-(--gap) opacity-50 [--rail-column:20rem] [--rail-width:calc(var(--rail-column)*2+var(--gap))]"
+    }
+  ],
+  [1, { "variant": "sm", "className": "border-r-0" }],
+  [2, { "className": "cn-dialog-close" }],
+  [3, { "variant": "outline" }],
+  [4, { "className": "block h-full w-full" }],
+  [5, {}],
+  [6, { "tone": "sm", "loading": true }],
+  [7, { "size": "ghost" }],
+  [8, { "align": "secondary", "side": "primary" }],
+  [9, { "orientation": "secondary" }],
+  [10, { "align": "ghost" }],
+  [11, { "size": "secondary" }],
+  [12, { "className": "cn-bubble-variant-tinted" }],
+  [13, { "variant": "primary", "className": "bg-muted" }],
+  [14, {}],
+  [15, { "className": "absolute inset-0 bg-popover opacity-0" }],
+  [16],
+  [17],
+  [18, { "className": "[&_.preview]:items-start" }],
+  [19, { "align": "secondary" }],
+  [20, { "orientation": "primary", "className": "animate-none! sm:max-w-md" }],
+  [21],
+  [22, { "variant": "outline" }],
+  [23],
+  [24, { "side": "primary", "size": "primary" }],
+  [25, {}],
+  [26, { "side": "default", "color": "primary", "variant": "outline" }],
+  [27, { "size": "outline" }],
+  [28, { "size": "primary" }],
+  [29, { "className": "capitalize data-[state=checked]:opacity-50" }],
+  [30],
+  [31, { "className": "cn-alert-dialog-cancel" }],
+  [32, {}],
+  [33, { "variant": "sm" }],
+  [34, { "className": "h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5" }],
+  [35, { "side": "primary" }],
+  [36, { "color": "secondary" }],
+  [37, { "color": "sm" }],
+  [38, { "color": "ghost" }],
+  [39, { "tone": "secondary" }],
+  [40],
+  [41, { "orientation": "ghost" }],
+  [42, {}],
+  [43, { "disabled": true }],
+  [44, { "loading": true }],
+  [45, {}],
+  [46, { "color": "outline" }],
+  [47, { "tone": "secondary" }],
+  [0, { "size": "primary", "className": "cn-command-input-wrapper" }],
+  [1, {}],
+  [2, { "color": "ghost" }],
+  [
+    3,
+    {
+      "variant": "secondary",
+      "className": "bg-background *:data-[slot=card]:has-[[data-slot=chart]]:shadow-none"
+    }
+  ],
+  [4, {}],
+  [5, { "align": "ghost" }],
+  [6, {}],
+  [7, { "size": "ghost" }],
+  [8],
+  [9, {}],
+  [10, { "disabled": true }],
+  [11],
+  [12, { "selected": true, "className": "**:[.container]:justify-start" }],
+  [13, { "variant": "secondary" }],
+  [14],
+  [15],
+  [16, { "align": "primary" }],
+  [17, { "tone": "outline" }],
+  [18, { "color": "secondary" }],
+  [19, {}],
+  [20, { "orientation": "primary" }],
+  [
+    21,
+    {
+      "align": "ghost",
+      "side": "primary",
+      "className": "[[data-side=left][data-collapsible=offcanvas]_&]:-right-2"
+    }
+  ],
+  [22, {}],
+  [23, { "orientation": "secondary" }],
+  [24, { "size": "primary", "selected": true }],
+  [25, { "className": "bg-green-600 dark:bg-green-800" }],
+  [26, { "color": "default", "variant": "outline" }],
+  [27, { "className": "h-9 px-4 py-2 has-[>svg]:px-3" }],
+  [28],
+  [29, {}],
+  [30],
+  [31, { "orientation": "secondary", "variant": "outline" }],
+  [32, { "size": "ghost" }],
+  [33, { "align": "default" }],
+  [34, { "align": "primary" }],
+  [35, {}],
+  [36, { "color": "secondary", "className": "cn-combobox-clear" }],
+  [37, { "color": "sm" }],
+  [38, { "color": "default" }],
+  [39, { "tone": "ghost" }],
+  [40, { "loading": true }],
+  [41, { "orientation": "ghost" }],
+  [42, { "align": "secondary" }],
+  [43, { "disabled": true }],
+  [44, { "loading": false, "size": "default" }],
+  [45, {}],
+  [
+    46,
+    {
+      "color": "primary",
+      "className": "cn-context-menu-radio-item relative flex cursor-default items-center outline-hidden select-none data-disabled:pointer-events-none data-disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+    }
+  ],
+  [47, { "tone": "secondary" }],
+  [0, { "size": "sm" }],
+  [1, { "variant": "outline" }],
+  [2, { "color": "outline" }],
+  [3, { "variant": "outline" }],
+  [4],
+  [5, { "align": "sm", "color": "ghost" }],
+  [6, { "tone": "sm" }],
+  [7, { "size": "ghost", "className": "h-8 min-w-8 px-1.5" }],
+  [8, {}],
+  [
+    9,
+    {
+      "className": "bg-green-600 text-green-50 dark:bg-green-600 dark:text-green-50"
+    }
+  ],
+  [10, { "disabled": true, "align": "primary" }],
+  [11, { "size": "secondary" }],
+  [12, { "selected": false }],
+  [13, { "variant": "secondary", "className": "cn-button-variant-link" }],
+  [14, {}],
+  [15, {}],
+  [
+    16,
+    { "align": "primary", "className": "aspect-3/4 h-fit w-fit object-cover" }
+  ],
+  [17, { "className": "border-dashed border-primary" }],
+  [18, { "active": false }],
+  [19, {}],
+  [20, { "orientation": "primary", "className": "block dark:hidden" }],
+  [21, { "side": "outline" }],
+  [22, { "variant": "default" }],
+  [23, { "orientation": "outline", "loading": false }],
+  [24, { "side": "primary", "size": "secondary" }],
+  [25, { "variant": "primary" }],
+  [26, { "side": "outline" }],
+  [27, {}],
+  [28, { "size": "ghost" }],
+  [29, { "active": true }],
+  [30, { "selected": false }],
+  [31, { "orientation": "secondary", "className": "-ml-1" }],
+  [32, {}],
+  [
+    33,
+    {
+      "variant": "primary",
+      "align": "default",
+      "className": "cn-command-input-wrapper"
+    }
+  ],
+  [34, { "size": "md" }],
+  [35, {}],
+  [36, { "className": "animate-none!" }],
+  [37, { "color": "outline" }],
+  [38, { "color": "default", "className": "border-b last:border-b-0" }],
+  [39, { "tone": "secondary" }],
+  [40, { "side": "outline", "loading": true }],
+  [41, { "orientation": "ghost" }],
+  [42, { "align": "primary" }],
+  [43],
+  [44, { "loading": true }],
+  [45, { "side": "md" }],
+  [46, { "color": "secondary", "align": "ghost" }],
+  [47, {}],
+  [0, { "variant": "primary" }],
+  [1, { "variant": "secondary" }],
+  [2, { "color": "outline" }],
+  [3, { "variant": "sm" }],
+  [4, { "loading": false }],
+  [5],
+  [6, { "className": "bg-muted-foreground transition-all duration-300" }],
+  [7, {}],
+  [8, { "align": "outline" }],
+  [9, { "orientation": "outline" }],
+  [10, { "disabled": false }],
+  [
+    11,
+    {
+      "size": "default",
+      "className": "-top-12 left-1/2 -translate-x-1/2 rotate-90"
+    }
+  ],
+  [12, {}],
+  [13, { "className": "**:[.container]:justify-start" }],
+  [14, { "tone": "primary" }],
+  [15, {}],
+  [16, { "align": "primary" }],
+  [17],
+  [18],
+  [19],
+  [20, { "orientation": "primary" }],
+  [21, { "align": "secondary" }],
+  [22, {}],
+  [
+    23,
+    {
+      "loading": false,
+      "className": "cn-card-header group/card-header @container/card-header grid auto-rows-min items-start has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto]"
+    }
+  ],
+  [24, { "side": "primary", "size": "secondary" }],
+  [25, { "variant": "primary" }],
+  [26, {}],
+  [27],
+  [28, {}],
+  [29, { "side": "ghost", "active": false }],
+  [
+    30,
+    {
+      "selected": true,
+      "className": "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+    }
+  ],
+  [31, { "orientation": "secondary" }],
+  [32, {}],
+  [
+    33,
+    { "variant": "sm", "className": "rtl:**:[.rdp-button_next>svg]:rotate-180" }
+  ],
+  [34, { "size": "sm" }],
+  [35, { "side": "primary" }],
+  [36, { "color": "secondary", "orientation": "primary" }],
+  [37, {}],
+  [38, { "color": "outline" }],
+  [
+    39,
+    {
+      "tone": "outline",
+      "className": "cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+    }
+  ],
+  [40, { "side": "default", "orientation": "ghost" }],
+  [
+    41,
+    {
+      "className": "group-data-[size=default]/avatar:size-2.5 group-data-[size=default]/avatar:[&>svg]:size-2"
+    }
+  ],
+  [42, { "align": "secondary" }],
+  [43],
+  [44, {}],
+  [45, { "side": "ghost" }],
+  [46, { "color": "outline", "align": "outline" }],
+  [47, {}],
+  [0, { "size": "sm" }],
+  [1, {}],
+  [2],
+  [3, {}],
+  [4, { "loading": true }],
+  [5, { "align": "outline" }],
+  [6, { "tone": "primary" }],
+  [7, {}],
+  [8, {}],
+  [9, { "orientation": "outline" }],
+  [10],
+  [11, {}],
+  [12, { "selected": true, "className": "bottom-0 translate-y-3/4" }],
+  [13, {}],
+  [14, { "tone": "secondary" }],
+  [15, {}],
+  [16, { "className": "icon" }],
+  [17, { "tone": "outline", "orientation": "secondary" }],
+  [18, { "color": "primary" }],
+  [19],
+  [20, {}],
+  [21, {}],
+  [22, { "variant": "default", "size": "outline" }],
+  [23, { "orientation": "outline" }],
+  [24, { "side": "primary", "className": "cn-bubble-variant-ghost" }],
+  [25, { "variant": "primary" }],
+  [26, { "side": "default" }],
+  [27, { "size": "secondary" }],
+  [28, { "className": "aria-expanded:rotate-90" }],
+  [29, { "active": true }],
+  [30, { "selected": true }],
+  [31, { "orientation": "secondary" }],
+  [32, {}],
+  [33],
+  [34, {}],
+  [35, { "side": "primary" }],
+  [36, { "orientation": "secondary" }],
+  [
+    37,
+    {
+      "color": "primary",
+      "className": "-mt-3 hidden min-w-0 gap-2 md:flex md:flex-col md:**:[button,a]:w-full"
+    }
+  ],
+  [38, { "color": "default" }],
+  [39, { "tone": "secondary" }],
+  [40, { "side": "outline" }],
+  [41, { "orientation": "outline" }],
+  [
+    42,
+    {
+      "align": "primary",
+      "className": "[[data-side=left][data-collapsible=offcanvas]_&]:-right-2"
+    }
+  ],
+  [43, { "className": "**:[.preview]:h-[560px]" }],
+  [44, { "size": "default" }],
+  [45, { "side": "md" }],
+  [46, {}],
+  [47, { "tone": "secondary" }],
+  [0, {}],
+  [1, { "variant": "secondary" }],
+  [2, { "color": "primary" }],
+  [3, { "variant": "sm", "className": "cn-bubble-reactions-align-end" }],
+  [4, { "loading": true }],
+  [5, { "align": "default" }],
+  [6, { "className": "block uppercase text-yellow-500 drop-shadow-md" }],
+  [7, {}],
+  [8, { "align": "outline" }],
+  [9, { "orientation": "secondary" }],
+  [10, {}],
+  [11, {}],
+  [12],
+  [13, {}],
+  [14, { "className": "absolute end-0 top-0" }],
+  [15, {}],
+  [16, { "align": "primary" }],
+  [17, {}],
+  [
+    18,
+    {
+      "color": "primary",
+      "className": "aspect-square w-full rounded-sm object-cover"
+    }
+  ],
+  [19, { "align": "ghost" }],
+  [20, { "orientation": "primary" }],
+  [21, { "align": "md" }],
+  [22, { "variant": "outline" }],
+  [23, { "orientation": "secondary" }],
+  [24, { "side": "primary", "size": "primary" }],
+  [25, { "variant": "primary" }],
+  [26, { "color": "primary" }],
+  [27],
+  [28, { "size": "secondary" }],
+  [
+    29,
+    {
+      "side": "outline",
+      "active": false,
+      "className": "bg-transparent font-mono"
+    }
+  ],
+  [30, {}],
+  [31, { "variant": "outline" }],
+  [32, {}],
+  [33, { "align": "default", "selected": false }],
+  [34, {}],
+  [35, { "side": "primary" }],
+  [36, { "color": "sm" }],
+  [37, {}],
+  [38, {}],
+  [
+    39,
+    {
+      "tone": "outline",
+      "className": "border style-vega:rounded-lg style-vega:p-6 style-nova:rounded-lg style-nova:p-4 style-lyra:rounded-none style-lyra:p-4 style-maia:rounded-xl style-maia:p-6 style-mira:rounded-md style-mira:p-4 style-luma:rounded-xl style-luma:p-6 style-sera:rounded-none style-sera:p-6 style-rhea:rounded-xl style-rhea:p-6"
+    }
+  ],
+  [40, { "side": "default", "loading": false }],
+  [41, { "orientation": "ghost" }],
+  [42, {}],
+  [
+    43,
+    {
+      "disabled": true,
+      "align": "ghost",
+      "className": "cn-command-dialog top-1/3 translate-y-0 overflow-hidden p-0"
+    }
+  ],
+  [44, { "loading": true }],
+  [45, { "side": "ghost" }],
+  [46, {}],
+  [47, { "tone": "ghost" }],
+  [0, { "size": "sm" }],
+  [
+    1,
+    { "className": "absolute inset-0 hidden w-[1600px] bg-background md:block" }
+  ],
+  [
+    2,
+    {
+      "color": "ghost",
+      "className": "absolute top-1 right-8 z-0 h-6! bg-foreground/5! peer-focus-visible:opacity-0 sm:right-7 sm:h-5!"
+    }
+  ],
+  [3],
+  [4, {}],
+  [
+    5,
+    { "align": "outline", "className": "absolute inset-0 bg-popover opacity-0" }
+  ],
+  [6, { "className": "cn-bubble-variant-destructive" }],
+  [7, { "size": "ghost", "className": "bg-muted" }],
+  [8, {}],
+  [9, {}],
+  [10, { "disabled": true, "align": "secondary" }],
+  [11, { "size": "default" }],
+  [12, {}],
+  [13, { "variant": "primary" }],
+  [14, {}],
+  [15, { "className": "aspect-square size-full" }],
+  [16, { "align": "primary", "color": "default" }],
+  [
+    17,
+    {
+      "tone": "secondary",
+      "className": "*:data-[slot=field-separator-content]:bg-card"
+    }
+  ],
+  [18, { "color": "primary" }],
+  [19, { "align": "default", "className": "cn-button-size-lg" }],
+  [20, {}],
+  [21, { "align": "md" }],
+  [
+    22,
+    {
+      "variant": "default",
+      "size": "secondary",
+      "className": "absolute top-1 right-8 z-0 h-6! bg-foreground/5! peer-focus-visible:opacity-0 sm:right-7 sm:h-5!"
+    }
+  ],
+  [23, { "orientation": "outline" }],
+  [
+    24,
+    {
+      "side": "primary",
+      "className": "cn-calendar-dropdown-root relative rounded-(--cell-radius)"
+    }
+  ],
+  [25, {}],
+  [26, { "side": "default" }],
+  [27, { "size": "secondary" }],
+  [28, { "size": "ghost" }],
+  [29, {}],
+  [30, {}],
+  [31, {}],
+  [32, { "size": "primary" }],
+  [33, {}],
+  [34, {}],
+  [
+    35,
+    { "side": "primary", "className": "aspect-3/4 h-fit w-fit object-cover" }
+  ],
+  [36, { "orientation": "primary" }],
+  [37, { "className": "cn-combobox-trigger-icon pointer-events-none" }],
+  [38, { "color": "ghost" }],
+  [39, { "tone": "secondary" }],
+  [
+    40,
+    { "loading": false, "className": "[--header-height:calc(--spacing(14))]" }
+  ],
+  [
+    41,
+    {
+      "orientation": "outline",
+      "className": "absolute inset-x-0 top-0 z-1 h-80 bg-linear-to-b from-background via-muted to-transparent dark:via-muted/30"
+    }
+  ],
+  [42, { "align": "primary" }],
+  [43, { "disabled": true, "className": "-ml-1 opacity-50 hover:opacity-100" }],
+  [44, { "loading": false }],
+  [45, { "side": "md" }],
+  [46, { "color": "primary" }],
+  [47, {}],
+  [0, { "size": "sm", "variant": "secondary" }],
+  [1, {}],
+  [2, {}],
+  [3, { "variant": "sm", "className": "bg-transparent" }],
+  [4, { "loading": true }],
+  [5, { "align": "ghost", "className": "-my-4 style-sera:hidden" }],
+  [6, { "loading": true }],
+  [7, {}],
+  [8, { "align": "secondary", "side": "primary" }],
+  [9, { "orientation": "outline" }],
+  [10, { "disabled": true, "align": "ghost", "orientation": "primary" }],
+  [11, { "size": "default" }],
+  [12, {}],
+  [13, { "variant": "secondary" }],
+  [14, { "tone": "secondary" }],
+  [
+    15,
+    { "className": "[[data-side=right][data-collapsible=offcanvas]_&]:-left-2" }
+  ],
+  [16, { "align": "primary", "color": "ghost" }],
+  [
+    17,
+    { "className": "absolute top-4 right-4 z-10 rtl:right-auto rtl:left-4" }
+  ],
+  [18, { "color": "secondary" }],
+  [19, {}],
+  [20, {}],
+  [
+    21,
+    {
+      "side": "outline",
+      "className": "cn-card-action col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+    }
+  ],
+  [22, { "variant": "default" }],
+  [23, { "orientation": "secondary" }],
+  [24, { "side": "primary", "selected": false }],
+  [25, {}],
+  [26, {}],
+  [27, { "size": "secondary" }],
+  [28, {}],
+  [29, {}],
+  [30, { "selected": false }],
+  [31],
+  [32, { "size": "primary" }],
+  [
+    33,
+    {
+      "align": "secondary",
+      "className": "group-data-[size=lg]/avatar:size-3 group-data-[size=lg]/avatar:[&>svg]:size-2"
+    }
+  ],
+  [34],
+  [35, {}],
+  [36, { "color": "sm", "orientation": "sm" }],
+  [
+    37,
+    {
+      "color": "sm",
+      "className": "cn-alert-dialog-overlay fixed inset-0 isolate z-50"
+    }
+  ],
+  [38, { "className": "cn-alert-dialog-overlay fixed inset-0 isolate z-50" }],
+  [39, { "tone": "ghost" }],
+  [40, { "side": "outline" }],
+  [41, { "orientation": "secondary", "className": "size-8" }],
+  [42, { "align": "primary" }],
+  [
+    43,
+    {
+      "disabled": true,
+      "align": "secondary",
+      "className": "absolute top-[0px] left-[122px] z-10 text-sm font-medium"
+    }
+  ],
+  [44, { "loading": true, "size": "default" }],
+  [45, { "side": "secondary", "className": "[--radius:9999rem]" }],
+  [
+    46,
+    {
+      "color": "primary",
+      "className": "border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right"
+    }
+  ],
+  [
+    47,
+    {
+      "tone": "ghost",
+      "className": "[[data-side=right][data-collapsible=offcanvas]_&]:-left-2"
+    }
+  ],
+  [0, {}],
+  [1],
+  [2, { "color": "primary" }],
+  [3, { "className": "animate-pulse text-red-500" }],
+  [4, {}],
+  [
+    5,
+    {
+      "align": "ghost",
+      "className": "absolute top-1/2 right-0 left-0 -translate-y-1/2 border-t-2 border-dotted border-muted-foreground/20"
+    }
+  ],
+  [6, {}],
+  [7],
+  [8, { "align": "primary", "side": "primary" }],
+  [9, {}],
+  [10, {}],
+  [
+    11,
+    {
+      "size": "secondary",
+      "className": "[&_svg]-h-3 h-6 w-6 rounded-[6px] bg-transparent text-foreground shadow-none hover:bg-muted dark:text-foreground [&_svg]:w-3"
+    }
+  ],
+  [12, {}],
+  [13, {}],
+  [14],
+  [15, {}],
+  [16, { "align": "primary" }],
+  [
+    17,
+    {
+      "tone": "outline",
+      "orientation": "outline",
+      "className": "cn-attachment-media relative flex aspect-square shrink-0 items-center justify-center overflow-hidden group-data-[state=error]/attachment:bg-destructive/10 group-data-[state=error]/attachment:text-destructive [&_svg]:pointer-events-none"
+    }
+  ],
+  [18, {}],
+  [19, { "align": "ghost" }],
+  [
+    20,
+    {
+      "orientation": "primary",
+      "className": "cn-attachment group/attachment relative flex max-w-full min-w-0 shrink-0 flex-wrap border bg-card text-card-foreground transition-colors has-[>a,>button]:hover:bg-muted/50 data-[state=error]:border-destructive/30 data-[state=idle]:border-dashed"
+    }
+  ],
+  [21, { "align": "outline" }],
+  [
+    22,
+    {
+      "variant": "default",
+      "className": "cn-button-group-orientation-horizontal **:data-slot:rounded-r-none [&_[data-slot]~[data-slot]]:rounded-l-none [&_[data-slot]~[data-slot]]:border-l-0"
+    }
+  ],
+  [23, { "orientation": "secondary" }],
+  [24, {}],
+  [25, { "variant": "primary" }],
+  [26, { "side": "outline", "color": "default" }],
+  [27, { "size": "outline" }],
+  [28, { "size": "primary" }],
+  [
+    29,
+    {
+      "side": "ghost",
+      "active": false,
+      "className": "-m-1.5 no-scrollbar flex gap-1 overflow-y-auto p-1.5"
+    }
+  ],
+  [30, { "selected": true }],
+  [31, { "orientation": "secondary", "variant": "primary" }],
+  [32],
+  [33, {}],
+  [
+    34,
+    {
+      "className": "absolute top-1/2 right-0 left-0 -translate-y-1/2 border-t-2 border-dotted border-muted-foreground/20"
+    }
+  ],
+  [35, { "side": "primary" }],
+  [
+    36,
+    {
+      "color": "sm",
+      "className": "cn-breadcrumb-ellipsis flex items-center justify-center"
+    }
+  ],
+  [37, { "color": "primary" }],
+  [38, { "color": "ghost" }],
+  [39, { "tone": "secondary" }],
+  [40, { "side": "sm" }],
+  [41, { "className": "h-9 px-4 py-2 has-[>svg]:px-3" }],
+  [42, { "align": "primary" }],
+  [43, { "disabled": false, "align": "ghost" }],
+  [44],
+  [45, {}],
+  [46, { "color": "secondary" }],
+  [47, { "tone": "ghost" }],
+  [0, { "size": "primary" }],
+  [1, {}],
+  [
+    2,
+    {
+      "color": "outline",
+      "className": "absolute top-2 right-2 border bg-background px-2 py-1 text-[0.625rem]"
+    }
+  ],
+  [3],
+  [
+    4,
+    {
+      "loading": true,
+      "className": "group-data-[size=default]/avatar:size-2.5 group-data-[size=default]/avatar:[&>svg]:size-2"
+    }
+  ],
+  [5, { "align": "ghost" }],
+  [6, { "tone": "secondary", "loading": false }],
+  [7, {}],
+  [8, { "align": "secondary" }],
+  [9, { "orientation": "secondary" }],
+  [10, { "disabled": true }],
+  [11, {}],
+  [12, {}],
+  [
+    13,
+    {
+      "className": "aspect-square size-4 rounded-full border border-dashed border-muted-foreground"
+    }
+  ],
+  [14, { "tone": "outline" }],
+  [15],
+  [
+    16,
+    {
+      "className": "bg-blue-600 text-blue-50 dark:bg-blue-600 dark:text-blue-50"
+    }
+  ],
+  [17, { "tone": "secondary", "className": "cn-bubble-variant-tinted" }],
+  [18, { "color": "secondary" }],
+  [19, { "align": "default" }],
+  [20, { "orientation": "primary" }],
+  [21, { "align": "secondary" }],
+  [22, {}],
+  [23, { "orientation": "outline", "loading": true }],
+  [24, { "side": "primary", "size": "primary" }],
+  [25],
+  [
+    26,
+    {
+      "className": "cn-combobox-content cn-combobox-content-logical cn-menu-target cn-menu-translucent group/combobox-content relative max-h-(--available-height) w-(--anchor-width) max-w-(--available-width) min-w-[calc(var(--anchor-width)+--spacing(7))] origin-(--transform-origin) data-[chips=true]:min-w-(--anchor-width)"
+    }
+  ],
+  [27, { "size": "secondary", "className": "bg-muted font-semibold" }],
+  [28, {}],
+  [29, { "active": true }],
+  [30, {}],
+  [31, { "orientation": "secondary", "variant": "outline" }],
+  [32, { "size": "ghost" }],
+  [
+    33,
+    {
+      "variant": "sm",
+      "align": "secondary",
+      "className": "cn-carousel-next absolute touch-manipulation"
+    }
+  ],
+  [34, { "size": "sm" }],
+  [35, { "side": "primary" }],
+  [36, { "color": "primary", "orientation": "secondary" }],
+  [37, { "color": "secondary" }],
+  [38, { "color": "default" }],
+  [39, { "className": "cn-bubble-reactions-align-start" }],
+  [40, { "loading": true }],
+  [41, { "orientation": "ghost" }],
+  [42, { "align": "secondary" }],
+  [43, {}],
+  [44, { "loading": false, "size": "outline" }],
+  [45, { "side": "md" }],
+  [46, { "color": "primary", "className": "cn-button-variant-destructive" }],
+  [47, { "tone": "secondary" }],
+  [0],
+  [1, { "variant": "sm" }],
+  [2, { "color": "outline" }],
+  [3, { "variant": "outline" }],
+  [4, { "loading": false }],
+  [5, { "align": "default" }],
+  [6, { "tone": "sm", "loading": true }],
+  [7, { "size": "secondary", "className": "aspect-auto h-[250px] w-full" }],
+  [8, { "align": "primary" }],
+  [9, { "orientation": "secondary" }],
+  [10, { "disabled": true, "align": "ghost" }],
+  [11, { "size": "secondary" }],
+  [12, { "selected": false }],
+  [13, { "className": "bg-green-600 dark:bg-green-800" }],
+  [14, { "tone": "outline" }],
+  [15, {}],
+  [16, { "className": "cn-combobox-chips" }],
+  [
+    17,
+    {
+      "tone": "primary",
+      "className": "bg-background hover:bg-background/80 data-popup-open:bg-background"
+    }
+  ],
+  [18, { "color": "primary" }],
+  [
+    19,
+    {
+      "align": "secondary",
+      "className": "cn-badge group/badge inline-flex w-fit shrink-0 items-center justify-center overflow-hidden whitespace-nowrap focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&>svg]:pointer-events-none"
+    }
+  ],
+  [20, {}],
+  [21, {}],
+  [22, { "variant": "default" }],
+  [23, { "orientation": "secondary" }],
+  [24, { "side": "primary", "size": "primary" }],
+  [25, { "variant": "primary" }],
+  [26, { "color": "default" }],
+  [27, { "size": "outline", "className": "[&_tr:last-child]:border-0" }],
+  [28, { "size": "primary" }],
+  [
+    29,
+    {
+      "side": "outline",
+      "className": "absolute inset-y-0 right-0 left-62 z-40 bg-transparent"
+    }
+  ],
+  [30, { "selected": false, "className": "border border-dashed" }],
+  [31, {}],
+  [32, { "size": "ghost" }],
+  [
+    33,
+    {
+      "variant": "outline",
+      "align": "secondary",
+      "className": "cn-alert-dialog-content group/alert-dialog-content fixed top-1/2 left-1/2 z-50 grid w-full -translate-x-1/2 -translate-y-1/2 outline-none"
+    }
+  ],
+  [34, { "size": "ghost", "align": "primary" }],
+  [35, { "side": "primary" }],
+  [36, { "className": "cn-command-shortcut" }],
+  [
+    37,
+    { "className": "[[data-side=right][data-collapsible=offcanvas]_&]:-left-2" }
+  ],
+  [38, {}],
+  [
+    39,
+    {
+      "tone": "outline",
+      "className": "cn-combobox-clear-icon pointer-events-none"
+    }
+  ],
+  [40, { "side": "default" }],
+  [41, { "orientation": "outline", "className": "cn-context-menu-shortcut" }],
+  [42, {}],
+  [43, { "disabled": false }],
+  [44, { "size": "outline" }],
+  [
+    45,
+    {
+      "className": "bg-purple-600 text-purple-50 dark:bg-purple-600 dark:text-purple-50"
+    }
+  ],
+  [46, {}],
+  [
+    47,
+    {
+      "className": "border-ghost w-full flex-1 rounded-md bg-(--bg) after:rounded-lg after:border-input md:rounded-lg"
+    }
+  ],
+  [0, { "size": "primary", "variant": "primary" }],
+  [1, { "variant": "ghost" }],
+  [2, { "color": "primary" }],
+  [3, {}],
+  [4, { "className": "border-t bg-card" }],
+  [5, { "align": "default" }],
+  [
+    6,
+    {
+      "loading": true,
+      "className": "border-b transition-colors hover:bg-muted/50 has-aria-expanded:bg-muted/50 data-[state=selected]:bg-muted"
+    }
+  ],
+  [7, {}],
+  [8, {}],
+  [9, { "orientation": "outline" }],
+  [10, {}],
+  [
+    11,
+    {
+      "size": "primary",
+      "className": "cn-bubble-reactions absolute z-10 flex w-fit items-center justify-center"
+    }
+  ],
+  [
+    12,
+    {
+      "className": "cn-accordion-trigger-icon pointer-events-none shrink-0 group-aria-expanded/accordion-trigger:hidden"
+    }
+  ],
+  [13, { "variant": "secondary" }],
+  [14, { "tone": "secondary" }],
+  [15, {}],
+  [16, { "className": "cn-command-separator" }],
+  [17, { "orientation": "secondary" }],
+  [18],
+  [19, {}],
+  [20, { "orientation": "primary" }],
+  [
+    21,
+    {
+      "align": "secondary",
+      "side": "outline",
+      "className": "cn-attachment-media relative flex aspect-square shrink-0 items-center justify-center overflow-hidden group-data-[state=error]/attachment:bg-destructive/10 group-data-[state=error]/attachment:text-destructive [&_svg]:pointer-events-none"
+    }
+  ],
+  [22, { "size": "secondary" }],
+  [23, { "loading": false, "className": "absolute inset-0 top-1/2" }],
+  [24, { "side": "primary" }],
+  [25, { "variant": "primary" }],
+  [26, { "side": "default" }],
+  [27, { "className": "cn-accordion flex w-full flex-col" }],
+  [28, {}],
+  [29, { "active": true }],
+  [
+    30,
+    {
+      "selected": true,
+      "className": "cn-bubble group/bubble relative flex w-fit min-w-0 flex-col"
+    }
+  ],
+  [31, { "variant": "primary" }],
+  [32, { "size": "primary" }],
+  [33, { "variant": "sm" }],
+  [34, { "size": "outline", "align": "primary" }],
+  [35, {}],
+  [36, {}],
+  [37, {}],
+  [38, { "color": "default", "className": "-mr-1 ml-auto rotate-180" }],
+  [39, { "tone": "ghost" }],
+  [40, { "side": "sm", "loading": false, "orientation": "ghost" }],
+  [41, { "orientation": "outline" }],
+  [42, { "align": "primary", "className": "cn-attachment-action" }],
+  [43, { "disabled": false }],
+  [44, { "loading": true }],
+  [45, { "side": "ghost" }],
+  [46, { "color": "outline" }],
+  [47, { "tone": "ghost" }],
+  [0, { "size": "sm" }],
+  [1, { "orientation": "secondary" }],
+  [2, {}],
+  [3, { "variant": "secondary" }],
+  [4, { "loading": false, "className": "cn-button-variant-outline" }],
+  [5, {}],
+  [6, {}],
+  [
+    7,
+    {
+      "className": "group-data-[size=lg]/avatar:size-3 group-data-[size=lg]/avatar:[&>svg]:size-2"
+    }
+  ],
+  [
+    8,
+    {
+      "align": "outline",
+      "className": "absolute inset-x-0 bottom-0 rounded-sm bg-chart-3"
+    }
+  ],
+  [9, { "orientation": "secondary" }],
+  [10, { "disabled": false }],
+  [11, { "size": "secondary" }],
+  [12, { "selected": false }],
+  [13, { "variant": "secondary" }],
+  [14, { "tone": "primary" }],
+  [15],
+  [16, { "align": "primary" }],
+  [17, { "tone": "outline" }],
+  [18, { "color": "primary" }],
+  [19, {}],
+  [20, { "orientation": "primary" }],
+  [
+    21,
+    { "side": "outline", "className": "[--header-height:calc(--spacing(14))]" }
+  ],
+  [
+    22,
+    {
+      "variant": "outline",
+      "className": "cn-attachment-actions flex shrink-0 items-center"
+    }
+  ],
+  [23, { "orientation": "outline" }],
+  [24, { "side": "primary" }],
+  [25, { "variant": "primary" }],
+  [26, {}],
+  [27, {}],
+  [28, {}],
+  [29, { "side": "outline", "active": false }],
+  [30, { "selected": true }],
+  [31, { "variant": "outline", "className": "[--radius:9999rem]" }],
+  [32, {}],
+  [33, { "variant": "outline" }],
+  [34, {}],
+  [35, { "side": "primary" }],
+  [
+    36,
+    {
+      "color": "primary",
+      "orientation": "outline",
+      "className": "cn-checkbox peer relative shrink-0 outline-none after:absolute after:-inset-x-3 after:-inset-y-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  ],
+  [37, { "color": "sm" }],
+  [38, {}],
+  [39, { "tone": "secondary" }],
+  [40, {}],
+  [41, {}],
+  [42, {}],
+  [43, { "disabled": true, "align": "ghost" }],
+  [44],
+  [45, { "side": "md" }],
+  [46],
+  [47, { "tone": "secondary" }],
+  [
+    0,
+    { "size": "ghost", "variant": "secondary", "className": "animate-none!" }
+  ],
+  [1, { "orientation": "secondary" }],
+  [2, {}],
+  [3],
+  [4, { "loading": true, "className": "cn-button-size-icon-sm" }],
+  [5, { "align": "ghost" }],
+  [6, { "tone": "primary", "loading": true }],
+  [7, { "size": "ghost" }],
+  [8, { "align": "primary", "side": "outline" }],
+  [9, {}],
+  [10, { "disabled": true }],
+  [
+    11,
+    {
+      "size": "default",
+      "className": "absolute top-12 right-2 bottom-0 hidden h-full w-px bg-[linear-gradient(to_bottom,transparent_0%,var(--border)_10%,var(--border)_90%,transparent_100%)] lg:flex"
+    }
+  ],
+  [12, { "selected": false, "className": "cn-context-menu-separator" }],
+  [13, { "variant": "ghost", "className": "-mx-6" }],
+  [
+    14,
+    {
+      "tone": "secondary",
+      "className": "cn-breadcrumb-item inline-flex items-center"
+    }
+  ],
+  [15, {}],
+  [16, { "align": "primary", "color": "ghost", "className": "size-10" }],
+  [17, { "tone": "default" }],
+  [18, { "color": "secondary", "active": false }],
+  [19, { "align": "default" }],
+  [20, { "orientation": "primary" }],
+  [21, { "align": "primary" }],
+  [22, { "variant": "outline" }],
+  [23, { "className": "h-9 min-w-9 px-2" }],
+  [24, { "side": "primary" }],
+  [25, { "variant": "primary" }],
+  [
+    26,
+    {
+      "side": "outline",
+      "className": "cn-alert-dialog-content group/alert-dialog-content fixed top-1/2 left-1/2 z-50 grid w-full -translate-x-1/2 -translate-y-1/2 outline-none"
+    }
+  ],
+  [27, {}],
+  [28, {}],
+  [29, { "side": "ghost" }],
+  [30, { "selected": true }],
+  [31, { "variant": "primary" }],
+  [32, {}],
+  [33, { "variant": "outline", "className": "cn-combobox-chip-remove" }],
+  [34, { "size": "outline", "align": "outline" }],
+  [35, { "side": "primary" }],
+  [36, {}],
+  [37, { "className": "cn-command-list overflow-x-hidden overflow-y-auto" }],
+  [38, { "color": "default" }],
+  [39, {}],
+  [40, { "side": "outline", "loading": true }],
+  [41, { "orientation": "default" }],
+  [42],
+  [43, {}],
+  [44, {}],
+  [
+    45,
+    {
+      "className": "absolute z-10 flex w-fit shrink-0 items-center justify-center gap-1 rounded-full bg-muted px-1.5 py-0.5 text-sm ring-3 ring-card has-[button]:p-0"
+    }
+  ],
+  [46, { "color": "primary" }],
+  [47, {}],
+  [0, { "size": "primary" }],
+  [1, { "className": "bottom" }],
+  [2, { "color": "primary" }],
+  [3, {}],
+  [4, {}],
+  [5, { "align": "default" }],
+  [6, { "tone": "secondary" }],
+  [7, { "size": "ghost" }],
+  [8, {}],
+  [9, { "orientation": "outline" }],
+  [10, { "disabled": true }],
+  [11, {}],
+  [12, { "selected": false }],
+  [13, {}],
+  [14, {}],
+  [15, { "className": "cn-alert-dialog-description" }],
+  [
+    16,
+    {
+      "align": "primary",
+      "className": "block truncate text-xs text-muted-foreground"
+    }
+  ],
+  [17, { "tone": "secondary" }],
+  [18, { "color": "primary", "active": false }],
+  [19, { "align": "secondary" }],
+  [20, { "orientation": "primary" }],
+  [
+    21,
+    {
+      "align": "primary",
+      "className": "in-data-[side=left]:cursor-w-resize in-data-[side=right]:cursor-e-resize"
+    }
+  ],
+  [22],
+  [23, { "orientation": "outline" }],
+  [24, { "side": "primary", "size": "secondary", "selected": true }],
+  [25, {}],
+  [26, { "side": "outline" }],
+  [27, {}],
+  [28, { "size": "primary", "className": "cn-combobox-empty" }],
+  [
+    29,
+    { "side": "outline", "active": true, "className": "top-[0.4rem] rotate-45" }
+  ],
+  [30],
+  [31, { "orientation": "secondary", "variant": "primary" }],
+  [32, { "size": "primary" }],
+  [33, { "variant": "outline" }],
+  [34, { "size": "primary" }],
+  [35, { "side": "primary" }],
+  [36, {}],
+  [37],
+  [38, { "color": "outline" }],
+  [39, {}],
+  [40, { "side": "sm", "loading": false }],
+  [41, { "orientation": "default", "className": "cn-attachment-size-sm" }],
+  [42, { "align": "secondary" }],
+  [43, { "disabled": true, "align": "secondary" }],
+  [44, { "loading": true }],
+  [45, {}],
+  [46, { "color": "outline" }],
+  [
+    47,
+    {
+      "tone": "ghost",
+      "className": "absolute top-1.5 right-1 flex aspect-square w-5 items-center justify-center rounded-md p-0 text-sidebar-foreground ring-sidebar-ring outline-hidden transition-transform peer-hover/menu-button:text-sidebar-accent-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0"
+    }
+  ]
+]
