@@ -42,11 +42,12 @@ import {
   compileModel, compileStats, compileToSource, compileToTables, subsetConfig,
   type CompileStats, type CompiledTables, type EmitOptions, type SubsetResult,
 } from "cn/compiler"
+import clsxDefault, { clsx as clsxEntry } from "cn/clsx"
 import liteDefault, { clsx as liteClsx } from "cn/lite"
 
 // clsx-style variadic signatures (0.2.1 published lite's clsx as \`(): string\`)
 const sigs: ((...inputs: ClassValue[]) => string)[] = [
-  cn, clsx, liteClsx, liteDefault, engineClsx,
+  cn, clsx, clsxDefault, clsxEntry, liteClsx, liteDefault, engineClsx,
 ]
 void sigs
 cn("p-2", ["p-4", { "text-sm": true }], undefined, 0, false && "x")
@@ -61,6 +62,9 @@ void engineCreateEngine(tables)
 engine.merge("p-2", "p-4")
 engine.mergeString("p-2 p-4")
 const bound: CnFunction = engineCreateCn(tables)
+bound.clearCache()
+cn.clearCache()
+engine.clearCache()
 bound("p-2", { "p-4": true })
 wrapClsx(engine.mergeString)("p-2", ["p-4"])
 

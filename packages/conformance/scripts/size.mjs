@@ -24,16 +24,23 @@ const measure = async (label, entrySource) => {
     format: "esm",
     write: false,
     target: "es2022",
+    metafile: true,
     absWorkingDir: pkgRoot,
     nodePaths: [join(pkgRoot, "node_modules"), join(wsRoot, "node_modules")],
   })
   const bytes = r.outputFiles[0].contents
-  return { label, min: bytes.length, gz: gzipSync(bytes, { level: 9 }).length }
+  return {
+    label,
+    min: bytes.length,
+    gz: gzipSync(bytes, { level: 9 }).length,
+    inputs: Object.keys(r.metafile.inputs),
+  }
 }
 
 const rows = [
   await measure("cn (default entry)", `export { cn } from 'cn'`),
   await measure("cn (twMerge only)", `export { twMerge } from 'cn'`),
+  await measure("cn/clsx", `export { default, clsx } from 'cn/clsx'`),
   await measure("tailwind-merge", `export { twMerge } from 'tailwind-merge'`),
   await measure(
     "clsx+tailwind-merge",
@@ -61,7 +68,7 @@ for (const r of rows)
 //      headline reproducible and fix a 6-15× real-repo corpus regression.
 //      Vs cnfast 0.2.0 gzip is ~25% under, so this band is currently slack;
 //      the absolute budget below is the binding constraint
-//   3. absolute transfer budget: 10,800 B (creep tripwire); raised from
+//   3. absolute transfer budget: 11,100 B (creep tripwire); raised from
 //      10,500 on 2026-09-01 for the int32 epoch guard (~20 B), to 10,650
 //      the same day for routing object/array args through the arg cache,
 //      the lone-array arg path, and the JSC-only thin cache front (~85 B
@@ -74,11 +81,18 @@ for (const r of rows)
 //      2026-09-02 for the claim-table fix (~130 B: Float64 claim keys so
 //      group ids cannot alias, a tables-derived claim factor so wide
 //      custom conflict groups cannot fill the table, and a per-merge id
-//      guard), and to 11,000 on 2026-09-02 for Unicode whitespace parity
-//      (~77 B: \s-complete separator scan and twJoin array-like values)
+//      guard), to 11,000 on 2026-09-02 for Unicode whitespace parity
+//      (~77 B: \s-complete separator scan and twJoin array-like values), and
+//      to 11,100 for the explicit cache-reset API (~89 B over main on CI's
+//      zlib), which releases learned strings and oversized work buffers
 const ours = rows[0]
-const cnfast = rows[4]
+const clsxEntry = rows[2]
+const cnfast = rows[5]
 let fail = false
+if (clsxEntry.inputs.some((path) => /cn[\\/]dist[\\/]tables\.js$/.test(path))) {
+  console.error("SIZE GATE FAIL: cn/clsx pulled in the default Tailwind table")
+  fail = true
+}
 if (ours.min >= cnfast.min) {
   console.error(
     `SIZE GATE FAIL (parse): cn ${ours.min} >= cnfast ${cnfast.min}`
@@ -91,13 +105,13 @@ if (ours.gz > cnfast.gz * 1.08) {
   )
   fail = true
 }
-if (ours.gz > 11000) {
-  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 11000`)
+if (ours.gz > 11100) {
+  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 11100`)
   fail = true
 }
 if (fail) process.exit(1)
 console.log(
-  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 11000`
+  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 11100`
 )
 
 // ---------------------------------------------------------------------------

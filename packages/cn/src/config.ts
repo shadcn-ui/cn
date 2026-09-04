@@ -102,6 +102,7 @@ export const createCn = (input?: CreateCnInput): CnFunction => {
   return wrapClsx((s: string) => getEngine().mergeString(s), {
     seenBefore: (s: string) => getEngine().seenBefore(s),
     mergeUncached: (s: string) => getEngine().mergeUncached(s),
+    clearCache: () => engine?.clearCache(),
   })
 }
 

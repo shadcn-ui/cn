@@ -1133,6 +1133,46 @@ export const createEngine = (
           }
         : mergeCached
 
+  const clearCache = (): void => {
+    cache = Object.create(null)
+    prevCache = Object.create(null)
+    cacheMap = new Map()
+    prevCacheMap = new Map()
+    cacheCount = 0
+    door.fill(0)
+    doorBase = 0
+    doorEpoch = 1
+    doorMarks = 0
+
+    ctxByHash = new Map()
+    ctxByCanon = new Map()
+    nextCtxId = 2
+    dynByHash = new Map()
+    nextDynId = GROUP_COUNT
+    memoReset()
+    memoTick = 0
+
+    cap = 256
+    tokI32 = [
+      new Int32Array(cap),
+      new Int32Array(cap),
+      new Int32Array(cap),
+      new Int32Array(cap),
+    ]
+    ;[tokStart, tokEnd, tokGid, tokCtx] = tokI32
+    tokFlags = new Uint8Array(cap)
+    keep = new Uint8Array(cap)
+    ckptCap = 64
+    ckptNode = new Int32Array(ckptCap)
+    ckptTail = new Int32Array(ckptCap)
+    claim0.fill(0)
+    CLAIM_TABLE = 2048
+    claimShift = 21
+    claimKeys = new Float64Array(CLAIM_TABLE)
+    claimEpochs = new Int32Array(CLAIM_TABLE)
+    epoch = 0
+  }
+
   const merge = function (): string {
     return arguments.length === 1 && typeof arguments[0] === "string"
       ? mergeString(arguments[0])
@@ -1144,6 +1184,7 @@ export const createEngine = (
     mergeString,
     seenBefore: cacheSize === 0 ? () => false : seenBefore,
     mergeUncached: mergeClassList,
+    clearCache,
   }
 }
 
@@ -1245,6 +1286,14 @@ export const wrapClsx = (
   let prevArgCache = new Map<string, ArgEntry[]>()
   let argCount = 0
   let lastHit: ArgEntry | null = null
+
+  const clearCache = (): void => {
+    argCache = new Map()
+    prevArgCache = new Map()
+    argCount = 0
+    lastHit = null
+    fresh?.clearCache?.()
+  }
 
   // unrolled truthy-sequence verify for arity ≤ 3, against the entry's
   // monomorphic fields. Arity-2 calls pass '' as v2: a falsy pad skips the
@@ -1407,7 +1456,11 @@ export const wrapClsx = (
   // `arguments` (still used for arity and the 4+ overflow copy). Arity 2
   // rides the same branch as 3: an absent v2 is undefined, and a falsy pad
   // behaves identically to '' through the probes and the resolve path.
-  return function (v0?: ClassValue, v1?: ClassValue, v2?: ClassValue): string {
+  const cn = function (
+    v0?: ClassValue,
+    v1?: ClassValue,
+    v2?: ClassValue
+  ): string {
     const nArgs = arguments.length
     if ((nArgs | 1) === 3) {
       // arity 2 or 3
@@ -1476,6 +1529,8 @@ export const wrapClsx = (
     for (let i = 0; i < nArgs; i++) vals.push(arguments[i])
     return resolveArgs(vals, true)
   } as CnFunction
+  cn.clearCache = clearCache
+  return cn
 }
 
 /**

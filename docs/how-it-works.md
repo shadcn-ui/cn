@@ -35,6 +35,11 @@ Real renders repeat themselves, so three caches sit on top:
   One-off SSR strings never churn the cache; real working sets warm fully.
 - **Token memo.** Repeated classes inside new strings stay cheap.
 
+These caches are bounded. If an application knows that a large temporary
+class-string workload is finished, `cn.clearCache()` releases its learned
+strings and returns oversized work buffers to their initial sizes. Compiled
+Tailwind tables stay loaded. Normal applications do not need to call it.
+
 ## What this buys you
 
 1. **Speed.** No config interpretation at runtime.

@@ -100,10 +100,18 @@ export interface Engine {
   seenBefore: (input: string) => boolean
   /** merge one string, bypassing the whole-string cache */
   mergeUncached: (input: string) => string
+  /** release learned strings and return reusable scratch buffers to defaults */
+  clearCache: () => void
 }
 
 /** what `wrapClsx` needs from an engine to handle freshly joined strings */
-export type FreshMerge = Pick<Engine, "seenBefore" | "mergeUncached">
+export type FreshMerge = Pick<Engine, "seenBefore" | "mergeUncached"> & {
+  clearCache?: () => void
+}
 
 /** the `cn` function shape: clsx arguments, merged output */
-export type CnFunction = (...inputs: ClassValue[]) => string
+export interface CnFunction {
+  (...inputs: ClassValue[]): string
+  /** release learned strings and return reusable scratch buffers to defaults */
+  clearCache: () => void
+}
