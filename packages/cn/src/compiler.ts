@@ -972,11 +972,21 @@ export const compileToSource = (
     ps: ts ? "(counts: Int32Array): Int32Array" : "(counts)",
     dz: ts ? "(s: string): Int32Array" : "(s)",
   }
-  // sets serialized as plain text in intern order — gzip dedupes repeated
-  // tails across sets better than any hand-rolled reference stream (both an
-  // interned unique-tail pool and lexicographic set reordering measured
-  // *larger* after gzip; the id-stream noise outweighs text locality).
-  const setsText = m.sets.map((s) => s.join(" ")).join("|")
+  // Sorted literal sets store their common prefix once.
+  const setsText = m.sets
+    .map((tails) => {
+      const first = tails[0]!
+      const last = tails[tails.length - 1]!
+      let length = 0
+      while (length < first.length && first[length] === last[length]) {
+        length++
+      }
+      return [
+        first.slice(0, length),
+        ...tails.map((tail) => tail.slice(length)),
+      ].join(" ")
+    })
+    .join("|")
   const attAnchorDelta: number[] = []
   const attGid: number[] = []
   const attSet: number[] = []
@@ -1059,8 +1069,14 @@ const nodeVlist = (() => {
     for (let i = 0; i < A.length; i++) out[A[i]] = V[i]
     return out
 })()
-// literal tail sets as plain text; unique tails interned at load
-const SETS = ${JSON.stringify(setsText)}.split('|').map((s) => s.split(' '))
+const SETS = ${JSON.stringify(setsText)}.split('|').map((s) => {
+    const tails = s.split(' ')
+    const prefix = tails.shift()${ts ? "!" : ""}
+    for (let i = 0; i < tails.length; i++) {
+        tails[i] = prefix + tails[i]
+    }
+    return tails
+})
 const AA = DZ(${packStr(zig(attAnchorDelta))})
 const AG = DZ(${packStr(zig(deltas(attGid)))})
 const AS = DZ(${packStr(zig(deltas(attSet)))})

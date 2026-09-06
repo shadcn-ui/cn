@@ -32,7 +32,8 @@ Two files are generated and checked in:
 
 - `packages/cn/src/default-config.generated.ts` — tailwind-merge's default config,
   vendored into a JSON marker form (`{$v: "isNumber"}` validators,
-  `{$t: "spacing"}` theme refs) by `packages/conformance/scripts/vendor-config.mjs`.
+  `{$t: "spacing"}` theme refs) by `packages/conformance/scripts/vendor-config.mjs`,
+  with cn's additive grammar fixes applied by that script.
 - `packages/cn/src/tables.generated.ts` — the default tables, compiled from the vendored
   config by `packages/cn/scripts/compile-tables.mjs`.
 
@@ -46,6 +47,23 @@ devDependency.
 2. `pnpm vendor-config && pnpm build && pnpm compile-tables && pnpm build`
 3. `pnpm test` — the differential suites verify parity with the new version.
 4. Commit the regenerated files; release.
+
+The default grammar currently includes fixes beyond tailwind-merge 3.6.0.
+The explicit classification and merge regressions live in
+`packages/conformance/tests/default-config.mjs`. Differential tests use an
+independent tailwind-merge extension in `tests/reference.mjs` for these fixes;
+the remaining upstream semantics stay unchanged. When updating upstream,
+review both sets of additions and remove any that upstream now provides.
+
+The Tailwind [4.1](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.1.0),
+[4.2](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.2.0), and
+[4.3](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.0) audit found
+that masks, text shadows, overflow wrapping, field sizing, inset shadows,
+logical utilities, scrollbars, and container query variants already have
+coverage. Numeric auto-grid tracks were added in
+[4.3.2](https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.2).
+Containment flags use separate groups because Tailwind's independent
+`--tw-contain-*` variables allow `contain-layout contain-paint` to compose.
 
 ## CI gates (all must pass)
 

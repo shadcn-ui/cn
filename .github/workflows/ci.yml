@@ -28,6 +28,8 @@ jobs:
         env:
           FUZZ_ITERS: "300000"
       - run: node packages/conformance/tests/custom-config.mjs
+      - run: node packages/conformance/tests/default-config.mjs
+      - run: node packages/conformance/tests/table-encoding.mjs
       - run: node packages/conformance/tests/cli.mjs
       - run: node packages/conformance/tests/hardening.mjs
       - run: node packages/conformance/tests/bounds.mjs

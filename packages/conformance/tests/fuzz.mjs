@@ -1,7 +1,8 @@
 // Grammar-based differential fuzz vs tailwind-merge, run against dist/.
 // Iterations: FUZZ_ITERS env (default 100000; CI uses 300000).
 import { twMerge } from "cn"
-import { twMerge as ref } from "tailwind-merge"
+
+import { ref } from "./reference.mjs"
 
 const ITERS = Number(process.env.FUZZ_ITERS ?? 100000)
 
@@ -54,6 +55,9 @@ const variants = [
   "starting",
   "@md",
   "@lg/main",
+  "@min-sm",
+  "@max-lg",
+  "@[30rem]",
   "nth-3",
   "nth-last-[2n]",
 ]
@@ -134,6 +138,14 @@ const bases = [
   "rotate-x",
   "perspective",
   "transform",
+  "animate",
+  "contain",
+  "max-h",
+  "inline",
+  "min-inline",
+  "max-inline",
+  "auto-cols",
+  "auto-rows",
 ]
 const values = [
   "0",
@@ -174,6 +186,22 @@ const values = [
   "serif",
   "[600]",
   "video",
+  "in",
+  "out",
+  "wiggle",
+  "[wiggle_1s_linear_infinite]",
+  "content",
+  "strict",
+  "inline-size",
+  "layout",
+  "paint",
+  "style",
+  "[layout_paint]",
+  "conic",
+  "gradient-to-r",
+  "linear-to-t",
+  "inner",
+  "xs",
 ]
 const standalone = [
   "flex",
@@ -207,6 +235,29 @@ const standalone = [
   "grow",
   "shrink",
   "@container",
+  "animate-spin",
+  "animate-in",
+  "animate-out",
+  "contain-size",
+  "contain-inline-size",
+  "contain-layout",
+  "contain-paint",
+  "contain-style",
+  "contain-none",
+  "contain-content",
+  "contain-strict",
+  "bg-gradient-to-r",
+  "bg-linear-to-t",
+  "bg-conic",
+  "bg-red-500",
+  "columns-auto",
+  "max-h-none",
+  "inline-xs",
+  "min-inline-xs",
+  "max-inline-xs",
+  "auto-cols-16",
+  "auto-rows-12",
+  "shadow-inner",
   "foo",
   "my-custom",
   "[color:red]",

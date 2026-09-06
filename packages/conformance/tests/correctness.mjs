@@ -3,7 +3,8 @@
 import { cn, twMerge } from "cn"
 import { createEngine } from "cn/engine"
 import tables from "cn/tables"
-import { twMerge as ref } from "tailwind-merge"
+
+import { ref } from "./reference.mjs"
 
 const uncached = createEngine(tables, undefined, { cacheSize: 0 }).mergeUncached
 
