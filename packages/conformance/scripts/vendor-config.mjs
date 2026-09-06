@@ -58,6 +58,49 @@ const vendored = {
   postfixLookupClassGroups: config.postfixLookupClassGroups ?? [],
 }
 
+// Additions to tailwind-merge 3.6.0's grammar. Keep these here so vendoring
+// and the generated-file freshness check reproduce cn's default config.
+vendored.theme.animate = [{ $v: "isAny" }]
+vendored.classGroups.contain = [
+  {
+    contain: [
+      "none",
+      "content",
+      "strict",
+      { $v: "isArbitraryVariable" },
+      { $v: "isArbitraryValue" },
+    ],
+  },
+]
+vendored.classGroups["contain-size"] = [{ contain: ["size", "inline-size"] }]
+vendored.classGroups["contain-layout"] = ["contain-layout"]
+vendored.classGroups["contain-paint"] = ["contain-paint"]
+vendored.classGroups["contain-style"] = ["contain-style"]
+vendored.conflictingClassGroups.contain = [
+  "contain-size",
+  "contain-layout",
+  "contain-paint",
+  "contain-style",
+]
+for (const group of vendored.conflictingClassGroups.contain) {
+  vendored.conflictingClassGroups[group] = ["contain"]
+}
+vendored.classGroups["bg-image"].push({
+  "bg-gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"],
+})
+vendored.classGroups["bg-image"].push("bg-conic")
+vendored.classGroups.columns.push("columns-auto")
+vendored.classGroups["max-h"].push("max-h-none")
+vendored.classGroups.shadow.push("shadow-inner")
+for (const prefix of ["inline", "min-inline", "max-inline"]) {
+  vendored.classGroups[`${prefix}-size`].push({
+    [prefix]: [{ $t: "container" }],
+  })
+}
+for (const prefix of ["auto-cols", "auto-rows"]) {
+  vendored.classGroups[prefix].push({ [prefix]: [{ $t: "spacing" }] })
+}
+
 const json = JSON.stringify(vendored)
 const groupIds = Object.keys(vendored.classGroups)
   .map((n) => JSON.stringify(n))
