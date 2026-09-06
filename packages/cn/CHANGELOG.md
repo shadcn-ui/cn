@@ -1,5 +1,11 @@
 # cn
 
+## 0.2.6
+
+### Patch Changes
+
+- [#74](https://github.com/shadcn-ui/cn/pull/74) [`947e624`](https://github.com/shadcn-ui/cn/commit/947e6248c952660f80ba9955bc2b6da60a530d8f) Thanks [@shadcn](https://github.com/shadcn)! - Fix merging for custom animations, containment, legacy gradients, and missing Tailwind v4 utilities.
+
 ## 0.2.5
 
 ### Patch Changes
