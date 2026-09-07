@@ -15,7 +15,7 @@ import {
   statSync,
   writeFileSync,
 } from "node:fs"
-import { basename, dirname, join, resolve, sep } from "node:path"
+import { basename, dirname, join, relative, resolve, sep } from "node:path"
 import { pathToFileURL } from "node:url"
 import { compileToSource, mergeConfigs, subsetConfig } from "./compiler"
 import { defaultConfig } from "./config"
@@ -204,6 +204,47 @@ export const expandGlobs = (
   return [...files]
 }
 
+/**
+ * Build a predicate that tells whether an absolute path would be scanned by
+ * `expandGlobs` with the same patterns: it applies the same literal-path,
+ * glob, and ignored-directory rules without touching the filesystem.
+ */
+export const createContentMatcher = (
+  patterns: readonly string[],
+  cwd: string
+) => {
+  const normalized = patterns.map((raw) =>
+    raw.replace(/\\/g, "/").replace(/^\.\//, "")
+  )
+  const optIn = normalized.map(literalPrefix).filter(Boolean)
+  const literals = normalized.filter((p) => !/[*?{]/.test(p))
+  const regexes = normalized.filter((p) => /[*?{]/.test(p)).map(globToRegex)
+  const isPruned = (rel: string) => {
+    const segs = rel.split("/")
+    let path = ""
+    for (let i = 0; i < segs.length - 1; i++) {
+      const name = segs[i]
+      path = path ? path + "/" + name : name
+      if (name === ".git") return true
+      if (IGNORED_DIRS.has(name) || name.startsWith(".")) {
+        const dir = path
+        if (!optIn.some((p) => p === dir || p.startsWith(dir + "/")))
+          return true
+      }
+    }
+    return false
+  }
+  return (file: string) => {
+    const rel = relative(cwd, file).split(sep).join("/")
+    if (!rel || rel.startsWith("../") || rel === "..") return false
+    for (const lit of literals) {
+      if (rel === lit || rel.startsWith(lit + "/")) return true
+    }
+    if (isPruned(rel)) return false
+    return regexes.some((re) => re.test(rel))
+  }
+}
+
 // ---- candidate extraction (over-approximation is safe: unknown tokens only
 // classify as "not a Tailwind class"; missing tokens are the danger) ---------
 const CANDIDATE_RE = /[^<>"'`\s]*[^<>"'`\s:]/g
@@ -339,6 +380,7 @@ export const build = async (
     }
   }
 
+  const fullConfig = config
   let usedGroups: number | null = null
   let totalGroups: number | null = null
   if (!options.full) {
@@ -355,13 +397,23 @@ export const build = async (
 //   import { createCn } from "cn/engine"
 //   export const cn = createCn(tables)`
   const source = compileToSource(config, { lang, banner })
+  // Leave an identical module untouched so watchers and caches keyed on the
+  // file don't fire for a no-op rebuild.
+  let changed
   try {
-    mkdirSync(dirname(outPath), { recursive: true })
-    writeFileSync(outPath, source)
-  } catch (err) {
-    throw new Error(`cannot write ${out}: ${(err as Error).message}`, {
-      cause: err,
-    })
+    changed = readFileSync(outPath, "utf8") !== source
+  } catch {
+    changed = true
+  }
+  if (changed) {
+    try {
+      mkdirSync(dirname(outPath), { recursive: true })
+      writeFileSync(outPath, source)
+    } catch (err) {
+      throw new Error(`cannot write ${out}: ${(err as Error).message}`, {
+        cause: err,
+      })
+    }
   }
 
   return {
@@ -369,8 +421,14 @@ export const build = async (
     outPath,
     /** The emitted module source. */
     source,
+    /** False when the file already held this exact source and was left alone. */
+    changed,
     /** Candidate tokens the subset was fitted to. Empty with `full`. */
     tokens,
+    /** The config the tables were compiled from, after subsetting. */
+    config,
+    /** The config before subsetting, with any extension applied. */
+    fullConfig,
     /** Files read during the scan. Zero with `tokens` or `full`. */
     scannedFiles,
     /** Class groups kept, or null with `full`. */
@@ -379,5 +437,83 @@ export const build = async (
     totalGroups,
     /** Non-fatal problems, in the words the CLI prints. */
     warnings,
+  }
+}
+
+/**
+ * A `build()` that knows when to run again. `run()` builds, coalescing
+ * concurrent calls into one in-flight build plus at most one follow-up.
+ * `changed(file)` is for watchers: it rebuilds only when the file is inside
+ * the content globs and uses a class group the last build dropped.
+ * Deleted files never need a rebuild, since a subset fitted to more classes
+ * is still correct. With `full` or `tokens` the tables don't depend on
+ * sources, so `changed` never rebuilds.
+ */
+export const createBuilder = (options: Parameters<typeof build>[0] = {}) => {
+  const cwd = options.cwd ?? process.cwd()
+  const matches = createContentMatcher(
+    options.content?.length ? options.content : DEFAULT_CONTENT,
+    cwd
+  )
+  let last: Awaited<ReturnType<typeof build>> | null = null
+  let running: Promise<Awaited<ReturnType<typeof build>>> | null = null
+  let queued = false
+
+  const run = (): Promise<Awaited<ReturnType<typeof build>>> => {
+    if (running) {
+      queued = true
+      return running
+    }
+    running = build(options).then(
+      (result) => {
+        last = result
+        running = null
+        if (queued) {
+          queued = false
+          return run()
+        }
+        return result
+      },
+      (err) => {
+        running = null
+        queued = false
+        throw err
+      }
+    )
+    return running
+  }
+
+  const changed = async (file: string) => {
+    if (!last) return run()
+    if (options.full || options.tokens) return last
+    const abs = resolve(cwd, file)
+    if (abs === last.outPath || !matches(abs)) return last
+    let text
+    try {
+      text = readFileSync(abs, "utf8")
+    } catch {
+      return last
+    }
+    const fresh = new Set<string>()
+    extractTokens(text, fresh)
+    for (const t of last.tokens) fresh.delete(t)
+    if (fresh.size === 0) return last
+    // Classify only the unseen candidates. A class whose group the tables
+    // kept already merges correctly; one that reaches a dropped group means
+    // the subset no longer covers the sources.
+    const reached = subsetConfig(last.fullConfig, fresh).config.classGroups
+    for (const group in reached) {
+      if (!(group in last.config.classGroups)) return run()
+    }
+    return last
+  }
+
+  return {
+    run,
+    changed,
+    /** Result of the most recent completed build, or null before the first. */
+    get last() {
+      return last
+    },
   }
 }

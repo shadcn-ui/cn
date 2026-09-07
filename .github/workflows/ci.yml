@@ -31,6 +31,7 @@ jobs:
       - run: node packages/conformance/tests/default-config.mjs
       - run: node packages/conformance/tests/table-encoding.mjs
       - run: node packages/conformance/tests/cli.mjs
+      - run: node packages/conformance/tests/plugins.mjs
       - run: node packages/conformance/tests/hardening.mjs
       - run: node packages/conformance/tests/bounds.mjs
       - run: node packages/conformance/tests/join.mjs
