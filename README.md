@@ -189,6 +189,8 @@ Every export maps to the same name or a familiar one:
 - **`cn/engine`**: `createCn(tables, ...)`, `createEngine(tables, ...)` for
   build-time compiled tables
 - **`cn/lite`**: `clsx(...)`, strings-only join (`clsx/lite` parity)
+- **`cn/build`**: `build(options)`, the library behind the CLI, for custom
+  pipelines and bundler plugins
 - **CLI**: `npx cn build --help`
 
 ## Credits

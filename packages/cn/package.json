@@ -61,6 +61,16 @@
         "default": "./dist/compiler.cjs"
       }
     },
+    "./build": {
+      "import": {
+        "types": "./dist/build.d.ts",
+        "default": "./dist/build.js"
+      },
+      "require": {
+        "types": "./dist/build.d.cts",
+        "default": "./dist/build.cjs"
+      }
+    },
     "./lite": {
       "import": {
         "types": "./dist/lite.d.ts",
@@ -96,6 +106,7 @@
     "merge"
   ],
   "devDependencies": {
+    "@types/node": "^20.19.43",
     "tsdown": "^0.12.0",
     "typescript": "^5.7.0"
   },

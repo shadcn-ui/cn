@@ -114,6 +114,30 @@ output — so it caches cleanly:
 }
 ```
 
+## From a script
+
+`cn/build` is the function the CLI calls. Use it when a shell step doesn't
+fit: a custom build script, a bundler plugin, a monorepo task runner that
+wants a JavaScript API. Every CLI option is a field with the same name, and
+errors throw with the message the CLI would print.
+
+```ts
+import { build } from "cn/build"
+
+const result = await build({
+  cwd: process.cwd(),
+  content: ["src/**/*.{ts,tsx}"],
+  out: "src/lib/cn-tables.ts",
+})
+
+console.log(`${result.usedGroups}/${result.totalGroups} class groups kept`)
+for (const warning of result.warnings) console.warn(warning)
+```
+
+The result carries the written path, the emitted source, the candidate
+tokens the tables were fitted to, and the group counts, so a caller can log,
+cache, or decide when to rebuild.
+
 ## Custom themes
 
 Add `--config` to the same command and the theme is baked into the generated

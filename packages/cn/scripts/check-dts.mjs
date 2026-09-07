@@ -43,6 +43,7 @@ import {
   type CompileStats, type CompiledTables, type EmitOptions, type SubsetResult,
 } from "cn/compiler"
 import liteDefault, { clsx as liteClsx } from "cn/lite"
+import { build, expandGlobs, extractTokens } from "cn/build"
 
 // clsx-style variadic signatures (0.2.1 published lite's clsx as \`(): string\`)
 const sigs: ((...inputs: ClassValue[]) => string)[] = [
@@ -100,6 +101,15 @@ void compileModel(merged)
 const stats: CompileStats = compileStats(merged)
 const subset: SubsetResult = subsetConfig(merged, ["p-2", "text-sm"])
 void [source, stats, subset]
+
+// build: the library behind the CLI
+const built: Promise<{ outPath: string; source: string; warnings: string[] }> =
+  build({ cwd: ".", content: ["src/**/*.{ts,tsx}"], out: "cn-tables.ts" })
+void build()
+void built
+const skipped: number = extractTokens("p-2 p-4", new Set<string>())
+const files: string[] = expandGlobs(["src/**/*.ts"], ".")
+void [skipped, files]
 
 // type-only exports stay importable from every entry that declares them
 const groupDef: ClassGroupDef = { $t: "spacing" }

@@ -14,6 +14,7 @@ import {
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { fileURLToPath, pathToFileURL } from "node:url"
+import { build } from "cn/build"
 import { createCn } from "cn/engine"
 import { twMerge as ref } from "tailwind-merge"
 
@@ -322,6 +323,61 @@ try {
       readFileSync(join(selfDir, output), "utf8") ===
         readFileSync(join(selfDir, "expected", "cn-tables.ts"), "utf8")
     )
+  }
+
+  // ---- the library entry produces the same module as the CLI -----------------
+  {
+    const cli = run([
+      "build",
+      "--cwd",
+      dir,
+      "--content",
+      "src/**/*.{ts,tsx}",
+      "--safelist",
+      "safelist.txt",
+      "--config",
+      "cn.config.mjs",
+      "-o",
+      "t-cli.ts",
+      "-q",
+    ])
+    expect("lib-cli-exit", cli.status === 0, cli.stderr)
+    const lib = await build({
+      cwd: dir,
+      content: ["src/**/*.{ts,tsx}"],
+      safelist: "safelist.txt",
+      config: "cn.config.mjs",
+      out: "t-lib.ts",
+    })
+    expect(
+      "lib-parity",
+      readFileSync(join(dir, "t-cli.ts"), "utf8") ===
+        readFileSync(lib.outPath, "utf8").replace("t-lib.ts", "t-cli.ts")
+    )
+    expect("lib-result", lib.usedGroups > 0 && lib.usedGroups < lib.totalGroups)
+    expect(
+      "lib-tokens",
+      lib.tokens.has("columns-2") && lib.tokens.has("list-disc"),
+      [...lib.tokens].slice(0, 5).join(" ")
+    )
+    // The long arbitrary value in src/long.tsx is under the cap, so no warning.
+    expect(
+      "lib-no-warnings",
+      lib.warnings.length === 0,
+      lib.warnings.join("; ")
+    )
+    // Errors carry the message the CLI prints after its "cn: " prefix.
+    let message = ""
+    try {
+      await build({
+        cwd: dir,
+        content: ["nothing/**/*.zzz"],
+        out: "t-none.mjs",
+      })
+    } catch (err) {
+      message = err.message
+    }
+    expect("lib-throws", message.includes("no files matched"), message)
   }
 
   // ---- error paths use the cn: prefix and exit 1 ----------------------------
