@@ -8,6 +8,7 @@ export default defineConfig({
     tables: "src/tables.generated.ts",
     config: "src/config.ts",
     compiler: "src/compiler.ts",
+    build: "src/build.ts",
     lite: "src/lite.ts",
   },
   format: ["esm", "cjs"],
