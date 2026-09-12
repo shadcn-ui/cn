@@ -1,5 +1,13 @@
 # cn
 
+## 0.3.0
+
+### Minor Changes
+
+- [#137](https://github.com/shadcn-ui/cn/pull/137) [`9a9c9b5`](https://github.com/shadcn-ui/cn/commit/9a9c9b5fc025a66269f83ee1895dff4beb127e11) Thanks [@shadcn](https://github.com/shadcn)! - Add `cn/build`, the library behind `cn build`. The CLI now parses arguments and prints; scanning, subsetting, compiling, and writing run in `build(options)` so build scripts and bundler plugins can call it directly.
+
+- [#139](https://github.com/shadcn-ui/cn/pull/139) [`829b6e1`](https://github.com/shadcn-ui/cn/commit/829b6e178675d0d96e90cf3739674226b4975556) Thanks [@shadcn](https://github.com/shadcn)! - Add `cn/vite` and `cn/next`.
+
 ## 0.2.6
 
 ### Patch Changes
