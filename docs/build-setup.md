@@ -53,7 +53,23 @@ followed.
 
 ## Next.js
 
-npm lifecycle hooks run automatically before `dev` and `build`:
+Wrap your config. The tables are generated when `next dev` or `next build`
+starts, before any module resolves, for webpack and Turbopack alike:
+
+```ts
+// next.config.ts
+import { withCn } from "cn/next"
+
+export default withCn(
+  { reactStrictMode: true },
+  { content: ["{app,components,lib}/**/*.{ts,tsx}"], out: "lib/cn-tables.ts" }
+)
+```
+
+A function config works too: `withCn(async (phase) => ({ ... }), options)`.
+
+If you'd rather not touch the config, npm lifecycle hooks do the same job
+before `dev` and `build`:
 
 ```jsonc
 // package.json
@@ -71,30 +87,33 @@ The `.ts` output typechecks like any source file.
 
 ## Vite
 
-Scripts work the same way, or fold it into the config so it can't be
-forgotten — regenerates on every dev-server start and build:
+Add the plugin next to Tailwind's. It generates the tables in `buildStart`,
+which runs on every dev-server start and every build:
 
 ```ts
 // vite.config.ts
-import { execSync } from "node:child_process"
+import tailwindcss from "@tailwindcss/vite"
+import { cn } from "cn/vite"
 import { defineConfig } from "vite"
 
-const cnBuild = () => ({
-  name: "cn-build",
-  buildStart() {
-    execSync(
-      "npx cn build --content 'src/**/*.{ts,tsx}' -o src/lib/cn-tables.js",
-      {
-        stdio: "inherit",
-      }
-    )
-  },
-})
-
 export default defineConfig({
-  plugins: [cnBuild()],
+  plugins: [
+    tailwindcss(),
+    cn({ content: ["src/**/*.{ts,tsx}"], out: "src/lib/cn-tables.ts" }),
+  ],
 })
 ```
+
+Options are the CLI flags by name. `cwd` defaults to Vite's `root`.
+
+## In dev
+
+Both plugins watch your sources. A save that only reuses classes the tables
+already know costs nothing. A save that introduces a class from a group the
+tables dropped regenerates the file, which is a normal module, so the code
+that imports it hot-reloads like any other edit. Deleting a file never
+triggers a rebuild, since tables fitted to more classes are still correct.
+Production builds always regenerate from scratch.
 
 ## Turborepo
 
@@ -156,8 +175,8 @@ export default {
 
 ## The one gap to know about
 
-If you add a class mid-dev-session from a group your project has never used
-before, stale tables pass it through unmerged until the next dev-server start
-(production builds are always in sync — the `prebuild` hook guarantees it).
-Restarting dev resyncs. The planned Vite/Next plugins close this by hooking
-the file watcher, the same way Tailwind's scanner does.
+With the npm-script setup, a class added mid-dev-session from a group your
+project has never used before passes through unmerged until the next
+dev-server start. Production builds are always in sync, since the `prebuild`
+hook guarantees it. The Vite and Next.js plugins close this by watching your
+sources, the same way Tailwind's scanner does.

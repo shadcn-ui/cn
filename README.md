@@ -123,6 +123,8 @@ per-repository table. Geometric mean across the 58 repositories: `cn` is
 
 If you want an even smaller bundle with the same performance, see
 [`cn build`](https://github.com/shadcn-ui/cn/blob/main/docs/build-setup.md).
+It ships as a Vite plugin and a Next.js config wrapper, so the tables follow
+your sources in dev with nothing to script.
 
 ## Custom themes
 
@@ -191,6 +193,7 @@ Every export maps to the same name or a familiar one:
 - **`cn/lite`**: `clsx(...)`, strings-only join (`clsx/lite` parity)
 - **`cn/build`**: `build(options)`, the library behind the CLI, for custom
   pipelines and bundler plugins
+- **`cn/vite`**: `cn(options)` plugin; **`cn/next`**: `withCn(nextConfig, options)`
 - **CLI**: `npx cn build --help`
 
 ## Credits

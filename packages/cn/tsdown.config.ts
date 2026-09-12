@@ -9,6 +9,8 @@ export default defineConfig({
     config: "src/config.ts",
     compiler: "src/compiler.ts",
     build: "src/build.ts",
+    vite: "src/vite.ts",
+    next: "src/next.ts",
     lite: "src/lite.ts",
   },
   format: ["esm", "cjs"],

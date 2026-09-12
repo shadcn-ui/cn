@@ -43,7 +43,11 @@ import {
   type CompileStats, type CompiledTables, type EmitOptions, type SubsetResult,
 } from "cn/compiler"
 import liteDefault, { clsx as liteClsx } from "cn/lite"
-import { build, expandGlobs, extractTokens } from "cn/build"
+import {
+  build, createBuilder, createContentMatcher, expandGlobs, extractTokens,
+} from "cn/build"
+import { cn as cnVite } from "cn/vite"
+import { withCn } from "cn/next"
 
 // clsx-style variadic signatures (0.2.1 published lite's clsx as \`(): string\`)
 const sigs: ((...inputs: ClassValue[]) => string)[] = [
@@ -110,6 +114,18 @@ void built
 const skipped: number = extractTokens("p-2 p-4", new Set<string>())
 const files: string[] = expandGlobs(["src/**/*.ts"], ".")
 void [skipped, files]
+const matches: (file: string) => boolean = createContentMatcher(["src/**"], ".")
+const builder = createBuilder({ content: ["src/**/*.tsx"] })
+const rebuilt: Promise<{ changed: boolean }> = builder.changed("src/a.tsx")
+void [matches, builder.run(), builder.last, rebuilt]
+
+// plugins: structural plugin objects, no bundler types required
+const vitePlugin: { name: string } = cnVite({ out: "src/lib/cn-tables.ts" })
+const nextConfig: (phase: string, context: unknown) => Promise<{ reactStrictMode: boolean }> =
+  withCn({ reactStrictMode: true }, { out: "lib/cn-tables.ts" })
+withCn(async () => ({ reactStrictMode: true }))
+withCn()
+void [vitePlugin, nextConfig]
 
 // type-only exports stay importable from every entry that declares them
 const groupDef: ClassGroupDef = { $t: "spacing" }
