@@ -1,5 +1,11 @@
 # cn
 
+## 0.3.1
+
+### Patch Changes
+
+- [#144](https://github.com/shadcn-ui/cn/pull/144) [`19a9a66`](https://github.com/shadcn-ui/cn/commit/19a9a66235b2897df012f75600c818fe5a56f5b1) Thanks [@shadcn](https://github.com/shadcn)! - Axis utilities now override the logical sides they cover, matching tailwind-merge 3.7.0. `px-2` replaces `ps-*` and `pe-*`, `py-2` replaces `pbs-*` and `pbe-*`, and the same applies to `mx`/`my`, `inset-x`/`inset-y`, `border-x`/`border-y` widths and colors, and `scroll-mx`/`scroll-my`/`scroll-px`/`scroll-py`.
+
 ## 0.3.0
 
 ### Minor Changes
