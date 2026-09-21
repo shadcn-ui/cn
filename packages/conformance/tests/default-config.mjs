@@ -41,30 +41,63 @@ function coexist(first, last) {
   merges.push([`${last} ${first}`, `${last} ${first}`])
 }
 
-// Theme animation names are open-ended, including names supplied by plugins.
+// Only the default theme animations and arbitrary values share a group. A
+// custom or plugin `animate-*` name is unknown, so it is never dropped.
 const animations = [
   "animate-spin",
   "animate-ping",
   "animate-pulse",
   "animate-bounce",
   "animate-none",
-  "animate-in",
-  "animate-out",
-  "animate-wiggle",
-  "animate-accordion-down",
   "animate-[wiggle_1s_ease-in-out_infinite]",
   "animate-(--animation)",
 ]
 group("animate", animations)
 for (const token of animations) {
   replace("animate-spin", token)
-  replace(token, "animate-in")
+  replace(token, "animate-bounce")
 }
-group("animate", ["motion-safe:animate-in", "hover:animate-out!"])
-replace("motion-safe:animate-spin", "motion-safe:animate-in")
-replace("!animate-spin", "animate-out!")
-coexist("animate-spin", "hover:animate-in")
-coexist("animate-spin", "animate-in!")
+group("animate", ["motion-safe:animate-spin", "hover:animate-pulse!"])
+replace("motion-safe:animate-spin", "motion-safe:animate-pulse")
+replace("!animate-spin", "animate-pulse!")
+coexist("animate-spin", "hover:animate-pulse")
+coexist("animate-spin", "animate-pulse!")
+const customAnimations = [
+  "animate-in",
+  "animate-out",
+  "animate-shimmer",
+  "animate-accordion-down",
+  "animate-caret-blink",
+  "animate-fade-up",
+  "animate-once",
+  "animate-infinite",
+  "animate-ease-out",
+  "animate-duration-500",
+  "animate-delay-300",
+  "animate-fill-both",
+]
+for (const token of customAnimations) {
+  classifications.push([token, []])
+  for (const known of animations) {
+    coexist(token, known)
+  }
+  for (const other of customAnimations) {
+    if (other !== token) {
+      merges.push([`${token} ${other}`, `${token} ${other}`])
+    }
+  }
+}
+classifications.push(["motion-safe:animate-in", []])
+coexist("motion-safe:animate-in", "motion-safe:animate-pulse")
+coexist("animate-in!", "animate-pulse!")
+merges.push([
+  "animate-fade-up animate-once animate-ease-out animate-delay-300",
+  "animate-fade-up animate-once animate-ease-out animate-delay-300",
+])
+merges.push([
+  "animate-in fade-in animate-spin animate-duration-500 animate-pulse",
+  "animate-in fade-in animate-duration-500 animate-pulse",
+])
 
 const containment = [
   "contain-none",
