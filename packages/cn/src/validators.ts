@@ -1,4 +1,4 @@
-// Validator predicates with semantics identical to tailwind-merge 3.6.0's
+// Validator predicates with semantics identical to tailwind-merge 3.7.0's
 // src/lib/validators.ts (MIT, Dany Castillo — see README.md). The runtime
 // engine compiles these to span opcodes; these plain-string implementations
 // are used by the compiler's classifier and by custom configs.

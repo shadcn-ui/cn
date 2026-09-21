@@ -48,7 +48,7 @@ devDependency.
 3. `pnpm test` — the differential suites verify parity with the new version.
 4. Commit the regenerated files; release.
 
-The default grammar currently includes fixes beyond tailwind-merge 3.6.0.
+The default grammar currently includes fixes beyond tailwind-merge 3.7.0.
 The explicit classification and merge regressions live in
 `packages/conformance/tests/default-config.mjs`. Differential tests use an
 independent tailwind-merge extension in `tests/reference.mjs` for these fixes;
