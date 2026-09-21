@@ -60,7 +60,6 @@ const vendored = {
 
 // Additions to tailwind-merge 3.7.0's grammar. Keep these here so vendoring
 // and the generated-file freshness check reproduce cn's default config.
-vendored.theme.animate = [{ $v: "isAny" }]
 vendored.classGroups.contain = [
   {
     contain: [

@@ -3,9 +3,6 @@
 import { extendTailwindMerge, fromTheme, validators } from "tailwind-merge"
 
 export const ref = extendTailwindMerge({
-  override: {
-    theme: { animate: [validators.isAny] },
-  },
   extend: {
     classGroups: {
       contain: [
