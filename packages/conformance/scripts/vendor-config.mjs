@@ -58,7 +58,7 @@ const vendored = {
   postfixLookupClassGroups: config.postfixLookupClassGroups ?? [],
 }
 
-// Additions to tailwind-merge 3.6.0's grammar. Keep these here so vendoring
+// Additions to tailwind-merge 3.7.0's grammar. Keep these here so vendoring
 // and the generated-file freshness check reproduce cn's default config.
 vendored.theme.animate = [{ $v: "isAny" }]
 vendored.classGroups.contain = [
@@ -88,15 +88,6 @@ for (const group of vendored.conflictingClassGroups.contain) {
 vendored.classGroups["bg-image"].push({
   "bg-gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"],
 })
-vendored.classGroups["bg-image"].push("bg-conic")
-vendored.classGroups.columns.push("columns-auto")
-vendored.classGroups["max-h"].push("max-h-none")
-vendored.classGroups.shadow.push("shadow-inner")
-for (const prefix of ["inline", "min-inline", "max-inline"]) {
-  vendored.classGroups[`${prefix}-size`].push({
-    [prefix]: [{ $t: "container" }],
-  })
-}
 for (const prefix of ["auto-cols", "auto-rows"]) {
   vendored.classGroups[prefix].push({ [prefix]: [{ $t: "spacing" }] })
 }
