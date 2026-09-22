@@ -1,5 +1,11 @@
 # cn
 
+## 0.4.0
+
+### Minor Changes
+
+- [#153](https://github.com/shadcn-ui/cn/pull/153) [`2691a38`](https://github.com/shadcn-ui/cn/commit/2691a38d49033ebe698700555bed6fbc39db5fc2) Thanks [@shadcn](https://github.com/shadcn)! - `cn build` and the plugins now register the theme scales declared in your Tailwind CSS.
+
 ## 0.3.3
 
 ### Patch Changes
