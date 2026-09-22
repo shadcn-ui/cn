@@ -11,6 +11,7 @@ import {
   symlinkSync,
   writeFileSync,
 } from "node:fs"
+import { createRequire } from "node:module"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { fileURLToPath, pathToFileURL } from "node:url"
@@ -19,6 +20,10 @@ import { createCn } from "cn/engine"
 import { twMerge as ref } from "tailwind-merge"
 
 const bin = fileURLToPath(new URL("../../cn/bin/cn.mjs", import.meta.url))
+// TypeScript is a devDependency of the cn package, not of this one.
+const tsc = createRequire(
+  new URL("../../cn/package.json", import.meta.url)
+).resolve("typescript/bin/tsc")
 const dir = mkdtempSync(join(tmpdir(), "cn-cli-"))
 let pass = 0
 let fail = 0
@@ -524,6 +529,48 @@ try {
     tsSource.includes("(s: string, o = 0): Int32Array"),
     "missing TS annotations"
   )
+
+  // ---- .ts output typechecks under the strictest compiler flags -----------------
+  execFileSync(process.execPath, [
+    bin,
+    "build",
+    "--cwd",
+    dir,
+    "--full",
+    "-o",
+    "tables-full.ts",
+    "-q",
+  ])
+  // The flags of @tsconfig/strictest: the file is generated and gitignored,
+  // so a project cannot fix an error in it.
+  const strictest = [
+    "--noEmit",
+    "--strict",
+    "--target",
+    "es2022",
+    "--noUncheckedIndexedAccess",
+    "--exactOptionalPropertyTypes",
+    "--noPropertyAccessFromIndexSignature",
+    "--noImplicitReturns",
+    "--noImplicitOverride",
+    "--noFallthroughCasesInSwitch",
+    "--noUnusedLocals",
+    "--noUnusedParameters",
+    "--isolatedModules",
+  ]
+  for (const file of ["tables.ts", "tables-full.ts"]) {
+    const checked = spawnSync(
+      process.execPath,
+      [tsc, ...strictest, join(dir, file)],
+      { encoding: "utf8" }
+    )
+    const errors = checked.stdout.match(/error TS\d+/g) ?? []
+    expect(
+      `ts-strictest ${file}`,
+      checked.status === 0,
+      `${errors.length} errors\n${checked.stdout.split("\n").slice(0, 6).join("\n")}`
+    )
+  }
 } finally {
   rmSync(dir, { recursive: true, force: true })
 }
