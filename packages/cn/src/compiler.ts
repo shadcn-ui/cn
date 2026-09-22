@@ -967,6 +967,9 @@ export const compileToSource = (
     )
   }
   const ts = options.lang === "ts"
+  // Indexed reads are asserted so the .ts output passes
+  // noUncheckedIndexedAccess in the project that imports it.
+  const b = ts ? "!" : ""
   const sig = {
     u: ts ? "(s: string, o = 0): Int32Array" : "(s, o = 0)",
     ps: ts ? "(counts: Int32Array): Int32Array" : "(counts)",
@@ -1018,7 +1021,7 @@ const U = ${sig.u} => {
 }
 const PS = ${sig.ps} => {
     const out = new Int32Array(counts.length + 1)
-    for (let i = 0; i < counts.length; i++) out[i + 1] = out[i] + counts[i]
+    for (let i = 0; i < counts.length; i++) out[i + 1] = out[i]${b} + counts[i]${b}
     return out
 }
 // zigzag-delta stream → running values
@@ -1044,14 +1047,14 @@ const edgeTarget = (() => {
     for (let i = N - 1; i >= 0; i--) {
         let s = 1
         let c = i + 1
-        for (let k = edgeStart[i]; k < edgeStart[i + 1]; k++) { s += sizes[c]; c += sizes[c] }
+        for (let k = edgeStart[i]${b}; k < edgeStart[i + 1]${b}; k++) { s += sizes[c]${b}; c += sizes[c]${b} }
         sizes[i] = s
     }
-    const out = new Int32Array(edgeStart[N])
+    const out = new Int32Array(edgeStart[N]${b})
     let e = 0
     for (let i = 0; i < N; i++) {
         let c = i + 1
-        for (let k = edgeStart[i]; k < edgeStart[i + 1]; k++) { out[e++] = c; c += sizes[c] }
+        for (let k = edgeStart[i]${b}; k < edgeStart[i + 1]${b}; k++) { out[e++] = c; c += sizes[c]${b} }
     }
     return out
 })()
@@ -1066,12 +1069,12 @@ const nodeVlist = (() => {
     const out = new Int32Array(${m.nodeCount}).fill(-1)
     const A = DZ(${packStr(zig(deltas(nodeVlistAnchors)))})
     const V = DZ(${packStr(zig(deltas(nodeVlistValues)))})
-    for (let i = 0; i < A.length; i++) out[A[i]] = V[i]
+    for (let i = 0; i < A.length; i++) out[A[i]${b}] = V[i]${b}
     return out
 })()
 const SETS = ${JSON.stringify(setsText)}.split('|').map((s) => {
     const tails = s.split(' ')
-    const prefix = tails.shift()${ts ? "!" : ""}
+    const prefix = tails.shift()${b}
     for (let i = 0; i < tails.length; i++) {
         tails[i] = prefix + tails[i]
     }
@@ -1090,7 +1093,7 @@ const poolOffsets = new Int32Array(${m.uniqueTailCount * 2})
     let nextRef = 0
     let e = 0
     for (let i = 0; i < AA.length; i++) {
-        for (const tail of SETS[AS[i]]) {
+        for (const tail of SETS[AS[i]${b}]${b}) {
             let r = tailRef.get(tail)
             if (r === undefined) {
                 r = nextRef++
@@ -1099,8 +1102,8 @@ const poolOffsets = new Int32Array(${m.uniqueTailCount * 2})
                 poolOffsets[r * 2 + 1] = tail.length
                 poolText += tail
             }
-            litAnchor[e] = AA[i]
-            litGroup[e] = AG[i]
+            litAnchor[e] = AA[i]${b}
+            litGroup[e] = AG[i]${b}
             litPool[e] = r
             e++
         }
