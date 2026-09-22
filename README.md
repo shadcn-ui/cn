@@ -15,6 +15,9 @@ cn("px-2 py-1", isActive && "bg-blue-500", { "text-white": isActive })
 Vue, Svelte, Solid, Astro, or plain server templates, and runs in browsers,
 Node, Bun, Deno, and edge runtimes. **It works in any Tailwind CSS project. You don't need shadcn/ui.**
 
+**If you want an even smaller bundle with the same performance, see
+[`cn build`](https://github.com/shadcn-ui/cn/blob/main/docs/build-setup.md).**
+
 `cn` is built and maintained by [aidenybai](https://x.com/aidenybai) and [shadcn](https://x.com/shadcn).
 
 ## Can I use this today?
