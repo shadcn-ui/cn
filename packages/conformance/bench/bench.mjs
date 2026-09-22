@@ -44,6 +44,7 @@ const componentModes = [
   ["single", "component call: one stable call site"],
   ["loop", "component call: render loop, 24 unique sites"],
   ["dup-loop", "component call: render loop, duplicate arg tuples"],
+  ["interp", "component call: interpolated arg, fresh string per call"],
 ]
 for (const [mode, label] of componentModes) {
   console.log(`\n• ${label}`)
