@@ -19,10 +19,12 @@ import { basename, dirname, join, relative, resolve, sep } from "node:path"
 import { pathToFileURL } from "node:url"
 import { compileToSource, mergeConfigs, subsetConfig } from "./compiler"
 import { defaultConfig } from "./config"
+import { isTailwindCss, themeFromCss } from "./theme-css"
 import type { CnConfig, ConfigExtension } from "./compiler"
 
 const DEFAULT_CONTENT = ["**/*.{js,jsx,ts,tsx,html,vue,svelte,astro,mdx}"]
 const DEFAULT_OUT = "cn-tables.mjs"
+const CSS_GLOBS = ["**/*.css"]
 const MAX_TOKEN_LENGTH = 8192
 
 const realpathOrNull = (path: string) => {
@@ -298,6 +300,17 @@ const loadConfig = async (cwd: string, file: string) => {
   return ext as ConfigExtension | ((config: CnConfig) => CnConfig)
 }
 
+// Stylesheets under `cwd` that import Tailwind or declare a theme, found
+// with the content scan's walk so the same directories are ignored.
+const findTailwindCss = (cwd: string) =>
+  expandGlobs(CSS_GLOBS, cwd).filter((file) => {
+    try {
+      return isTailwindCss(readFileSync(file, "utf8"))
+    } catch {
+      return false
+    }
+  })
+
 /**
  * Compile project-fitted merge tables and write them to `out`. This is what
  * `cn build` runs. Throws on bad input with the same messages the CLI prints;
@@ -319,6 +332,12 @@ export const build = async (
     tokens?: string
     /** Keep every class group instead of subsetting to the scanned tokens. */
     full?: boolean
+    /**
+     * Stylesheet whose `@theme` scales are registered. Default: every `.css`
+     * file under `cwd` that imports Tailwind or declares a theme. `false`
+     * registers nothing.
+     */
+    css?: string | false
   } = {}
 ) => {
   const cwd = options.cwd ?? process.cwd()
@@ -327,6 +346,16 @@ export const build = async (
   const warnings: string[] = []
 
   let config = defaultConfig()
+  let cssFiles: string[] = []
+  if (options.css !== false) {
+    const entries =
+      options.css === undefined
+        ? findTailwindCss(cwd)
+        : [resolve(cwd, options.css)]
+    const theme = themeFromCss(entries)
+    config = mergeConfigs(config, theme.extension)
+    cssFiles = theme.files
+  }
   if (options.config) {
     const ext = await loadConfig(cwd, options.config)
     config = typeof ext === "function" ? ext(config) : mergeConfigs(config, ext)
@@ -431,6 +460,8 @@ export const build = async (
     fullConfig,
     /** Files read during the scan. Zero with `tokens` or `full`. */
     scannedFiles,
+    /** Stylesheets read for `css`, the entry first. */
+    cssFiles,
     /** Class groups kept, or null with `full`. */
     usedGroups,
     /** Class groups in the config, or null with `full`. */
@@ -446,8 +477,8 @@ export const build = async (
  * `changed(file)` is for watchers: it rebuilds only when the file is inside
  * the content globs and uses a class group the last build dropped.
  * Deleted files never need a rebuild, since a subset fitted to more classes
- * is still correct. With `full` or `tokens` the tables don't depend on
- * sources, so `changed` never rebuilds.
+ * is still correct. A stylesheet that feeds the theme always rebuilds. With
+ * `full` or `tokens` the tables don't depend on sources, so nothing else does.
  */
 export const createBuilder = (options: Parameters<typeof build>[0] = {}) => {
   const cwd = options.cwd ?? process.cwd()
@@ -483,10 +514,24 @@ export const createBuilder = (options: Parameters<typeof build>[0] = {}) => {
     return running
   }
 
+  const matchesCss = createContentMatcher(CSS_GLOBS, cwd)
+  // A stylesheet the last build read, or a new one the default discovery
+  // would pick up, changes the theme.
+  const isThemeSource = (abs: string) => {
+    if (last!.cssFiles.includes(abs)) return true
+    if (options.css !== undefined || !matchesCss(abs)) return false
+    try {
+      return isTailwindCss(readFileSync(abs, "utf8"))
+    } catch {
+      return false
+    }
+  }
+
   const changed = async (file: string) => {
     if (!last) return run()
-    if (options.full || options.tokens) return last
     const abs = resolve(cwd, file)
+    if (isThemeSource(abs)) return run()
+    if (options.full || options.tokens) return last
     if (abs === last.outPath || !matches(abs)) return last
     let text
     try {

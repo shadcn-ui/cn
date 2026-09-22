@@ -125,7 +125,7 @@ output — so it caches cleanly:
 {
   "tasks": {
     "cn-build": {
-      "inputs": ["src/**/*.{ts,tsx}", "cn.config.mjs"],
+      "inputs": ["src/**/*.{ts,tsx}", "**/*.css", "cn.config.mjs"],
       "outputs": ["src/lib/cn-tables.js"],
     },
     "build": { "dependsOn": ["cn-build"] },
@@ -159,8 +159,36 @@ cache, or decide when to rebuild.
 
 ## Custom themes
 
-Add `--config` to the same command and the theme is baked into the generated
-tables — no runtime config cost:
+The scales your Tailwind CSS declares in `@theme` are baked into the
+generated tables — no runtime config cost, and nothing to keep in sync:
+
+```css
+/* app/globals.css */
+@import "tailwindcss";
+
+@theme {
+  --radius-card: 1.25rem;
+  --shadow-panel: 0 30px 70px -20px rgb(0 0 0 / 0.75);
+  --text-display: 3rem;
+}
+```
+
+`rounded-card` now conflicts with `rounded-lg`, `shadow-panel` with
+`shadow-sm`, and `text-display` with `text-sm`, exactly as if the names had
+been registered by hand.
+
+By default `cn build` reads every `.css` file under `cwd` that imports
+Tailwind or declares a theme, ignoring the same directories the content scan
+ignores. `--css app/globals.css` reads that file only, and `--no-css` reads
+none. Relative `@import`s are followed. Package imports such as
+`tw-animate-css` are not: register their names with `--config`.
+`--radius-*: initial` resets the scale to the declared names, as it does in
+Tailwind. `--color-*` and `--font-*` are skipped because cn already accepts
+any name on those scales. The plugins rebuild when a stylesheet they read
+changes, or when a new one appears.
+
+For anything a stylesheet can't express, add `--config`. It is applied after
+the stylesheet:
 
 ```bash
 cn build --content "src/**/*.{ts,tsx}" --config cn.config.mjs -o src/lib/cn-tables.js

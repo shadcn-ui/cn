@@ -8,6 +8,8 @@
 //   npx cn build --config cn.config.mjs           config extension (default export: { extend, override, prefix } or (config) => config)
 //   npx cn build --full                           skip subsetting (all groups; custom config still applies)
 //   npx cn build --tokens tokens.txt              use a pre-extracted token file instead of scanning
+//   npx cn build --css app/globals.css            read theme scales from this stylesheet only (default: every Tailwind .css under cwd)
+//   npx cn build --no-css                         do not read theme scales from stylesheets
 //
 // This file only parses arguments and prints. The work is `build()` from
 // "cn/build", which bundler plugins call directly.
@@ -27,6 +29,10 @@ Options:
   --config <file>      config extension module (default export)
   --tokens <file>      pre-extracted tokens (skips scanning)
   --full               keep all class groups (no subsetting)
+  --css <file>         read @theme scales from this stylesheet only
+                       default: every .css under cwd that imports Tailwind
+                       or declares a theme
+  --no-css             do not read theme scales from stylesheets
   --cwd <dir>          base directory (default: process.cwd())
   -q, --quiet          suppress summary output
   -h, --help           show this help
@@ -58,6 +64,7 @@ const opts = {
   config: undefined,
   tokens: undefined,
   full: false,
+  css: undefined,
   cwd: process.cwd(),
   quiet: false,
 }
@@ -92,6 +99,8 @@ for (let i = 1; i < args.length; i++) {
   else if (a === "--config") opts.config = next()
   else if (a === "--tokens") opts.tokens = next()
   else if (a === "--full") opts.full = true
+  else if (a === "--css") opts.css = next()
+  else if (a === "--no-css") opts.css = false
   else if (a === "--cwd") opts.cwd = next()
   else if (a === "-q" || a === "--quiet") opts.quiet = true
   else fail(`unknown option "${a}"`)
