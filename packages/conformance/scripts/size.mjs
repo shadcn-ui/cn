@@ -75,7 +75,12 @@ for (const r of rows)
 //      group ids cannot alias, a tables-derived claim factor so wide
 //      custom conflict groups cannot fill the table, and a per-merge id
 //      guard), and to 11,000 on 2026-09-02 for Unicode whitespace parity
-//      (~77 B: \s-complete separator scan and twJoin array-like values)
+//      (~77 B: \s-complete separator scan and twJoin array-like values),
+//      and to 11,100 on 2026-09-22 for arg-cache churn detection and the
+//      churn front (~180 B: a bucket that keeps missing by identity stops
+//      walking and inserting, and a fresh arg is found by positional hash
+//      plus one string compare; 2213 → 114 ns on cn(base, interpolated),
+//      the css-in-js-bench dyn-translate case, 0.5x → 2.3x tailwind-merge)
 const ours = rows[0]
 const cnfast = rows[4]
 let fail = false
@@ -91,13 +96,13 @@ if (ours.gz > cnfast.gz * 1.08) {
   )
   fail = true
 }
-if (ours.gz > 11000) {
-  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 11000`)
+if (ours.gz > 11100) {
+  console.error(`SIZE GATE FAIL (budget): cn ${ours.gz} > 11100`)
   fail = true
 }
 if (fail) process.exit(1)
 console.log(
-  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 11000`
+  `size gate ok: parse ${ours.min} < ${cnfast.min}; gzip ${ours.gz} (cnfast ${cnfast.gz}, band ${Math.round(cnfast.gz * 1.08)}); budget 11100`
 )
 
 // ---------------------------------------------------------------------------

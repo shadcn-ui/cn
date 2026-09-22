@@ -4,6 +4,9 @@
 //   loop     — render loop over 24 call sites, all argument tuples unique
 //   dup-loop — render loop where some sites share identical argument tuples,
 //              so single-successor sequence prediction can't lock on
+//   interp   — one stable base, second arg a fresh interpolated string per
+//              call (1,000 distinct values cycling): the arg cache can never
+//              hit by identity, so the bucket must learn to step aside
 // Usage: node component-worker.mjs <impl> <mode>   → prints JSON {nsPerOp}
 const [, , implName, mode = "single"] = process.argv
 
@@ -74,18 +77,31 @@ if (mode === "single") {
 }
 
 const fn = await loadImpl()
-const ITERS = 6_000_000
+const ITERS = mode === "interp" ? 1_500_000 : 6_000_000
 let sink = 0
 
-const pass = (n) => {
-  let s = 0
-  for (let i = 0, k = 0; i < n; i++) {
-    const site = sites[k]
-    s += fn(site.base, site.variant, site.cond && site.extra).length
-    if (++k === sites.length) k = 0
-  }
-  return s
-}
+const pass =
+  mode === "interp"
+    ? (n) => {
+        let s = 0
+        for (let i = 0, k = 0; i < n; i++) {
+          s += fn(
+            "inline-block w-2 h-2",
+            "[transform:translateX(" + k + "px)]"
+          ).length
+          if (++k === 1000) k = 0
+        }
+        return s
+      }
+    : (n) => {
+        let s = 0
+        for (let i = 0, k = 0; i < n; i++) {
+          const site = sites[k]
+          s += fn(site.base, site.variant, site.cond && site.extra).length
+          if (++k === sites.length) k = 0
+        }
+        return s
+      }
 
 sink += pass(ITERS >> 2) // warmup
 let best = Infinity
