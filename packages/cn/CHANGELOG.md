@@ -1,5 +1,13 @@
 # cn
 
+## 0.3.3
+
+### Patch Changes
+
+- [#152](https://github.com/shadcn-ui/cn/pull/152) [`00daa7e`](https://github.com/shadcn-ui/cn/commit/00daa7e62fda28b52d970a611d79cdddc7587c5d) Thanks [@shadcn](https://github.com/shadcn)! - Calls with an interpolated argument, such as `cn(base, "translate-x-[" + x + "px]")`, no longer thrash the argument cache. 2,213 → 80 ns per call on that shape; stable arguments are unchanged.
+
+- [#150](https://github.com/shadcn-ui/cn/pull/150) [`6f5ccfa`](https://github.com/shadcn-ui/cn/commit/6f5ccfa2848b3085b08d634870b305b488950326) Thanks [@shadcn](https://github.com/shadcn)! - `cn build -o *.ts` output now typechecks under `noUncheckedIndexedAccess` and the rest of the `@tsconfig/strictest` flags. The `.mjs` output is unchanged.
+
 ## 0.3.2
 
 ### Patch Changes
