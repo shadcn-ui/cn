@@ -9,6 +9,25 @@ to `cn`:
 resolve: { alias: { "tailwind-merge": "cn", clsx: "cn" } }
 ```
 
+```ts
+// next.config.ts
+import type { NextConfig } from "next"
+
+const nextConfig: NextConfig = {
+  turbopack: {
+    resolveAlias: {
+      clsx: "cn",
+      "tailwind-merge": "cn",
+    },
+  },
+}
+
+export default nextConfig
+```
+
+Next.js 16 builds with Turbopack by default. If your project builds with
+`next build --webpack`, alias through the webpack config instead:
+
 ```js
 // next.config.js
 webpack: (config) => {
