@@ -13,10 +13,10 @@
     "size": "pnpm --filter conformance run size",
     "vendor-config": "pnpm --filter conformance run vendor-config",
     "typecheck": "pnpm --filter cn exec tsc",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "format:write": "prettier --write . --cache",
-    "format:check": "prettier --check . --cache",
+    "lint": "vp lint .",
+    "lint:fix": "vp lint . --fix",
+    "format:write": "vp fmt .",
+    "format:check": "vp fmt --check .",
     "changeset": "changeset",
     "release": "pnpm run typecheck && pnpm run test && pnpm run size && changeset publish",
     "speedlab": "pnpm --filter conformance run speedlab"
@@ -27,12 +27,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^3.0.1",
-    "@eslint/js": "^10.0.1",
-    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
-    "eslint": "^10.9.1",
-    "eslint-config-prettier": "^10.1.8",
-    "globals": "^17.11.0",
-    "prettier": "^3.9.6",
-    "typescript-eslint": "^8.68.0"
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
   }
 }

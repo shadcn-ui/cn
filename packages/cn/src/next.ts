@@ -7,7 +7,8 @@ import { createBuilder } from "./build"
 
 export const withCn = <T extends object>(
   nextConfig:
-    T | ((phase: string, context: unknown) => T | Promise<T>) = {} as T,
+    | T
+    | ((phase: string, context: unknown) => T | Promise<T>) = {} as T,
   options: Parameters<typeof createBuilder>[0] = {}
 ) => {
   return async (phase: string, context: unknown) => {

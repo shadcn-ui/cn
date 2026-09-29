@@ -15,7 +15,7 @@ workspace.
 ## Commands
 
 ```bash
-pnpm build           # tsdown → dist/ (ESM + CJS + types)
+pnpm build           # Vite+ Pack → dist/ (ESM + CJS + types)
 pnpm test                # build, then all suites against dist/
 pnpm bench           # isolated-process benchmark matrix
 pnpm size            # bundle-size gate

@@ -54,7 +54,9 @@ export interface ConfigExtension {
  * `cn/config` entry's own d.ts filename.
  */
 export type CreateCnInput =
-  ConfigExtension | ((config: CnConfig) => CnConfig) | CnConfig
+  | ConfigExtension
+  | ((config: CnConfig) => CnConfig)
+  | CnConfig
 
 const isMarker = (def: object, key: string): boolean => {
   const keys = Object.keys(def)

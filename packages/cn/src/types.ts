@@ -67,7 +67,13 @@ export type ValidatorImpls = Record<string, (value: string) => boolean>
 
 /** tailwind-merge `twJoin`/`twMerge` argument shape (strings + nested arrays) */
 export type ClassNameValue =
-  ClassNameArray | string | null | undefined | 0 | 0n | false
+  | ClassNameArray
+  | string
+  | null
+  | undefined
+  | 0
+  | 0n
+  | false
 export type ClassNameArray = readonly ClassNameValue[]
 
 /** clsx argument shape (adds numbers and object syntax) */
@@ -83,7 +89,7 @@ export type ClassValue =
 export type ClassArray = ClassValue[]
 export interface ClassDictionary {
   // matches clsx's Record<string, any> for drop-in type parity
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line @typescript-eslint/no-explicit-any
   [id: string]: any
 }
 
