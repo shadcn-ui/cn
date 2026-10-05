@@ -1,5 +1,11 @@
 # cn
 
+## 0.5.0
+
+### Minor Changes
+
+- [#157](https://github.com/shadcn-ui/cn/pull/157) [`663adea`](https://github.com/shadcn-ui/cn/commit/663adeaa0ac37af101aa7790f2ce44df4a7e5043) Thanks [@shadcn](https://github.com/shadcn)! - Drop Node 20, which reached end of life, and require Node 22 or later.
+
 ## 0.4.0
 
 ### Minor Changes
