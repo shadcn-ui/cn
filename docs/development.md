@@ -67,7 +67,7 @@ Containment flags use separate groups because Tailwind's independent
 
 ## CI gates (all must pass)
 
-- typecheck, build, on Node 20/22/24
+- typecheck, build, on Node 22/24
 - 56K differential + 300K fuzz + custom-config + CLI e2e
 - bundle-size gate (`packages/conformance/scripts/size.mjs`)
 - generated-file freshness

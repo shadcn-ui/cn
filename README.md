@@ -183,7 +183,7 @@ Every export maps to the same name or a familiar one:
   [tailwind-merge's docs](https://github.com/dcastil/tailwind-merge/blob/main/docs/limitations.md).
 - With [`cn build`](https://github.com/shadcn-ui/cn/blob/main/docs/build-setup.md), dynamically constructed class names (`"p-" + size`) can't
   be detected. Same rule as Tailwind itself. Use `--safelist`.
-- The CLI needs Node 20+.
+- The CLI needs Node 22+.
 
 ## API
 

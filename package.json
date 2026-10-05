@@ -22,7 +22,7 @@
     "speedlab": "pnpm --filter conformance run speedlab"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
