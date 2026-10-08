@@ -12,17 +12,35 @@ import {
   type ConfigExtension,
   type CreateCnInput,
 } from "./compiler.js"
-import { getDefaultCnConfig } from "./default-config.generated.js"
+import {
+  getDefaultCnConfig,
+  type DefaultClassGroupIds,
+  type DefaultThemeGroupIds,
+} from "./default-config.generated.js"
 import { createEngine, wrapClsx } from "./engine.js"
 import type { CnFunction, Engine } from "./types.js"
 
 export { getDefaultCnConfig as defaultConfig }
 export { mergeConfigs }
 export type { CnConfig, ClassGroupDef, ConfigExtension, CreateCnInput }
-export type {
-  DefaultClassGroupIds,
-  DefaultThemeGroupIds,
-} from "./default-config.generated.js"
+export type { DefaultClassGroupIds, DefaultThemeGroupIds }
+
+// Blocks inference from the config argument, so ids are only ever narrowed by
+// explicit type arguments (without them, the `string` default applies).
+// Equivalent to TS 5.4's `NoInfer`, which older consumers lack.
+type NoInferIds<T> = [T][T extends unknown ? 0 : never]
+
+/**
+ * Config input for the factories below: built-in group ids plus the caller's
+ * additional ids. With the defaults (`string`) any id is accepted.
+ */
+type FactoryInput<
+  AdditionalClassGroupIds extends string,
+  AdditionalThemeGroupIds extends string,
+> = CreateCnInput<
+  DefaultClassGroupIds | NoInferIds<AdditionalClassGroupIds>,
+  DefaultThemeGroupIds | NoInferIds<AdditionalThemeGroupIds>
+>
 
 /** Reference a theme scale from a class-group definition. */
 export const fromTheme = (key: string): { $t: string } => ({ $t: key })
@@ -95,10 +113,28 @@ const buildEngine = (input?: CreateCnInput): Engine => {
  *     extend: { classGroups: { "font-size": [{ text: ["hero", "tiny"] }] } },
  * })
  * ```
+ *
+ * Pass your custom group ids as type arguments to type-check the config
+ * (same generics as tailwind-merge's `extendTailwindMerge`):
+ *
+ * ```ts
+ * const cn = createCn<"heading">({
+ *     extend: {
+ *         classGroups: { heading: ["h1", "h2"] },
+ *         conflictingClassGroups: { heading: ["font-size"] },
+ *     },
+ * })
+ * ```
  */
-export const createCn = (input?: CreateCnInput): CnFunction => {
+export const createCn = <
+  AdditionalClassGroupIds extends string = string,
+  AdditionalThemeGroupIds extends string = string,
+>(
+  input?: FactoryInput<AdditionalClassGroupIds, AdditionalThemeGroupIds>
+): CnFunction => {
   let engine: Engine | null = null
-  const getEngine = (): Engine => engine ?? (engine = buildEngine(input))
+  const getEngine = (): Engine =>
+    engine ?? (engine = buildEngine(input as CreateCnInput))
   return wrapClsx((s: string) => getEngine().mergeString(s), {
     seenBefore: (s: string) => getEngine().seenBefore(s),
     mergeUncached: (s: string) => getEngine().mergeUncached(s),
@@ -109,10 +145,15 @@ export const createCn = (input?: CreateCnInput): CnFunction => {
  * tailwind-merge–compatible variadic merge for a custom config — the
  * `extendTailwindMerge` migration path.
  */
-export const createTwMerge = (input?: CreateCnInput): Engine["merge"] => {
+export const createTwMerge = <
+  AdditionalClassGroupIds extends string = string,
+  AdditionalThemeGroupIds extends string = string,
+>(
+  input?: FactoryInput<AdditionalClassGroupIds, AdditionalThemeGroupIds>
+): Engine["merge"] => {
   let engine: Engine | null = null
   return function (): string {
-    if (engine === null) engine = buildEngine(input)
+    if (engine === null) engine = buildEngine(input as CreateCnInput)
 
     return engine.merge.apply(null, arguments as never)
   } as Engine["merge"]
