@@ -3,7 +3,8 @@
 // ESM fixture resolves each entry's `import` types (.d.ts), the CJS fixture
 // the `require` types (.d.cts). Fails the build on what 0.2.1 shipped:
 // an entry's types resolving to an internal chunk with mangled export names,
-// and signatures narrower than the documented surface (zero-param `clsx`).
+// and signatures narrower than the documented surface (zero-param `clsx`);
+// and on inferred types a consumer emitting declarations cannot name (TS2742).
 import {
   mkdirSync,
   mkdtempSync,
@@ -32,6 +33,8 @@ import {
   clsx as engineClsx, createCn as engineCreateCn,
   createEngine as engineCreateEngine, twJoin as engineTwJoin, wrapClsx,
 } from "cn/engine"
+import type * as EngineEntry from "cn/engine"
+import type * as ConfigEntry from "cn/config"
 import tables from "cn/tables"
 import {
   createCn, createTwMerge, defaultConfig, extendTailwindMerge, fromTheme,
@@ -134,7 +137,37 @@ const values: [
   EngineOptions, Tables, ValidatorImpls,
 ] = [[], {}, [], "x", "y", {}, tables, {}]
 void [groupDef, values]
+const reexported: [
+  ConfigEntry.ClassNameValue, ConfigEntry.CnFunction, ConfigEntry.Engine,
+  EngineEntry.ClassNameValue, EngineEntry.ClassValue, EngineEntry.CnFunction,
+  EngineEntry.Engine,
+] = ["x", cn, engine, "x", "y", cn, engine]
+void reexported
 `
+
+// Results consumers export and let TypeScript infer (`export const cn =
+// createCn(...)`). With `declaration` on, each inferred type must be nameable
+// through the entry it came from. One program per entry: another entry in the
+// same program (as "cn" is in `fixture`) would supply the names it lacks.
+const declarationFixtures = {
+  config: `
+import { createCn, createTwMerge, extendTailwindMerge } from "cn/config"
+
+export const configCn = createCn()
+export const configTwMerge = createTwMerge()
+export const configExtendTailwindMerge = extendTailwindMerge()
+`,
+  engine: `
+import tables from "cn/tables"
+import { clsx, createCn, createEngine, twJoin, wrapClsx } from "cn/engine"
+
+export const engineCn = createCn(tables)
+export const engine = createEngine(tables)
+export const wrapped = wrapClsx((s: string) => s)
+export const engineClsx = clsx
+export const engineTwJoin = twJoin
+`,
+}
 
 const dir = mkdtempSync(join(tmpdir(), "cn-check-dts-"))
 try {
@@ -143,21 +176,36 @@ try {
   writeFileSync(join(dir, "package.json"), JSON.stringify({ type: "module" }))
   writeFileSync(join(dir, "fixture.ts"), fixture)
   writeFileSync(join(dir, "fixture.cts"), fixture)
+  for (const [name, source] of Object.entries(declarationFixtures)) {
+    writeFileSync(join(dir, `declarations-${name}.ts`), source)
+    writeFileSync(join(dir, `declarations-${name}.cts`), source)
+  }
 
-  const program = ts.createProgram(
-    [join(dir, "fixture.ts"), join(dir, "fixture.cts")],
-    {
-      strict: true,
-      noEmit: true,
-      target: ts.ScriptTarget.ES2022,
-      module: ts.ModuleKind.NodeNext,
-      moduleResolution: ts.ModuleResolutionKind.NodeNext,
-      esModuleInterop: true,
-      lib: ["lib.es2022.d.ts"],
-      types: [],
-    }
-  )
-  const diagnostics = ts.getPreEmitDiagnostics(program)
+  const options = {
+    strict: true,
+    noEmit: true,
+    target: ts.ScriptTarget.ES2022,
+    module: ts.ModuleKind.NodeNext,
+    moduleResolution: ts.ModuleResolutionKind.NodeNext,
+    esModuleInterop: true,
+    lib: ["lib.es2022.d.ts"],
+    types: [],
+  }
+  const check = (files, extra) =>
+    ts.getPreEmitDiagnostics(
+      ts.createProgram(
+        files.map((file) => join(dir, file)),
+        { ...options, ...extra }
+      )
+    )
+  const diagnostics = [
+    ...check(["fixture.ts", "fixture.cts"]),
+    ...Object.keys(declarationFixtures).flatMap((name) =>
+      check([`declarations-${name}.ts`, `declarations-${name}.cts`], {
+        declaration: true,
+      })
+    ),
+  ]
   if (diagnostics.length > 0) {
     console.error(
       ts.formatDiagnosticsWithColorAndContext(diagnostics, {

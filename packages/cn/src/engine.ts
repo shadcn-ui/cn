@@ -32,6 +32,8 @@ import type {
   ValidatorImpls,
 } from "./types.js"
 
+export type { ClassNameValue, ClassValue, CnFunction, Engine }
+
 // JavaScriptCore (Bun, Safari) puts `line` on Error instances; V8 does not
 const IS_JSC = "line" in new Error()
 
