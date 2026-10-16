@@ -18,6 +18,7 @@ import type { CnFunction, Engine } from "./types.js"
 
 export { getDefaultCnConfig as defaultConfig }
 export { mergeConfigs }
+export type { ClassNameValue, CnFunction, Engine } from "./types.js"
 export type { CnConfig, ClassGroupDef, ConfigExtension, CreateCnInput }
 export type {
   DefaultClassGroupIds,
