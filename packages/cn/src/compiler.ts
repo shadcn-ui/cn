@@ -31,19 +31,38 @@ export interface CnConfig {
   prefix?: string
 }
 
-type ConfigExtensionGroups = {
-  theme: Record<string, readonly ClassGroupDef[]>
-  classGroups: Record<string, readonly ClassGroupDef[]>
-  conflictingClassGroups: Record<string, readonly string[]>
-  conflictingClassGroupModifiers: Record<string, readonly string[]>
+// Open `string` ids keep the plain `Record<string, V>` shape; a literal union
+// (from the createCn / extendTailwindMerge generics) narrows to known keys.
+type GroupRecord<K extends string, V> = string extends K
+  ? Record<string, V>
+  : { [P in K]?: V }
+
+type ConfigExtensionGroups<
+  ClassGroupIds extends string,
+  ThemeGroupIds extends string,
+> = {
+  theme: GroupRecord<ThemeGroupIds, readonly ClassGroupDef[]>
+  classGroups: GroupRecord<ClassGroupIds, readonly ClassGroupDef[]>
+  conflictingClassGroups: GroupRecord<ClassGroupIds, readonly ClassGroupIds[]>
+  conflictingClassGroupModifiers: GroupRecord<
+    ClassGroupIds,
+    readonly ClassGroupIds[]
+  >
   orderSensitiveModifiers: readonly string[]
 }
 
-export interface ConfigExtension {
+/**
+ * tailwind-merge–style config extension. The id parameters default to
+ * `string` (any id accepted); pass literal unions to type-check group ids.
+ */
+export interface ConfigExtension<
+  ClassGroupIds extends string = string,
+  ThemeGroupIds extends string = string,
+> {
   prefix?: string
   cacheSize?: number
-  override?: Partial<ConfigExtensionGroups>
-  extend?: Partial<ConfigExtensionGroups>
+  override?: Partial<ConfigExtensionGroups<ClassGroupIds, ThemeGroupIds>>
+  extend?: Partial<ConfigExtensionGroups<ClassGroupIds, ThemeGroupIds>>
 }
 
 /**
@@ -53,8 +72,11 @@ export interface ConfigExtension {
  * config.ts into a shared declaration chunk that collides with the
  * `cn/config` entry's own d.ts filename.
  */
-export type CreateCnInput =
-  | ConfigExtension
+export type CreateCnInput<
+  ClassGroupIds extends string = string,
+  ThemeGroupIds extends string = string,
+> =
+  | ConfigExtension<ClassGroupIds, ThemeGroupIds>
   | ((config: CnConfig) => CnConfig)
   | CnConfig
 

@@ -96,6 +96,32 @@ const groupId: DefaultClassGroupIds = "aspect"
 const themeId: DefaultThemeGroupIds = "spacing"
 void [themeRef, marker, groupId, themeId]
 
+// typed group ids: without type arguments any id is accepted; with them,
+// keys and conflict values are checked against defaults + the additions
+createCn({
+  extend: {
+    classGroups: { custom: ["a"] },
+    conflictingClassGroups: { custom: ["other"] },
+  },
+})
+createCn<"heading">({
+  extend: {
+    classGroups: { heading: ["h1"] },
+    conflictingClassGroups: { heading: ["font-size"], "font-size": ["heading"] },
+  },
+})
+extendTailwindMerge<"heading", "brand">({
+  extend: { theme: { brand: ["x"] }, classGroups: { heading: ["h1"] } },
+  override: { conflictingClassGroupModifiers: { heading: ["leading"] } },
+})
+createTwMerge<"heading">(ext)
+// @ts-expect-error unknown class-group key
+createCn<"heading">({ extend: { classGroups: { headng: ["h1"] } } })
+// @ts-expect-error unknown conflicting class-group id
+extendTailwindMerge<"heading">({ extend: { conflictingClassGroups: { heading: ["font-wieght"] } } })
+// @ts-expect-error unknown theme key
+createTwMerge<"heading", "brand">({ extend: { theme: { brnd: ["x"] } } })
+
 // compiler
 const compiled: CompiledTables = compileToTables(merged)
 createEngine(compiled.tables, compiled.validatorImpls)
