@@ -1,5 +1,11 @@
 # cn
 
+## 0.5.1
+
+### Patch Changes
+
+- [#165](https://github.com/shadcn-ui/cn/pull/165) [`5e65675`](https://github.com/shadcn-ui/cn/commit/5e65675b0e492972b68961e6abd6ad27cf462bef) Thanks [@shadcn](https://github.com/shadcn)! - Group the legacy `bg-gradient-to-*` utilities as `bg-color`, the same as tailwind-merge. `cn("bg-background", "bg-gradient-to-r")` now returns `bg-gradient-to-r`, and `bg-gradient-to-r` no longer replaces `bg-linear-to-r` or an arbitrary `bg-[...]` image.
+
 ## 0.5.0
 
 ### Minor Changes
