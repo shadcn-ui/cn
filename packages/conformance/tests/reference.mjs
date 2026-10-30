@@ -20,9 +20,6 @@ export const ref = extendTailwindMerge({
       "contain-layout": ["contain-layout"],
       "contain-paint": ["contain-paint"],
       "contain-style": ["contain-style"],
-      "bg-image": [
-        { "bg-gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"] },
-      ],
       "auto-cols": [{ "auto-cols": [fromTheme("spacing")] }],
       "auto-rows": [{ "auto-rows": [fromTheme("spacing")] }],
     },

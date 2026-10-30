@@ -157,23 +157,21 @@ coexist("contain-none", "hover:contain-paint")
 coexist("contain-none", "contain-paint!")
 coexist("contain-layout", "container")
 
-// Legacy gradient directions share the background-image group with v4 names.
+// Legacy gradient directions fall through to bg-color, as in tailwind-merge.
 for (const direction of ["t", "tr", "r", "br", "b", "bl", "l", "tl"]) {
   const token = `bg-gradient-to-${direction}`
-  group("bg-image", [token])
+  group("bg-color", [token])
   replace("bg-gradient-to-t", token)
-  replace(token, "bg-linear-to-r")
-  replace("bg-linear-to-r", token)
-  replace(token, "bg-none")
-  coexist(token, "bg-red-500")
+  replace("bg-red-500", token)
+  replace(token, "bg-background")
+  coexist(token, "bg-linear-to-r")
+  coexist(token, "bg-none")
 }
-group("bg-image", ["hover:bg-gradient-to-r", "bg-gradient-to-l!"])
+group("bg-color", ["hover:bg-gradient-to-r", "bg-gradient-to-l!"])
 replace("hover:bg-gradient-to-t", "hover:bg-gradient-to-r")
-replace("!bg-gradient-to-t", "bg-linear-to-r!")
-replace("bg-gradient-to-r", "bg-[url(/gradient.svg)]")
-replace("bg-radial", "bg-gradient-to-r")
-coexist("hover:bg-gradient-to-r", "hover:bg-red-500")
-coexist("bg-gradient-to-r!", "bg-red-500!")
+replace("hover:bg-red-500", "hover:bg-gradient-to-r")
+coexist("bg-gradient-to-r", "bg-[linear-gradient(red,blue)]")
+coexist("bg-gradient-to-r", "bg-[url(/gradient.svg)]")
 coexist("bg-gradient-to-r", "from-red-500")
 
 // The audited v4 families must retain their specific groups over broad fallbacks.

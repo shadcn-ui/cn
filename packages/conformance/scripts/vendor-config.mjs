@@ -84,9 +84,6 @@ vendored.conflictingClassGroups.contain = [
 for (const group of vendored.conflictingClassGroups.contain) {
   vendored.conflictingClassGroups[group] = ["contain"]
 }
-vendored.classGroups["bg-image"].push({
-  "bg-gradient-to": ["t", "tr", "r", "br", "b", "bl", "l", "tl"],
-})
 for (const prefix of ["auto-cols", "auto-rows"]) {
   vendored.classGroups[prefix].push({ [prefix]: [{ $t: "spacing" }] })
 }
