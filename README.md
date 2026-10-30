@@ -156,6 +156,18 @@ Custom validator functions work as-is. `fromTheme`, `validators`,
 `mergeConfigs`, and `defaultConfig` are exported from `cn/config`. Tailwind
 v4 prefixes are supported: `createCn({ prefix: "tw" })`.
 
+To type-check group ids, pass your custom ids as type arguments, the same
+generics as tailwind-merge. Unknown keys and conflict ids become type errors:
+
+```ts
+const cn = createCn<"heading">({
+  extend: {
+    classGroups: { heading: ["h1", "h2"] },
+    conflictingClassGroups: { heading: ["font-size"] },
+  },
+})
+```
+
 ## Coming from tailwind-merge
 
 `cn` produces the same output as tailwind-merge for every input. We verify
