@@ -3,7 +3,7 @@ name: Release
 # Changesets flow: pushes to main with pending changesets open (or update) a
 # "Version Packages" PR; merging that PR publishes `cn` to npm with provenance.
 # Publishing runs the full gate set first (typecheck, build, differential
-# suites, size gate) via `pnpm run release`, and authenticates via OIDC
+# suites, size gate) via `vp run release`, and authenticates via OIDC
 # trusted publishing (id-token: write) — no npm token exists anywhere. The
 # `cn` package on npmjs.com must list this repo + workflow as a trusted
 # publisher.
@@ -25,26 +25,27 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: voidzero-dev/setup-vp@3754dd7dbdb32bd8f6d28b6043de13ad3a75f21f # v1.21.1
         with:
-          # no `cache: pnpm` here on purpose: the Actions cache is writable
+          # no dependency cache here: the Actions cache is writable
           # from lower-privileged workflow runs, and this job publishes with
           # provenance — install from the registry, verified by the lockfile
           node-version: 24
+          cache: false
           registry-url: https://registry.npmjs.org
+          run-install: |
+            args: ['--frozen-lockfile']
       # trusted publishing needs npm >= 11.5.1 — pinned to the 11 line: npm 12
       # changed `npm info --json` to emit an array, which crashes the pnpm
       # registry probe in @changesets/cli 3.0.1 (pnpm info delegates to npm)
       - run: npm install -g npm@11
-      - run: pnpm install --frozen-lockfile
       - name: create version PR or publish
         uses: changesets/action@v2
         with:
           # v2 pushes release commits and tags through the GitHub API by
           # default (push-with-git-cli: false), signed by GitHub itself —
           # satisfies the signed-commits ruleset with no key in CI
-          publish-script: pnpm run release
+          publish-script: vp run release
           # v2 renamed these from v1's `commit`/`title`; default is
           # "Version Packages", which does not match the repo's
           # conventional-commit history

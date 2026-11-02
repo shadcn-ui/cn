@@ -13,30 +13,19 @@ jobs:
         node: [22, 24]
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: voidzero-dev/setup-vp@3754dd7dbdb32bd8f6d28b6043de13ad3a75f21f # v1.21.1
         with:
           node-version: ${{ matrix.node }}
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm run lint
-      - run: pnpm run format:check
-      - run: pnpm run typecheck
-      - run: pnpm run build
-      - run: node packages/conformance/tests/correctness.mjs
-      - run: node packages/conformance/tests/fuzz.mjs
+          cache: true
+          run-install: |
+            args: ['--frozen-lockfile']
+      - run: vp check
+      - run: vp run typecheck
+      - run: vp run test
         env:
           FUZZ_ITERS: "300000"
-      - run: node packages/conformance/tests/custom-config.mjs
-      - run: node packages/conformance/tests/default-config.mjs
-      - run: node packages/conformance/tests/table-encoding.mjs
-      - run: node packages/conformance/tests/cli.mjs
-      - run: node packages/conformance/tests/plugins.mjs
-      - run: node packages/conformance/tests/hardening.mjs
-      - run: node packages/conformance/tests/bounds.mjs
-      - run: node packages/conformance/tests/join.mjs
       - name: size gate (default entry must stay smaller than cnfast)
-        run: node packages/conformance/scripts/size.mjs
+        run: vp run size
 
   freshness:
     # generated artifacts (vendored config, default tables) must match what the
@@ -44,13 +33,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v4
+      - uses: voidzero-dev/setup-vp@3754dd7dbdb32bd8f6d28b6043de13ad3a75f21f # v1.21.1
         with:
           node-version: 24
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm run build
-      - run: node packages/conformance/scripts/vendor-config.mjs
-      - run: node packages/cn/scripts/compile-tables.mjs
+          cache: true
+          run-install: |
+            args: ['--frozen-lockfile']
+      - run: vp run build
+      - run: vp run vendor-config
+      - run: vp run compile-tables
       - run: git diff --exit-code packages/cn/src/default-config.generated.ts packages/cn/src/tables.generated.ts
