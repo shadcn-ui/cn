@@ -1,5 +1,15 @@
 # cn
 
+## 0.5.2
+
+### Patch Changes
+
+- [#162](https://github.com/shadcn-ui/cn/pull/162) [`b8c5a1b`](https://github.com/shadcn-ui/cn/commit/b8c5a1b23d606790ebae8343268a16503fd8a1e6) Thanks [@nonhana](https://github.com/nonhana)! - Export `CnFunction`, `Engine`, and `ClassNameValue` from `cn/config`, and those plus `ClassValue` from `cn/engine`. Exporting an inferred `createCn()` result (`export const cn = createCn({ ... })`) no longer fails with TS2742 or TS2883 in projects that emit declarations.
+
+- [#167](https://github.com/shadcn-ui/cn/pull/167) [`6ebb4ce`](https://github.com/shadcn-ui/cn/commit/6ebb4ce6284826736f0cc3af7aac7b9fbe54b161) Thanks [@RaphaelFakhri](https://github.com/RaphaelFakhri)! - `cn build` keeps numeric spacing such as `p-4` when a stylesheet declares `--spacing` after a `--*: initial` or `--spacing-*: initial` reset, and keeps `p-px` through the reset, as Tailwind does.
+
+- [#160](https://github.com/shadcn-ui/cn/pull/160) [`a805c68`](https://github.com/shadcn-ui/cn/commit/a805c685b456b759125b521a2530d3038cc60c74) Thanks [@mehimanshupatil](https://github.com/mehimanshupatil)! - `createCn`, `createTwMerge`, and `extendTailwindMerge` from `cn/config` accept optional type arguments for custom class-group and theme ids, like tailwind-merge's `extendTailwindMerge<ClassGroupIds, ThemeGroupIds>`. With them, unknown group keys and conflict ids are type errors. Without them, any id is still accepted.
+
 ## 0.5.1
 
 ### Patch Changes
