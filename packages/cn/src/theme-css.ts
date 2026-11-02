@@ -6,7 +6,7 @@
 // Tailwind resolves them: relative paths and packages, not bundler aliases.
 import { readFileSync, realpathSync, statSync } from "node:fs"
 import { dirname, join, resolve } from "node:path"
-import type { ConfigExtension } from "./compiler"
+import type { ClassGroupDef, ConfigExtension } from "./compiler"
 
 // Tailwind namespace → cn theme scale. Longest first, so `--text-shadow-x`
 // is a text shadow and `--font-weight-x` a weight. `--color-*` and
@@ -242,11 +242,15 @@ export const themeFromCss = (entries: readonly string[]) => {
     )
   const names = new Map<string, Set<string>>()
   const reset = new Set<string>()
+  // Whether a tree declares a bare `--spacing`, the multiplier behind
+  // `p-4`, after its last spacing reset.
+  let multiplier = false
   for (const tree of trees) {
     if (partial(tree)) {
       continue
     }
     const declared = new Map<string, Set<string>>()
+    let spacing = false
     for (const [prop, value] of tree.declarations) {
       if (!prop.startsWith("--")) {
         continue
@@ -257,7 +261,12 @@ export const themeFromCss = (entries: readonly string[]) => {
             reset.add(scale)
           }
           declared.clear()
+          spacing = false
         }
+        continue
+      }
+      if (prop === "--spacing") {
+        spacing = value !== "initial"
         continue
       }
       const namespace = NAMESPACES.find(([ns]) => prop.startsWith(`--${ns}-`))
@@ -270,6 +279,9 @@ export const themeFromCss = (entries: readonly string[]) => {
         if (value === "initial") {
           reset.add(scale)
           declared.delete(scale)
+          if (scale === "spacing") {
+            spacing = false
+          }
         }
         continue
       }
@@ -290,10 +302,11 @@ export const themeFromCss = (entries: readonly string[]) => {
     for (const [scale, set] of declared) {
       names.set(scale, new Set([...(names.get(scale) ?? []), ...set]))
     }
+    multiplier ||= spacing
   }
 
   const extend: Record<string, string[]> = {}
-  const override: Record<string, string[]> = {}
+  const override: Record<string, ClassGroupDef[]> = {}
   for (const [scale, set] of names) {
     if (!reset.has(scale)) {
       extend[scale] = [...set]
@@ -301,6 +314,11 @@ export const themeFromCss = (entries: readonly string[]) => {
   }
   for (const scale of reset) {
     override[scale] = [...(names.get(scale) ?? [])]
+  }
+  // Tailwind keeps `p-px` through a spacing reset, and a `--spacing`
+  // declared after it brings back numeric values such as `p-4`.
+  if (override.spacing) {
+    override.spacing.unshift("px", ...(multiplier ? [{ $v: "isNumber" }] : []))
   }
   const extension: ConfigExtension = {}
   if (Object.keys(extend).length) {

@@ -184,7 +184,8 @@ none. `@import`s are followed the way Tailwind resolves them, so a package
 theme such as `tw-animate-css` is registered too. Aliases such as
 `@/styles/theme.css` resolve only in your bundler and are not followed;
 default discovery reads those files on its own. `--radius-*: initial`
-resets the scale to the names declared after it, as it does in Tailwind. `--color-*` and `--font-*` are skipped because cn already accepts
+resets the scale to the names declared after it, as it does in Tailwind,
+and a `--spacing` declared after a spacing reset keeps `p-4` working. `--color-*` and `--font-*` are skipped because cn already accepts
 any name on those scales. The plugins rebuild when a stylesheet they read
 changes, or when a new one appears.
 

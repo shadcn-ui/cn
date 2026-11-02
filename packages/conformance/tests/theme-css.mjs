@@ -378,6 +378,35 @@ try {
     "colors keep accepting any name"
   )
 
+  // Tailwind keeps `p-px` through a spacing reset, and a `--spacing`
+  // declared after the reset brings back numeric spacing.
+  assert.deepEqual(bare.fullConfig.theme.spacing, ["px"])
+  write(
+    "app/custom.css",
+    `@theme {\n  --*: initial;\n  --spacing: 4px;\n  --spacing-gutter: 2rem;\n}\n`
+  )
+  await build({
+    cwd: dir,
+    css: "app/custom.css",
+    full: true,
+    out: "custom.mjs",
+  })
+  const cnCustom = await load("custom.mjs")
+  assert.equal(cnCustom("p-2 p-4"), "p-4")
+  assert.equal(cnCustom("w-8 w-gutter"), "w-gutter")
+  assert.equal(cnCustom("m-px m-3"), "m-3")
+  write(
+    "app/spacing-cleared.css",
+    `@theme {\n  --spacing: 4px;\n  --spacing-*: initial;\n}\n`
+  )
+  const cleared = await build({
+    cwd: dir,
+    css: "app/spacing-cleared.css",
+    full: true,
+    out: "spacing-cleared.mjs",
+  })
+  assert.deepEqual(cleared.fullConfig.theme.spacing, ["px"])
+
   // An explicit config extension is applied after the stylesheet.
   write(
     "cn.config.mjs",
