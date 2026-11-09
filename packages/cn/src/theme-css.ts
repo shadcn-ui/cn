@@ -121,7 +121,8 @@ const conditionTarget = (value: unknown): string | null => {
 }
 
 // A package's `exports` target for a subpath under the `style` or `default`
-// condition, with patterns matched by longest prefix, as Node does.
+// condition, with patterns matched by longest prefix, then longest suffix,
+// as Node does.
 const exportTarget = (exports: unknown, subpath: string) => {
   if (
     !exports ||
@@ -145,7 +146,7 @@ const exportTarget = (exports: unknown, subpath: string) => {
         subpath.length >= key.length
       )
     })
-    .sort((a, b) => b.indexOf("*") - a.indexOf("*"))[0]
+    .sort((a, b) => b.indexOf("*") - a.indexOf("*") || b.length - a.length)[0]
   if (!key) {
     return null
   }

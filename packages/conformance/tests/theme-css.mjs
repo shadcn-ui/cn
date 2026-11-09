@@ -359,6 +359,93 @@ try {
   assert.equal(cnPackages("rounded-kit rounded-lg"), "rounded-lg")
   assert.equal(cnPackages("text-kit text-sm"), "text-sm")
 
+  // Overlapping exports use the longest prefix, then the longest suffix,
+  // regardless of declaration order. An exact export still takes priority.
+  for (const [name, exports, fallbackExists = true] of [
+    [
+      "suffix-first",
+      {
+        "./themes/*": "./fallback/*.css",
+        "./themes/*.css": "./specific/*.css",
+      },
+    ],
+    [
+      "suffix-missing",
+      {
+        "./themes/*": "./fallback/*.css",
+        "./themes/*.css": "./specific/*.css",
+      },
+      false,
+    ],
+    [
+      "suffix-reversed",
+      {
+        "./themes/*.css": "./specific/*.css",
+        "./themes/*": "./fallback/*.css",
+      },
+    ],
+    [
+      "prefix-first",
+      {
+        "./*.css": "./fallback/*.css",
+        "./themes/*": "./specific/*",
+      },
+    ],
+    [
+      "exact-first",
+      {
+        "./themes/*.css": "./fallback/*.css",
+        "./themes/card.css": "./specific/card.css",
+      },
+    ],
+    [
+      "excluded",
+      {
+        "./themes/*": "./fallback/*.css",
+        "./themes/*.css": null,
+      },
+    ],
+  ]) {
+    const pkg = `theme-${name}`
+    write(
+      `node_modules/${pkg}/package.json`,
+      JSON.stringify({ name: pkg, exports })
+    )
+    if (fallbackExists) {
+      for (const file of ["card.css", "card.css.css", "themes/card.css"]) {
+        write(
+          `node_modules/${pkg}/fallback/${file}`,
+          `@theme { --radius-wrong: 2px; }`
+        )
+      }
+    }
+    write(
+      `node_modules/${pkg}/specific/card.css`,
+      `@theme { --radius-card: 2px; }`
+    )
+    write(`app/${name}.css`, `@import "${pkg}/themes/card.css";`)
+    const resolved = await build({
+      cwd: dir,
+      css: `app/${name}.css`,
+      full: true,
+      out: `${name}.mjs`,
+    })
+    const excluded = name === "excluded"
+    assert.equal(resolved.cssFiles.length, excluded ? 1 : 2, name)
+    if (!excluded) {
+      assert.ok(
+        resolved.cssFiles[1].endsWith(`/${pkg}/specific/card.css`),
+        `${name}: the most specific export is read`
+      )
+    }
+    assert.ok(!resolved.fullConfig.theme.radius.includes("wrong"), name)
+    assert.equal(
+      (await load(`${name}.mjs`))("rounded-card rounded-lg"),
+      excluded ? "rounded-card rounded-lg" : "rounded-lg",
+      `${name}: generated tables use the selected theme`
+    )
+  }
+
   // `--*: initial` resets every scale.
   write(
     "app/bare.css",
