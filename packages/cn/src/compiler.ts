@@ -1113,7 +1113,7 @@ const litPool = new Int32Array(${m.litEntries.length})
 let poolText = ''
 const poolOffsets = new Int32Array(${m.uniqueTailCount * 2})
 {
-    const tailRef = new Map()
+    const tailRef = new Map${ts ? "<string, number>" : ""}()
     let nextRef = 0
     let e = 0
     for (let i = 0; i < AA.length; i++) {
