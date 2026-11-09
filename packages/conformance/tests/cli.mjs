@@ -529,6 +529,12 @@ try {
     tsSource.includes("(s: string, o = 0): Int32Array"),
     "missing TS annotations"
   )
+  // `new Map()` is Map<any, any>, or Map<unknown, unknown> under ts-reset
+  expect(
+    "ts-output typed Map",
+    !tsSource.includes("new Map()"),
+    "untyped new Map()"
+  )
 
   // ---- .ts output typechecks under the strictest compiler flags -----------------
   execFileSync(process.execPath, [
