@@ -88,6 +88,13 @@ const isFile = (path: string) => {
   }
 }
 
+const resolveCssFile = (path: string) =>
+  [
+    ...(/[\\/]$/.test(path) ? [] : [path, `${path}.css`]),
+    join(path, "index"),
+    join(path, "index.css"),
+  ].find(isFile)
+
 type PackageJson = { exports?: unknown; style?: string }
 
 const readPackage = (dir: string) => {
@@ -160,7 +167,8 @@ const exportTarget = (exports: unknown, subpath: string) => {
 // a specifier that does not resolve, such as a bundler alias.
 const resolveImport = (spec: string, from: string) => {
   if (spec.startsWith("./") || spec.startsWith("../")) {
-    return resolve(dirname(from), spec)
+    const path = join(dirname(from), spec)
+    return resolveCssFile(path) ?? path
   }
   const match = /^((?:@[\w.-]+\/)?[\w.-]+)(\/.*)?$/.exec(spec)
   if (!match || match[1] === "tailwindcss") {
@@ -176,8 +184,7 @@ const resolveImport = (spec: string, from: string) => {
         const target = exportTarget(pkg.exports, `.${subpath}`)
         file = target ? join(root, target) : undefined
       } else {
-        const path = join(root, subpath || pkg.style || "index.css")
-        file = isFile(path) ? path : `${path}.css`
+        file = resolveCssFile(join(root, subpath || pkg.style || "index.css"))
       }
       return file && isFile(file) ? realpathSync(file) : null
     }
