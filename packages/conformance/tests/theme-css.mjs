@@ -2,7 +2,13 @@
 // build time, so a custom name conflicts like a default one.
 import assert from "node:assert/strict"
 import { execFileSync, spawnSync } from "node:child_process"
-import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs"
+import {
+  mkdirSync,
+  mkdtempSync,
+  realpathSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { fileURLToPath, pathToFileURL } from "node:url"
@@ -11,7 +17,7 @@ import { createCn } from "cn/engine"
 import { extendTailwindMerge } from "tailwind-merge"
 
 const bin = fileURLToPath(new URL("../../cn/bin/cn.mjs", import.meta.url))
-const dir = mkdtempSync(join(tmpdir(), "cn-theme-css-"))
+const dir = realpathSync(mkdtempSync(join(tmpdir(), "cn-theme-css-")))
 
 const write = (rel, text) => {
   mkdirSync(join(dir, rel, ".."), { recursive: true })
@@ -262,6 +268,49 @@ try {
     "accordion-down",
   ])
   assert.ok(nested.fullConfig.theme.text.includes("hero"))
+
+  // Filesystem imports try the exact file, then .css, then a directory index,
+  // matching Tailwind's resolver for relative paths and package subpaths.
+  write(
+    "imports/package/app/node_modules/theme-kit/package.json",
+    `{ "name": "theme-kit" }`
+  )
+  for (const [name, spec, target, fallback] of [
+    ["sibling", "./tokens", "tokens.css"],
+    ["parent", "../tokens", "../tokens.css"],
+    ["directory", "./tokens", "tokens/index.css"],
+    ["directory-slash", "./tokens/", "tokens/index.css", "tokens.css"],
+    ["index-first", "./tokens", "tokens/index", "tokens/index.css"],
+    ["file-first", "./tokens", "tokens.css", "tokens/index.css"],
+    ["exact-first", "./tokens", "tokens", "tokens.css"],
+    ["explicit", "./tokens.css", "tokens.css", "tokens.css.css"],
+    ["package", "theme-kit/tokens", "node_modules/theme-kit/tokens/index.css"],
+  ]) {
+    const base = `imports/${name}/app`
+    write(`${base}/${target}`, `@theme { --radius-card: 12px; }`)
+    if (fallback) {
+      write(`${base}/${fallback}`, `@theme { --radius-wrong: 1px; }`)
+    }
+    write(`${base}/entry.css`, `@import "${spec}";`)
+    const resolved = await build({
+      cwd: dir,
+      css: `${base}/entry.css`,
+      full: true,
+      out: `${name}.mjs`,
+    })
+    assert.deepEqual(
+      resolved.cssFiles,
+      [join(dir, base, "entry.css"), join(dir, base, target)],
+      `${name}: the resolved stylesheet is tracked`
+    )
+    assert.ok(resolved.fullConfig.theme.radius.includes("card"), name)
+    assert.ok(!resolved.fullConfig.theme.radius.includes("wrong"), name)
+    assert.equal(
+      (await load(`${name}.mjs`))("rounded-card rounded-lg"),
+      "rounded-lg",
+      `${name}: generated tables merge the imported theme`
+    )
+  }
 
   // Packages resolve the way Tailwind resolves them. Tailwind's own theme is
   // cn's default, and an alias resolves only in the bundler.
