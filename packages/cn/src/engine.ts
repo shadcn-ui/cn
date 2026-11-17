@@ -309,13 +309,20 @@ export const createEngine = (
   }
 
   // ops 10-24: required kind, allowed labels, unlabeled behavior
-  // (0 false, 1 true, 2 length-shape, 3 number, 4 image, 5 shadow)
+  // (0 false, 1 true, 2 length-shape, 3 number, 4 image, 5 shadow,
+  // 6 not font-family, 7 font-family)
   const VKIND = [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2]
   const VLABELS =
     "length|number|number weight|family-name|position percentage|length size bg-size|image url|shadow|length|family-name|position percentage|length size bg-size|image url|shadow|number weight"
       .split("|")
       .map((s) => s.split(" "))
-  const VFALL = [2, 3, 1, 0, 0, 0, 4, 5, 0, 0, 0, 0, 0, 1, 1]
+  const VFALL = [2, 3, 6, 7, 0, 0, 4, 5, 0, 0, 0, 0, 0, 1, 1]
+
+  // mirrors isFontFamilyValue in validators.ts (Tailwind's `font-[…]` split)
+  const notFamilyRegex =
+    /^var\(|^[+-]?\d*\.?\d+([eE][+-]?\d+)?$|(calc|min|max|clamp|mod|rem|sin|cos|tan|atan2|pow|sqrt|hypot|log|exp|round)\(|(^|,)\d/
+  const isFontFamilyValue = (v: string): boolean =>
+    !notFamilyRegex.test(v) && /(^|,)(?!var\()/.test(v)
 
   const runValidator = (
     op: number,
@@ -345,8 +352,12 @@ export const createEngine = (
           return isNumStr(input.slice(aValS, aValE))
         case 4:
           return imageRegex.test(input.slice(aValS, aValE))
-        default:
+        case 5:
           return shadowRegex.test(input.slice(aValS, aValE))
+        default:
+          return (
+            isFontFamilyValue(input.slice(aValS, aValE)) === (VFALL[i] === 7)
+          )
       }
     }
     switch (op) {

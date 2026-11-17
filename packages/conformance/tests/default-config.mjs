@@ -283,6 +283,26 @@ for (const [id, first, last] of supported) {
   group(id, [first, last])
   replace(first, last)
 }
+// An unlabeled `font-[…]` splits the way Tailwind v4 compiles it;
+// tailwind-merge 3.7.0 reads every unlabeled value as font-weight.
+group("font-family", [
+  "font-[Inter]",
+  "font-[Inter,sans-serif]",
+  "font-['Open_Sans']",
+  "font-[Inter,var(--x)]",
+])
+group("font-weight", [
+  "font-[600]",
+  "font-[var(--w)]",
+  "font-[calc(100*4)]",
+  "font-[100_200]",
+])
+replace("font-sans", "font-[Inter]")
+replace("font-[Inter]", "font-sans")
+replace("font-bold", "font-[600]")
+coexist("font-medium", "font-[Inter]")
+coexist("font-[Inter,sans-serif]", "font-bold")
+coexist("font-sans", "font-[var(--w)]")
 coexist("text-shadow-sm", "text-shadow-red-500")
 coexist("inset-shadow-sm", "inset-shadow-red-500")
 coexist("inset-shadow-sm", "shadow-lg")
