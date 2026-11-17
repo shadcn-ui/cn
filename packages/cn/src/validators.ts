@@ -1,5 +1,6 @@
 // Validator predicates with semantics identical to tailwind-merge 3.7.0's
-// src/lib/validators.ts (MIT, Dany Castillo — see README.md). The runtime
+// src/lib/validators.ts (MIT, Dany Castillo — see README.md), except the
+// unlabeled font weight/family split, which follows Tailwind. The runtime
 // engine compiles these to span opcodes; these plain-string implementations
 // are used by the compiler's classifier and by custom configs.
 
@@ -67,6 +68,17 @@ const getIsArbitraryVariable = (
   return false
 }
 
+// How Tailwind v4 reads an unlabeled `font-[…]`: font-family, unless the value
+// starts with var(, is a number, calls a math function, or has a comma part
+// starting with a digit. tailwind-merge 3.7.0 reads every unlabeled value as
+// font-weight. Splitting on every comma, not only top-level ones, misreads a
+// family list that has commas inside a non-math function.
+const notFamilyRegex =
+  /^var\(|^[+-]?\d*\.?\d+([eE][+-]?\d+)?$|(calc|min|max|clamp|mod|rem|sin|cos|tan|atan2|pow|sqrt|hypot|log|exp|round)\(|(^|,)\d/
+// and at least one comma part must not start with var(
+const isFontFamilyValue = (v: string) =>
+  !notFamilyRegex.test(v) && /(^|,)(?!var\()/.test(v)
+
 const isLabelPosition = (l: string) => l === "position" || l === "percentage"
 const isLabelImage = (l: string) => l === "image" || l === "url"
 const isLabelSize = (l: string) =>
@@ -85,9 +97,9 @@ export const isArbitraryLength = (v: string) =>
 export const isArbitraryNumber = (v: string) =>
   getIsArbitraryValue(v, isLabelNumber, isNumber)
 export const isArbitraryWeight = (v: string) =>
-  getIsArbitraryValue(v, isLabelWeight, isAny)
+  getIsArbitraryValue(v, isLabelWeight, (x) => !isFontFamilyValue(x))
 export const isArbitraryFamilyName = (v: string) =>
-  getIsArbitraryValue(v, isLabelFamilyName, isNever)
+  getIsArbitraryValue(v, isLabelFamilyName, isFontFamilyValue)
 export const isArbitraryPosition = (v: string) =>
   getIsArbitraryValue(v, isLabelPosition, isNever)
 export const isArbitraryImage = (v: string) =>
